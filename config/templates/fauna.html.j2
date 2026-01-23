@@ -5,12 +5,12 @@
 {% block content %}
     <header>
         <h1>Fauna Bororo</h1>
-        <p class="subtitle">{{ meta.description }} &mdash; {{ data | length }} especies</p>
+        <p class="subtitle">{{ meta.description }} &mdash; {{ data | length }} espécies</p>
     </header>
 
     <div class="search-container">
         <div class="search-row">
-            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo, Portugues ou nome cientifico)..." autocomplete="off">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo, Português ou nome científico)..." autocomplete="off">
             <select id="category-filter" class="filter-select">
                 <option value="">Todas as categorias</option>
                 {% set categories = [] %}
@@ -30,7 +30,7 @@
     <div class="results-container" id="results">
         <div class="empty-state">
             <h2>Pesquise a fauna</h2>
-            <p>Digite um nome em Bororo, Portugues ou cientifico para comecar</p>
+            <p>Digite um nome em Bororo, Português ou científico para começar</p>
         </div>
     </div>
 {% endblock %}
@@ -121,7 +121,7 @@
 
         // Category (Western classification)
         if (entry.category) {
-            html += '<p class="entry-definition">Familia: ' + highlightMatches(entry.category, matchMap['category']) + '</p>';
+            html += '<p class="entry-definition">Família: ' + highlightMatches(entry.category, matchMap['category']) + '</p>';
         }
 
         // Info/notes
@@ -152,12 +152,12 @@
                     .filter(item => item.classification_bororo === selectedCategory)
                     .map(item => ({ item }));
             } else {
-                resultsContainer.innerHTML = `
-                    <div class="empty-state">
-                        <h2>Pesquise a fauna</h2>
-                        <p>Digite um nome em Bororo, Portugues ou cientifico para comecar</p>
-                    </div>
-                `;
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Pesquise a fauna</h2>
+                    <p>Digite um nome em Bororo, Português ou científico para começar</p>
+                </div>
+            `;
                 statsDiv.textContent = '';
                 return;
             }
@@ -169,7 +169,7 @@
             }
         }
 
-        statsDiv.textContent = `${currentResults.length} especie${currentResults.length !== 1 ? 's' : ''} encontrada${currentResults.length !== 1 ? 's' : ''}`;
+        statsDiv.textContent = `${currentResults.length} espécie${currentResults.length !== 1 ? 's' : ''} encontrada${currentResults.length !== 1 ? 's' : ''}`;
 
         if (currentResults.length === 0) {
             resultsContainer.innerHTML = `

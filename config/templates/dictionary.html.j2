@@ -1,16 +1,16 @@
 {% extends "base.html.j2" %}
 
-{% block title %}Dicionario Bororo{% endblock %}
+{% block title %}Dicionário Bororo{% endblock %}
 
 {% block content %}
     <header>
-        <h1>Dicionario Bororo</h1>
+        <h1>Dicionário Bororo</h1>
         <p class="subtitle">{{ meta.description }} &mdash; {{ data | length }} entradas</p>
     </header>
 
     <div class="search-container">
         <div class="search-row">
-            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo ou Portugues)..." autocomplete="off">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo ou Português)..." autocomplete="off">
             <select id="pos-filter" class="filter-select">
                 <option value="">Todas as classes</option>
                 {% set pos_types = [] %}
@@ -29,8 +29,8 @@
 
     <div class="results-container" id="results">
         <div class="empty-state">
-            <h2>Pesquise no dicionario</h2>
-            <p>Digite uma palavra em Bororo ou Portugues para comecar</p>
+            <h2>Pesquise no dicionário</h2>
+            <p>Digite uma palavra em Bororo ou Português para começar</p>
         </div>
     </div>
 {% endblock %}
@@ -48,23 +48,23 @@
         'LEX': 'Lexema',
         'S': 'Substantivo',
         'VC': 'Verbo Causativo',
-        'ADV': 'Adverbio',
+        'ADV': 'Advérbio',
         'PPASS': 'Part. Pass.',
-        'POSP': 'Posposicao',
+        'POSP': 'Posposição',
         'SUF': 'Sufixo',
-        'INTJ': 'Interjeicao',
+        'INTJ': 'Interjeição',
         'VT': 'Verbo Trans.',
         'PRON': 'Pronome',
         'V': 'Verbo',
-        'PRCL': 'Particula',
+        'PRCL': 'Partícula',
         'PPAS': 'Part. Pass.',
-        'PPART': 'Particula',
+        'PPART': 'Partícula',
         'NUM': 'Numeral',
         'IP': 'IP',
         'DEM': 'Demonstrativo',
-        'CONJ': 'Conjuncao',
+        'CONJ': 'Conjunção',
         'X': 'Outro',
-        'PROPN': 'Nome Proprio'
+        'PROPN': 'Nome Próprio'
     };
 
     // Initialize Fuse.js with fuzzy search configuration
@@ -150,7 +150,7 @@
 
         // Scientific name
         if (entry.scientific_name) {
-            html += '<p class="entry-scientific">Nome cientifico: <em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
+            html += '<p class="entry-scientific">Nome científico: <em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
         }
 
         // Comment
@@ -190,12 +190,12 @@
                     .filter(item => item.pos === selectedPos)
                     .map(item => ({ item }));
             } else {
-                resultsContainer.innerHTML = `
-                    <div class="empty-state">
-                        <h2>Pesquise no dicionario</h2>
-                        <p>Digite uma palavra em Bororo ou Portugues para comecar</p>
-                    </div>
-                `;
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Pesquise no dicionário</h2>
+                    <p>Digite uma palavra em Bororo ou Português para começar</p>
+                </div>
+            `;
                 statsDiv.textContent = '';
                 return;
             }
