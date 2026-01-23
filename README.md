@@ -86,3 +86,4 @@ GPL-3.0-or-later
 ## Projeto
 
 Parte da iniciativa [Plataformas Indigenas](https://github.com/plataformasindigenas).
+
