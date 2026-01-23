@@ -1,0 +1,14 @@
+name: bororo_fauna
+description: Bororo Fauna Dictionary
+version: "1.0"
+primary_key: id
+
+fields:
+  id: int
+  name_portuguese: str?
+  name_bororo: str
+  scientific_name: str?
+  category: str?
+  classification_bororo: str?
+  info: str?
+  pic_link: str?

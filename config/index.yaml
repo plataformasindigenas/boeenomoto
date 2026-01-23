@@ -1,0 +1,10 @@
+input: ../data/index.json
+template: templates/index.html.j2
+output: ../docs/index.html
+
+template_dirs:
+  - templates
+
+context:
+  title: "Boe Eno Moto"
+  page: "index"

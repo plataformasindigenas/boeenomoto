@@ -1,0 +1,10 @@
+input: ../data/dictionary.json
+template: templates/dictionary.html.j2
+output: ../docs/dictionary.html
+
+template_dirs:
+  - templates
+
+context:
+  title: "Dicionario Bororo"
+  page: "dictionary"

@@ -1,0 +1,247 @@
+{% extends "base.html.j2" %}
+
+{% block title %}Dicionario Bororo{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Dicionario Bororo</h1>
+        <p class="subtitle">{{ meta.description }} &mdash; {{ data | length }} entradas</p>
+    </header>
+
+    <div class="search-container">
+        <div class="search-row">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo ou Portugues)..." autocomplete="off">
+            <select id="pos-filter" class="filter-select">
+                <option value="">Todas as classes</option>
+                {% set pos_types = [] %}
+                {% for item in data %}
+                    {% if item.pos and item.pos not in pos_types %}
+                        {% set _ = pos_types.append(item.pos) %}
+                    {% endif %}
+                {% endfor %}
+                {% for pos in pos_types | sort %}
+                <option value="{{ pos }}">{{ pos }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="results-container" id="results">
+        <div class="empty-state">
+            <h2>Pesquise no dicionario</h2>
+            <p>Digite uma palavra em Bororo ou Portugues para comecar</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <!-- Fuse.js for fuzzy search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <script>
+    // Dictionary data embedded at build time
+    const dictionaryData = {{ data | tojson }};
+
+    // POS labels for display
+    const posLabels = {
+        'LEX': 'Lexema',
+        'S': 'Substantivo',
+        'VC': 'Verbo Causativo',
+        'ADV': 'Adverbio',
+        'PPASS': 'Part. Pass.',
+        'POSP': 'Posposicao',
+        'SUF': 'Sufixo',
+        'INTJ': 'Interjeicao',
+        'VT': 'Verbo Trans.',
+        'PRON': 'Pronome',
+        'V': 'Verbo',
+        'PRCL': 'Particula',
+        'PPAS': 'Part. Pass.',
+        'PPART': 'Particula',
+        'NUM': 'Numeral',
+        'IP': 'IP',
+        'DEM': 'Demonstrativo',
+        'CONJ': 'Conjuncao',
+        'X': 'Outro',
+        'PROPN': 'Nome Proprio'
+    };
+
+    // Initialize Fuse.js with fuzzy search configuration
+    const fuse = new Fuse(dictionaryData, {
+        keys: [
+            { name: 'entry', weight: 2 },
+            { name: 'definition', weight: 1.5 },
+            { name: 'example_sent', weight: 1 },
+            { name: 'comment', weight: 0.5 },
+            { name: 'ipa', weight: 0.5 },
+            { name: 'scientific_name', weight: 0.5 }
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        includeMatches: true,
+        minMatchCharLength: 2
+    });
+
+    const searchInput = document.getElementById('search-input');
+    const posFilter = document.getElementById('pos-filter');
+    const resultsContainer = document.getElementById('results');
+    const statsDiv = document.getElementById('stats');
+
+    let currentResults = [];
+
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function highlightMatches(text, indices) {
+        if (!text || !indices || indices.length === 0) return escapeHtml(text);
+
+        let result = '';
+        let lastIndex = 0;
+
+        const sortedIndices = indices.sort((a, b) => a[0] - b[0]);
+
+        for (const [start, end] of sortedIndices) {
+            result += escapeHtml(text.slice(lastIndex, start));
+            result += '<span class="highlight">' + escapeHtml(text.slice(start, end + 1)) + '</span>';
+            lastIndex = end + 1;
+        }
+        result += escapeHtml(text.slice(lastIndex));
+
+        return result;
+    }
+
+    function renderEntry(item, matches = null) {
+        const entry = item.item || item;
+
+        const matchMap = {};
+        if (matches) {
+            for (const match of matches) {
+                matchMap[match.key] = match.indices;
+            }
+        }
+
+        let html = '<div class="entry">';
+
+        // Header: word, IPA, POS
+        html += '<div class="entry-header">';
+        html += '<span class="entry-word">' + highlightMatches(entry.entry, matchMap['entry']) + '</span>';
+        if (entry.ipa) {
+            html += '<span class="entry-ipa">[' + highlightMatches(entry.ipa, matchMap['ipa']) + ']</span>';
+        }
+        if (entry.pos) {
+            html += '<span class="entry-tag">' + escapeHtml(posLabels[entry.pos] || entry.pos) + '</span>';
+        }
+        html += '</div>';
+
+        // Definition
+        if (entry.definition) {
+            html += '<p class="entry-definition">' + highlightMatches(entry.definition, matchMap['definition']) + '</p>';
+        }
+
+        // Example
+        if (entry.example_sent) {
+            html += '<p class="entry-example">' + highlightMatches(entry.example_sent, matchMap['example_sent']) + '</p>';
+        }
+
+        // Scientific name
+        if (entry.scientific_name) {
+            html += '<p class="entry-scientific">Nome cientifico: <em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
+        }
+
+        // Comment
+        if (entry.comment) {
+            html += '<div class="entry-comment">' + highlightMatches(entry.comment, matchMap['comment']) + '</div>';
+        }
+
+        // Media section
+        if (entry.pic_link || entry.wiki_link) {
+            html += '<div class="entry-media">';
+
+            if (entry.pic_link) {
+                html += '<a href="' + escapeHtml(entry.pic_link) + '" target="_blank" rel="noopener">';
+                html += '<img class="entry-thumbnail" src="' + escapeHtml(entry.pic_link) + '" alt="' + escapeHtml(entry.entry) + '" loading="lazy" onerror="this.style.display=\'none\'">';
+                html += '</a>';
+            }
+
+            html += '<div class="entry-links">';
+            if (entry.wiki_link) {
+                html += '<a href="' + escapeHtml(entry.wiki_link) + '" target="_blank" rel="noopener">Wikipedia</a>';
+            }
+            html += '</div>';
+            html += '</div>';
+        }
+
+        html += '</div>';
+        return html;
+    }
+
+    function search() {
+        const query = searchInput.value.trim();
+        const selectedPos = posFilter.value;
+
+        if (query.length < 2) {
+            if (selectedPos) {
+                currentResults = dictionaryData
+                    .filter(item => item.pos === selectedPos)
+                    .map(item => ({ item }));
+            } else {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <h2>Pesquise no dicionario</h2>
+                        <p>Digite uma palavra em Bororo ou Portugues para comecar</p>
+                    </div>
+                `;
+                statsDiv.textContent = '';
+                return;
+            }
+        } else {
+            currentResults = fuse.search(query);
+
+            if (selectedPos) {
+                currentResults = currentResults.filter(result => result.item.pos === selectedPos);
+            }
+        }
+
+        statsDiv.textContent = `${currentResults.length} resultado${currentResults.length !== 1 ? 's' : ''} encontrado${currentResults.length !== 1 ? 's' : ''}`;
+
+        if (currentResults.length === 0) {
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Nenhum resultado</h2>
+                    <p>Tente uma palavra diferente ou altere o filtro</p>
+                </div>
+            `;
+        } else {
+            const displayResults = currentResults.slice(0, 100);
+            let html = displayResults.map(result => renderEntry(result, result.matches)).join('');
+
+            if (currentResults.length > 100) {
+                html += `<div class="empty-state"><p>Mostrando 100 de ${currentResults.length} resultados. Refine sua busca.</p></div>`;
+            }
+
+            resultsContainer.innerHTML = html;
+        }
+    }
+
+    // Debounce helper
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
+    // Event listeners
+    searchInput.addEventListener('input', debounce(search, 200));
+    posFilter.addEventListener('change', search);
+
+    // Focus search on load
+    searchInput.focus();
+    </script>
+{% endblock %}

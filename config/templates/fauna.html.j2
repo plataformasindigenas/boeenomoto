@@ -1,0 +1,209 @@
+{% extends "base.html.j2" %}
+
+{% block title %}Fauna Bororo{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Fauna Bororo</h1>
+        <p class="subtitle">{{ meta.description }} &mdash; {{ data | length }} especies</p>
+    </header>
+
+    <div class="search-container">
+        <div class="search-row">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo, Portugues ou nome cientifico)..." autocomplete="off">
+            <select id="category-filter" class="filter-select">
+                <option value="">Todas as categorias</option>
+                {% set categories = [] %}
+                {% for item in data %}
+                    {% if item.classification_bororo and item.classification_bororo not in categories %}
+                        {% set _ = categories.append(item.classification_bororo) %}
+                    {% endif %}
+                {% endfor %}
+                {% for cat in categories | sort %}
+                <option value="{{ cat }}">{{ cat }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="results-container" id="results">
+        <div class="empty-state">
+            <h2>Pesquise a fauna</h2>
+            <p>Digite um nome em Bororo, Portugues ou cientifico para comecar</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <!-- Fuse.js for fuzzy search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <script>
+    // Fauna data embedded at build time
+    const faunaData = {{ data | tojson }};
+
+    // Initialize Fuse.js with fuzzy search configuration
+    const fuse = new Fuse(faunaData, {
+        keys: [
+            { name: 'name_bororo', weight: 2 },
+            { name: 'name_portuguese', weight: 1.5 },
+            { name: 'scientific_name', weight: 1 },
+            { name: 'category', weight: 0.5 },
+            { name: 'classification_bororo', weight: 0.5 },
+            { name: 'info', weight: 0.5 }
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        includeMatches: true,
+        minMatchCharLength: 2
+    });
+
+    const searchInput = document.getElementById('search-input');
+    const categoryFilter = document.getElementById('category-filter');
+    const resultsContainer = document.getElementById('results');
+    const statsDiv = document.getElementById('stats');
+
+    let currentResults = [];
+
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function highlightMatches(text, indices) {
+        if (!text || !indices || indices.length === 0) return escapeHtml(text);
+
+        let result = '';
+        let lastIndex = 0;
+
+        const sortedIndices = indices.sort((a, b) => a[0] - b[0]);
+
+        for (const [start, end] of sortedIndices) {
+            result += escapeHtml(text.slice(lastIndex, start));
+            result += '<span class="highlight">' + escapeHtml(text.slice(start, end + 1)) + '</span>';
+            lastIndex = end + 1;
+        }
+        result += escapeHtml(text.slice(lastIndex));
+
+        return result;
+    }
+
+    function renderEntry(item, matches = null) {
+        const entry = item.item || item;
+
+        const matchMap = {};
+        if (matches) {
+            for (const match of matches) {
+                matchMap[match.key] = match.indices;
+            }
+        }
+
+        let html = '<div class="entry">';
+
+        // Header: Bororo name, Portuguese name
+        html += '<div class="entry-header">';
+        html += '<span class="entry-word">' + highlightMatches(entry.name_bororo, matchMap['name_bororo']) + '</span>';
+        if (entry.name_portuguese) {
+            html += '<span class="entry-secondary">&mdash; ' + highlightMatches(entry.name_portuguese, matchMap['name_portuguese']) + '</span>';
+        }
+        if (entry.classification_bororo) {
+            html += '<span class="entry-tag">' + escapeHtml(entry.classification_bororo) + '</span>';
+        }
+        html += '</div>';
+
+        // Scientific name
+        if (entry.scientific_name) {
+            html += '<p class="entry-scientific"><em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
+        }
+
+        // Category (Western classification)
+        if (entry.category) {
+            html += '<p class="entry-definition">Familia: ' + highlightMatches(entry.category, matchMap['category']) + '</p>';
+        }
+
+        // Info/notes
+        if (entry.info) {
+            html += '<div class="entry-comment">' + highlightMatches(entry.info, matchMap['info']) + '</div>';
+        }
+
+        // Image
+        if (entry.pic_link) {
+            html += '<div class="entry-media">';
+            html += '<a href="' + escapeHtml(entry.pic_link) + '" target="_blank" rel="noopener">';
+            html += '<img class="entry-thumbnail" src="' + escapeHtml(entry.pic_link) + '" alt="' + escapeHtml(entry.name_bororo) + '" loading="lazy" onerror="this.style.display=\'none\'">';
+            html += '</a>';
+            html += '</div>';
+        }
+
+        html += '</div>';
+        return html;
+    }
+
+    function search() {
+        const query = searchInput.value.trim();
+        const selectedCategory = categoryFilter.value;
+
+        if (query.length < 2) {
+            if (selectedCategory) {
+                currentResults = faunaData
+                    .filter(item => item.classification_bororo === selectedCategory)
+                    .map(item => ({ item }));
+            } else {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <h2>Pesquise a fauna</h2>
+                        <p>Digite um nome em Bororo, Portugues ou cientifico para comecar</p>
+                    </div>
+                `;
+                statsDiv.textContent = '';
+                return;
+            }
+        } else {
+            currentResults = fuse.search(query);
+
+            if (selectedCategory) {
+                currentResults = currentResults.filter(result => result.item.classification_bororo === selectedCategory);
+            }
+        }
+
+        statsDiv.textContent = `${currentResults.length} especie${currentResults.length !== 1 ? 's' : ''} encontrada${currentResults.length !== 1 ? 's' : ''}`;
+
+        if (currentResults.length === 0) {
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Nenhum resultado</h2>
+                    <p>Tente um nome diferente ou altere o filtro</p>
+                </div>
+            `;
+        } else {
+            const displayResults = currentResults.slice(0, 100);
+            let html = displayResults.map(result => renderEntry(result, result.matches)).join('');
+
+            if (currentResults.length > 100) {
+                html += `<div class="empty-state"><p>Mostrando 100 de ${currentResults.length} resultados. Refine sua busca.</p></div>`;
+            }
+
+            resultsContainer.innerHTML = html;
+        }
+    }
+
+    // Debounce helper
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
+    // Event listeners
+    searchInput.addEventListener('input', debounce(search, 200));
+    categoryFilter.addEventListener('change', search);
+
+    // Focus search on load
+    searchInput.focus();
+    </script>
+{% endblock %}

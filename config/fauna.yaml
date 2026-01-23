@@ -1,0 +1,10 @@
+input: ../data/fauna.json
+template: templates/fauna.html.j2
+output: ../docs/fauna.html
+
+template_dirs:
+  - templates
+
+context:
+  title: "Fauna Bororo"
+  page: "fauna"

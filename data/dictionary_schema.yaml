@@ -1,0 +1,16 @@
+name: bororo_dicionario
+description: Bororo Dictionary Entries
+version: "1.0"
+primary_key: id
+
+fields:
+  id: int
+  entry: str
+  ipa: str?
+  pos: str[LEX|S|VC|ADV|PPASS|POSP|SUF|INTJ|VT|PRON|V|PRCL|PPAS|PPART|NUM|IP|DEM|CONJ|X|PROPN]
+  definition: str?
+  example_sent: str?
+  scientific_name: str?
+  wiki_link: str?
+  pic_link: str?
+  comment: str?

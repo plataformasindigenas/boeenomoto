@@ -1,0 +1,109 @@
+{% extends "base.html.j2" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block extra_styles %}
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .platforms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .platform-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: block;
+        }
+        .platform-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .platform-card h2 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+            font-size: 1.4rem;
+        }
+        .platform-card p {
+            margin: 0 0 1rem 0;
+            color: #666;
+        }
+        .platform-card .count {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3498db;
+        }
+        .platform-card .label {
+            font-size: 0.9rem;
+            color: #888;
+        }
+        .about {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .about h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <h1>Boe Eno Moto</h1>
+        <p>Plataforma de recursos linguisticos e culturais do povo Bororo</p>
+    </div>
+
+    <div class="platforms">
+        <a href="dictionary.html" class="platform-card">
+            <h2>Dicionario</h2>
+            <p>Palavras e expressoes da lingua Bororo com traducao para Portugues, transcricao fonetica e exemplos.</p>
+            <div class="count">{{ data[0].dictionary_count }}</div>
+            <div class="label">entradas</div>
+        </a>
+
+        <a href="fauna.html" class="platform-card">
+            <h2>Fauna</h2>
+            <p>Nomes de animais na lingua Bororo com classificacao tradicional, nomes cientificos e imagens.</p>
+            <div class="count">{{ data[0].fauna_count }}</div>
+            <div class="label">especies</div>
+        </a>
+    </div>
+
+    <div class="about">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            <strong>Boe Eno Moto</strong> ("a nova lingua dos Bororo") e uma plataforma dedicada a
+            preservacao e divulgacao da lingua e cultura do povo Bororo, que habita a regiao
+            central do Brasil, principalmente no estado de Mato Grosso.
+        </p>
+        <p>
+            Este projeto faz parte da iniciativa <a href="https://github.com/plataformasindigenas">Plataformas Indigenas</a>,
+            que desenvolve ferramentas de codigo aberto para documentacao e revitalizacao de linguas indigenas.
+        </p>
+    </div>
+{% endblock %}

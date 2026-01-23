@@ -1,0 +1,24 @@
+[project]
+name = "boeenomoto"
+version = "0.1.0"
+description = "Boe Eno Moto - Plataforma de recursos linguisticos e culturais do povo Bororo"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+authors = [
+    { name = "Plataformas Indigenas" },
+]
+keywords = ["bororo", "indigenous", "linguistics", "dictionary", "fauna"]
+
+dependencies = [
+    "aptoro>=0.3.1",
+    "kodudo>=0.1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/plataformasindigenas/boeenomoto"
+Repository = "https://github.com/plataformasindigenas/boeenomoto"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
