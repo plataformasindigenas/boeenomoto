@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   # Trigger on push to main branch when data, config, or scripts change
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - 'data/**'
       - 'config/**'
