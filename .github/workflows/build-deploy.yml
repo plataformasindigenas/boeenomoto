@@ -1,13 +1,9 @@
 name: Build and Deploy
 
 on:
-  # Trigger on push to main branch when data, config, or scripts change
+  # Trigger on push to master branch
   push:
     branches: [master]
-    paths:
-      - 'data/**'
-      - 'config/**'
-      - 'scripts/**'
 
   # Allow manual triggering
   workflow_dispatch:
