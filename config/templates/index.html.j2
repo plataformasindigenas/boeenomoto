@@ -5,10 +5,10 @@
 {% block extra_styles %}
         .hero {
             text-align: center;
-            padding: 3rem 1rem;
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            padding: 2.5rem 1rem;
+            background: #3D352F;
             color: white;
-            border-radius: 12px;
+            border-radius: 4px;
             margin-bottom: 2rem;
         }
         .hero h1 {
@@ -18,7 +18,7 @@
         }
         .hero p {
             font-size: 1.2rem;
-            opacity: 0.9;
+            opacity: 0.85;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -30,21 +30,20 @@
         }
         .platform-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 4px;
             padding: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #E8E4DF;
             text-decoration: none;
             color: inherit;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: border-color 0.2s;
             display: block;
         }
         .platform-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            border-color: #C75B39;
         }
         .platform-card h2 {
             margin: 0 0 0.5rem 0;
-            color: #2c3e50;
+            color: #3D352F;
             font-size: 1.4rem;
         }
         .platform-card p {
@@ -54,7 +53,7 @@
         .platform-card .count {
             font-size: 2rem;
             font-weight: 700;
-            color: #3498db;
+            color: #C75B39;
         }
         .platform-card .label {
             font-size: 0.9rem;
@@ -62,13 +61,13 @@
         }
         .about {
             background: white;
-            border-radius: 12px;
+            border-radius: 4px;
             padding: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #E8E4DF;
         }
         .about h2 {
             margin-top: 0;
-            color: #2c3e50;
+            color: #3D352F;
         }
 {% endblock %}
 
