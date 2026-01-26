@@ -3,86 +3,286 @@
 {% block title %}Enciclopédia Bororo{% endblock %}
 
 {% block extra_styles %}
-.entry-content {
-    margin: 0.75rem 0;
-    line-height: 1.7;
-    color: #444;
+/* Entry card - collapsed state */
+.entry {
+    cursor: pointer;
+    transition: background 0.2s;
 }
-.entry-content em {
-    font-style: italic;
+.entry.expanded {
+    cursor: default;
+    background: white;
 }
+.entry-collapse-hint {
+    display: none;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.entry.expanded .entry-collapse-hint {
+    display: block;
+}
+
+/* Entry header with expand indicator */
+.entry-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+.entry-expand-icon {
+    font-size: 0.8rem;
+    color: #888;
+    transition: transform 0.2s;
+    margin-left: auto;
+}
+.entry.expanded .entry-expand-icon {
+    transform: rotate(180deg);
+}
+
+/* Summary styling */
 .entry-summary {
-    margin: 0.5rem 0;
     color: #555;
     font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
 }
+
+/* Expandable content area */
+.entry-full-content {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+.entry.expanded .entry-full-content {
+    display: block;
+}
+
+/* Wikipedia-style infobox */
+.infobox {
+    float: right;
+    clear: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+    border: 1px solid #C8B8A8;
+    background: #FAF8F5;
+    font-size: 0.88rem;
+    border-collapse: collapse;
+}
+.infobox-header {
+    background: #E8DFD5;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+    color: #3D352F;
+    text-align: center;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image {
+    text-align: center;
+    padding: 0.75rem;
+    background: white;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.infobox-image-credit {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.35rem;
+}
+.infobox-row {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #E8E4DF;
+}
+.infobox-row:last-child {
+    border-bottom: none;
+}
+.infobox-label {
+    font-weight: 500;
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.infobox-value {
+    color: #333;
+}
+.infobox-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+.infobox-keyword {
+    font-size: 0.75rem;
+    background: #E8E4DF;
+    color: #555;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+}
+.infobox-link a {
+    color: #C75B39;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.infobox-link a:hover {
+    text-decoration: underline;
+}
+
+/* Table of Contents */
+.toc {
+    display: inline-block;
+    background: #FAF8F5;
+    border: 1px solid #C8B8A8;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+.toc-title {
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toc-list li {
+    padding: 0.2rem 0;
+}
+.toc-list a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.toc-list a:hover {
+    text-decoration: underline;
+}
+.toc-h4 {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+}
+
+/* Article content typography */
+.article-content {
+    line-height: 1.7;
+    color: #333;
+}
+.article-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.article-content h3 {
+    font-size: 1.3rem;
+    color: #3D352F;
+    margin: 1.5rem 0 0.75rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #C8B8A8;
+    font-weight: 600;
+}
+.article-content h3:first-child {
+    margin-top: 0;
+}
+.article-content h4 {
+    font-size: 1.1rem;
+    color: #3D352F;
+    margin: 1.25rem 0 0.5rem 0;
+    font-weight: 600;
+}
+.article-content p {
+    margin: 0.75rem 0;
+    text-align: justify;
+}
+.article-content ul, .article-content ol {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+.article-content li {
+    margin: 0.35rem 0;
+}
+.article-content em {
+    font-style: italic;
+}
+.article-content strong {
+    font-weight: 600;
+    color: #2D2520;
+}
+.article-content hr {
+    border: none;
+    border-top: 1px solid #E8E4DF;
+    margin: 1.25rem 0;
+}
+
+/* Example quote blocks */
+.examples-section {
+    margin-top: 1.25rem;
+}
+.examples-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.example-block {
+    background: linear-gradient(to right, #F5F0EB, #FAF8F5);
+    border-left: 4px solid #C75B39;
+    padding: 0.9rem 1rem;
+    margin: 0.6rem 0;
+    border-radius: 0 4px 4px 0;
+}
+.example-bororo {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #3D352F;
+    margin-bottom: 0.4rem;
+    font-style: italic;
+}
+.example-translation {
+    font-size: 0.92rem;
+    color: #666;
+    padding-left: 0.5rem;
+    border-left: 2px solid #DDD;
+    margin-left: 0.25rem;
+}
+
+/* Variants display */
 .entry-variants {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 0.5rem;
 }
-.entry-variants span {
+.variant-tag {
     background: #E8E4DF;
-    padding: 0.1rem 0.4rem;
+    padding: 0.1rem 0.5rem;
     border-radius: 3px;
-    margin-right: 0.25rem;
-}
-.entry-examples {
-    margin-top: 0.75rem;
-}
-.entry-example-item {
-    margin: 0.5rem 0;
-    padding-left: 1rem;
-    border-left: 3px solid #C75B39;
-}
-.entry-example-bororo {
-    font-weight: 500;
-    color: #3D352F;
-}
-.entry-example-translation {
+    margin-right: 0.3rem;
     font-style: italic;
-    color: #666;
-    font-size: 0.9rem;
 }
-.entry-images {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-top: 0.75rem;
-}
-.entry-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.entry-image-credit {
-    font-size: 0.75rem;
-    color: #888;
-    margin-top: 0.25rem;
-}
-.entry-url {
-    margin-top: 0.5rem;
-}
-.entry-url a {
-    font-size: 0.85rem;
-    color: #C75B39;
-    text-decoration: none;
-}
-.entry-url a:hover {
-    text-decoration: underline;
-}
-.keyword-tags {
-    display: flex;
-    gap: 0.25rem;
-    flex-wrap: wrap;
-    margin-top: 0.5rem;
-}
-.keyword-tag {
-    font-size: 0.7rem;
-    background: #E8E4DF;
-    color: #666;
-    padding: 0.1rem 0.4rem;
-    border-radius: 3px;
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .infobox {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    .article-content h3 {
+        font-size: 1.15rem;
+    }
+    .article-content h4 {
+        font-size: 1rem;
+    }
+    .article-content p {
+        text-align: left;
+    }
 }
 {% endblock %}
 
@@ -166,7 +366,6 @@
 
         let result = '';
         let lastIndex = 0;
-
         const sortedIndices = indices.sort((a, b) => a[0] - b[0]);
 
         for (const [start, end] of sortedIndices) {
@@ -175,12 +374,139 @@
             lastIndex = end + 1;
         }
         result += escapeHtml(text.slice(lastIndex));
-
         return result;
+    }
+
+    function generateTOC(content, entryId) {
+        // Extract h3 and h4 headings from content
+        const headingRegex = /<h([34])[^>]*>([^<]+)<\/h\1>/gi;
+        const headings = [];
+        let match;
+        let index = 0;
+
+        while ((match = headingRegex.exec(content)) !== null) {
+            headings.push({
+                level: match[1],
+                text: match[2].trim(),
+                id: `${entryId}-section-${index}`
+            });
+            index++;
+        }
+
+        if (headings.length < 2) return { toc: '', content: content };
+
+        // Build TOC HTML
+        let tocHtml = '<div class="toc"><div class="toc-title">Conteúdo</div><ul class="toc-list">';
+        headings.forEach((h, i) => {
+            const className = h.level === '4' ? 'toc-h4' : '';
+            tocHtml += `<li class="${className}"><a href="#${h.id}">${i + 1}. ${escapeHtml(h.text)}</a></li>`;
+        });
+        tocHtml += '</ul></div>';
+
+        // Add IDs to headings in content
+        index = 0;
+        const modifiedContent = content.replace(headingRegex, (match, level, text) => {
+            const id = `${entryId}-section-${index}`;
+            index++;
+            return `<h${level} id="${id}">${text}</h${level}>`;
+        });
+
+        return { toc: tocHtml, content: modifiedContent };
+    }
+
+    function renderInfobox(entry) {
+        const hasImages = entry.images && entry.images.length > 0 && entry.images.some(img => img.url);
+        const hasKeywords = entry.keywords && entry.keywords.length > 0;
+        const hasUrl = entry.url;
+        const hasVariants = entry.variants && entry.variants.length > 0;
+
+        if (!hasImages && !hasKeywords && !hasUrl && !hasVariants) return '';
+
+        let html = '<div class="infobox">';
+        html += '<div class="infobox-header">' + escapeHtml(entry.headword) + '</div>';
+
+        // First image
+        if (hasImages) {
+            const img = entry.images.find(i => i.url);
+            if (img) {
+                html += '<div class="infobox-image">';
+                html += '<a href="' + escapeHtml(img.url) + '" target="_blank" rel="noopener">';
+                html += '<img src="' + escapeHtml(img.url) + '" alt="' + escapeHtml(img.alt || entry.headword) + '" loading="lazy" onerror="this.parentElement.parentElement.style.display=\'none\'">';
+                html += '</a>';
+                if (img.credit) {
+                    html += '<div class="infobox-image-credit">' + escapeHtml(img.credit) + '</div>';
+                }
+                html += '</div>';
+            }
+        }
+
+        // Variants
+        if (hasVariants) {
+            html += '<div class="infobox-row">';
+            html += '<div class="infobox-label">Variantes</div>';
+            html += '<div class="infobox-value">' + entry.variants.map(v => '<em>' + escapeHtml(v) + '</em>').join(', ') + '</div>';
+            html += '</div>';
+        }
+
+        // Keywords
+        if (hasKeywords) {
+            html += '<div class="infobox-row">';
+            html += '<div class="infobox-label">Categorias</div>';
+            html += '<div class="infobox-keywords">';
+            html += entry.keywords.map(kw => '<span class="infobox-keyword">' + escapeHtml(kw) + '</span>').join('');
+            html += '</div></div>';
+        }
+
+        // External URL
+        if (hasUrl) {
+            html += '<div class="infobox-row infobox-link">';
+            html += '<a href="' + escapeHtml(entry.url) + '" target="_blank" rel="noopener">Ver referência externa &rarr;</a>';
+            html += '</div>';
+        }
+
+        // Additional images
+        if (hasImages && entry.images.filter(i => i.url).length > 1) {
+            html += '<div class="infobox-row">';
+            html += '<div class="infobox-label">Mais imagens</div>';
+            html += '<div class="infobox-value">';
+            entry.images.slice(1).forEach(img => {
+                if (img.url) {
+                    html += '<a href="' + escapeHtml(img.url) + '" target="_blank" rel="noopener" style="display:inline-block;margin:2px">';
+                    html += '<img src="' + escapeHtml(img.url) + '" alt="' + escapeHtml(img.alt || '') + '" style="max-width:50px;max-height:40px;border-radius:2px" loading="lazy" onerror="this.parentElement.style.display=\'none\'">';
+                    html += '</a>';
+                }
+            });
+            html += '</div></div>';
+        }
+
+        html += '</div>';
+        return html;
+    }
+
+    function renderExamples(examples) {
+        if (!examples || examples.length === 0) return '';
+
+        let html = '<div class="examples-section">';
+        html += '<div class="examples-title">Exemplos</div>';
+
+        examples.forEach(ex => {
+            html += '<div class="example-block">';
+            if (ex.bororo) {
+                html += '<div class="example-bororo">"' + escapeHtml(ex.bororo) + '"</div>';
+            }
+            if (ex.translation) {
+                html += '<div class="example-translation">' + escapeHtml(ex.translation) + '</div>';
+            }
+            html += '</div>';
+        });
+
+        html += '</div>';
+        return html;
     }
 
     function renderEntry(item, matches = null) {
         const entry = item.item || item;
+        const entryId = entry.id || Math.random().toString(36).substr(2, 9);
 
         const matchMap = {};
         if (matches) {
@@ -189,74 +515,58 @@
             }
         }
 
-        let html = '<div class="entry">';
+        const hasContent = entry.content || (entry.examples && entry.examples.length > 0);
 
-        // Header: headword
+        let html = '<div class="entry" data-entry-id="' + escapeHtml(entryId) + '">';
+
+        // Header with expand indicator
         html += '<div class="entry-header">';
         html += '<span class="entry-word">' + highlightMatches(entry.headword, matchMap['headword']) + '</span>';
+        if (hasContent) {
+            html += '<span class="entry-expand-icon">&#9660;</span>';
+        }
         html += '</div>';
 
-        // Variants
-        if (entry.variants && entry.variants.length > 0) {
-            html += '<div class="entry-variants">Variantes: ';
-            html += entry.variants.map(v => '<span>' + escapeHtml(v) + '</span>').join(' ');
-            html += '</div>';
-        }
-
-        // Summary
+        // Summary (always visible)
         if (entry.summary) {
             html += '<p class="entry-summary">' + highlightMatches(entry.summary, matchMap['summary']) + '</p>';
         }
 
-        // Content (preserve HTML)
-        if (entry.content) {
-            html += '<div class="entry-content">' + entry.content + '</div>';
-        }
+        // Expandable full content
+        if (hasContent) {
+            html += '<div class="entry-full-content">';
 
-        // Examples
-        if (entry.examples && entry.examples.length > 0) {
-            html += '<div class="entry-examples">';
-            for (const ex of entry.examples) {
-                html += '<div class="entry-example-item">';
-                if (ex.bororo) {
-                    html += '<div class="entry-example-bororo">' + escapeHtml(ex.bororo) + '</div>';
-                }
-                if (ex.translation) {
-                    html += '<div class="entry-example-translation">' + escapeHtml(ex.translation) + '</div>';
-                }
+            // Infobox (floats right)
+            html += renderInfobox(entry);
+
+            // Article content with TOC
+            if (entry.content) {
+                const { toc, content } = generateTOC(entry.content, entryId);
+                html += '<div class="article-content">';
+                html += toc;
+                html += content;
                 html += '</div>';
             }
-            html += '</div>';
-        }
 
-        // Keywords
-        if (entry.keywords && entry.keywords.length > 0) {
-            html += '<div class="keyword-tags">';
-            html += entry.keywords.map(kw => '<span class="keyword-tag">' + escapeHtml(kw) + '</span>').join('');
-            html += '</div>';
-        }
+            // Examples
+            html += renderExamples(entry.examples);
 
-        // Images
-        if (entry.images && entry.images.length > 0) {
-            html += '<div class="entry-images">';
-            for (const img of entry.images) {
-                if (img.url) {
-                    html += '<div class="entry-image-container">';
-                    html += '<a href="' + escapeHtml(img.url) + '" target="_blank" rel="noopener">';
-                    html += '<img class="entry-thumbnail" src="' + escapeHtml(img.url) + '" alt="' + escapeHtml(img.alt || entry.headword) + '" loading="lazy" onerror="this.parentElement.parentElement.style.display=\'none\'">';
-                    html += '</a>';
-                    if (img.credit) {
-                        html += '<span class="entry-image-credit">' + escapeHtml(img.credit) + '</span>';
-                    }
-                    html += '</div>';
-                }
+            // Clear floats
+            html += '<div style="clear:both"></div>';
+
+            // Collapse hint
+            html += '<div class="entry-collapse-hint">Clique para recolher</div>';
+
+            html += '</div>'; // end entry-full-content
+        } else {
+            // For entries without content, show infobox inline if it has metadata
+            const infobox = renderInfobox(entry);
+            if (infobox) {
+                html += '<div class="entry-full-content" style="display:block">';
+                html += infobox;
+                html += '<div style="clear:both"></div>';
+                html += '</div>';
             }
-            html += '</div>';
-        }
-
-        // External URL
-        if (entry.url) {
-            html += '<div class="entry-url"><a href="' + escapeHtml(entry.url) + '" target="_blank" rel="noopener">Ver mais &rarr;</a></div>';
         }
 
         html += '</div>';
@@ -315,7 +625,26 @@
             }
 
             resultsContainer.innerHTML = html;
+            attachEntryListeners();
         }
+    }
+
+    function attachEntryListeners() {
+        document.querySelectorAll('.entry').forEach(entry => {
+            entry.addEventListener('click', function(e) {
+                // Don't toggle if clicking on a link
+                if (e.target.tagName === 'A' || e.target.closest('a')) return;
+
+                // Don't toggle if clicking inside expanded content (except collapse hint)
+                if (this.classList.contains('expanded') &&
+                    e.target.closest('.entry-full-content') &&
+                    !e.target.closest('.entry-collapse-hint')) {
+                    return;
+                }
+
+                this.classList.toggle('expanded');
+            });
+        });
     }
 
     // Debounce helper
