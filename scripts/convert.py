@@ -76,7 +76,52 @@ def convert_fauna():
     return len(records)
 
 
-def generate_index(dictionary_count: int, fauna_count: int):
+def convert_encyclopedia():
+    """Convert encyclopedia JSON to kodudo-compatible format."""
+    print("=== Converting Encyclopedia ===")
+
+    input_file = DATA_DIR / "encyclopedia.json"
+    with open(input_file, "r", encoding="utf-8") as f:
+        raw_data = json.load(f)
+
+    entries = raw_data.get("entries", [])
+    print(f"  Processing {len(entries)} entries...")
+
+    # Validate required fields
+    errors = []
+    for i, entry in enumerate(entries):
+        if not entry.get("id"):
+            errors.append(f"Entry {i}: missing 'id'")
+        if not entry.get("headword"):
+            errors.append(f"Entry {i}: missing 'headword'")
+
+    if errors:
+        print(f"  Validation errors: {len(errors)}")
+        for error in errors[:10]:
+            print(f"    {error}")
+        if len(errors) > 10:
+            print(f"    ... and {len(errors) - 10} more errors")
+        raise ValueError("Encyclopedia validation failed")
+
+    # Output in kodudo-compatible format (with meta)
+    output_data = {
+        "meta": {
+            "name": "bororo_encyclopedia",
+            "description": "Bororo Encyclopedia Entries",
+            "version": "1.0",
+            "record_count": len(entries)
+        },
+        "data": entries
+    }
+
+    output_file = DATA_DIR / "encyclopedia_output.json"
+    output_file.write_text(json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    print(f"  Exported {len(entries)} entries to {output_file}")
+    return len(entries)
+
+
+def generate_index(dictionary_count: int, fauna_count: int, encyclopedia_count: int):
     """Generate index JSON with platform counts."""
     print("=== Generating Index Data ===")
 
@@ -87,7 +132,8 @@ def generate_index(dictionary_count: int, fauna_count: int):
         "data": [
             {
                 "dictionary_count": dictionary_count,
-                "fauna_count": fauna_count
+                "fauna_count": fauna_count,
+                "encyclopedia_count": encyclopedia_count
             }
         ]
     }
@@ -108,7 +154,10 @@ def main():
     fauna_count = convert_fauna()
     print()
 
-    generate_index(dictionary_count, fauna_count)
+    encyclopedia_count = convert_encyclopedia()
+    print()
+
+    generate_index(dictionary_count, fauna_count, encyclopedia_count)
     print()
 
     print("=== Conversion Complete ===")

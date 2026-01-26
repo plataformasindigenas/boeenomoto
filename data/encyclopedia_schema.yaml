@@ -1,0 +1,16 @@
+name: bororo_encyclopedia
+description: Bororo Encyclopedia Entries
+version: "1.0"
+primary_key: id
+
+fields:
+  id: str
+  headword: str
+  variants: list?
+  summary: str?
+  keywords: list?
+  updated_at: str?
+  url: str?
+  images: list?
+  content: str?
+  examples: list?

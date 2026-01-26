@@ -1,0 +1,337 @@
+{% extends "base.html.j2" %}
+
+{% block title %}Enciclopédia Bororo{% endblock %}
+
+{% block extra_styles %}
+.entry-content {
+    margin: 0.75rem 0;
+    line-height: 1.7;
+    color: #444;
+}
+.entry-content em {
+    font-style: italic;
+}
+.entry-summary {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+.entry-variants {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.entry-variants span {
+    background: #E8E4DF;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    margin-right: 0.25rem;
+}
+.entry-examples {
+    margin-top: 0.75rem;
+}
+.entry-example-item {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #C75B39;
+}
+.entry-example-bororo {
+    font-weight: 500;
+    color: #3D352F;
+}
+.entry-example-translation {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+.entry-images {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+}
+.entry-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entry-image-credit {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.25rem;
+}
+.entry-url {
+    margin-top: 0.5rem;
+}
+.entry-url a {
+    font-size: 0.85rem;
+    color: #C75B39;
+    text-decoration: none;
+}
+.entry-url a:hover {
+    text-decoration: underline;
+}
+.keyword-tags {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.keyword-tag {
+    font-size: 0.7rem;
+    background: #E8E4DF;
+    color: #666;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+}
+{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Enciclopédia Bororo</h1>
+        <p class="subtitle">{{ meta.description }} &mdash; {{ data | length }} verbetes</p>
+    </header>
+
+    <div class="search-container">
+        <div class="search-row">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar na enciclopédia..." autocomplete="off">
+            <select id="keyword-filter" class="filter-select">
+                <option value="">Todas as categorias</option>
+                <option value="__uncategorized__">Sem categoria</option>
+                {% set keywords = [] %}
+                {% for item in data %}
+                    {% if item.keywords %}
+                        {% for kw in item.keywords %}
+                            {% if kw not in keywords %}
+                                {% set _ = keywords.append(kw) %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                {% for kw in keywords | sort %}
+                <option value="{{ kw }}">{{ kw }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="results-container" id="results">
+        <div class="empty-state">
+            <h2>Pesquise na enciclopédia</h2>
+            <p>Digite um termo para começar</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <!-- Fuse.js for fuzzy search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <script>
+    // Encyclopedia data embedded at build time
+    const encyclopediaData = {{ data | tojson }};
+
+    // Initialize Fuse.js with fuzzy search configuration
+    const fuse = new Fuse(encyclopediaData, {
+        keys: [
+            { name: 'headword', weight: 2 },
+            { name: 'summary', weight: 1.5 },
+            { name: 'content', weight: 1 },
+            { name: 'keywords', weight: 1 },
+            { name: 'variants', weight: 0.5 }
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        includeMatches: true,
+        minMatchCharLength: 2
+    });
+
+    const searchInput = document.getElementById('search-input');
+    const keywordFilter = document.getElementById('keyword-filter');
+    const resultsContainer = document.getElementById('results');
+    const statsDiv = document.getElementById('stats');
+
+    let currentResults = [];
+
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function highlightMatches(text, indices) {
+        if (!text || !indices || indices.length === 0) return escapeHtml(text);
+
+        let result = '';
+        let lastIndex = 0;
+
+        const sortedIndices = indices.sort((a, b) => a[0] - b[0]);
+
+        for (const [start, end] of sortedIndices) {
+            result += escapeHtml(text.slice(lastIndex, start));
+            result += '<span class="highlight">' + escapeHtml(text.slice(start, end + 1)) + '</span>';
+            lastIndex = end + 1;
+        }
+        result += escapeHtml(text.slice(lastIndex));
+
+        return result;
+    }
+
+    function renderEntry(item, matches = null) {
+        const entry = item.item || item;
+
+        const matchMap = {};
+        if (matches) {
+            for (const match of matches) {
+                matchMap[match.key] = match.indices;
+            }
+        }
+
+        let html = '<div class="entry">';
+
+        // Header: headword
+        html += '<div class="entry-header">';
+        html += '<span class="entry-word">' + highlightMatches(entry.headword, matchMap['headword']) + '</span>';
+        html += '</div>';
+
+        // Variants
+        if (entry.variants && entry.variants.length > 0) {
+            html += '<div class="entry-variants">Variantes: ';
+            html += entry.variants.map(v => '<span>' + escapeHtml(v) + '</span>').join(' ');
+            html += '</div>';
+        }
+
+        // Summary
+        if (entry.summary) {
+            html += '<p class="entry-summary">' + highlightMatches(entry.summary, matchMap['summary']) + '</p>';
+        }
+
+        // Content (preserve HTML)
+        if (entry.content) {
+            html += '<div class="entry-content">' + entry.content + '</div>';
+        }
+
+        // Examples
+        if (entry.examples && entry.examples.length > 0) {
+            html += '<div class="entry-examples">';
+            for (const ex of entry.examples) {
+                html += '<div class="entry-example-item">';
+                if (ex.bororo) {
+                    html += '<div class="entry-example-bororo">' + escapeHtml(ex.bororo) + '</div>';
+                }
+                if (ex.translation) {
+                    html += '<div class="entry-example-translation">' + escapeHtml(ex.translation) + '</div>';
+                }
+                html += '</div>';
+            }
+            html += '</div>';
+        }
+
+        // Keywords
+        if (entry.keywords && entry.keywords.length > 0) {
+            html += '<div class="keyword-tags">';
+            html += entry.keywords.map(kw => '<span class="keyword-tag">' + escapeHtml(kw) + '</span>').join('');
+            html += '</div>';
+        }
+
+        // Images
+        if (entry.images && entry.images.length > 0) {
+            html += '<div class="entry-images">';
+            for (const img of entry.images) {
+                if (img.url) {
+                    html += '<div class="entry-image-container">';
+                    html += '<a href="' + escapeHtml(img.url) + '" target="_blank" rel="noopener">';
+                    html += '<img class="entry-thumbnail" src="' + escapeHtml(img.url) + '" alt="' + escapeHtml(img.alt || entry.headword) + '" loading="lazy" onerror="this.parentElement.parentElement.style.display=\'none\'">';
+                    html += '</a>';
+                    if (img.credit) {
+                        html += '<span class="entry-image-credit">' + escapeHtml(img.credit) + '</span>';
+                    }
+                    html += '</div>';
+                }
+            }
+            html += '</div>';
+        }
+
+        // External URL
+        if (entry.url) {
+            html += '<div class="entry-url"><a href="' + escapeHtml(entry.url) + '" target="_blank" rel="noopener">Ver mais &rarr;</a></div>';
+        }
+
+        html += '</div>';
+        return html;
+    }
+
+    function hasKeyword(entry, keyword) {
+        if (keyword === '__uncategorized__') {
+            return !entry.keywords || entry.keywords.length === 0;
+        }
+        return entry.keywords && entry.keywords.includes(keyword);
+    }
+
+    function search() {
+        const query = searchInput.value.trim();
+        const selectedKeyword = keywordFilter.value;
+
+        if (query.length < 2) {
+            if (selectedKeyword) {
+                currentResults = encyclopediaData
+                    .filter(item => hasKeyword(item, selectedKeyword))
+                    .map(item => ({ item }));
+            } else {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <h2>Pesquise na enciclopédia</h2>
+                        <p>Digite um termo para começar</p>
+                    </div>
+                `;
+                statsDiv.textContent = '';
+                return;
+            }
+        } else {
+            currentResults = fuse.search(query);
+
+            if (selectedKeyword) {
+                currentResults = currentResults.filter(result => hasKeyword(result.item, selectedKeyword));
+            }
+        }
+
+        statsDiv.textContent = `${currentResults.length} verbete${currentResults.length !== 1 ? 's' : ''} encontrado${currentResults.length !== 1 ? 's' : ''}`;
+
+        if (currentResults.length === 0) {
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Nenhum resultado</h2>
+                    <p>Tente um termo diferente ou altere o filtro</p>
+                </div>
+            `;
+        } else {
+            const displayResults = currentResults.slice(0, 100);
+            let html = displayResults.map(result => renderEntry(result, result.matches)).join('');
+
+            if (currentResults.length > 100) {
+                html += `<div class="empty-state"><p>Mostrando 100 de ${currentResults.length} resultados. Refine sua busca.</p></div>`;
+            }
+
+            resultsContainer.innerHTML = html;
+        }
+    }
+
+    // Debounce helper
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
+    // Event listeners
+    searchInput.addEventListener('input', debounce(search, 200));
+    keywordFilter.addEventListener('change', search);
+
+    // Focus search on load
+    searchInput.focus();
+    </script>
+{% endblock %}

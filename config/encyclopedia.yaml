@@ -1,0 +1,10 @@
+input: ../data/encyclopedia_output.json
+template: templates/encyclopedia.html.j2
+output: ../docs/encyclopedia.html
+
+template_dirs:
+  - templates
+
+context:
+  title: "Enciclopédia Bororo"
+  page: "encyclopedia"
