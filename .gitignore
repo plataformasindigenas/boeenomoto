@@ -38,11 +38,5 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Generated JSON files (built by convert.py)
-data/*.json
-
-# Generated HTML files (built by kodudo)
-docs/*.html
-
 # Keep the docs directory
 !docs/.gitkeep

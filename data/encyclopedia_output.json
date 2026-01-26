@@ -1,0 +1,2440 @@
+{
+  "meta": {
+    "name": "bororo_encyclopedia",
+    "description": "Bororo Encyclopedia Entries",
+    "version": "1.0",
+    "record_count": 163
+  },
+  "data": [
+    {
+      "id": "mori",
+      "headword": "Mori",
+      "variants": [],
+      "summary": "Vingança, reompensa. \nConceito central na vida social e ritual bororo, abrangendo vingança, recompensa, retribuição social, compensação de danos e obrigação ritual.",
+      "keywords": [
+        "vingança",
+        "retribuição",
+        "ritual",
+        "obrigação social",
+        "urucum",
+        "onça",
+        "morte",
+        "funeral"
+      ],
+      "updated_at": "2026-01-07",
+      "url": "",
+      "content": "<p>O termo <em>mori</em> é um conceito central na organização social, moral e ritual dos Bororo. Trata-se de uma noção polissêmica que abrange ideias de vingança, retribuição, recompensa, compensação de danos, presente ritual e obrigação social, variando conforme o contexto em que é empregado.</p>\n\n<h3>1. Mori: vingança</h3>\n\n<p>Na acepção mais direta, mori significa vingança, no sentido claro de retaliar ou compensar uma ofensa grave. Exemplo: kajáo, mori mode — \"espere, eu me vingarei\".</p>\n\n<h3>2. Mori: recompensa e retribuição social</h3>\n\n<p>A recompensa ou retribuição por um favor, ajuda ou objeto recebido é uma obrigação profundamente enraizada na tradição bororo. Trata-se de uma norma social incontornável: ninguém pode, nem deve, deixar de retribuir. Quem se esquece — voluntária ou involuntariamente — torna-se alvo de escárnio e desprezo coletivo.</p>\n\n<p>A pessoa que recebe um favor deve, inevitavelmente, oferecer um mori, geralmente escolhido por iniciativa própria ou determinado por convenções tradicionais. Nessa acepção ampliada, mori pode corresponder a presente, dádiva, compensação por danos causados, agrado ou mimo ritual. Se um cão morde alguém, o ferido não deve reagir com hostilidade, mas aguarda o mori por parte do dono do animal.</p>\n\n<p>Esse mori consiste, em geral, numa espalmação de pasta vermelha de urucum. Caso a retribuição demore, o ferido se considera ofendido e o proprietário do cão deixa de cumprir uma de suas obrigações sociais. Quando duas crianças brigam e uma sai prejudicada, o pai da criança agressora deve realizar o mori, espalhando pasta de urucum sobre a criança ofendida.</p>\n\n<p>Se uma criança se machuca ao tropeçar em um objeto, a mãe, outra pessoa ou a própria criança executa o mori, batendo simbolicamente no objeto causador do ferimento. Quem perde ou danifica um objeto alheio deve compensar o prejuízo oferecendo um mori ao proprietário. Quando alguém se fere gravemente — por exemplo, ao cair de uma árvore ou ser picado por uma cobra — os parentes realizam o mori, tingindo o ferido com urucum e adornando-o com plumas.</p>\n\n<p>Em caçadas ou pescarias oficiais que envolvem um fágù, representante ritual de um defunto, se esse representante se machuca, os parentes do falecido devem chorar, escarificar-se e deixar cair sangue sobre ele. Após a recuperação, o ferido deve retribuir esse mori com outro mori, espalhando urucum sobre todos que participaram do luto ritual. Quando alguém retorna à aldeia após longa ausência, sem que se soubesse se estava vivo ou morto, entoa-se imediatamente o canto Roia Kurirewu, reservado aos defuntos.</p>\n\n<p>No dia seguinte, o recém-chegado recebe um mori, sendo untado com pasta vermelha de urucum. Por delicadeza e elegância, quem oferece um presente frequentemente minimiza o valor do objeto e tenta dissuadir o outro da obrigação de retribuir. Essa atitude, porém, é apenas uma fórmula de cortesia: ninguém a leva ao pé da letra, e a retribuição sempre ocorre.</p>\n\n<p>Essas normas não se aplicam da mesma forma às relações entre Bororo e não indígenas. O Bororo não se sente obrigado a retribuir presentes recebidos de brancos, mas espera destes compensações generosas, justificando tal expectativa pela abundância de bens que os não indígenas possuem. Idosos e doentes graves são dispensados da obrigação do mori, embora expressem gratidão apertando com força a mão do doador e o objeto recebido.</p>\n\n<h3>3. Mori: vingança ritual pela morte</h3>\n\n<p>Quando um Bororo morre, é escolhido um representante ritual do falecido, chamado aroe maiwu (\"alma nova\") ou iadu (\"companheiro\"). Sua principal obrigação é vingar a morte do representado. Essa vingança consiste em abater uma onça, cujo couro será entregue a um parente do defunto.</p>\n\n<p>A onça morta recebe o nome de mori, pois representa simultaneamente vingança e retribuição. Esse ato está ligado ao ritual denominado barege ekedodu, o \"banquete das feras\". Os Bororo acreditam que a morte é causada por um bope, espírito maléfico, e que a onça é, ela própria, um bope.</p>\n\n<p>Assim, ao matar o felídeo, elimina-se um espírito causador de morte, realizando-se uma vingança de ordem social, ritual e cosmológica.</p>",
+      "examples": [],
+      "images": []
+    },
+    {
+      "id": "maekodudo_1",
+      "headword": "Maekodudo",
+      "variants": [],
+      "summary": "Fazer com continuidade, entristecer, arrepender-se.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [
+        {
+          "bororo": "imode kadobora maegodudo, icare inaguge erekodumodukare pugeje",
+          "translation": "farei uma cerca fechada de taquaras, assim minhas criações não fugirão mais"
+        },
+        {
+          "bororo": "ire imaegodudo imuga okware kodi",
+          "translation": "fiquei triste com a morte de minha mãe"
+        }
+      ],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "ma_1",
+      "headword": "Ma",
+      "variants": [
+        "ba"
+      ],
+      "summary": "Folíolo de palmeira.",
+      "keywords": [
+        "botânica",
+        "artesanato"
+      ],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "ba-1",
+      "headword": "ba",
+      "variants": [],
+      "summary": "aldeia; povoado bororo e sua disposição tradicional (casa central e casas na circunferência).",
+      "keywords": [
+        "aldeia",
+        "bái",
+        "éua",
+        "casa central",
+        "bái-mánna-gueggéu",
+        "praça",
+        "metades",
+        "Tugarege",
+        "Ecerae"
+      ],
+      "updated_at": "2026-01-07",
+      "url": "",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Plan_de_Kejara.png/500px-Plan_de_Kejara.png",
+          "alt": "planta da aldeia Kejari",
+          "credit": "Lévi-Strauss (planta/diagrama)"
+        },
+        {
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbL7kj1DeYnBJNF4wh2shN-UhvF0HdPCWptQ&s",
+          "alt": "Aldeia Garças (TI Meruri na década de 80 (imagem ilustrativa)",
+          "credit": "Fonte/Autor"
+        }
+      ],
+      "examples": [],
+      "content": "<h3>Ba: aldeia e organização espacial bororo</h3>\n\n<p>Em muitos textos etnográficos sobre os Bororo, a descrição da <strong>aldeia</strong> não é apenas uma questão de arquitetura: ela está profundamente ligada à organização social em <strong>metades</strong> e à subdivisão em clãs/famílias. Por isso, falar da aldeia implica falar também de como as pessoas se distribuem, se reconhecem e se orientam no espaço comunitário.</p>\n\n<hr>\n\n<h4>1) Onde se constrói uma aldeia</h4>\n<p>Tradicionalmente, a aldeia é levantada em área relativamente aberta (vegetação baixa e rala), próxima de água, evitando o interior fechado da floresta, exceto em ocupações curtas (por exemplo, para expedições de caça e pesca). Um ponto importante destacado pelos etnógrafos é que, mesmo em paradas de apenas uma noite, tenta-se manter a <em>ordem</em> de disposição das casas semelhante à de uma aldeia regular.</p>\n\n<hr>\n\n<h4>2) Centro da aldeia: a casa central (casa dos homens)</h4>\n<p>O primeiro passo é definir a posição da <strong>casa central</strong>, descrita como o centro de uma área ampla e mais ou menos circular. Essa casa é frequentemente apresentada como a maior construção, de formato retangular, com dimensões ajustadas à quantidade de homens da comunidade. Ela é um espaço social e ritual: ali os homens passam grande parte do dia (quando não estão em caça/pesca), produzem artefatos, conversam e descansam; jovens não casados podem dormir ali. O texto descreve ainda restrições de acesso para mulheres em circunstâncias consideradas impróprias, ligadas a normas rituais.</p>\n\n<p>O interior é pensado de acordo com as <strong>metades</strong>: uma porção corresponde aos <strong>Tugarege</strong> e a outra aos <strong>Ecerae</strong>. O centro pode ter áreas reservadas às lideranças e pessoas de grande prestígio.</p>\n\n<hr>\n\n<h4>3) Casas na circunferência: cabanas e ocupação tradicional</h4>\n<p>Ao redor da casa central, na circunferência, constroem-se as demais casas/cabanas. A descrição etnográfica enfatiza que a ocupação interna de uma casa não corresponde a uma “família nuclear” no sentido ocidental (pai+mãe+filhos). Em termos bororo, a casa tende a ser relacionada à esfera da mulher e de seus filhos (matrilinearidade), enquanto o homem permanece ligado ao seu próprio clã e metade, sendo a relação conjugal atravessada por essa observação estrutural.</p>\n\n<p>O texto descreve também aspectos do cotidiano material: fogueiras (muitas vezes, uma por grupo/domínio doméstico), recipientes de cerâmica, plataformas/jiraus para defumar e guardar objetos, espaços de dormir, e a presença de animais domésticos e utensílios, compondo um retrato de vida cotidiana.</p>\n\n<hr>\n\n<h4>4) Orientação e divisões internas (leste/oeste)</h4>\n<p>Um ponto analítico importante na descrição é que certas designações internas das casas se organizam em relação ao <strong>leste</strong> e ao <strong>oeste</strong> (por exemplo: ocupantes do lado leste vs. do lado oeste). O autor discute inclusive diferenças entre diagramas publicados por diversos pesquisadores e sugere que parte das aparentes discrepâncias se deve à complexidade das subdivisões internas e à multiplicidade de termos e nomes usados para grupos e subgrupos.</p>\n\n<hr>\n\n<h4>5) Termos correlatos (para navegar na Enciclopédia)</h4>\n<ul>\n  <li><strong>bai</strong>: casa/cabana (em alguns contextos, aparece como forma relacionada à noção de habitação)</li>\n <li><strong>bai mana gejewu</strong>: casa central, ligada à praça</li>\n  <li><strong>Tugarege</strong> e <strong>Ecerae</strong>: metades que atravessam a organização do espaço</li>\n</ul>\n\n<hr>\n\n<h4>Fonte usada para esta entrada</h4>\n<p>Esta entrada foi elaborada a partir de: <em>A aldeia bororo</em> (tradução/nota de um texto de Cesare Albisetti com apresentação e aparato explicativo), onde a aldeia é descrita em relação à organização social e à disposição espacial das casas e da casa central.</p>\n"
+    },
+    {
+      "id": "ba_2",
+      "headword": "Ba",
+      "variants": [
+        ""
+      ],
+      "summary": "1) folíolo ou semifolíolo do broto de babaçu; 2) estojo peniano quotidiano (indumentária indispensável do homem bororo após a iniciação); 3) certo tipo de boe etao kajejewu (‘coroa dos bororo’); 4) casa; 5) aldeia.",
+      "keywords": [
+        "vestimenta",
+        "estojo peniano",
+        "babaçu",
+        "palmeira",
+        "indumentária",
+        "clã",
+        "Aroroe",
+        "Ecerae",
+        "Tugarege",
+        "casa",
+        "aldeia"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "examples": [
+        {
+          "bororo": "<em>ino o ba</em>",
+          "translation": "meu estojo peniano"
+        }
+      ],
+      "content": "<p><em>boe</em> 'coisa’ + <em>a</em> (<em>ai</em>) 'folha de palmeira’.\n\nDesignações:\n1) um folíolo ou semifolíolo de broto de babaçu;\n2) estojo peniano quotidiano;\n3) certo tipo de boe etao kajejewu (‘coroa dos bororo’);\n4) casa;\n5) aldeia.</p>\n\n<h3>1. Noções sobre o ba (estojo quotidiano) e seu uso</h3>\n\n<p>O homem bororo tem, como única e indispensável indumentária, uma espécie de cartucho feito com um semifolíolo de broto de palmeira babaçu, dobrado em nó sobre si mesmo. Depois de iniciado, o homem nunca aparece em público sem o bá. Ele é amarrado firmemente na extremidade do pênis para manter o prepúcio sobre a glande, de tal modo que o prepúcio sobressai do bá e fica como que por ele fortemente estrangulado.</p>\n\n<p>Observação etnobotânica (babaçu):\nBabaçus na margem direita do rio Taquari, perto da cidade de Coxim. Seus palmitos e cocos são usados na alimentação e seus brotos na confecção de trabalhos de cestaria. Suas folhas são empregadas na construção das choupanas.</p>\n\n<h3>2. Estojo peniano festivo</h3>\n\n<p>O estojo peniano chamado aqui de “festivo” é o mesmo cartucho, mas com o folíolo prolongado em forma de fita, que termina em “cauda de andorinha” ou em ponta mais ou menos aguda. É conhecido comumente como baera (‘borboleta’), embora o nome considerado correto seja baerarewu (‘objeto semelhante à borboleta’). Às vezes, especialmente durante as festas, pode ser ornamentado com pinturas, penugem e desenhos geométricos, ou mesmo com figuras de animais.</p>\n\n<p>Esse é descrito como o único objeto dos bororo que leva motivos faunianos. Para a imposição do bá aos adolescentes: ver ipáre eno o badodu (‘imposição do estojo peniano aos moços’) e báera (‘estojo peniano festivo’).</p>\n\n<h3>3. Observações</h3>\n\n<p>Antigamente, o bá era privativo do clã dos Aroroe; posteriormente, esses o cederam também aos membros dos outros clãs. Os adolescentes da metade dos Ecerae podem, por direito, recebê-lo com menos idade do que os da metade dos Tugarege. Para indicar a posse do bá, diz-se: ino o ba (‘meu estojo peniano’).</p>",
+      "images": []
+    },
+    {
+      "id": "ba",
+      "headword": "Ba",
+      "variants": [],
+      "summary": "Forma polissêmica do bororo, com sentidos distintos ligados a folhas de palmeira, indumentária masculina, ornamentos rituais e espaço habitacional.",
+      "keywords": [
+        "polissemy",
+        "cultura material",
+        "vestimenta",
+        "habitação"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "content": "<p>O termo ba apresenta vários significados distintos em bororo, cobrindo domínios diferentes como botânica, indumentária masculina, ornamentos rituais e espaço habitacional. Para uma descrição adequada, ver as entradas específicas: Ba¹ (folíolo de palmeira), Ba² (estojo peniano quotidiano), Ba³ (estojo peniano festivo), Ba⁴ (coroa ritual), Ba⁵ (casa / aldeia).</p>",
+      "examples": [],
+      "images": []
+    },
+    {
+      "id": "ba_1_leaf",
+      "headword": "Ba",
+      "variants": [],
+      "summary": "Folíolo ou semifolíolo do broto de palmeira, especialmente do babaçu.",
+      "keywords": [
+        "palmeira",
+        "babaçu",
+        "botânica",
+        "cestaria",
+        "arquitetura tradicional"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "content": "<p>Ba designa o folíolo ou semifolíolo retirado do broto de palmeira, especialmente do babaçu. Esses folíolos são utilizados em diferentes atividades cotidianas dos Bororo, como a confecção de trabalhos de cestaria e a construção das choupanas. Os babaçus existentes na margem direita do rio Taquari, próximo à cidade de Coxim, fornecem palmitos e cocos utilizados na alimentação, enquanto seus brotos são empregados em artefatos e suas folhas na cobertura das habitações.</p>",
+      "examples": [],
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Attalea_speciosa_Itapecuru_2.JPG/982px-Attalea_speciosa_Itapecuru_2.JPG",
+          "alt": "",
+          "credit": ""
+        }
+      ]
+    },
+    {
+      "id": "ba_2_penile_sheath_daily",
+      "headword": "Ba",
+      "variants": [],
+      "summary": "Estojo peniano quotidiano, indumentária indispensável do homem bororo após a iniciação.",
+      "keywords": [
+        "corpo",
+        "vestimenta",
+        "masculinidade",
+        "iniciação",
+        "etnografia"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "content": "<p>O ba é a única e indispensável indumentária do homem bororo após a iniciação. Consiste em uma espécie de cartucho confeccionado com um semifolíolo do broto de palmeira babaçu, dobrado sobre si mesmo e preso em forma de nó. O homem nunca aparece em público sem o ba.</p>\n\n<p>Ele é amarrado firmemente na extremidade do pênis, mantendo o prepúcio sobre a glande, de modo que esta sobressai do estojo e permanece fortemente comprimida. Para indicar a posse do objeto, emprega-se a expressão ino o ba, ‘meu estojo peniano’. Antigamente, o uso do ba era privativo do clã dos Aroroe, que posteriormente o cedeu aos demais clãs.</p>",
+      "examples": [],
+      "images": [
+        {
+          "url": "https://www.geocities.ws/terrabrasileira/ornato/o-ornato/o-estoj2.jpg",
+          "alt": "",
+          "credit": ""
+        }
+      ]
+    },
+    {
+      "id": "ba_3_penile_sheath_festive",
+      "headword": "Baera / Baerarewu",
+      "variants": [
+        "baera"
+      ],
+      "summary": "Estojo peniano festivo, ornamentado, usado em cerimônias.",
+      "keywords": [
+        "ritual",
+        "arte corporal",
+        "festas",
+        "ornamentação"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "content": "<p>O estojo peniano festivo é uma variação do ba quotidiano, caracterizada pelo prolongamento do folíolo em forma de fita, que termina em cauda de andorinha ou em ponta mais ou menos aguda. É comumente chamado de baera (‘borboleta’), embora a denominação mais precisa seja baerarewu, ‘objeto semelhante à borboleta’. Durante festas e cerimônias, pode ser ornamentado com pinturas, penugem, desenhos geométricos e, ocasionalmente, figuras de animais.</p>\n\n<p>Trata-se do único objeto da cultura material bororo que apresenta motivos faunísticos. Está associado a rituais de passagem, como o ipáre eno o badodu, a imposição do estojo peniano aos adolescentes.</p>",
+      "examples": [],
+      "images": []
+    },
+    {
+      "id": "ba_4_crown",
+      "headword": "Ba",
+      "variants": [],
+      "summary": "Certo tipo de coroa ritual dos Bororo, confeccionada com materiais vegetais.",
+      "keywords": [
+        "ornamentos",
+        "ritual",
+        "coroa"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "content": "<p>Em um de seus usos, ba designa um certo tipo de boe etao kajejewu, isto é, uma coroa ritual bororo. Esse ornamento está associado a contextos cerimoniais específicos e é confeccionado com materiais vegetais, especialmente derivados de palmeiras.</p>",
+      "examples": [],
+      "images": []
+    },
+    {
+      "id": "ba_5_house_village",
+      "headword": "Ba",
+      "variants": [],
+      "summary": "Casa ou aldeia.",
+      "keywords": [
+        "habitação",
+        "aldeia",
+        "espaço social"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "content": "<p>Ba pode também designar a casa ou, por extensão, a aldeia. Esse uso refere-se ao espaço habitacional e social, distinguindo-se semanticamente dos sentidos ligados à indumentária masculina e aos artefatos rituais.</p>",
+      "examples": [],
+      "images": []
+    },
+    {
+      "id": "ma_3",
+      "headword": "Ma",
+      "variants": [],
+      "summary": "Se, quando, mas.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [
+        {
+          "bororo": "atumode ma, ikiarigodu mode",
+          "translation": "se fores embora ficarei triste"
+        },
+        {
+          "bororo": "ipare emerumode imi rema karega",
+          "translation": "os homens irão caçar, mas eu não"
+        },
+        {
+          "bororo": "apemega mode ma, pamerumode",
+          "translation": "quando sarares iremos caçar"
+        }
+      ],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "mace",
+      "headword": "mace",
+      "variants": [],
+      "summary": "Pernilongo.",
+      "keywords": [
+        "inseto",
+        "culicídeos"
+      ],
+      "updated_at": "2025-08-09",
+      "url": "https://pt.wikipedia.org/wiki/Culicídeos",
+      "examples": [],
+      "content": "",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mosquito_2007-2.jpg/960px-Mosquito_2007-2.jpg",
+          "alt": "Pernilongo (família Culicidae)",
+          "credit": "Wikimedia Commons"
+        }
+      ]
+    },
+    {
+      "id": "mace-eiao",
+      "headword": "Mace Eiao",
+      "variants": [],
+      "summary": "Córrego afluente da direita do Po Cereu (rio Poxoreu) na cidade homônima; córrego Areias.",
+      "keywords": [
+        "topônimo",
+        "córrego",
+        "Poxoreu"
+      ],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "mace-kigadurewu",
+      "headword": "Mace kigadurewu",
+      "variants": [],
+      "summary": "Pernilongo das vargens de cor acinzentada.",
+      "keywords": [
+        "inseto",
+        "fauna"
+      ],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "mae_1",
+      "headword": "Mae",
+      "variants": [],
+      "summary": "Extensão, duração ilimitada, imensidade, continuidade, comprimento; deserto; tristeza.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [
+        {
+          "bororo": "apega mae maere",
+          "translation": "continuas a ser sempre mau"
+        },
+        {
+          "bororo": "je maere",
+          "translation": "seu luto"
+        },
+        {
+          "bororo": "boe mae",
+          "translation": "(coisa com) duração ilimitada, i.e. faz tempo"
+        },
+        {
+          "bororo": "Extensão",
+          "translation": "duração ilimitada, imensidade, continuidade, indefectibilidade, comprimento, deserto"
+        }
+      ],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "maedo_1",
+      "headword": "Maedo",
+      "variants": [],
+      "summary": "Alargar, estender, compridar, tardar; entristecer.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [
+        {
+          "bororo": "pobo ure tumaedo boe jamedu joki",
+          "translation": "a água alagou tudo"
+        },
+        {
+          "bororo": "ure bataru maedo boe eiogi",
+          "translation": "falou aos Bororo"
+        }
+      ],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "maedodu_1",
+      "headword": "Maedodu",
+      "variants": [],
+      "summary": "Alargado, estendido, encompridado, entristecido.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "maedodurewu_1",
+      "headword": "Maedodurewu",
+      "variants": [],
+      "summary": "O (que foi) alargado, o (que foi) estendido, o (que foi) entristecido.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "maegodu_1",
+      "headword": "Maegodu",
+      "variants": [],
+      "summary": "Continuidade, começar a estender-se.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [
+        {
+          "bororo": [],
+          "translation": []
+        }
+      ],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "adugo",
+      "headword": "Adugo",
+      "variants": [],
+      "summary": "Designação bororo da onça-pintada (Panthera onca) e, por extensão metafórica, de insetos da família Mutillidae, conhecidos como formiga-onça.",
+      "keywords": [
+        "animal",
+        "mamífero",
+        "onça-pintada",
+        "ritual",
+        "caça",
+        "mitologia",
+        "Mutillidae",
+        "formiga-onça"
+      ],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Panthera_onca",
+      "examples": [],
+      "notes": {
+        "ritual": "A caçada à onça-pintada possui importância ritual e social, podendo funcionar como mori, uma retribuição simbólica aos parentes de pessoas falecidas.",
+        "uso_material": "Pele, dentes, garras e cauda são utilizados na confecção de adornos corporais.",
+        "mitologia": "A onça aparece em diversas narrativas míticas, frequentemente enganada por animais menores, como na história 'Juko Ro'."
+      },
+      "content": "",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/600px-Standing_jaguar.jpg",
+          "alt": "Onça-pintada (Panthera onca)",
+          "credit": "Wikimedia Commons"
+        }
+      ]
+    },
+    {
+      "id": "aimearewu",
+      "headword": "Aimearewu",
+      "variants": [],
+      "summary": "Gato-mourisco, também conhecido como jaguarundi.",
+      "keywords": [
+        "animal",
+        "mamífero",
+        "felino"
+      ],
+      "updated_at": "2025-08-09",
+      "url": "https://pt.wikipedia.org/wiki/Jaguarundi",
+      "examples": [
+        {
+          "bororo": "Gato-mourisco",
+          "translation": "também conhecido como jaguarundi."
+        }
+      ],
+      "content": "",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Puma_yaguarondi2.jpg/960px-Puma_yaguarondi2.jpg",
+          "alt": "Jaguarundi (Herpailurus yagouaroundi)",
+          "credit": "Wikimedia Commons"
+        }
+      ]
+    },
+    {
+      "id": "adugo-mutillidae",
+      "headword": "Adugo",
+      "variants": [
+        "formiga-onça"
+      ],
+      "summary": "Designação bororo aplicada a diversas espécies de vespas da família Mutillidae, conhecidas popularmente como formiga-onça.",
+      "keywords": [
+        "inseto",
+        "himenóptero",
+        "mutillidae",
+        "formiga-onça",
+        "fauna",
+        "classificação zoológica",
+        "metáfora zoológica"
+      ],
+      "updated_at": "2025-08-09",
+      "url": "https://pt.wikipedia.org/wiki/Formiga-feiticeira",
+      "content": "<p>No contexto da língua e da cultura bororo, o termo Adugo, originalmente associado à onça-pintada, é também empregado por extensão metafórica para designar diferentes espécies de insetos da família Mutillidae. Esses insetos são popularmente conhecidos em português como formiga-onça, em razão de seu aspecto visual, caracterizado por coloração contrastante e padrões que evocam, de forma simbólica, as manchas da onça.</p>\n\n<p>As Mutillidae pertencem à ordem Hymenoptera e são, na realidade, vespas solitárias, apesar de muitas espécies apresentarem fêmeas ápteras, o que lhes confere aparência semelhante à de formigas. A aplicação do nome Adugo a esses insetos reflete um mecanismo comum de classificação zoológica indígena, baseado em analogias visuais e comportamentais com animais de maior destaque simbólico.</p>",
+      "examples": [],
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Dasymutillaoccidentalis.jpg/960px-Dasymutillaoccidentalis.jpg",
+          "alt": "Formiga-onça (vespa da família Mutillidae)",
+          "credit": "Wikimedia Commons"
+        }
+      ]
+    },
+    {
+      "id": "maegodu_1-2",
+      "headword": "Maegodu",
+      "variants": [],
+      "summary": "Continuidade, tristeza, arrependimento.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "examples": [
+        {
+          "bororo": "bai ia maegodu boe emode mugudu bai mana gejewu jaogwai",
+          "translation": "os Bororo assentarão uma cerca de folhas de palmeiras, sem abertura, ao lado da casa central"
+        },
+        {
+          "bororo": "imaegodu kurire bari okire ikodi",
+          "translation": "<em>fiquei muito triste porque o xamã dos espíritos me odeia"
+        },
+        {
+          "bororo": "noge kugure emaegodukare ero pegarewu keje",
+          "translation": "os meninos não se arrependeram de seu mau comportamento"
+        }
+      ],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "adugo aredu",
+      "headword": "adugo aredu",
+      "variants": [],
+      "summary": "1. onça fêmea; 2. um ator da representação Adugodoge Aroe.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "adugo biri",
+      "headword": "Adugo biri",
+      "variants": [],
+      "summary": "pele de jaguar.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [
+        {
+          "url": "images/adugo_biri.jpg",
+          "alt": "Adugo biri",
+          "credit": ""
+        }
+      ],
+      "content": "<p>O termo adugo biri designa, em primeiro lugar, a pele da onça-pintada. Por extensão, refere-se também a um tipo específico de boe ekudawu (‘esteira dos Bororo’), confeccionada com pele de jaguar e utilizada em contextos rituais.</p>\n\n<h3>1. Cerimônias relativas à pele de jaguar</h3>\n\n<h4>1.1. Cerimônias preliminares</h4>\n\n<p>No contexto do Aroe Emeru (‘caçada ritual’), o Aroe Maiwu (‘representante de um defunto’) procura abater uma onça como mori (‘retribuição’) destinada aos parentes de uma pessoa falecida. A pele da onça ocupa papel central nesse complexo ritual, sendo objeto de uma série de cerimônias específicas. Logo após a morte do animal, o matador executa algumas voltas ao redor da onça e também ao redor de um parente próximo do defunto.</p>\n\n<p>Em seguida, segurando a cauda do jaguar, realiza a entrega simbólica da fera a esse parente, que se tornará o legítimo possuidor do couro. Nesse momento, pronuncia as seguintes palavras rituais:\n\nía boerewu mori: akudawu akuie akao gajejewy, adugo reno\n\n‘Eis que aqui, como retribuição por aquele que morreu, está a pele de jaguar, que te servirá de tapete, os dentes que serão o teu colar e as garras que te cingirão como coroa.’\n\nImediatamente após essa entrega simbólica, os participantes executam o Barege Ewygejeboe (‘Canto sobre as feras’).</p>\n\n<p>Em seguida, o Aroe Maiwu carrega o animal inteiro sobre as costas até o pátio da aldeia, onde a mesma cerimônia de entrega é repetida. Quando, como ocorre com frequência, o representante do defunto não é o responsável direto pela morte do felídeo, ele não possui o direito de conduzir a onça durante todo o trajeto. Nesse caso, o matador transporta o animal até próximo da aldeia, onde então o Aroe Maiwu o recebe para a continuação do ritual.</p>\n\n<p>Chegando à aldeia, a onça é esfolada, suas entranhas são cuidadosamente examinadas e o corpo é esquartejado. A observação dos intestinos tem uma função ritual importante: busca-se identificar restos de alimentos ingeridos pelo animal, pois o nome desse alimento servirá de base para a formação de alcunhas rituais atribuídas ao caçador, ao defunto, a seus pais e ao seu representante. Por exemplo, se forem encontrados restos de iwagy (‘centopeia’), o matador receberá o nome Uke Iwagy Epa (‘matador do animal que se alimentou de centopeia’); o defunto será denominado Aroe Uke Iwagy Epa (‘alma cujo alimento é a centopeia’); a mãe será chamada Aroe Uke Iwagy Uce (‘mãe daquele cujo alimento é a centopeia’); e o pai, Aroe Uke Iwagy Uo (‘pai daquele cujo alimento é a centopeia’).</p>\n\n<h4>1.2. Cerimônias propriamente ditas</h4>\n\n<p>Dando continuidade ao ritual, o pai do defunto transporta a pele, as garras e os dentes do jaguar até a choupana do clã ao qual o falecido pertencia. Nesse local, a pessoa que recebeu simbolicamente a onça — ou outro cantor considerado apto — entoa novamente o Barege Ewygejeboe, acompanhado pelos bapodoge kurirewuge (‘grandes maracás’). Enquanto isso, alguns homens dirigem-se para buscar o matador, a quem cabe, por privilégio ritual, abrir furos ao redor da periferia do couro.</p>\n\n<p>Por esses furos será passada uma corda que permitirá manter a pele estendida durante o processo de secagem. Em seguida, uma parenta próxima do defunto realiza um banho ritual no matador, derramando água sobre suas costas com um recipiente apropriado. Concluídas essas etapas, a mesma mulher reúne os parentes homens do falecido para decidir formalmente os possuidores definitivos do couro, dos dentes e das garras do felídeo.</p>\n\n<p>Em regra, os dentes pertencem à mãe do defunto ou a uma parente próxima, enquanto o couro cabe ao parente que recebeu a entrega simbólica da onça logo após a caçada. Nessa mesma assembleia é igualmente determinado o possuidor do adugo buregi (‘garras de jaguar’). Durante a tarde, um parente do defunto convida todos os presentes para entoar cantos, inicialmente na choupana do falecido e, em seguida, no bai mana gejewy (‘choupana central’).</p>\n\n<p>Os cantos estendem-se por toda a noite ao redor da pele, com a participação tanto de homens quanto de mulheres. São executados cantos fúnebres e, ao amanhecer, um canto voltado à caça. Encerrados os cantos, o couro é levado para a choupana do clã do defunto.</p>\n\n<p>Com isso, concluem-se as cerimônias relativas ao adugo biri (‘pele de jaguar’) imediatamente após a caçada. Rituais semelhantes aplicam-se também ao aigo biri (‘pele de suçuarana’) e às peles de outros felídeos de porte comparável, como o aipoburewu (‘jaguatirica’), embora com pequenas variações.</p>\n\n<h3>2. Variantes e procedimentos técnicos</h3>\n\n<h4>2.1. Variante relativa às cerimônias preliminares</h4>\n\n<p>Quando a aldeia se encontra muito distante do local da caçada, após a primeira entrega simbólica da fera entoa-se imediatamente o Canto sobre as feras. Em seguida, o animal é esfolado, as entranhas são examinadas, o corpo é esquartejado e transportado em partes até a aldeia. No pátio central, procede-se novamente à entrega simbólica — desta vez apenas da pele — e, a partir desse ponto, as cerimônias seguem conforme descrito anteriormente.</p>\n\n<h4>2.2. Sistema de estiramento e secagem da pele</h4>\n\n<p>A pele do jaguar é estirada entre quatro varas por meio de cordas que atravessam os furos previamente abertos pelo representante do defunto. Após a secagem, o couro adquire aproximadamente a forma de um retângulo. Para isso, a pele das pernas anteriores é costurada junto à da cabeça, enquanto a dos membros posteriores e grande parte da cauda são cortadas.</p>\n\n<p>Com a porção da cauda confecciona-se o adugo o, uma espécie de coroa ritual. Caso não haja tempo suficiente para estirar a pele no próprio dia da caçada, essa operação é adiada para o dia seguinte, permanecendo o couro suspenso em uma vara fincada no solo, ao redor da qual se realizam as cerimônias.</p>\n\n<h3>3. Considerações críticas</h3>\n\n<p>Von den Steinen atribui de forma incorreta a posse da pele de jaguar a determinadas pessoas. Na realidade, o possuidor é sempre um parente do defunto, sendo a escolha feita pelo caçador (Steinen 1897: 389). Colbacchini e Albisetti afirmam que aos nomes de Bororo vivos corresponderiam outros nomes a serem usados após a morte, o que é inexato, pois o nome ritual do defunto é determinado por circunstâncias acidentais, como o alimento encontrado nas entranhas do animal ou o local da caçada.</p>",
+      "examples": []
+    },
+    {
+      "id": "adugodo",
+      "headword": "Adugodo",
+      "variants": [],
+      "summary": "Adugodo",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>adugo ‘onça’; do ‘suf. causativo’. Transformar em jaguar, imitar o jaguar: inure itadugodo ‘eu imito / estou imitando (o) jaguar’; bari ure adugodo pudumi ‘o xamã dos espíritos transformou-se em onça’; noge kugure emode etadugod ‘os meninos imitarão a onça’. Esta f. na primeira acepção, aplica-se ao bari ‘xamã dos espíritos’ quando, segundo uma crença bororo, se transforma magicamente em onça.</p>\n\n<p>Na outra significação indica um folguedo infantil em que as crianças, gatinhando e rugindo, imitam o jaguar.</p>",
+      "examples": []
+    },
+    {
+      "id": "adugodoge aroe",
+      "headword": "Adugodoge aroe",
+      "variants": [],
+      "summary": "1. um aroe etawujedu, representação; 2. atores da mesma representação.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ae",
+      "headword": "Ae",
+      "variants": [],
+      "summary": "",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>O termo ae, plural de ao (‘cabelo, cordel de cabelos humanos’), designa tanto os cabelos humanos quanto, por extensão, os pelos de felídeos e certas folhagens de palmeiras. O conceito está diretamente associado a práticas rituais funerárias, especialmente à extirpação dos cabelos durante a agonia e após a morte de um indígena.</p>\n\n<h3>1. Extirpação dos cabelos durante a agonia de um indígena</h3>\n\n<h4>1.1. Modalidades</h4>\n\n<p>Durante a agonia de um indígena, seus parentes iniciam de forma gradual a extirpação dos próprios cabelos, prática que prossegue após o falecimento. Os cabelos retirados são cuidadosamente conservados em um baku, uma bandeja confeccionada com trançado de brotos de palmeira. Concluídos os funerais, esses cabelos são entregues ao iadu, o representante ritual do defunto.</p>\n\n<p>Este, por sua vez, repassa o material a uma irmã própria, que o entrega a um cunhado encarregado de fiar os cabelos, preparando-os para uso ritual posterior.</p>\n\n<h4>1.2. Uso dos cabelos extirpados</h4>\n\n<p>O iadu pode utilizar o ae como uma coroa, que então recebe a denominação aopega (‘cabelo postiço’). No entanto, esse uso é permitido apenas após o iadu ter abatido um jaguar como mori (‘retribuição ritual’). Antes de cumprir esse requisito, o ae é utilizado enrolado no antebraço esquerdo; caso o iadu pertença ao clã dos Iwagudoudoge, o enrolamento é feito no antebraço direito.</p>\n\n<p>Para informações mais detalhadas sobre essas práticas e seus desdobramentos rituais, remete-se à entrada itaga (‘funeral’).</p>",
+      "examples": []
+    },
+    {
+      "id": "akiri-i-biri-batagagarewu",
+      "headword": "Akiri i biri batagagarewu",
+      "variants": [],
+      "summary": "Designação bororo de um tipo de angico cuja casca apresenta aspecto semelhante à pele de uma lagartixa; conhecido em português como angico-cascudo (Acacia sp.).",
+      "keywords": [
+        "etnobotânica",
+        "flora",
+        "angico",
+        "acacia",
+        "classificação indígena",
+        "analogia zoológica",
+        "cerrado"
+      ],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Acacia",
+      "images": [],
+      "content": "<p>A expressão Akiri i biri batagagarewu é formada por diferentes elementos morfológicos do bororo: akiri i, ‘angico’; biri, ‘casca’; batagaga, variante de ‘lagartixa’; e o nominalizador relativo -rewu. O termo pode ser traduzido literalmente como ‘angico de casca semelhante à pele de lagartixa’. A denominação refere-se a um tipo específico de angico cuja casca apresenta textura e aparência comparáveis à pele de determinada lagartixa.</p>\n\n<p>Trata-se de um exemplo claro dos princípios da classificação etnobotânica bororo, nos quais características visuais e táteis das plantas são associadas, por analogia, a animais conhecidos. A árvore assim designada corresponde ao que é conhecido em português como angico-cascudo e pertence ao gênero Acacia. A comparação explícita com a lagartixa evidencia que a textura da casca constitui o critério central para a nomeação, demonstrando a importância da observação direta do ambiente natural na organização do conhecimento botânico bororo.</p>",
+      "examples": [
+        {
+          "bororo": [],
+          "translation": []
+        }
+      ]
+    },
+    {
+      "id": "akiri i kuru",
+      "headword": "Akiri i kuru",
+      "variants": [],
+      "summary": "<em>akiri i</em> 'árvore angico' + <em>kuru</em> 'líquido, resina'",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>Angico. A substância é ingerida pelos homens como <strong>afrodisíaco</<strong>. O mesmo uso é atribuído ao <em>bokwadobe</em> ‘resina de jatobá’ e ao <em>kado eno guru</em> 'seiva do broto de taquara'.</p>",
+      "examples": []
+    },
+    {
+      "id": "akodo",
+      "headword": "Akodo",
+      "variants": [],
+      "summary": "ako 'som' + -do 'sufixo causativo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p><strong>Tocar um instrumento musical.</strong></p> <p>Os Bororo não possuem instrumentos musicais propriamente ditos, isto é, dispositivos concebidos especificamente para produzir sons de timbre agradável e de frequência variável. Com exceção do <em>iworeboe</em>, do <em>parira</em> e do <em>bari</em>, os demais objetos sonoros funcionam como pseudo-instrumentos, nos quais o som é produzido essencialmente pela ação dos lábios do tocador.</p> <p>As embocaduras do <em>arigao bairi</em>, do <em>ika</em> e do <em>pana</em> recebem diretamente os lábios do executante, que produzem um ruído básico, posteriormente reforçado pelo objeto sonoro. A título de orientação acústica, a lingueta do <em>bari</em>, introduzida até a metade na pequena cabaça que completa o instrumento, produz uma nota cuja frequência corresponde aproximadamente ao <em>mi</em>. Já a altura do som produzido por um <em>parira</em> corresponde a um <em>mi bemol</em>.</p> <p>Assim concebidos, os instrumentos musicais bororo podem ser classificados nos seguintes grupos.</p> <p><strong>1.2. Instrumentos musicais de sopro</strong></p> <p><strong>1.2.1. <em>Boe ekuie powari boe</em></strong> (<em>boe</em> ‘Bororo’ + <em>kuie</em> ‘colar’ + <em>powari</em> ‘cucurbitácea silvestre’). Trata-se de um instrumento musical de sopro confeccionado a partir de uma pequena cucurbitácea e utilizado como colar, pendendo entre as espáduas por meio de um cordel. O termo designa genericamente certos instrumentos musicais de sopro bororo.</p> <p>Esses instrumentos são fabricados com pequenas cucurbitáceas cultivadas nas roças tradicionais. Após a secagem, o fruto recebe dois orifícios: um aberto na extremidade superior do pequeno pescoço e outro, com cerca de 4 cm de diâmetro, na extremidade oposta. No orifício do pescoço é introduzido um segmento de taquara fina, denominado <em>arçie aroe eke powari iwo</em> ou <em>aroe ekuie powari iwo</em>, ou ainda outra variedade chamada <em>rogoe enogurarewu</em>, na qual, por meio de uma incisão, é produzida uma pequena palheta batente.</p> <p>O pescoço do instrumento é sempre revestido por fios pretos e vermelhos, aos quais se prende um cordel que permite ao executante usá-lo pendurado ao pescoço. A superfície do objeto pode permanecer sem decoração, receber pirogravuras ou ser ornamentada com elaborados enfeites de plumas, conforme o clã a que pertence o portador.</p> <p><strong><em>Bapo</em></strong> — ‘coração’; instrumento em forma de coração; maracá. Trata-se de um instrumento obtido pela adaptação de uma cucurbitácea elipsoidal, previamente seca e esvaziada, a um pequeno cabo de madeira com cerca de 10 cm de comprimento, ao qual, por vezes, se prende um cordel. O ponto de união entre a cabaça e o cabo é reforçado com <em>beragu</em> (cerol).</p> <p>O <em>bapo</em> contém <em>bapo a</em>, sementes utilizadas no maracá, além de fragmentos de conchas. O instrumento é sempre utilizado em pares: um é segurado na mão direita, acompanha o canto e recebe o nome de <em>bapo paragire</em> (‘maracá que dança’); o outro é segurado na mão esquerda, marca o ritmo e é denominado <em>bapo buturewu</em> (‘maracá marcador’).</p> <p><strong><em>Bapo birikedy pororewu</em></strong> — <em>bapo</em> ‘maracá’; <em>birikedy</em> ‘nudez’; <em>poro</em> ‘furo’. Designação de uma variante específica do maracá caracterizada por sua forma e estrutura perfurada.</p>",
+      "examples": []
+    },
+    {
+      "id": "amoe erubo",
+      "headword": "Amoe erubo",
+      "variants": [],
+      "summary": "Amoe erubo",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Tapiti",
+      "images": [],
+      "content": "<p><em>amoe</em> 'tapiti' + <em>erubo</em> 'vegetal mágico'. Vegetal mágico cujas folhas  se assemelham a patas de tapitis. Designação de um erubo 'vegetal mágico'.</p>\n\n<h3>2. Arbusto do cerrado</h3>\n\n<p>Com suas folhas os bororo fazem uma infusão para banharem as crianças e, com o carvão de suas raízes, temperado com resina, traçam riscos pelo corpo das mesmas para que fiquem sossegadas como tapitis.</p>",
+      "examples": []
+    },
+    {
+      "id": "ao",
+      "headword": "Ao",
+      "variants": [],
+      "summary": "Ao - plural ae1. Cabelo, cabeça → iwu, corpo humano; copa de árvore, coma, ponta, sumidade, extremidade, fim, término, acréscimo; uma ou mais estrófes acrescentadas no fim de certos cantos.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>Ao (plural <em>ae</em>). Cabelo, cabeça → iwu, corpo humano; copa de árvore, coma, ponta, sumidade, extremidade, fim, término, acréscimo; uma ou mais estrófes acrescentadas no fim de certos cantos. Exs. itura ao 'extremidade da floresta'; boe eragody ao 'estrofe acrescentada ao canto dos bororo'.</p>",
+      "examples": []
+    },
+    {
+      "id": "aroe",
+      "headword": "Aroe",
+      "variants": [],
+      "summary": "Termo polissêmico central na cosmologia bororo. Pode designar coisas leves como pluma; alma e seu destino no além; espíritos/fantasmas e seres imaginários; cadáver; antepassados e epônimos de clãs; seres primaciais/privativos e direitos de primazia; além de categorias sociais e rituais ligadas à organização em clãs, metades e representações.",
+      "keywords": [
+        "alma",
+        "espírito",
+        "fantasma",
+        "cosmologia",
+        "morte",
+        "funeral",
+        "ritos fúnebres",
+        "xamanismo",
+        "metempsicose",
+        "clãs",
+        "metades",
+        "primazia",
+        "ser primacial",
+        "antepassados",
+        "representações rituais"
+      ],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "images": [],
+      "content": "<h3>1. qualquer coisa leve como pluma; 2. alma, espírito, fantasma; 3. de qualquer ser imaginário; 7. de cada membro do clã dos Bokodori Ecerae; 8. de cada membro da tribo Bororo; 9. de cada ser primacial ou privativo de cada clã; 10. de cada um dos epônimos dos clãs; 11. dos clãs heterônimos e exógamos, cujos membros podem contrair casamento entre si; 12. de cada representação fúnebre ou não; 13. de cada ator de uma representação qualquer; 14. de qualquer monstro lendário.</h3>\n\n<h3>1. Aroe, alma</h3>\n\n<h4>1.1. Destino da alma depois de separada do corpo: reino dos mortos</h4>\n\n<p>Os Bororo creem numa existência ultraterrena que se perpetua no reino dos mortos. Esse reino é imaginado como duplo: uma parte a oriente, governada por Itubore, lendário chefe chamado Akaruio Boroge quando vivo; e outra a ocidente, presidida por Bakororo, outro antigo herói denominado Baitogogo antes de morrer. A alma pode escolher a morada que quer e, logo depois da morte do indivíduo, vai para os reinos de Bakororo e de Itubore.</p>\n\n<p>Durante a viagem, visita várias localidades. Nessas peregrinações, é alvo de ameaças e sustos provocados por manifestações e fantasmas aterradores. Assim, por exemplo, encontrará o Aíje, Espírito Terrífico, ou então verá enormes rochas que se movem, ou galhos secos e abandonados que se agitam.</p>\n\n<p>Nesses terrores, porém, é amparada pela presença de parentes, que carinhosamente a avisam da conveniência de não prestar fé àqueles fenômenos, pois tudo se reduz a brincadeiras de mau gosto, e lhe indicam quais são os seus autores. A alma, aproveitando-se de tais insinuações, chama pelo próprio nome os que se escondem sob a aparência de espírito, de pedra ou de galho; e esses seres desaparecem, ficando em seu lugar o indivíduo brincalhão, que é assim desmascarado.</p>\n\n<h4>1.2. Vida da alma no reino dos mortos</h4>\n\n<p>A alma no além-túmulo tem vida em tudo semelhante à presente, inclusive no que se refere à organização tribal e às divisões em clãs e metades. Não lhe faltam as alegrias e as contradições da nossa existência, nem a necessidade de se alimentar, de beber, de caçar e de pescar. Para lenir, porém, as inevitáveis penas e contratempos da nova realidade e satisfazer seus desejos, tem ao seu alcance meios mais aptos e mais poderosos do que possuía durante a vida.</p>\n\n<h4>1.2.1. Conceitos errôneos</h4>\n\n<p>Steinen, sob o título \"Seele und Fortdauer nach dem Tode\" (A alma e a vida de além-túmulo), fornece noções muito confusas e até falsas acerca de conceitos tão difíceis como sejam o de alma e o de vida de além-túmulo entre uma tribo de aborígenes. Afirma categoricamente que a alma se chama \"bope\". Há um evidente mal-entendido: a alma denomina-se aroe.</p>\n\n<p>Bope é cada um dos espíritos que fazem parte do sistema religioso representado pelo bári 'xamã dos espíritos' (Steinen 1897: 397).</p>\n\n<h4>1.3. Metempsicose</h4>\n\n<p>A doutrina de uma metempsicose voluntária e passageira é crença profundamente arraigada na mentalidade indígena. As almas dos mortos podem, pois, encarnar-se em um animal qualquer, cuja habilidade natural lhes permita obter facilmente uma fruta ou uma caça de seu agrado. Na aldeia bororo, a criação de araras e papagaios domésticos tem justamente a finalidade de proporcionar animais que complacentemente forneçam às almas, quando encarnadas neles, os cocos e os frutos que desejam.</p>\n\n<p>Note-se, porém, que tais animais domésticos, pelo fato de, às vezes, encarnarem almas, não são de modo algum considerados tabus, embora sejam respeitados pelas vantagens que proporcionam ao proprietário, fornecendo-lhe matéria-prima para adornos à base de penas. Todavia, nunca são matados e, embora morram por um acidente ou morte natural, não servem para a alimentação. Quando selvagens, não gozam de nenhum privilégio particular.</p>\n\n<h4>1.3.1. Conceitos errôneos</h4>\n\n<p>Steinen ensina que os Bororo, depois da morte, transformam-se em araras vermelhas. Isso, em parte, é verdade, pois, como dito, a alma bororo por uma metempsicose temporânea pode encarnar-se em certos animais e, por conseguinte, também em ararapirangas, mas não só nestas. Cruz faz considerações fantasiosas e conclui recomendando aos civilizados que respeitem araras e sucuris, pois nelas estariam encarnadas as almas dos Bororo defuntos.</p>\n\n<p>Essa advertência não tem valor porque os próprios Bororo matam araras e sucuris todas as vezes que a ocasião lhes é propícia (Steinen 1897: 398; Cruz 1944, XCVIII: 127-30).</p>\n\n<h4>1.4. Culto das almas: seu xamã</h4>\n\n<p>O culto das almas move os parentes a conservarem como lembrança de cada defunto um → powari aroe, instrumento musical de sopro de palheta batente, preparado por algum parente próximo. Há para as almas inúmeras festas, cantos, danças, alimentos e banquetes. A máxima expressão do culto manifesta-se nos solenes ritos fúnebres que se prolongam por mais de um mês.</p>\n\n<p>O elo de união — verdadeiro médium entre os vivos e os mortos — é o → aroe etawara are, xamã das almas, que muitíssimas vezes evoca os finados, os quais por meio dele se comunicam com os mortais. Apesar do excepcional culto das almas, nunca do finado é pronunciado o nome: substitui-se por outro, formulado depois da morte. Para noções sobre esse novo nome, ver → adugo bíri, pele de jaguar.</p>\n\n<h4>1.4.1. Interpretação errônea</h4>\n\n<p>Steinen, depois de uma série de interpretações baseadas em grande parte nas declarações de seu informante Clemente, conclui pela existência de uma crença segundo a qual o morto vem buscar o vivo: \"der Tote den Lebenden holt\" (Steinen 1897: 399). Nós não pudemos absolutamente verificar o alcance dessa asserção. Parece querer insinuar que as cerimônias em honra às almas são feitas para desviá-las da execução desse desejo.</p>\n\n<p>Salvo o temor que um defunto causa aos vivos, mesmo entre os civilizados, não há outro que atinja os Bororo, os quais, pelo contrário, dedicam inúmeras festas, caçadas e manifestações à memória do finado.</p>\n\n<h3>2. Aroe, espírito ou fantasma</h3>\n\n<p>Deve-se antes de tudo fazer uma rigorosa distinção entre os → maereboe, os bope e os aroe 'espíritos ou fantasmas'. Os → maereboe e os bope são relacionados com o maereboedoge etuo 'Pai dos Espíritos'; dele dependem e a ele obedecem. Seu xamã é o bári, o qual tem o poder de invocá-los e de aplacá-los.</p>\n\n<p>Os aroe 'espíritos' não têm xamã, não dependem de nenhum princípio superior e nenhuma relação têm com o reino dos espíritos. Devem-se também isolar do conceito de almas, pois estas habitam num reino próprio e seu xamã tem o poder de invocá-las e pode ser por elas possuído. Não se devem, outrossim, confundir com alguma forma impessoal ou com uma força superior vitoriosa.</p>\n\n<p>Por conseguinte, o conceito de \"espírito\" bororo não encontra a sua solução no de mana, wakanda, manitu, orenda ou bolylya. Talvez seja um pouco de tudo isso, mas não se pode afirmar categoricamente que realmente o seja. É acertado, porém, que os aroe 'espíritos' sempre causam temor aos Bororo e, por uma força desconhecida que emana deles, podem provocar graves males, até a morte.</p>\n\n<p>Encarados do ponto de vista de sua capacidade maléfica, apresentam uma hierarquia não de dependência, mas somente de poder. Assim, por exemplo, o espírito Aíje é talvez o mais terrível e pode ser visto a qualquer momento em proximidade das águas. Outros são menos prejudiciais e apareceram apenas uma vez, segundo as afirmações das lendas.</p>\n\n<p>Alguns presidem a fenômenos meteorológicos, como os Bytaodoge, que produzem as chuvas. Exemplo: o espírito Jakómea, que causou uma inundação geral. Outros foram seres lendários e misteriosos, como Bytoriku, o qual chegou até a fecundar uma mulher.</p>\n\n<p>Outros habitam as florestas, como Apido ou Iworo, que é um espírito dos acurizais. Desse breve ensaio, pode-se concluir quão difícil seja definir aroe 'espírito'. É fácil perceber a diferença, por exemplo, entre Bytoriku — que foi, diríamos nós, uma espécie de dragão, morto por um Bororo — e os espíritos das chuvas Bytaodoge, os quais são imaginados como personagens providas de longas barbas e cabelos, cuja exsudação não é nada mais do que a chuva.</p>\n\n<p>A crença dos Bororo nos espíritos pode ser um primitivo naturalismo, pois eles admitem que nas águas e nas florestas possam aparecer certos espíritos; também pode lembrar o animismo, sendo que nas lendas acena-se a animais-espíritos que falaram. Em consequência de imaginárias ou reais aparições de um aroe, houve Bororo que adoeceu e, em breve tempo, quase misteriosamente, pereceu. Contra a maléfica influência dos espíritos, os Bororo conhecem muitos tipos de → erubo 'vegetal mágico', aos quais atribuem virtudes destinadas a preveni-la ou a paralisá-la.</p>\n\n<p>Fornecidos deles, poderão assistir a representações julgadas perigosas; e as mulheres e crianças, a atos proibidos, embora sempre às escondidas neste segundo caso. Os vegetais mágicos, em geral embiras, cipozinhos ou coisa semelhante, são usados como braceletes, pulseiras, colares e tornozeleiras. Com o carvão pulverizado das raízes de vários outros, traçam riscos, especialmente no rosto e na fronte.</p>\n\n<h4>2.1. Elenco de espíritos</h4>\n\n<p>Durante nossa permanência com os Bororo e em repetidas excursões, pudemos organizar um elenco de nomes de alguns espíritos, que transcrevemos:\nAije; Apido (denominado também Iwóro); Apumoio; Aroia; Aturua; Bakarae; Barubaru; Bokomydoge; Boku Mogodoge; Bokwojeba; Buregodyrewuge; Byre Ikabeo; Bytoriku; Ciriwore; Ekoe; Enogyjeba; Erá Kujagu Iepa; Ikuie Momodoge; imedu; Inorubo; Iwara Arege; Irowo (denominado também Apido); Jakomea; Joware; Karaiwadoge; Kido; Kirogo; Kogaekogaedoge; Kuiadoe; Makago; Meri Jokimoio; Moto Body; Mygyio; Oraribo; Perigara (denominado também Tarigara); Tabó; Tarigara (denominado também Perigara); Tugo; Tugó; Upo Rugoio; Utobaga. Sem dúvida este elenco é incompleto, mas pode auxiliar o estudioso.</p>\n\n<p>Para muitos dos nomes discriminados encontrar-se-ão explicações satisfatórias na forma correspondente. Para outros foi impossível penetrar na mentalidade bororo, já de per si muito confusa a este respeito.</p>\n\n<h3>3. Aroe, cadáver</h3>\n\n<p>Logo que a alma abandona o corpo, este passa a ser considerado aroe 'cadáver', cuja vista é imediatamente interditada a mulheres e crianças. Para maiores noções, ver itaga 'funeral'.</p>\n\n<h3>4. Aroe, antepassado</h3>\n\n<p>Há antepassados ilustres que foram grandes chefes e que deram o próprio nome a clãs e subclãs. Identificam-se às vezes com heróis lendários, como Itubore e Bakororo. Essas personagens, por pertencerem ao reino do além, são também denominadas aroe.</p>\n\n<h3>5. Aroe, ser primacial ou privativo de cada clã</h3>\n\n<p>De acordo com as narrações de certas lendas e tradições, o Bororo que viu certos seres ou fez por primeiro certos objetos reservou acerca deles direitos de primazia e de propriedade, mas não sempre de uso, para si e para os membros do próprio clã. Assim, por exemplo, o Bororo que por primeiro viu o kuje 'mutum' disse: imire itanagodymode ji rugadu ('quanto a mim, este já será meu'). O clã dos Iwagududoge tem, por isso, a primazia sobre os mutuns.</p>\n\n<p>Tal primazia não traz, porém, nenhum direito ao proprietário em se tratando de animais, de modo que qualquer desses seres pode ser matado e comido, sem restrição ou lesão dos direitos alheios. No caso de objetos que sirvam de enfeite, como as penas de kurugugwa 'gavião-caracaraí', somente os membros do clã possuidor podem usá-las. Há um fato que esclarece outra faceta dos conceitos expostos.</p>\n\n<p>Nos anos de 1902 e 1903, durante os primeiros incertos contatos dos missionários salesianos com os Bororo Boku Mogorege, habitantes do Planalto, gerou-se entre estes uma dupla corrente de antipatia e simpatia. Os mais ferrenhos, chefiados por Jirie ekurewu (Clemente) do clã dos Iwagududoge e o xamã dos espíritos Oca Kudyrewu (bari Bonito), queriam sumariamente eliminar os brancos. Os outros, chefiados por Meriri Okwoda (Joaquim), do clã dos Paiwoe Cebgiwuge, e por Meriri otodyia, alcunhado Uke Iwagy Uo (o Major), também do clã dos Paiwoe Cebgiwuge, desejavam uma coabitação pacífica.</p>\n\n<p>Nas várias discussões prevaleceu a vontade de Meriri Okwoda, que se advogava direitos de propriedade sobre os salesianos, pois os tinha visto por primeiro e por isso lhe pertenciam. Muitos objetos privativos dos clãs não são usados, em geral, apenas pelos membros dos mesmos, mas também por outros que se tornaram dignos de recebê-los de presente por alguma ação especial, como, por exemplo, pela matança de uma onça.</p>\n\n<p>Quem recebe o presente tem direito de usá-lo como se fosse de seu subclã ou clã.</p>\n\n<h4>5.1. Confusões oriundas da má interpretação da forma aroe (ser primacial)</h4>\n\n<p>Nesta acepção, a forma aroe gerou muitíssimas confusões com aroe no sentido de antepassado, provocadas em parte pela interpretação errônea de Colbacchini da lenda de Ipare Eceba (Colbacchini 1925: 5-6). Afirma este que o Bororo Ipare Eceba, tendo visto por primeiro alguns socós pretos e vermelhos, tomou para si aqueles aroe (almas) e considerou aquelas aves como portadoras das almas dos seus antepassados.</p>\n\n<p>O erro está justamente em atribuir a significação de alma à forma aroe, que aqui significa apenas animal sobre o qual o descobridor tem uma primazia, como foi explicado. Lévi-Strauss, por conhecimentos pessoais e alicerçado também em Colbacchini, faz confusas lucubrações sobre o mesmo assunto (Lévi-Strauss 1936, XXVIII: 298-301).</p>\n\n<h4>5.2. Elenco de alguns seres primaciais de cada clã</h4>\n\n<p>Metade dos Tygarege. Clã dos Baadojebage Cebigiwuge: atubo (veado-galheiro); bace kogyio (tuiuiú); bokwadí (jatobá); bope (espírito); byiogo (piranha); butaodoge (espíritos); butaodoge edogodogo (vard. de pássaro); eregejeje (vard. de pica-pau); kadomo (vard. de martim-pescador); kaibori (mão-de-pilão); keakorogo (araçá); korao (papagaio-verdadeiro); kurege (aves atualmente desconhecidas aos Bororo); maereboe (espíritos); meá (tabaco); Meri (Espírito Meri); meri2 (tié-fogo); monoko (narceja); myiao bori (cera de abelha); nonogo oto bigodyrewu (vard. de urucú); o corewu (socó-escuro); parigogo (jacu); pobu (variedade de pacu); reá (tatu); etêuwai (jacaré).</p>\n\n<p>Clã dos Baadojebage Cobugiwuge: adugo (jaguar); apido kyrirewu (acuri adulto); Ari (espírito Ari); aribo ekurewu (apara-pedra); Itubore (herói lendário); iturawore (tatu-da-floresta); iworo (bebida de acuri); okoge jerirgi are (vard. de dourado); o kujagurewu (socó vermelho); okwaru (tatupeba); Tabo (espírito Tabo). Clã dos Bokodori Ecerae: akigu (algodão); aogwa (tico-tico-rei); barae (não indígena); baruare varoedade (de pássaro); bataro (joão-pinto); boaro (tipo de brinco); bokodori (tatu-canastra); Cibae Eiaro (nome de um morro); cinadatao (cancã); ika (instrumento musical, flauta); kadogare (variedade de martim-pescador); koe (tipo de cinto e colar); koerewu (tipo de cinto e colar); okoge (variedade de dourado); poiwo (cânula para servir o vinho de palmeira acuri); ruwo (grande caracol).</p>\n\n<p>Clã dos Kie: aigo (onça-parda); aipoburewu (jaguatirica); amo (tapiti); apodo (tucano); apy (paça); bacieje (guaçuti-macho); bapo (maracá); bokodori corewu (tatu-canastra escuro); jure (sucuri); kaia (pilão); ki (anta); kudoro (ararúna); kuo (jaó); okoge corewu (variedade de dourado); pari ema pobogo (veado (guaçuetê)); tuiotorogo (variedade de pássaro). Metade dos Tygarege. Clã dos Apiborege: akurara (pacupeba); aroe eceba (gavião-real); atu (concha); aturebo (conchinha); bace (garça); baku (abanico); beo (siriema); cugui (araçaripoca); Ikuiemomo (espírito Ikuiemomo); Ikuieri (nome de um morro); Ipareri (nome de um morro); kurugugwa (gavião carcaraí); toroa (variedade de gavião); tubore (lambari).</p>\n\n<p>Clã dos Aroroe: aije (zunidor de madeira); aroro (variedade de larva); bace iwoi (variedade de tiliácea da floresta); Bakororo (herói lendário); bakuguma (gavião-requinta); batagaje (biguá); boro (pequeno caracol); ierarai (guaxinim); iparere iwoi (variedade de entrecasca); ipie (ariranha); ipocerewu irara jomo (variedade de lontra); jugo (queixada); jyi (caititu); kudugi (variedade de macaco); mano (caeté e cilindro de seus talos para certas representações); mano2 (variedade de gavião); Marugori (nome de um morro); meridabo (furão); meri ekurewu (ouro); metugu (pomba silvestre); moribo (cão silvestre); nabyre (ararapiranga).\n\n(A entrada original prossegue com o Clã dos Iwagududoge.)\n\nAroe (aro 'pluma' + e 'pl').</p>",
+      "examples": []
+    },
+    {
+      "id": "bataru",
+      "headword": "Bataru",
+      "variants": [],
+      "summary": "A língua Bororo",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>Com base em semelhanças lexicais sistemáticas e em correspondências fonológicas regulares, a família Bororo é tradicionalmente composta por cinco línguas: Bororo, Umutina, Otuke, Kovareka e Kuruminaka. Com exceção do Bororo, o conhecimento disponível sobre os demais membros da família permanece bastante limitado. A classificação da língua bororo passou por diversas interpretações ao longo do tempo.</p>\n\n<p>Já no final do século XIX, Karl von den Steinen (1894: 516–517) argumentava que o Bororo não pertencia nem à família Tupí nem à família Jê, contrariando posições posteriormente defendidas por Albisetti e Colbacchini (1942). No início do século XX, Créqui-Montfort e Rivet (1912, 1913), com base em comparações lexicais, propuseram uma relação genética entre o Bororo e o grupo Otuké, incluindo as línguas Kovareka e Kuruminaka.</p>\n\n<p>Essa proposta foi posteriormente aceita por Loukotka (1968: 84–85). A relação entre Bororo e Umutina foi formalmente estabelecida por Rodrigues (1962), a partir do vocabulário coletado por Schultz entre 1943 e 1945 (Schultz 1952). Apesar das evidências linguísticas, não há indícios claros de proximidade cultural entre Bororo e Umutina, especialmente no que diz respeito à cultura material (cf.</p>\n\n<p>Schmit 1941; Schultz 1953, 1961). O próprio Schultz, que visitou os Umutina em três ocasiões entre 1943 e 1945, observa que, embora as línguas apresentem semelhanças estruturais, não se identificam paralelos culturais significativos (Schultz 1952). Curiosamente, Camargos (2013) argumenta que Otuké, Kovareka e Kuruminaka seriam linguisticamente mais próximos do Bororo do que do Umutina.</p>\n\n<p>Trabalhos linguísticos\n\nPeríodo da coleta inicial (1826–1942)\n\nO primeiro grande período de documentação da língua bororo estende-se de 1826 a 1942, abrangendo tanto publicações quanto materiais inéditos, alguns dos quais só vieram a público muito mais tarde. A esse período pertencem também formas lexicais incorporadas à presente enciclopédia a partir de diferentes fontes históricas. O primeiro registro conhecido da língua bororo deve-se a Johann Natterer, integrante de uma expedição austríaca que chegou ao Brasil em</p>\n\n<h3>1826. O material coletado por Natterer inclui listas de palavras dos Bororo da Campanha e do Cabaçal (varie</h3>\n\n<p>dades do Bororo Ocidental), bem como dos Bororo de São Lourenço ou Coroados (Bororo Oriental). Essas listas, acompanhadas de breves notas etnográficas, constituem fontes fundamentais para o estudo dos estágios mais antigos da língua e da cultura bororo, além de representarem os únicos registros disponíveis de algumas variedades ocidentais, embora devam ser interpretadas com cautela. A obra de Karl von den Steinen conserva ainda hoje valor científico pela seriedade e fidelidade de suas observações, apesar das críticas severas feitas por Cruz.</p>\n\n<p>Em contraste, os apontamentos publicados por A. Ximeno de Villeroy em 1891 são breves e carecem de valor científico. José Augusto Caldas publicou em 1899 um vocabulário modesto, mas historicamente relevante.</p>\n\n<p>Guido Boggiani forneceu um breve vocabulário com cerca de duzentas formas, geralmente bem registradas e traduzidas, apesar de alguns problemas decorrentes de interpretações equivocadas do manuscrito original. Um marco importante foi o início dos trabalhos dos missionários salesianos, com destaque para o Pe. Giuseppe Pessina, responsável pela primeira gramática com dicionário da língua bororo, publicada anonimamente em Cuiabá em</p>\n\n<h3>1908. Outros contributos relevantes incluem o vocabulário coletado por Henry A</h3>\n\n<p>Savage-Landor, o extenso vocabulário publicado por Basílio de Magalhães, os trabalhos de Colbacchini e Albisetti, e o esboço gramatical e vocabular de Cândido Mariano da Silva Rondon, todos fundamentais para a documentação histórica da língua. Estudos modernos\n\nEntre os estudos contemporâneos, destaca-se a gramática de T. Crowell (1979), considerada a primeira descrição linguística moderna do Bororo.</p>\n\n<p>Outros trabalhos relevantes incluem Nonato (2008), Camargos (2010) e Ochoa (2014). Atualmente, uma nova gramática da língua bororo está sendo preparada por Fabrício Ferraz Gerardi, com base em extenso trabalho de campo realizado nos últimos anos, com previsão de conclusão para o final de 2026.</p>",
+      "examples": []
+    },
+    {
+      "id": "boadody",
+      "headword": "Boadody",
+      "variants": [],
+      "summary": "Boadody - Enciclopédia Bororo",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>Boadody Estendido, aplainado, brincado, passeado; cavado; discurso noturno; pregação (neol.). Esta é a forma própria para indicar quaisquer discursos, inclusive os noturnos. Nestes, sempre prolixos, o orador relata os acontecimentos e as notícias do dia, narra lendas e, se é chefe, dá avisos ou faz admoestações.</p>\n\n<p>São declamados com oratória peculiar, em voz estentórea e tipicamente modulada, frequentemente interrompidos pela assistência com longos e repetidos: uw 'sim', e assobios de aprovação e alegria, quando o assunto assim merece. O silêncio e os comentários privados indicam desaprovação. Às vezes vários oradores falam sucessivamente, sentados sobre esteiras ou peles de animais, perto do bai mana gejéwy 'choupana central' ou da própria choupana.</p>\n\n<p>Estimadíssimo é quem possui bela voz, sonora e flexível nas modulações. Os ouvintes, aparentemente distraídos e alheios ao discurso, continuam seus afazeres e seu descanso ao redor do próprio fogo, fora ou dentro da choupana, manifestando, também nessa circunstância, aquela inconcussa liberdade que caracteriza todas as fases da vida indígena. Fatores de ordem moral e cívica são as paternais repreensões e avisos noturnos, especialmente se o orador possui predicados físicos e éticos que o agigantem aos olhos e à estimação de seus companheiros.</p>",
+      "examples": []
+    },
+    {
+      "id": "boe",
+      "headword": "Boe",
+      "variants": [],
+      "summary": "Boe -- sing. e plural Coisa, índio bororo, tempo astronómico, estado atmosférico.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [
+        {
+          "url": "images/boeEnc.jpg",
+          "alt": "Boe",
+          "credit": ""
+        }
+      ],
+      "content": "<h3>1. Coisa2</h3>\n\n<p>Índio bororo: preliminares2.</p>\n\n<h3>1. Divisão do grupo2</h3>\n\n<h3>2. Origem do grupo2</h3>\n\n<h3>3. Caracteres físicos2</h3>\n\n<h3>4. Características morais2</h3>\n\n<h3>5. Índole do indivíduo bororo2</h3>\n\n<h3>6. Família2</h3>\n\n<h3>7. Religião2</h3>\n\n<h3>8. Língua2</h3>\n\n<h3>9. Contatos com os brancos2</h3>\n\n<h3>10. Relações com outras tribos2</h3>\n\n<h3>11. Estado atual da tribo2</h3>\n\n<h4>11.1. Bororo Ocidentais2</h4>\n\n<h4>11.2. Bororo Orientais2</h4>\n\n<h3>12. Observações3</h3>\n\n<p>Tempo astronômico3.</p>\n\n<h3>1. Observações4</h3>\n\n<p>Estações1. CoisaÉ a forma da língua bororo que tem a mais ampla significação. Serve para indicar seres inanimados e animados, reais e fictícios.</p>\n\n<p>Seu uso criterioso denota conhecimento da língua e elegância de expressão. Muitíssimas vezes substitui qualquer outra palavra ou acompanha pleonasticamente qualquer vocábulo. Como facilmente se pode entrever, estes dois últimos casos dificultam muito o entendimento da língua falada, especialmente aos principiantes e leigos.</p>\n\n<h3>2. Índio bororo: preliminaresÉ esta a forma usada pelos bororo para se individualizarem</h3>\n\n<p>Às vezes designam-se também com o nome das partes em que está subdividida a tribo, mas raramente. A denominação clássica permanece sempre boe. Os membros das outras tribos sao considerados e chamados Barege ou Marege; ou kaiamodoge, se são tribos inimigas, mas não boe.</p>\n\n<p>Os civilizados são Barae e os de raça negra são Tabae.de raça negra são tabae.</p>\n\n<h4>2.1. Divisão da triboAtualmente a designação mais conhecida dos membros da tribo bororo é Orari Mogodoge,</h4>\n\n<p>ou seja Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar uma das quatro partes em que, segundo urna tradição bastante recente foi dividida a tribo. Dessa divisão resultaram os seguintes grupos:Bororos OcidentaisHabitam a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação com os outros grupos.</p>\n\n<p>A língua e, talvez, usos e costumes alteraram-se, conservando-se, porém, marcados traços de uma origem comum como parecem confirmar os trabalhos de Waehneldt e Koslowski (Waehneldt 1864, XXVII: 193-229; Koslowski 1895, VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski, porém, citando e transcrevendo Steinen, confunde os bororo ocidentais com os orientais, os quais últimos foram os únicos descritos pelo explorador.</p>\n\n<p>Os bororo ocidentais subdividiram-se ainda em bororo cabaçais e bororo da campanha. Destes, os primeiros habitara as margens do rio Cabaçal, afluente da direita do r Paraguai, no qual desemboca poucoao norte da cidade de Cáceres; os segundos ocupam um pequeno território na margem direita do rio Paraguai a 100 Km ao sul de Cáceres.Bororos OrientaisPodemos dividí-los nos seguintes grupos:Boku mogorege ou Boku mogodoge 'Habitadores dos Cerrados' (a leste de Cuiabá).</p>\n\n<p>Estes, em tempos idos, ultrapassaram a oriente o Oroaribo Kyrirewu rio Araguaia. A toponímia confirma nossa asserçãao: nas nascentes desse rio, há um morro denominado Marugori a jusante da foz do Jakorewuge Eiao rio das Garças, corre um afluente da direita denominado Jorubo Jao rio Caiapozinho; outro afluente da direita denominado Tamíge Eiao talvez identificável com o rio Vermelho, tem a sua foz no mesmo rio Araguaia, no paralelo 15°.Itura Mogorege 'Habitadores da Floresta.' Ocupam a bacia do curso médio e curso superior do Pogybo Cerewu rio São Lourenço.Orari Mogodoge 'Habitadores das Plagas do Peixe Pintado'.</p>\n\n<p>Embora todos os bororo orientais se apelidem com esta denominação, entretanto ela designa mais propriamente os elementos do grupo da bacia do curso inferior do Pogybo Cerewu 'rio São Lourenço. Cruz atribui à forma orari a significação de uma variedade de centopeia (Cruz, 1942, LXXXIV: 164-5). Realmente a forma orari designa também um miriápode, mas os bororo nunca se imaginaram moradores dos lugares desse artrópode.Tori Okwa Mogorege 'Habitadores da Montanha' i.e. aproximadamente da região da Serra do Jerônimo.</p>\n\n<p>Além desses quatro grupos orientais, há o núcleo dos bororo Utugo Kuridoge, ou seja, bororo que usam longas flechas. Sua língua, salvo desprezíveis variantes, é idêntica a dos outros grupos com os quais tem amizade e intercâmbio constante de elementos humanos. Uma lenda confirma esta nossa assenção, pois nela se trata de relações amigáveis entre os Utugo Kuridoge e outros grupos orientais.</p>\n\n<p>A mesma lenda diz que os Utugo Kuridoge se originaram de um grupo de bororo do sub-clã dos Apiborege Cebegiwuge denominados também Kado Mogarege. Estes foram estabelecer-se mais ao sul que os outros, nas margens do Kadomogo 'localidade das taquaras', que corresponde ao curso médio rio Taquari. Um trecho deste rio é chamado pelos bororo de Koco I 'Cajueiro', que, talvez, se corrompeu na atual denominação de Coxim.Os Bororo Orientais tiveram contínuos contactos e relações entre si e hoje em dia é comun à passagem temporária ou definitiva de indivíduos de um grupo para outro.</p>\n\n<p>Deve-se notar que conservaram inalterados costumes, tradições, língua, cantos e organização, como pessoalmente constatamos.O território ocupado por todos os citados grupos orientais e ocidentais pode-se com boa aproximação delimitar pela latitude sul 14º - 19º e pela longitude oeste de Greenwich 51º - 59º, ocupando assim urna área de cerca de 350.000 Km2. Entretanto inxeroravelmente invadido pelos civilizados que confinaram a maior parte dos bororo nas colônias da catequese salesiana e nas da catequese leiga.</p>\n\n<h4>2.2. Origem do grupoÉ impossível determinar a origem dos bororo por indagacões diretas com indivíduos anci</h4>\n\n<p>ães ou moços os quais concordemente respondem: paerydyka 'nós não sabemos!'. As lendas, imperfeitas em sua cronologia e mudas sobre este problema, não oferecem nenhum interesse relativo à pesquisa. Em todos os casos os bororo nao tem a mínima idéia de grandes extensões de água salgada ou mares, embora possuam a forma po maerewu 'água que é sempre' i.e. 'água sem fim', ou seja 'mar', expressão forjada depois do contacto com os civilizados por causa de fotografias vistas, ou descrições ouvidas.</p>\n\n<p>Deixando de lado várias hipóteses, lembramos a de Tonelli que faz provir os bororo do curso superio do rio Negro e do rio Orinoco (Tonelli 1927). Teriam chegado ao atual \"habitat\" pelos vales dos rios Negro, Amazonas, Mamoré, e Guaporé. Durante a emigração permaneceram por algum tempo entre os Chapacura da Bolívia.</p>\n\n<h4>2.3. Caracteres físicos</h4>",
+      "examples": [
+        {
+          "bororo": "ou kaiamodoge",
+          "translation": "se são tribos inimigas, mas não boe. Os civilizados são Barae e os de raça negra são Tabae. de raça negra são tabae. 2.1. Divisão da tribo Atualmente a designação mais conhecida dos membros da tribo bororo é Orari Mogodoge, ou seja Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar uma das quatro partes em que, segundo urna tradição bastante recente foi dividida a tribo. Dessa divisão resultaram os seguintes grupos: Bororos Ocidentais Habitam a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação com os outros grupos. A língua e, talvez, usos e costumes alteraram-se, conservando-se, porém, marcados traços de uma origem comum como parecem confirmar os trabalhos de Waehneldt e Koslowski (Waehneldt 1864, XXVII: 193-229"
+        },
+        {
+          "bororo": "Koslowski 1895",
+          "translation": "VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski, porém, citando e transcrevendo Steinen, confunde os bororo ocidentais com os orientais, os quais últimos foram os únicos descritos pelo explorador. Os bororo ocidentais subdividiram-se ainda em bororo cabaçais e bororo da campanha. Destes, os primeiros habitara as margens do rio Cabaçal, afluente da direita do r Paraguai, no qual desemboca pouco ao norte da cidade de Cáceres"
+        }
+      ]
+    },
+    {
+      "id": "boe-eke",
+      "headword": "Boe eke",
+      "variants": [],
+      "summary": "1. Riqueza da alimentação Bororo",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [
+        {
+          "url": "images/acuriCoco.jpg",
+          "alt": "Boe eke",
+          "credit": ""
+        }
+      ],
+      "content": "<h3>1. Riqueza da alimentação Bororo A região que foi e a que é ocupada pelos Bororo oferece uma dieta abund</h3>\n\n<p>ante, variada e saudável, com alimentos obtidos da fauna e flora locais. Eles consomem carnes de mamíferos, peixes, répteis e aves, ovos de tartarugas e jacarés, além de frutos como bokwado 'jatobá' e gorduras retiradas de animais e frutas oleaginosas, como o eko 'pequi'. Os carboidratos vêm das frutas, alimentos feculentos, e mel silvestre.</p>\n\n<h3>2. Preparo dos alimentos É uma tarefa exclusiva das mulheres, realizada na casa ou no terreiro adjacente</h3>\n\n<h4>2.1. Utensílios de cozinha aria: Grande panela de barro para assentar sobre brasas</h4>\n\n<p>atu e aturebo: Conchas de moluscos usadas como colher. baku: Bandeja trançada de broto de palmeira, também usada como abano. iwarapa: Escumadeira de trançado de embira. kaia: Pilão com respectiva kaibori 'mão de pilão'. kuiara: Espátula de madeira para mexer os alimentos durante a cocção. micira: Peneira de nervuras de folíolos de palmeiras. pori: Pote para conservar água.</p>\n\n<h4>2.2. Modos de cocção bere: Cozimento em água, caldo de carne ou peixe</h4>\n\n<p>gori: Defumação ou chamusca, usando brasas ou chamas. ory: Assar sob cinzas quentes ou em covas aquecidas.</p>\n\n<h4>2.3. Modos de cozinhar caça e pesca Os pequenos animais são cozidos inteiros, após chamuscarem o corpo</h4>\n\n<p>Para os grandes, são esquartejados e cozidos sem tempero. Peixes são cuidadosamente amarrados para evitar desintegração durante a fervura. Carnes não costumam ser esfoladas.</p>\n\n<h3>3. Paladar Bororo Os Bororo não gostam de sal, não consomem carne crua e têm aversão ao sangue</h3>\n\n<p>Preferem carnes gordurosas e não recusam alimentos com sinais de decomposição. São gulosos por içás e consomem variados animais e insetos, exceto cobras.</p>\n\n<h3>4. Costumes Bororo durante as refeições Os Bororo retiram os alimentos da bandeja com as mãos</h3>\n\n<p>Para grandes pedaços de carne, prendem com os dentes e cortam com uma flecha ou fragmento de bambu. A mastigação é lenta para promover a saúde, e os dentes são limpos após as refeições. Líquidos são consumidos com conchas, e bebidas fermentadas são usadas em banquetes formais.</p>\n\n<h4>4.1. Notas A preparação do alimento inclui a coleta de lenha e água, uma tarefa feminina</h4>\n\n<p>O bororo armazena côcos, frutas, e outros alimentos, enterrando-os para maturação, e migram para novas áreas se os recursos se esgotarem.</p>\n\n<h3>5. Pratos da cozinha Bororo</h3>\n\n<h4>5.1. Amirewu Pequeno bolo feito de várias farinhas, amassadas com água e cozido em água pura</h4>\n\n<p>Tipos incluem: Apido amirewu: Bolo de farinha de estipe de acuri. Kuiadá amirewu: Bolo de farinha de milho.</p>\n\n<h4>5.2. Berereboe Espécie de sopa feita com caldo de carne ou peixe</h4>\n\n<p>Tipos incluem: Ako bere: Sopa feita com polpa de côcos de macaíba. Kuiadá bere: Sopa de sementes de milho.</p>\n\n<h4>5.3. Gorireboe Alimentos torrados ou chamuscados diretamente sobre brasas</h4>\n\n<p>Exemplos: Kuiadá gori: Espiga de milho assada. Noa ki: Semente de babaçu torrada.</p>\n\n<h4>5.4. Kudureboe Farinha de vegetais, usada em viagens</h4>\n\n<p>Tipos incluem: Apido kudu: Polvilho de estipe de acuri. Rito kudu: Polvilho de tucum-do-cerrado.</p>\n\n<h4>5.5. Kugureboe Mingau espesso, feito com água ou caldo de carne/peixe</h4>\n\n<p>Exemplos: Akó kugureboe: Mingau de polpa de côcos de macaíba.</p>",
+      "examples": []
+    },
+    {
+      "id": "boe-ekudawu",
+      "headword": "Boe ekudawu",
+      "variants": [],
+      "summary": "Designação genérica de qualquer artefato usado como esteira.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Veado-campeiro",
+      "images": [],
+      "content": "<p>Esteiras trançadas beto beto atugorewu beto jarewu bokodori bo padu jiwu beto kodo kodo okora</p>\n\n<h4>2.2. Esteiras de peles de animais adugo biri aigo biri aipoburewu biri atubo biri ipocerewu biri jomo biri</h4>\n\n<p>orogu biri pogobo biri 2.3 Esteira de entrecasca okwamie1. Os bororo nunca dormem ou se assentam sobre o solo desprovido de proteção mas sempre usam um tapete ou, pelo menos, algumas folhas. Este costume justifica-se pelo medo supersticioso de serem prejudicados pela influência de alguns possível feitiço colocado no chão sob a forma de alguma folha ou raminho.</p>\n\n<p>Em cada choupana há tantas esteiras quantas exige a necessidade da família e permitem as atividades da mulher. Os trançados sao feitos de noidoro broto de babaçu ou de maridoro 'broto de buriti. A colheita da matéria prima e a confeção da peça sao oficios das mulheres.</p>\n\n<p>Elas tem grande habilidade em fazer seus trabalhos que trançam também de noite na rnais completa escuridão. A ação de trançar é indicada pela forma to 'fabricação' precedida pelo designativo da peça que se prepara, p. ex. beto to 'fabricação de urna esteira de broto de buriti'. Uma vez retirado o broto, os folíolos s~o livrados de suas nervuras.</p>\n\n<p>Em seguida sao deixados à ação do tempo, pendurados, a fim de que percam a humidade e se alvejem. Durante a operação de trançado a palha é repetidas vezes borrifada com água para facilitar o trabalho.</p>\n\n<h3>2. Tipos de esteiras2</h3>\n\n<h3>1. Esteiras trançadasHá esteiras feítas de maridodo 'broto de buriti'</h3>\n\n<p>São as mais usadas e apreciadas por serem de qualidade superior e pela facilidade que oferecem ao transporte. Seu trançado é conduzido no sentido da largura, sendo o trabalho realizado contemporaneamente em todo o comprimento da esteira. A ourela inicial e a final são reinatadas, a trancça acabada, com o próprio material da esteira.</p>\n\n<p>Os semifolíolos são trançados entre si, previamente dobrados no sentido longitudinal, e o desenho resultante é do tipo de espinha de peixe, no sentido da largura da esteira, exceto nas ourelas, em que, por uma faixa de aproximadamente OmO5O, muda de direção. As esteiras são muito flexíveis e tem a consistência de grossos tapetes. São primaciais de vários clãs, mas de uso comum.</p>\n\n<p>Os principais tipos são:beto -- * boe 'Bororo'; e '3.PL'; eto 'estante' [estante dos bororo i.e. coisa onde os bororo perma-necem normalmente]. É urna esteira que não apresenta particularidades no feitio. É primacial do clã dos Iwagududogebeto atogurewu - beto 'esteira de trançado'; atogurewu 'o pintado' [esteira de broto de buriti com desenhos].</p>\n\n<p>É uma esteira como a anterior apresentando; porém, quadriláteros com lados de aproximadamente Om250 feitos com uma tira de entrecasca enegrecida porimersão em lama, incorporada ao trançado. É comum a vários clãs de acórdo com os motivos pretos;beto jarewu - beto 'esteira de trançado'; jia 'abertura'; -re 'indicativo'; -wy 'relativizador'; [esteira com abertura]. É uma espécie de cilíndro feito com o mesmo trançado do beto é usado para dormir nas noites frias.</p>\n\n<p>Esse cilíndro em outros tempos era um verdadeiro saco de dormir, aberto apenas de um lado. A tradição, porém, diz que certa vez, durante um assalto de tribo inimiga, sucumbiram, sob os golpes dos invasores, alguns moços que dormiam riesse abrigo. Para evitar a repetição do acontecido, as índias começaram então a fabricar esta peça com aberturas nas duas extremidades, para facilitarem a fuga em caso de perigo.</p>\n\n<p>É primacial do clã dos Iwagududoge;bokodori bo padu jiwu beto - bokodori 'tatu-canastra'; bo2 'carapaça'; padu 'decúbito'; ji 'posposição'; beto 'esteira'; [esteira com desenhos semelhantes aos da carapaça do tatu-canastra]. É urna esteira como o beto apresentando, porém, a repetição do motivo da ourela em duas tiras longitudinais equidistantes dos lados e entre si. É primacial do cla dos Bokodori Eceraekodo - * ?</p>\n\n<p>É uma esteira de tamanho e técnica de fabricação idênticos aos do beto feita, porém, de noidoro, broto de babaçu. Há urna diferença nas ourelas que, em vista da matéria prima ser mais grosseira, nao sao trançadas mas rematadas com duplos cordéis. Essa esteira, pela natureza das folhas de que é feita, é menos fina e mais rígida que as anteriores.</p>\n\n<p>É primacial do cla dos Aroroe;kodo okora - *? 'esteira'; ko 'parte alta'; ra 'pecíolo' [trançado que conserva, num dos lados, o pecíolo do broto de palmeira que serviu para a sua confeção]. Esteira de trançado grosseiro, tendo um dos lados maiores feito como próprio pecíolo do broto de babaçu que serviu para sua confeção.</p>\n\n<h4>2.2. Esteiras de peles de animaisAs peles de certos animais, depois de estiradas e secas, são usadas como</h4>\n\n<p>esteiras. As principais destinadas a este uso são:adugo biri - *? 'onça pintada'; biri 'pele'; [pele de onça]. Couro de onça.</p>\n\n<p>Para pormenores sobre a cerimônia durante a qual este couro é pintado e entregue ao dono barege ekedody 'banquete das feras';aigo biri - *? 'suçuarana'; biri 'pele'; [pele de suçuarana]. Couro de suçuarana. Para pormenores → barege ekedody 'banquete das feras';aipoburewu biri - *? 'jaguatirica'; biri 'pele'; [pele de jaguatirica].</p>\n\n<p>Couro de jaguatirica. Para pormenores → aipoburewu biri 'couro de jaguatirica;atubo biri - *? 'veado galheiro'; biri 'pele'; [pele de veado galheiro]. Couro de jaguatirica.</p>\n\n<p>Para pormenores → aipoburewu biri 'couro de veado galheiro;ipie biri - *? 'ariranha'; biri 'pele'; [pele de ariranha]. Couro de jaguatirica. Para pormenores → aipoburewu biri 'couro de ariranha;ipocerewu biri - *? 'irara'; biri 'pele'; [pele de irara].</p>\n\n<p>Couro de irara.jomo biri - *? 'lontra'; biri 'pele'; [pele de lontra]. Couro de lontra.orogu biri - *? 'veado-campeiro' (Dorcelaphus bezoarticus); biri 'pele'; [pele de veado-campeiro]. Couro de veado-campeiro.pobogo - *? 'veado-mateiro' (Mazama americana); biri 'pele'; [pele de veado-mateiro].</p>\n\n<p>Couro de veado-mateiro. Esse tapete é de uso exclusivo do bari 'xamã dos espíritos'.</p>\n\n<h4>2.3. Esteira de entrecascaokwamie - *</h4>\n\n<p>'jequitibá árvore' [esteira feita com entrecasca de jequitibá] É uma pequena esteira preta feita com entrecasca de jequitibá macerada na água. É comum a todos os clas e serve para abrigar um recém-nascido.boe ekudu kejewy - *? tipo de boe etao kajejewy 'coroa dos bororos'boe ekudu kejewy kidorewu corewu - *? tipo de boe etao kajejewy 'coroa dos bororos'</p>",
+      "examples": [
+        {
+          "bororo": "porém",
+          "translation": "quadriláteros com lados de aproximadamente Om250 feitos com uma tira de entrecasca enegrecida por imersão em lama, incorporada ao trançado. É comum a vários clãs de acórdo com os motivos pretos"
+        },
+        {
+          "bororo": "ra 'pecíolo' [trançado que conserva",
+          "translation": "num dos lados, o pecíolo do broto de palmeira que serviu para a sua confeção]. Esteira de trançado grosseiro, tendo um dos lados maiores feito como próprio pecíolo do broto de babaçu que serviu para sua confeção. 2.2. Esteiras de peles de animais As peles de certos animais, depois de estiradas e secas, são usadas como esteiras. As principais destinadas a este uso são: adugo biri - *? 'onça pintada'"
+        }
+      ]
+    },
+    {
+      "id": "boe-ewadaru",
+      "headword": "Boe ewadaru",
+      "variants": [],
+      "summary": "Provérbio, idiotismo, boato.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>(boe 'Bororo' + bataru 'palavra,língua'). Provérbio, idiotismo, boato.Exs. akedy akagu kuo byre gogaji nono ' amarra bem a tua jaó'. Essa frase é comumente pronunciada por alguém que, tendo sido preso, consegue fugir.</p>\n\n<p>Origina-se do fato que a jaó, mesmo se cativa desde pequena logo que se ve solta foge e volta a seu ambiente natural; juko boere okwa porodo biji 'bororo podem furar o lábio ao macaco só depois de morto'. Esse idiotismo pode significar que ninguém é capaz de enganar quem o pronuncia assim como ninguém é capaz de furar o lábio do macaco quando vivo; baru kigadu bace kigadu kori 'i.e. 'o céu é mais alvo que uma garça' akigu kigadu kody noidoia kigadu kori 'o algodão é mais alvo que um palmito de babaçu'.</p>\n\n<p>Para pormenores sobre a língua → bataru 'palavra'.</p>",
+      "examples": [
+        {
+          "bororo": "(boe 'Bororo' + bataru 'palavra",
+          "translation": "língua'). Provérbio, idiotismo, boato. Exs. akedy akagu kuo byre gogaji nono ' amarra bem a tua jaó'. Essa frase é comumente pronunciada por alguém que, tendo sido preso, consegue fugir. Origina-se do fato que a jaó, mesmo se cativa desde pequena logo que se ve solta foge e volta a seu ambiente natural"
+        }
+      ]
+    },
+    {
+      "id": "bokwado",
+      "headword": "Bokwado",
+      "variants": [],
+      "summary": "Bokwado Jatobá da floresta (Hymenaea courbaril).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Jatobá",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "butao-butu",
+      "headword": "Butao butu",
+      "variants": [
+        "butao"
+      ],
+      "summary": "<em>butao</em> 'queda' + <em>butu</em> 'chuva'",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>época da chuva (de outubro a abril)</p>",
+      "examples": []
+    },
+    {
+      "id": "cai",
+      "headword": "Cai",
+      "variants": [],
+      "summary": "Cai — Logo, imediatamente. ex. ure tugeragy cai, epa ji 'imediatamente pegou (outra flecha) para matá-lo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Cai — Logo",
+          "translation": "imediatamente. ex. ure tugeragy cai, epa ji 'imediatamente pegou (outra flecha) para matá-lo'."
+        }
+      ]
+    },
+    {
+      "id": "caije",
+      "headword": "Caije",
+      "variants": [],
+      "summary": "Caije - Logo, imediatamente. ex. rekodyre piji, caije 'fugiu imediatamente'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "camu",
+      "headword": "Camu",
+      "variants": [],
+      "summary": "Camu - Absolutamente.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "camugogo",
+      "headword": "Camugogo",
+      "variants": [],
+      "summary": "Camugogo — Absolutamente. Ex. boe kimo camugogo 'absolutamente nada'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "carugirirabo",
+      "headword": "Carugirirabo",
+      "variants": [],
+      "summary": "Carugirirabo — *? Tomara, fosse sempre assim.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ce",
+      "headword": "Ce",
+      "variants": [],
+      "summary": "Ce1 — Mãe. Note-se que a primeira pessoa da variação usa a forma myga e não ce.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ce-2",
+      "headword": "Ce",
+      "variants": [],
+      "summary": "Ce2 — Lá, até. ruture ce i oto kae 'subiu até o topo da árvore'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Ce2 — Lá",
+          "translation": "até. ruture ce i oto kae 'subiu até o topo da árvore'."
+        }
+      ]
+    },
+    {
+      "id": "ce-3",
+      "headword": "Ce",
+      "variants": [],
+      "summary": "Ce3 — vart. de co Preto.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ce-4",
+      "headword": "Ce",
+      "variants": [],
+      "summary": "Ce4 — varts. Nós, nosso, nossa, nossos, nossas (exclusivo). exs. cewadaru 'nossa palavra'; cedymode 'iremos'; cemode tugo pegado 'nós estragaremos a flecha'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cebegi",
+      "headword": "Cebegi",
+      "variants": [],
+      "summary": "Cebegi — * ? Embaixo, do lado inferior.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cebegiwu",
+      "headword": "Cebegiwu",
+      "variants": [],
+      "summary": "Cebegiwu (plural cebegiwuge) — (cebegi 'do lado de baixo' + -wy 'relativizador' aquele do lado de baixo. Indivíduo que mora embaixo, coisa que está embaixo; membro do sub-clã mais afastado do leste com relação aos outros dois sub-clãs do mesmo clã; ex. Kiedy Cebegiwu, Kiedy que mora embaixo i.e. membro do sub-clã dos Kie mais afastado do leste com relação aos outros dois sub-clãs do mesmo clã boe ewa, aldeia bororo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "ex. Kiedy Cebegiwu",
+          "translation": "Kiedy que mora embaixo i.e. membro do sub-clã dos Kie mais afastado do leste com relação aos outros dois sub-clãs do mesmo clã boe ewa, aldeia bororo."
+        }
+      ]
+    },
+    {
+      "id": "cebegiwuge",
+      "headword": "Cebegiwuge",
+      "variants": [],
+      "summary": "Cebegiwuge (plural de cebegiwu) — Indivíduos que moram embaixo, coisas que estão embaixo; membros do sub-clã mais afastado do leste com relação aos outros dois sub-clãs do mesmo clã.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ceboere",
+      "headword": "Ceboere",
+      "variants": [],
+      "summary": "Ceboere - vart. aceboere. forma que indica impaciência, satisfação, maravilha.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Ceboere - vart. aceboere. forma que indica impaciência",
+          "translation": "satisfação, maravilha."
+        }
+      ]
+    },
+    {
+      "id": "cegi",
+      "headword": "Cegi",
+      "variants": [],
+      "summary": "Cegi pron.pess. 1.pluralex. nós, nosso, nossa, nossos, nossas. ex. cegi cedymode 'iremos'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ceje",
+      "headword": "Ceje",
+      "variants": [],
+      "summary": "Ceje - * f. onom. [ave que com o canto parece dizer ceje]. Gavião-fumaça (Buteogallus meridionalis).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Gavião-caboclo",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ceje-bari",
+      "headword": "Ceje bari",
+      "variants": [],
+      "summary": "Ceje bari - Tipo de instrumento musical de sopro → akodo 'tocar instrumento'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cenawu-kyri",
+      "headword": "Cenawu kyri",
+      "variants": [],
+      "summary": "Cenawu kyriCenawu Kyri - n. p. → Enciclopédia v. II.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cerewu",
+      "headword": "Cerewu",
+      "variants": [],
+      "summary": "Cerewu - vart. de corewu (ce3 'preto' + -re 'indicativo' + -wy 'relativizador'. O preto, o escuro. ex. po cerewu 'água escura'; rio Poxorewu.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cewy",
+      "headword": "Cewy",
+      "variants": [],
+      "summary": "Cewy - Aquele (não visível ao falante e ouvinte).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibae",
+      "headword": "Cibae",
+      "variants": [],
+      "summary": "Cibae - (sing = pl). Araracanga (Ara chloroptera).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Arara-vermelha",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibae-eceba",
+      "headword": "Cibae eceba",
+      "variants": [],
+      "summary": "Cibae Eceba - nome próprio. Enciclopédia II v.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibae-ecerae",
+      "headword": "Cibae ecerae",
+      "variants": [],
+      "summary": "Cibae Ecerae - plural de Cibae Eceraedy. Membros homens de um clã da metade dos Ecerae denominados também Aroe ou Bokodori Ecerae ou Okoge Ecerae → boe ewa 'aldeia bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibae-eceraedy",
+      "headword": "Cibae eceraedy",
+      "variants": [],
+      "summary": "Cibae Eceraedy - Membro homem de um clã da metade dos Ecerae denominado também Aroe ou Bokodori Eceraedy ou Okoge Eceraedy.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibae-egyrea",
+      "headword": "Cibae egyrea",
+      "variants": [],
+      "summary": "- * cibae 'araracanga'; e '3.PL'; egyrea 'listra dos olhos' [listra dos olhos das araracangas. Designação: 1. dos riscos de plumazinhas que ladeiam os olhos das araracangas; 2. de um tipo de boe ejiwu 'pintura facial dos bororo'. Nome próprio, ver Enciclopédia II v.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>- * cibae 'araracanga'; e '3.PL'; egyrea 'listra dos olhos' [listra dos olhos das araracangas. Designação: 1. dos riscos de plumazinhas que ladeiam os olhos das araracangas; 2. de um tipo de boe ejiwu 'pintura facial dos bororo'. Nome próprio, ver Enciclopédia II v.</p>",
+      "examples": []
+    },
+    {
+      "id": "cibae-eiari",
+      "headword": "Cibae eiari",
+      "variants": [],
+      "summary": "Cibae Eiari - cibae 'araracangas'; e '(d)elas'; iari 'toca' [toca das araracangas]. Designação: 1. de um morro situado na região entre o curso superior do rio Itiquira e o do rio Correntes. 1 Os bororo afirmam que naquela montanha existem grutas nas quais se poderiam encontrar cestas funerárias contendo ossos e enfeites bororo. São colocadas sobre jiraus tendo aos lados potes de barro. Alicerçado nessa tradição o MRDB promoveu, em janeiro de 1960,",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibae-modojeba",
+      "headword": "Cibae modojeba",
+      "variants": [],
+      "summary": "Cibae Modojeba - nome próprio → Enciclopédia II v.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibai-kyrirewu",
+      "headword": "Cibai kyrirewu",
+      "variants": [],
+      "summary": "Cibai Kyrirewu - nome próprio → Enciclopédia II v.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaibo",
+      "headword": "Cibaibo",
+      "variants": [],
+      "summary": "Cibaibo - * cibae 'araracanga'; po3 'água' [córrego da araracanga]. Pequeno afluente da direita do rio Cuiabá ao norte da cidade homônima. Nome próprio → Enciclopédia II v.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaibo-bororo",
+      "headword": "Cibaibo bororo",
+      "variants": [],
+      "summary": "Cibaibo Bororo - * Cibaibo 'córego da araracanga'; Bororo aldeia [aldeia do córego da araracanga]. Antiga aldeia nas margens do córrego Cibaibo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaiborewu",
+      "headword": "Cibaiborewu",
+      "variants": [],
+      "summary": "Cibaiborewu - * Cibaibo 'córrego da araracanga'; re 'indicativo; wy 'relativizador' [córrego semelhante ao Cibaibo] Córrego afluente da direita do rio Cuiabá a montante da cidade homônima.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibairago",
+      "headword": "Cibairago",
+      "variants": [],
+      "summary": "Cibairago - n. p. → Enciclopédia II v.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibairewu",
+      "headword": "Cibairewu",
+      "variants": [],
+      "summary": "Cibairewu - n. p. → Enciclopédia II v.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaiwo",
+      "headword": "Cibaiwo",
+      "variants": [],
+      "summary": "Cibaiwo - cibae 'araracangas'; iwo 'taquara' [taquara usada pelos membros do clã dos Cibae Ecerae, ou seja dos Bokodori Ecerae, para sorver a bebida de acuri]. Designação: 1. de canula usada pelos Bokodori Ecerae para sorver o iworo 'bebida de acuri': os membros dos outros clãs denominam-na poiwo; 2. de certo tipo de boe ekeno tadawu 'adorno nasal dos bororo'; 3. de certo tipo de boe ekiga 'prego dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaiwo-ekurewu",
+      "headword": "Cibaiwo ekurewu",
+      "variants": [],
+      "summary": "Cibaiwo Ekyrewu - Designação: 1. de certo tipo de boe ekeno tadawu 'adorno nasal dos bororo'; 2. de certo tipo de boe ekiga 'prego dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaiwo-je-ekurewu",
+      "headword": "Cibaiwo je ekurewu",
+      "variants": [],
+      "summary": "Cibaiwo je ekurewu - Tipo de boe ekiga 'prego dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaiwo-kujagurewu",
+      "headword": "Cibaiwo kujagurewu",
+      "variants": [],
+      "summary": "Cibaiwo kujagurewu - Designação: 1. de certo tipo de boe ekeno tadawu 'adorno nasal dos bororo'; 2. de certo tipo de boe ekiga 'prego dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cibaiwodo",
+      "headword": "Cibaiwodo",
+      "variants": [],
+      "summary": "Cibaiwodo - Tipo de boe etao kajejewy 'coroa dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cigo",
+      "headword": "Cigo",
+      "variants": [],
+      "summary": "Cigo - forma que indica 'abundância, muito'. ex. apega kyricigo 'és muito ruim'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Cigo - forma que indica 'abundância",
+          "translation": "muito'. ex. apega kyricigo 'és muito ruim'."
+        }
+      ]
+    },
+    {
+      "id": "cigocigo",
+      "headword": "Cigocigo",
+      "variants": [],
+      "summary": "Cigocigo - forma usada como 'abundância, muitíssimo'. ex. awara raícigocigore 'estrada longuíssima'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Cigocigo - forma usada como 'abundância",
+          "translation": "muitíssimo'. ex. awara raícigocigore 'estrada longuíssima'."
+        }
+      ]
+    },
+    {
+      "id": "cijiji",
+      "headword": "Cijiji",
+      "variants": [],
+      "summary": "Cijiji - onomatopeia. Ave que com o canto parece dizer cijiji. Anu-branco (Guira guira). 1 Esta ave às vezes emite um canto que aos ouvidos dos bororo soa bika. Por isso, pode ser chamada também com este nome. Quando o anu-branco canta, dizendo cijiji, é sinal de bom agouro e quando diz bika o presságio é menos favorável.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Anu-branco",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cinadatao",
+      "headword": "Cinadatao",
+      "variants": [],
+      "summary": "Cinadatao - * onomatopeia [ave que com o canto parece dizer cinadatao|. Canea (Nomonyx dominicus).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Nomonyx_dominicus",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cinadatao-imo",
+      "headword": "Cinadatao imo",
+      "variants": [],
+      "summary": "Cinadatao imo - Designação : 1. de certo tipo de boe ejiwu 'pintura facial dos bororo'; 2. de certo tipo de boe epemegadody 'pintura somática dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciocio",
+      "headword": "Ciocio",
+      "variants": [],
+      "summary": "Ciocio - *? Taruma-do-campo (talvez Vitex megapotamica) ou outra espécie do gênero Vitex.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Vitex_megapotamica",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciriwore",
+      "headword": "Ciriwore",
+      "variants": [],
+      "summary": "Ciriwore - * ? Designação: 1. de um caruncho do jatobá; 2. de um aroe, espírito.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwabo",
+      "headword": "Ciwabo",
+      "variants": [],
+      "summary": "Ciwabo - (plural ciwaboe). * onomatopeia [ave que como canto parece dizer ciwabo|. Japu-macho (Psarocolius decumanus).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Japu-preto",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwabo-bataru-okeadu",
+      "headword": "Ciwabo bataru okeadu",
+      "variants": [],
+      "summary": "Ciwabo bataru Okeadu - ciwabo 'japu'; bataru 'palavra'; okeadu 'brincadeira' [japu que facilmente imita o canto de outras aves]. Japu-fêmea (Ostinops decumanus).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Japu-preto",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwabo-bataru-okeadu-biri",
+      "headword": "Ciwabo bataru okeadu biri",
+      "variants": [],
+      "summary": "Ciwabo bataru Okeadu - ciwabo 'japu'; bataru 'palavra'; okeadu 'brincadeira'; biri 'pele' [pele de japu-femea] Designação 1. da pele de japu fêmea com penas; 2. de certo tipo de boe ewiadawu 'brinco dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwabo-biri",
+      "headword": "Ciwabo biri",
+      "variants": [],
+      "summary": "Ciwabo biri - ciwabo 'japu'; biri 'pele' [pele de japu]. Designação: l. da pele de japu com penas ; 2. de certo tipo de boe ewiadawu, brinco dos bororo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwabo-boro",
+      "headword": "Ciwabo boro",
+      "variants": [],
+      "summary": "Ciwabo biri - ciwabo 'japu'; biri 'pele' [pele de japu]. Designação: l. da pele de japu com penas ; 2. de certo tipo de boe ewiadawu, brinco dos bororo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwabori",
+      "headword": "Ciwabori",
+      "variants": [],
+      "summary": "Ciwabori - ciwabo 'japu'; ri 'morro' [morro do japu]. Morro nas nascentes do r. Araguaia.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwabori-bororo",
+      "headword": "Ciwabori bororo",
+      "variants": [],
+      "summary": "Ciwabori Bororo - Antiga aldeia ao sopé de um morro nas nascentes do rio Araguaia.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwae",
+      "headword": "Ciwae",
+      "variants": [],
+      "summary": "ciwae - '' ? Urubu-caçador (Cathartes aura ruficollis).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Urubu-de-cabeça-vermelha",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwae-aroe",
+      "headword": "Ciwae aroe",
+      "variants": [],
+      "summary": "ciwae aroe - Designação: 1. de certo 'representação'; 2. do intérprete da mesma.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwaje-aroe",
+      "headword": "Ciwaje aroe",
+      "variants": [],
+      "summary": "ciwaje aroe - Designação: 1. de certo aroe etawujedy 'representação'; 2. do intérprete da mesma.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwaje-atugo",
+      "headword": "Ciwaje atugo",
+      "variants": [],
+      "summary": "ciwaje atugo - Tipo de boe epemegadody pintura somática dos bororo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwaje-uiorubo",
+      "headword": "Ciwaje uiorubo",
+      "variants": [],
+      "summary": "Ciwaje uiorubo - * iwaje 'urubu-caçador'; u '(d)ele'; erubo 'vegetal mágico' [arbusto mágico cujas raízes desprendem um mau cheiro semelhante ao do urubu-caçador]. Designação de um erubo 'vegetal mágico'. 1 Com suas folhas preparam infusões com as quais se banham a fim de evitarem qualquer doença.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwororo",
+      "headword": "Ciwororo",
+      "variants": [],
+      "summary": "Ciwororo - * f. onom. [ave que com o canto parece dizer ciwororo]. Choca (Thamnophilus doliatus radiatus).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Choca-barrada",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwu-baga",
+      "headword": "Ciwu baga",
+      "variants": [],
+      "summary": "Ciwu baga - * ciwu 'pica-pau'; baga 'curso d'água' [córrego do pica-pau]. Córrego afluente da esqeurda do Okiwabo 'ribeirão Kiuabo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ciwu",
+      "headword": "Ciwu",
+      "variants": [],
+      "summary": "Ciwu - * Vard. de pica-pau.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "co",
+      "headword": "Co",
+      "variants": [],
+      "summary": "Co - variante de ce. Preto, escuridão, sujeira.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Co - variante de ce. Preto",
+          "translation": "escuridão, sujeira."
+        }
+      ]
+    },
+    {
+      "id": "cobogi",
+      "headword": "Cobogi",
+      "variants": [],
+      "summary": "Cobogi - * posp. ? Em cima, do lado de cima, superioridade.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Cobogi - * posp. ? Em cima",
+          "translation": "do lado de cima, superioridade."
+        }
+      ]
+    },
+    {
+      "id": "cobogiwu",
+      "headword": "Cobogiwu",
+      "variants": [],
+      "summary": "Cobogiwu - * (cobugi 'no lado de cima' + wy 'relativizador') [aquele que está no lado de cima]. Indivíduo que está no lado de cima, indivíduo que mora mais acima; designação de cada membro do sub-clã mais próximo ao leste com relação aos outros dois sub-clãs do mesmo clã. Kiedy Cobugiwu 'membro do sub-clã dos Kie que habita mais perto do leste com relação aos membros dos outros sub-cãs do mesmo clã'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "coboje",
+      "headword": "Coboje",
+      "variants": [],
+      "summary": "Coboje - * ? posp. Em cima, em alto.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cobogiwu-2",
+      "headword": "Cobogiwu",
+      "variants": [],
+      "summary": "Cobogiwu - * (cobugi 'no lado de cima' + wy 'relativizador') [aquele que está no lado de cima]. Indivíduo que está no lado de cima, indivíduo que mora mais acima; designação de cada membro do sub-clã mais próximo ao leste com relação aos outros dois sub-clãs do mesmo clã. Kiedy Cobugiwu 'membro do sub-clã dos Kie que habita mais perto do leste com relação aos membros dos outros sub-cãs do mesmo clã'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "cucu",
+      "headword": "Cucu",
+      "variants": [],
+      "summary": "Cucu - * cucu *f. onom. [ave que com o canto parece dizer tchutchu. Vard. de ave Cyanocorax cyanopogon (Wied-Neuwied, 1821). | Quando os bororo ouvem cantar essa ave pensam que seja aviso de algum perigo iminente.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Gralha-cancã",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cyanocorax_cyanopogon_-Natal%2C_Rio_Grande_do_Norte%2C_Brazil-8.jpg/560px-Cyanocorax_cyanopogon_-Natal%2C_Rio_Grande_do_Norte%2C_Brazil-8.jpg",
+          "alt": "Cucu",
+          "credit": ""
+        }
+      ],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "dyji",
+      "headword": "Dyji",
+      "variants": [],
+      "summary": "Dyji - f. usada para nominalizar orações dependentes quando verbo principal é um intransitivo extendido que requer a posposição ji . exs. boe ekiarire atumode cebiji dyji 'os bororo não querem que tu te afastes de nós'; tawiajetudo inagoi tai dyji 'lembrai-vos daquilo que eu disse'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ecerae",
+      "headword": "Ecerae",
+      "variants": [],
+      "summary": "Ecerae -- (plural de Eceraedy). Designação: 1. dos membros homens da metade exógama setentrional d.o → boe ewa 'aldeia bororo'; 2. dos membros homens de um sub-clã da metade homônima denominados também Baado Jebage Cebegiwuge Cobugiwuge ou Baado Jebage Cebegiwuge Corewuge.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ewo-o-jorubo",
+      "headword": "Ewo o jorubo",
+      "variants": [],
+      "summary": "Ewo o jorubo - * ewo 'cascavel'; o dente; ji, (d)ele; erubo, vegetal mágico [vegetal cuja flor seca apresenta pontas duras semelhantes a dentes de cascavel] Designação de um erubo. | É um cipó do cerrado cujas folhas esfregadas na flecha deveriam",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>conferir-lhe efeito mortífero. Note-se que o vegetal não é venenoso e a virtude que se supõe possua é apenas mágica. Os bororo não usam e não conhecem venenos para as pontas das flechas.</p>",
+      "examples": [
+        {
+          "bororo": "erubo",
+          "translation": "vegetal mágico [vegetal cuja flor seca apresenta pontas duras semelhantes a dentes de cascavel] Designação de um erubo. | É um cipó do cerrado cujas folhas esfregadas na flecha deveriam"
+        }
+      ]
+    },
+    {
+      "id": "itoborewu",
+      "headword": "Itoborewu",
+      "variants": [],
+      "summary": "Itoborewu - (itobo 'parte basilar do pecíolo de folha de palmeira' + -re 'indicativo' + -wy 'relativizador') palmeira que apresenta partes basilares de pecíolos de fólhas presas ao estipe. Designação genérica de qualquer palmeira adulta.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jagu",
+      "headword": "Jagu",
+      "variants": [],
+      "summary": "Jagu -- adv. Absolutamente, completamente, mesmo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jajadoge",
+      "headword": "Jajadoge",
+      "variants": [],
+      "summary": "<em>jajá</em> onomatopeia + <em>doge</em> plural.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>Variedade de abelhas silvestres.</p>",
+      "examples": []
+    },
+    {
+      "id": "jajadoge-2",
+      "headword": "Jajadoge",
+      "variants": [],
+      "summary": "<em>ji</em> 'sua' + <em>ia</em> 'abertura' + <em>doge</em> plural [",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>afeçao mórbida que apresenta muitas aberturas. Antraz.</p>",
+      "examples": []
+    },
+    {
+      "id": "jakomea",
+      "headword": "Jakomea",
+      "variants": [],
+      "summary": "Jakomea - Designação de um aroe 'espírito'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-atugo-padure-paru-jiwu-pariko",
+      "headword": "Jakomea atugo padure paru jiwu pariko",
+      "variants": [],
+      "summary": "Jakomea atugo padure paru jiwu pariko - Tipo de boe etao kajejewy coroa dos bororo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-ekure",
+      "headword": "Jakomea ekure",
+      "variants": [],
+      "summary": "Jakomea ekure - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-enawu",
+      "headword": "Jakomea enawu",
+      "variants": [],
+      "summary": "Jakomea enaewy - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-epa",
+      "headword": "Jakomea epa",
+      "variants": [],
+      "summary": "Jakomea epa - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-ewoeiga",
+      "headword": "Jakomea ewoeiga",
+      "variants": [],
+      "summary": "Jakomea ewoeiga - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-ika",
+      "headword": "Jakomea ika",
+      "variants": [],
+      "summary": "Jakomea ika - Tio de boeiga 'arco'",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-kago",
+      "headword": "Jakomea kago",
+      "variants": [],
+      "summary": "Jakomea kago - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-kawory",
+      "headword": "Jakomea kawory",
+      "variants": [],
+      "summary": "Jakomea kawory - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-kyrirewu",
+      "headword": "Jakomea kyrirewu",
+      "variants": [],
+      "summary": "Jakomea kyrirewu - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-mygy",
+      "headword": "Jakomea mygy",
+      "variants": [],
+      "summary": "Jakomea mygy - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-okwoda",
+      "headword": "Jakomea okwoda",
+      "variants": [],
+      "summary": "Jakomea okwoda - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-ridyrewu",
+      "headword": "Jakomea ridyrewu",
+      "variants": [],
+      "summary": "Jakomea ridyrewu - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-ryko",
+      "headword": "Jakomea ryko",
+      "variants": [],
+      "summary": "Jakomea ryko - nome próprio (ver vol. II).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-utugo",
+      "headword": "Jakomea utugo",
+      "variants": [],
+      "summary": "Jakomea utugo - Tipo de tugo 'flecha'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-utugo-by-ekurewu",
+      "headword": "Jakomea utugo by ekurewu",
+      "variants": [],
+      "summary": "Jakomea utugo by ekurewu - Tipo de tugo 'flecha'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakomea-utugo-by-kujagurewu",
+      "headword": "Jakomea utugo by kujagurewu",
+      "variants": [],
+      "summary": "Jakomea utugo by kujagurewu - Tipo de tugo 'flecha'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jakorewu",
+      "headword": "Jakorewu",
+      "variants": [],
+      "summary": "Jakorewu - Jakorewu - * (ji 3.SG + ako 'som' + re 'IND' + wy 'REL') [mamífero aquático que quando",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Sotalia_guianensis",
+      "images": [],
+      "content": "<p>vem a flor d'água emite um forte sopro]. Boto (Sotalia brasiliensis). Os bororo não o pescam e não se alimentam de suas carnes.</p>",
+      "examples": []
+    },
+    {
+      "id": "jakorewuge-eiao",
+      "headword": "Jakorewuge eiao",
+      "variants": [],
+      "summary": "<em>jakorewuge</em> 'boto' + <em>ge</em> 'plural' + <em>e</em> '3.pl' + <em>iao</em> 'localidade' [rio dos botos]",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>. Rio afluente da esquerda do curso superior do Oroaribo Kurirewu 'rio Araguaia', 'rio Jakorewugueau', ou rio das Garças.</p>",
+      "examples": []
+    },
+    {
+      "id": "jakoro-wari",
+      "headword": "Jakoro wari",
+      "variants": [],
+      "summary": "Nome próprio.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "jaku",
+      "headword": "jaku",
+      "variants": [],
+      "summary": "Jeito, boas maneiras",
+      "keywords": [],
+      "updated_at": "2026-01-05",
+      "url": "",
+      "examples": [
+        {
+          "bororo": "amagodo jaku tabu",
+          "translation": "fala com jeito"
+        }
+      ],
+      "content": "",
+      "images": []
+    },
+    {
+      "id": "jugodoge-eimiejera-uiorubo",
+      "headword": "Jugodoge eimiejera uiorubo",
+      "variants": [],
+      "summary": "Jugodoge eimejera 'queixada, guia de uma manada de porcos'; u '(d)ele'; erubo 'vegetal mágico [vegetal mágico do queixada, guia de uma manada de porcos. Designação de um erubo, vegetal mágico'. | É a palmeira acuri, cujos côcos são comidos pelos queixadas. Deveria conferir aos bororo qualidades semelhantes as dos queixadas. Os chefes bororo espalham pela aldeia as folhas dela a fim de que os súditos sejam obedientes como são os queixadas a seu guia.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Attalea_phalerata",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Jugodoge eimejera uiorubo1 - Jugodoge eimejera 'queixada",
+          "translation": "guia de uma manada de porcos'"
+        },
+        {
+          "bororo": "erubo 'vegetal mágico [vegetal mágico do queixada",
+          "translation": "guia de uma manada de porcos. Designação de um erubo, vegetal mágico'. | É a palmeira acuri, cujos côcos são comidos pelos queixadas. Deveria conferir aos bororo qualidades semelhantes as dos queixadas. Os chefes bororo espalham pela aldeia as folhas dela a fim de que os súditos sejam obedientes como são os queixadas a seu guia."
+        }
+      ]
+    },
+    {
+      "id": "jure-bari",
+      "headword": "Jure bari",
+      "variants": [],
+      "summary": "Instrumento musical de sopro → akodo 'tocar instrumento'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>Instrumento musical de sopro → akodo 'tocar instrumento'.</p>",
+      "examples": []
+    },
+    {
+      "id": "kuogo-i",
+      "headword": "Kuogo i",
+      "variants": [],
+      "summary": "Kuogo i kuogo 'flor de paratudo'; í 'árvore' | árvore da flor de paratudo. Paratudo (Tecoma caraiba). É denominado também icegy i.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "kurugugwa-upebo",
+      "headword": "Kurugugwa upebo",
+      "variants": [],
+      "summary": "Kurugugwa upebo1 - Tipo de boe etao kajejewy 'coroa dos bororo'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "kurugugwa-ywariga",
+      "headword": "Kurugugwa ywariga",
+      "variants": [],
+      "summary": "Kurugugwa wariga1 - * kurugugwa 'gavião-caracaraí'; u '(d)ele'; wariga penacho [gavião com penacho] Gavião-de-penacho.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Gavião-de-penacho",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "kurugutugu",
+      "headword": "Kurugutugu",
+      "variants": [],
+      "summary": "Kurugutugu -. * kuru, vôo; gutugu onom. [inseto que voa com vôo irregular] Lepidóptero, borboleta.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Lepidoptera",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Kurugutugu -. * kuru",
+          "translation": "vôo"
+        }
+      ]
+    },
+    {
+      "id": "kururewu",
+      "headword": "Kururewu",
+      "variants": [],
+      "summary": "Kururewu1 - * kuru natação; -rewu, suf. 'Nadador'. Embora os bororo não viagem por água e nao conheciam a canoa e seu uso, entretanto são habilíssimos nadadores. Para atravessarem rios, às vezes, nadam com um só braço carregando, com o outro, arco, flechas, caça e cestos. As mulheres frequentemente auxiliam-se com pequenos feixes de pecíolos secos de folhas de palmeiras ou de qualquer madeira leve, especialmente quando devem transportar pesos consideráveis em largos cursos dágua. Os índios podem permanecem embaixo d'água por um tempo notável, deixando surpreendido qualquer civilizado.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "rewu",
+          "translation": "suf. 'Nadador'. Embora os bororo não viagem por água e nao conheciam a canoa e seu uso, entretanto são habilíssimos nadadores. Para atravessarem rios, às vezes, nadam com um só braço carregando, com o outro, arco, flechas, caça e cestos. As mulheres frequentemente auxiliam-se com pequenos feixes de pecíolos secos de folhas de palmeiras ou de qualquer madeira leve, especialmente quando devem transportar pesos consideráveis em largos cursos dágua. Os índios podem permanecem embaixo d'água por um tempo notável, deixando surpreendido qualquer civilizado."
+        }
+      ]
+    },
+    {
+      "id": "mano kurirewu",
+      "headword": "Mano kurirewu",
+      "variants": [],
+      "summary": "Mano kurirewu -- Ritual Boe-Bororo das duas rodas grandes de talos de caeté (Helicônia). Awyre pemegare! Mano Kurirewu pemegare! Boe eegarere boe etaidyre Assim falou o chefe cultural Bororo Antônio Kanajó na festa do Mano Kurirewu em Meruri no ano de 1995: \"Este é bom! Mano Kurirewu é bom! O povo se alegra, o povo gosta!\"",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Helicônia",
+      "images": [],
+      "content": "<p>Este ritual também, como muitos dos rituais dos Boe-Bororo, está ligado ao culto dos finados e mostra a força, a valentia e a alegria do povo. Mas ele geralmente acontece fora do ritual fúnebre. É celebrado no findar da época do butao butu época da chuva', e nos meses de março ou abril, antes do joro butu akiridoge 'época da seca, época do fogo,' quando aparece a constelação das Plêiades.</p>\n\n<p>Nesta época o caeté ou piripiri, planta com raízes na água, no brejo e o talo fora dela, está no seu vigor e depois vai secando, morrendo. Morre mas debaixo da água recomeça a brotar. Por isso é um grande elemento simbólico da cultura Boe-Bororo.</p>\n\n<p>No ritual é chamada de aroe mano ou aiadu 'alma, parente.' Em todo ritual dos Boe-Bororo há sempre elementos da natureza que entram e fazem um papel importante do ritual e são chamados de aroe 'Almas.' O ritual acontece resumidamente assim: vendo que o Mano está no ponto para ser cortado, as lideranças decidem fazer a festa. Primeiro se escolhe o finado que se quer homenagear, depois as duas metadades, o Ecerae e os Tugarege com a seda dos brotos de tucum preparam as cordas para amarrar os talos do Mano.</p>\n\n<p>Hoje é mais rápido comprar as cordas já prontas no mercado. Como na cultura dos Boe-Bororo tudo é estruturado, organizado na terra e também no céu, a festa do Mano é privativa do clã dos \"Aroroe,\" o clã da \"lagarta preta listada de amarelo.\" Os homens e os jovens já iniciados vão na lagoa do Mano. Um dos \"Aroroe\" corta um talo, bate na água e todos gritam:\" Waaaahh!\" Cortam o Mano, amarram em feixes, carregam no ombro e levam na casa central da aldeia, o \"Baito.\" ''Ecerae\" de um lado e \"Tugarege\" do outro.</p>\n\n<p>Por toda a noite os cantos sobre o Mano ressoam por toda a aldeia. De manhã cedo chegam as mulheres das duas metades e correndo levam o Mano ao longo da mano reia 'estrada do Mano,' até o mano pa 'pátio do Mano.' Na tardinha chegam os jovens e os homens, cortam o Mano e formam duas rodas de talos todos iguais. Para amarrar bem precisa bater forte com um pau fornecido pelo \"Aroroe\" no lugar onde serão amarradas as duas cordas.</p>\n\n<p>Assim fazendo se evitará que o Mano se desmanche durante a corrida. Uma vez prontas as duas rodas sã colocadas uma ao lado da outra. Então um \"Aroredu\" pega pelas mãos de alguns que vão dançar em volta das rodas enquanto o mestre de canto canta os adornos feitos de penas de arara e a penugem branca que outros estão colocando em cima das duas rodas.</p>\n\n<p>Depois disso acontece a grande corrida do Mano. Ela é bonita quando as duas metades se desafiam uma com a outra se alternando na frente. Não é bonito quando uma metade vai embora deixando a outra para trás.</p>\n\n<p>O mesmo se diz das corrida das mulheres de manhã. Mas o importante é que quem chega primeiro na praça da aldeia seja da metade oposta do finado ao qual é dedicada a corrida. Assim é a lei dos Boe-Bororo, a reciprocidade.</p>\n\n<p>Chegando as duas rodas no meio de muita alegria se executa o canto final. Então as mulheres podem sair de suas casas e participar da festa. Podem também elas ensaiar uma corrida do Mano para ver quem vai vencer.</p>\n\n<p>A troca de alimentos entre Ecerae e Tugarege encerra o ritual do Mano. No dia seguinte os homens levarão o Mano para o rio pedindo aos Aroe 'almas' que mandem muitos peixes para os Boe-Bororo.</p>",
+      "examples": [
+        {
+          "bororo": "Este ritual também",
+          "translation": "como muitos dos rituais dos Boe-Bororo, está ligado ao culto dos finados e mostra a força, a valentia e a alegria do povo. Mas ele geralmente acontece fora do ritual fúnebre. É celebrado no findar da época do butao butu época da chuva', e nos meses de março ou abril, antes do joro butu akiridoge 'época da seca, época do fogo,' quando aparece a constelação das Plêiades. Nesta época o caeté ou piripiri, planta com raízes na água, no brejo e o talo fora dela, está no seu vigor e depois vai secando, morrendo. Morre mas debaixo da água recomeça a brotar. Por isso é um grande elemento simbólico da cultura Boe-Bororo. No ritual é chamada de aroe mano ou aiadu 'alma, parente.' Em todo ritual dos Boe-Bororo há sempre elementos da natureza que entram e fazem um papel importante do ritual e são chamados de aroe 'Almas.' O ritual acontece resumidamente assim: vendo que o Mano está no ponto para ser cortado, as lideranças decidem fazer a festa. Primeiro se escolhe o finado que se quer homenagear, depois as duas metadades, o Ecerae e os Tugarege com a seda dos brotos de tucum preparam as cordas para amarrar os talos do Mano. Hoje é mais rápido comprar as cordas já prontas no mercado. Como na cultura dos Boe-Bororo tudo é estruturado, organizado na terra e também no céu, a festa do Mano é privativa do clã dos \"Aroroe,\" o clã da \"lagarta preta listada de amarelo.\" Os homens e os jovens já iniciados vão na lagoa do Mano. Um dos \"Aroroe\" corta um talo, bate na água e todos gritam:\" Waaaahh!\" Cortam o Mano, amarram em feixes, carregam no ombro e levam na casa central da aldeia, o \"Baito.\" ''Ecerae\" de um lado e \"Tugarege\" do outro. Por toda a noite os cantos sobre o Mano ressoam por toda a aldeia. De manhã cedo chegam as mulheres das duas metades e correndo levam o Mano ao longo da mano reia 'estrada do Mano,' até o mano pa 'pátio do Mano.' Na tardinha chegam os jovens e os homens, cortam o Mano e formam duas rodas de talos todos iguais. Para amarrar bem precisa bater forte com um pau fornecido pelo \"Aroroe\" no lugar onde serão amarradas as duas cordas. Assim fazendo se evitará que o Mano se desmanche durante a corrida. Uma vez prontas as duas rodas sã colocadas uma ao lado da outra. Então um \"Aroredu\" pega pelas mãos de alguns que vão dançar em volta das rodas enquanto o mestre de canto canta os adornos feitos de penas de arara e a penugem branca que outros estão colocando em cima das duas rodas. Depois disso acontece a grande corrida do Mano. Ela é bonita quando as duas metades se desafiam uma com a outra se alternando na frente. Não é bonito quando uma metade vai embora deixando a outra para trás. O mesmo se diz das corrida das mulheres de manhã. Mas o importante é que quem chega primeiro na praça da aldeia seja da metade oposta do finado ao qual é dedicada a corrida. Assim é a lei dos Boe-Bororo, a reciprocidade. Chegando as duas rodas no meio de muita alegria se executa o canto final. Então as mulheres podem sair de suas casas e participar da festa. Podem também elas ensaiar uma corrida do Mano para ver quem vai vencer. A troca de alimentos entre Ecerae e Tugarege encerra o ritual do Mano. No dia seguinte os homens levarão o Mano para o rio pedindo aos Aroe 'almas' que mandem muitos peixes para os Boe-Bororo. Mano kurirewu -- Ritual Boe-Bororo das duas rodas grandes de talos de caeté (Helicônia). Awyre pemegare! Mano Kurirewu pemegare! Boe eegarere boe etaidyre Assim falou o chefe cultural Bororo Antônio Kanajó na festa do Mano Kurirewu em Meruri no ano de 1995: \"Este é bom! Mano Kurirewu é bom! O povo se alegra, o povo gosta!\""
+        }
+      ]
+    },
+    {
+      "id": "mori-2",
+      "headword": "Mori",
+      "variants": [],
+      "summary": "Mori Vingança, recompensa, retribuição; pagamento (neol.).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>l. Mori: vingança</p>\n\n<h3>2. Mori: recompensa</h3>\n\n<h3>3. Mori: vingança pela marte de alguem</h3>\n\n<h3>1. Mori: vingança Esta f</h3>\n\n<p>é usada para indicar vingança no sentido mais óbvio da palavra. p. ex. kajao, morimode 'espera: vingar-me-ei'.</p>\n\n<h3>2. Mori : recompensa A recompensa ou retribuição por um favor ou por um objeto recebido é urna obrigação</h3>\n\n<p>tao forte e tradicional, que ninguém pode e deve preterir. Quem por acaso esquecesse voluntária ou involuntariamente essa regra seria alvo do escarnio e do desprezo de todos. A pessoa que recebe um favor ou um objeto deve impreterlvelmente retribuir com alguma coisa, em geral a seu arbítrio ou, as vezes, por deter, minação de tradição.</p>\n\n<p>A f. mori, além dessa acepção, tem outras muito mais amplas e pode corresponder a presente, dádiva, reparação de danos causados, agrado, mimo. Alguns exemplos esclarecerao esses conceitos. Se um cão morder alguém, este nao deve ofender-se mas confiante aguarda o mori por parte do dono do animal.</p>\n\n<p>Se o mori, que consiste numa espalmação de pasta vermelha de urucu, demora, então o ferido se considera ofendido e o proprietário do cão deixa de absolver uma de suas obrigações sociais. Quando duas crianças altercam e urna leva a pior, esta, como mori, deve ser espalmada de pasta vermelha de urucu pelo pai da que causou a ofensa. Se urna criança, tropeçando em algo, se fere, a mae ou outra pessoa ou a própria criança executam o mori. conveniente, batendo o objeto contundente.</p>\n\n<p>Se alguém estraga ou perde um objeto de outrem deve dar-lhe como paga um mori. Quando alguém se magoa, caindo de urna árvore ou picado por urna cobra, os parentes oferecem-lhe um mori, tingindo-o de pasta vermelha de urucu e revestindo-o de plumas. Nas caçadas ou pescarias oficiais em que toma parte algum iadu, representante do defunto para o qual é feita a excursão, se aquele sofre algum ferimento, os parentes do defunto devem chorar e scarificar-se deixando cair sangue sobre ele.</p>\n\n<p>Este, por sua vez, tendo sarado, deve retribuir o mori com outro mori, espalmando de urucu todos que choraram e que se escarificaram. - Quando alguém, do qual se havia perdido qualquer notícia, volta a aldeia depois de longa ausência, entoa-se logo o canto Roia kurirewu, reservado aos defuntos, e no dia seguinte espalma-se o recém-chegado de pasta vermelha de urucu. 1 Deve-se notar que o bororo muitas vezes, quando dá algum presente, por um sentimento de delicadeza e elegancia, diminui o valor do objeto doado e procura dissuadir o presenteado da necessidade de urna retridbuição. Tais expressões porém, não passam de urna fórmula de galantaria a qual ninguém acredita e obedece.</p>\n\n<p>Essas leis de recompensa nao vigoram, porém, entre bororo e civilizados ou, melhor, tem um valor apenas unilateral: o bororo não se sente obrigado a retribuir presentes aos civilizados mas destes espera abundantes pagas. O motivo que aduz é a abundância de objetos que os brancos possuem. Os velhos e os doentes graves sao dispensados do mori; agradecem, como de costume, apertando fortemente o objeto e a mao do doador.</p>\n\n<h3>3. Mori: vingança pela morte de alguem Quando um bororo morre é escolhido um seu representante denominad</h3>\n\n<p>o aroe maiwu 'alma nova, ou iadu, companheiro, cuja obrigaçãão principal é vingar a morte do representado, abatendo urna onça cujo couro será dado a um parente do defunto. Esta onça é denominada mori, vingança ou retribuição, barege ekodody 'banquete das feras'. Deve-se observar que os índios acreditam que a morte seja causada por um bope, espírito mal- fazejo, e que a onça seja um bope.</p>\n\n<p>Matando o felídeo eliminam um bope, efetuando assim urna vingança.</p>",
+      "examples": [
+        {
+          "bororo": "agradecem",
+          "translation": "como de costume, apertando fortemente o objeto e a mao do doador. 3. Mori: vingança pela morte de alguem Quando um bororo morre é escolhido um seu representante denominado aroe maiwu 'alma nova, ou iadu, companheiro, cuja obrigaçãão principal é vingar a morte do representado, abatendo urna onça cujo couro será dado a um parente do defunto. Esta onça é denominada mori, vingança ou retribuição, barege ekodody 'banquete das feras'. Deve-se observar que os índios acreditam que a morte seja causada por um bope, espírito mal- fazejo, e que a onça seja um bope. Matando o felídeo eliminam um bope, efetuando assim urna vingança. Mori Vingança, recompensa, retribuição"
+        }
+      ]
+    },
+    {
+      "id": "moto-epa",
+      "headword": "Moto epa",
+      "variants": [],
+      "summary": "Moto epa (moto 'terra' + epa 'para') [indivíduo que gosta de terra] - 1 A geofagia é um hábito que afe-ta alguns membros da tribo bororo, crianças e adultos, desde tempos imemoriais, como efeito de verminoses mais ou menos crônicas ou graves. Em alguns casos provoca a morte especialmente de crianças. Os geófagos preferem aterra queimada que, na choupana ou fora dela, encontram facilmente no ery pa 'lugar onde acendem o fogo'; nos campos a retiram dos termiteiros, queimados pelo fogo que periodicamente devasta os cerrados.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "noido",
+      "headword": "Noido",
+      "variants": [],
+      "summary": "Noido (no 'côco de babaçu' + ido 'estipe') estipe de côco de babaçu (Attalea speciosa). 1 É uma bela palmácea de alto porte e de muitíssima utilidade aos bororo. Fornece-lhes alimentos com seus côcos, com o pericárpio verde, que é consumido assado ou reduzido a farinha, com seu palmito e com sua seiva, que é retirada com a mesma técnica do → iworo 'bebida de acurí'. O vinho de babaçu, porém, é muito menos abundante e de difícil extração. O bróto da palmeira proporciona insuperável matéria prima para trabalhos de trançados, como cestas, abanicos e esteiras. Os folíolos do mesmo dão tangas e estojos penianos. As fólhas adultas, que podem alcançar até oito metros de comprimento em exemplares novos, servem como ótima cobertura para as choupanas.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://en.wikipedia.org/wiki/Attalea_speciosa",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "pari uke jorubo",
+      "headword": "Pari uke jorubo",
+      "variants": [],
+      "summary": "Pari uke jorubo (pari 'ema' seu + ke2 'alimento' + ji 'seu' + erubo 'vegetal mágico') [vegetal mágico de cujas frutas se alimenta a ema. Designação de um → erubo 'vegetal mágico'. 1 É um cipó do cerrado cujas folhas e raízes os Bororo mastigam para extrair o suco que espalmam pelas pernas a fim de terem resistência nas corridas como a ema. A fina raiz introduzida no esôfago, serve para provocar o vómito que os livra do peso no estómago e os torna mais ágeis para correr. Para outras noções → beo uke jorubo 'vegetal mágico da seriema'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Ema",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ra",
+      "headword": "Ra",
+      "variants": [],
+      "summary": "1\">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar de destaque na vida social dos bororo e lhes tomam grande parte do tempo. São em elevado número, adaptados a várias solenidades e circunstâncias. Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua sede apropriadada sejam o bai mana gejewy 'casa central', e o bororo 'pátio da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "<p>e depois continuam o tirocínio na sociedade dos homens. Os bororo muito estimam quem tem clara e robusta dicção e nao poupam meios, o mais das vezes supersticiosos, para obterem boa voz. → erubo, remédio. Os cantos são sempre executados com a máxima seriedade e os cantores conservam os olhos fechados, especialmente os mestres de canto.</p>\n\n<p>Muitas composições tem duração considerável, às vezes de horas, mas podem ser interrompidos, para descanso dos cantores, embora frequentemente os maracás nao parem de agitar-se, mesmo durante as pausas. São essencialmente cantados pelos homens, acolitados, em certas ocasiões também por mulheres as quais, em geral, não pronunciam as palavras mas emitem sons à guisa de eco. Isto, porém, nao impede que algumas saibam muitos cantos e que cooperem com esse conhecimento.</p>\n\n<p>Normalmente, para marcar o ritmo usa-se um par de bapo kurirewu 'grande maracá', durante os funerais, e, fora dos mesmos, um de baporogu 'pequeno maracá'. Em algum canto aparecem também outros instrumentos como oika, o iworeboe, o parira, o pana, instrumentos musicais de sôpro, e o ka, 'tamboril'. Como dissemos os cantos sao muitíssimos e podem ser reunidos nestes principais grupos: cantos fúnebres, cantos para caça e pesca, cantos para festas sociais, como p. ex. para a perfuração do lábio das crianças; ; alguns deles sao diurnos, outros noturnos, alguns executados de pé, outros estando os cantores assentados.</p>\n\n<p>Além dos cantos próprios de toda a tribo há muitos privativos de cada clã. Não se conhecem composições propriamente de guerra. Deve-se notar que na linguagem comum o canto denomina-se boe eke roia (utilizando-se o classificador para alimento) e a execução do mesmo se diz boe eke roia ko.</p>",
+      "examples": [
+        {
+          "bororo": "alguns deles sao diurnos",
+          "translation": "outros noturnos, alguns executados de pé, outros estando os cantores assentados. Além dos cantos próprios de toda a tribo há muitos privativos de cada clã. Não se conhecem composições propriamente de guerra. Deve-se notar que na linguagem comum o canto denomina-se boe eke roia (utilizando-se o classificador para alimento) e a execução do mesmo se diz boe eke roia ko. 1\">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar de destaque na vida social dos bororo e lhes tomam grande parte do tempo. São em elevado número, adaptados a várias solenidades e circunstâncias. Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua sede apropriadada sejam o bai mana gejewy 'casa central', e o bororo 'pátio da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai"
+        }
+      ]
+    },
+    {
+      "id": "ra-2",
+      "headword": "Ra",
+      "variants": [],
+      "summary": "Ra2 - Osso, ossada, esqueleto, região do corpo contendo ossos; membro viril em ereção; dureza; broto, galho; tábua (neol.). 1 A cópula é indicada com a locução rare 'ter ereção', mas essa expressão é pouco usada, pois aos ouvidos dos bororo não é decente. As frases encontradas nas lendas sao padu keje 'deito sobre', ou ure tuwygeje 'deitou-se sobre', ou mikody 'união carnal. A forma usual e delicada é, porém era okea 'brinquedo de mão', em vista dos atos preliminares da cópula. As relações sexuais, especialmente nos tempos de prosperidade da tribo, eram assaz espaçadas. Essa abstinência, aconselhada pelos velhos, devia conservar o vigor individual e, por conseguinte, o de toda a tribo. Nos tempos atuais os anciães confirmam e justificam seu ponto de vista notando a decadência física nos moços que nao seguem mais os cânones da passada rigidez. Não obstante sua abstinência, entretanto usavam e usam várias substâncias as quais atribuem poderes afrodisíacos como p. ex. bokwadobe 'resina de jatobá', o akiri i kuru 'resina de anjico', o kado eno guru 'seiva de broto de taquara'. As resinas são comidas frescas e o broto é ingerido cru.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Ra2 - Osso",
+          "translation": "ossada, esqueleto, região do corpo contendo ossos"
+        }
+      ]
+    },
+    {
+      "id": "rakojerewu",
+      "headword": "Rakojerewu",
+      "variants": [],
+      "summary": "Rakojerewu (rakoje 'existência, ser + -re 'indicativo' + -wy 'relativizador'). Aquele ou aquilo que existe, que está de pé, o morador.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Rakojerewu (rakoje 'existência",
+          "translation": "ser + -re 'indicativo' + -wy 'relativizador'). Aquele ou aquilo que existe, que está de pé, o morador."
+        }
+      ]
+    },
+    {
+      "id": "rakydy",
+      "headword": "Rakydy",
+      "variants": [],
+      "summary": "Rakydy - Talvez. ex. Atumode? Uw, rakydy 'Irás? Sim, talvez.'",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Rakydy - Talvez. ex. Atumode? Uw",
+          "translation": "rakydy 'Irás? Sim, talvez.'"
+        }
+      ]
+    },
+    {
+      "id": "ririgo",
+      "headword": "Ririgo<sub>1</sub>",
+      "variants": [],
+      "summary": "Ririgo1 - calor; go, suf. caus. incip. [fazer calor]. Aquecer, esquentar. imuguwy tu woe iwo iririgo boery keje 'assento-me bem aqui para me aquecer ao calor do sol'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "ta",
+      "headword": "Ta",
+      "variants": [],
+      "summary": "Ta Tá - Extração, saída, cultivação. Ex. imode tadari ta ikeje 'desenterrarei batatas para comê-las'; kaibá imode ita? 'por onde sairei?'; imode nonogo ta? 'cultivarei urucu'.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Ta Tá - Extração",
+          "translation": "saída, cultivação. Ex. imode tadari ta ikeje 'desenterrarei batatas para comê-las'"
+        }
+      ]
+    },
+    {
+      "id": "tabó",
+      "headword": "Tabó",
+      "variants": [],
+      "summary": "Tabó - Espírito misterioso imaginado como uma curta e grossa cobra de aproximadamente 20cm de diâmetro por 1 metro de comprimento. Pode ser preto ou vermelho. Afirmam os bororo que causa a morte de quem o vê.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "tadari",
+      "headword": "Tadari",
+      "variants": [],
+      "summary": "Tadari -- Variedade de tubérculo da florestaresta assaz apreciado na alimentação. Conhecem-se dois tipos: branco e roxo.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "tadari umana",
+      "headword": "Tadari umana",
+      "variants": [],
+      "summary": "Tadari umana -- (tadari 'tubérculo comestível', u '3.SG', mana 'irmão mais velho'). 1. Variedade de tubérculo da floresta um pouco maior ue o tadari; 2. Rio afluente da esquerda do Pogybo 'rio vermelho', a montante da atual cidade de Rondonópolis, rio Tadarimana.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": [
+        {
+          "bororo": "Tadari umana -- (tadari 'tubérculo comestível'",
+          "translation": "u '3.SG', mana 'irmão mais velho'). 1. Variedade de tubérculo da floresta um pouco maior ue o tadari"
+        }
+      ]
+    },
+    {
+      "id": "tori",
+      "headword": "Tori",
+      "variants": [],
+      "summary": "Tori (plural tore). Morro, colina, serra, maciço, pedra; região correspondente a crista da tíbia iwu, corpo humano; região dorsal dos peixes perto da cauda. | A toponímia orográfica bororo obedece, à semelhança da hidrográfica, a alguma circunstância acidental. Assim teremos o morro do jaguar, o morro do urubu, o morro das ararapirangas, ou entao o morro da taquara, o morro dos xavante, o morro da gruta dos morcegos. De algumas elevações cujo nome os bororo ainda lembram, foi impossível determinar a etimologia e a localização. Alguns relevos, embora distintos, exibem a mesma denominação.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [
+        {
+          "url": "https://s2.wklcdn.com/image_95/2860457/17829500/11301902Master.jpg",
+          "alt": "Tori",
+          "credit": ""
+        }
+      ],
+      "content": "<p>Kurugugwari (Morro da Mesa)Principais elevações conhecidas pelos bororo:Adugori - 1. margens do Tygori Jao 'rio Diamantino'; 2. margens do curso inferior do Pogybo Cerewu 'rio. S. Lourenço'Aeia Co - (Fortaleza) a 25 Km ao norte da cidade de GuiratingaAijeri - margem esqerda do curso superior do Tadari Umana 'rio Prata'Amemari - nascentes do Tadari Umana 'rio Prata'Aobaragari - (Baraga), nascentes do Arároe Eiao 'córrego Arareau'Aogigudure - a 12 km a oeste de MeruriAruari - margens do Pogybo 'rio Vermelho' nas proximidades da localidade Jarudori Aturebe - (Tribiu), a 20 km ao norte da cidade de RondonópolisAturua Ko Meibo - região do curso inferior do Pogybo Cerewu 'rio S.</p>\n\n<p>Lourenço'Aturua Oro - regiao do curso inferior do Pogybo cerewu 'rio s. Lourenço'Aturuari - (Morro Itacolomi) margem direita do curso inferior do Pogybo Cerewu 'rio S. Lourenço'Bae Eiari - nascentes do Pogybo Cerewu 'rio S.</p>\n\n<p>Lourenço'Bae Eiari - nascentes do Aturebe Eiao, córrego TribiauBakureri - nascentes do Pogybo Cerewu 'rio S. Lourenço'Barameri - ?Batuguri - ?Beraguri - a 30 km a sudoeste da cidade de PoxoreuBoe Etore Eto Bodurewu - margens do Jaruru Kurirewu 'rib. Botovi'Borori - curso inferior do Okoge Eiao 'córrego Areia'Byturori - vale do Pogybo 'rio Vermelho'Cibae Eiari - proximidades do curso superior do rio Itiquira e do rio CorrentesCiwabori - nascentes do rio AraguaiaCururiri - proximidades da cidade de Torixorewu na margem esquerda do Oraribo Kurirewu 'rio Araguaia'Ikuieri -</p>\n\n<h3>1. Margem esquerda do Ikuiebo córrego da prainha, na cidade de Cuiabá</h3>\n\n<p>2. proximidades da localidade Jarudori. É denominado também IpareriIpareri - proximidades da localidade Jarudori. É denominado também IpareriIwodyre - a 35 km a noroeste da cidade de GuiratingaJarudori - margem esquerda do Pogybo rio Vermelho, a montante da cidade de RondonópolisJatuguri - ?Jerigiriri - a 30 km a sudoeste de MeruriJukori - nascentes do Porubi, ribeirão Porube AijauKadori - 1. arredores da cidade de Guirantinga. 2. (Cadopare) nas proximidades da cidade de RondonópolisKagarari - arredores da cidade de CuiabáKaiamori - o norte e nas proximidades de MeruriKamarari - nascentes do Tadari Umana rio PrataKejari - margem direita do rio Vermelho a jusante e a 20 Km da cidade de RondonópolisKiogori - curso duperior do Pogybo Cerewu rio S.</p>\n\n<p>LorençoKoraori - (Morro Grande) a 30 km ao sul de MeruriKudoroe eiari - 1. arredores da cidade de Poxoreu na margem esquerda do Po Cerewu rio Poxoreu. 2. ao nordeste e nas proximidades de MeruriKudorori - 1. arredores da cidade de PoxorewuKuiaori - curso inferior do Pogybo cerewu rio Pogubo Coreu Kuidori Biagarewu - (Cuidore), a 45 km a oeste da cidade de GuiratingaKujibori - margens do Kujibo ribeirão CoxipóKuogori - nascentes do Jerigi afluente da esquerda do Pogybo rio VerelhoKurugugwari - 1. (Morro da Mesa), cidade de Poxoreu.2. (Morro da Mesa), a 80 km ao sul de MeruriMakaori - margem esquerda do Pogybo rio Vermelho, na região de JarudoriManadori - margens do Pogybo Cerewu rio S. LourençoMarugori - nacentes doOroaribo Kurirewu rio AraguaiaMeari - proximidades da cidade de PoxoreuMeryri - margem esquerda do curso médio do Kujibo Po Rururewu ribeirão Barreiro, em MeruriMiciguri - margens do curso superior do Oroaribo Kurirewu, rio AraguaiaMotoreri - nascentes do Tygori Jaoribeirão DiamantinoNabureri - Margem direita do rio Vermelho a 45 km ao sul da cidade de PoxoreuNoidori - margem esquerda do Pobo Kurirewurio das Mortes, a noroeste do Pobore Bytu Kurirewu, Salto-da-FumçaOroguri - bacia do Tygori Jao ribeirão DiamantinoPai Kujaguri - Margem direita do rio Vermelho ao sul da cidade de PoxoreuPenori - a 30 km a nordeste de Meruri</p>",
+      "examples": []
+    },
+    {
+      "id": "tubore tubore",
+      "headword": "Tubore tubore",
+      "variants": [],
+      "summary": "Tubore tubore -- Lambaris [brinquedo durante o qual se repetem essas palavras]. Brinquedo infantil realizado nas praias dos rios. 1 Um dos participantes do jogo assenta-se num buraco escavado na areia com a quaJ é recoberto até ao pescoço. Logo os companheiros lhe puxam os cabelos e depois se afastam e se escondem enquanto um, rodeando o prisioneiro, repete as palavras tubore tubore. Por fim também ele se oculta. A um assobio de aviso o menino semienterrado levanta-se e, empunhando uma vareta, vai a procura dos companheiros. o primeiro que ele logra percutir ocupará o seu lugar e o folguedo recomeça.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "uwarinogo",
+      "headword": "Uwarinogo",
+      "variants": [],
+      "summary": "Uwarinogo Gavião-tesoura (Elanoides forficatus).",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "https://pt.wikipedia.org/wiki/Gavião-tesoura",
+      "images": [
+        {
+          "url": "images/uwarinogo.jpg",
+          "alt": "Uwarinogo",
+          "credit": ""
+        }
+      ],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "woe",
+      "headword": "Woe",
+      "variants": [],
+      "summary": "Woe adv Aqui.",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "list",
+      "headword": "list",
+      "variants": [],
+      "summary": "Adugo1.txt",
+      "keywords": [],
+      "updated_at": "2026-01-04",
+      "url": "",
+      "images": [],
+      "content": "",
+      "examples": []
+    },
+    {
+      "id": "baraedu_1",
+      "headword": "Baraedu",
+      "variants": [
+        "baraedu",
+        "baráe",
+        "barae"
+      ],
+      "summary": "Singular de barae. Termo geral para “civilizado” (não indígena) e entrada histórica sobre os primeiros contatos, as colônias do Pogúbo e a atuação salesiana (1718–1902).",
+      "keywords": [
+        "civilizado",
+        "história",
+        "contato",
+        "Bororo",
+        "Salesianos",
+        "Cuiabá",
+        "Pogúbo",
+        "São Lourenço",
+        "Colônia Teresa Cristina"
+      ],
+      "updated_at": "2026-01-07",
+      "url": "",
+      "images": [],
+      "content": "<p>Singular de <em>barae</em>. Designa “civilizado” (não indígena), de forma geral. Logo que os Bororo conheceram os primeiros civilizados, determinaram — como clã “possuidor” deles — o clã dos <strong>Bokodori Eceráe</strong>, conforme o costume tradicional da tribo.</p>\n\n<p>Provavelmente isso ocorreu porque um membro desse clã teria sido o primeiro a avistar os civilizados. Para detalhes sobre esse costume, veja <em>aróe</em>, “seres primaciais”. Embora algumas lendas (de cronologia impossível de determinar) mencionem civilizados, não se pode precisar a época do primeiro encontro histórico com os brancos, sobretudo porque a tribo não era litorânea.</p>\n\n<p>Sem dúvida, o encontro decisivo ocorreu em <strong>outubro de 1718</strong>, com a bandeira chefiada por <strong>Antonio Pires de Campos</strong>, e logo depois com seu êmulo <strong>Paschoal Moreira Cabral</strong>, que se estabeleceu no território onde mais tarde surgiu a atual cidade de <strong>Cuiabá</strong> (Taunay 1949: 9). Ali encontraram uma nação indígena que Virgílio Corrêa Filho denomina “<em>coxiponês</em>”, mas que, a nosso ver — pelo estudo da toponímia — não poderia ser outra senão a dos Bororo (Corrêa Filho [1939]: 14).</p>\n\n<p>Essa interpretação também se apoia no Pe. José Manoel de Siqueira, cujo manuscrito foi publicado por Couto de Magalhães (Magalhães 1934: 260–261). Note-se, ainda, que a própria forma “coxiponês” é de origem bororo: <em>Coxipó</em> não é mais que uma corrupção de <em>Kujibo</em>, isto é, “ribeirão da ave <em>kujibo</em>”.</p>\n\n<p>Após as primeiras relações de 1718, sucederam combates violentos. Os brancos encontraram os “<em>Aripocônê</em>” (= Bororo) aldeados nas margens dos rios “Cuxipó Mirim, do Peixe e Butuca”, ostentando adornos de ouro — abundante nos barrancos daqueles rios (Taunay 1949: 12–13). Os Bororo, por fim desbaratados, afastaram-se das minas, e os invasores passaram a ocupar permanentemente a localidade.</p>\n\n<p>Mais tarde, o poder público entregou a tarefa às forças armadas, que lograram “domar” os índios do <em>Pogúbo</em> (bacia do rio São Lourenço) e reuni-los em dois grupos chamados “<strong>Colônia Isabel</strong>” e “<strong>Colônia Teresa Cristina</strong>”, situados no baixo <em>Pogúbo Cereu</em>, rio São Lourenço. A missão foi concluída em <strong>24 de abril de 1886</strong>, pelo então alferes <strong>Antonio José Duarte</strong> (Mendonça 1919, 1º: 176–177).</p>\n\n<p>Em <strong>19 de abril de 1895</strong>, visando confiar aos missionários salesianos a direção da Colônia Teresa Cristina, o presidente <strong>Manoel José Murtinho</strong> a cedeu por contrato n.º</p>\n\n<h3>610. Em <strong>5 de junho de 1895</strong>, o Pe</h3>\n\n<p><strong>Giovanni Balzola</strong>, acompanhado do Pe. <strong>Giuseppe Solari</strong>, do irmão leigo <strong>Giacomo Grosso</strong> e de três religiosas Filhas de Maria Auxiliadora (<strong>Ir. Frederica Hummel</strong>, <strong>Ir. Madalena Tramonti</strong> e <strong>Ir.</p>\n\n<p>Margherita Micheletto</strong>), ingressou na colônia, sendo recebido por trezentos Bororo e vinte e cinco soldados. A alma de todo esse movimento de religião e “civilização” foi <strong>Dom Luigi Lasagna</strong>, superior dos salesianos no Brasil, que cinco meses depois, em <strong>7 de novembro de 1895</strong>, morreu aos quarenta e cinco anos em um desastre ferroviário perto de <strong>Juiz de Fora</strong> (Minas Gerais).</p>\n\n<p>Em <strong>1898</strong>, intrigas políticas, interesses pessoais e calúnias contra os missionários provocaram a expulsão dos salesianos (superior da missão: Pe. <strong>Antonio Malan</strong>). Oferecida novamente a direção da colônia aos salesianos, não foi mais aceita, embora em <strong>1899</strong> uma delegação de quinze Bororo tenha ido a Cuiabá pedir ao antigo diretor, Pe. Giovanni Balzola, o regresso dos missionários à colônia.</p>\n\n<p>Anos mais tarde, essa colônia e os Bororo do c.i. do <em>Pogubo Ceréu</em>, rio São Lourenço, entraram na esfera do <strong>S.P.I.</strong>\n<br>O Pe. Antonio Malan voltou-se então para explorar um novo campo e, com o Pe. Giovanni Balzola, percorreu o planalto a leste de Cuiabá, chegando até a atual <strong>Araguaiana</strong>, nas margens do rio Araguaia.</p>\n\n<p>A região ainda estava sob domínio do Bororo “indômito” que, embora aparentemente pacificado na zona do Pogubo, desencadeava vinganças no território explorado pelos missionários. Por indicação de funcionários da linha telegráfica — que cumpriam suas obrigações acompanhados por piquetes armados — os salesianos escolheram uma localidade chamada <strong>Tachos</strong>, frequentada pelos índios. Lá se instalaram em tendas em <strong>18 de janeiro de 1902</strong>, depois de um mês de viagem a cavalo (partida de Cuiabá em <strong>17 de dezembro de 1901</strong>), ainda sob direção do intrépido Pe.</p>\n\n<p>Giovanni Balzola. Integravam a comitiva: Pe. <strong>Giuseppe Salvetto</strong> e os irmãos leigos <strong>Silvio Milanese</strong>, <strong>Domenico Minguzzi</strong> e <strong>Giacomo Grosso</strong>. As Filhas de Maria Auxiliadora eram <strong>Ir.</p>\n\n<p>Rosa Kiste</strong> (diretora), <strong>Ir. Maddalena Tramonti</strong> e <strong>Ir. Lucia Michetti</strong>.</p>\n\n<p>Após ansiosa expectativa, em <strong>7 de agosto de 1902</strong>, quatro guerreiros armados de arcos e flechas, liderados por <strong>Meriri Okwoda</strong> (mais tarde batizado Joaquim), apresentaram-se amigavelmente na missão. Foi o início da “pacificação” dos Bororo do planalto, que passaram a entrar no consórcio dos povos civilizados. A zona habitada por eles tornou-se então livre de perigos e nela surgiram e surgem fazendas e centros demográficos como <strong>Guiratinga</strong>, <strong>Poxoréu</strong>, <strong>Torixoréu</strong>, <strong>Barra do Garças</strong>, <strong>Tesouro</strong>, <strong>Alto Araguaia</strong>, <strong>Alto Garças</strong>.</p>\n\n<p>Meriri Okwoda, valendo-se do direito adquirido por ter avistado por primeiro os missionários — e, portanto, por “pertencerem” a ele —, opôs-se aos excessos que seus companheiros teriam cometido por ódio aos brancos, em vista das relações de vingança existentes entre Bororo e civilizados. Nesse papel, foi apoiado e guiado por <strong>Meriri Otodyia</strong>, mais conhecido como <strong>Uke Iwagu Uo</strong> (Capitão Major).</p>\n\n<p>Os índios do planalto, ao longo dos anos, estabeleceram-se nas colônias salesianas de <strong>Sangradouro</strong> e dos <strong>Tachos</strong>, sendo frequentes as visitas e estadas temporárias de muitos Bororo do Pogúbo (bacia do rio São Lourenço). O centro dos Tachos transferiu-se mais tarde para o <strong>Meruri</strong>, a poucos quilômetros de distância.</p>",
+      "examples": [],
+      "references": [
+        {
+          "author": "Taunay",
+          "year": "1949",
+          "title": "",
+          "source": "",
+          "pages": "9, 12–13"
+        },
+        {
+          "author": "Corrêa Filho, Virgílio",
+          "year": "1939",
+          "title": "",
+          "source": "",
+          "pages": "14"
+        },
+        {
+          "author": "Couto de Magalhães (ed.)",
+          "year": "1934",
+          "title": "",
+          "source": "",
+          "pages": "260–261"
+        },
+        {
+          "author": "Mendonça",
+          "year": "1919",
+          "title": "",
+          "source": "",
+          "pages": "1º: 176–177"
+        }
+      ]
+    }
+  ]
+}

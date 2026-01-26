@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauna Bororo - Boe Eno Moto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: #F9F6F2;
+            color: #333;
+        }
+        nav {
+            background: #3D352F;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: rgba(255,255,255,0.15);
+        }
+        nav .brand {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            color: #3D352F;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .search-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            margin-bottom: 1rem;
+        }
+        .search-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-input:focus {
+            border-color: #C75B39;
+        }
+        .filter-select {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+        .stats {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .results-container {
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            overflow: hidden;
+        }
+        .empty-state {
+            padding: 3rem;
+            text-align: center;
+            color: #888;
+        }
+        .empty-state h2 {
+            margin: 0 0 0.5rem 0;
+            color: #666;
+        }
+        .entry {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .entry:last-child {
+            border-bottom: none;
+        }
+        .entry:hover {
+            background: #f8f9fa;
+        }
+        .entry-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+        }
+        .entry-word {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #3D352F;
+        }
+        .entry-secondary {
+            color: #666;
+            font-size: 1rem;
+        }
+        .entry-ipa {
+            color: #666;
+            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+        }
+        .entry-tag {
+            font-size: 0.75rem;
+            background: #F5EDE8;
+            color: #A84B2F;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .entry-definition {
+            margin: 0.5rem 0;
+            color: #444;
+        }
+        .entry-example {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid #C75B39;
+            color: #555;
+            font-style: italic;
+        }
+        .entry-scientific {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .entry-comment {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: #fff8e1;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .entry-media {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+            align-items: flex-start;
+        }
+        .entry-thumbnail {
+            max-width: 120px;
+            max-height: 90px;
+            border-radius: 4px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .entry-thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .entry-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .entry-links a {
+            font-size: 0.85rem;
+            color: #C75B39;
+            text-decoration: none;
+        }
+        .entry-links a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #fff59d;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer a {
+            color: #C75B39;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .search-row {
+                flex-direction: column;
+            }
+            .search-input, .filter-select {
+                width: 100%;
+            }
+            .entry-thumbnail {
+                max-width: 80px;
+            }
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="brand">Boe Eno Moto</a>
+        <a href="dictionary.html">Dicionário</a>
+        <a href="encyclopedia.html">Enciclopédia</a>
+        <a href="fauna.html" class="active">Fauna</a>
+    </nav>
+
+    <header>
+        <h1>Fauna Bororo</h1>
+        <p class="subtitle">Bororo Fauna Dictionary &mdash; 97 espécies</p>
+    </header>
+
+    <div class="search-container">
+        <div class="search-row">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo, Português ou nome científico)..." autocomplete="off">
+            <select id="category-filter" class="filter-select">
+                <option value="">Todas as categorias</option>
+                <option value="Barege Akururewyge">Barege Akururewyge</option>
+                <option value="Barege boemoriae">Barege boemoriae</option>
+                <option value="Barege Borewyge">Barege Borewyge</option>
+                <option value="Barege kugure">Barege kugure</option>
+                <option value="Barege Kurirewyge">Barege Kurirewyge</option>
+                <option value="Barege pobo tadawyge">Barege pobo tadawyge</option>
+                <option value="Kiege Boemoriae">Kiege Boemoriae</option>
+                <option value="Kiege buregi toiburewyge">Kiege buregi toiburewyge</option>
+                <option value="Kiege kugary kejewyge">Kiege kugary kejewyge</option>
+                <option value="Kiege moto kejewyge">Kiege moto kejewyge</option>
+                <option value="Kiege oto toiborewyge">Kiege oto toiborewyge</option>
+                <option value="Kiege pobo pobo tadawyge">Kiege pobo pobo tadawyge</option>
+            </select>
+        </div>
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="results-container" id="results">
+        <div class="empty-state">
+            <h2>Pesquise a fauna</h2>
+            <p>Digite um nome em Bororo, Português ou científico para começar</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+<p>Schema v1.0</p>    </footer>
+
+    <!-- Fuse.js for fuzzy search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <script>
+    // Fauna data embedded at build time
+    const faunaData = [{"category": null, "classification_bororo": null, "id": 95, "info": null, "name_bororo": "Gigo", "name_portuguese": "Abelha benjo\u00ed", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Benjoi_pito.jpg/560px-Benjoi_pito.jpg", "scientific_name": null}, {"category": null, "classification_bororo": null, "id": 97, "info": null, "name_bororo": "Kidoguroe", "name_portuguese": "Abelha bor\u00e1", "pic_link": "https://static.inaturalist.org/photos/189028522/large.jpg", "scientific_name": "Tetragona clavipes"}, {"category": "Falconidae", "classification_bororo": "Kiege Boemoriae", "id": 41, "info": null, "name_bororo": "Makao", "name_portuguese": "Acau\u00e3", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Laughing_Falcon_-_Dari%C3%A9n_-_Panama_%2848444308217%29.jpg", "scientific_name": "Herpetotheres cachinnans"}, {"category": "Threskiornithidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 65, "info": null, "name_bororo": "Bace ao kororogodyrewy", "name_portuguese": "Aiai\u00e1 (colhereiro-americano)", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/c7/2019-02-15_074_Roseate_spoonbill_%28Platalea_ajaja%29_at_Sian_Ka%27an_Biosphere_Reserve%2C_Mexico.jpg", "scientific_name": "Platalea ajaja"}, {"category": "Anhimidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 71, "info": null, "name_bororo": "Tamigi", "name_portuguese": "Anhuma", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Anhima_cornuta_-near_Manu_Wildlife_Center%2C_Manu_National_Park%2C_Peru_-three-8.jpg/560px-Anhima_cornuta_-near_Manu_Wildlife_Center%2C_Manu_National_Park%2C_Peru_-three-8.jpg", "scientific_name": "Anhima cornuta"}, {"category": "Tapir\u00eddeos", "classification_bororo": "Barege Kurirewyge", "id": 10, "info": null, "name_bororo": "Ki", "name_portuguese": "Anta", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/8/86/Lowland_Tapir_%28Tapirus_terrestris%29_male_out_of_the_forest_..._-_Flickr_-_berniedup.jpg", "scientific_name": "Tapirus terrestris"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "id": 56, "info": null, "name_bororo": "Kudoro", "name_portuguese": "Arara-azul-grande", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Arara_Azul_no_Pantanal.jpg/560px-Arara_Azul_no_Pantanal.jpg", "scientific_name": "Anodorhynchus hyacinthinus"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "id": 57, "info": null, "name_bororo": "Nabure", "name_portuguese": "Araracanga (arara vermelha)", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Ara_macao_-Fort_Worth_Zoo-8.jpg", "scientific_name": "Ara macao"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "id": 58, "info": null, "name_bororo": "Kuido", "name_portuguese": "Arara-canind\u00e9", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Ara_ararauna_Luc_Viatour.jpg", "scientific_name": "Ara ararauna"}, {"category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "id": 4, "info": null, "name_bororo": "Aipoburewy", "name_portuguese": "Barege boemoriae", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ocelot_%28Jaguatirica%29_Zoo_Itatiba.jpg/560px-Ocelot_%28Jaguatirica%29_Zoo_Itatiba.jpg", "scientific_name": "Leopardus pardalis"}, {"category": "Delphinidae", "classification_bororo": "Barege pobo tadawyge", "id": 34, "info": null, "name_bororo": "Jakorewy", "name_portuguese": "Boto", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/DELFIN_DEL_ORINOCO2.JPG/560px-DELFIN_DEL_ORINOCO2.JPG", "scientific_name": "Sotalia fluviatilis"}, {"category": "Atelidae", "classification_bororo": "Barege Akururewyge", "id": 22, "info": null, "name_bororo": "Pai Corewy", "name_portuguese": "Bugio preto / Guariba-preto", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Alouatta_caraya_male.JPG/560px-Alouatta_caraya_male.JPG", "scientific_name": "Alouatta caraya"}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 66, "info": null, "name_bororo": "Bace auragodyrewy", "name_portuguese": "Cabe\u00e7a-seca", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/WoodStorkWhole.JPG/560px-WoodStorkWhole.JPG", "scientific_name": "Cabe\u00e7a-seca"}, {"category": "Taia\u00e7u\u00eddeos", "classification_bororo": "Barege Kurirewyge", "id": 13, "info": null, "name_bororo": "Jui", "name_portuguese": "Caititu", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tayassu_tajacu.jpg/560px-Tayassu_tajacu.jpg", "scientific_name": "Dicotyles tajacu"}, {"category": "Caviidae", "classification_bororo": "Barege pobo tadawyge", "id": 29, "info": null, "name_bororo": "Akiwa", "name_portuguese": "Capivara", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/99/Capivara%28Hydrochoerus_hydrochaeris%29.jpg", "scientific_name": "Hydrochoerus hydrochaeris"}, {"category": "Aramidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 72, "info": null, "name_bororo": "Karao", "name_portuguese": "Car\u00e3o", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Aramus_guarauna_%28Limpkin%29_25.jpg", "scientific_name": "Aramus guarauna"}, {"category": null, "classification_bororo": "Barege Kurirewyge", "id": 9, "info": null, "name_bororo": "Atubo", "name_portuguese": "Cariacu / Veado Galheiro", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/cb/White-tailed_deer_%28Odocoileus_virginianus%29_grazing_-_20050809.jpg", "scientific_name": "Odocoileus virginianus"}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 69, "info": null, "name_bororo": "Parira", "name_portuguese": "Cegonha (?)", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cegonha-branca%2C_White_Stork_%2850904788362%29.jpg", "scientific_name": null}, {"category": "Strigidae", "classification_bororo": "Kiege Boemoriae", "id": 40, "info": null, "name_bororo": "Tagogo", "name_portuguese": "Coruja do campo / Coruja-buraqueira", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Athene_cunicularia_1_edited.JPG/560px-Athene_cunicularia_1_edited.JPG", "scientific_name": "Athene cunicularia"}, {"category": "Strigidae", "classification_bororo": "Kiege buregi toiburewyge", "id": 51, "info": null, "name_bororo": "Kaikai", "name_portuguese": "Coruj\u00e3o / Mocho", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Bubo_virginianus_06.jpg/560px-Bubo_virginianus_06.jpg", "scientific_name": "Bubo virginianus"}, {"category": "Strigidae", "classification_bororo": "Kiege buregi toiburewyge", "id": 50, "info": null, "name_bororo": "Kugu corewy", "name_portuguese": "Coruja preta", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/a/ac/%C3%81rea_de_Prote%C3%A7%C3%A3o_Ambiental_Serra_Dona_Francisca_-_Luiz_Alves_%2807%29.jpg", "scientific_name": "Strix huhula"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "id": 59, "info": null, "name_bororo": "Korao", "name_portuguese": "Curica (papagaio)", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Amazona_amazonica_%281%29.jpg", "scientific_name": "Amazona amazonica"}, {"category": "Dasyproctidae", "classification_bororo": "Barege kugure", "id": 38, "info": null, "name_bororo": "Mea", "name_portuguese": "Cut\u00eda", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Central_American_agouti_%28Dasyprocta_punctata%29.jpg", "scientific_name": "Dasyprocta punctata"}, {"category": "Rheidae", "classification_bororo": "Kiege moto kejewyge", "id": 92, "info": null, "name_bororo": "Pari", "name_portuguese": "Ema", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Nandu_Rhea_americana_Tierpark_Hellabrunn-1.jpg/560px-Nandu_Rhea_americana_Tierpark_Hellabrunn-1.jpg", "scientific_name": "Rhea americana"}, {"category": "Laridae", "classification_bororo": "Kiege kugary kejewyge", "id": 82, "info": null, "name_bororo": "Tawie", "name_portuguese": "Gaivota do pantanal (?)", "pic_link": null, "scientific_name": null}, {"category": "Didelfi\u00eddeos", "classification_bororo": "Barege Akururewyge", "id": 25, "info": null, "name_bororo": "Aka", "name_portuguese": "Gamb\u00e1", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Didelphis_albiventris%2C_Bahia%2C_Brazil.jpg", "scientific_name": "Didelphis marsupialis"}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 64, "info": null, "name_bororo": "Bace kaworyrewy", "name_portuguese": "Gar\u00e7a-azul", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/7/77/Egretta_caerulea_-Cananeia%2C_Sao_Paulo%2C_Brasil-8.jpg", "scientific_name": "Egretta caerulea"}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 63, "info": null, "name_bororo": "Bace kuorewy", "name_portuguese": "Gar\u00e7a-branca-pequena", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/df/Snowy_egret_in_JBWR_%2830217%29.jpg", "scientific_name": "Egretta thula"}, {"category": null, "classification_bororo": "Kiege pobo pobo tadawyge", "id": 77, "info": null, "name_bororo": "O kaworurewy", "name_portuguese": "Gar\u00e7a-da-mata", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/0/09/Agami_heron_%28Agamia_agami%29_juvenile.jpg", "scientific_name": null}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 62, "info": null, "name_bororo": "Bace agarewy", "name_portuguese": "Gar\u00e7a real", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Silberreiher_01_CH.jpg/2880px-Silberreiher_01_CH.jpg", "scientific_name": "Ardea alba"}, {"category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "id": 3, "info": null, "name_bororo": "Aimearewy", "name_portuguese": "Gato mourisco / Jaguarundi", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/7/75/Herpailurus_yagouaroundi_310267736.jpg", "scientific_name": "Herpailurus yagouaroundi"}, {"category": "Falconidae", "classification_bororo": "Kiege buregi toiburewyge", "id": 47, "info": null, "name_bororo": "Kaga", "name_portuguese": "Gavi\u00e3o Caracar\u00e1 / Pinh\u00e9", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Schopfkarakara.jpg/560px-Schopfkarakara.jpg", "scientific_name": "Caracara plancus"}, {"category": "Falconidae", "classification_bororo": "Kiege Boemoriae", "id": 44, "info": null, "name_bororo": "Kuruguga", "name_portuguese": "Gavi\u00e3o carcara\u00ed / Carrapateiro", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Milvago_chimachima.jpg/560px-Milvago_chimachima.jpg", "scientific_name": "Milvago chimachima"}, {"category": null, "classification_bororo": "Kiege buregi toiburewyge", "id": 48, "info": null, "name_bororo": "Torowa", "name_portuguese": "Gavi\u00e3o Claro", "pic_link": null, "scientific_name": null}, {"category": "Accipitridae", "classification_bororo": "Kiege buregi toiburewyge", "id": 46, "info": null, "name_bororo": "Kuruga bure paru ekurewy", "name_portuguese": "Gavi\u00e3o-do-p\u00e9-amarelo / Gavi\u00e3o-carij\u00f3", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Taguato_%28Rupornis_magnirostris%29%2C_Uruguay%2C_2020.jpg", "scientific_name": "Rupornis magnirostris"}, {"category": "Accipitridae", "classification_bororo": "Kiege Boemoriae", "id": 42, "info": null, "name_bororo": "Aroeeceba", "name_portuguese": "Gavi\u00e3o real / Harpia", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/95/Harpia-harpyja-001.jpg", "scientific_name": "Harpia harpyja"}, {"category": "Falconidae", "classification_bororo": "Kiege buregi toiburewyge", "id": 49, "info": null, "name_bororo": "Kuruga bewerewy", "name_portuguese": "Gavi\u00e3o ximango", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Milvago_chimango_temucoensis.jpg/560px-Milvago_chimango_temucoensis.jpg", "scientific_name": "Milvago chimango"}, {"category": "Can\u00eddeos", "classification_bororo": "Barege boemoriae", "id": 7, "info": null, "name_bororo": "Okwa", "name_portuguese": "Graxaim-do-mato / Cachorro-do-mato / Lobinho", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Cerdocyon_thous_-_Jan_Ebr_and_Ivana_Ebrov%C3%A1_-_284951055.jpeg", "scientific_name": "Cerdocyon thous"}, {"category": "Iguanidae", "classification_bororo": "Barege pobo tadawyge", "id": 28, "info": null, "name_bororo": "Irui", "name_portuguese": "Iguana / Sinimbu", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Iguana_V.jpg", "scientific_name": "Iguana iguana"}, {"category": "Tinamidae", "classification_bororo": "Kiege moto kejewyge", "id": 90, "info": null, "name_bororo": "Riwodo", "name_portuguese": "Inhmabu-Xoror\u00f3", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Crypturellus_parvirostris_2.jpg/560px-Crypturellus_parvirostris_2.jpg", "scientific_name": "Crypturellus parvirostris"}, {"category": "Mustel\u00eddeos", "classification_bororo": "Barege boemoriae", "id": 6, "info": null, "name_bororo": "Ipocerewy", "name_portuguese": "Irara / Papa mel", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Irara_%28Papa-mel%29.jpg/560px-Irara_%28Papa-mel%29.jpg", "scientific_name": "Eira barbara"}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 67, "info": null, "name_bororo": "Bace kogyio", "name_portuguese": "Jaburu (Tuiuiu)", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Jabiru_Mato_Grosso_Pantanal_Brazil-3.jpg", "scientific_name": "Jabiru mycteria"}, {"category": "Testudinidae", "classification_bororo": "Barege Borewyge", "id": 18, "info": null, "name_bororo": "Jerigigi", "name_portuguese": "Jabuti", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Chelonoidis_carbonarius_386013561.jpg", "scientific_name": "Chelonoidis carbonarius"}, {"category": "Jacanidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 73, "info": null, "name_bororo": "Pegepege", "name_portuguese": "Ja\u00e7an\u00e3", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Acana_jacana_-near_Yarina_Lodge%2C_Napo_Province%2C_Ecuador_-adult-8_cropped.jpg/560px-Acana_jacana_-near_Yarina_Lodge%2C_Napo_Province%2C_Ecuador_-adult-8_cropped.jpg", "scientific_name": "Jacana jacana"}, {"category": "Alligatoridae", "classification_bororo": "Barege pobo tadawyge", "id": 31, "info": null, "name_bororo": "Uwai", "name_portuguese": "Jacar\u00e9", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Caiman_yacare.jpg/440px-Caiman_yacare.jpg", "scientific_name": "Caiman yacare"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "id": 61, "info": null, "name_bororo": "Ore", "name_portuguese": "Jandaia-coquinho (periquito-rei / periquito-estrela)", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Peach-fronted_Parakeet_%28Aratinga_aurea%29_%2830809763703%29.jpg", "scientific_name": "Eupsittula aurea"}, {"category": null, "classification_bororo": "Kiege moto kejewyge", "id": 93, "info": null, "name_bororo": "Jokorogo", "name_portuguese": "Jo\u00e3o-Bobo", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Nystalus_chacuru_White-eared_Puffbird.JPG/960px-Nystalus_chacuru_White-eared_Puffbird.JPG", "scientific_name": "Nystalus chacuru"}, {"category": "Astyanax (gen.)", "classification_bororo": null, "id": 32, "info": null, "name_bororo": "Meto", "name_portuguese": "Lambari", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Astyanax_mexicanus.JPG/960px-Astyanax_mexicanus.JPG", "scientific_name": null}, {"category": null, "classification_bororo": "Barege kugure", "id": 37, "info": null, "name_bororo": "Amo", "name_portuguese": "Lebre / Tapiti", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sylvilagus_brasiliensis_284953755.jpg", "scientific_name": "Sylvilagus brasiliensis"}, {"category": "Can\u00eddeos", "classification_bororo": "Barege boemoriae", "id": 8, "info": null, "name_bororo": "Rie", "name_portuguese": "Lobo Guar\u00e1", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Chrysocyon_brachyurus_205682420.jpg/560px-Chrysocyon_brachyurus_205682420.jpg", "scientific_name": "Chrysocyon brachyurus / Canis jubatus"}, {"category": "Ceb\u00eddeos", "classification_bororo": "Barege Akururewyge", "id": 23, "info": null, "name_bororo": "Juko", "name_portuguese": "Macaco", "pic_link": null, "scientific_name": null}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 68, "info": null, "name_bororo": "Bace mikurewy", "name_portuguese": "Maguari", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ciconia_maguari.jpeg", "scientific_name": "Ciconia maguari"}, {"category": null, "classification_bororo": null, "id": 94, "info": null, "name_bororo": "Penogogo", "name_portuguese": "Mamangaba", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bumblebee_October_2007-3a.jpg/960px-Bumblebee_October_2007-3a.jpg", "scientific_name": "Bombus"}, {"category": null, "classification_bororo": "Barege boemoriae", "id": 5, "info": null, "name_bororo": "Ierarae", "name_portuguese": "M\u00e3o-pelada", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Crab-eating_raccoon_%28Procyon_cancrivorus%29_Manuel_Antonio_Park_CRI_01_2020_CRI_01_2020_1752.jpg/560px-Crab-eating_raccoon_%28Procyon_cancrivorus%29_Manuel_Antonio_Park_CRI_01_2020_CRI_01_2020_1752.jpg", "scientific_name": "Procion\u00eddeos"}, {"category": "Anatidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 80, "info": null, "name_bororo": "Parabara", "name_portuguese": "Marreca-cabocla", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Whistling_duck_flight02_-_natures_pics-edit1.jpg/560px-Whistling_duck_flight02_-_natures_pics-edit1.jpg", "scientific_name": "Dendrocygna autumnalis"}, {"category": "Alcedinidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 70, "info": null, "name_bororo": "Kadagare", "name_portuguese": "Martim Pescador", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Megaceryle_torquata-Ringed_Kingfisher.jpg/480px-Megaceryle_torquata-Ringed_Kingfisher.jpg", "scientific_name": null}, {"category": "Charadriidae", "classification_bororo": "Kiege kugary kejewyge", "id": 83, "info": null, "name_bororo": "Ra porepore", "name_portuguese": "Mexeriqueira", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/BK3U7978.jpg/560px-BK3U7978.jpg", "scientific_name": "Vanellus cayanus"}, {"category": "Strigidae", "classification_bororo": "Kiege Boemoriae", "id": 43, "info": null, "name_bororo": "Kugu", "name_portuguese": "Murucututu-de-barriga-amarela", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pulsatrix_koeniswaldiana_-_Tawny-browed_Owl_%28young%29.jpg/560px-Pulsatrix_koeniswaldiana_-_Tawny-browed_Owl_%28young%29.jpg", "scientific_name": "Pulsatrix koeniswaldiana"}, {"category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "id": 2, "info": null, "name_bororo": "Aigo", "name_portuguese": "On\u00e7a parda", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/560px-Mountain_Lion_in_Glacier_National_Park.jpg", "scientific_name": "Puma concolor"}, {"category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "id": 1, "info": null, "name_bororo": "Adugo", "name_portuguese": "On\u00e7a pintada", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jaguar_%28Panthera_onca_palustris%29_female_Piquiri_River_2.JPG/560px-Jaguar_%28Panthera_onca_palustris%29_female_Piquiri_River_2.JPG", "scientific_name": "Panthera onca"}, {"category": "Erinaceidae", "classification_bororo": "Barege Akururewyge", "id": 27, "info": null, "name_bororo": "Iwe", "name_portuguese": "Ouri\u00e7o", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Prehensile_Tail_Porcupine_Curled_and_Relaxed_%2818144690005%29.jpg", "scientific_name": "Coendou prehensilis"}, {"category": "Cuniculidae", "classification_bororo": "Barege kugure", "id": 35, "info": null, "name_bororo": "Apu", "name_portuguese": "Paca", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cuniculus_paca.jpg/560px-Cuniculus_paca.jpg", "scientific_name": "Cuniculus paca"}, {"category": "Anatidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 81, "info": null, "name_bororo": "Turubare corewy", "name_portuguese": "Pato-do-mato", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Flickr_-_Dario_Sanches_-_PATO-DO-MATO_%28Cairina_moschata%29.jpg/560px-Flickr_-_Dario_Sanches_-_PATO-DO-MATO_%28Cairina_moschata%29.jpg", "scientific_name": "Cairina moschata"}, {"category": "Tinamidae", "classification_bororo": "Kiege moto kejewyge", "id": 91, "info": null, "name_bororo": "Parikiogodo", "name_portuguese": "Perdiz", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg", "scientific_name": "Rhynchotus rufescens"}, {"category": null, "classification_bororo": null, "id": 96, "info": null, "name_bororo": "Kidoe etumana", "name_portuguese": "Periquito-d\u0027asa-azul / tuim-de-asa-azul / periquito vassourinha", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Forpus_xanthopterygius_-Brazil-6-4c.jpg/560px-Forpus_xanthopterygius_-Brazil-6-4c.jpg", "scientific_name": "Forpus xanthopterygius"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "id": 60, "info": null, "name_bororo": "Kido", "name_portuguese": "Periquito-verde", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/PERIQUITO-RICO_%28_Brotogeris_tirica%29_%282087239475%29.jpg/560px-PERIQUITO-RICO_%28_Brotogeris_tirica%29_%282087239475%29.jpg", "scientific_name": "Brotogeris tirica"}, {"category": "Heliornithidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 78, "info": null, "name_bororo": "Bure puduga", "name_portuguese": "Picaparra (ipequi)", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sungrebe2.jpeg", "scientific_name": "Heliornis fulica"}, {"category": null, "classification_bororo": "Kiege buregi toiburewyge", "id": 45, "info": null, "name_bororo": "Pia", "name_portuguese": "Pinh\u00e9", "pic_link": null, "scientific_name": null}, {"category": "Caviidae", "classification_bororo": "Barege kugure", "id": 39, "info": null, "name_bororo": "Kurugo", "name_portuguese": "Pre\u00e1", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Wildmeerschweinchen-06.jpg/560px-Wildmeerschweinchen-06.jpg", "scientific_name": "Cavia aperea"}, {"category": "Procyonidae", "classification_bororo": "Barege Akururewyge", "id": 21, "info": null, "name_bororo": "Kudobo", "name_portuguese": "Quati", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Coati.jpg/560px-Coati.jpg", "scientific_name": "Nasua narica"}, {"category": "Taia\u00e7u\u00eddeos", "classification_bororo": "Barege Kurirewyge", "id": 14, "info": null, "name_bororo": "Jugo", "name_portuguese": "Queixada", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tayassu_pecari_-Brazil-8.jpg/560px-Tayassu_pecari_-Brazil-8.jpg", "scientific_name": "Tayassu pecari"}, {"category": "Rallidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 74, "info": null, "name_bororo": "Kuocaga", "name_portuguese": "Saracura", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Gallinula_galeata_NBII.jpg/560px-Gallinula_galeata_NBII.jpg", "scientific_name": null}, {"category": "Sciuridae", "classification_bororo": "Barege Akururewyge", "id": 26, "info": null, "name_bororo": "Kodokodo", "name_portuguese": "Serelepe / Caxinguel\u00ea", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Esquilo-1.jpg", "scientific_name": null}, {"category": null, "classification_bororo": "Kiege moto kejewyge", "id": 87, "info": null, "name_bororo": "Beo", "name_portuguese": "Siriema", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/0/02/Seriema_%28Cariama_cristata%29.jpg", "scientific_name": null}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 79, "info": null, "name_bororo": "Cu", "name_portuguese": "Soc\u00f3-boi", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Soco_boi.jpg/560px-Soco_boi.jpg", "scientific_name": "Tigrisoma lineatum"}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 75, "info": null, "name_bororo": "Kudo", "name_portuguese": "Soc\u00f3-dorminhoco", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nycticorax_nycticorax12.jpg/440px-Nycticorax_nycticorax12.jpg", "scientific_name": "Nycticorax nycticorax"}, {"category": "Mirmecofag\u00eddeos", "classification_bororo": "Barege Kurirewyge", "id": 12, "info": null, "name_bororo": "Buke", "name_portuguese": "Tamandu\u00e1-bandeira", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/560px-Myresluger2.jpg", "scientific_name": "Myrmecophaga tridactyla"}, {"category": "Myrmecophagidae", "classification_bororo": "Barege Akururewyge", "id": 24, "info": null, "name_bororo": "Apogo", "name_portuguese": "Tamandu\u00e1-mirim / Mixila", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Southern_Tamandua_%28Tamandua_tetradactyla%29_-_Flickr_-_berniedup.jpg", "scientific_name": "Tamandua tetradactyla"}, {"category": "Clamifor\u00eddeos", "classification_bororo": "Barege Borewyge", "id": 17, "info": null, "name_bororo": "Enokuri", "name_portuguese": "Tatu-bola", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Southern_Three_Banded_Armadillo_001-2.jpg/560px-Southern_Three_Banded_Armadillo_001-2.jpg", "scientific_name": "Tolypeutes matacus"}, {"category": "Clamifor\u00eddeos", "classification_bororo": "Barege Borewyge", "id": 16, "info": null, "name_bororo": "Bokodori", "name_portuguese": "Tatu-canastra", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Priodontes_maximus_at_R\u00e9gina.jpg/440px-Priodontes_maximus_at_R\u00e9gina.jpg", "scientific_name": "Priodontes maximus"}, {"category": null, "classification_bororo": "Barege Borewyge", "id": 20, "info": null, "name_bororo": "Re\u00e1", "name_portuguese": "Tatu-galinha", "pic_link": null, "scientific_name": "Dasypus novemcinctus"}, {"category": "Dasipod\u00eddeos", "classification_bororo": "Barege Borewyge", "id": 19, "info": null, "name_bororo": "Jerego", "name_portuguese": "Tatu-liso", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Nine-banded_armadillo_%2813578%29.jpg", "scientific_name": "Dasypus novemcinctus"}, {"category": "Clamifor\u00eddeos", "classification_bororo": "Barege Borewyge", "id": 15, "info": null, "name_bororo": "Bakodorirewy", "name_portuguese": "Tatupeba", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Six-banded_armadillo_%28Euphractus_sexcinctus%29.JPG/560px-Six-banded_armadillo_%28Euphractus_sexcinctus%29.JPG", "scientific_name": "Euphractus sexcinctus"}, {"category": "Teiidae", "classification_bororo": "Barege kugure", "id": 36, "info": null, "name_bororo": "Tuwogy", "name_portuguese": "Tei\u00fa", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Trilha_Betari%2C_por_Leonardo_Palermo_Gentile_03.jpg/560px-Trilha_Betari%2C_por_Leonardo_Palermo_Gentile_03.jpg", "scientific_name": "Salvator merianae"}, {"category": "Cathartidae", "classification_bororo": "Kiege buregi toiburewyge", "id": 54, "info": null, "name_bororo": "Poburewy", "name_portuguese": "Urubu cabe\u00e7a preta", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Black_vulture_%28Coragyps_atratus_brasiliensis%29_Peten.jpg", "scientific_name": "Coragyps atratus"}, {"category": "Cathartidae", "classification_bororo": "Kiege buregi toiburewyge", "id": 55, "info": null, "name_bororo": "Ciwaje", "name_portuguese": "Urubu da cabe\u00e7a vermelha", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Turkey_vultures_%2801731%29.jpg", "scientific_name": "Cathartes aura"}, {"category": "Sarcosamphidae", "classification_bororo": "Kiege buregi toiburewyge", "id": 52, "info": null, "name_bororo": "Bai", "name_portuguese": "Urubu rei", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Urubu_rei_-_Sarcoramphus_papa.jpg", "scientific_name": "Sarcoramphus papa"}, {"category": "Cerv\u00eddeos", "classification_bororo": "Barege Kurirewyge", "id": 11, "info": null, "name_bororo": "Pobogo", "name_portuguese": "Veado-m\u00e3o-curta  / Veado Boror\u00f3", "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mazama_nana_2.jpg/560px-Mazama_nana_2.jpg", "scientific_name": "Mazama nana"}, {"category": "Anatidae", "classification_bororo": "Kiege pobo pobo tadawyge", "id": 76, "info": "Amazonetta brasiliensis", "name_bororo": "Merire", "name_portuguese": null, "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Amazonetta_brasiliensis.jpg/560px-Amazonetta_brasiliensis.jpg", "scientific_name": null}, {"category": null, "classification_bororo": "Kiege kugary kejewyge", "id": 86, "info": null, "name_bororo": "Tawie baragadyxrewy", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege kugary kejewyge", "id": 85, "info": null, "name_bororo": "Kugarure", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege kugary kejewyge", "id": 84, "info": null, "name_bororo": "Tano", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege moto kejewyge", "id": 88, "info": null, "name_bororo": "Parigogo", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege moto kejewyge", "id": 89, "info": null, "name_bororo": "Monoko", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege buregi toiburewyge", "id": 53, "info": null, "name_bororo": "Kuruga je paru kujagurewy", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Barege pobo tadawyge", "id": 33, "info": null, "name_bororo": "Baigabe", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Barege pobo tadawyge", "id": 30, "info": null, "name_bororo": "Atomoio", "name_portuguese": null, "pic_link": null, "scientific_name": null}];
+
+    // Initialize Fuse.js with fuzzy search configuration
+    const fuse = new Fuse(faunaData, {
+        keys: [
+            { name: 'name_bororo', weight: 2 },
+            { name: 'name_portuguese', weight: 1.5 },
+            { name: 'scientific_name', weight: 1 },
+            { name: 'category', weight: 0.5 },
+            { name: 'classification_bororo', weight: 0.5 },
+            { name: 'info', weight: 0.5 }
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        includeMatches: true,
+        minMatchCharLength: 2
+    });
+
+    const searchInput = document.getElementById('search-input');
+    const categoryFilter = document.getElementById('category-filter');
+    const resultsContainer = document.getElementById('results');
+    const statsDiv = document.getElementById('stats');
+
+    let currentResults = [];
+
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function highlightMatches(text, indices) {
+        if (!text || !indices || indices.length === 0) return escapeHtml(text);
+
+        let result = '';
+        let lastIndex = 0;
+
+        const sortedIndices = indices.sort((a, b) => a[0] - b[0]);
+
+        for (const [start, end] of sortedIndices) {
+            result += escapeHtml(text.slice(lastIndex, start));
+            result += '<span class="highlight">' + escapeHtml(text.slice(start, end + 1)) + '</span>';
+            lastIndex = end + 1;
+        }
+        result += escapeHtml(text.slice(lastIndex));
+
+        return result;
+    }
+
+    function renderEntry(item, matches = null) {
+        const entry = item.item || item;
+
+        const matchMap = {};
+        if (matches) {
+            for (const match of matches) {
+                matchMap[match.key] = match.indices;
+            }
+        }
+
+        let html = '<div class="entry">';
+
+        // Header: Bororo name, Portuguese name
+        html += '<div class="entry-header">';
+        html += '<span class="entry-word">' + highlightMatches(entry.name_bororo, matchMap['name_bororo']) + '</span>';
+        if (entry.name_portuguese) {
+            html += '<span class="entry-secondary">&mdash; ' + highlightMatches(entry.name_portuguese, matchMap['name_portuguese']) + '</span>';
+        }
+        if (entry.classification_bororo) {
+            html += '<span class="entry-tag">' + escapeHtml(entry.classification_bororo) + '</span>';
+        }
+        html += '</div>';
+
+        // Scientific name
+        if (entry.scientific_name) {
+            html += '<p class="entry-scientific"><em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
+        }
+
+        // Category (Western classification)
+        if (entry.category) {
+            html += '<p class="entry-definition">Família: ' + highlightMatches(entry.category, matchMap['category']) + '</p>';
+        }
+
+        // Info/notes
+        if (entry.info) {
+            html += '<div class="entry-comment">' + highlightMatches(entry.info, matchMap['info']) + '</div>';
+        }
+
+        // Image
+        if (entry.pic_link) {
+            html += '<div class="entry-media">';
+            html += '<a href="' + escapeHtml(entry.pic_link) + '" target="_blank" rel="noopener">';
+            html += '<img class="entry-thumbnail" src="' + escapeHtml(entry.pic_link) + '" alt="' + escapeHtml(entry.name_bororo) + '" loading="lazy" onerror="this.style.display=\'none\'">';
+            html += '</a>';
+            html += '</div>';
+        }
+
+        html += '</div>';
+        return html;
+    }
+
+    function search() {
+        const query = searchInput.value.trim();
+        const selectedCategory = categoryFilter.value;
+
+        if (query.length < 2) {
+            if (selectedCategory) {
+                currentResults = faunaData
+                    .filter(item => item.classification_bororo === selectedCategory)
+                    .map(item => ({ item }));
+            } else {
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Pesquise a fauna</h2>
+                    <p>Digite um nome em Bororo, Português ou científico para começar</p>
+                </div>
+            `;
+                statsDiv.textContent = '';
+                return;
+            }
+        } else {
+            currentResults = fuse.search(query);
+
+            if (selectedCategory) {
+                currentResults = currentResults.filter(result => result.item.classification_bororo === selectedCategory);
+            }
+        }
+
+        statsDiv.textContent = `${currentResults.length} espécie${currentResults.length !== 1 ? 's' : ''} encontrada${currentResults.length !== 1 ? 's' : ''}`;
+
+        if (currentResults.length === 0) {
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Nenhum resultado</h2>
+                    <p>Tente um nome diferente ou altere o filtro</p>
+                </div>
+            `;
+        } else {
+            const displayResults = currentResults.slice(0, 100);
+            let html = displayResults.map(result => renderEntry(result, result.matches)).join('');
+
+            if (currentResults.length > 100) {
+                html += `<div class="empty-state"><p>Mostrando 100 de ${currentResults.length} resultados. Refine sua busca.</p></div>`;
+            }
+
+            resultsContainer.innerHTML = html;
+        }
+    }
+
+    // Debounce helper
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
+    // Event listeners
+    searchInput.addEventListener('input', debounce(search, 200));
+    categoryFilter.addEventListener('change', search);
+
+    // Focus search on load
+    searchInput.focus();
+    </script>
+</body>
+</html>
