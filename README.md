@@ -9,15 +9,19 @@ boeenomoto/
 ├── data/                    # Source data and schemas
 │   ├── dictionary.tsv       # Bororo dictionary (source)
 │   ├── dictionary_schema.yaml
+│   ├── encyclopedia.json    # Bororo encyclopedia (source)
+│   ├── encyclopedia_schema.yaml
 │   ├── fauna.yaml           # Bororo fauna (source)
 │   └── fauna_schema.yaml
 ├── config/                  # Generation configuration
 │   ├── templates/           # Jinja2 templates
 │   │   ├── base.html.j2
 │   │   ├── dictionary.html.j2
+│   │   ├── encyclopedia.html.j2
 │   │   ├── fauna.html.j2
 │   │   └── index.html.j2
 │   ├── dictionary.yaml      # kodudo config for dictionary
+│   ├── encyclopedia.yaml    # kodudo config for encyclopedia
 │   ├── fauna.yaml           # kodudo config for fauna
 │   └── index.yaml           # kodudo config for index
 ├── docs/                    # Generated site (GitHub Pages)
@@ -31,6 +35,7 @@ boeenomoto/
 ## Available Platforms
 
 - **Dictionary**: Words and expressions in the Bororo language with Portuguese translations
+- **Encyclopedia**: Entries about culture, rituals, social organization, and traditional knowledge of the Bororo people
 - **Fauna**: Animal names in the Bororo language with traditional classification
 
 ## Local Development
@@ -55,7 +60,7 @@ pip install aptoro kodudo
 
 # Or step by step:
 python scripts/convert.py              # Convert data to JSON
-kodudo cook config/dictionary.yaml config/fauna.yaml config/index.yaml  # Generate HTML
+kodudo cook config/dictionary.yaml config/encyclopedia.yaml config/fauna.yaml config/index.yaml  # Generate HTML
 ```
 
 ### Preview
