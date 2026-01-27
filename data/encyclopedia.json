@@ -1855,6 +1855,40 @@
       "examples": []
     },
     {
+  "id": "kudoro",
+  "headword": "kudoro",
+  "variants": ["", ""],
+
+  "summary": "tipo de arara",
+
+  "keywords": [
+    "ave",
+    "arara",
+    "animal"
+  ],
+
+  "updated_at": "2026-01-27",
+
+  "url": "https://pt.wikipedia.org/wiki/Arara-azul-grande",
+
+  "content": "deisgnação da araraúna (Anodorhynchus hyacinthinus), da constelação de mesmo nome, de um antepassado, chefe do subclã dos Kie Cobugiwuge, trambém chamado de Toro Akadu, segundo em ordem de dignidade de todo o clã",
+
+  "examples": [
+    {
+      "": "",
+      "": ""
+    }
+  ],
+
+  "images": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Arara_Azul_no_Pantanal.jpg/960px-Arara_Azul_no_Pantanal.jpg",
+      "alt": "",
+      "credit": "wikipedia"
+    }
+  ]
+},
+    {
       "id": "jakomea-mygy",
       "headword": "Jakomea mygy",
       "variants": [],
