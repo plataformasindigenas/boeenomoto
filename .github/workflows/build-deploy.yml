@@ -35,14 +35,8 @@ jobs:
       - name: Install dependencies
         run: pip install aptoro kodudo
 
-      - name: Convert data to JSON
-        run: python scripts/convert.py
-
-      - name: Generate HTML pages
-        run: |
-          kodudo cook config/dictionary.yaml
-          kodudo cook config/fauna.yaml
-          kodudo cook config/index.yaml
+      - name: Build site
+        run: bash scripts/build.sh
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
