@@ -496,70 +496,92 @@
     {
   "id": "arago",
   "headword": "Arago",
-  "variants": ["", ""],
-
-  "summary": "Porrete de madeira",
-
-  "keywords": [
-    "arma",
-    "caça",
-    "porrete"
-  ],
-
+  "variants": [],
+  "summary": "Porrete ou cacete de madeira dura, usado na caça, na pesca e em contextos rituais bororo.",
+  "keywords": ["arma", "cacete", "porrete", "caça", "pesca", "cultura material"],
   "updated_at": "2026-02-01",
-
   "url": "",
+  "content": "Com o nome <em>arago</em> designam-se porretes de madeira dura, muito bem acabados, variáveis em forma e tamanho. São geralmente fabricados em aroeira. Apresentam um estreitamento na empunhadura, onde se amarra um cordel para transporte, preso ao pescoço, à fronte ou pendente sobre as costas ou o ombro.\n\nA extremidade da empunhadura é frequentemente dilatada, às vezes em forma de cauda de peixe; a extremidade oposta pode ser pontiaguda ou truncada. O arago é utilizado sobretudo para dar o golpe de graça na caça ou na pesca.\n\nOs Bororo distinguem vários tipos específicos de <em>arago</em>, associados a clãs e sub-clãs particulares, descritos nas entradas específicas abaixo.",
+  "examples": [],
+  "images": []
+},
 
-  "content": "Com esta denominação designam-se
-verdadeiros cacetes, muito bem acabados. Variam na sua forma e grandeza e são fabricados com madeiras duras, possivelmente com aroeira,
-apresentando, na empunhadura, um
-estreitamento, onde se amarra um cordel. Serve para carregá-los, presos
-ao pescoço ou a fronte, e caídos nas
-costas, ou apensos a um ombro. A extremidade da empunhadura é mais dilatada, às vezes em forma de cauda de peixe; a outra é pontiaguda ou truncada. São usados geralmente para
-dar o golpe de graça a caça ou a pesca.
+{
+  "id": "arago-akurararewu",
+  "headword": "Arago akurararewu",
+  "variants": [],
+  "summary": "Pequeno porrete de secção romboidal, ornamentado com plumas.",
+  "keywords": ["arma", "porrete", "ornamentação", "clã"],
+  "updated_at": "2026-02-01",
+  "url": "",
+  "content": "Pequeno cacete de corpo lanceolado e secção reta romboidal. Em cada extremidade do maior eixo latitudinal leva duas plumas vermelhas de arara. É privativo dos membros do sub-clã dos Bokodori Ecerae Cobugiwuge.",
+  "examples": [],
+  "images": []
+},
 
-1.1 Principais tipos de porretes
+{
+  "id": "arago-bakororo-atugo",
+  "headword": "Arago bakoróro atugo",
+  "variants": [],
+  "summary": "Grande porrete listrado em vermelho e preto.",
+  "keywords": ["arma", "porrete", "pintura", "clã"],
+  "updated_at": "2026-02-01",
+  "url": "",
+  "content": "Grande porrete de aroeira, tingido em listras latitudinais vermelhas e pretas alternadas. As faixas pretas são obtidas por maceração em água lamacenta; as vermelhas correspondem à cor natural da madeira, protegida previamente com folíolos de palmeira. É privativo dos membros do clã dos Baadojebage Cobugiwuge.",
+  "examples": [],
+  "images": []
+},
 
-arago akurararewu
+{
+  "id": "arago-bakororo-ipie-etorewu",
+  "headword": "Arago bakororo ipíe etorewu",
+  "variants": [],
+  "summary": "Porrete grande, listrado, associado ao herói Bakororo.",
+  "keywords": ["arma", "porrete", "mitologia", "clã"],
+  "updated_at": "2026-02-01",
+  "url": "",
+  "content": "Grande porrete de secção reta aproximadamente elipsoidal, semelhante a uma cauda de ariranha. Apresenta listras semelhantes às do <em>arago bakoróro atugo</em>, associadas às pinturas somáticas do herói lendário Bakororo. É privativo dos membros do clã dos Aróroe.",
+  "examples": [],
+  "images": []
+},
 
-Pequeno cacete.
-O corpo, lanceolado, apresenta uma secção reta romboidal. Em cada éxtremidade do maior eixo latitudinal leva duas plumas vermelhas de arara. É privativo dos membros do sub-clã dos Bokodori Ecerae Cobugiwuge.
+{
+  "id": "arago-bokodaga-ipo",
+  "headword": "Arago bokodaga ipo",
+  "variants": [],
+  "summary": "Porrete simples, manejado como clava.",
+  "keywords": ["arma", "porrete", "clava", "clã"],
+  "updated_at": "2026-02-01",
+  "url": "",
+  "content": "Porrete sem características ornamentais especiais, apresentando apenas uma amarradura na extremidade mais fina, pela qual é manejado à guisa de clava. É privativo dos membros do clã dos Bokodori Ecerae.",
+  "examples": [],
+  "images": []
+},
 
-Arago bakoróro atugo
+{
+  "id": "arago-ipoe-o",
+  "headword": "Arago ipoe o",
+  "variants": [],
+  "summary": "Grande porrete em forma de espada de dois gumes.",
+  "keywords": ["arma", "porrete", "clã"],
+  "updated_at": "2026-02-01",
+  "url": "",
+  "content": "Grande porrete com aspecto de espada de dois gumes e secção reta romboidal. Fabricado em aroeira e tingido de preto por maceração em lama. É privativo dos membros do sub-clã dos Aroroe Cobugiwuge.",
+  "examples": [],
+  "images": []
+},
 
-Grande porrete tingido em listras latitudinais vermelhas e pretas, alternadas. As vermelhas são a própria cor da madeira, que é sempre aroeira, e as pretas são obtidas por maceração
-em água lamacenta. O objeto é previamente protegido com folíolos de folhas de palmeira nas zonas que se desejam conservar vermelhas. É privativo dos membros do clã dos Baadojebage Cobugiwuge;
-
-Arago bakororo ipíe etorewu
-
-porrete, semelhante a cauda de ariranha, listrado com as pinturas somáticas do herói lendário Bakororo. Grande porrete de secçao reta satisfatoriamente elipsoidal, com listras semelhantes às do anterior. É privativo dos membros do clã dos Aróroe;
-
-Arago bokodaga ipo
-
-Nada de especial apresenta, a não ser uma amarradura na extremidade mais fina pela qual se maneja a guisa de clava. É privativo dos memhros do clã dos Bokodori Ecerae;
-
-Arago ipoe o
-
-Grande porrete com o aspecto de uma espada de dois gumes. Apresenta secçao reta romboidal. É de aroeira tingido em preto por maceração na lama. É privativo dos membros do sub-clã dos Aroroe Cobugiwuge;
-
-arágo kurirewu
-
-É um longo porrete de secção reta circular, privativo dos membros do clã dos Baadojebage Cebegiwuge.",
-
-  "examples": [
-    {
-      "": "",
-      "": ""
-    }
-  ],
-
-  "images": [
-    {
-      "url": "",
-      "alt": "",
-      "credit": ""
-    }
-  ]
+{
+  "id": "arago-kurirewu",
+  "headword": "Arágo kurirewu",
+  "variants": [],
+  "summary": "Porrete longo de secção circular.",
+  "keywords": ["arma", "porrete", "clã"],
+  "updated_at": "2026-02-01",
+  "url": "",
+  "content": "Porrete longo de secção reta circular. É privativo dos membros do clã dos Baadojebage Cebegiwuge.",
+  "examples": [],
+  "images": []
 },
     {
       "id": "adugo-mutillidae",
