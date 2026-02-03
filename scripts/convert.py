@@ -19,6 +19,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 import aptoro
+import yaml
 from markdown_it import MarkdownIt
 from mdit_py_plugins.footnote import footnote_plugin
 
@@ -126,12 +127,63 @@ def _html_to_text(html: str) -> str:
     return parser.get_text()
 
 
+def _parse_front_matter(path: Path) -> tuple[dict, str]:
+    raw = path.read_text(encoding="utf-8")
+    if not raw.startswith("---\n"):
+        raise ValueError(f"{path}: missing front matter start (---)")
+
+    parts = raw.split("\n---\n", 1)
+    if len(parts) != 2:
+        raise ValueError(f"{path}: missing front matter end (---)")
+
+    front_matter = yaml.safe_load(parts[0][4:]) or {}
+    if not isinstance(front_matter, dict):
+        raise ValueError(f"{path}: front matter must be a mapping")
+
+    body = parts[1].lstrip("\n")
+    return front_matter, body
+
+
+def _load_encyclopedia_entries() -> list[dict]:
+    entries_dir = DATA_DIR / "encyclopedia"
+    if not entries_dir.exists():
+        raise FileNotFoundError(f"Missing encyclopedia directory: {entries_dir}")
+
+    md_files = sorted(p for p in entries_dir.rglob("*.md") if p.name != "README.md")
+    if not md_files:
+        raise FileNotFoundError(f"No markdown entries found in {entries_dir}")
+
+    entries: list[dict] = []
+    seen_ids: set[str] = set()
+
+    for path in md_files:
+        front_matter, body = _parse_front_matter(path)
+        entry = dict(front_matter)
+        entry_id = entry.get("id")
+        if not entry_id:
+            raise ValueError(f"{path}: missing required front matter field 'id'")
+        if entry_id in seen_ids:
+            raise ValueError(f"Duplicate encyclopedia id: {entry_id}")
+        seen_ids.add(entry_id)
+
+        entry["content_md"] = body.strip()
+
+        # Defaults for optional list fields
+        for key in ("variants", "keywords", "images", "examples"):
+            if entry.get(key) is None:
+                entry[key] = []
+
+        entries.append(entry)
+
+    return entries
+
+
 def convert_encyclopedia():
     """Convert encyclopedia YAML + markdown to kodudo-compatible JSON."""
     print("=== Converting Encyclopedia ===")
 
     schema = aptoro.load_schema(str(DATA_DIR / "encyclopedia_schema.yaml"))
-    data = aptoro.read(str(DATA_DIR / "encyclopedia.yaml"), format="yaml")
+    data = _load_encyclopedia_entries()
 
     print(f"  Validating {len(data)} entries...")
     try:

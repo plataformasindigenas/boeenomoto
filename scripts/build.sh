@@ -13,6 +13,9 @@ echo "=== Boe Eno Moto Build ==="
 echo ""
 
 echo "Step 1: Converting source data to JSON with aptoro"
+echo "Running encyclopedia entry checks"
+python scripts/check_encyclopedia_entries.py
+echo ""
 python scripts/convert.py
 echo ""
 
