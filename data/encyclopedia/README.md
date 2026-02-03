@@ -37,7 +37,7 @@ examples:
 
 The entry content goes below the front matter. Use standard markdown:
 
-- Headings: `###` and `####` (used for the TOC)
+- Headings: `###` and `####` (used for the TOC); do not prefix with numbering (e.g., avoid "1.1")
 - Lists, tables, and footnotes are supported
 - **No HTML tags** in the body
 
