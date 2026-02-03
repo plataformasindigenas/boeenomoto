@@ -33,7 +33,7 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install aptoro kodudo
+        run: pip install -r requirements.txt aptoro kodudo
 
       - name: Build site
         run: bash scripts/build.sh
