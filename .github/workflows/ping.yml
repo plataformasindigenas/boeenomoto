@@ -1,0 +1,13 @@
+name: Actions Ping
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping
+        run: echo "Ping: workflow triggered on push."
