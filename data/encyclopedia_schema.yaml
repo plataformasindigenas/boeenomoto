@@ -12,5 +12,5 @@ fields:
   updated_at: str?
   url: str?
   images: list?
-  content: str?
+  content_md: str?
   examples: list?

@@ -337,7 +337,7 @@
         keys: [
             { name: 'headword', weight: 2 },
             { name: 'summary', weight: 1.5 },
-            { name: 'content', weight: 1 },
+            { name: 'content_text', weight: 1 },
             { name: 'keywords', weight: 1 },
             { name: 'variants', weight: 0.5 }
         ],
@@ -515,7 +515,7 @@
             }
         }
 
-        const hasContent = entry.content || (entry.examples && entry.examples.length > 0);
+        const hasContent = entry.content_html || (entry.examples && entry.examples.length > 0);
 
         let html = '<div class="entry" data-entry-id="' + escapeHtml(entryId) + '">';
 
@@ -540,8 +540,8 @@
             html += renderInfobox(entry);
 
             // Article content with TOC
-            if (entry.content) {
-                const { toc, content } = generateTOC(entry.content, entryId);
+            if (entry.content_html) {
+                const { toc, content } = generateTOC(entry.content_html, entryId);
                 html += '<div class="article-content">';
                 html += toc;
                 html += content;

@@ -9,7 +9,7 @@ boeenomoto/
 ├── data/                    # Source data and schemas
 │   ├── dictionary.tsv       # Bororo dictionary (source)
 │   ├── dictionary_schema.yaml
-│   ├── encyclopedia.json    # Bororo encyclopedia (source)
+│   ├── encyclopedia.yaml    # Bororo encyclopedia (source, markdown)
 │   ├── encyclopedia_schema.yaml
 │   ├── fauna.yaml           # Bororo fauna (source)
 │   └── fauna_schema.yaml

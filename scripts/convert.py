@@ -10,12 +10,17 @@ Usage:
 """
 
 import csv
+import html as html_lib
 import json
 import re
 import sys
+from dataclasses import asdict, is_dataclass
+from html.parser import HTMLParser
 from pathlib import Path
 
 import aptoro
+from markdown_it import MarkdownIt
+from mdit_py_plugins.footnote import footnote_plugin
 
 # Increase CSV field size limit for large fields
 csv.field_size_limit(sys.maxsize)
@@ -77,196 +82,79 @@ def convert_fauna():
     return len(records)
 
 
-def format_encyclopedia_content(content: str) -> str:
-    """
-    Transform plain text content into structured HTML.
-
-    Rules:
-    1. Skip if content already has structural HTML tags
-    2. Convert numbered sections (1., 2., 2.1.) to headings
-    3. Break long text blocks into paragraphs (every 2-3 sentences)
-    4. Preserve existing inline HTML like <em>
-    """
-    if not content or len(content.strip()) == 0:
-        return content
-
-    # Skip if already has structural HTML
-    if re.search(r'<(h[1-6]|p\s|p>|ul|ol|div)', content, re.IGNORECASE):
-        return content
-
-    # Check if content has numbered sections
-    # Pattern 1: Section at start of line (clean formatting)
-    # Pattern 2: Section embedded in text (OCR artifacts) - number after period or space
-    has_clean_sections = bool(re.search(r'(?:^|\n)\s*\d+\.(?:\d+\.)*\s+[A-ZÁÉÍÓÚÀÂÃÊÎÔÕÇ]', content))
-    has_embedded_sections = bool(re.search(r'(?<=[.!?\s])\d+\.\s+[A-ZÁÉÍÓÚÀÂÃÊÎÔÕÇ]', content))
-
-    if has_clean_sections or has_embedded_sections:
-        return _format_with_sections(content)
-    else:
-        return _format_paragraphs(content)
+HTML_TAG_RE = re.compile(r"<\s*[a-zA-Z][^>]*>")
 
 
-def _format_with_sections(content: str) -> str:
-    """Format content that has numbered sections like '1. Title', '2.1. Subtitle'."""
-    # First, normalize the content by adding line breaks before section numbers
-    # This handles OCR artifacts where sections run together
+class _TextExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.parts: list[str] = []
 
-    # Pattern to find section numbers (handles both clean and embedded)
-    # Matches: "1. ", "2.1. ", "2.1.1. " followed by capital letter
-    # But not things like "p. ex." or decimal numbers
-    normalized = re.sub(
-        r'(?<=[.!?\s])(\d+\.(?:\d+\.)*)\s+([A-ZÁÉÍÓÚÀÂÃÊÎÔÕÇ])',
-        r'\n\n\1 \2',
-        content
-    )
+    def handle_data(self, data: str) -> None:
+        if data:
+            self.parts.append(data)
 
-    # Also handle section numbers at the very start
-    normalized = re.sub(
-        r'^(\d+\.(?:\d+\.)*)\s+([A-ZÁÉÍÓÚÀÂÃÊÎÔÕÇ])',
-        r'\1 \2',
-        normalized
-    )
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in {"p", "br", "hr", "li", "tr", "th", "td", "h1", "h2", "h3", "h4", "h5", "h6"}:
+            self.parts.append("\n")
 
-    result = []
+    def handle_endtag(self, tag: str) -> None:
+        if tag in {"p", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6"}:
+            self.parts.append("\n")
 
-    # Split content by section markers (now on their own lines)
-    parts = re.split(r'\n\n(?=\d+\.(?:\d+\.)*\s+[A-ZÁÉÍÓÚÀÂÃÊÎÔÕÇ])', normalized)
-
-    for part in parts:
-        part = part.strip()
-        if not part:
-            continue
-
-        # Check if this part starts with a section number
-        section_match = re.match(r'^(\d+\.(?:\d+\.)*)\s+(.+)', part, re.DOTALL)
-
-        if section_match:
-            section_num = section_match.group(1)
-            section_content = section_match.group(2).strip()
-
-            # Determine heading level based on section depth
-            depth = section_num.count('.')
-            heading_tag = 'h3' if depth <= 1 else 'h4'
-
-            # Extract title - text up to the next sentence ending or newline
-            # But be careful not to grab too much
-            title_match = re.match(r'^([A-ZÁÉÍÓÚÀÂÃÊÎÔÕÇ][^.!?\n]{0,100}(?:[.!?])?)', section_content)
-            if title_match:
-                title = title_match.group(1).strip()
-                remaining = section_content[len(title):].strip()
-
-                # Clean up title - remove trailing punctuation for heading
-                title_clean = re.sub(r'[.!?:]+$', '', title).strip()
-
-                # If title is too short and remaining starts with lowercase, include more
-                if len(title_clean) < 20 and remaining and remaining[0].islower():
-                    # Title might have been cut off, include the rest of the sentence
-                    extended_match = re.match(r'^([^.!?\n]+[.!?]?)', section_content)
-                    if extended_match:
-                        title_clean = re.sub(r'[.!?:]+$', '', extended_match.group(1)).strip()
-                        remaining = section_content[len(extended_match.group(1)):].strip()
-
-                result.append(f'<{heading_tag}>{section_num} {title_clean}</{heading_tag}>')
-
-                if remaining:
-                    # Format the remaining content as paragraphs
-                    formatted_remaining = _format_paragraphs(remaining)
-                    result.append(formatted_remaining)
-            else:
-                result.append(f'<{heading_tag}>{section_num} {section_content}</{heading_tag}>')
-        else:
-            # No section number - format as introduction paragraphs
-            formatted = _format_paragraphs(part)
-            result.append(formatted)
-
-    return '\n\n'.join(result)
+    def get_text(self) -> str:
+        text = html_lib.unescape("".join(self.parts))
+        return re.sub(r"\\s+", " ", text).strip()
 
 
-def _format_paragraphs(content: str) -> str:
-    """Break text into paragraphs, grouping 2-3 sentences each."""
-    if not content or len(content.strip()) == 0:
-        return content
+def _build_markdown_renderer() -> MarkdownIt:
+    md = MarkdownIt("gfm-like", {"html": False, "linkify": False})
+    md.use(footnote_plugin)
+    return md
 
-    content = content.strip()
 
-    # If content is very short, wrap in single paragraph
-    if len(content) < 150:
-        return f'<p>{content}</p>'
+def _assert_no_html(content_md: str, entry_id: str) -> None:
+    if content_md and HTML_TAG_RE.search(content_md):
+        raise ValueError(f"Entry {entry_id}: content_md contains HTML tags; use markdown only")
 
-    # Split into sentences
-    # Pattern: period/exclamation/question followed by space and capital letter
-    sentences = re.split(r'(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÀÂÃÊÎÔÕÇ])', content)
 
-    if len(sentences) <= 2:
-        return f'<p>{content}</p>'
-
-    # Group sentences into paragraphs (2-3 sentences each)
-    paragraphs = []
-    current_para = []
-
-    for i, sentence in enumerate(sentences):
-        sentence = sentence.strip()
-        if not sentence:
-            continue
-
-        current_para.append(sentence)
-
-        # Create paragraph every 2-3 sentences, or at the end
-        if len(current_para) >= 2:
-            # Check if adding another sentence would make it too long
-            current_length = sum(len(s) for s in current_para)
-            next_sentence = sentences[i + 1] if i + 1 < len(sentences) else None
-
-            if len(current_para) >= 3 or current_length > 400 or next_sentence is None:
-                para_text = ' '.join(current_para)
-                paragraphs.append(f'<p>{para_text}</p>')
-                current_para = []
-
-    # Don't forget remaining sentences
-    if current_para:
-        para_text = ' '.join(current_para)
-        paragraphs.append(f'<p>{para_text}</p>')
-
-    return '\n\n'.join(paragraphs)
+def _html_to_text(html: str) -> str:
+    if not html:
+        return ""
+    parser = _TextExtractor()
+    parser.feed(html)
+    return parser.get_text()
 
 
 def convert_encyclopedia():
-    """Convert encyclopedia JSON to kodudo-compatible format."""
+    """Convert encyclopedia YAML + markdown to kodudo-compatible JSON."""
     print("=== Converting Encyclopedia ===")
 
-    input_file = DATA_DIR / "encyclopedia.json"
-    with open(input_file, "r", encoding="utf-8") as f:
-        raw_data = json.load(f)
+    schema = aptoro.load_schema(str(DATA_DIR / "encyclopedia_schema.yaml"))
+    data = aptoro.read(str(DATA_DIR / "encyclopedia.yaml"), format="yaml")
 
-    entries = raw_data.get("entries", [])
-    print(f"  Processing {len(entries)} entries...")
+    print(f"  Validating {len(data)} entries...")
+    try:
+        records = aptoro.validate(data, schema, collect_errors=True)
+    except aptoro.ValidationError as e:
+        print(f"  Validation errors: {len(e.errors)}")
+        for error in e.errors[:10]:
+            print(f"    Row {error.row}: {error.field} - {error.message}")
+        if len(e.errors) > 10:
+            print(f"    ... and {len(e.errors) - 10} more errors")
+        raise
 
-    # Validate required fields
-    errors = []
-    for i, entry in enumerate(entries):
-        if not entry.get("id"):
-            errors.append(f"Entry {i}: missing 'id'")
-        if not entry.get("headword"):
-            errors.append(f"Entry {i}: missing 'headword'")
-
-    if errors:
-        print(f"  Validation errors: {len(errors)}")
-        for error in errors[:10]:
-            print(f"    {error}")
-        if len(errors) > 10:
-            print(f"    ... and {len(errors) - 10} more errors")
-        raise ValueError("Encyclopedia validation failed")
-
-    # Format content for each entry
-    formatted_count = 0
-    for entry in entries:
-        if entry.get("content"):
-            original = entry["content"]
-            entry["content"] = format_encyclopedia_content(original)
-            if entry["content"] != original:
-                formatted_count += 1
-
-    print(f"  Formatted {formatted_count} entries with auto-structure")
+    md = _build_markdown_renderer()
+    normalized_records = []
+    for record in records:
+        entry = asdict(record) if is_dataclass(record) else dict(record)
+        content_md = entry.get("content_md") or ""
+        _assert_no_html(content_md, entry.get("id", "<unknown>"))
+        content_html = md.render(content_md) if content_md else ""
+        entry["content_html"] = content_html
+        entry["content_text"] = _html_to_text(content_html)
+        entry.pop("content_md", None)
+        normalized_records.append(entry)
 
     # Output in kodudo-compatible format (with meta)
     output_data = {
@@ -274,16 +162,16 @@ def convert_encyclopedia():
             "name": "bororo_encyclopedia",
             "description": "Bororo Encyclopedia Entries",
             "version": "1.0",
-            "record_count": len(entries)
+            "record_count": len(normalized_records)
         },
-        "data": entries
+        "data": normalized_records
     }
 
     output_file = DATA_DIR / "encyclopedia_output.json"
     output_file.write_text(json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"  Exported {len(entries)} entries to {output_file}")
-    return len(entries)
+    print(f"  Exported {len(normalized_records)} entries to {output_file}")
+    return len(normalized_records)
 
 
 def generate_index(dictionary_count: int, fauna_count: int, encyclopedia_count: int):
