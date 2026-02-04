@@ -23,6 +23,7 @@ echo "Step 2: Rendering HTML pages with kodudo"
 kodudo cook config/dictionary.yaml
 kodudo cook config/encyclopedia.yaml
 kodudo cook config/fauna.yaml
+kodudo cook config/bibliography.yaml
 kodudo cook config/index.yaml
 echo ""
 

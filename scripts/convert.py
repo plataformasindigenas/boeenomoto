@@ -19,6 +19,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 import aptoro
+import bibtexparser
 import yaml
 from markdown_it import MarkdownIt
 from mdit_py_plugins.footnote import footnote_plugin
@@ -83,6 +84,87 @@ def convert_fauna():
     return len(records)
 
 
+def convert_bibliography():
+    """Convert bibliography BibTeX to JSON."""
+    print("=== Converting Bibliography ===")
+
+    bib_file = DATA_DIR / "bororo.bib"
+    if not bib_file.exists():
+        print(f"  BibTeX file not found: {bib_file}")
+        return 0
+
+    with open(bib_file, "r", encoding="utf-8") as f:
+        bib_database = bibtexparser.load(f)
+
+    schema = aptoro.load_schema(str(DATA_DIR / "bibliography_schema.yaml"))
+
+    data = []
+    for entry in bib_database.entries:
+        record = {"id": entry.get("ID", "")}
+        bibtex_type = entry.get("ENTRYTYPE", "misc")
+        if bibtex_type.startswith("@"):
+            bibtex_type = bibtex_type[1:]
+        record["type"] = bibtex_type
+
+        field_mapping = {
+            "author": "author",
+            "title": "title",
+            "year": "year",
+            "journal": "journal",
+            "volume": "volume",
+            "number": "number",
+            "pages": "pages",
+            "doi": "doi",
+            "url": "url",
+            "publisher": "publisher",
+            "address": "address",
+            "school": "school",
+            "note": "note",
+            "editor": "editor",
+            "booktitle": "booktitle",
+        }
+
+        for bib_field, schema_field in field_mapping.items():
+            if bib_field in entry:
+                record[schema_field] = entry[bib_field]
+
+        data.append(record)
+
+    print(f"  Validating {len(data)} entries...")
+    try:
+        records = aptoro.validate(data, schema, collect_errors=True)
+    except aptoro.ValidationError as e:
+        print(f"  Validation errors: {len(e.errors)}")
+        for error in e.errors[:10]:
+            print(f"    Row {error.row}: {error.field} - {error.message}")
+        if len(e.errors) > 10:
+            print(f"    ... and {len(e.errors) - 10} more errors")
+        raise
+
+    normalized_records = []
+    for record in records:
+        entry = asdict(record) if is_dataclass(record) else dict(record)
+        normalized_records.append(entry)
+
+    output_data = {
+        "meta": {
+            "name": "bororo_bibliography",
+            "description": "Bororo Bibliography References",
+            "version": "1.0",
+            "record_count": len(normalized_records),
+        },
+        "data": normalized_records,
+    }
+
+    output_file = DATA_DIR / "bibliography_output.json"
+    output_file.write_text(
+        json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"  Exported {len(normalized_records)} entries to {output_file}")
+    return len(normalized_records)
+
+
 HTML_TAG_RE = re.compile(r"<\s*[a-zA-Z][^>]*>")
 
 
@@ -96,7 +178,21 @@ class _TextExtractor(HTMLParser):
             self.parts.append(data)
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag in {"p", "br", "hr", "li", "tr", "th", "td", "h1", "h2", "h3", "h4", "h5", "h6"}:
+        if tag in {
+            "p",
+            "br",
+            "hr",
+            "li",
+            "tr",
+            "th",
+            "td",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+        }:
             self.parts.append("\n")
 
     def handle_endtag(self, tag: str) -> None:
@@ -116,7 +212,9 @@ def _build_markdown_renderer() -> MarkdownIt:
 
 def _assert_no_html(content_md: str, entry_id: str) -> None:
     if content_md and HTML_TAG_RE.search(content_md):
-        raise ValueError(f"Entry {entry_id}: content_md contains HTML tags; use markdown only")
+        raise ValueError(
+            f"Entry {entry_id}: content_md contains HTML tags; use markdown only"
+        )
 
 
 def _html_to_text(html: str) -> str:
@@ -214,33 +312,39 @@ def convert_encyclopedia():
             "name": "bororo_encyclopedia",
             "description": "Bororo Encyclopedia Entries",
             "version": "1.0",
-            "record_count": len(normalized_records)
+            "record_count": len(normalized_records),
         },
-        "data": normalized_records
+        "data": normalized_records,
     }
 
     output_file = DATA_DIR / "encyclopedia_output.json"
-    output_file.write_text(json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8")
+    output_file.write_text(
+        json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
     print(f"  Exported {len(normalized_records)} entries to {output_file}")
     return len(normalized_records)
 
 
-def generate_index(dictionary_count: int, fauna_count: int, encyclopedia_count: int):
+def generate_index(
+    dictionary_count: int,
+    fauna_count: int,
+    encyclopedia_count: int,
+    bibliography_count: int,
+):
     """Generate index JSON with platform counts."""
     print("=== Generating Index Data ===")
 
     index_data = {
-        "meta": {
-            "description": "Boe Eno Moto - Index data"
-        },
+        "meta": {"description": "Boe Eno Moto - Index data"},
         "data": [
             {
                 "dictionary_count": dictionary_count,
                 "fauna_count": fauna_count,
-                "encyclopedia_count": encyclopedia_count
+                "encyclopedia_count": encyclopedia_count,
+                "bibliography_count": bibliography_count,
             }
-        ]
+        ],
     }
 
     output_file = DATA_DIR / "index.json"
@@ -252,7 +356,6 @@ def generate_index(dictionary_count: int, fauna_count: int, encyclopedia_count: 
 def main():
     print("Boe Eno Moto - Data Conversion\n")
 
-    # Convert all datasets
     dictionary_count = convert_dictionary()
     print()
 
@@ -262,7 +365,12 @@ def main():
     encyclopedia_count = convert_encyclopedia()
     print()
 
-    generate_index(dictionary_count, fauna_count, encyclopedia_count)
+    bibliography_count = convert_bibliography()
+    print()
+
+    generate_index(
+        dictionary_count, fauna_count, encyclopedia_count, bibliography_count
+    )
     print()
 
     print("=== Conversion Complete ===")

@@ -1,0 +1,23 @@
+name: bororo_bibliography
+description: Bororo Bibliography References
+version: "1.0"
+primary_key: id
+
+fields:
+  id: str
+  type: str
+  author: str?
+  title: str?
+  year: str?
+  journal: str?
+  volume: str?
+  number: str?
+  pages: str?
+  doi: str?
+  url: str?
+  publisher: str?
+  address: str?
+  school: str?
+  note: str?
+  editor: str?
+  booktitle: str?
