@@ -13,7 +13,7 @@ keywords = ["bororo", "indigenous", "linguistics", "dictionary", "fauna"]
 dependencies = [
     "aptoro>=0.3.1",
     "kodudo>=0.1.1",
-    "bibtexparser>=2.0.0b",
+    "bibtexparser>=1.4.0",
 ]
 
 [project.urls]
