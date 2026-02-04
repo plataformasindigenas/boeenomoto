@@ -19,7 +19,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 import aptoro
-import bibtexparser
+from bibtexparser import bparser
 import yaml
 from markdown_it import MarkdownIt
 from mdit_py_plugins.footnote import footnote_plugin
@@ -94,7 +94,7 @@ def convert_bibliography():
         return 0
 
     with open(bib_file, "r", encoding="utf-8") as f:
-        bib_database = bibtexparser.loads(f.read())
+        bib_database = bparser.parse(f.read())
 
     schema = aptoro.load_schema(str(DATA_DIR / "bibliography_schema.yaml"))
 
