@@ -1,0 +1,231 @@
+{% extends "base.html.j2" %}
+
+{% block title %}Bibliografia Bororo{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Bibliografia Bororo</h1>
+        <p class="subtitle">{{ meta.description }} &mdash; {{ data | length }} referências</p>
+    </header>
+
+    <div class="search-container">
+        <div class="search-row">
+            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (autor, título, ano)..." autocomplete="off">
+            <select id="type-filter" class="filter-select">
+                <option value="">Todos os tipos</option>
+                {% set types = [] %}
+                {% for item in data %}
+                    {% if item.type and item.type not in types %}
+                        {% set _ = types.append(item.type) %}
+                    {% endif %}
+                {% endfor %}
+                {% for type in types | sort %}
+                <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="results-container" id="results">
+        <div class="empty-state">
+            <h2>Pesquise a bibliografia</h2>
+            <p>Digite um autor, título ou ano para começar</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <script>
+    const bibliographyData = {{ data | tojson }};
+
+    const fuse = new Fuse(bibliographyData, {
+        keys: [
+            { name: 'author', weight: 2 },
+            { name: 'title', weight: 1.5 },
+            { name: 'year', weight: 1 },
+            { name: 'journal', weight: 0.5 },
+            { name: 'booktitle', weight: 0.5 },
+            { name: 'publisher', weight: 0.3 },
+            { name: 'note', weight: 0.3 }
+        ],
+        threshold: 0.4,
+        ignoreLocation: true,
+        includeMatches: true,
+        minMatchCharLength: 2
+    });
+
+    const searchInput = document.getElementById('search-input');
+    const typeFilter = document.getElementById('type-filter');
+    const resultsContainer = document.getElementById('results');
+    const statsDiv = document.getElementById('stats');
+
+    let currentResults = [];
+
+    function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function highlightMatches(text, indices) {
+        if (!text || !indices || indices.length === 0) return escapeHtml(text);
+
+        let result = '';
+        let lastIndex = 0;
+
+        const sortedIndices = indices.sort((a, b) => a[0] - b[0]);
+
+        for (const [start, end] of sortedIndices) {
+            result += escapeHtml(text.slice(lastIndex, start));
+            result += '<span class="highlight">' + escapeHtml(text.slice(start, end + 1)) + '</span>';
+            lastIndex = end + 1;
+        }
+        result += escapeHtml(text.slice(lastIndex));
+
+        return result;
+    }
+
+    function formatAuthors(author) {
+        if (!author) return '';
+        return author.replace(/\s+and\s+/g, ', ');
+    }
+
+    function renderEntry(item, matches = null) {
+        const entry = item.item || item;
+
+        const matchMap = {};
+        if (matches) {
+            for (const match of matches) {
+                matchMap[match.key] = match.indices;
+            }
+        }
+
+        let html = '<div class="entry">';
+
+        html += '<div class="entry-header">';
+        html += '<span class="entry-word">' + escapeHtml(entry.id) + '</span>';
+        if (entry.type) {
+            html += '<span class="entry-tag">' + escapeHtml(entry.type) + '</span>';
+        }
+        html += '</div>';
+
+        if (entry.author) {
+            html += '<p class="entry-definition">' + highlightMatches(formatAuthors(entry.author), matchMap['author']) + '</p>';
+        }
+
+        if (entry.title) {
+            html += '<p class="entry-example">' + highlightMatches(entry.title, matchMap['title']) + '</p>';
+        }
+
+        let metaParts = [];
+        if (entry.year) {
+            metaParts.push(highlightMatches(entry.year, matchMap['year']));
+        }
+        if (entry.journal) {
+            metaParts.push('<em>' + highlightMatches(entry.journal, matchMap['journal']) + '</em>');
+        }
+        if (entry.volume && entry.number) {
+            metaParts.push('v. ' + highlightMatches(entry.volume, matchMap['volume']) + ', n. ' + highlightMatches(entry.number, matchMap['number']));
+        }
+        if (entry.pages) {
+            metaParts.push('p. ' + highlightMatches(entry.pages, matchMap['pages']));
+        }
+        if (entry.publisher) {
+            metaParts.push(highlightMatches(entry.publisher, matchMap['publisher']));
+        }
+        if (entry.address) {
+            metaParts.push(highlightMatches(entry.address, matchMap['address']));
+        }
+
+        if (metaParts.length > 0) {
+            html += '<p class="entry-scientific">' + metaParts.join(', ') + '</p>';
+        }
+
+        if (entry.doi) {
+            html += '<div class="entry-links">';
+            html += '<a href="https://doi.org/' + escapeHtml(entry.doi) + '" target="_blank" rel="noopener">DOI: ' + escapeHtml(entry.doi) + '</a>';
+            html += '</div>';
+        } else if (entry.url) {
+            html += '<div class="entry-links">';
+            html += '<a href="' + escapeHtml(entry.url) + '" target="_blank" rel="noopener">' + escapeHtml(entry.url) + '</a>';
+            html += '</div>';
+        }
+
+        if (entry.note && !entry.note.includes('Source list item')) {
+            html += '<div class="entry-comment">' + highlightMatches(entry.note, matchMap['note']) + '</div>';
+        }
+
+        if (entry.note && entry.note.includes('Source list item')) {
+            html += '<p class="entry-scientific">' + escapeHtml(entry.note) + '</p>';
+        }
+
+        html += '</div>';
+        return html;
+    }
+
+    function search() {
+        const query = searchInput.value.trim();
+        const selectedType = typeFilter.value;
+
+        if (query.length < 2) {
+            if (selectedType) {
+                currentResults = bibliographyData
+                    .filter(item => item.type === selectedType)
+                    .map(item => ({ item }));
+            } else {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <h2>Pesquise a bibliografia</h2>
+                        <p>Digite um autor, título ou ano para começar</p>
+                    </div>
+                `;
+                statsDiv.textContent = '';
+                return;
+            }
+        } else {
+            currentResults = fuse.search(query);
+
+            if (selectedType) {
+                currentResults = currentResults.filter(result => result.item.type === selectedType);
+            }
+        }
+
+        statsDiv.textContent = `${currentResults.length} referência${currentResults.length !== 1 ? 's' : ''} encontrada${currentResults.length !== 1 ? 's' : ''}`;
+
+        if (currentResults.length === 0) {
+            resultsContainer.innerHTML = `
+                <div class="empty-state">
+                    <h2>Nenhum resultado</h2>
+                    <p>Tente um autor, título ou ano diferente</p>
+                </div>
+            `;
+        } else {
+            const displayResults = currentResults.slice(0, 100);
+            let html = displayResults.map(result => renderEntry(result, result.matches)).join('');
+
+            if (currentResults.length > 100) {
+                html += `<div class="empty-state"><p>Mostrando 100 de ${currentResults.length} resultados. Refine sua busca.</p></div>`;
+            }
+
+            resultsContainer.innerHTML = html;
+        }
+    }
+
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    }
+
+    searchInput.addEventListener('input', debounce(search, 200));
+    typeFilter.addEventListener('change', search);
+
+    searchInput.focus();
+    </script>
+{% endblock %}
