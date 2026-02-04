@@ -94,7 +94,7 @@ def convert_bibliography():
         return 0
 
     with open(bib_file, "r", encoding="utf-8") as f:
-        bib_database = bibtexparser.load(f)
+        bib_database = bibtexparser.loads(f.read())
 
     schema = aptoro.load_schema(str(DATA_DIR / "bibliography_schema.yaml"))
 
