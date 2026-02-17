@@ -15,7 +15,7 @@
     },
     "description": "Bororo Dictionary Entries",
     "version": "1.0",
-    "generated_at": "2026-02-04T12:09:19.108910Z"
+    "generated_at": "2026-02-17T16:13:45.715803Z"
   },
   "data": [
     {
@@ -580,7 +580,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/130306_Elizete_aerega.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 48,
@@ -700,7 +707,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/aiagodu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 58,
@@ -760,7 +774,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/130447_Erotildes_aidu.webm",
+          "speaker": "erotildes",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 63,
@@ -832,7 +853,19 @@
       "scientific_name": "Puma concolor",
       "wiki_link": "https://pt.wikipedia.org/wiki/Puma_concolor",
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/960px-Mountain_Lion_in_Glacier_National_Park.jpg",
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/114829_gleide_aigo.webm",
+          "speaker": "gleide",
+          "format": "webm"
+        },
+        {
+          "file_path": "Taradrimana/2026-01-28/145109_valdemar_aigo.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 69,
@@ -940,7 +973,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/130532_Elizete_aiwo.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 78,
@@ -1264,7 +1304,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex20-nazario01/ake.wav",
+          "speaker": "nazario",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 105,
@@ -1288,7 +1335,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex20-nazario01/akeTawuje.wav",
+          "speaker": "nazario",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 107,
@@ -1300,7 +1354,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex18-leonida-whatsapp290525/Leonida_akedo.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 108,
@@ -1312,7 +1373,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex18-leonida-whatsapp290525/Leonida_akedu01.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex19-pedrosa01/Pedrosa_akedu02.wav",
+          "speaker": "pedrosa",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 109,
@@ -1324,7 +1397,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/150256_Valdemar_akedudo.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 110,
@@ -1564,7 +1644,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/100521_Valdemar_akigu_kodu.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 130,
@@ -1672,7 +1759,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex11-leonida-IMG_8795/akirodo.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 139,
@@ -2308,7 +2402,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/152657_Valdemar_akudo.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 192,
@@ -2548,7 +2649,14 @@
       "scientific_name": "(Teiidae",
       "wiki_link": "https://pt.wikipedia.org/wiki/Teiú",
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tupinambis_merianae_Pantanal.jpg/960px-Tupinambis_merianae_Pantanal.jpg",
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "field/2026-01-26/113608_Bosco_amema.webm",
+          "speaker": "bosco",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 212,
@@ -2584,7 +2692,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex04-leonida-IMG_0689/Leonida_amirewu.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 215,
@@ -2596,7 +2711,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_rabbit.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 216,
@@ -3124,7 +3246,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_aora.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 260,
@@ -3172,7 +3301,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/aoTadawu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 264,
@@ -3592,7 +3728,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/125654_Elizete_aregodu.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex22-fernando02/aregodu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 299,
@@ -3844,7 +3992,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/100408_Valdemar_aria_meriri.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 320,
@@ -4000,7 +4155,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/130621_Elizete_aroe.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/aroe.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 333,
@@ -4060,7 +4227,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/095736_elizete_aroe_eimejera.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 338,
@@ -4468,7 +4642,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/130756_Elizete_aru.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 372,
@@ -4888,7 +5069,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex10-benito-IMG_8685/atuge.wav",
+          "speaker": "benito",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 407,
@@ -4924,7 +5112,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/143943_Valdemar_atugodo.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 410,
@@ -5176,7 +5371,24 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/095602_elizete_awagu.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex09-benito-IMG_8685/awagu01.wav",
+          "speaker": "benito",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/awagu02.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 431,
@@ -5188,7 +5400,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/awara.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 432,
@@ -5764,7 +5983,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/103800_valdemar_bai.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        },
+        {
+          "file_path": "Taradrimana/2026-01-28/111411_valdemar_bai.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 480,
@@ -6124,7 +6355,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/112119_valdemar_baiporo_epa.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 510,
@@ -6568,7 +6806,29 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/152405_jussila_tore_boudo_bakuru.webm",
+          "speaker": "jussila",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex10-benito-IMG_8685/bakuru01.wav",
+          "speaker": "benito",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex19-pedrosa01/Pedrosa_bakuru02.wav",
+          "speaker": "pedrosa",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/bakuru03.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 547,
@@ -6604,7 +6864,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/131138_Elizete_bapera.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex20-nazario01/bapera.wav",
+          "speaker": "nazario",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 550,
@@ -6652,7 +6924,14 @@
       "scientific_name": "coração",
       "wiki_link": "https://pt.wikipedia.org/wiki/Coração",
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Heart_tee_four_chamber_view.jpg/960px-Heart_tee_four_chamber_view.jpg",
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/bapo.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 554,
@@ -6676,7 +6955,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex16-leonida-IMG_8801/Leonida_baradu.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 556,
@@ -7228,7 +7514,29 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/103525_valdemar_baru.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        },
+        {
+          "file_path": "Taradrimana/2026-01-28/111230_valdemar_baru.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex19-pedrosa01/Pedrosa_baru02.wav",
+          "speaker": "pedrosa",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex22-fernando02/baru.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 602,
@@ -7480,7 +7788,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/131202_Elizete_bataru.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 623,
@@ -8224,7 +8539,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/154058_jussila_tore_boudo_beregodu.webm",
+          "speaker": "jussila",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 685,
@@ -8440,7 +8762,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/betureboe.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 703,
@@ -8464,7 +8793,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/131409_Elizete_bi.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 705,
@@ -8584,7 +8920,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/103635_valdemar_biado.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        },
+        {
+          "file_path": "Taradrimana/2026-01-28/111316_valdemar_biado.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 715,
@@ -8692,7 +9040,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/152104_Valdemar_biagodu.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 724,
@@ -8740,7 +9095,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_biaja.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 728,
@@ -9268,7 +9630,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex20-nazario01/bire.wav",
+          "speaker": "nazario",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 772,
@@ -9556,7 +9925,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex03-leonida-IMG_0688/Leonida_bito.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 796,
@@ -9952,7 +10328,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/145712_Valdemar_boe.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 829,
@@ -10144,7 +10527,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_boeBo.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 845,
@@ -10516,7 +10906,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/boeEmuga.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 876,
@@ -11140,7 +11537,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/125500_Elizete_boe_karega.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 928,
@@ -11788,7 +12192,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/145523_Valdemar_boekaguru.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 982,
@@ -11812,7 +12223,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_boeKimo.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 984,
@@ -11824,7 +12242,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/150821_jussila_tore_boudo_boe_kori.webm",
+          "speaker": "jussila",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/boeKori.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 985,
@@ -12100,7 +12530,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-28/112806_valdemar_boigodu.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 1008,
@@ -12244,7 +12681,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/boku.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1020,
@@ -12352,7 +12796,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/103014_Valdemar_bokwaro.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_bokwaro.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1029,
@@ -12376,7 +12832,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_bopona.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1031,
@@ -12460,7 +12923,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_borewu.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1038,
@@ -12616,7 +13086,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/botudo.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1051,
@@ -12676,7 +13153,24 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/131650_Elizete_bowuje.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex15-leonida-IMG_8800/Leonida_bowuje01.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/bowuje02.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1056,
@@ -12748,7 +13242,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/bubutu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1062,
@@ -13072,7 +13573,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_bure.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1089,
@@ -13180,7 +13688,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/bureado.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1098,
@@ -13216,7 +13731,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/125631_Elizete_buregi.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 1101,
@@ -13528,7 +14050,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/butugugodu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1127,
@@ -16108,7 +16637,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_enoja.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1342,
@@ -16816,7 +17352,24 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_eru01.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex10-benito-IMG_8685/eru02.wav",
+          "speaker": "benito",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/eru03.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1401,
@@ -17416,7 +17969,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/153258_Valdemar_gorido.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_gorido.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1451,
@@ -18052,7 +18617,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/iage.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1504,
@@ -18748,7 +19320,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/134338_erotildes_ibora.webm",
+          "speaker": "erotildes",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 1562,
@@ -18988,7 +19567,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/92/Gray1234.png",
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_iera.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1582,
@@ -19252,7 +19838,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/iguru.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1604,
@@ -19396,7 +19989,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/ikodo.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1616,
@@ -19756,7 +20356,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/ikurudu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1646,
@@ -19852,7 +20459,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_inegi.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1654,
@@ -20596,7 +21210,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/iro.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1716,
@@ -20704,7 +21325,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/irui.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1725,
@@ -20728,7 +21356,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_itaga.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1727,
@@ -20980,7 +21615,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_itoru01.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex09-benito-IMG_8685/itoru02.wav",
+          "speaker": "benito",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1748,
@@ -21088,7 +21735,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/154415_jussila_tore_boudo_itura.webm",
+          "speaker": "jussila",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 1757,
@@ -21328,7 +21982,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/iwogu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1777,
@@ -21436,7 +22097,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/iworewu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1786,
@@ -21544,7 +22212,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/135203_erotildes_iwu.webm",
+          "speaker": "erotildes",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex03-leonida-IMG_0688/Leonida_iwu.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1795,
@@ -21700,7 +22380,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/jado.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1808,
@@ -22588,7 +23275,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_jawuji01.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/jawuji02.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 1882,
@@ -23176,7 +23875,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/135414_erotildes_jekiripagado.webm",
+          "speaker": "erotildes",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 1931,
@@ -24208,7 +24914,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/150340_Valdemar_jerigi.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2017,
@@ -24472,7 +25185,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/jerimaga.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2039,
@@ -24772,7 +25492,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/jetadu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2064,
@@ -26464,7 +27191,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/jokuru.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2205,
@@ -26848,7 +27582,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/135632_erotildes_jorubo.webm",
+          "speaker": "erotildes",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2237,
@@ -27364,7 +28105,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/125857_Elizete_jorugudu.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        },
+        {
+          "file_path": "Taradrimana/2026-01-28/101724_elizete_jorugudu.webm",
+          "speaker": "elizete",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2280,
@@ -27472,7 +28225,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/140704_erotildes_ju.webm",
+          "speaker": "erotildes",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2289,
@@ -27520,7 +28280,14 @@
       "scientific_name": "Sus scrofa domesticus",
       "wiki_link": "https://pt.wikipedia.org/wiki/Porco_doméstico",
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sow_with_piglet.jpg/500px-Sow_with_piglet.jpg",
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/jugorewu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2293,
@@ -27616,7 +28383,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/151106_Valdemar_ju_kudu.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2301,
@@ -27844,7 +28618,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_kabi.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2320,
@@ -27952,7 +28733,29 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/154948_jussila_tore_boudo_kado.webm",
+          "speaker": "jussila",
+          "format": "webm"
+        },
+        {
+          "file_path": "bor_lex07-benito-IMG_8684/kado01.wav",
+          "speaker": "benito",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex19-pedrosa01/Pedrosa_kado02.wav",
+          "speaker": "pedrosa",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex19-pedrosa01/Pedrosa_kado03.wav",
+          "speaker": "pedrosa",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2329,
@@ -28468,7 +29271,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex15-leonida-IMG_8800/Leonida_kaia.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2372,
@@ -28516,7 +29326,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/kaibori.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2376,
@@ -28660,7 +29477,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/151716_jussila_tore_boudo_kajeje.webm",
+          "speaker": "jussila",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2388,
@@ -28756,7 +29580,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/kamorewu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2396,
@@ -28768,7 +29599,19 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex19-pedrosa01/Pedrosa_kana01.wav",
+          "speaker": "pedrosa",
+          "format": "wav"
+        },
+        {
+          "file_path": "bor_lex21-fernando01/kana02.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2397,
@@ -28888,7 +29731,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_kanabo.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2407,
@@ -29452,7 +30302,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/kaworurewu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2454,
@@ -30460,7 +31317,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_kiga.wav",
+          "speaker": "leonida",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2538,
@@ -30472,7 +31336,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex21-fernando01/kigadu.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2539,
@@ -30520,7 +31391,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex10-benito-IMG_8685/kigadurewu.wav",
+          "speaker": "benito",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2543,
@@ -30676,7 +31554,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex22-fernando02/kigori.wav",
+          "speaker": "fernando",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2556,
@@ -30976,7 +31861,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "bor_lex07-benito-IMG_8684/kiogo.wav",
+          "speaker": "benito",
+          "format": "wav"
+        }
+      ]
     },
     {
       "id": 2581,
@@ -33196,7 +34088,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-27/150007_Valdemar_korao.webm",
+          "speaker": "valdemar",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2766,
@@ -33784,7 +34683,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/161502_jussila_tore_boudo_kowu.webm",
+          "speaker": "jussila",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2815,
@@ -34036,7 +34942,14 @@
       "scientific_name": null,
       "wiki_link": null,
       "pic_link": null,
-      "comment": null
+      "comment": null,
+      "audio": [
+        {
+          "file_path": "Taradrimana/2026-01-26/141601_erotildes_kudae.webm",
+          "speaker": "erotildes",
+          "format": "webm"
+        }
+      ]
     },
     {
       "id": 2836,

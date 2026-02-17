@@ -326,11 +326,111 @@ def convert_encyclopedia():
     return len(normalized_records)
 
 
+def convert_recordings():
+    """Convert recordings YAML to JSON."""
+    print("=== Converting Recordings ===")
+
+    recordings_file = DATA_DIR / "recordings.yaml"
+    if not recordings_file.exists():
+        print(f"  Recordings file not found: {recordings_file}")
+        print("  Run 'python scripts/inventory_recordings.py' first.")
+        return 0
+
+    schema = aptoro.load_schema(str(DATA_DIR / "recordings_schema.yaml"))
+
+    with open(recordings_file, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f) or []
+
+    print(f"  Validating {len(data)} entries...")
+    try:
+        records = aptoro.validate(data, schema, collect_errors=True)
+    except aptoro.ValidationError as e:
+        print(f"  Validation errors: {len(e.errors)}")
+        for error in e.errors[:10]:
+            print(f"    {error}")
+        if len(e.errors) > 10:
+            print(f"    ... and {len(e.errors) - 10} more errors")
+        raise
+
+    normalized_records = []
+    for record in records:
+        entry = asdict(record) if is_dataclass(record) else dict(record)
+        normalized_records.append(entry)
+
+    output_data = {
+        "meta": {
+            "name": "bororo_recordings",
+            "description": "Bororo Language Audio Recordings",
+            "version": "1.0",
+            "record_count": len(normalized_records),
+        },
+        "data": normalized_records,
+    }
+
+    output_file = DATA_DIR / "recordings.json"
+    output_file.write_text(
+        json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"  Exported {len(normalized_records)} entries to {output_file}")
+    return len(normalized_records)
+
+
+def attach_recordings_to_dictionary():
+    """Attach audio recordings to dictionary entries."""
+    print("=== Attaching Recordings to Dictionary ===")
+
+    recordings_file = DATA_DIR / "recordings.yaml"
+    dictionary_file = DATA_DIR / "dictionary.json"
+
+    if not recordings_file.exists():
+        print("  No recordings.yaml found, skipping.")
+        return
+    if not dictionary_file.exists():
+        print("  No dictionary.json found, skipping.")
+        return
+
+    # Build map: dictionary_id → list of audio info
+    with open(recordings_file, "r", encoding="utf-8") as f:
+        recordings = yaml.safe_load(f) or []
+
+    audio_map = {}
+    for rec in recordings:
+        dict_id = rec.get("dictionary_id")
+        if dict_id is None:
+            continue
+        audio_map.setdefault(dict_id, []).append({
+            "file_path": rec["file_path"],
+            "speaker": rec["speaker"],
+            "format": rec["format"],
+        })
+
+    # Read dictionary.json and inject audio arrays
+    with open(dictionary_file, "r", encoding="utf-8") as f:
+        dictionary = json.load(f)
+
+    attached_count = 0
+    for entry in dictionary["data"]:
+        entry_id = entry.get("id")
+        if entry_id in audio_map:
+            entry["audio"] = audio_map[entry_id]
+            attached_count += 1
+
+    # Rewrite dictionary.json
+    dictionary_file.write_text(
+        json.dumps(dictionary, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"  Attached audio to {attached_count} dictionary entries")
+    print(f"  Total audio files linked: {sum(len(v) for v in audio_map.values())}")
+
+
 def generate_index(
     dictionary_count: int,
     fauna_count: int,
     encyclopedia_count: int,
     bibliography_count: int,
+    recordings_count: int = 0,
 ):
     """Generate index JSON with platform counts."""
     print("=== Generating Index Data ===")
@@ -343,6 +443,7 @@ def generate_index(
                 "fauna_count": fauna_count,
                 "encyclopedia_count": encyclopedia_count,
                 "bibliography_count": bibliography_count,
+                "recordings_count": recordings_count,
             }
         ],
     }
@@ -368,8 +469,18 @@ def main():
     bibliography_count = convert_bibliography()
     print()
 
+    recordings_count = convert_recordings()
+    print()
+
+    attach_recordings_to_dictionary()
+    print()
+
     generate_index(
-        dictionary_count, fauna_count, encyclopedia_count, bibliography_count
+        dictionary_count,
+        fauna_count,
+        encyclopedia_count,
+        bibliography_count,
+        recordings_count,
     )
     print()
 

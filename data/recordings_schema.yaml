@@ -1,0 +1,21 @@
+name: bororo_recordings
+description: Bororo Language Audio Recordings
+version: "1.0"
+primary_key: id
+
+fields:
+  id: int
+  file_path: str
+  format: str
+  speaker: str
+  session_id: str?
+  recording_date: str?
+  recording_time: str?
+  location: str?
+  raw_word: str
+  normalized_word: str
+  variant_num: int?
+  dictionary_id: int?
+  match_type: str?
+  needs_review: bool?
+  notes: str?
