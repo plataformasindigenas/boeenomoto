@@ -13,7 +13,7 @@ keywords: []
 updated_at: '2026-01-04'
 url: ''
 images:
-- url: https://s2.wklcdn.com/image_95/2860457/17829500/11301902Master.jpg
+- url: images/enc_tori_0.jpg
   alt: Tori
   credit: ''
 examples: []
