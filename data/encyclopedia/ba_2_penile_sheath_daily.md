@@ -13,7 +13,7 @@ keywords:
 updated_at: '2026-01-05'
 url: ''
 images:
-- url: https://www.geocities.ws/terrabrasileira/ornato/o-ornato/o-estoj2.jpg
+- url: images/enc_ba_2_penile_sheath_daily_0.jpg
   alt: ''
   credit: ''
 examples: []

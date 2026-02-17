@@ -16,7 +16,7 @@ keywords:
 updated_at: '2025-08-09'
 url: https://pt.wikipedia.org/wiki/Formiga-feiticeira
 images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Dasymutillaoccidentalis.jpg/960px-Dasymutillaoccidentalis.jpg
+- url: images/enc_adugomutillidae_0.jpg
   alt: Formiga-onça (vespa da família Mutillidae)
   credit: Wikimedia Commons
 examples: []

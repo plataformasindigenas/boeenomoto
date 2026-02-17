@@ -12,7 +12,7 @@ keywords:
 updated_at: '2026-01-05'
 url: ''
 images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Attalea_speciosa_Itapecuru_2.JPG/982px-Attalea_speciosa_Itapecuru_2.JPG
+- url: images/enc_ba_1_leaf_0.jpg
   alt: ''
   credit: ''
 examples: []

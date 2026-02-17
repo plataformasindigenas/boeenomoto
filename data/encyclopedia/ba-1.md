@@ -17,10 +17,10 @@ keywords:
 updated_at: '2026-01-07'
 url: ''
 images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Plan_de_Kejara.png/500px-Plan_de_Kejara.png
+- url: images/enc_ba1_0.png
   alt: planta da aldeia Kejari
   credit: Lévi-Strauss (planta/diagrama)
-- url: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbL7kj1DeYnBJNF4wh2shN-UhvF0HdPCWptQ&s
+- url: images/enc_ba1_1.jpg
   alt: Aldeia Garças (TI Meruri na década de 80 (imagem ilustrativa)
   credit: Fonte/Autor
 examples: []

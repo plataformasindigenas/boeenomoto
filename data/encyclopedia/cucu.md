@@ -9,7 +9,7 @@ keywords: []
 updated_at: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Gralha-cancã
 images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cyanocorax_cyanopogon_-Natal%2C_Rio_Grande_do_Norte%2C_Brazil-8.jpg/560px-Cyanocorax_cyanopogon_-Natal%2C_Rio_Grande_do_Norte%2C_Brazil-8.jpg
+- url: images/enc_cucu_0.jpg
   alt: Cucu
   credit: ''
 examples: []

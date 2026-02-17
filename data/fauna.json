@@ -13,7 +13,7 @@
     },
     "description": "Bororo Fauna Dictionary",
     "version": "1.0",
-    "generated_at": "2026-02-17T16:34:46.967164Z"
+    "generated_at": "2026-02-17T17:27:29.389642Z"
   },
   "data": [
     {
@@ -24,7 +24,7 @@
       "category": null,
       "classification_bororo": null,
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Benjoi_pito.jpg/560px-Benjoi_pito.jpg"
+      "pic_link": "images/fauna_095_gigo.jpg"
     },
     {
       "id": 97,
@@ -34,7 +34,7 @@
       "category": null,
       "classification_bororo": null,
       "info": null,
-      "pic_link": "https://static.inaturalist.org/photos/189028522/large.jpg"
+      "pic_link": "images/fauna_097_kidoguroe.jpg"
     },
     {
       "id": 41,
@@ -44,7 +44,7 @@
       "category": "Falconidae",
       "classification_bororo": "Kiege Boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Laughing_Falcon_-_Dari%C3%A9n_-_Panama_%2848444308217%29.jpg"
+      "pic_link": "images/fauna_041_makao.jpg"
     },
     {
       "id": 65,
@@ -54,7 +54,7 @@
       "category": "Threskiornithidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/c7/2019-02-15_074_Roseate_spoonbill_%28Platalea_ajaja%29_at_Sian_Ka%27an_Biosphere_Reserve%2C_Mexico.jpg"
+      "pic_link": "images/fauna_065_bace_ao_kororogodyrewy.jpg"
     },
     {
       "id": 71,
@@ -64,7 +64,7 @@
       "category": "Anhimidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Anhima_cornuta_-near_Manu_Wildlife_Center%2C_Manu_National_Park%2C_Peru_-three-8.jpg/560px-Anhima_cornuta_-near_Manu_Wildlife_Center%2C_Manu_National_Park%2C_Peru_-three-8.jpg"
+      "pic_link": "images/fauna_071_tamigi.jpg"
     },
     {
       "id": 10,
@@ -74,7 +74,7 @@
       "category": "Tapirídeos",
       "classification_bororo": "Barege Kurirewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/8/86/Lowland_Tapir_%28Tapirus_terrestris%29_male_out_of_the_forest_..._-_Flickr_-_berniedup.jpg"
+      "pic_link": "images/fauna_010_ki.jpg"
     },
     {
       "id": 56,
@@ -84,7 +84,7 @@
       "category": "Psittacidae",
       "classification_bororo": "Kiege oto toiborewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Arara_Azul_no_Pantanal.jpg/560px-Arara_Azul_no_Pantanal.jpg"
+      "pic_link": "images/fauna_056_kudoro.jpg"
     },
     {
       "id": 57,
@@ -94,7 +94,7 @@
       "category": "Psittacidae",
       "classification_bororo": "Kiege oto toiborewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Ara_macao_-Fort_Worth_Zoo-8.jpg"
+      "pic_link": "images/fauna_057_nabure.jpg"
     },
     {
       "id": 58,
@@ -104,7 +104,7 @@
       "category": "Psittacidae",
       "classification_bororo": "Kiege oto toiborewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Ara_ararauna_Luc_Viatour.jpg"
+      "pic_link": "images/fauna_058_kuido.jpg"
     },
     {
       "id": 4,
@@ -114,7 +114,7 @@
       "category": "Feilídeo",
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ocelot_%28Jaguatirica%29_Zoo_Itatiba.jpg/560px-Ocelot_%28Jaguatirica%29_Zoo_Itatiba.jpg"
+      "pic_link": "images/fauna_004_aipoburewy.jpg"
     },
     {
       "id": 34,
@@ -124,7 +124,7 @@
       "category": "Delphinidae",
       "classification_bororo": "Barege pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/DELFIN_DEL_ORINOCO2.JPG/560px-DELFIN_DEL_ORINOCO2.JPG"
+      "pic_link": "images/fauna_034_jakorewy.jpg"
     },
     {
       "id": 22,
@@ -134,7 +134,7 @@
       "category": "Atelidae",
       "classification_bororo": "Barege Akururewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Alouatta_caraya_male.JPG/560px-Alouatta_caraya_male.JPG"
+      "pic_link": "images/fauna_022_pai_corewy.jpg"
     },
     {
       "id": 66,
@@ -144,7 +144,7 @@
       "category": "Ciconiidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/WoodStorkWhole.JPG/560px-WoodStorkWhole.JPG"
+      "pic_link": "images/fauna_066_bace_auragodyrewy.jpg"
     },
     {
       "id": 13,
@@ -154,7 +154,7 @@
       "category": "Taiaçuídeos",
       "classification_bororo": "Barege Kurirewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tayassu_tajacu.jpg/560px-Tayassu_tajacu.jpg"
+      "pic_link": "images/fauna_013_jui.jpg"
     },
     {
       "id": 29,
@@ -164,7 +164,7 @@
       "category": "Caviidae",
       "classification_bororo": "Barege pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/99/Capivara%28Hydrochoerus_hydrochaeris%29.jpg"
+      "pic_link": "images/fauna_029_akiwa.jpg"
     },
     {
       "id": 72,
@@ -174,7 +174,7 @@
       "category": "Aramidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Aramus_guarauna_%28Limpkin%29_25.jpg"
+      "pic_link": "images/fauna_072_karao.jpg"
     },
     {
       "id": 9,
@@ -184,7 +184,7 @@
       "category": null,
       "classification_bororo": "Barege Kurirewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/cb/White-tailed_deer_%28Odocoileus_virginianus%29_grazing_-_20050809.jpg"
+      "pic_link": "images/fauna_009_atubo.jpg"
     },
     {
       "id": 69,
@@ -194,7 +194,7 @@
       "category": "Ciconiidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cegonha-branca%2C_White_Stork_%2850904788362%29.jpg"
+      "pic_link": "images/fauna_069_parira.jpg"
     },
     {
       "id": 40,
@@ -204,7 +204,7 @@
       "category": "Strigidae",
       "classification_bororo": "Kiege Boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Athene_cunicularia_1_edited.JPG/560px-Athene_cunicularia_1_edited.JPG"
+      "pic_link": "images/fauna_040_tagogo.jpg"
     },
     {
       "id": 51,
@@ -214,7 +214,7 @@
       "category": "Strigidae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Bubo_virginianus_06.jpg/560px-Bubo_virginianus_06.jpg"
+      "pic_link": "images/fauna_051_kaikai.jpg"
     },
     {
       "id": 50,
@@ -224,7 +224,7 @@
       "category": "Strigidae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/a/ac/%C3%81rea_de_Prote%C3%A7%C3%A3o_Ambiental_Serra_Dona_Francisca_-_Luiz_Alves_%2807%29.jpg"
+      "pic_link": "images/fauna_050_kugu_corewy.jpg"
     },
     {
       "id": 59,
@@ -234,7 +234,7 @@
       "category": "Psittacidae",
       "classification_bororo": "Kiege oto toiborewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Amazona_amazonica_%281%29.jpg"
+      "pic_link": "images/fauna_059_korao.jpg"
     },
     {
       "id": 38,
@@ -244,7 +244,7 @@
       "category": "Dasyproctidae",
       "classification_bororo": "Barege kugure",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Central_American_agouti_%28Dasyprocta_punctata%29.jpg"
+      "pic_link": "images/fauna_038_mea.jpg"
     },
     {
       "id": 92,
@@ -254,7 +254,7 @@
       "category": "Rheidae",
       "classification_bororo": "Kiege moto kejewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Nandu_Rhea_americana_Tierpark_Hellabrunn-1.jpg/560px-Nandu_Rhea_americana_Tierpark_Hellabrunn-1.jpg"
+      "pic_link": "images/fauna_092_pari.jpg"
     },
     {
       "id": 82,
@@ -274,7 +274,7 @@
       "category": "Didelfiídeos",
       "classification_bororo": "Barege Akururewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Didelphis_albiventris%2C_Bahia%2C_Brazil.jpg"
+      "pic_link": "images/fauna_025_aka.jpg"
     },
     {
       "id": 64,
@@ -284,7 +284,7 @@
       "category": "Ardeidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/7/77/Egretta_caerulea_-Cananeia%2C_Sao_Paulo%2C_Brasil-8.jpg"
+      "pic_link": "images/fauna_064_bace_kaworyrewy.jpg"
     },
     {
       "id": 63,
@@ -294,7 +294,7 @@
       "category": "Ardeidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/df/Snowy_egret_in_JBWR_%2830217%29.jpg"
+      "pic_link": "images/fauna_063_bace_kuorewy.jpg"
     },
     {
       "id": 77,
@@ -304,7 +304,7 @@
       "category": null,
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/0/09/Agami_heron_%28Agamia_agami%29_juvenile.jpg"
+      "pic_link": "images/fauna_077_o_kaworurewy.jpg"
     },
     {
       "id": 62,
@@ -314,7 +314,7 @@
       "category": "Ardeidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Silberreiher_01_CH.jpg/2880px-Silberreiher_01_CH.jpg"
+      "pic_link": "images/fauna_062_bace_agarewy.jpg"
     },
     {
       "id": 3,
@@ -324,7 +324,7 @@
       "category": "Feilídeo",
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/7/75/Herpailurus_yagouaroundi_310267736.jpg"
+      "pic_link": "images/fauna_003_aimearewy.jpg"
     },
     {
       "id": 47,
@@ -334,7 +334,7 @@
       "category": "Falconidae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Schopfkarakara.jpg/560px-Schopfkarakara.jpg"
+      "pic_link": "images/fauna_047_kaga.jpg"
     },
     {
       "id": 44,
@@ -344,7 +344,7 @@
       "category": "Falconidae",
       "classification_bororo": "Kiege Boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Milvago_chimachima.jpg/560px-Milvago_chimachima.jpg"
+      "pic_link": "images/fauna_044_kuruguga.jpg"
     },
     {
       "id": 48,
@@ -364,7 +364,7 @@
       "category": "Accipitridae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Taguato_%28Rupornis_magnirostris%29%2C_Uruguay%2C_2020.jpg"
+      "pic_link": "images/fauna_046_kuruga_bure_paru_ekurewy.jpg"
     },
     {
       "id": 42,
@@ -374,7 +374,7 @@
       "category": "Accipitridae",
       "classification_bororo": "Kiege Boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/95/Harpia-harpyja-001.jpg"
+      "pic_link": "images/fauna_042_aroeeceba.jpg"
     },
     {
       "id": 49,
@@ -384,7 +384,7 @@
       "category": "Falconidae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Milvago_chimango_temucoensis.jpg/560px-Milvago_chimango_temucoensis.jpg"
+      "pic_link": "images/fauna_049_kuruga_bewerewy.jpg"
     },
     {
       "id": 7,
@@ -394,7 +394,7 @@
       "category": "Canídeos",
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Cerdocyon_thous_-_Jan_Ebr_and_Ivana_Ebrov%C3%A1_-_284951055.jpeg"
+      "pic_link": "images/fauna_007_okwa.jpg"
     },
     {
       "id": 28,
@@ -404,7 +404,7 @@
       "category": "Iguanidae",
       "classification_bororo": "Barege pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Iguana_V.jpg"
+      "pic_link": "images/fauna_028_irui.jpg"
     },
     {
       "id": 90,
@@ -414,7 +414,7 @@
       "category": "Tinamidae",
       "classification_bororo": "Kiege moto kejewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Crypturellus_parvirostris_2.jpg/560px-Crypturellus_parvirostris_2.jpg"
+      "pic_link": "images/fauna_090_riwodo.jpg"
     },
     {
       "id": 6,
@@ -424,7 +424,7 @@
       "category": "Mustelídeos",
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Irara_%28Papa-mel%29.jpg/560px-Irara_%28Papa-mel%29.jpg"
+      "pic_link": "images/fauna_006_ipocerewy.jpg"
     },
     {
       "id": 67,
@@ -434,7 +434,7 @@
       "category": "Ciconiidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Jabiru_Mato_Grosso_Pantanal_Brazil-3.jpg"
+      "pic_link": "images/fauna_067_bace_kogyio.jpg"
     },
     {
       "id": 18,
@@ -444,7 +444,7 @@
       "category": "Testudinidae",
       "classification_bororo": "Barege Borewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Chelonoidis_carbonarius_386013561.jpg"
+      "pic_link": "images/fauna_018_jerigigi.jpg"
     },
     {
       "id": 73,
@@ -454,7 +454,7 @@
       "category": "Jacanidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Acana_jacana_-near_Yarina_Lodge%2C_Napo_Province%2C_Ecuador_-adult-8_cropped.jpg/560px-Acana_jacana_-near_Yarina_Lodge%2C_Napo_Province%2C_Ecuador_-adult-8_cropped.jpg"
+      "pic_link": "images/fauna_073_pegepege.jpg"
     },
     {
       "id": 31,
@@ -464,7 +464,7 @@
       "category": "Alligatoridae",
       "classification_bororo": "Barege pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Caiman_yacare.jpg/440px-Caiman_yacare.jpg"
+      "pic_link": "images/fauna_031_uwai.jpg"
     },
     {
       "id": 61,
@@ -474,7 +474,7 @@
       "category": "Psittacidae",
       "classification_bororo": "Kiege oto toiborewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Peach-fronted_Parakeet_%28Aratinga_aurea%29_%2830809763703%29.jpg"
+      "pic_link": "images/fauna_061_ore.jpg"
     },
     {
       "id": 93,
@@ -484,7 +484,7 @@
       "category": null,
       "classification_bororo": "Kiege moto kejewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Nystalus_chacuru_White-eared_Puffbird.JPG/960px-Nystalus_chacuru_White-eared_Puffbird.JPG"
+      "pic_link": "images/fauna_093_jokorogo.jpg"
     },
     {
       "id": 32,
@@ -494,7 +494,7 @@
       "category": "Astyanax (gen.)",
       "classification_bororo": null,
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Astyanax_mexicanus.JPG/960px-Astyanax_mexicanus.JPG"
+      "pic_link": "images/fauna_032_meto.jpg"
     },
     {
       "id": 37,
@@ -504,7 +504,7 @@
       "category": null,
       "classification_bororo": "Barege kugure",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sylvilagus_brasiliensis_284953755.jpg"
+      "pic_link": "images/fauna_037_amo.jpg"
     },
     {
       "id": 8,
@@ -514,7 +514,7 @@
       "category": "Canídeos",
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Chrysocyon_brachyurus_205682420.jpg/560px-Chrysocyon_brachyurus_205682420.jpg"
+      "pic_link": "images/fauna_008_rie.jpg"
     },
     {
       "id": 23,
@@ -534,7 +534,7 @@
       "category": "Ciconiidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ciconia_maguari.jpeg"
+      "pic_link": "images/fauna_068_bace_mikurewy.jpg"
     },
     {
       "id": 94,
@@ -544,7 +544,7 @@
       "category": null,
       "classification_bororo": null,
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bumblebee_October_2007-3a.jpg/960px-Bumblebee_October_2007-3a.jpg"
+      "pic_link": "images/fauna_094_penogogo.jpg"
     },
     {
       "id": 5,
@@ -554,7 +554,7 @@
       "category": null,
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Crab-eating_raccoon_%28Procyon_cancrivorus%29_Manuel_Antonio_Park_CRI_01_2020_CRI_01_2020_1752.jpg/560px-Crab-eating_raccoon_%28Procyon_cancrivorus%29_Manuel_Antonio_Park_CRI_01_2020_CRI_01_2020_1752.jpg"
+      "pic_link": "images/fauna_005_ierarae.jpg"
     },
     {
       "id": 80,
@@ -564,7 +564,7 @@
       "category": "Anatidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Whistling_duck_flight02_-_natures_pics-edit1.jpg/560px-Whistling_duck_flight02_-_natures_pics-edit1.jpg"
+      "pic_link": "images/fauna_080_parabara.jpg"
     },
     {
       "id": 70,
@@ -574,7 +574,7 @@
       "category": "Alcedinidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Megaceryle_torquata-Ringed_Kingfisher.jpg/480px-Megaceryle_torquata-Ringed_Kingfisher.jpg"
+      "pic_link": "images/fauna_070_kadagare.jpg"
     },
     {
       "id": 83,
@@ -584,7 +584,7 @@
       "category": "Charadriidae",
       "classification_bororo": "Kiege kugary kejewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/BK3U7978.jpg/560px-BK3U7978.jpg"
+      "pic_link": "images/fauna_083_ra_porepore.jpg"
     },
     {
       "id": 43,
@@ -594,7 +594,7 @@
       "category": "Strigidae",
       "classification_bororo": "Kiege Boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pulsatrix_koeniswaldiana_-_Tawny-browed_Owl_%28young%29.jpg/560px-Pulsatrix_koeniswaldiana_-_Tawny-browed_Owl_%28young%29.jpg"
+      "pic_link": "images/fauna_043_kugu.jpg"
     },
     {
       "id": 2,
@@ -604,7 +604,7 @@
       "category": "Feilídeo",
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/560px-Mountain_Lion_in_Glacier_National_Park.jpg"
+      "pic_link": "images/fauna_002_aigo.jpg"
     },
     {
       "id": 1,
@@ -614,7 +614,7 @@
       "category": "Feilídeo",
       "classification_bororo": "Barege boemoriae",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jaguar_%28Panthera_onca_palustris%29_female_Piquiri_River_2.JPG/560px-Jaguar_%28Panthera_onca_palustris%29_female_Piquiri_River_2.JPG"
+      "pic_link": "images/fauna_001_adugo.jpg"
     },
     {
       "id": 27,
@@ -624,7 +624,7 @@
       "category": "Erinaceidae",
       "classification_bororo": "Barege Akururewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Prehensile_Tail_Porcupine_Curled_and_Relaxed_%2818144690005%29.jpg"
+      "pic_link": "images/fauna_027_iwe.jpg"
     },
     {
       "id": 35,
@@ -634,7 +634,7 @@
       "category": "Cuniculidae",
       "classification_bororo": "Barege kugure",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cuniculus_paca.jpg/560px-Cuniculus_paca.jpg"
+      "pic_link": "images/fauna_035_apu.jpg"
     },
     {
       "id": 81,
@@ -644,7 +644,7 @@
       "category": "Anatidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Flickr_-_Dario_Sanches_-_PATO-DO-MATO_%28Cairina_moschata%29.jpg/560px-Flickr_-_Dario_Sanches_-_PATO-DO-MATO_%28Cairina_moschata%29.jpg"
+      "pic_link": "images/fauna_081_turubare_corewy.jpg"
     },
     {
       "id": 91,
@@ -654,7 +654,7 @@
       "category": "Tinamidae",
       "classification_bororo": "Kiege moto kejewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg"
+      "pic_link": "images/fauna_091_parikiogodo.jpg"
     },
     {
       "id": 96,
@@ -664,7 +664,7 @@
       "category": null,
       "classification_bororo": null,
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Forpus_xanthopterygius_-Brazil-6-4c.jpg/560px-Forpus_xanthopterygius_-Brazil-6-4c.jpg"
+      "pic_link": "images/fauna_096_kidoe_etumana.jpg"
     },
     {
       "id": 60,
@@ -674,7 +674,7 @@
       "category": "Psittacidae",
       "classification_bororo": "Kiege oto toiborewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/PERIQUITO-RICO_%28_Brotogeris_tirica%29_%282087239475%29.jpg/560px-PERIQUITO-RICO_%28_Brotogeris_tirica%29_%282087239475%29.jpg"
+      "pic_link": "images/fauna_060_kido.jpg"
     },
     {
       "id": 78,
@@ -684,7 +684,7 @@
       "category": "Heliornithidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sungrebe2.jpeg"
+      "pic_link": "images/fauna_078_bure_puduga.jpg"
     },
     {
       "id": 45,
@@ -704,7 +704,7 @@
       "category": "Caviidae",
       "classification_bororo": "Barege kugure",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Wildmeerschweinchen-06.jpg/560px-Wildmeerschweinchen-06.jpg"
+      "pic_link": "images/fauna_039_kurugo.jpg"
     },
     {
       "id": 21,
@@ -714,7 +714,7 @@
       "category": "Procyonidae",
       "classification_bororo": "Barege Akururewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Coati.jpg/560px-Coati.jpg"
+      "pic_link": "images/fauna_021_kudobo.jpg"
     },
     {
       "id": 14,
@@ -724,7 +724,7 @@
       "category": "Taiaçuídeos",
       "classification_bororo": "Barege Kurirewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tayassu_pecari_-Brazil-8.jpg/560px-Tayassu_pecari_-Brazil-8.jpg"
+      "pic_link": "images/fauna_014_jugo.jpg"
     },
     {
       "id": 74,
@@ -734,7 +734,7 @@
       "category": "Rallidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Gallinula_galeata_NBII.jpg/560px-Gallinula_galeata_NBII.jpg"
+      "pic_link": "images/fauna_074_kuocaga.jpg"
     },
     {
       "id": 26,
@@ -744,7 +744,7 @@
       "category": "Sciuridae",
       "classification_bororo": "Barege Akururewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Esquilo-1.jpg"
+      "pic_link": "images/fauna_026_kodokodo.jpg"
     },
     {
       "id": 87,
@@ -754,7 +754,7 @@
       "category": null,
       "classification_bororo": "Kiege moto kejewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/0/02/Seriema_%28Cariama_cristata%29.jpg"
+      "pic_link": "images/fauna_087_beo.jpg"
     },
     {
       "id": 79,
@@ -764,7 +764,7 @@
       "category": "Ardeidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Soco_boi.jpg/560px-Soco_boi.jpg"
+      "pic_link": "images/fauna_079_cu.jpg"
     },
     {
       "id": 75,
@@ -774,7 +774,7 @@
       "category": "Ardeidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nycticorax_nycticorax12.jpg/440px-Nycticorax_nycticorax12.jpg"
+      "pic_link": "images/fauna_075_kudo.jpg"
     },
     {
       "id": 12,
@@ -784,7 +784,7 @@
       "category": "Mirmecofagídeos",
       "classification_bororo": "Barege Kurirewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/560px-Myresluger2.jpg"
+      "pic_link": "images/fauna_012_buke.jpg"
     },
     {
       "id": 24,
@@ -794,7 +794,7 @@
       "category": "Myrmecophagidae",
       "classification_bororo": "Barege Akururewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Southern_Tamandua_%28Tamandua_tetradactyla%29_-_Flickr_-_berniedup.jpg"
+      "pic_link": "images/fauna_024_apogo.jpg"
     },
     {
       "id": 17,
@@ -804,7 +804,7 @@
       "category": "Clamiforídeos",
       "classification_bororo": "Barege Borewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Southern_Three_Banded_Armadillo_001-2.jpg/560px-Southern_Three_Banded_Armadillo_001-2.jpg"
+      "pic_link": "images/fauna_017_enokuri.jpg"
     },
     {
       "id": 16,
@@ -814,7 +814,7 @@
       "category": "Clamiforídeos",
       "classification_bororo": "Barege Borewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Priodontes_maximus_at_Régina.jpg/440px-Priodontes_maximus_at_Régina.jpg"
+      "pic_link": "images/fauna_016_bokodori.jpg"
     },
     {
       "id": 20,
@@ -834,7 +834,7 @@
       "category": "Dasipodídeos",
       "classification_bororo": "Barege Borewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Nine-banded_armadillo_%2813578%29.jpg"
+      "pic_link": "images/fauna_019_jerego.jpg"
     },
     {
       "id": 15,
@@ -844,7 +844,7 @@
       "category": "Clamiforídeos",
       "classification_bororo": "Barege Borewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Six-banded_armadillo_%28Euphractus_sexcinctus%29.JPG/560px-Six-banded_armadillo_%28Euphractus_sexcinctus%29.JPG"
+      "pic_link": "images/fauna_015_bakodorirewy.jpg"
     },
     {
       "id": 36,
@@ -854,7 +854,7 @@
       "category": "Teiidae",
       "classification_bororo": "Barege kugure",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Trilha_Betari%2C_por_Leonardo_Palermo_Gentile_03.jpg/560px-Trilha_Betari%2C_por_Leonardo_Palermo_Gentile_03.jpg"
+      "pic_link": "images/fauna_036_tuwogy.jpg"
     },
     {
       "id": 54,
@@ -864,7 +864,7 @@
       "category": "Cathartidae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Black_vulture_%28Coragyps_atratus_brasiliensis%29_Peten.jpg"
+      "pic_link": "images/fauna_054_poburewy.jpg"
     },
     {
       "id": 55,
@@ -874,7 +874,7 @@
       "category": "Cathartidae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Turkey_vultures_%2801731%29.jpg"
+      "pic_link": "images/fauna_055_ciwaje.jpg"
     },
     {
       "id": 52,
@@ -884,7 +884,7 @@
       "category": "Sarcosamphidae",
       "classification_bororo": "Kiege buregi toiburewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Urubu_rei_-_Sarcoramphus_papa.jpg"
+      "pic_link": "images/fauna_052_bai.jpg"
     },
     {
       "id": 11,
@@ -894,7 +894,7 @@
       "category": "Cervídeos",
       "classification_bororo": "Barege Kurirewyge",
       "info": null,
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mazama_nana_2.jpg/560px-Mazama_nana_2.jpg"
+      "pic_link": "images/fauna_011_pobogo.jpg"
     },
     {
       "id": 76,
@@ -904,7 +904,7 @@
       "category": "Anatidae",
       "classification_bororo": "Kiege pobo pobo tadawyge",
       "info": "Amazonetta brasiliensis",
-      "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Amazonetta_brasiliensis.jpg/560px-Amazonetta_brasiliensis.jpg"
+      "pic_link": "images/fauna_076_merire.jpg"
     },
     {
       "id": 86,

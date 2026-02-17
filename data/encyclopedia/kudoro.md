@@ -10,7 +10,7 @@ keywords:
 updated_at: '2026-02-03'
 url: https://pt.wikipedia.org/wiki/Arara-azul-grande
 images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Arara_Azul_no_Pantanal.jpg/960px-Arara_Azul_no_Pantanal.jpg
+- url: images/enc_kudoro_0.jpg
   alt: Arara-azul-grande (Anodorhynchus hyacinthinus)
   credit: wikipedia
 examples: []
