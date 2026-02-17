@@ -29,7 +29,7 @@ examples: []
 
 O **Aroe Eceba Kejebo** é um ritual bororo de grande complexidade simbólica, associado ao gavião-real (*Aroe Eceba*), ave dotada de profundo significado espiritual e ritual. O ritual articula morte ritual, oferenda, direitos de primazia clânica, confecção de adornos e uma cerimônia pública marcada por canto, dança e forte intensidade espiritual.
 
-![Ritual do aroe eceba](/data/images/aroeeceba1.jpg)
+![Ritual do aroe eceba](../data/images/aroeeceba1.jpg)
 
 ---
 
