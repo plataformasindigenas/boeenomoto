@@ -2,6 +2,30 @@
 
 {% block title %}Dicionário Bororo{% endblock %}
 
+{% block extra_styles %}
+        .entry-audio {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+        .audio-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .audio-speaker {
+            font-size: 0.8rem;
+            color: #666;
+            min-width: 5em;
+        }
+        .audio-item audio {
+            height: 28px;
+            flex: 1;
+            max-width: 260px;
+        }
+{% endblock %}
+
 {% block content %}
     <header>
         <h1>Dicionário Bororo</h1>
@@ -156,6 +180,20 @@
         // Comment
         if (entry.comment) {
             html += '<div class="entry-comment">' + highlightMatches(entry.comment, matchMap['comment']) + '</div>';
+        }
+
+        // Audio section
+        if (entry.audio && entry.audio.length > 0) {
+            html += '<div class="entry-audio">';
+            for (const a of entry.audio) {
+                const mimeType = a.format === 'webm' ? 'audio/webm' : 'audio/wav';
+                const speaker = a.speaker.charAt(0).toUpperCase() + a.speaker.slice(1);
+                html += '<div class="audio-item">';
+                html += '<span class="audio-speaker">' + escapeHtml(speaker) + '</span>';
+                html += '<audio controls preload="none"><source src="recordings/' + escapeHtml(a.file_path) + '" type="' + mimeType + '"></audio>';
+                html += '</div>';
+            }
+            html += '</div>';
         }
 
         // Media section

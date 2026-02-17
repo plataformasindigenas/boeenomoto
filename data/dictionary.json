@@ -15,7 +15,7 @@
     },
     "description": "Bororo Dictionary Entries",
     "version": "1.0",
-    "generated_at": "2026-02-17T16:13:45.715803Z"
+    "generated_at": "2026-02-17T16:34:46.878956Z"
   },
   "data": [
     {
@@ -583,7 +583,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/130306_Elizete_aerega.webm",
+          "file_path": "0014_elizete_aerega.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -710,9 +710,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/aiagodu.wav",
+          "file_path": "0612_fernando_aiagodu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -777,7 +777,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/130447_Erotildes_aidu.webm",
+          "file_path": "0016_erotildes_aidu.webm",
           "speaker": "erotildes",
           "format": "webm"
         }
@@ -856,12 +856,12 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/114829_gleide_aigo.webm",
+          "file_path": "0252_gleide_aigo.webm",
           "speaker": "gleide",
           "format": "webm"
         },
         {
-          "file_path": "Taradrimana/2026-01-28/145109_valdemar_aigo.webm",
+          "file_path": "0269_valdemar_aigo.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -976,7 +976,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/130532_Elizete_aiwo.webm",
+          "file_path": "0017_elizete_aiwo.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -1307,9 +1307,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex20-nazario01/ake.wav",
+          "file_path": "0592_nazario_ake.webm",
           "speaker": "nazario",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -1338,9 +1338,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex20-nazario01/akeTawuje.wav",
+          "file_path": "0593_nazario_ake_tawuje.webm",
           "speaker": "nazario",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -1357,9 +1357,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex18-leonida-whatsapp290525/Leonida_akedo.wav",
+          "file_path": "0552_leonida_akedo.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -1376,14 +1376,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex18-leonida-whatsapp290525/Leonida_akedu01.wav",
+          "file_path": "0553_leonida_akedu.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex19-pedrosa01/Pedrosa_akedu02.wav",
+          "file_path": "0556_pedrosa_akedu.webm",
           "speaker": "pedrosa",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -1400,7 +1400,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/150256_Valdemar_akedudo.webm",
+          "file_path": "0154_valdemar_akedudo.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -1647,7 +1647,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/100521_Valdemar_akigu_kodu.webm",
+          "file_path": "0107_valdemar_akigu_kodu.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -1762,9 +1762,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex11-leonida-IMG_8795/akirodo.wav",
+          "file_path": "0432_leonida_akirodo.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -2405,7 +2405,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/152657_Valdemar_akudo.webm",
+          "file_path": "0171_valdemar_akudo.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -2652,7 +2652,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "field/2026-01-26/113608_Bosco_amema.webm",
+          "file_path": "0831_bosco_amema.webm",
           "speaker": "bosco",
           "format": "webm"
         }
@@ -2695,9 +2695,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex04-leonida-IMG_0689/Leonida_amirewu.wav",
+          "file_path": "0312_leonida_amirewu.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -2714,9 +2714,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_rabbit.wav",
+          "file_path": "0474_leonida_rabbit.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -3249,9 +3249,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_aora.wav",
+          "file_path": "0281_leonida_aora.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -3304,9 +3304,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/aoTadawu.wav",
+          "file_path": "0770_fernando_ao_tadawu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -3731,14 +3731,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/125654_Elizete_aregodu.webm",
+          "file_path": "0006_elizete_aregodu.webm",
           "speaker": "elizete",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex22-fernando02/aregodu.wav",
+          "file_path": "0772_fernando_aregodu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -3995,7 +3995,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/100408_Valdemar_aria_meriri.webm",
+          "file_path": "0106_valdemar_aria_meriri.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -4158,14 +4158,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/130621_Elizete_aroe.webm",
+          "file_path": "0019_elizete_aroe.webm",
           "speaker": "elizete",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/aroe.wav",
+          "file_path": "0626_fernando_aroe.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -4230,7 +4230,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/095736_elizete_aroe_eimejera.webm",
+          "file_path": "0189_elizete_aroe_eimejera.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -4645,7 +4645,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/130756_Elizete_aru.webm",
+          "file_path": "0020_elizete_aru.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -5072,9 +5072,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex10-benito-IMG_8685/atuge.wav",
+          "file_path": "0406_benito_atuge.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -5115,7 +5115,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/143943_Valdemar_atugodo.webm",
+          "file_path": "0140_valdemar_atugodo.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -5374,19 +5374,19 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/095602_elizete_awagu.webm",
+          "file_path": "0188_elizete_awagu.webm",
           "speaker": "elizete",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex09-benito-IMG_8685/awagu01.wav",
+          "file_path": "0368_benito_awagu.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/awagu02.wav",
+          "file_path": "0632_fernando_awagu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -5403,9 +5403,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/awara.wav",
+          "file_path": "0633_fernando_awara.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -5986,12 +5986,12 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/103800_valdemar_bai.webm",
+          "file_path": "0214_valdemar_bai.webm",
           "speaker": "valdemar",
           "format": "webm"
         },
         {
-          "file_path": "Taradrimana/2026-01-28/111411_valdemar_bai.webm",
+          "file_path": "0221_valdemar_bai.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -6358,7 +6358,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/112119_valdemar_baiporo_epa.webm",
+          "file_path": "0236_valdemar_baiporo_epa.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -6809,24 +6809,24 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/152405_jussila_tore_boudo_bakuru.webm",
+          "file_path": "0074_jussila_bakuru.webm",
           "speaker": "jussila",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex10-benito-IMG_8685/bakuru01.wav",
+          "file_path": "0407_benito_bakuru.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex19-pedrosa01/Pedrosa_bakuru02.wav",
+          "file_path": "0563_pedrosa_bakuru.webm",
           "speaker": "pedrosa",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/bakuru03.wav",
+          "file_path": "0640_fernando_bakuru.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -6867,14 +6867,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/131138_Elizete_bapera.webm",
+          "file_path": "0022_elizete_bapera.webm",
           "speaker": "elizete",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex20-nazario01/bapera.wav",
+          "file_path": "0595_nazario_bapera.webm",
           "speaker": "nazario",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -6927,9 +6927,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/bapo.wav",
+          "file_path": "0779_fernando_bapo.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -6958,9 +6958,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex16-leonida-IMG_8801/Leonida_baradu.wav",
+          "file_path": "0524_leonida_baradu.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -7517,24 +7517,24 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/103525_valdemar_baru.webm",
+          "file_path": "0210_valdemar_baru.webm",
           "speaker": "valdemar",
           "format": "webm"
         },
         {
-          "file_path": "Taradrimana/2026-01-28/111230_valdemar_baru.webm",
+          "file_path": "0217_valdemar_baru.webm",
           "speaker": "valdemar",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex19-pedrosa01/Pedrosa_baru02.wav",
+          "file_path": "0564_pedrosa_baru.webm",
           "speaker": "pedrosa",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex22-fernando02/baru.wav",
+          "file_path": "0780_fernando_baru.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -7791,7 +7791,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/131202_Elizete_bataru.webm",
+          "file_path": "0023_elizete_bataru.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -8542,7 +8542,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/154058_jussila_tore_boudo_beregodu.webm",
+          "file_path": "0078_jussila_beregodu.webm",
           "speaker": "jussila",
           "format": "webm"
         }
@@ -8765,9 +8765,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/betureboe.wav",
+          "file_path": "0645_fernando_betureboe.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -8796,7 +8796,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/131409_Elizete_bi.webm",
+          "file_path": "0024_elizete_bi.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -8923,12 +8923,12 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/103635_valdemar_biado.webm",
+          "file_path": "0212_valdemar_biado.webm",
           "speaker": "valdemar",
           "format": "webm"
         },
         {
-          "file_path": "Taradrimana/2026-01-28/111316_valdemar_biado.webm",
+          "file_path": "0219_valdemar_biado.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -9043,7 +9043,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/152104_Valdemar_biagodu.webm",
+          "file_path": "0167_valdemar_biagodu.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -9098,9 +9098,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_biaja.wav",
+          "file_path": "0282_leonida_biaja.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -9633,9 +9633,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex20-nazario01/bire.wav",
+          "file_path": "0597_nazario_bire.webm",
           "speaker": "nazario",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -9928,9 +9928,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex03-leonida-IMG_0688/Leonida_bito.wav",
+          "file_path": "0300_leonida_bito.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -10331,7 +10331,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/145712_Valdemar_boe.webm",
+          "file_path": "0150_valdemar_boe.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -10530,9 +10530,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_boeBo.wav",
+          "file_path": "0283_leonida_boe_bo.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -10909,9 +10909,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/boeEmuga.wav",
+          "file_path": "0784_fernando_boe_emuga.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -11540,7 +11540,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/125500_Elizete_boe_karega.webm",
+          "file_path": "0002_elizete_boe_karega.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -12195,7 +12195,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/145523_Valdemar_boekaguru.webm",
+          "file_path": "0148_valdemar_boekaguru.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -12226,9 +12226,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_boeKimo.wav",
+          "file_path": "0439_leonida_boe_kimo.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -12245,14 +12245,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/150821_jussila_tore_boudo_boe_kori.webm",
+          "file_path": "0069_jussila_boe_kori.webm",
           "speaker": "jussila",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/boeKori.wav",
+          "file_path": "0648_fernando_boe_kori.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -12533,7 +12533,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-28/112806_valdemar_boigodu.webm",
+          "file_path": "0247_valdemar_boigodu.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -12684,9 +12684,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/boku.wav",
+          "file_path": "0786_fernando_boku.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -12799,14 +12799,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/103014_Valdemar_bokwaro.webm",
+          "file_path": "0118_valdemar_bokwaro.webm",
           "speaker": "valdemar",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_bokwaro.wav",
+          "file_path": "0441_leonida_bokwaro.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -12835,9 +12835,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_bopona.wav",
+          "file_path": "0442_leonida_bopona.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -12926,9 +12926,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_borewu.wav",
+          "file_path": "0443_leonida_borewu.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -13089,9 +13089,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/botudo.wav",
+          "file_path": "0652_fernando_botudo.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -13156,19 +13156,19 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/131650_Elizete_bowuje.webm",
+          "file_path": "0026_elizete_bowuje.webm",
           "speaker": "elizete",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex15-leonida-IMG_8800/Leonida_bowuje01.wav",
+          "file_path": "0505_leonida_bowuje.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/bowuje02.wav",
+          "file_path": "0653_fernando_bowuje.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -13245,9 +13245,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/bubutu.wav",
+          "file_path": "0787_fernando_bubutu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -13576,9 +13576,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_bure.wav",
+          "file_path": "0284_leonida_bure.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -13691,9 +13691,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/bureado.wav",
+          "file_path": "0788_fernando_bureado.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -13734,7 +13734,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/125631_Elizete_buregi.webm",
+          "file_path": "0005_elizete_buregi.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -14053,9 +14053,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/butugugodu.wav",
+          "file_path": "0657_fernando_butugugodu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -16640,9 +16640,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_enoja.wav",
+          "file_path": "0285_leonida_enoja.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -17355,19 +17355,19 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_eru01.wav",
+          "file_path": "0286_leonida_eru.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex10-benito-IMG_8685/eru02.wav",
+          "file_path": "0409_benito_eru.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/eru03.wav",
+          "file_path": "0660_fernando_eru.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -17972,14 +17972,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/153258_Valdemar_gorido.webm",
+          "file_path": "0175_valdemar_gorido.webm",
           "speaker": "valdemar",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_gorido.wav",
+          "file_path": "0447_leonida_gorido.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -18620,9 +18620,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/iage.wav",
+          "file_path": "0664_fernando_iage.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -19323,7 +19323,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/134338_erotildes_ibora.webm",
+          "file_path": "0036_erotildes_ibora.webm",
           "speaker": "erotildes",
           "format": "webm"
         }
@@ -19570,9 +19570,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_iera.wav",
+          "file_path": "0287_leonida_iera.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -19841,9 +19841,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/iguru.wav",
+          "file_path": "0667_fernando_iguru.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -19992,9 +19992,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/ikodo.wav",
+          "file_path": "0669_fernando_ikodo.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -20359,9 +20359,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/ikurudu.wav",
+          "file_path": "0670_fernando_ikurudu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -20462,9 +20462,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_inegi.wav",
+          "file_path": "0288_leonida_inegi.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -21213,9 +21213,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/iro.wav",
+          "file_path": "0673_fernando_iro.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -21328,9 +21328,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/irui.wav",
+          "file_path": "0795_fernando_irui.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -21359,9 +21359,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_itaga.wav",
+          "file_path": "0451_leonida_itaga.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -21618,14 +21618,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_itoru01.wav",
+          "file_path": "0289_leonida_itoru.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex09-benito-IMG_8685/itoru02.wav",
+          "file_path": "0374_benito_itoru.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -21738,7 +21738,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/154415_jussila_tore_boudo_itura.webm",
+          "file_path": "0080_jussila_itura.webm",
           "speaker": "jussila",
           "format": "webm"
         }
@@ -21985,9 +21985,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/iwogu.wav",
+          "file_path": "0675_fernando_iwogu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -22100,9 +22100,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/iworewu.wav",
+          "file_path": "0676_fernando_iworewu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -22215,14 +22215,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/135203_erotildes_iwu.webm",
+          "file_path": "0037_erotildes_iwu.webm",
           "speaker": "erotildes",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex03-leonida-IMG_0688/Leonida_iwu.wav",
+          "file_path": "0307_leonida_iwu.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -22383,9 +22383,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/jado.wav",
+          "file_path": "0677_fernando_jado.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -23278,14 +23278,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_jawuji01.wav",
+          "file_path": "0455_leonida_jawuji.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/jawuji02.wav",
+          "file_path": "0680_fernando_jawuji.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -23878,7 +23878,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/135414_erotildes_jekiripagado.webm",
+          "file_path": "0039_erotildes_jekiripagado.webm",
           "speaker": "erotildes",
           "format": "webm"
         }
@@ -24917,7 +24917,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/150340_Valdemar_jerigi.webm",
+          "file_path": "0155_valdemar_jerigi.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -25188,9 +25188,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/jerimaga.wav",
+          "file_path": "0798_fernando_jerimaga.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -25495,9 +25495,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/jetadu.wav",
+          "file_path": "0685_fernando_jetadu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -27194,9 +27194,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/jokuru.wav",
+          "file_path": "0688_fernando_jokuru.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -27585,7 +27585,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/135632_erotildes_jorubo.webm",
+          "file_path": "0041_erotildes_jorubo.webm",
           "speaker": "erotildes",
           "format": "webm"
         }
@@ -28108,12 +28108,12 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/125857_Elizete_jorugudu.webm",
+          "file_path": "0008_elizete_jorugudu.webm",
           "speaker": "elizete",
           "format": "webm"
         },
         {
-          "file_path": "Taradrimana/2026-01-28/101724_elizete_jorugudu.webm",
+          "file_path": "0198_elizete_jorugudu.webm",
           "speaker": "elizete",
           "format": "webm"
         }
@@ -28228,7 +28228,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/140704_erotildes_ju.webm",
+          "file_path": "0043_erotildes_ju.webm",
           "speaker": "erotildes",
           "format": "webm"
         }
@@ -28283,9 +28283,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/jugorewu.wav",
+          "file_path": "0690_fernando_jugorewu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -28386,7 +28386,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/151106_Valdemar_ju_kudu.webm",
+          "file_path": "0161_valdemar_ju_kudu.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -28621,9 +28621,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex12-leonida-IMG_8797/Leonida_kabi.wav",
+          "file_path": "0457_leonida_kabi.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -28736,24 +28736,24 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/154948_jussila_tore_boudo_kado.webm",
+          "file_path": "0081_jussila_kado.webm",
           "speaker": "jussila",
           "format": "webm"
         },
         {
-          "file_path": "bor_lex07-benito-IMG_8684/kado01.wav",
+          "file_path": "0345_benito_kado.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex19-pedrosa01/Pedrosa_kado02.wav",
+          "file_path": "0574_pedrosa_kado.webm",
           "speaker": "pedrosa",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex19-pedrosa01/Pedrosa_kado03.wav",
+          "file_path": "0575_pedrosa_kado.webm",
           "speaker": "pedrosa",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -29274,9 +29274,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex15-leonida-IMG_8800/Leonida_kaia.wav",
+          "file_path": "0508_leonida_kaia.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -29329,9 +29329,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/kaibori.wav",
+          "file_path": "0694_fernando_kaibori.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -29480,7 +29480,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/151716_jussila_tore_boudo_kajeje.webm",
+          "file_path": "0072_jussila_kajeje.webm",
           "speaker": "jussila",
           "format": "webm"
         }
@@ -29583,9 +29583,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/kamorewu.wav",
+          "file_path": "0696_fernando_kamorewu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -29602,14 +29602,14 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex19-pedrosa01/Pedrosa_kana01.wav",
+          "file_path": "0576_pedrosa_kana.webm",
           "speaker": "pedrosa",
-          "format": "wav"
+          "format": "webm"
         },
         {
-          "file_path": "bor_lex21-fernando01/kana02.wav",
+          "file_path": "0697_fernando_kana.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -29734,9 +29734,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_kanabo.wav",
+          "file_path": "0291_leonida_kanabo.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -30305,9 +30305,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/kaworurewu.wav",
+          "file_path": "0699_fernando_kaworurewu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -31320,9 +31320,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex02-leonida-IMG_0687/Leonida_kiga.wav",
+          "file_path": "0292_leonida_kiga.webm",
           "speaker": "leonida",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -31339,9 +31339,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex21-fernando01/kigadu.wav",
+          "file_path": "0700_fernando_kigadu.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -31394,9 +31394,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex10-benito-IMG_8685/kigadurewu.wav",
+          "file_path": "0421_benito_kigadurewu.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -31557,9 +31557,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex22-fernando02/kigori.wav",
+          "file_path": "0805_fernando_kigori.webm",
           "speaker": "fernando",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -31864,9 +31864,9 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "bor_lex07-benito-IMG_8684/kiogo.wav",
+          "file_path": "0348_benito_kiogo.webm",
           "speaker": "benito",
-          "format": "wav"
+          "format": "webm"
         }
       ]
     },
@@ -34091,7 +34091,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-27/150007_Valdemar_korao.webm",
+          "file_path": "0152_valdemar_korao.webm",
           "speaker": "valdemar",
           "format": "webm"
         }
@@ -34686,7 +34686,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/161502_jussila_tore_boudo_kowu.webm",
+          "file_path": "0088_jussila_kowu.webm",
           "speaker": "jussila",
           "format": "webm"
         }
@@ -34945,7 +34945,7 @@
       "comment": null,
       "audio": [
         {
-          "file_path": "Taradrimana/2026-01-26/141601_erotildes_kudae.webm",
+          "file_path": "0046_erotildes_kudae.webm",
           "speaker": "erotildes",
           "format": "webm"
         }
