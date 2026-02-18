@@ -73,6 +73,8 @@ Outros povos recebem nomes diferentes:
 A oposição fundamental não é étnica no sentido moderno, mas ontológica:  
 **boe = humanidade legítima**
 
+O nome _bororo_ foi dado aos _Boe_ devido ao uso desses do pátio onde realizam os rituais, chamado de **bororo**. 
+
 ---
 
 ## Classificação dos humanos e não-humanos
