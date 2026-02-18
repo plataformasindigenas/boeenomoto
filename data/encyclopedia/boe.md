@@ -9,9 +9,7 @@ categories:
 - cosmologia
 date: '2026-02-18'
 images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bororo004.jpg/500px-Bororo004.jpg
-  alt: Boe
-references: []
+- url: images/bororo1.jpg
 see_also:
 - aroe
 - baraedu
