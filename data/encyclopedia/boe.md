@@ -9,7 +9,7 @@ categories:
 - cosmologia
 date: '2026-02-18'
 images:
-- url: [images/boeEnc.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bororo004.jpg/500px-Bororo004.jpg)
+- url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bororo004.jpg/500px-Bororo004.jpg
   alt: Boe
 references: []
 see_also:
