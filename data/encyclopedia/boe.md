@@ -52,6 +52,14 @@ A grande frequência dessa palavra constitui uma das dificuldades iniciais para 
 
 ---
 
+## Boe na expressão e na elegância da fala
+
+Fontes antigas destacam que o emprego criterioso de **boe** é considerado sinal de domínio da língua e boa forma de expressão. O termo pode aparecer de maneira aparentemente redundante, acompanhando outras palavras, ou substituindo-as inteiramente quando o contexto é compartilhado entre os interlocutores.
+
+Esse uso não corresponde a imprecisão lexical, mas a um modo particular de organização do discurso: a referência é construída pela situação e pelas relações entre falantes, e não pela nomeação explícita de cada entidade. Para aprendizes, isso frequentemente torna a compreensão difícil, pois o significado depende menos do vocabulário isolado e mais da posição do falante no diálogo.
+
+---
+
 ## Boe como autodenominação
 
 Os Bororo designam-se antes de tudo como **boe** — “gente”, “os verdadeiros humanos”.
@@ -60,13 +68,27 @@ Outros povos recebem nomes diferentes:
 
 | termo | referência |
 |------|------|
-| barege / marege | outros indígenas |
 | kaiamodoge | inimigos |
 | barae | brancos |
 | tabae | negros |
 
 A oposição fundamental não é étnica no sentido moderno, mas ontológica:  
 **boe = humanidade legítima**
+
+---
+
+## Classificação dos humanos e não-humanos
+
+Os termos aplicados aos outros povos não constituem simples etnônimos, mas categorias relacionais. Eles expressam posição no sistema social e cosmológico.
+
+| categoria | sentido |
+|------|------|
+| boe | humanos propriamente ditos |
+| kaiamodoge | inimigos |
+| barae | estrangeiros não indígenas |
+| tabae | pessoas de origem africana |
+
+A distinção não corresponde a uma teoria racial nem a uma classificação biológica. Trata-se de uma organização relacional do mundo social: diferentes tipos de humanidade ocupam posições diferentes na ordem do cosmos e nas relações de convivência.
 
 ---
 
