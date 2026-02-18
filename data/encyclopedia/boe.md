@@ -2,98 +2,168 @@
 id: boe
 title: Boe
 variants: []
-abstract: Boe -- sing. e pl. Coisa, pessoa bororo, tempo astronómico, ambiente, estado atmosférico.
-categories: []
-date: '2026-01-04'
-url: ''
+abstract: Termo central da língua e da autoidentificação bororo, significando simultaneamente pessoa, coisa, mundo e condição existencial.
+categories:
+- etnologia
+- língua
+- cosmologia
+date: '2026-02-18'
 images:
 - url: images/boeEnc.jpg
   alt: Boe
-  credit: ''
-examples:
-- 
-- bororo: Koslowski 1895
-  translation: 'VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski, porém, citando e transcrevendo Steinen,
-    confunde os bororo ocidentais com os orientais, os quais últimos foram os únicos descritos pelo explorador. Os bororo
-    ocidentais subdividiram-se ainda em bororo cabaçais e bororo da campanha. Destes, os primeiros habitara as margens do
-    rio Cabaçal, afluente da direita do r Paraguai, no qual desemboca pouco ao norte da cidade de Cáceres'
-entry_type: ''
-infobox: {}
 references: []
 see_also:
 - aroe
-- tabae
 - baraedu
+- boe epa
+- tugarege
+- ecerae
 ---
 
-### Coisa2
+## BOE
 
-Pessoa bororo:.
+Entre os Bororo, poucas palavras possuem extensão semântica comparável à forma **boe**.  
+Ela não corresponde apenas a “pessoa” ou “coisa”: trata-se de um termo que exprime existência, pertença e condição.
 
-### Divisão do grupo2
+Pode designar:
 
-### Origem do grupo2
+- um indivíduo
+- um membro do povo bororo
+- um ser animado ou inanimado
+- um acontecimento
+- o estado do tempo
+- uma condição do mundo
 
-### Caracteres físicos2
+Assim, *boe* funciona como uma categoria ontológica básica da língua.
 
-### Características morais2
+---
 
-### Índole do indivíduo bororo2
+## Boe como categoria linguística
 
-### Família2
+Na fala cotidiana, o termo pode substituir praticamente qualquer substantivo quando o referente é conhecido pelo contexto. Seu uso adequado demonstra domínio da língua.
 
-### Religião2
+Ele pode ocorrer:
 
-### Língua2
+- sozinho → referência geral (“algo”, “alguém”)
+- acompanhando outro termo → reforço semântico
+- em expressões meteorológicas → estado do ambiente
 
-### Contatos com os brancos2
+A grande frequência dessa palavra constitui uma das dificuldades iniciais para quem aprende a língua, pois o sentido depende quase totalmente da situação discursiva.
 
-### Relações com outras tribos2
+---
 
-### Estado atual da tribo2
+## Boe como autodenominação
 
-#### Bororo Ocidentais2
+Os Bororo designam-se antes de tudo como **boe** — “gente”, “os verdadeiros humanos”.
 
-#### Bororo Orientais2
+Outros povos recebem nomes diferentes:
 
-### Observações3
+| termo | referência |
+|------|------|
+| barege / marege | outros indígenas |
+| kaiamodoge | inimigos |
+| barae | brancos |
+| tabae | negros |
 
-Tempo astronômico3.
+A oposição fundamental não é étnica no sentido moderno, mas ontológica:  
+**boe = humanidade legítima**
 
-### Observações4
+---
 
-Estações1. CoisaÉ a forma da língua bororo que tem a mais ampla significação. Serve para indicar seres inanimados e animados, reais e fictícios.
+## Divisão tradicional do povo
 
-Seu uso criterioso denota conhecimento da língua e elegância de expressão. Muitíssimas vezes substitui qualquer outra palavra ou acompanha pleonasticamente qualquer vocábulo. Como facilmente se pode entrever, estes dois últimos casos dificultam muito o entendimento da língua falada, especialmente aos principiantes e leigos.
+Historicamente os Bororo ocupavam vasta área do atual Mato Grosso, aproximadamente entre os paralelos 14° e 19° S.
 
-### Índio bororo: preliminaresÉ esta a forma usada pelos bororo para se individualizarem
+### Bororo ocidentais
+Isolados dos demais grupos, sofreram maior alteração cultural e linguística.  
+Subdividiam-se em:
 
-Às vezes designam-se também com o nome das partes em que está subdividida a tribo, mas raramente. A denominação clássica permanece sempre boe. Os membros das outras tribos sao considerados e chamados Barege ou Marege; ou kaiamodoge, se são tribos inimigas, mas não boe.
+- Bororo Cabaçais — região do rio Cabaçal
+- Bororo da Campanha — margem direita do Paraguai
 
-Os civilizados são Barae e os de raça negra são Tabae.de raça negra são tabae.
+### Bororo orientais
+Mantiveram unidade cultural e ritual. Entre eles distinguem-se:
 
-#### Divisão do grupo atualmente
+- Boku Mogorege — habitantes do cerrado
+- Itura Mogorege — habitantes da floresta
+- Orari Mogodoge — habitantes do rio São Lourenço
+- Tori Okwa Mogorege — região serrana
+- Utugo Kuridoge — grupo aliado meridional
 
-A designação mais conhecida dos membros da tribo bororo é Orari Mogodoge, ou seja Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar uma das quatro partes em que, segundo urna tradição bastante recente foi dividida a tribo. Dessa divisão resultaram os seguintes grupos:Bororos OcidentaisHabitam a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação com os outros grupos.
+Apesar das denominações, compartilhavam língua, rituais e organização social.
 
-A língua e, talvez, usos e costumes alteraram-se, conservando-se, porém, marcados traços de uma origem comum como parecem confirmar os trabalhos de Waehneldt e Koslowski (Waehneldt 1864, XXVII: 193-229; Koslowski 1895, VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski, porém, citando e transcrevendo Steinen, confunde os bororo ocidentais com os orientais, os quais últimos foram os únicos descritos pelo explorador.
+---
 
-Os bororo ocidentais subdividiram-se ainda em bororo cabaçais e bororo da campanha. Destes, os primeiros habitara as margens do rio Cabaçal, afluente da direita do r Paraguai, no qual desemboca poucoao norte da cidade de Cáceres; os segundos ocupam um pequeno território na margem direita do rio Paraguai a 100 Km ao sul de Cáceres.Bororos OrientaisPodemos dividí-los nos seguintes grupos:Boku mogorege ou Boku mogodoge 'Habitadores dos Cerrados' (a leste de Cuiabá).
+## Organização social
 
-Estes, em tempos idos, ultrapassaram a oriente o Oroaribo Kyrirewu rio Araguaia. A toponímia confirma nossa asserçãao: nas nascentes desse rio, há um morro denominado Marugori a jusante da foz do Jakorewuge Eiao rio das Garças, corre um afluente da direita denominado Jorubo Jao rio Caiapozinho; outro afluente da direita denominado Tamíge Eiao talvez identificável com o rio Vermelho, tem a sua foz no mesmo rio Araguaia, no paralelo 15°.Itura Mogorege 'Habitadores da Floresta.' Ocupam a bacia do curso médio e curso superior do Pogybo Cerewu rio São Lourenço.Orari Mogodoge 'Habitadores das Plagas do Peixe Pintado'.
+A aldeia (*boe epa*) estrutura-se em metades exógamas complementares, que regulam:
 
-Embora todos os bororo orientais se apelidem com esta denominação, entretanto ela designa mais propriamente os elementos do grupo da bacia do curso inferior do Pogybo Cerewu 'rio São Lourenço. Cruz atribui à forma orari a significação de uma variedade de centopeia (Cruz, 1942, LXXXIV: 164-5). Realmente a forma orari designa também um miriápode, mas os bororo nunca se imaginaram moradores dos lugares desse artrópode.Tori Okwa Mogorege 'Habitadores da Montanha' i.e. aproximadamente da região da Serra do Jerônimo.
+- casamento
+- rituais funerários
+- papéis cerimoniais
+- cooperação econômica
 
-Além desses quatro grupos orientais, há o núcleo dos bororo Utugo Kuridoge, ou seja, bororo que usam longas flechas. Sua língua, salvo desprezíveis variantes, é idêntica a dos outros grupos com os quais tem amizade e intercâmbio constante de elementos humanos. Uma lenda confirma esta nossa assenção, pois nela se trata de relações amigáveis entre os Utugo Kuridoge e outros grupos orientais.
+O pertencimento não é apenas genealógico: define a posição cosmológica do indivíduo.
 
-A mesma lenda diz que os Utugo Kuridoge se originaram de um grupo de bororo do sub-clã dos Apiborege Cebegiwuge denominados também Kado Mogarege. Estes foram estabelecer-se mais ao sul que os outros, nas margens do Kadomogo 'localidade das taquaras', que corresponde ao curso médio rio Taquari. Um trecho deste rio é chamado pelos bororo de Koco I 'Cajueiro', que, talvez, se corrompeu na atual denominação de Coxim.Os Bororo Orientais tiveram contínuos contactos e relações entre si e hoje em dia é comun à passagem temporária ou definitiva de indivíduos de um grupo para outro.
+Assim, ser **boe** não significa somente nascer humano, mas ocupar um lugar na rede de relações sociais e espirituais.
 
-Deve-se notar que conservaram inalterados costumes, tradições, língua, cantos e organização, como pessoalmente constatamos.O território ocupado por todos os citados grupos orientais e ocidentais pode-se com boa aproximação delimitar pela latitude sul 14º - 19º e pela longitude oeste de Greenwich 51º - 59º, ocupando assim urna área de cerca de 350.000 Km2. Entretanto inxeroravelmente invadido pelos civilizados que confinaram a maior parte dos bororo nas colônias da catequese salesiana e nas da catequese leiga.
+---
 
-#### Origem do grupoÉ impossível determinar a origem dos bororo 
+## Origem
 
-por indagacões diretas com indivíduos anciães ou moços os quais concordemente respondem: paeruduka 'nós não sabemos!'. As lendas, imperfeitas em sua cronologia e mudas sobre este problema, não oferecem nenhum interesse relativo à pesquisa. Em todos os casos os bororo nao tem a mínima idéia de grandes extensões de água salgada ou mares, embora possuam a forma po maerewu 'água que é sempre' i.e. 'água sem fim', ou seja 'mar', expressão forjada depois do contacto com os civilizados por causa de fotografias vistas, ou descrições ouvidas.
+Os próprios Bororo afirmam desconhecer sua origem remota (*paeruduka* — “não sabemos”).  
+Suas tradições não falam de mares nem de terras longínquas, sugerindo memória territorial profunda no interior continental.
 
-Deixando de lado várias hipóteses, lembramos a de Tonelli que faz provir os bororo do curso superio do rio Negro e do rio Orinoco (Tonelli 1927). Teriam chegado ao atual "habitat" pelos vales dos rios Negro, Amazonas, Mamoré, e Guaporé. Durante a emigração permaneceram por algum tempo entre os Chapacura da Bolívia.
+Hipóteses externas propõem migrações antigas amazônicas, mas não fazem parte do conhecimento tradicional.
 
-#### Caracteres físicos
+---
+
+## O mundo dos Boe
+
+O universo bororo distingue três grandes categorias:
+
+| domínio | habitantes |
+|------|------|
+| boe | vivos humanos |
+| aroe | mortos / espíritos |
+| barae | estrangeiros |
+
+A vida ritual organiza-se precisamente na relação entre esses domínios.
+
+A palavra **boe**, portanto, não é apenas etnônimo:  
+é o polo fundamental que define o que é viver.
+
+---
+
+## Posição linguística e território histórico
+
+A língua bororo não constitui um caso isolado. Ela pertence a um pequeno conjunto de línguas aparentadas tradicionalmente denominadas família bororoana. Todas as línguas conhecidas desse grupo estiveram historicamente concentradas na região centro-oeste da América do Sul, sobretudo nas áreas próximas à atual fronteira entre Brasil e Bolívia.
+
+Essa distribuição geográfica é significativa: o território tradicional dos Bororo situa-se a relativa proximidade dessa zona, sugerindo antiga continuidade regional e não migração recente a partir de regiões distantes. A tradição oral bororo, que não conserva memória de deslocamentos longínquos nem de grandes massas de água salgada, harmoniza-se com esse quadro linguístico-geográfico.
+
+Assim, tanto os dados comparativos quanto a memória cultural apontam para uma permanência prolongada dos antepassados bororo na mesma grande região em que ainda hoje vivem.
+
+---
+
+## Evidências arqueológicas
+
+Os dados arqueológicos do centro-oeste do Brasil indicam ocupação humana antiga e contínua na região tradicionalmente habitada pelos Bororo. Vestígios cerâmicos, padrões de assentamento e estruturas de aldeia circular encontrados no Mato Grosso apresentam notável correspondência com a organização espacial conhecida etnograficamente para os Boe.
+
+Embora não seja possível identificar diretamente um povo histórico apenas por materiais arqueológicos, a continuidade entre:
+
+- localização geográfica
+- forma de aldeamento circular
+- persistência cultural registrada nos relatos históricos
+
+sugere longa permanência regional de populações culturalmente relacionadas aos atuais Bororo.
+
+A ausência, na tradição oral, de narrativas de migração distante, associada à proximidade das línguas aparentadas na área Brasil-Bolívia, reforça a hipótese de estabilidade territorial prolongada, com transformações internas ao longo do tempo em vez de deslocamentos recentes.
+
+---
+
+## Observação final
+
+A amplitude semântica do termo explica por que ele atravessa toda a língua e a cultura.  
+Enquanto muitas línguas distinguem “coisa”, “pessoa” e “mundo”, o bororo os reúne sob um mesmo conceito:
+
+> Boe é aquilo que existe dentro da ordem humana do cosmos.
