@@ -18,7 +18,8 @@ categories:
 - ritual/canto
 date: '2026-01-28'
 url: https://www.youtube.com/watch?v=cBSYffDyAIk
-images: []
+images:
+- url: images/aroeeceba1.jpg
 examples: []
 entry_type: ''
 infobox: {}
