@@ -9,7 +9,7 @@ categories:
 - cosmologia
 date: '2026-02-18'
 images:
-- url: ../data/images/bororo1.jpg
+- url: images/bororo1.jpg
 see_also:
 - aroe
 - baraedu
