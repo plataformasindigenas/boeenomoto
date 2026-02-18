@@ -76,6 +76,10 @@ fauna_overflow: "Mostrando 100 de {n} resultados. Refine sua busca."
 fauna_result_singular: "espécie encontrada"
 fauna_result_plural: "espécies encontradas"
 fauna_family: "Família"
+fauna_category_uncategorized: "Sem classificação"
+fauna_detail_family: "Família"
+fauna_detail_classification: "Classificação Bororo"
+fauna_select_hint: "Clique em um animal para ver os detalhes"
 
 # Encyclopedia page
 enc_title: "Enciclopédia Bororo"
