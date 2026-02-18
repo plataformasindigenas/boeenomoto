@@ -4,7 +4,7 @@ title: Aroe Eceba Kejebo
 variants:
 - Ritual do Gavião Real
 - Aroe Eceba
-abstract: Ritual bororo associado ao (gavião-real)[https://pt.wikipedia.org/wiki/Gavião-real] (Aroe Eceba), envolvendo morte ritual do animal, oferenda, distribuição de
+abstract: Ritual bororo associado ao [gavião-real](https://pt.wikipedia.org/wiki/Gavião-real) (Aroe Eceba), envolvendo morte ritual do animal, oferenda, distribuição de
   penas, confecção de adornos e uma complexa cerimônia pública ligada às almas e aos direitos de primazia dos clãs.
 categories:
 - ritual
@@ -31,7 +31,7 @@ see_also: []
 
 O **Aroe Eceba Kejebo** é um ritual bororo de grande complexidade simbólica, associado ao gavião-real (*Aroe Eceba* 'matador de espíritos'), ave dotada de profundo significado espiritual e ritual. O ritual articula morte ritual, oferenda, direitos de primazia clânica, confecção de adornos e uma cerimônia pública marcada por canto, dança e forte intensidade espiritual.
 
-![Ritual do aroe eceba](images/aroeeceba1.jpg)
+
 
 ---
 
