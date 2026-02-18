@@ -101,6 +101,11 @@ enc_last_updated: "Última atualização"
 enc_back_to_index: "Voltar à enciclopédia"
 enc_see_also: "Ver também"
 enc_breadcrumb_label: "Navegação"
+enc_welcome_text: "Enciclopédia dedicada à preservação e documentação dos saberes culturais, linguísticos e etnográficos do povo Bororo."
+enc_featured_title: "Verbete em destaque"
+enc_browse_categories: "Navegar por categorias"
+enc_highlights_title: "Verbetes ilustrados"
+enc_read_more: "Ler mais"
 
 # Infobox field labels
 infobox_participantes: "Participantes"

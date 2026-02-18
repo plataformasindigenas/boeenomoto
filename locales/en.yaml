@@ -101,6 +101,11 @@ enc_last_updated: "Last updated"
 enc_back_to_index: "Back to encyclopedia"
 enc_see_also: "See also"
 enc_breadcrumb_label: "Breadcrumb"
+enc_welcome_text: "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people."
+enc_featured_title: "Featured article"
+enc_browse_categories: "Browse by category"
+enc_highlights_title: "Illustrated articles"
+enc_read_more: "Read more"
 
 # Infobox field labels
 infobox_participantes: "Participants"

@@ -582,6 +582,55 @@ def convert_encyclopedia():
         "category_tree": category_tree,
     }
 
+    # Select featured article for portal page
+    featured = None
+    for entry in normalized_records:
+        if entry.get("id") == "boe":
+            images = entry.get("images") or []
+            text = (entry.get("content_text") or "")[:400]
+            if text and " " in text:
+                text = text.rsplit(" ", 1)[0]
+            featured = {
+                "id": entry["id"],
+                "title": entry.get("title", ""),
+                "abstract": entry.get("abstract", ""),
+                "image": images[0] if images else None,
+                "content_excerpt": (text + "...") if text else "",
+            }
+            break
+
+    if not featured:
+        for entry in normalized_records:
+            if entry.get("images") and entry.get("content_html"):
+                images = entry.get("images") or []
+                text = (entry.get("content_text") or "")[:400]
+                if text and " " in text:
+                    text = text.rsplit(" ", 1)[0]
+                featured = {
+                    "id": entry["id"],
+                    "title": entry.get("title", ""),
+                    "abstract": entry.get("abstract", ""),
+                    "image": images[0] if images else None,
+                    "content_excerpt": (text + "...") if text else "",
+                }
+                break
+
+    # Select highlight entries (entries with images, excluding featured)
+    highlights = []
+    for entry in normalized_records:
+        images = entry.get("images") or []
+        if images and (not featured or entry.get("id") != featured.get("id")):
+            highlights.append({
+                "id": entry["id"],
+                "title": entry.get("title", ""),
+                "image": images[0],
+            })
+            if len(highlights) >= 8:
+                break
+
+    index_data["featured"] = featured
+    index_data["highlights"] = highlights
+
     index_file = DATA_DIR / "encyclopedia_index.json"
     index_file.write_text(
         json.dumps(index_data, ensure_ascii=False, indent=2), encoding="utf-8"

@@ -1827,5 +1827,86 @@
     "geografia": {
       "_count": 2
     }
-  }
+  },
+  "featured": {
+    "id": "boe",
+    "title": "Boe",
+    "abstract": "Boe -- sing. e plural Coisa, índio bororo, tempo astronómico, estado atmosférico.",
+    "image": {
+      "url": "images/boeEnc.jpg",
+      "alt": "Boe",
+      "credit": ""
+    },
+    "content_excerpt": "Coisa2\n\n\nÍndio bororo: preliminares2.\n\n\nDivisão do grupo2\n\n\nOrigem do grupo2\n\n\nCaracteres físicos2\n\n\nCaracterísticas morais2\n\n\nÍndole do indivíduo bororo2\n\n\nFamília2\n\n\nReligião2\n\n\nLíngua2\n\n\nContatos com os brancos2\n\n\nRelações com outras tribos2\n\n\nEstado atual da tribo2\n\n\nBororo Ocidentais2\n\n\nBororo Orientais2\n\n\nObservações3\n\n\nTempo astronômico3.\n\n\nObservações4\n\n\nEstações1. CoisaÉ a forma da..."
+  },
+  "highlights": [
+    {
+      "id": "adugo-biri",
+      "title": "Adugo biri",
+      "image": {
+        "url": "images/adugo_biri.jpg",
+        "alt": "Adugo biri",
+        "credit": ""
+      }
+    },
+    {
+      "id": "adugo-mutillidae",
+      "title": "Adugo",
+      "image": {
+        "url": "images/enc_adugomutillidae_0.jpg",
+        "alt": "Formiga-onça (vespa da família Mutillidae)",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "adugo",
+      "title": "Adugo",
+      "image": {
+        "url": "images/enc_adugo_0.jpg",
+        "alt": "Onça-pintada (Panthera onca)",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "aimearewu",
+      "title": "Aimearewu",
+      "image": {
+        "url": "images/enc_aimearewu_0.jpg",
+        "alt": "Jaguarundi (Herpailurus yagouaroundi)",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "id": "aroe_eoprewu",
+      "title": "Aroe eoprewu",
+      "image": "images/enc_aroe_eoprewu_0.jpg"
+    },
+    {
+      "id": "ba-1",
+      "title": "ba",
+      "image": {
+        "url": "images/enc_ba1_0.png",
+        "alt": "planta da aldeia Kejari",
+        "credit": "Lévi-Strauss (planta/diagrama)"
+      }
+    },
+    {
+      "id": "ba_1_leaf",
+      "title": "Ba",
+      "image": {
+        "url": "images/enc_ba_1_leaf_0.jpg",
+        "alt": "",
+        "credit": ""
+      }
+    },
+    {
+      "id": "ba_2_penile_sheath_daily",
+      "title": "Ba",
+      "image": {
+        "url": "images/enc_ba_2_penile_sheath_daily_0.jpg",
+        "alt": "",
+        "credit": ""
+      }
+    }
+  ]
 }
