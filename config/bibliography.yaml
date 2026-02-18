@@ -1,4 +1,4 @@
-input: ../data/bibliography_output.json
+input: ../data/bibliography.json
 template: templates/bibliography.html.j2
 output: ../docs/bibliography.html
 

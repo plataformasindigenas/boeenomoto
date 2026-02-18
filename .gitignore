@@ -38,8 +38,8 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Build artifacts
-data/encyclopedia_output.json
+# Build artifacts (generated JSON)
+data/*.json
 
 # Keep the docs directory
 !docs/.gitkeep

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ t.html_lang | default('pt-BR') }}">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{{ title }}{% endblock %} - Boe Eno Moto</title>
+    <title>Início - Boe Eno Moto</title>
     <style>
         * {
             box-sizing: border-box;
@@ -262,33 +262,133 @@
                 transition: none !important;
             }
         }
-        {% block extra_styles %}{% endblock %}
+        .hero {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            background: #3D352F;
+            color: white;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .platforms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .platform-card {
+            background: white;
+            border-radius: 4px;
+            padding: 1.5rem;
+            border: 1px solid #E8E4DF;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s;
+            display: block;
+        }
+        .platform-card:hover {
+            border-color: #C75B39;
+        }
+        .platform-card h2 {
+            margin: 0 0 0.5rem 0;
+            color: #3D352F;
+            font-size: 1.4rem;
+        }
+        .platform-card p {
+            margin: 0 0 1rem 0;
+            color: #666;
+        }
+        .platform-card .count {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #C75B39;
+        }
+        .platform-card .label {
+            font-size: 0.9rem;
+            color: #888;
+        }
+        .about {
+            background: white;
+            border-radius: 4px;
+            padding: 1.5rem;
+            border: 1px solid #E8E4DF;
+        }
+        .about h2 {
+            margin-top: 0;
+            color: #3D352F;
+        }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">{{ t.skip_link | default('Pular para conteúdo') }}</a>
+    <a href="#main-content" class="skip-link">Pular para conteúdo</a>
 
-    <nav aria-label="{{ t.nav_label | default('Navegação principal') }}">
-        <a href="index.html" class="brand">{{ t.nav_brand | default('Boe Eno Moto') }}</a>
-        <a href="dictionary.html"{% if page == 'dictionary' %} class="active" aria-current="page"{% endif %}>{{ t.nav_dictionary | default('Dicionário') }}</a>
-        <a href="encyclopedia.html"{% if page == 'encyclopedia' %} class="active" aria-current="page"{% endif %}>{{ t.nav_encyclopedia | default('Enciclopédia') }}</a>
-        <a href="fauna.html"{% if page == 'fauna' %} class="active" aria-current="page"{% endif %}>{{ t.nav_fauna | default('Fauna') }}</a>
-        <a href="bibliography.html"{% if page == 'bibliography' %} class="active" aria-current="page"{% endif %}>{{ t.nav_bibliography | default('Bibliografia') }}</a>
-        {% if other_locale %}
-        <a href="{{ base_path | default('') }}{{ other_locale }}/{{ page | default('index') }}.html" class="lang-switch">{{ other_locale | upper }}</a>
-        {% endif %}
+    <nav aria-label="Navegação principal">
+        <a href="index.html" class="brand">Boe Eno Moto</a>
+        <a href="dictionary.html">Dicionário</a>
+        <a href="encyclopedia.html">Enciclopédia</a>
+        <a href="fauna.html">Fauna</a>
+        <a href="bibliography.html">Bibliografia</a>
+        <a href="../en/index.html" class="lang-switch">EN</a>
     </nav>
 
     <main id="main-content">
-        {% block content %}{% endblock %}
+    <div class="hero">
+        <h1>Boe Eno Moto</h1>
+        <p>Mundo Bororo</p>
+    </div>
+
+    <div class="platforms">
+        <a href="dictionary.html" class="platform-card">
+            <h2>Dicionário</h2>
+            <p>Palavras e expressões da língua Bororo com tradução para Português, transcrição fonética e exemplos.</p>
+            <div class="count">2866</div>
+            <div class="label">entradas</div>
+        </a>
+
+        <a href="encyclopedia.html" class="platform-card">
+            <h2>Enciclopédia</h2>
+            <p>Verbetes sobre cultura, rituais, organização social e conhecimentos tradicionais do povo Bororo.</p>
+            <div class="count">168</div>
+            <div class="label">verbetes</div>
+        </a>
+
+        <a href="fauna.html" class="platform-card">
+            <h2>Fauna</h2>
+            <p>Nomes de animais na língua Bororo com classificação tradicional, nomes científicos e imagens.</p>
+            <div class="count">97</div>
+            <div class="label">espécies</div>
+        </a>
+
+        <a href="bibliography.html" class="platform-card">
+            <h2>Bibliografia</h2>
+            <p>Referências bibliográficas sobre a língua, cultura e história do povo Bororo.</p>
+            <div class="count">196</div>
+            <div class="label">referências</div>
+        </a>
+    </div>
+
+    <div class="about">
+        <h2>Sobre o Projeto</h2>
+        <p><strong>Boe eno moto</strong> ("mundo Bororo") é uma plataforma dedicada à preservação, documentação e valorização dos saberes linguísticos e culturais do povo Bororo.</p>
+        <p>Este repositório reúne uma variedade de recursos linguísticos e etnográficos, tanto históricos quanto contemporâneos, com o objetivo de apoiar o ensino, a pesquisa e os esforços de revitalização da língua Bororo. A plataforma oferece um conjunto de ferramentas voltadas para o estudo linguístico e antropológico.</p>
+    </div>
     </main>
 
     <footer>
-        <p>{{ t.footer_generated | default('Gerado com') }} <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> {{ t.footer_and | default('e') }} <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
-        {% if meta and meta.version %}<p>Schema v{{ meta.version }}</p>{% endif %}
+        <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
     </footer>
 
-    <script src="{{ base_path | default('') }}js/common.js"></script>
-    {% block scripts %}{% endblock %}
+    <script src="../js/common.js"></script>
 </body>
 </html>

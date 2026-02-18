@@ -12,19 +12,16 @@ cd "$PROJECT_DIR"
 echo "=== Boe Eno Moto Build ==="
 echo ""
 
-echo "Step 1: Converting source data to JSON with aptoro"
-echo "Running encyclopedia entry checks"
+echo "Step 1: Checking encyclopedia entries"
 python scripts/check_encyclopedia_entries.py
 echo ""
+
+echo "Step 2: Converting source data to JSON with aptoro"
 python scripts/convert.py
 echo ""
 
-echo "Step 2: Rendering HTML pages with kodudo"
-kodudo cook config/dictionary.yaml
-kodudo cook config/encyclopedia.yaml
-kodudo cook config/fauna.yaml
-kodudo cook config/bibliography.yaml
-kodudo cook config/index.yaml
+echo "Step 3: Rendering HTML pages with kodudo (i18n)"
+python scripts/build_site.py
 echo ""
 
 echo "=== Build Complete ==="

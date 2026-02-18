@@ -14,3 +14,5 @@ fields:
   images: list?
   content_md: str?
   examples: list?
+  dictionary_ids: list?
+  fauna_ids: list?

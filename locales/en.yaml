@@ -1,0 +1,142 @@
+# English locale for Boe Eno Moto
+
+# HTML lang attribute
+html_lang: "en"
+
+# Accessibility
+skip_link: "Skip to content"
+nav_label: "Main navigation"
+search_label: "Search"
+filter_label: "Filter results"
+
+# Navigation
+nav_brand: "Boe Eno Moto"
+nav_dictionary: "Dictionary"
+nav_encyclopedia: "Encyclopedia"
+nav_fauna: "Fauna"
+nav_bibliography: "Bibliography"
+
+# Footer
+footer_generated: "Generated with"
+footer_and: "and"
+
+# Index page
+index_title: "Home"
+index_hero_title: "Boe Eno Moto"
+index_hero_subtitle: "Bororo World"
+index_about_title: "About the Project"
+index_about_p1: >-
+  <strong>Boe eno moto</strong> ("Bororo world") is a platform dedicated to the preservation,
+  documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.
+index_about_p2: >-
+  This repository brings together a variety of linguistic and ethnographic resources, both
+  historical and contemporary, with the goal of supporting teaching, research, and
+  revitalization efforts for the Bororo language. The platform offers a set of
+  tools aimed at linguistic and anthropological study.
+
+# Platform cards
+card_dictionary_title: "Dictionary"
+card_dictionary_desc: "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples."
+card_dictionary_label: "entries"
+card_encyclopedia_title: "Encyclopedia"
+card_encyclopedia_desc: "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people."
+card_encyclopedia_label: "articles"
+card_fauna_title: "Fauna"
+card_fauna_desc: "Animal names in the Bororo language with traditional classification, scientific names, and images."
+card_fauna_label: "species"
+card_bibliography_title: "Bibliography"
+card_bibliography_desc: "Bibliographic references on the language, culture, and history of the Bororo people."
+card_bibliography_label: "references"
+
+# Dictionary page
+dict_title: "Bororo Dictionary"
+dict_search_placeholder: "Search (Bororo or Portuguese)..."
+dict_filter_all: "All word classes"
+dict_empty_title: "Search the dictionary"
+dict_empty_text: "Type a word in Bororo or Portuguese to begin"
+dict_loading: "Loading dictionary..."
+dict_no_results: "No results"
+dict_no_results_hint: "Try a different word or change the filter"
+dict_overflow: "Showing 100 of {n} results. Refine your search."
+dict_result_singular: "result found"
+dict_result_plural: "results found"
+dict_scientific_name: "Scientific name"
+
+# Fauna page
+fauna_title: "Bororo Fauna"
+fauna_search_placeholder: "Search (Bororo, Portuguese, or scientific name)..."
+fauna_filter_all: "All categories"
+fauna_empty_title: "Search the fauna"
+fauna_empty_text: "Type a name in Bororo, Portuguese, or scientific to begin"
+fauna_no_results: "No results"
+fauna_no_results_hint: "Try a different name or change the filter"
+fauna_overflow: "Showing 100 of {n} results. Refine your search."
+fauna_result_singular: "species found"
+fauna_result_plural: "species found"
+fauna_family: "Family"
+
+# Encyclopedia page
+enc_title: "Bororo Encyclopedia"
+enc_search_placeholder: "Search the encyclopedia..."
+enc_filter_all: "All categories"
+enc_filter_uncategorized: "Uncategorized"
+enc_empty_title: "Search the encyclopedia"
+enc_empty_text: "Type a term to begin"
+enc_loading: "Loading encyclopedia..."
+enc_no_results: "No results"
+enc_no_results_hint: "Try a different term or change the filter"
+enc_overflow: "Showing 100 of {n} results. Refine your search."
+enc_result_singular: "article found"
+enc_result_plural: "articles found"
+enc_toc_title: "Contents"
+enc_variants: "Variants"
+enc_categories: "Categories"
+enc_external_link: "View external reference"
+enc_more_images: "More images"
+enc_examples: "Examples"
+enc_collapse: "Click to collapse"
+
+# Bibliography page
+bib_title: "Bororo Bibliography"
+bib_search_placeholder: "Search (author, title, year)..."
+bib_filter_all: "All types"
+bib_empty_title: "Search the bibliography"
+bib_empty_text: "Type an author, title, or year to begin"
+bib_no_results: "No results"
+bib_no_results_hint: "Try a different author, title, or year"
+bib_overflow: "Showing 100 of {n} results. Refine your search."
+bib_result_singular: "reference found"
+bib_result_plural: "references found"
+
+# POS labels
+pos_LEX: "Lexeme"
+pos_S: "Noun"
+pos_VC: "Causative Verb"
+pos_ADV: "Adverb"
+pos_PPASS: "Past Part."
+pos_POSP: "Postposition"
+pos_SUF: "Suffix"
+pos_INTJ: "Interjection"
+pos_VT: "Trans. Verb"
+pos_PRON: "Pronoun"
+pos_V: "Verb"
+pos_PRCL: "Particle"
+pos_PPAS: "Past Part."
+pos_PPART: "Particle"
+pos_NUM: "Numeral"
+pos_IP: "IP"
+pos_DEM: "Demonstrative"
+pos_CONJ: "Conjunction"
+pos_X: "Other"
+pos_PROPN: "Proper Noun"
+
+# Cross-linking
+see_also: "See also"
+see_in_fauna: "See in Fauna"
+see_in_dictionary: "See in Dictionary"
+
+# Common labels
+entries_label: "entries"
+species_label: "species"
+articles_label: "articles"
+references_label: "references"

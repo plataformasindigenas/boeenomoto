@@ -30,6 +30,7 @@ csv.field_size_limit(sys.maxsize)
 # Paths
 BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"
+DOCS_DIR = BASE_DIR / "docs"
 
 
 def convert_dictionary():
@@ -45,17 +46,33 @@ def convert_dictionary():
     except aptoro.ValidationError as e:
         print(f"  Validation errors: {len(e.errors)}")
         for error in e.errors[:10]:
-            print(f"    Row {error.row}: {error.field} - {error.message}")
+            print(f"    {error}")
         if len(e.errors) > 10:
             print(f"    ... and {len(e.errors) - 10} more errors")
         raise
 
-    json_output = aptoro.to_json(records, schema=schema, include_meta=True)
-    output_file = DATA_DIR / "dictionary.json"
-    output_file.write_text(json_output, encoding="utf-8")
+    normalized_records = []
+    for record in records:
+        entry = asdict(record) if is_dataclass(record) else dict(record)
+        normalized_records.append(entry)
 
-    print(f"  Exported {len(records)} entries to {output_file}")
-    return len(records)
+    output_data = {
+        "meta": {
+            "name": "bororo_dictionary",
+            "description": "Bororo Dictionary Entries",
+            "version": "1.0",
+            "record_count": len(normalized_records),
+        },
+        "data": normalized_records,
+    }
+
+    output_file = DATA_DIR / "dictionary.json"
+    output_file.write_text(
+        json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"  Exported {len(normalized_records)} entries to {output_file}")
+    return len(normalized_records)
 
 
 def convert_fauna():
@@ -71,17 +88,33 @@ def convert_fauna():
     except aptoro.ValidationError as e:
         print(f"  Validation errors: {len(e.errors)}")
         for error in e.errors[:10]:
-            print(f"    Row {error.row}: {error.field} - {error.message}")
+            print(f"    {error}")
         if len(e.errors) > 10:
             print(f"    ... and {len(e.errors) - 10} more errors")
         raise
 
-    json_output = aptoro.to_json(records, schema=schema, include_meta=True)
-    output_file = DATA_DIR / "fauna.json"
-    output_file.write_text(json_output, encoding="utf-8")
+    normalized_records = []
+    for record in records:
+        entry = asdict(record) if is_dataclass(record) else dict(record)
+        normalized_records.append(entry)
 
-    print(f"  Exported {len(records)} entries to {output_file}")
-    return len(records)
+    output_data = {
+        "meta": {
+            "name": "bororo_fauna",
+            "description": "Bororo Fauna Dictionary",
+            "version": "1.0",
+            "record_count": len(normalized_records),
+        },
+        "data": normalized_records,
+    }
+
+    output_file = DATA_DIR / "fauna.json"
+    output_file.write_text(
+        json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"  Exported {len(normalized_records)} entries to {output_file}")
+    return len(normalized_records)
 
 
 def convert_bibliography():
@@ -136,7 +169,7 @@ def convert_bibliography():
     except aptoro.ValidationError as e:
         print(f"  Validation errors: {len(e.errors)}")
         for error in e.errors[:10]:
-            print(f"    Row {error.row}: {error.field} - {error.message}")
+            print(f"    {error}")
         if len(e.errors) > 10:
             print(f"    ... and {len(e.errors) - 10} more errors")
         raise
@@ -156,7 +189,7 @@ def convert_bibliography():
         "data": normalized_records,
     }
 
-    output_file = DATA_DIR / "bibliography_output.json"
+    output_file = DATA_DIR / "bibliography.json"
     output_file.write_text(
         json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -289,7 +322,7 @@ def convert_encyclopedia():
     except aptoro.ValidationError as e:
         print(f"  Validation errors: {len(e.errors)}")
         for error in e.errors[:10]:
-            print(f"    Row {error.row}: {error.field} - {error.message}")
+            print(f"    {error}")
         if len(e.errors) > 10:
             print(f"    ... and {len(e.errors) - 10} more errors")
         raise
@@ -306,7 +339,6 @@ def convert_encyclopedia():
         entry.pop("content_md", None)
         normalized_records.append(entry)
 
-    # Output in kodudo-compatible format (with meta)
     output_data = {
         "meta": {
             "name": "bororo_encyclopedia",
@@ -317,7 +349,7 @@ def convert_encyclopedia():
         "data": normalized_records,
     }
 
-    output_file = DATA_DIR / "encyclopedia_output.json"
+    output_file = DATA_DIR / "encyclopedia.json"
     output_file.write_text(
         json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -425,26 +457,86 @@ def attach_recordings_to_dictionary():
     print(f"  Total audio files linked: {sum(len(v) for v in audio_map.values())}")
 
 
-def generate_index(
-    dictionary_count: int,
-    fauna_count: int,
-    encyclopedia_count: int,
-    bibliography_count: int,
-    recordings_count: int = 0,
-):
+def cross_link_datasets():
+    """Cross-link dictionary, fauna, and encyclopedia entries by scientific name."""
+    print("=== Cross-linking Datasets ===")
+
+    dict_file = DATA_DIR / "dictionary.json"
+    fauna_file = DATA_DIR / "fauna.json"
+    enc_file = DATA_DIR / "encyclopedia.json"
+
+    if not all(f.exists() for f in [dict_file, fauna_file, enc_file]):
+        print("  Missing JSON files, skipping cross-linking.")
+        return
+
+    with open(dict_file, "r", encoding="utf-8") as f:
+        dictionary = json.load(f)
+    with open(fauna_file, "r", encoding="utf-8") as f:
+        fauna = json.load(f)
+    with open(enc_file, "r", encoding="utf-8") as f:
+        encyclopedia = json.load(f)
+
+    # Build lookup indices
+    fauna_by_sci = {}
+    for entry in fauna["data"]:
+        sci = (entry.get("scientific_name") or "").strip().lower()
+        if sci:
+            fauna_by_sci.setdefault(sci, []).append(entry)
+
+    dict_by_sci = {}
+    for entry in dictionary["data"]:
+        sci = (entry.get("scientific_name") or "").strip().lower()
+        if sci:
+            dict_by_sci.setdefault(sci, []).append(entry)
+
+    link_count = 0
+
+    # Dictionary → Fauna: match by scientific_name
+    for entry in dictionary["data"]:
+        sci = (entry.get("scientific_name") or "").strip().lower()
+        if sci and sci in fauna_by_sci:
+            linked = []
+            for f_entry in fauna_by_sci[sci]:
+                linked.append({
+                    "id": f_entry["id"],
+                    "name_bororo": f_entry.get("name_bororo", ""),
+                    "name_portuguese": f_entry.get("name_portuguese", ""),
+                })
+            entry["_linked_fauna"] = linked
+            link_count += 1
+
+    # Fauna → Dictionary: match by scientific_name
+    for entry in fauna["data"]:
+        sci = (entry.get("scientific_name") or "").strip().lower()
+        if sci and sci in dict_by_sci:
+            linked = []
+            for d_entry in dict_by_sci[sci]:
+                linked.append({
+                    "id": d_entry["id"],
+                    "entry": d_entry.get("entry", ""),
+                    "definition": d_entry.get("definition", ""),
+                })
+            entry["_linked_dictionary"] = linked
+
+    # Write updated files
+    dict_file.write_text(
+        json.dumps(dictionary, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    fauna_file.write_text(
+        json.dumps(fauna, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"  Cross-linked {link_count} dictionary↔fauna entries by scientific name")
+
+
+def generate_index(counts):
     """Generate index JSON with platform counts."""
     print("=== Generating Index Data ===")
 
     index_data = {
         "meta": {"description": "Boe Eno Moto - Index data"},
         "data": [
-            {
-                "dictionary_count": dictionary_count,
-                "fauna_count": fauna_count,
-                "encyclopedia_count": encyclopedia_count,
-                "bibliography_count": bibliography_count,
-                "recordings_count": recordings_count,
-            }
+            {f"{name}_count": count for name, count in counts.items()}
         ],
     }
 
@@ -454,34 +546,43 @@ def generate_index(
     print(f"  Exported to {output_file}")
 
 
+# Registry of converters — add new platforms here
+CONVERTERS = {
+    "dictionary": convert_dictionary,
+    "fauna": convert_fauna,
+    "encyclopedia": convert_encyclopedia,
+    "bibliography": convert_bibliography,
+    "recordings": convert_recordings,
+}
+
+
 def main():
     print("Boe Eno Moto - Data Conversion\n")
 
-    dictionary_count = convert_dictionary()
-    print()
+    counts = {}
+    for name, converter in CONVERTERS.items():
+        counts[name] = converter()
+        print()
 
-    fauna_count = convert_fauna()
-    print()
-
-    encyclopedia_count = convert_encyclopedia()
-    print()
-
-    bibliography_count = convert_bibliography()
-    print()
-
-    recordings_count = convert_recordings()
-    print()
-
+    # Post-processing: attach recordings to dictionary entries
     attach_recordings_to_dictionary()
     print()
 
-    generate_index(
-        dictionary_count,
-        fauna_count,
-        encyclopedia_count,
-        bibliography_count,
-        recordings_count,
-    )
+    # Cross-link datasets
+    cross_link_datasets()
+    print()
+
+    # Copy large datasets to docs/ for fetch()-based loading
+    import shutil
+    for name in ("dictionary", "encyclopedia"):
+        src = DATA_DIR / f"{name}.json"
+        dst = DOCS_DIR / f"{name}-data.json"
+        shutil.copy2(src, dst)
+        print(f"  Copied {src.name} → {dst}")
+    print()
+
+    # Generate index with all counts
+    generate_index(counts)
     print()
 
     print("=== Conversion Complete ===")

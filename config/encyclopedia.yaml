@@ -1,4 +1,4 @@
-input: ../data/encyclopedia_output.json
+input: ../data/encyclopedia.json
 template: templates/encyclopedia.html.j2
 output: ../docs/encyclopedia.html
 

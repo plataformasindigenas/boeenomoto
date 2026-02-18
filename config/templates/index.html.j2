@@ -1,6 +1,6 @@
 {% extends "base.html.j2" %}
 
-{% block title %}Início{% endblock %}
+{% block title %}{{ t.index_title | default('Início') }}{% endblock %}
 
 {% block extra_styles %}
         .hero {
@@ -73,51 +73,43 @@
 
 {% block content %}
     <div class="hero">
-        <h1>Boe Eno Moto</h1>
-        <p>Mundo Bororo</p>
+        <h1>{{ t.index_hero_title | default('Boe Eno Moto') }}</h1>
+        <p>{{ t.index_hero_subtitle | default('Mundo Bororo') }}</p>
     </div>
 
     <div class="platforms">
         <a href="dictionary.html" class="platform-card">
-            <h2>Dicionário</h2>
-            <p>Palavras e expressões da língua Bororo com tradução para Português, transcrição fonética e exemplos.</p>
+            <h2>{{ t.card_dictionary_title | default('Dicionário') }}</h2>
+            <p>{{ t.card_dictionary_desc | default('') }}</p>
             <div class="count">{{ data[0].dictionary_count }}</div>
-            <div class="label">entradas</div>
+            <div class="label">{{ t.card_dictionary_label | default('entradas') }}</div>
         </a>
 
         <a href="encyclopedia.html" class="platform-card">
-            <h2>Enciclopédia</h2>
-            <p>Verbetes sobre cultura, rituais, organização social e conhecimentos tradicionais do povo Bororo.</p>
+            <h2>{{ t.card_encyclopedia_title | default('Enciclopédia') }}</h2>
+            <p>{{ t.card_encyclopedia_desc | default('') }}</p>
             <div class="count">{{ data[0].encyclopedia_count }}</div>
-            <div class="label">verbetes</div>
+            <div class="label">{{ t.card_encyclopedia_label | default('verbetes') }}</div>
         </a>
 
         <a href="fauna.html" class="platform-card">
-            <h2>Fauna</h2>
-            <p>Nomes de animais na língua Bororo com classificação tradicional, nomes científicos e imagens.</p>
+            <h2>{{ t.card_fauna_title | default('Fauna') }}</h2>
+            <p>{{ t.card_fauna_desc | default('') }}</p>
             <div class="count">{{ data[0].fauna_count }}</div>
-            <div class="label">espécies</div>
+            <div class="label">{{ t.card_fauna_label | default('espécies') }}</div>
         </a>
 
         <a href="bibliography.html" class="platform-card">
-            <h2>Bibliografia</h2>
-            <p>Referências bibliográficas sobre a língua, cultura e história do povo Bororo.</p>
+            <h2>{{ t.card_bibliography_title | default('Bibliografia') }}</h2>
+            <p>{{ t.card_bibliography_desc | default('') }}</p>
             <div class="count">{{ data[0].bibliography_count }}</div>
-            <div class="label">referências</div>
+            <div class="label">{{ t.card_bibliography_label | default('referências') }}</div>
         </a>
     </div>
 
     <div class="about">
-        <h2>Sobre o Projeto</h2>
-        <p>
-            <strong>Boe eno moto</strong> ("mundo Bororo") é uma plataforma dedicada à preservação,
-            documentação e valorização dos saberes linguísticos e culturais do povo Bororo.
-        </p>
-        <p>
-            Este repositório reúne uma variedade de recursos linguísticos e etnográficos, tanto
-            históricos quanto contemporâneos, com o objetivo de apoiar o ensino, a pesquisa e os
-            esforços de revitalização da língua Bororo. A plataforma oferece um conjunto de
-            ferramentas voltadas para o estudo linguístico e antropológico.
-        </p>
+        <h2>{{ t.index_about_title | default('Sobre o Projeto') }}</h2>
+        <p>{{ t.index_about_p1 | default('') }}</p>
+        <p>{{ t.index_about_p2 | default('') }}</p>
     </div>
 {% endblock %}

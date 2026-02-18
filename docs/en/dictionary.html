@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dicionário Bororo - Boe Eno Moto</title>
+    <title>Bororo Dictionary - Boe Eno Moto</title>
     <style>
         * {
             box-sizing: border-box;
@@ -16,6 +16,20 @@
             padding: 1rem;
             background: #F9F6F2;
             color: #333;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3D352F;
+            color: white;
+            padding: 0.5rem 1rem;
+            z-index: 100;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+        }
+        .skip-link:focus {
+            top: 0;
         }
         nav {
             background: #3D352F;
@@ -41,6 +55,14 @@
             font-weight: 600;
             font-size: 1.1rem;
         }
+        nav .lang-switch {
+            margin-left: auto;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        nav .lang-switch:hover {
+            opacity: 1;
+        }
         header {
             text-align: center;
             padding: 1rem 0;
@@ -52,7 +74,7 @@
             color: #3D352F;
         }
         .subtitle {
-            color: #666;
+            color: #6B6B6B;
             font-size: 0.95rem;
         }
         .search-container {
@@ -79,6 +101,7 @@
         }
         .search-input:focus {
             border-color: #C75B39;
+            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
         }
         .filter-select {
             padding: 0.75rem;
@@ -91,7 +114,7 @@
         .stats {
             margin-top: 0.5rem;
             font-size: 0.85rem;
-            color: #666;
+            color: #6B6B6B;
         }
         .results-container {
             background: white;
@@ -102,11 +125,11 @@
         .empty-state {
             padding: 3rem;
             text-align: center;
-            color: #888;
+            color: #6B6B6B;
         }
         .empty-state h2 {
             margin: 0 0 0.5rem 0;
-            color: #666;
+            color: #6B6B6B;
         }
         .entry {
             padding: 1rem;
@@ -131,11 +154,11 @@
             color: #3D352F;
         }
         .entry-secondary {
-            color: #666;
+            color: #6B6B6B;
             font-size: 1rem;
         }
         .entry-ipa {
-            color: #666;
+            color: #6B6B6B;
             font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
         }
         .entry-tag {
@@ -159,7 +182,7 @@
         }
         .entry-scientific {
             font-style: italic;
-            color: #666;
+            color: #6B6B6B;
             font-size: 0.9rem;
         }
         .entry-comment {
@@ -168,7 +191,7 @@
             background: #fff8e1;
             border-radius: 4px;
             font-size: 0.9rem;
-            color: #666;
+            color: #6B6B6B;
         }
         .entry-media {
             display: flex;
@@ -210,7 +233,7 @@
             padding: 1rem;
             text-align: center;
             font-size: 0.85rem;
-            color: #888;
+            color: #6B6B6B;
             border-top: 1px solid #e0e0e0;
         }
         footer a {
@@ -232,6 +255,11 @@
             }
             nav {
                 justify-content: center;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
             }
         }
         .entry-audio {
@@ -263,70 +291,57 @@
     </style>
 </head>
 <body>
-    <nav>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <nav aria-label="Main navigation">
         <a href="index.html" class="brand">Boe Eno Moto</a>
-        <a href="dictionary.html" class="active">Dicionário</a>
-        <a href="encyclopedia.html">Enciclopédia</a>
+        <a href="dictionary.html" class="active" aria-current="page">Dictionary</a>
+        <a href="encyclopedia.html">Encyclopedia</a>
         <a href="fauna.html">Fauna</a>
-        <a href="bibliography.html">Bibliografia</a>
+        <a href="bibliography.html">Bibliography</a>
+        <a href="../pt/dictionary.html" class="lang-switch">PT</a>
     </nav>
 
+    <main id="main-content">
     <header>
-        <h1>Dicionário Bororo</h1>
-        <p class="subtitle">Bororo Dictionary Entries &mdash; 2866 entradas</p>
+        <h1>Bororo Dictionary</h1>
+        <p class="subtitle">Bororo Dictionary Entries &mdash; 2866 entries</p>
     </header>
 
     <div class="search-container">
         <div class="search-row">
-            <input type="text" id="search-input" class="search-input" placeholder="Pesquisar (Bororo ou Português)..." autocomplete="off" disabled>
-            <select id="pos-filter" class="filter-select" disabled>
-                <option value="">Todas as classes</option>
+            <input type="text" id="search-input" class="search-input" placeholder="Search (Bororo or Portuguese)..." autocomplete="off" disabled aria-label="Search">
+            <select id="pos-filter" class="filter-select" disabled aria-label="Filter results">
+                <option value="">All word classes</option>
             </select>
         </div>
-        <div class="stats" id="stats"></div>
+        <div class="stats" id="stats" aria-live="polite"></div>
     </div>
 
-    <div class="results-container" id="results">
+    <div class="results-container" id="results" aria-live="polite">
         <div class="loading-state" id="loading">
-            Carregando dicionário...
+            Loading dictionary...
         </div>
     </div>
+    </main>
 
     <footer>
-        <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
 <p>Schema v1.0</p>    </footer>
 
-    <script src="js/common.js"></script>
+    <script src="../js/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
 
     <script>
-    var posLabels = {
-        'LEX': 'Lexema',
-        'S': 'Substantivo',
-        'VC': 'Verbo Causativo',
-        'ADV': 'Advérbio',
-        'PPASS': 'Part. Pass.',
-        'POSP': 'Posposição',
-        'SUF': 'Sufixo',
-        'INTJ': 'Interjeição',
-        'VT': 'Verbo Trans.',
-        'PRON': 'Pronome',
-        'V': 'Verbo',
-        'PRCL': 'Partícula',
-        'PPAS': 'Part. Pass.',
-        'PPART': 'Partícula',
-        'NUM': 'Numeral',
-        'IP': 'IP',
-        'DEM': 'Demonstrativo',
-        'CONJ': 'Conjunção',
-        'X': 'Outro',
-        'PROPN': 'Nome Próprio'
-    };
+    var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "entries_label": "entries", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_generated": "Generated with", "html_lang": "en", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_title": "About the Project", "index_hero_subtitle": "Bororo World", "index_hero_title": "Boe Eno Moto", "index_title": "Home", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_fauna": "Fauna", "nav_label": "Main navigation", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species"};
+    var posLabels = {};
+    ['LEX','S','VC','ADV','PPASS','POSP','SUF','INTJ','VT','PRON','V','PRCL','PPAS','PPART','NUM','IP','DEM','CONJ','X','PROPN'].forEach(function(k) {
+        posLabels[k] = T['pos_' + k] || k;
+    });
 
-    fetch('dictionary-data.json')
+    fetch('../dictionary-data.json')
         .then(function(r) { return r.json(); })
         .then(function(json) {
-            // Populate POS filter from data
             var posTypes = {};
             json.data.forEach(function(item) {
                 if (item.pos) posTypes[item.pos] = true;
@@ -339,15 +354,13 @@
                 posFilter.appendChild(opt);
             });
 
-            // Enable inputs
             document.getElementById('search-input').disabled = false;
             posFilter.disabled = false;
 
-            // Show empty state
             document.getElementById('results').innerHTML =
                 '<div class="empty-state">' +
-                '<h2>Pesquise no dicionário</h2>' +
-                '<p>Digite uma palavra em Bororo ou Português para começar</p>' +
+                '<h2>' + T.dict_empty_title + '</h2>' +
+                '<p>' + T.dict_empty_text + '</p>' +
                 '</div>';
 
             initSearchPage({
@@ -366,7 +379,7 @@
                     var html = '<div class="entry">';
 
                     html += '<div class="entry-header">';
-                    html += '<span class="entry-word">' + highlightMatches(entry.entry, matchMap['entry']) + '</span>';
+                    html += '<span class="entry-word" lang="bor">' + highlightMatches(entry.entry, matchMap['entry']) + '</span>';
                     if (entry.ipa) {
                         html += '<span class="entry-ipa">[' + highlightMatches(entry.ipa, matchMap['ipa']) + ']</span>';
                     }
@@ -382,7 +395,7 @@
                         html += '<p class="entry-example">' + highlightMatches(entry.example_sent, matchMap['example_sent']) + '</p>';
                     }
                     if (entry.scientific_name) {
-                        html += '<p class="entry-scientific">Nome científico: <em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
+                        html += '<p class="entry-scientific">' + T.dict_scientific_name + ': <em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
                     }
                     if (entry.comment) {
                         html += '<div class="entry-comment">' + highlightMatches(entry.comment, matchMap['comment']) + '</div>';
@@ -396,9 +409,18 @@
                             var speaker = a.speaker.charAt(0).toUpperCase() + a.speaker.slice(1);
                             html += '<div class="audio-item">';
                             html += '<span class="audio-speaker">' + escapeHtml(speaker) + '</span>';
-                            html += '<audio controls preload="none"><source src="recordings/' + escapeHtml(a.file_path) + '" type="' + mimeType + '"></audio>';
+                            html += '<audio controls preload="none"><source src="../recordings/' + escapeHtml(a.file_path) + '" type="' + mimeType + '"></audio>';
                             html += '</div>';
                         }
+                        html += '</div>';
+                    }
+
+                    if (entry._linked_fauna && entry._linked_fauna.length > 0) {
+                        html += '<div class="entry-links" style="margin-top:0.5rem">';
+                        html += '<strong>' + T.see_in_fauna + ':</strong> ';
+                        html += entry._linked_fauna.map(function(f) {
+                            return '<a href="fauna.html?search=' + encodeURIComponent(f.name_bororo) + '">' + escapeHtml(f.name_bororo) + '</a>';
+                        }).join(', ');
                         html += '</div>';
                     }
 
@@ -421,12 +443,12 @@
                     return html;
                 },
                 labels: {
-                    results: function(n) { return 'resultado' + (n !== 1 ? 's' : '') + ' encontrado' + (n !== 1 ? 's' : ''); },
-                    emptyTitle: 'Pesquise no dicionário',
-                    emptyText: 'Digite uma palavra em Bororo ou Português para começar',
-                    noResults: 'Nenhum resultado',
-                    noResultsHint: 'Tente uma palavra diferente ou altere o filtro',
-                    overflow: function(n) { return 'Mostrando 100 de ' + n + ' resultados. Refine sua busca.'; }
+                    results: function(n) { return n !== 1 ? T.dict_result_plural : T.dict_result_singular; },
+                    emptyTitle: T.dict_empty_title,
+                    emptyText: T.dict_empty_text,
+                    noResults: T.dict_no_results,
+                    noResultsHint: T.dict_no_results_hint,
+                    overflow: function(n) { return T.dict_overflow.replace('{n}', n); }
                 }
             });
         });

@@ -16,6 +16,11 @@ dependencies = [
     "bibtexparser>=1.4.0",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
 [project.urls]
 Homepage = "https://github.com/plataformasindigenas/boeenomoto"
 Repository = "https://github.com/plataformasindigenas/boeenomoto"
