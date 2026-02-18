@@ -47,6 +47,18 @@ O objetivo principal não é contar um evento isolado, mas mostrar como as coisa
 
 ---
 
+## Bakaru como conhecimento em circulação
+
+Os bakaru não existem como textos fixos guardados na memória coletiva.  
+Eles existem enquanto são narrados.
+
+Cada narração atualiza a tradição e reposiciona o conhecimento no presente. Por isso, ao contar um bakaru, costuma-se indicar de quem se ouviu: a validade da história depende da cadeia de transmissão, não de uma versão original imutável.
+
+Assim, o bakaru não é apenas conteúdo narrativo, mas um processo social.  
+A cultura não é vista como um conjunto de histórias armazenadas, e sim como algo que circula entre as pessoas por meio da fala.
+
+As variações entre versões não representam erro ou esquecimento, mas adaptação legítima às circunstâncias. Cada nova narração reinterpreta as relações entre humanos, animais, espíritos e acontecimentos, mantendo o mundo inteligível no presente.
+
 ## Variantes
 
 Os bakaru não são textos fixos.  
