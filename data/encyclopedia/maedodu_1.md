@@ -1,13 +1,17 @@
 ---
 id: maedodu_1
-headword: Maedodu
+title: Maedodu
 variants: []
-summary: Alargado, estendido, encompridado, entristecido.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Alargado, estendido, encompridado, entristecido.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

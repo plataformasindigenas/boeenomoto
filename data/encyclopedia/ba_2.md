@@ -1,29 +1,26 @@
 ---
 id: ba_2
-headword: Ba
+title: Ba
 variants:
 - ''
-summary: 1) folíolo ou semifolíolo do broto de babaçu; 2) estojo peniano quotidiano
-  (indumentária indispensável do homem bororo após a iniciação); 3) certo tipo de
-  boe etao kajejewu (‘coroa dos bororo’); 4) casa; 5) aldeia.
-keywords:
-- vestimenta
-- estojo peniano
-- babaçu
-- palmeira
-- indumentária
-- clã
-- Aroroe
-- Ecerae
-- Tugarege
-- casa
-- aldeia
-updated_at: '2026-01-05'
+abstract: 1) folíolo ou semifolíolo do broto de babaçu; 2) estojo peniano quotidiano (indumentária indispensável do homem
+  bororo após a iniciação); 3) certo tipo de boe etao kajejewu (‘coroa dos bororo’); 4) casa; 5) aldeia.
+categories:
+- cultura-material/vestimenta
+- natureza/flora/palmeira
+- sociedade/organização-social/clãs
+- sociedade/organização-social/metades
+- cultura-material/habitação
+date: '2026-01-05'
 url: ''
 images: []
 examples:
 - bororo: <em>ino o ba</em>
   translation: meu estojo peniano
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 *boe* 'coisa’ + *a* (*ai*) 'folha de palmeira’.

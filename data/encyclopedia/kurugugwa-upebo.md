@@ -1,13 +1,17 @@
 ---
 id: kurugugwa-upebo
-headword: Kurugugwa upebo
+title: Kurugugwa upebo
 variants: []
-summary: Kurugugwa upebo1 - Tipo de boe etao kajejewy 'coroa dos bororo'.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Kurugugwa upebo1 - Tipo de boe etao kajejewy 'coroa dos bororo'.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

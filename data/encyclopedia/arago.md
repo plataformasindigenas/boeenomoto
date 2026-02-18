@@ -1,16 +1,19 @@
 ---
 id: arago
-headword: Arago
+title: Arago
 variants: []
-summary: Porrete de madeira.
-keywords:
-- arma
-- caça
-- porrete
-updated_at: '2026-02-03'
+abstract: Porrete de madeira.
+categories:
+- cultura-material/arma
+- natureza/fauna/caça
+date: '2026-02-03'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 Com esta denominação designam-se verdadeiros cacetes, muito bem acabados. Variam na sua forma e grandeza e são fabricados com madeiras duras, possivelmente com aroeira, apresentando, na empunhadura, um estreitamento, onde se amarra um cordel. Serve para carregá-los, presos ao pescoço ou à fronte, e caídos nas costas, ou apensos a um ombro. A extremidade da empunhadura é mais dilatada, às vezes em forma de cauda de peixe; a outra é pontiaguda ou truncada. São usados geralmente para dar o golpe de graça na caça ou na pesca.

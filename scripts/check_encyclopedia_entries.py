@@ -63,25 +63,30 @@ def main() -> int:
             continue
 
         entry_id = front_matter.get("id")
-        headword = front_matter.get("headword")
+        title = front_matter.get("title") or front_matter.get("headword")
         if not entry_id:
             errors.append(f"{path}: missing 'id'")
-        if not headword:
-            errors.append(f"{path}: missing 'headword'")
+        if not title:
+            errors.append(f"{path}: missing 'title'")
 
         if entry_id in seen_ids:
             errors.append(f"{path}: duplicate id '{entry_id}'")
         if entry_id:
             seen_ids.add(entry_id)
 
-        updated_at = front_matter.get("updated_at")
-        if updated_at and not DATE_RE.match(str(updated_at)):
-            errors.append(f"{path}: updated_at must be YYYY-MM-DD")
+        date = front_matter.get("date") or front_matter.get("updated_at")
+        if date and not DATE_RE.match(str(date)):
+            errors.append(f"{path}: date must be YYYY-MM-DD")
 
-        for key in ("variants", "keywords", "images", "examples"):
+        for key in ("variants", "categories", "keywords", "images", "examples",
+                     "references", "see_also"):
             val = front_matter.get(key)
             if val is not None and not isinstance(val, list):
                 errors.append(f"{path}: '{key}' must be a list")
+
+        infobox = front_matter.get("infobox")
+        if infobox is not None and not isinstance(infobox, (dict, str)):
+            errors.append(f"{path}: 'infobox' must be a dict or string")
 
         if HTML_TAG_RE.search(body):
             errors.append(f"{path}: HTML tags found in body (not allowed)")

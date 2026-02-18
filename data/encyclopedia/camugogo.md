@@ -1,13 +1,17 @@
 ---
 id: camugogo
-headword: Camugogo
+title: Camugogo
 variants: []
-summary: Camugogo — Absolutamente. Ex. boe kimo camugogo 'absolutamente nada'.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Camugogo — Absolutamente. Ex. boe kimo camugogo 'absolutamente nada'.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

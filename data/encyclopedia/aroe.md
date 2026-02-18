@@ -1,32 +1,39 @@
 ---
 id: aroe
-headword: Aroe
+title: Aroe
 variants: []
-summary: Termo polissêmico central na cosmologia bororo. Pode designar coisas leves
-  como pluma; alma e seu destino no além; espíritos/fantasmas e seres imaginários;
-  cadáver; antepassados e epônimos de clãs; seres primaciais/privativos e direitos
-  de primazia; além de categorias sociais e rituais ligadas à organização em clãs,
-  metades e representações.
-keywords:
-- alma
-- espírito
-- fantasma
+abstract: Termo polissêmico central na cosmologia bororo. Pode designar coisas leves como pluma; alma e seu destino no além;
+  espíritos/fantasmas e seres imaginários; cadáver; antepassados e epônimos de clãs; seres primaciais/privativos e direitos
+  de primazia; além de categorias sociais e rituais ligadas à organização em clãs, metades e representações.
+categories:
+- cosmologia/alma
+- cosmologia/espírito
 - cosmologia
-- morte
-- funeral
-- ritos fúnebres
-- xamanismo
-- metempsicose
-- clãs
-- metades
-- primazia
-- ser primacial
-- antepassados
-- representações rituais
-updated_at: '2026-01-05'
+- cosmologia/morte
+- ritual/funeral
+- cosmologia/xamanismo
+- cosmologia/metempsicose
+- sociedade/organização-social/clãs
+- sociedade/organização-social/metades
+- cosmologia/primazia
+- cosmologia/antepassados
+- ritual/representações
+date: '2026-01-05'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references:
+- Albisetti1962aEnciclopedia
+- Colbacchini1942aOs
+- Steinen1894Unter
+see_also:
+- boe
+- arago
+- aroe_eceba_kejebo
+- aroe_eoprewu
+- ecerae
 ---
 
 ### qualquer coisa leve como pluma; 2. alma, espírito, fantasma; 3. de qualquer ser imaginário; 7. de cada membro do clã dos Bokodori Ecerae; 8. de cada membro da tribo Bororo; 9. de cada ser primacial ou privativo de cada clã; 10. de cada um dos epônimos dos clãs; 11. dos clãs heterônimos e exógamos, cujos membros podem contrair casamento entre si; 12. de cada representação fúnebre ou não; 13. de cada ator de uma representação qualquer; 14. de qualquer monstro lendário.

@@ -1,13 +1,17 @@
 ---
 id: jakomea-ika
-headword: Jakomea ika
+title: Jakomea ika
 variants: []
-summary: Jakomea ika - Tio de boeiga 'arco'
-keywords: []
-updated_at: '2026-01-04'
+abstract: Jakomea ika - Tio de boeiga 'arco'
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

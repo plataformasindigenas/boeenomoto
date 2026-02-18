@@ -1,23 +1,28 @@
 ---
 id: mori
-headword: Mori
+title: Mori
 variants: []
-summary: "Vingança, reompensa. \nConceito central na vida social e ritual bororo,\
-  \ abrangendo vingança, recompensa, retribuição social, compensação de danos e obrigação\
-  \ ritual."
-keywords:
-- vingança
-- retribuição
+abstract: "Vingança, reompensa. \nConceito central na vida social e ritual bororo, abrangendo vingança, recompensa, retribuição\
+  \ social, compensação de danos e obrigação ritual."
+categories:
+- sociedade/vingança
+- ritual/retribuição
 - ritual
-- obrigação social
-- urucum
-- onça
-- morte
-- funeral
-updated_at: '2026-01-07'
+- sociedade
+- cultura-material
+- natureza/fauna/mamífero
+- cosmologia/morte
+- ritual/funeral
+date: '2026-01-07'
 url: ''
 images: []
 examples: []
+entry_type: ritual
+infobox:
+  participantes: "Todos os clãs"
+  tipo: "Retribuição ritual"
+references: []
+see_also: []
 ---
 
 O termo *mori* é um conceito central na organização social, moral e ritual dos Bororo. Trata-se de uma noção polissêmica que abrange ideias de vingança, retribuição, recompensa, compensação de danos, presente ritual e obrigação social, variando conforme o contexto em que é empregado.

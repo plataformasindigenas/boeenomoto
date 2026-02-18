@@ -1,13 +1,17 @@
 ---
 id: jakoro-wari
-headword: Jakoro wari
+title: Jakoro wari
 variants: []
-summary: Nome próprio.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Nome próprio.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

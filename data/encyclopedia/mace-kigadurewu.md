@@ -1,15 +1,19 @@
 ---
 id: mace-kigadurewu
-headword: Mace kigadurewu
+title: Mace kigadurewu
 variants: []
-summary: Pernilongo das vargens de cor acinzentada.
-keywords:
-- inseto
-- fauna
-updated_at: '2026-01-04'
+abstract: Pernilongo das vargens de cor acinzentada.
+categories:
+- natureza/fauna/inseto
+- natureza/fauna
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

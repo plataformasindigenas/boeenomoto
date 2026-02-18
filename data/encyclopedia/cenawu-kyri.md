@@ -1,13 +1,17 @@
 ---
 id: cenawu-kyri
-headword: Cenawu kyri
+title: Cenawu kyri
 variants: []
-summary: Cenawu kyriCenawu Kyri - n. p. → Enciclopédia v. II.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Cenawu kyriCenawu Kyri - n. p. → Enciclopédia v. II.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

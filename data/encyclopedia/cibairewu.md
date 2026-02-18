@@ -1,13 +1,17 @@
 ---
 id: cibairewu
-headword: Cibairewu
+title: Cibairewu
 variants: []
-summary: Cibairewu - n. p. → Enciclopédia II v.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Cibairewu - n. p. → Enciclopédia II v.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

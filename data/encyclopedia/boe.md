@@ -1,10 +1,10 @@
 ---
 id: boe
-headword: Boe
+title: Boe
 variants: []
-summary: Boe -- sing. e plural Coisa, índio bororo, tempo astronómico, estado atmosférico.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Boe -- sing. e plural Coisa, índio bororo, tempo astronómico, estado atmosférico.
+categories: []
+date: '2026-01-04'
 url: ''
 images:
 - url: images/boeEnc.jpg
@@ -12,23 +12,26 @@ images:
   credit: ''
 examples:
 - bororo: ou kaiamodoge
-  translation: 'se são tribos inimigas, mas não boe. Os civilizados são Barae e os
-    de raça negra são Tabae. de raça negra são tabae. 2.1. Divisão da tribo Atualmente
-    a designação mais conhecida dos membros da tribo bororo é Orari Mogodoge, ou seja
-    Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar
-    uma das quatro partes em que, segundo urna tradição bastante recente foi dividida
-    a tribo. Dessa divisão resultaram os seguintes grupos: Bororos Ocidentais Habitam
-    a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação
-    com os outros grupos. A língua e, talvez, usos e costumes alteraram-se, conservando-se,
-    porém, marcados traços de uma origem comum como parecem confirmar os trabalhos
-    de Waehneldt e Koslowski (Waehneldt 1864, XXVII: 193-229'
+  translation: 'se são tribos inimigas, mas não boe. Os civilizados são Barae e os de raça negra são Tabae. de raça negra
+    são tabae. 2.1. Divisão da tribo Atualmente a designação mais conhecida dos membros da tribo bororo é Orari Mogodoge,
+    ou seja Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar uma das quatro partes em que,
+    segundo urna tradição bastante recente foi dividida a tribo. Dessa divisão resultaram os seguintes grupos: Bororos Ocidentais
+    Habitam a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação com os outros grupos. A língua
+    e, talvez, usos e costumes alteraram-se, conservando-se, porém, marcados traços de uma origem comum como parecem confirmar
+    os trabalhos de Waehneldt e Koslowski (Waehneldt 1864, XXVII: 193-229'
 - bororo: Koslowski 1895
-  translation: 'VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski,
-    porém, citando e transcrevendo Steinen, confunde os bororo ocidentais com os orientais,
-    os quais últimos foram os únicos descritos pelo explorador. Os bororo ocidentais
-    subdividiram-se ainda em bororo cabaçais e bororo da campanha. Destes, os primeiros
-    habitara as margens do rio Cabaçal, afluente da direita do r Paraguai, no qual
-    desemboca pouco ao norte da cidade de Cáceres'
+  translation: 'VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski, porém, citando e transcrevendo Steinen,
+    confunde os bororo ocidentais com os orientais, os quais últimos foram os únicos descritos pelo explorador. Os bororo
+    ocidentais subdividiram-se ainda em bororo cabaçais e bororo da campanha. Destes, os primeiros habitara as margens do
+    rio Cabaçal, afluente da direita do r Paraguai, no qual desemboca pouco ao norte da cidade de Cáceres'
+entry_type: ''
+infobox: {}
+references: []
+see_also:
+- aroe
+- ecerae
+- arago
+- mori
 ---
 
 ### Coisa2

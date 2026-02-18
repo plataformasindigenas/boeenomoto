@@ -1,23 +1,23 @@
 ---
 id: akiri-i-biri-batagagarewu
-headword: Akiri i biri batagagarewu
+title: Akiri i biri batagagarewu
 variants: []
-summary: Designação bororo de um tipo de angico cuja casca apresenta aspecto semelhante
-  à pele de uma lagartixa; conhecido em português como angico-cascudo (Acacia sp.).
-keywords:
-- etnobotânica
-- flora
-- angico
-- acacia
-- classificação indígena
-- analogia zoológica
-- cerrado
-updated_at: '2026-01-04'
+abstract: Designação bororo de um tipo de angico cuja casca apresenta aspecto semelhante à pele de uma lagartixa; conhecido
+  em português como angico-cascudo (Acacia sp.).
+categories:
+- natureza/flora
+- natureza/fauna/classificação
+- natureza
+date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Acacia
 images: []
 examples:
 - bororo: []
   translation: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 A expressão Akiri i biri batagagarewu é formada por diferentes elementos morfológicos do bororo: akiri i, ‘angico’; biri, ‘casca’; batagaga, variante de ‘lagartixa’; e o nominalizador relativo -rewu. O termo pode ser traduzido literalmente como ‘angico de casca semelhante à pele de lagartixa’. A denominação refere-se a um tipo específico de angico cuja casca apresenta textura e aparência comparáveis à pele de determinada lagartixa.

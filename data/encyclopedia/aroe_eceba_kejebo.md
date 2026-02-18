@@ -1,28 +1,29 @@
 ---
 id: aroe_eceba_kejebo
-headword: Aroe Eceba Kejebo
+title: Aroe Eceba Kejebo
 variants:
 - Ritual do Gavião Real
 - Aroe Eceba
-summary: Ritual bororo associado ao gavião-real (Aroe Eceba), envolvendo morte ritual
-  do animal, oferenda, distribuição de penas, confecção de adornos e uma complexa
-  cerimônia pública ligada às almas e aos direitos de primazia dos clãs.
-keywords:
+abstract: Ritual bororo associado ao gavião-real (Aroe Eceba), envolvendo morte ritual do animal, oferenda, distribuição de
+  penas, confecção de adornos e uma complexa cerimônia pública ligada às almas e aos direitos de primazia dos clãs.
+categories:
 - ritual
-- gavião-real
-- Aroe
-- penas
-- adornos rituais
-- Baado Jebage
-- Iwagududoge
-- Kie
-- espiritualidade
-- dança
-- canto ritual
-updated_at: '2026-01-28'
+- natureza/fauna/ave
+- cosmologia
+- cultura-material/ornamentação
+- ritual/adornos
+- sociedade/organização-social/clãs
+- cosmologia/espiritualidade
+- ritual/dança
+- ritual/canto
+date: '2026-01-28'
 url: https://www.youtube.com/watch?v=cBSYffDyAIk
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 ### Aroe Eceba Kejebo — Ritual do Gavião Real

@@ -1,15 +1,18 @@
 ---
 id: itoborewu
-headword: Itoborewu
+title: Itoborewu
 variants: []
-summary: Itoborewu - (itobo 'parte basilar do pecíolo de folha de palmeira' + -re
-  'indicativo' + -wy 'relativizador') palmeira que apresenta partes basilares de pecíolos
-  de fólhas presas ao estipe. Designação genérica de qualquer palmeira adulta.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Itoborewu - (itobo 'parte basilar do pecíolo de folha de palmeira' + -re 'indicativo' + -wy 'relativizador') palmeira
+  que apresenta partes basilares de pecíolos de fólhas presas ao estipe. Designação genérica de qualquer palmeira adulta.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

@@ -82,3 +82,47 @@ def test_html_has_language_switcher(docs_dir):
 
     en_content = (docs_dir / "en" / "index.html").read_text(encoding="utf-8")
     assert "../pt/" in en_content
+
+
+def test_article_pages_exist(docs_dir):
+    """Verify encyclopedia article pages are generated for each locale."""
+    for locale in ["pt", "en"]:
+        enc_dir = docs_dir / locale / "encyclopedia"
+        assert enc_dir.exists(), f"Missing {locale}/encyclopedia/ directory"
+        html_files = list(enc_dir.glob("*.html"))
+        assert len(html_files) > 100, (
+            f"Expected >100 article pages in {locale}/encyclopedia/, got {len(html_files)}"
+        )
+
+
+def test_article_page_structure(docs_dir):
+    """Verify article pages have expected structure."""
+    article = docs_dir / "pt" / "encyclopedia" / "boe.html"
+    assert article.exists(), "Missing boe.html article page"
+    content = article.read_text(encoding="utf-8")
+    assert 'lang="pt-BR"' in content
+    assert "<article>" in content
+    assert "Boe" in content
+    assert 'class="breadcrumb"' in content
+    assert "common.js" in content
+    assert 'class="skip-link"' in content
+
+
+def test_article_page_nav_links(docs_dir):
+    """Verify article page navigation links resolve correctly."""
+    article = docs_dir / "pt" / "encyclopedia" / "ecerae.html"
+    content = article.read_text(encoding="utf-8")
+    # Nav links should use ../ to go up to locale dir
+    assert '../dictionary.html' in content
+    assert '../encyclopedia.html' in content
+    assert '../fauna.html' in content
+    # Lang switch should use ../../ to go up to docs root
+    assert '../../en/encyclopedia.html' in content
+    # Back to index link
+    assert '../encyclopedia.html' in content
+
+
+def test_encyclopedia_search_page_links_to_articles(docs_dir):
+    """Verify the encyclopedia search page references article pages."""
+    content = (docs_dir / "pt" / "encyclopedia.html").read_text(encoding="utf-8")
+    assert "encyclopedia/" in content or "encyclopedia-data.json" in content

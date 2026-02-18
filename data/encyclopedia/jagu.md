@@ -1,13 +1,17 @@
 ---
 id: jagu
-headword: Jagu
+title: Jagu
 variants: []
-summary: Jagu -- adv. Absolutamente, completamente, mesmo.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Jagu -- adv. Absolutamente, completamente, mesmo.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

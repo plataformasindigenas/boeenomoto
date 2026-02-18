@@ -1,27 +1,25 @@
 ---
 id: baraedu_1
-headword: Baraedu
+title: Baraedu
 variants:
 - baraedu
 - baráe
 - barae
-summary: Singular de barae. Termo geral para “civilizado” (não indígena) e entrada
-  histórica sobre os primeiros contatos, as colônias do Pogúbo e a atuação salesiana
-  (1718–1902).
-keywords:
-- civilizado
-- história
-- contato
-- Bororo
-- Salesianos
-- Cuiabá
-- Pogúbo
-- São Lourenço
-- Colônia Teresa Cristina
-updated_at: '2026-01-07'
+abstract: Singular de barae. Termo geral para “civilizado” (não indígena) e entrada histórica sobre os primeiros contatos,
+  as colônias do Pogúbo e a atuação salesiana (1718–1902).
+categories:
+- sociedade/contato
+- etnografia/história
+- sociedade
+- geografia
+date: '2026-01-07'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 Singular de *barae*. Designa “civilizado” (não indígena), de forma geral. Logo que os Bororo conheceram os primeiros civilizados, determinaram — como clã “possuidor” deles — o clã dos **Bokodori Eceráe**, conforme o costume tradicional da tribo.

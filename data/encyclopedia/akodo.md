@@ -1,13 +1,17 @@
 ---
 id: akodo
-headword: Akodo
+title: Akodo
 variants: []
-summary: ako 'som' + -do 'sufixo causativo'.
-keywords: []
-updated_at: '2026-01-04'
+abstract: ako 'som' + -do 'sufixo causativo'.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 **Tocar um instrumento musical.**

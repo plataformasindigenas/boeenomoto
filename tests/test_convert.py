@@ -133,3 +133,46 @@ def test_index_has_counts(data_dir):
     assert "bibliography_count" in counts
     assert "recordings_count" in counts
     assert all(v > 0 for v in counts.values()), "All counts should be > 0"
+
+
+def test_encyclopedia_index_exists(data_dir):
+    """Verify encyclopedia_index.json is generated."""
+    path = data_dir / "encyclopedia_index.json"
+    assert path.exists(), "Missing encyclopedia_index.json"
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    assert "meta" in data
+    assert "data" in data
+    assert data["meta"]["record_count"] == len(data["data"])
+    assert len(data["data"]) > 100
+
+
+def test_encyclopedia_index_is_lightweight(data_dir):
+    """Verify encyclopedia_index.json does not contain content_html."""
+    with open(data_dir / "encyclopedia_index.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    entry = data["data"][0]
+    assert "content_html" not in entry, "Index should not contain content_html"
+    assert "content_text" not in entry, "Index should not contain content_text"
+    assert "id" in entry
+    assert "title" in entry
+
+
+def test_encyclopedia_full_has_new_fields(data_dir):
+    """Verify full encyclopedia.json has new schema v2 fields."""
+    with open(data_dir / "encyclopedia.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    entry = data["data"][0]
+    assert "title" in entry
+    assert "content_html" in entry
+    assert "resolved_references" in entry
+    assert isinstance(entry.get("infobox"), dict), "infobox should be a dict in JSON output"
+
+
+def test_encyclopedia_entry_ids_normalized(data_dir):
+    """Verify all encyclopedia entry IDs are URL-safe (no spaces)."""
+    with open(data_dir / "encyclopedia.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    for entry in data["data"]:
+        eid = entry["id"]
+        assert " " not in eid, f"Entry ID '{eid}' contains spaces"

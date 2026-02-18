@@ -1,20 +1,14 @@
 ---
 id: ba-1
-headword: ba
+title: ba
 variants: []
-summary: aldeia; povoado bororo e sua disposição tradicional (casa central e casas
-  na circunferência).
-keywords:
-- aldeia
-- bái
-- éua
-- casa central
-- bái-mánna-gueggéu
-- praça
-- metades
-- Tugarege
-- Ecerae
-updated_at: '2026-01-07'
+abstract: aldeia; povoado bororo e sua disposição tradicional (casa central e casas na circunferência).
+categories:
+- cultura-material/habitação
+- cosmologia/xamanismo
+- cultura-material
+- sociedade/organização-social/metades
+date: '2026-01-07'
 url: ''
 images:
 - url: images/enc_ba1_0.png
@@ -24,6 +18,10 @@ images:
   alt: Aldeia Garças (TI Meruri na década de 80 (imagem ilustrativa)
   credit: Fonte/Autor
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 ### Ba: aldeia e organização espacial bororo

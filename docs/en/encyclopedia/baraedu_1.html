@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraedu - Boe Eno Moto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: #F9F6F2;
+            color: #333;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3D352F;
+            color: white;
+            padding: 0.5rem 1rem;
+            z-index: 100;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        nav {
+            background: #3D352F;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: rgba(255,255,255,0.15);
+        }
+        nav .brand {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        nav .lang-switch {
+            margin-left: auto;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        nav .lang-switch:hover {
+            opacity: 1;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            color: #3D352F;
+        }
+        .subtitle {
+            color: #6B6B6B;
+            font-size: 0.95rem;
+        }
+        .search-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            margin-bottom: 1rem;
+        }
+        .search-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-input:focus {
+            border-color: #C75B39;
+            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
+        }
+        .filter-select {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+        .stats {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #6B6B6B;
+        }
+        .results-container {
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            overflow: hidden;
+        }
+        .empty-state {
+            padding: 3rem;
+            text-align: center;
+            color: #6B6B6B;
+        }
+        .empty-state h2 {
+            margin: 0 0 0.5rem 0;
+            color: #6B6B6B;
+        }
+        .entry {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .entry:last-child {
+            border-bottom: none;
+        }
+        .entry:hover {
+            background: #f8f9fa;
+        }
+        .entry-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+        }
+        .entry-word {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #3D352F;
+        }
+        .entry-secondary {
+            color: #6B6B6B;
+            font-size: 1rem;
+        }
+        .entry-ipa {
+            color: #6B6B6B;
+            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+        }
+        .entry-tag {
+            font-size: 0.75rem;
+            background: #F5EDE8;
+            color: #A84B2F;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .entry-definition {
+            margin: 0.5rem 0;
+            color: #444;
+        }
+        .entry-example {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid #C75B39;
+            color: #555;
+            font-style: italic;
+        }
+        .entry-scientific {
+            font-style: italic;
+            color: #6B6B6B;
+            font-size: 0.9rem;
+        }
+        .entry-comment {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: #fff8e1;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #6B6B6B;
+        }
+        .entry-media {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+            align-items: flex-start;
+        }
+        .entry-thumbnail {
+            max-width: 120px;
+            max-height: 90px;
+            border-radius: 4px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .entry-thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .entry-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .entry-links a {
+            font-size: 0.85rem;
+            color: #C75B39;
+            text-decoration: none;
+        }
+        .entry-links a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #fff59d;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6B6B6B;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer a {
+            color: #C75B39;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .search-row {
+                flex-direction: column;
+            }
+            .search-input, .filter-select {
+                width: 100%;
+            }
+            .entry-thumbnail {
+                max-width: 80px;
+            }
+            nav {
+                justify-content: center;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+            }
+        }
+        
+.breadcrumb {
+    font-size: 0.9rem;
+    color: #6B6B6B;
+    margin-bottom: 1rem;
+}
+.breadcrumb a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-sep {
+    margin: 0 0.4rem;
+}
+article header {
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+article header h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+}
+.article-abstract {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+.article-variants {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.variant-tag {
+    background: #E8E4DF;
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+    margin-right: 0.3rem;
+    font-style: italic;
+}
+.infobox {
+    float: right;
+    clear: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+    border: 1px solid #C8B8A8;
+    background: #FAF8F5;
+    font-size: 0.88rem;
+}
+.infobox-header {
+    background: #E8DFD5;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+    color: #3D352F;
+    text-align: center;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image {
+    text-align: center;
+    padding: 0.75rem;
+    background: white;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.infobox-image-credit {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.35rem;
+}
+.infobox-row {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #E8E4DF;
+}
+.infobox-row:last-child {
+    border-bottom: none;
+}
+.infobox-label {
+    font-weight: 500;
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.infobox-value {
+    color: #333;
+}
+.infobox-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+.infobox-keyword {
+    font-size: 0.75rem;
+    background: #E8E4DF;
+    color: #555;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+}
+.infobox-keyword a {
+    color: #555;
+    text-decoration: none;
+}
+.infobox-keyword a:hover {
+    text-decoration: underline;
+}
+.infobox-link a {
+    color: #C75B39;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.infobox-link a:hover {
+    text-decoration: underline;
+}
+.toc {
+    display: inline-block;
+    background: #FAF8F5;
+    border: 1px solid #C8B8A8;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+.toc-title {
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toc-list li {
+    padding: 0.2rem 0;
+}
+.toc-list a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.toc-list a:hover {
+    text-decoration: underline;
+}
+.toc-h4 {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+}
+.article-content {
+    line-height: 1.7;
+    color: #333;
+}
+.article-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.article-content h3 {
+    font-size: 1.3rem;
+    color: #3D352F;
+    margin: 1.5rem 0 0.75rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #C8B8A8;
+    font-weight: 600;
+}
+.article-content h3:first-child {
+    margin-top: 0;
+}
+.article-content h4 {
+    font-size: 1.1rem;
+    color: #3D352F;
+    margin: 1.25rem 0 0.5rem 0;
+    font-weight: 600;
+}
+.article-content p {
+    margin: 0.75rem 0;
+    text-align: justify;
+}
+.article-content ul, .article-content ol {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+.article-content li {
+    margin: 0.35rem 0;
+}
+.article-content em {
+    font-style: italic;
+}
+.article-content strong {
+    font-weight: 600;
+    color: #2D2520;
+}
+.article-content hr {
+    border: none;
+    border-top: 1px solid #E8E4DF;
+    margin: 1.25rem 0;
+}
+.broken-link {
+    color: #cc0000;
+    text-decoration: underline wavy;
+}
+.examples-section {
+    margin-top: 1.25rem;
+}
+.examples-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.example-block {
+    background: linear-gradient(to right, #F5F0EB, #FAF8F5);
+    border-left: 4px solid #C75B39;
+    padding: 0.9rem 1rem;
+    margin: 0.6rem 0;
+    border-radius: 0 4px 4px 0;
+}
+.example-bororo {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #3D352F;
+    margin-bottom: 0.4rem;
+    font-style: italic;
+}
+.example-translation {
+    font-size: 0.92rem;
+    color: #666;
+    padding-left: 0.5rem;
+    border-left: 2px solid #DDD;
+    margin-left: 0.25rem;
+}
+.references-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.references-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.references-section ol {
+    padding-left: 1.5rem;
+}
+.references-section li {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444;
+}
+.ref-error {
+    color: #cc0000;
+}
+.see-also-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.see-also-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.see-also-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.see-also-section li a {
+    display: inline-block;
+    background: #F5EDE8;
+    color: #A84B2F;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.see-also-section li a:hover {
+    background: #E8DFD5;
+    text-decoration: underline;
+}
+.cross-links-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.cross-links-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.cross-links-section a {
+    color: #C75B39;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.cross-links-section a:hover {
+    text-decoration: underline;
+}
+.article-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+    font-size: 0.85rem;
+    color: #888;
+}
+.article-footer .category-breadcrumbs {
+    margin-top: 0.5rem;
+}
+.article-footer .category-breadcrumbs a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.article-footer .category-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #C75B39;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+    .infobox {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    article header h1 {
+        font-size: 1.5rem;
+    }
+    .article-content h3 {
+        font-size: 1.15rem;
+    }
+    .article-content h4 {
+        font-size: 1rem;
+    }
+    .article-content p {
+        text-align: left;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    
+    <nav aria-label="Main navigation">
+        <a href="../index.html" class="brand">Boe Eno Moto</a>
+        <a href="../dictionary.html">Dictionary</a>
+        <a href="../encyclopedia.html" class="active" aria-current="page">Encyclopedia</a>
+        <a href="../fauna.html">Fauna</a>
+        <a href="../bibliography.html">Bibliography</a>
+        
+        <a href="../../pt/encyclopedia.html" class="lang-switch">PT</a>
+        
+    </nav>
+
+    <main id="main-content">
+        
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../encyclopedia.html">Encyclopedia</a>
+        <span class="breadcrumb-sep">&rsaquo;</span>
+        <span>Baraedu</span>
+    </nav>
+
+    <article>
+        <header>
+            <h1>Baraedu</h1>
+            
+            <div class="article-variants">
+                Variants:
+                <span class="variant-tag">baraedu</span><span class="variant-tag">baráe</span><span class="variant-tag">barae</span>
+            </div>
+            
+            
+            <p class="article-abstract">Singular de barae. Termo geral para “civilizado” (não indígena) e entrada histórica sobre os primeiros contatos, as colônias do Pogúbo e a atuação salesiana (1718–1902).</p>
+            
+        </header>
+
+        
+        
+        
+        
+        <aside class="infobox">
+            <div class="infobox-header">Baraedu</div>
+            
+            
+            
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Categories</div>
+                <div class="infobox-keywords">
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=sociedade/contato">sociedade/contato</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=etnografia/hist%C3%B3ria">etnografia/história</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=sociedade">sociedade</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=geografia">geografia</a></span>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </aside>
+        
+
+        
+
+        
+        <div class="article-content">
+            <p>Singular de <em>barae</em>. Designa “civilizado” (não indígena), de forma geral. Logo que os Bororo conheceram os primeiros civilizados, determinaram — como clã “possuidor” deles — o clã dos <strong>Bokodori Eceráe</strong>, conforme o costume tradicional da tribo.</p>
+<p>Provavelmente isso ocorreu porque um membro desse clã teria sido o primeiro a avistar os civilizados. Para detalhes sobre esse costume, veja <em>aróe</em>, “seres primaciais”. Embora algumas lendas (de cronologia impossível de determinar) mencionem civilizados, não se pode precisar a época do primeiro encontro histórico com os brancos, sobretudo porque a tribo não era litorânea.</p>
+<p>Sem dúvida, o encontro decisivo ocorreu em <strong>outubro de 1718</strong>, com a bandeira chefiada por <strong>Antonio Pires de Campos</strong>, e logo depois com seu êmulo <strong>Paschoal Moreira Cabral</strong>, que se estabeleceu no território onde mais tarde surgiu a atual cidade de <strong>Cuiabá</strong> (Taunay 1949: 9). Ali encontraram uma nação indígena que Virgílio Corrêa Filho denomina “<em>coxiponês</em>”, mas que, a nosso ver — pelo estudo da toponímia — não poderia ser outra senão a dos Bororo (Corrêa Filho [1939]: 14).</p>
+<p>Essa interpretação também se apoia no Pe. José Manoel de Siqueira, cujo manuscrito foi publicado por Couto de Magalhães (Magalhães 1934: 260–261). Note-se, ainda, que a própria forma “coxiponês” é de origem bororo: <em>Coxipó</em> não é mais que uma corrupção de <em>Kujibo</em>, isto é, “ribeirão da ave <em>kujibo</em>”.</p>
+<p>Após as primeiras relações de 1718, sucederam combates violentos. Os brancos encontraram os “<em>Aripocônê</em>” (= Bororo) aldeados nas margens dos rios “Cuxipó Mirim, do Peixe e Butuca”, ostentando adornos de ouro — abundante nos barrancos daqueles rios (Taunay 1949: 12–13). Os Bororo, por fim desbaratados, afastaram-se das minas, e os invasores passaram a ocupar permanentemente a localidade.</p>
+<p>Mais tarde, o poder público entregou a tarefa às forças armadas, que lograram “domar” os índios do <em>Pogúbo</em> (bacia do rio São Lourenço) e reuni-los em dois grupos chamados “<strong>Colônia Isabel</strong>” e “<strong>Colônia Teresa Cristina</strong>”, situados no baixo <em>Pogúbo Cereu</em>, rio São Lourenço. A missão foi concluída em <strong>24 de abril de 1886</strong>, pelo então alferes <strong>Antonio José Duarte</strong> (Mendonça 1919, 1º: 176–177).</p>
+<p>Em <strong>19 de abril de 1895</strong>, visando confiar aos missionários salesianos a direção da Colônia Teresa Cristina, o presidente <strong>Manoel José Murtinho</strong> a cedeu por contrato n.º</p>
+<h3>Em <strong>5 de junho de 1895</strong>, o Pe</h3>
+<p><strong>Giovanni Balzola</strong>, acompanhado do Pe. <strong>Giuseppe Solari</strong>, do irmão leigo <strong>Giacomo Grosso</strong> e de três religiosas Filhas de Maria Auxiliadora (<strong>Ir. Frederica Hummel</strong>, <strong>Ir. Madalena Tramonti</strong> e</p>
+<p>Ir.</p>
+<p>Margherita Micheletto), ingressou na colônia, sendo recebido por trezentos Bororo e vinte e cinco soldados. A alma de todo esse movimento de religião e “civilização” foi <strong>Dom Luigi Lasagna</strong>, superior dos salesianos no Brasil, que cinco meses depois, em <strong>7 de novembro de 1895</strong>, morreu aos quarenta e cinco anos em um desastre ferroviário perto de <strong>Juiz de Fora</strong> (Minas Gerais).</p>
+<p>Em <strong>1898</strong>, intrigas políticas, interesses pessoais e calúnias contra os missionários provocaram a expulsão dos salesianos (superior da missão: Pe. <strong>Antonio Malan</strong>). Oferecida novamente a direção da colônia aos salesianos, não foi mais aceita, embora em <strong>1899</strong> uma delegação de quinze Bororo tenha ido a Cuiabá pedir ao antigo diretor, Pe. Giovanni Balzola, o regresso dos missionários à colônia.</p>
+<p>Anos mais tarde, essa colônia e os Bororo do c.i. do <em>Pogubo Ceréu</em>, rio São Lourenço, entraram na esfera do <strong>S.P.I.</strong><br />
+O Pe. Antonio Malan voltou-se então para explorar um novo campo e, com o Pe. Giovanni Balzola, percorreu o planalto a leste de Cuiabá, chegando até a atual <strong>Araguaiana</strong>, nas margens do rio Araguaia.</p>
+<p>A região ainda estava sob domínio do Bororo “indômito” que, embora aparentemente pacificado na zona do Pogubo, desencadeava vinganças no território explorado pelos missionários. Por indicação de funcionários da linha telegráfica — que cumpriam suas obrigações acompanhados por piquetes armados — os salesianos escolheram uma localidade chamada <strong>Tachos</strong>, frequentada pelos índios. Lá se instalaram em tendas em <strong>18 de janeiro de 1902</strong>, depois de um mês de viagem a cavalo (partida de Cuiabá em <strong>17 de dezembro de 1901</strong>), ainda sob direção do intrépido Pe.</p>
+<p>Giovanni Balzola. Integravam a comitiva: Pe. <strong>Giuseppe Salvetto</strong> e os irmãos leigos <strong>Silvio Milanese</strong>, <strong>Domenico Minguzzi</strong> e <strong>Giacomo Grosso</strong>. As Filhas de Maria Auxiliadora eram</p>
+<p>Ir.</p>
+<p>Rosa Kiste (diretora), <strong>Ir. Maddalena Tramonti</strong> e <strong>Ir. Lucia Michetti</strong>.</p>
+<p>Após ansiosa expectativa, em <strong>7 de agosto de 1902</strong>, quatro guerreiros armados de arcos e flechas, liderados por <strong>Meriri Okwoda</strong> (mais tarde batizado Joaquim), apresentaram-se amigavelmente na missão. Foi o início da “pacificação” dos Bororo do planalto, que passaram a entrar no consórcio dos povos civilizados. A zona habitada por eles tornou-se então livre de perigos e nela surgiram e surgem fazendas e centros demográficos como <strong>Guiratinga</strong>, <strong>Poxoréu</strong>, <strong>Torixoréu</strong>, <strong>Barra do Garças</strong>, <strong>Tesouro</strong>, <strong>Alto Araguaia</strong>, <strong>Alto Garças</strong>.</p>
+<p>Meriri Okwoda, valendo-se do direito adquirido por ter avistado por primeiro os missionários — e, portanto, por “pertencerem” a ele —, opôs-se aos excessos que seus companheiros teriam cometido por ódio aos brancos, em vista das relações de vingança existentes entre Bororo e civilizados. Nesse papel, foi apoiado e guiado por <strong>Meriri Otodyia</strong>, mais conhecido como <strong>Uke Iwagu Uo</strong> (Capitão Major).</p>
+<p>Os índios do planalto, ao longo dos anos, estabeleceram-se nas colônias salesianas de <strong>Sangradouro</strong> e dos <strong>Tachos</strong>, sendo frequentes as visitas e estadas temporárias de muitos Bororo do Pogúbo (bacia do rio São Lourenço). O centro dos Tachos transferiu-se mais tarde para o <strong>Meruri</strong>, a poucos quilômetros de distância.</p>
+
+        </div>
+        
+
+        
+
+        
+
+        
+
+        
+        
+        
+
+        <div class="article-footer">
+            
+            <div>Last updated: 2026-01-07</div>
+            
+            
+            <div class="category-breadcrumbs">
+                Categories:
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=sociedade">sociedade</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=sociedade/contato">contato</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=etnografia">etnografia</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=etnografia/hist%C3%B3ria">história</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=sociedade">sociedade</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=geografia">geografia</a>
+                    
+                    
+                
+            </div>
+            
+        </div>
+    </article>
+
+    <a href="../encyclopedia.html" class="back-link">&larr; Back to encyclopedia</a>
+
+    </main>
+
+    <footer>
+        <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        
+    </footer>
+
+    <script src="../../js/common.js"></script>
+    
+</body>
+</html>

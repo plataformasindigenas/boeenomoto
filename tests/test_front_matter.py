@@ -25,7 +25,7 @@ def _run_python(code: str) -> subprocess.CompletedProcess:
 def test_parse_valid_front_matter(tmp_path):
     """Test parsing a valid markdown file with front matter."""
     md_file = tmp_path / "test.md"
-    md_file.write_text("---\nid: test-1\nheadword: Test\n---\nBody content here.\n")
+    md_file.write_text("---\nid: test-1\ntitle: Test\n---\nBody content here.\n")
 
     result = _run_python(f"""
 import sys; sys.path.insert(0, '{SCRIPTS_DIR}')
@@ -33,7 +33,7 @@ from convert import _parse_front_matter
 from pathlib import Path
 fm, body = _parse_front_matter(Path('{md_file}'))
 assert fm['id'] == 'test-1'
-assert fm['headword'] == 'Test'
+assert fm['title'] == 'Test'
 assert body.strip() == 'Body content here.'
 print('OK')
 """)
@@ -103,5 +103,45 @@ try:
 except ValueError as e:
     assert 'contains HTML tags' in str(e)
     print('OK')
+""")
+    assert result.returncode == 0, f"Failed: {result.stderr}"
+
+
+def test_wikilink_valid():
+    """Test that valid wikilinks are converted to markdown links."""
+    result = _run_python(f"""
+import sys; sys.path.insert(0, '{SCRIPTS_DIR}')
+from convert import _process_wikilinks
+all_ids = {{'boe', 'aroe', 'ecerae'}}
+out = _process_wikilinks('See [[boe]] for details.', all_ids)
+assert '[boe](boe.html)' in out, f'Unexpected output: {{out}}'
+print('OK')
+""")
+    assert result.returncode == 0, f"Failed: {result.stderr}"
+
+
+def test_wikilink_broken():
+    """Test that broken wikilinks produce span.broken-link."""
+    result = _run_python(f"""
+import sys; sys.path.insert(0, '{SCRIPTS_DIR}')
+from convert import _process_wikilinks
+all_ids = {{'boe'}}
+out = _process_wikilinks('See [[nonexistent]] entry.', all_ids)
+assert 'broken-link' in out, f'Unexpected output: {{out}}'
+assert 'nonexistent' in out
+print('OK')
+""")
+    assert result.returncode == 0, f"Failed: {result.stderr}"
+
+
+def test_wikilink_piped():
+    """Test that piped wikilinks use display text."""
+    result = _run_python(f"""
+import sys; sys.path.insert(0, '{SCRIPTS_DIR}')
+from convert import _process_wikilinks
+all_ids = {{'boe'}}
+out = _process_wikilinks('See [[boe|the Bororo people]].', all_ids)
+assert '[the Bororo people](boe.html)' in out, f'Unexpected output: {{out}}'
+print('OK')
 """)
     assert result.returncode == 0, f"Failed: {result.stderr}"

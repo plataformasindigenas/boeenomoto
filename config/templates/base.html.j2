@@ -268,12 +268,13 @@
 <body>
     <a href="#main-content" class="skip-link">{{ t.skip_link | default('Pular para conteúdo') }}</a>
 
+    {% set np = nav_prefix | default('') %}
     <nav aria-label="{{ t.nav_label | default('Navegação principal') }}">
-        <a href="index.html" class="brand">{{ t.nav_brand | default('Boe Eno Moto') }}</a>
-        <a href="dictionary.html"{% if page == 'dictionary' %} class="active" aria-current="page"{% endif %}>{{ t.nav_dictionary | default('Dicionário') }}</a>
-        <a href="encyclopedia.html"{% if page == 'encyclopedia' %} class="active" aria-current="page"{% endif %}>{{ t.nav_encyclopedia | default('Enciclopédia') }}</a>
-        <a href="fauna.html"{% if page == 'fauna' %} class="active" aria-current="page"{% endif %}>{{ t.nav_fauna | default('Fauna') }}</a>
-        <a href="bibliography.html"{% if page == 'bibliography' %} class="active" aria-current="page"{% endif %}>{{ t.nav_bibliography | default('Bibliografia') }}</a>
+        <a href="{{ np }}index.html" class="brand">{{ t.nav_brand | default('Boe Eno Moto') }}</a>
+        <a href="{{ np }}dictionary.html"{% if page == 'dictionary' %} class="active" aria-current="page"{% endif %}>{{ t.nav_dictionary | default('Dicionário') }}</a>
+        <a href="{{ np }}encyclopedia.html"{% if page == 'encyclopedia' %} class="active" aria-current="page"{% endif %}>{{ t.nav_encyclopedia | default('Enciclopédia') }}</a>
+        <a href="{{ np }}fauna.html"{% if page == 'fauna' %} class="active" aria-current="page"{% endif %}>{{ t.nav_fauna | default('Fauna') }}</a>
+        <a href="{{ np }}bibliography.html"{% if page == 'bibliography' %} class="active" aria-current="page"{% endif %}>{{ t.nav_bibliography | default('Bibliografia') }}</a>
         {% if other_locale %}
         <a href="{{ base_path | default('') }}{{ other_locale }}/{{ page | default('index') }}.html" class="lang-switch">{{ other_locale | upper }}</a>
         {% endif %}

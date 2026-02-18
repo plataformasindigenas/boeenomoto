@@ -1,30 +1,28 @@
 ---
 id: ra
-headword: Ra
+title: Ra
 variants: []
-summary: 1">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'.
-  Os cantos ocupam lugar de destaque na vida social dos bororo e lhes tomam grande
-  parte do tempo. São em elevado número, adaptados a várias solenidades e circunstâncias.
-  Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora
-  sua sede apropriadada sejam o bai mana gejewy 'casa central', e o bororo 'pátio
-  da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai
-keywords: []
-updated_at: '2026-01-04'
+abstract: 1">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar de destaque
+  na vida social dos bororo e lhes tomam grande parte do tempo. São em elevado número, adaptados a várias solenidades e circunstâncias.
+  Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua sede apropriadada sejam o bai mana
+  gejewy 'casa central', e o bororo 'pátio da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples:
 - bororo: alguns deles sao diurnos
-  translation: outros noturnos, alguns executados de pé, outros estando os cantores
-    assentados. Além dos cantos próprios de toda a tribo há muitos privativos de cada
-    clã. Não se conhecem composições propriamente de guerra. Deve-se notar que na
-    linguagem comum o canto denomina-se boe eke roia (utilizando-se o classificador
-    para alimento) e a execução do mesmo se diz boe eke roia ko. 1">Ra1 - Canto. Ex.
-    boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar
-    de destaque na vida social dos bororo e lhes tomam grande parte do tempo. São
-    em elevado número, adaptados a várias solenidades e circunstâncias. Podem ser
-    realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua
-    sede apropriadada sejam o bai mana gejewy 'casa central', e o bororo 'pátio da
-    aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai
+  translation: outros noturnos, alguns executados de pé, outros estando os cantores assentados. Além dos cantos próprios de
+    toda a tribo há muitos privativos de cada clã. Não se conhecem composições propriamente de guerra. Deve-se notar que na
+    linguagem comum o canto denomina-se boe eke roia (utilizando-se o classificador para alimento) e a execução do mesmo se
+    diz boe eke roia ko. 1">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar
+    de destaque na vida social dos bororo e lhes tomam grande parte do tempo. São em elevado número, adaptados a várias solenidades
+    e circunstâncias. Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua sede apropriadada
+    sejam o bai mana gejewy 'casa central', e o bororo 'pátio da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 e depois continuam o tirocínio na sociedade dos homens. Os bororo muito estimam quem tem clara e robusta dicção e nao poupam meios, o mais das vezes supersticiosos, para obterem boa voz. → erubo, remédio. Os cantos são sempre executados com a máxima seriedade e os cantores conservam os olhos fechados, especialmente os mestres de canto.

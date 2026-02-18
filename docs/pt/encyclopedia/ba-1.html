@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ba - Boe Eno Moto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: #F9F6F2;
+            color: #333;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3D352F;
+            color: white;
+            padding: 0.5rem 1rem;
+            z-index: 100;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        nav {
+            background: #3D352F;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: rgba(255,255,255,0.15);
+        }
+        nav .brand {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        nav .lang-switch {
+            margin-left: auto;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        nav .lang-switch:hover {
+            opacity: 1;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            color: #3D352F;
+        }
+        .subtitle {
+            color: #6B6B6B;
+            font-size: 0.95rem;
+        }
+        .search-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            margin-bottom: 1rem;
+        }
+        .search-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-input:focus {
+            border-color: #C75B39;
+            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
+        }
+        .filter-select {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+        .stats {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #6B6B6B;
+        }
+        .results-container {
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            overflow: hidden;
+        }
+        .empty-state {
+            padding: 3rem;
+            text-align: center;
+            color: #6B6B6B;
+        }
+        .empty-state h2 {
+            margin: 0 0 0.5rem 0;
+            color: #6B6B6B;
+        }
+        .entry {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .entry:last-child {
+            border-bottom: none;
+        }
+        .entry:hover {
+            background: #f8f9fa;
+        }
+        .entry-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+        }
+        .entry-word {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #3D352F;
+        }
+        .entry-secondary {
+            color: #6B6B6B;
+            font-size: 1rem;
+        }
+        .entry-ipa {
+            color: #6B6B6B;
+            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+        }
+        .entry-tag {
+            font-size: 0.75rem;
+            background: #F5EDE8;
+            color: #A84B2F;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .entry-definition {
+            margin: 0.5rem 0;
+            color: #444;
+        }
+        .entry-example {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid #C75B39;
+            color: #555;
+            font-style: italic;
+        }
+        .entry-scientific {
+            font-style: italic;
+            color: #6B6B6B;
+            font-size: 0.9rem;
+        }
+        .entry-comment {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: #fff8e1;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #6B6B6B;
+        }
+        .entry-media {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+            align-items: flex-start;
+        }
+        .entry-thumbnail {
+            max-width: 120px;
+            max-height: 90px;
+            border-radius: 4px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .entry-thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .entry-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .entry-links a {
+            font-size: 0.85rem;
+            color: #C75B39;
+            text-decoration: none;
+        }
+        .entry-links a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #fff59d;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6B6B6B;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer a {
+            color: #C75B39;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .search-row {
+                flex-direction: column;
+            }
+            .search-input, .filter-select {
+                width: 100%;
+            }
+            .entry-thumbnail {
+                max-width: 80px;
+            }
+            nav {
+                justify-content: center;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+            }
+        }
+        
+.breadcrumb {
+    font-size: 0.9rem;
+    color: #6B6B6B;
+    margin-bottom: 1rem;
+}
+.breadcrumb a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-sep {
+    margin: 0 0.4rem;
+}
+article header {
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+article header h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+}
+.article-abstract {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+.article-variants {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.variant-tag {
+    background: #E8E4DF;
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+    margin-right: 0.3rem;
+    font-style: italic;
+}
+.infobox {
+    float: right;
+    clear: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+    border: 1px solid #C8B8A8;
+    background: #FAF8F5;
+    font-size: 0.88rem;
+}
+.infobox-header {
+    background: #E8DFD5;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+    color: #3D352F;
+    text-align: center;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image {
+    text-align: center;
+    padding: 0.75rem;
+    background: white;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.infobox-image-credit {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.35rem;
+}
+.infobox-row {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #E8E4DF;
+}
+.infobox-row:last-child {
+    border-bottom: none;
+}
+.infobox-label {
+    font-weight: 500;
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.infobox-value {
+    color: #333;
+}
+.infobox-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+.infobox-keyword {
+    font-size: 0.75rem;
+    background: #E8E4DF;
+    color: #555;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+}
+.infobox-keyword a {
+    color: #555;
+    text-decoration: none;
+}
+.infobox-keyword a:hover {
+    text-decoration: underline;
+}
+.infobox-link a {
+    color: #C75B39;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.infobox-link a:hover {
+    text-decoration: underline;
+}
+.toc {
+    display: inline-block;
+    background: #FAF8F5;
+    border: 1px solid #C8B8A8;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+.toc-title {
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toc-list li {
+    padding: 0.2rem 0;
+}
+.toc-list a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.toc-list a:hover {
+    text-decoration: underline;
+}
+.toc-h4 {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+}
+.article-content {
+    line-height: 1.7;
+    color: #333;
+}
+.article-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.article-content h3 {
+    font-size: 1.3rem;
+    color: #3D352F;
+    margin: 1.5rem 0 0.75rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #C8B8A8;
+    font-weight: 600;
+}
+.article-content h3:first-child {
+    margin-top: 0;
+}
+.article-content h4 {
+    font-size: 1.1rem;
+    color: #3D352F;
+    margin: 1.25rem 0 0.5rem 0;
+    font-weight: 600;
+}
+.article-content p {
+    margin: 0.75rem 0;
+    text-align: justify;
+}
+.article-content ul, .article-content ol {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+.article-content li {
+    margin: 0.35rem 0;
+}
+.article-content em {
+    font-style: italic;
+}
+.article-content strong {
+    font-weight: 600;
+    color: #2D2520;
+}
+.article-content hr {
+    border: none;
+    border-top: 1px solid #E8E4DF;
+    margin: 1.25rem 0;
+}
+.broken-link {
+    color: #cc0000;
+    text-decoration: underline wavy;
+}
+.examples-section {
+    margin-top: 1.25rem;
+}
+.examples-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.example-block {
+    background: linear-gradient(to right, #F5F0EB, #FAF8F5);
+    border-left: 4px solid #C75B39;
+    padding: 0.9rem 1rem;
+    margin: 0.6rem 0;
+    border-radius: 0 4px 4px 0;
+}
+.example-bororo {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #3D352F;
+    margin-bottom: 0.4rem;
+    font-style: italic;
+}
+.example-translation {
+    font-size: 0.92rem;
+    color: #666;
+    padding-left: 0.5rem;
+    border-left: 2px solid #DDD;
+    margin-left: 0.25rem;
+}
+.references-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.references-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.references-section ol {
+    padding-left: 1.5rem;
+}
+.references-section li {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444;
+}
+.ref-error {
+    color: #cc0000;
+}
+.see-also-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.see-also-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.see-also-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.see-also-section li a {
+    display: inline-block;
+    background: #F5EDE8;
+    color: #A84B2F;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.see-also-section li a:hover {
+    background: #E8DFD5;
+    text-decoration: underline;
+}
+.cross-links-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.cross-links-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.cross-links-section a {
+    color: #C75B39;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.cross-links-section a:hover {
+    text-decoration: underline;
+}
+.article-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+    font-size: 0.85rem;
+    color: #888;
+}
+.article-footer .category-breadcrumbs {
+    margin-top: 0.5rem;
+}
+.article-footer .category-breadcrumbs a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.article-footer .category-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #C75B39;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+    .infobox {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    article header h1 {
+        font-size: 1.5rem;
+    }
+    .article-content h3 {
+        font-size: 1.15rem;
+    }
+    .article-content h4 {
+        font-size: 1rem;
+    }
+    .article-content p {
+        text-align: left;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Pular para conteúdo</a>
+
+    
+    <nav aria-label="Navegação principal">
+        <a href="../index.html" class="brand">Boe Eno Moto</a>
+        <a href="../dictionary.html">Dicionário</a>
+        <a href="../encyclopedia.html" class="active" aria-current="page">Enciclopédia</a>
+        <a href="../fauna.html">Fauna</a>
+        <a href="../bibliography.html">Bibliografia</a>
+        
+        <a href="../../en/encyclopedia.html" class="lang-switch">EN</a>
+        
+    </nav>
+
+    <main id="main-content">
+        
+    <nav class="breadcrumb" aria-label="Navegação">
+        <a href="../encyclopedia.html">Enciclopédia</a>
+        <span class="breadcrumb-sep">&rsaquo;</span>
+        <span>ba</span>
+    </nav>
+
+    <article>
+        <header>
+            <h1>ba</h1>
+            
+            
+            <p class="article-abstract">aldeia; povoado bororo e sua disposição tradicional (casa central e casas na circunferência).</p>
+            
+        </header>
+
+        
+        
+        
+        
+        <aside class="infobox">
+            <div class="infobox-header">ba</div>
+            
+                
+                
+                <div class="infobox-image">
+                    <a href="images/enc_ba1_0.png" target="_blank" rel="noopener">
+                        <img src="../../images/enc_ba1_0.png" alt="planta da aldeia Kejari" loading="lazy">
+                    </a>
+                    <div class="infobox-image-credit">Lévi-Strauss (planta/diagrama)</div>
+                </div>
+                
+            
+            
+            
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Categorias</div>
+                <div class="infobox-keywords">
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=cultura-material/habita%C3%A7%C3%A3o">cultura-material/habitação</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=cosmologia/xamanismo">cosmologia/xamanismo</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=cultura-material">cultura-material</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=sociedade/organiza%C3%A7%C3%A3o-social/metades">sociedade/organização-social/metades</a></span>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Mais imagens</div>
+                <div class="infobox-value">
+                    
+                        
+                        <a href="images/enc_ba1_1.jpg" target="_blank" rel="noopener" style="display:inline-block;margin:2px">
+                            <img src="../../images/enc_ba1_1.jpg" alt="Aldeia Garças (TI Meruri na década de 80 (imagem ilustrativa)" style="max-width:50px;max-height:40px;border-radius:2px" loading="lazy">
+                        </a>
+                        
+                    
+                </div>
+            </div>
+            
+        </aside>
+        
+
+        
+        <div class="toc"><div class="toc-title"></div><ul class='toc-list'><li><a href="#ba-1-section-0">1. Ba: aldeia e organização espacial bororo</a></li><li class="toc-h4"><a href="#ba-1-section-1">2. Onde se constrói uma aldeia</a></li><li class="toc-h4"><a href="#ba-1-section-2">3. Centro da aldeia: a casa central (casa dos homens)</a></li><li class="toc-h4"><a href="#ba-1-section-3">4. Casas na circunferência: cabanas e ocupação tradicional</a></li><li class="toc-h4"><a href="#ba-1-section-4">5. Orientação e divisões internas (leste/oeste)</a></li><li class="toc-h4"><a href="#ba-1-section-5">6. Termos correlatos (para navegar na Enciclopédia)</a></li><li class="toc-h4"><a href="#ba-1-section-6">7. Fonte usada para esta entrada</a></li></ul></div>
+        
+
+        
+        <div class="article-content">
+            <h3 id="ba-1-section-0">Ba: aldeia e organização espacial bororo</h3>
+<p>Em muitos textos etnográficos sobre os Bororo, a descrição da <strong>aldeia</strong> não é apenas uma questão de arquitetura: ela está profundamente ligada à organização social em <strong>metades</strong> e à subdivisão em clãs/famílias. Por isso, falar da aldeia implica falar também de como as pessoas se distribuem, se reconhecem e se orientam no espaço comunitário.</p>
+<hr />
+<h4 id="ba-1-section-1">Onde se constrói uma aldeia</h4>
+<p>Tradicionalmente, a aldeia é levantada em área relativamente aberta (vegetação baixa e rala), próxima de água, evitando o interior fechado da floresta, exceto em ocupações curtas (por exemplo, para expedições de caça e pesca). Um ponto importante destacado pelos etnógrafos é que, mesmo em paradas de apenas uma noite, tenta-se manter a <em>ordem</em> de disposição das casas semelhante à de uma aldeia regular.</p>
+<hr />
+<h4 id="ba-1-section-2">Centro da aldeia: a casa central (casa dos homens)</h4>
+<p>O primeiro passo é definir a posição da <strong>casa central</strong>, descrita como o centro de uma área ampla e mais ou menos circular. Essa casa é frequentemente apresentada como a maior construção, de formato retangular, com dimensões ajustadas à quantidade de homens da comunidade. Ela é um espaço social e ritual: ali os homens passam grande parte do dia (quando não estão em caça/pesca), produzem artefatos, conversam e descansam; jovens não casados podem dormir ali. O texto descreve ainda restrições de acesso para mulheres em circunstâncias consideradas impróprias, ligadas a normas rituais.</p>
+<p>O interior é pensado de acordo com as <strong>metades</strong>: uma porção corresponde aos <strong>Tugarege</strong> e a outra aos <strong>Ecerae</strong>. O centro pode ter áreas reservadas às lideranças e pessoas de grande prestígio.</p>
+<hr />
+<h4 id="ba-1-section-3">Casas na circunferência: cabanas e ocupação tradicional</h4>
+<p>Ao redor da casa central, na circunferência, constroem-se as demais casas/cabanas. A descrição etnográfica enfatiza que a ocupação interna de uma casa não corresponde a uma “família nuclear” no sentido ocidental (pai+mãe+filhos). Em termos bororo, a casa tende a ser relacionada à esfera da mulher e de seus filhos (matrilinearidade), enquanto o homem permanece ligado ao seu próprio clã e metade, sendo a relação conjugal atravessada por essa observação estrutural.</p>
+<p>O texto descreve também aspectos do cotidiano material: fogueiras (muitas vezes, uma por grupo/domínio doméstico), recipientes de cerâmica, plataformas/jiraus para defumar e guardar objetos, espaços de dormir, e a presença de animais domésticos e utensílios, compondo um retrato de vida cotidiana.</p>
+<hr />
+<h4 id="ba-1-section-4">Orientação e divisões internas (leste/oeste)</h4>
+<p>Um ponto analítico importante na descrição é que certas designações internas das casas se organizam em relação ao <strong>leste</strong> e ao <strong>oeste</strong> (por exemplo: ocupantes do lado leste vs. do lado oeste). O autor discute inclusive diferenças entre diagramas publicados por diversos pesquisadores e sugere que parte das aparentes discrepâncias se deve à complexidade das subdivisões internas e à multiplicidade de termos e nomes usados para grupos e subgrupos.</p>
+<hr />
+<h4 id="ba-1-section-5">Termos correlatos (para navegar na Enciclopédia)</h4>
+<ul>
+<li><strong>bai</strong>: casa/cabana (em alguns contextos, aparece como forma relacionada à noção de habitação)</li>
+<li><strong>bai mana gejewu</strong>: casa central, ligada à praça</li>
+<li><strong>Tugarege</strong> e <strong>Ecerae</strong>: metades que atravessam a organização do espaço</li>
+</ul>
+<hr />
+<h4 id="ba-1-section-6">Fonte usada para esta entrada</h4>
+<p>Esta entrada foi elaborada a partir de: <em>A aldeia bororo</em> (tradução/nota de um texto de Cesare Albisetti com apresentação e aparato explicativo), onde a aldeia é descrita em relação à organização social e à disposição espacial das casas e da casa central.</p>
+
+        </div>
+        
+
+        
+
+        
+
+        
+
+        
+        
+        
+
+        <div class="article-footer">
+            
+            <div>Última atualização: 2026-01-07</div>
+            
+            
+            <div class="category-breadcrumbs">
+                Categorias:
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=cultura-material">cultura-material</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=cultura-material/habita%C3%A7%C3%A3o">habitação</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=cosmologia">cosmologia</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=cosmologia/xamanismo">xamanismo</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=cultura-material">cultura-material</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=sociedade">sociedade</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=sociedade/organiza%C3%A7%C3%A3o-social">organização-social</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=sociedade/organiza%C3%A7%C3%A3o-social/metades">metades</a>
+                    
+                    
+                
+            </div>
+            
+        </div>
+    </article>
+
+    <a href="../encyclopedia.html" class="back-link">&larr; Voltar à enciclopédia</a>
+
+    </main>
+
+    <footer>
+        <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        
+    </footer>
+
+    <script src="../../js/common.js"></script>
+    
+</body>
+</html>

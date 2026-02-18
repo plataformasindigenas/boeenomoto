@@ -1,13 +1,17 @@
 ---
 id: cibaiwo-je-ekurewu
-headword: Cibaiwo je ekurewu
+title: Cibaiwo je ekurewu
 variants: []
-summary: Cibaiwo je ekurewu - Tipo de boe ekiga 'prego dos bororo'.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Cibaiwo je ekurewu - Tipo de boe ekiga 'prego dos bororo'.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

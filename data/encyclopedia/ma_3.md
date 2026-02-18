@@ -1,10 +1,10 @@
 ---
 id: ma_3
-headword: Ma
+title: Ma
 variants: []
-summary: Se, quando, mas.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Se, quando, mas.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples:
@@ -14,6 +14,10 @@ examples:
   translation: os homens irão caçar, mas eu não
 - bororo: apemega mode ma, pamerumode
   translation: quando sarares iremos caçar
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

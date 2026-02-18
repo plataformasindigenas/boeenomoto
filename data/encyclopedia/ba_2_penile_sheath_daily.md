@@ -1,22 +1,24 @@
 ---
 id: ba_2_penile_sheath_daily
-headword: Ba
+title: Ba
 variants: []
-summary: Estojo peniano quotidiano, indumentária indispensável do homem bororo após
-  a iniciação.
-keywords:
-- corpo
-- vestimenta
-- masculinidade
-- iniciação
+abstract: Estojo peniano quotidiano, indumentária indispensável do homem bororo após a iniciação.
+categories:
+- cultura-material/ornamentação
+- cultura-material/vestimenta
+- ritual/iniciação
 - etnografia
-updated_at: '2026-01-05'
+date: '2026-01-05'
 url: ''
 images:
 - url: images/enc_ba_2_penile_sheath_daily_0.jpg
   alt: ''
   credit: ''
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 O ba é a única e indispensável indumentária do homem bororo após a iniciação. Consiste em uma espécie de cartucho confeccionado com um semifolíolo do broto de palmeira babaçu, dobrado sobre si mesmo e preso em forma de nó. O homem nunca aparece em público sem o ba.

@@ -1,13 +1,17 @@
 ---
 id: bataru
-headword: Bataru
+title: Bataru
 variants: []
-summary: A língua Bororo
-keywords: []
-updated_at: '2026-01-04'
+abstract: A língua Bororo
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 Com base em semelhanças lexicais sistemáticas e em correspondências fonológicas regulares, a família Bororo é tradicionalmente composta por cinco línguas: Bororo, Umutina, Otuke, Kovareka e Kuruminaka. Com exceção do Bororo, o conhecimento disponível sobre os demais membros da família permanece bastante limitado. A classificação da língua bororo passou por diversas interpretações ao longo do tempo.

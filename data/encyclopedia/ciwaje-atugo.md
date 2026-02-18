@@ -1,13 +1,17 @@
 ---
 id: ciwaje-atugo
-headword: Ciwaje atugo
+title: Ciwaje atugo
 variants: []
-summary: ciwaje atugo - Tipo de boe epemegadody pintura somática dos bororo.
-keywords: []
-updated_at: '2026-01-04'
+abstract: ciwaje atugo - Tipo de boe epemegadody pintura somática dos bororo.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

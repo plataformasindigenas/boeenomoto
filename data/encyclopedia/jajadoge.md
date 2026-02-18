@@ -1,13 +1,17 @@
 ---
 id: jajadoge
-headword: Jajadoge
+title: Jajadoge
 variants: []
-summary: <em>jajá</em> onomatopeia + <em>doge</em> plural.
-keywords: []
-updated_at: '2026-01-04'
+abstract: <em>jajá</em> onomatopeia + <em>doge</em> plural.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 Variedade de abelhas silvestres.

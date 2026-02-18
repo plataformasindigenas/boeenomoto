@@ -1,13 +1,17 @@
 ---
 id: jakomea-okwoda
-headword: Jakomea okwoda
+title: Jakomea okwoda
 variants: []
-summary: Jakomea okwoda - nome próprio (ver vol. II).
-keywords: []
-updated_at: '2026-01-04'
+abstract: Jakomea okwoda - nome próprio (ver vol. II).
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

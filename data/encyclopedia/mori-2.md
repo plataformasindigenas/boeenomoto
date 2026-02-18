@@ -1,23 +1,24 @@
 ---
 id: mori-2
-headword: Mori
+title: Mori
 variants: []
-summary: Mori Vingança, recompensa, retribuição; pagamento (neol.).
-keywords: []
-updated_at: '2026-01-04'
+abstract: Mori Vingança, recompensa, retribuição; pagamento (neol.).
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples:
 - bororo: agradecem
-  translation: 'como de costume, apertando fortemente o objeto e a mao do doador.
-    3. Mori: vingança pela morte de alguem Quando um bororo morre é escolhido um seu
-    representante denominado aroe maiwu ''alma nova, ou iadu, companheiro, cuja obrigaçãão
-    principal é vingar a morte do representado, abatendo urna onça cujo couro será
-    dado a um parente do defunto. Esta onça é denominada mori, vingança ou retribuição,
-    barege ekodody ''banquete das feras''. Deve-se observar que os índios acreditam
-    que a morte seja causada por um bope, espírito mal- fazejo, e que a onça seja
-    um bope. Matando o felídeo eliminam um bope, efetuando assim urna vingança. Mori
-    Vingança, recompensa, retribuição'
+  translation: 'como de costume, apertando fortemente o objeto e a mao do doador. 3. Mori: vingança pela morte de alguem Quando
+    um bororo morre é escolhido um seu representante denominado aroe maiwu ''alma nova, ou iadu, companheiro, cuja obrigaçãão
+    principal é vingar a morte do representado, abatendo urna onça cujo couro será dado a um parente do defunto. Esta onça
+    é denominada mori, vingança ou retribuição, barege ekodody ''banquete das feras''. Deve-se observar que os índios acreditam
+    que a morte seja causada por um bope, espírito mal- fazejo, e que a onça seja um bope. Matando o felídeo eliminam um bope,
+    efetuando assim urna vingança. Mori Vingança, recompensa, retribuição'
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 l\. Mori: vingança

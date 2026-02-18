@@ -1,13 +1,17 @@
 ---
 id: cibairago
-headword: Cibairago
+title: Cibairago
 variants: []
-summary: Cibairago - n. p. → Enciclopédia II v.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Cibairago - n. p. → Enciclopédia II v.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

@@ -1,13 +1,17 @@
 ---
 id: cibae-eceba
-headword: Cibae eceba
+title: Cibae eceba
 variants: []
-summary: Cibae Eceba - nome próprio. Enciclopédia II v.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Cibae Eceba - nome próprio. Enciclopédia II v.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

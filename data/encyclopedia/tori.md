@@ -1,22 +1,24 @@
 ---
 id: tori
-headword: Tori
+title: Tori
 variants: []
-summary: Tori (plural tore). Morro, colina, serra, maciço, pedra; região correspondente
-  a crista da tíbia iwu, corpo humano; região dorsal dos peixes perto da cauda. |
-  A toponímia orográfica bororo obedece, à semelhança da hidrográfica, a alguma circunstância
-  acidental. Assim teremos o morro do jaguar, o morro do urubu, o morro das ararapirangas,
-  ou entao o morro da taquara, o morro dos xavante, o morro da gruta dos morcegos.
-  De algumas elevações cujo nome os bororo ainda lembram, foi impossível determinar
-  a etimologia e a localização. Alguns relevos, embora distintos, exibem a mesma denominação.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Tori (plural tore). Morro, colina, serra, maciço, pedra; região correspondente a crista da tíbia iwu, corpo humano;
+  região dorsal dos peixes perto da cauda. | A toponímia orográfica bororo obedece, à semelhança da hidrográfica, a alguma
+  circunstância acidental. Assim teremos o morro do jaguar, o morro do urubu, o morro das ararapirangas, ou entao o morro
+  da taquara, o morro dos xavante, o morro da gruta dos morcegos. De algumas elevações cujo nome os bororo ainda lembram,
+  foi impossível determinar a etimologia e a localização. Alguns relevos, embora distintos, exibem a mesma denominação.
+categories: []
+date: '2026-01-04'
 url: ''
 images:
 - url: images/enc_tori_0.jpg
   alt: Tori
   credit: ''
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 Kurugugwari (Morro da Mesa)Principais elevações conhecidas pelos bororo:Adugori - 1. margens do Tygori Jao 'rio Diamantino'; 2. margens do curso inferior do Pogybo Cerewu 'rio. S. Lourenço'Aeia Co - (Fortaleza) a 25 Km ao norte da cidade de GuiratingaAijeri - margem esqerda do curso superior do Tadari Umana 'rio Prata'Amemari - nascentes do Tadari Umana 'rio Prata'Aobaragari - (Baraga), nascentes do Arároe Eiao 'córrego Arareau'Aogigudure - a 12 km a oeste de MeruriAruari - margens do Pogybo 'rio Vermelho' nas proximidades da localidade Jarudori Aturebe - (Tribiu), a 20 km ao norte da cidade de RondonópolisAturua Ko Meibo - região do curso inferior do Pogybo Cerewu 'rio S.

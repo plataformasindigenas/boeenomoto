@@ -1,18 +1,22 @@
 name: bororo_encyclopedia
 description: Bororo Encyclopedia Entries
-version: "1.0"
+version: "2.0"
 primary_key: id
 
 fields:
   id: str
-  headword: str
+  title: str
   variants: list?
-  summary: str?
-  keywords: list?
-  updated_at: str?
+  abstract: str?
+  categories: list?
+  date: str?
   url: str?
   images: list?
   content_md: str?
   examples: list?
   dictionary_ids: list?
   fauna_ids: list?
+  entry_type: str?
+  infobox: str?
+  references: list?
+  see_also: list?

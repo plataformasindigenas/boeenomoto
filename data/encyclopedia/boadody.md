@@ -1,13 +1,17 @@
 ---
 id: boadody
-headword: Boadody
+title: Boadody
 variants: []
-summary: Boadody - Enciclopédia Bororo
-keywords: []
-updated_at: '2026-01-04'
+abstract: Boadody - Enciclopédia Bororo
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 Boadody Estendido, aplainado, brincado, passeado; cavado; discurso noturno; pregação (neol.). Esta é a forma própria para indicar quaisquer discursos, inclusive os noturnos. Nestes, sempre prolixos, o orador relata os acontecimentos e as notícias do dia, narra lendas e, se é chefe, dá avisos ou faz admoestações.

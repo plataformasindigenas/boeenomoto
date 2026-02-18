@@ -1,14 +1,17 @@
 ---
 id: ciwaje-aroe
-headword: Ciwaje aroe
+title: Ciwaje aroe
 variants: []
-summary: 'ciwaje aroe - Designação: 1. de certo aroe etawujedy ''representação'';
-  2. do intérprete da mesma.'
-keywords: []
-updated_at: '2026-01-04'
+abstract: 'ciwaje aroe - Designação: 1. de certo aroe etawujedy ''representação''; 2. do intérprete da mesma.'
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

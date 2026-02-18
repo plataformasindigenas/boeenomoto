@@ -1,13 +1,17 @@
 ---
 id: caije
-headword: Caije
+title: Caije
 variants: []
-summary: Caije - Logo, imediatamente. ex. rekodyre piji, caije 'fugiu imediatamente'.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Caije - Logo, imediatamente. ex. rekodyre piji, caije 'fugiu imediatamente'.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

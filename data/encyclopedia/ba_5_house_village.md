@@ -1,16 +1,19 @@
 ---
 id: ba_5_house_village
-headword: Ba
+title: Ba
 variants: []
-summary: Casa ou aldeia.
-keywords:
-- habitação
-- aldeia
-- espaço social
-updated_at: '2026-01-05'
+abstract: Casa ou aldeia.
+categories:
+- cultura-material/habitação
+- sociedade/espaço-social
+date: '2026-01-05'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 Ba pode também designar a casa ou, por extensão, a aldeia. Esse uso refere-se ao espaço habitacional e social, distinguindo-se semanticamente dos sentidos ligados à indumentária masculina e aos artefatos rituais.

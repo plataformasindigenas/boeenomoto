@@ -1,13 +1,17 @@
 ---
 id: ae
-headword: Ae
+title: Ae
 variants: []
-summary: ''
-keywords: []
-updated_at: '2026-01-04'
+abstract: ''
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 O termo ae, plural de ao (‘cabelo, cordel de cabelos humanos’), designa tanto os cabelos humanos quanto, por extensão, os pelos de felídeos e certas folhagens de palmeiras. O conceito está diretamente associado a práticas rituais funerárias, especialmente à extirpação dos cabelos durante a agonia e após a morte de um indígena.

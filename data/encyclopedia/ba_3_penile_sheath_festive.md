@@ -1,18 +1,21 @@
 ---
 id: ba_3_penile_sheath_festive
-headword: Baera / Baerarewu
+title: Baera / Baerarewu
 variants:
 - baera
-summary: Estojo peniano festivo, ornamentado, usado em cerimônias.
-keywords:
+abstract: Estojo peniano festivo, ornamentado, usado em cerimônias.
+categories:
 - ritual
-- arte corporal
-- festas
-- ornamentação
-updated_at: '2026-01-05'
+- cultura-material/ornamentação
+- ritual/festas
+date: '2026-01-05'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 O estojo peniano festivo é uma variação do ba quotidiano, caracterizada pelo prolongamento do folíolo em forma de fita, que termina em cauda de andorinha ou em ponta mais ou menos aguda. É comumente chamado de baera (‘borboleta’), embora a denominação mais precisa seja baerarewu, ‘objeto semelhante à borboleta’. Durante festas e cerimônias, pode ser ornamentado com pinturas, penugem, desenhos geométricos e, ocasionalmente, figuras de animais.

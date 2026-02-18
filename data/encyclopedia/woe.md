@@ -1,13 +1,17 @@
 ---
 id: woe
-headword: Woe
+title: Woe
 variants: []
-summary: Woe adv Aqui.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Woe adv Aqui.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

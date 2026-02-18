@@ -1,10 +1,10 @@
 ---
 id: maedo_1
-headword: Maedo
+title: Maedo
 variants: []
-summary: Alargar, estender, compridar, tardar; entristecer.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Alargar, estender, compridar, tardar; entristecer.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples:
@@ -12,6 +12,10 @@ examples:
   translation: a água alagou tudo
 - bororo: ure bataru maedo boe eiogi
   translation: falou aos Bororo
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

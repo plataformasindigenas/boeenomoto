@@ -1,13 +1,17 @@
 ---
 id: coboje
-headword: Coboje
+title: Coboje
 variants: []
-summary: Coboje - * ? posp. Em cima, em alto.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Coboje - * ? posp. Em cima, em alto.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

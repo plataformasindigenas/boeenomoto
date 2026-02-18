@@ -1,16 +1,20 @@
 ---
 id: uwarinogo
-headword: Uwarinogo
+title: Uwarinogo
 variants: []
-summary: Uwarinogo Gavião-tesoura (Elanoides forficatus).
-keywords: []
-updated_at: '2026-01-04'
+abstract: Uwarinogo Gavião-tesoura (Elanoides forficatus).
+categories: []
+date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Gavião-tesoura
 images:
 - url: images/uwarinogo.jpg
   alt: Uwarinogo
   credit: ''
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

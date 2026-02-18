@@ -1,13 +1,17 @@
 ---
 id: ce-3
-headword: Ce
+title: Ce
 variants: []
-summary: Ce3 — vart. de co Preto.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Ce3 — vart. de co Preto.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

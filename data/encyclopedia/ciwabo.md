@@ -1,14 +1,17 @@
 ---
 id: ciwabo
-headword: Ciwabo
+title: Ciwabo
 variants: []
-summary: Ciwabo - (plural ciwaboe). * onomatopeia [ave que como canto parece dizer
-  ciwabo|. Japu-macho (Psarocolius decumanus).
-keywords: []
-updated_at: '2026-01-04'
+abstract: Ciwabo - (plural ciwaboe). * onomatopeia [ave que como canto parece dizer ciwabo|. Japu-macho (Psarocolius decumanus).
+categories: []
+date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Japu-preto
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

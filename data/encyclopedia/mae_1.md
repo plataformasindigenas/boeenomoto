@@ -1,11 +1,10 @@
 ---
 id: mae_1
-headword: Mae
+title: Mae
 variants: []
-summary: Extensão, duração ilimitada, imensidade, continuidade, comprimento; deserto;
-  tristeza.
-keywords: []
-updated_at: '2026-01-04'
+abstract: Extensão, duração ilimitada, imensidade, continuidade, comprimento; deserto; tristeza.
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples:
@@ -16,8 +15,11 @@ examples:
 - bororo: boe mae
   translation: (coisa com) duração ilimitada, i.e. faz tempo
 - bororo: Extensão
-  translation: duração ilimitada, imensidade, continuidade, indefectibilidade, comprimento,
-    deserto
+  translation: duração ilimitada, imensidade, continuidade, indefectibilidade, comprimento, deserto
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 

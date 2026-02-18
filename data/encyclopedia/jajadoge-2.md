@@ -1,13 +1,17 @@
 ---
 id: jajadoge-2
-headword: Jajadoge
+title: Jajadoge
 variants: []
-summary: <em>ji</em> 'sua' + <em>ia</em> 'abertura' + <em>doge</em> plural [
-keywords: []
-updated_at: '2026-01-04'
+abstract: <em>ji</em> 'sua' + <em>ia</em> 'abertura' + <em>doge</em> plural [
+categories: []
+date: '2026-01-04'
 url: ''
 images: []
 examples: []
+entry_type: ''
+infobox: {}
+references: []
+see_also: []
 ---
 
 afeçao mórbida que apresenta muitas aberturas. Antraz.

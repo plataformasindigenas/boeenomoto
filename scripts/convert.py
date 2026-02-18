@@ -299,18 +299,182 @@ def _load_encyclopedia_entries() -> list[dict]:
 
         entry["content_md"] = body.strip()
 
+        # Backwards compatibility: rename old field names → new
+        _field_renames = {
+            "headword": "title",
+            "summary": "abstract",
+            "updated_at": "date",
+            "keywords": "categories",
+        }
+        for old_name, new_name in _field_renames.items():
+            if old_name in entry and new_name not in entry:
+                entry[new_name] = entry.pop(old_name)
+
         # Defaults for optional list fields
-        for key in ("variants", "keywords", "images", "examples"):
+        for key in ("variants", "categories", "images", "examples", "references", "see_also"):
             if entry.get(key) is None:
                 entry[key] = []
+
+        # Defaults for optional string fields
+        for key in ("entry_type", "infobox"):
+            if entry.get(key) is None:
+                entry[key] = ""
+
+        # Serialize infobox dict to JSON string for aptoro validation
+        infobox = entry.get("infobox")
+        if isinstance(infobox, dict):
+            entry["infobox"] = json.dumps(infobox, ensure_ascii=False) if infobox else ""
 
         entries.append(entry)
 
     return entries
 
 
+def _load_bib_data() -> dict:
+    """Load BibTeX data and return {bib_key: entry_dict}."""
+    bib_file = DATA_DIR / "bororo.bib"
+    if not bib_file.exists():
+        return {}
+
+    with open(bib_file, "r", encoding="utf-8") as f:
+        bib_database = bparser.parse(f.read())
+
+    bib_data = {}
+    for entry in bib_database.entries:
+        key = entry.get("ID", "")
+        if key:
+            bib_data[key] = entry
+    return bib_data
+
+
+def _format_citation(entry: dict) -> str:
+    """Format a BibTeX entry as a readable citation string."""
+    bib_type = entry.get("ENTRYTYPE", "misc")
+    author = entry.get("author", "")
+    year = entry.get("year", "")
+    title = entry.get("title", "")
+
+    if bib_type == "article":
+        journal = entry.get("journal", "")
+        volume = entry.get("volume", "")
+        pages = entry.get("pages", "")
+        doi = entry.get("doi", "")
+        cite = f"{author} ({year}). *{title}*."
+        if journal:
+            cite += f" {journal}"
+        if volume:
+            cite += f", {volume}"
+        if pages:
+            cite += f": {pages}"
+        cite += "."
+        if doi:
+            cite += f" doi:{doi}"
+    elif bib_type == "book":
+        publisher = entry.get("publisher", "")
+        address = entry.get("address", "")
+        cite = f"{author} ({year}). *{title}*."
+        if publisher:
+            cite += f" {publisher}"
+        if address:
+            cite += f", {address}"
+        cite += "."
+    elif bib_type in ("incollection", "inbook"):
+        booktitle = entry.get("booktitle", "")
+        editor = entry.get("editor", "")
+        publisher = entry.get("publisher", "")
+        cite = f"{author} ({year}). *{title}*."
+        if booktitle:
+            cite += f" In: *{booktitle}*"
+        if editor:
+            cite += f" (ed. {editor})"
+        if publisher:
+            cite += f". {publisher}"
+        cite += "."
+    elif bib_type == "phdthesis":
+        school = entry.get("school", "")
+        cite = f"{author} ({year}). *{title}*. PhD thesis"
+        if school:
+            cite += f", {school}"
+        cite += "."
+    else:
+        cite = f"{author} ({year}). *{title}*."
+        publisher = entry.get("publisher", "")
+        if publisher:
+            cite += f" {publisher}."
+
+    return cite
+
+
+def _resolve_references(refs: list, bib_data: dict) -> list[dict]:
+    """Resolve BibTeX keys to formatted citation dicts."""
+    resolved = []
+    for key in refs:
+        if key in bib_data:
+            entry = bib_data[key]
+            resolved.append({
+                "key": key,
+                "formatted": _format_citation(entry),
+                "author": entry.get("author", ""),
+                "year": entry.get("year", ""),
+                "title": entry.get("title", ""),
+            })
+        else:
+            resolved.append({
+                "key": key,
+                "formatted": f"[{key}] — reference not found",
+                "error": True,
+            })
+    return resolved
+
+
+def _process_wikilinks(content_md: str, all_ids: set) -> str:
+    """Convert [[wikilink]] and [[target|Display]] to markdown links."""
+    def _replace_wikilink(match):
+        target_raw = match.group(1).strip()
+        display = match.group(2)
+        if display:
+            display = display.strip()
+        else:
+            display = target_raw
+
+        # Normalize target: lowercase, strip, replace spaces with hyphens
+        target = target_raw.lower().replace(" ", "-")
+
+        if target in all_ids:
+            return f"[{display}]({target}.html)"
+        else:
+            print(f"  WARNING: broken wikilink [[{target_raw}]] — no entry with id '{target}'")
+            return f'<span class="broken-link">{display}</span>'
+
+    return re.sub(r"\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]", _replace_wikilink, content_md)
+
+
+def _build_category_tree(entries: list[dict]) -> dict:
+    """Build a nested category tree from hierarchical category paths.
+
+    Returns a dict like:
+    {"sociedade": {"_count": 5, "organização-social": {"_count": 3, "clãs": {"_count": 2}}}}
+    """
+    tree: dict = {}
+    for entry in entries:
+        for cat in entry.get("categories") or []:
+            parts = cat.split("/")
+            node = tree
+            for part in parts:
+                if part not in node:
+                    node[part] = {"_count": 0}
+                node[part]["_count"] += 1
+                node = node[part]
+    return tree
+
+
 def convert_encyclopedia():
-    """Convert encyclopedia YAML + markdown to kodudo-compatible JSON."""
+    """Convert encyclopedia YAML + markdown to JSON.
+
+    Produces two outputs:
+    - encyclopedia.json: full data with content_html (for article page rendering)
+    - encyclopedia_index.json: lightweight index (for search page)
+    """
     print("=== Converting Encyclopedia ===")
 
     schema = aptoro.load_schema(str(DATA_DIR / "encyclopedia_schema.yaml"))
@@ -327,23 +491,72 @@ def convert_encyclopedia():
             print(f"    ... and {len(e.errors) - 10} more errors")
         raise
 
-    md = _build_markdown_renderer()
-    normalized_records = []
+    # Build set of all IDs for wikilink resolution
+    all_ids = set()
     for record in records:
         entry = asdict(record) if is_dataclass(record) else dict(record)
+        eid = entry.get("id", "")
+        if eid:
+            all_ids.add(eid)
+
+    # Load BibTeX data for reference resolution
+    bib_data = _load_bib_data()
+
+    md = _build_markdown_renderer()
+    normalized_records = []
+    index_records = []
+
+    for record in records:
+        entry = asdict(record) if is_dataclass(record) else dict(record)
+
+        # Deserialize infobox from JSON string back to dict
+        infobox_str = entry.get("infobox") or ""
+        if infobox_str and isinstance(infobox_str, str):
+            try:
+                entry["infobox"] = json.loads(infobox_str)
+            except (json.JSONDecodeError, ValueError):
+                entry["infobox"] = {}
+        else:
+            entry["infobox"] = {}
+
         content_md = entry.get("content_md") or ""
         _assert_no_html(content_md, entry.get("id", "<unknown>"))
+
+        # Process wikilinks before rendering
+        if "[[" in content_md:
+            content_md = _process_wikilinks(content_md, all_ids)
+
         content_html = md.render(content_md) if content_md else ""
         entry["content_html"] = content_html
         entry["content_text"] = _html_to_text(content_html)
-        entry.pop("content_md", None)
+        entry["content_md"] = content_md
+
+        # Resolve BibTeX references
+        refs = entry.get("references") or []
+        if refs and bib_data:
+            entry["resolved_references"] = _resolve_references(refs, bib_data)
+        else:
+            entry["resolved_references"] = []
+
         normalized_records.append(entry)
 
+        # Build lightweight index entry
+        index_records.append({
+            "id": entry.get("id", ""),
+            "title": entry.get("title", ""),
+            "abstract": entry.get("abstract", ""),
+            "categories": entry.get("categories", []),
+            "variants": entry.get("variants", []),
+            "entry_type": entry.get("entry_type", ""),
+            "has_content": bool(content_html),
+        })
+
+    # Full output (for build_site.py article page rendering)
     output_data = {
         "meta": {
             "name": "bororo_encyclopedia",
             "description": "Bororo Encyclopedia Entries",
-            "version": "1.0",
+            "version": "2.0",
             "record_count": len(normalized_records),
         },
         "data": normalized_records,
@@ -354,7 +567,28 @@ def convert_encyclopedia():
         json.dumps(output_data, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
+    # Build category tree
+    category_tree = _build_category_tree(normalized_records)
+
+    # Index output (lightweight, for search page)
+    index_data = {
+        "meta": {
+            "name": "bororo_encyclopedia",
+            "description": "Bororo Encyclopedia Entries",
+            "version": "2.0",
+            "record_count": len(index_records),
+        },
+        "data": index_records,
+        "category_tree": category_tree,
+    }
+
+    index_file = DATA_DIR / "encyclopedia_index.json"
+    index_file.write_text(
+        json.dumps(index_data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
     print(f"  Exported {len(normalized_records)} entries to {output_file}")
+    print(f"  Exported index ({len(index_records)} entries) to {index_file}")
     return len(normalized_records)
 
 
@@ -574,11 +808,16 @@ def main():
 
     # Copy large datasets to docs/ for fetch()-based loading
     import shutil
-    for name in ("dictionary", "encyclopedia"):
-        src = DATA_DIR / f"{name}.json"
-        dst = DOCS_DIR / f"{name}-data.json"
-        shutil.copy2(src, dst)
-        print(f"  Copied {src.name} → {dst}")
+    # Dictionary: full data for search page
+    src = DATA_DIR / "dictionary.json"
+    dst = DOCS_DIR / "dictionary-data.json"
+    shutil.copy2(src, dst)
+    print(f"  Copied {src.name} → {dst}")
+    # Encyclopedia: lightweight index for search page
+    src = DATA_DIR / "encyclopedia_index.json"
+    dst = DOCS_DIR / "encyclopedia-data.json"
+    shutil.copy2(src, dst)
+    print(f"  Copied {src.name} → {dst}")
     print()
 
     # Generate index with all counts
