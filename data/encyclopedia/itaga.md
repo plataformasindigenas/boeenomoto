@@ -13,7 +13,8 @@ categories:
 - cosmologia/morte
 date: '2026-02-18'
 url: ''
-images: []
+images:
+- url: images/itaga2.jpg
 examples: []
 entry_type: ritual
 infobox:
