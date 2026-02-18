@@ -262,31 +262,310 @@
                 transition: none !important;
             }
         }
-        .entry-audio {
-            margin-top: 0.5rem;
+        .dict-header {
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 1rem;
+        }
+        .dict-header h1 {
+            margin: 0 0 0.5rem 0;
+        }
+        .dict-controls {
+            background: white;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            margin-bottom: 0.75rem;
+        }
+        .dict-controls .search-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .dict-controls .search-input {
+            flex: 1;
+            min-width: 180px;
+            padding: 0.6rem 0.75rem;
+            font-size: 0.95rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .dict-controls .search-input:focus {
+            border-color: #C75B39;
+            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
+        }
+        .dict-controls .filter-select {
+            padding: 0.6rem;
+            font-size: 0.95rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+        .dict-stats {
+            margin-top: 0.4rem;
+            font-size: 0.82rem;
+            color: #6B6B6B;
+        }
+        .dict-layout {
+            display: flex;
+            gap: 0;
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            overflow: hidden;
+            min-height: 70vh;
+        }
+
+        /* Letter bar */
+        .letter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+            padding: 0.5rem;
+            border-bottom: 1px solid #E8E4DF;
+            background: #FDFCFB;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .letter-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            border-radius: 4px;
+            background: #F5EDE8;
+            color: #3D352F;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .letter-btn:hover {
+            background: #C75B39;
+            color: white;
+        }
+        .letter-btn.active {
+            background: #C75B39;
+            color: white;
+        }
+        .letter-btn.dimmed {
+            opacity: 0.3;
+            cursor: default;
+        }
+        .letter-btn.dimmed:hover {
+            background: #F5EDE8;
+            color: #3D352F;
+        }
+
+        /* Left panel */
+        .dict-list-panel {
+            width: 280px;
+            min-width: 220px;
+            border-right: 1px solid #E8E4DF;
             display: flex;
             flex-direction: column;
-            gap: 0.35rem;
+            flex-shrink: 0;
         }
-        .audio-item {
+        .word-list {
+            overflow-y: auto;
+            flex: 1;
+        }
+        .letter-header {
+            position: sticky;
+            top: 0;
+            background: #F5EDE8;
+            padding: 0.35rem 0.75rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #A84B2F;
+            z-index: 1;
+        }
+        .letter-count {
+            font-weight: 400;
+            color: #6B6B6B;
+            font-size: 0.8rem;
+        }
+        .word-item {
+            padding: 0.3rem 0.75rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: background 0.1s;
+        }
+        .word-item:hover {
+            background: #f0ebe7;
+        }
+        .word-item.selected {
+            background: #C75B39;
+            color: white;
+        }
+        .letter-group.hidden {
+            display: none;
+        }
+        .word-item.hidden {
+            display: none;
+        }
+
+        /* Right panel */
+        .dict-detail-panel {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+            min-width: 0;
+        }
+        .detail-empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #6B6B6B;
+            text-align: center;
+            padding: 2rem;
+        }
+        .detail-word {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3D352F;
+            margin: 0 0 0.25rem 0;
+        }
+        .detail-meta {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .detail-ipa {
+            color: #6B6B6B;
+            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+            font-size: 1.1rem;
+        }
+        .detail-pos {
+            font-size: 0.8rem;
+            background: #F5EDE8;
+            color: #A84B2F;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .detail-definition {
+            font-size: 1.05rem;
+            color: #333;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .detail-example {
+            padding: 0.75rem 1rem;
+            border-left: 4px solid #C75B39;
+            background: #fdf8f6;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 1rem;
+            border-radius: 0 4px 4px 0;
+        }
+        .detail-scientific {
+            font-style: italic;
+            color: #6B6B6B;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .detail-comment {
+            padding: 0.75rem;
+            background: #fff8e1;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #6B6B6B;
+            margin-bottom: 1rem;
+        }
+        .detail-audio {
+            margin-bottom: 1rem;
+        }
+        .detail-audio .audio-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            margin-bottom: 0.35rem;
         }
-        .audio-speaker {
-            font-size: 0.8rem;
+        .detail-audio .audio-speaker {
+            font-size: 0.82rem;
             color: #666;
             min-width: 5em;
         }
-        .audio-item audio {
+        .detail-audio audio {
             height: 28px;
             flex: 1;
-            max-width: 260px;
+            max-width: 280px;
         }
+        .detail-media {
+            margin-bottom: 1rem;
+        }
+        .detail-media img {
+            max-width: 200px;
+            max-height: 150px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+        .detail-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .detail-links a {
+            color: #C75B39;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .detail-links a:hover {
+            text-decoration: underline;
+        }
+        .link-row {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .link-icon {
+            font-size: 0.85rem;
+        }
+
         .loading-state {
             padding: 3rem;
             text-align: center;
             color: #888;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .dict-layout {
+                flex-direction: column;
+                min-height: auto;
+            }
+            .dict-list-panel {
+                width: 100%;
+                min-width: unset;
+                border-right: none;
+                border-bottom: 1px solid #E8E4DF;
+                max-height: 45vh;
+            }
+            .dict-detail-panel {
+                min-height: 40vh;
+                padding: 1rem;
+            }
+            .detail-word {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
@@ -303,24 +582,30 @@
     </nav>
 
     <main id="main-content">
-    <header>
+    <div class="dict-header">
         <h1>Bororo Dictionary</h1>
         <p class="subtitle">Bororo Dictionary Entries &mdash; 2866 entries</p>
-    </header>
+    </div>
 
-    <div class="search-container">
+    <div class="dict-controls">
         <div class="search-row">
             <input type="text" id="search-input" class="search-input" placeholder="Search (Bororo or Portuguese)..." autocomplete="off" disabled aria-label="Search">
             <select id="pos-filter" class="filter-select" disabled aria-label="Filter results">
                 <option value="">All word classes</option>
             </select>
         </div>
-        <div class="stats" id="stats" aria-live="polite"></div>
+        <div class="dict-stats" id="stats" aria-live="polite"></div>
     </div>
 
-    <div class="results-container" id="results" aria-live="polite">
-        <div class="loading-state" id="loading">
-            Loading dictionary...
+    <div class="dict-layout" id="dict-layout">
+        <div class="dict-list-panel">
+            <div class="letter-bar" id="letter-bar"></div>
+            <div class="word-list" id="word-list"></div>
+        </div>
+        <div class="dict-detail-panel" id="detail-panel">
+            <div class="loading-state" id="loading">
+                Loading dictionary...
+            </div>
         </div>
     </div>
     </main>
@@ -330,128 +615,380 @@
 <p>Schema v1.0</p>    </footer>
 
     <script src="../js/common.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
-
     <script>
-    var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_back_to_index": "Back to encyclopedia", "enc_breadcrumb_label": "Breadcrumb", "enc_browse_categories": "Browse by category", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_entry_type": "Type", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_featured_title": "Featured article", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_highlights_title": "Illustrated articles", "enc_last_updated": "Last updated", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_read_more": "Read more", "enc_references": "References", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_see_also": "See also", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "enc_welcome_text": "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people.", "entries_label": "entries", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_generated": "Generated with", "html_lang": "en", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_title": "About the Project", "index_hero_subtitle": "Bororo World", "index_hero_title": "Boe Eno Moto", "index_title": "Home", "infobox_cl\u00e3": "Clan", "infobox_coordenadas": "Coordinates", "infobox_dura\u00e7\u00e3o": "Duration", "infobox_esta\u00e7\u00e3o": "Season", "infobox_fam\u00edlia": "Family", "infobox_fun\u00e7\u00e3o": "Function", "infobox_fun\u00e7\u00f5es": "Functions", "infobox_habitat": "Habitat", "infobox_local": "Location", "infobox_material": "Material", "infobox_membros": "Members", "infobox_nome_cient\u00edfico": "Scientific name", "infobox_papel": "Role", "infobox_participantes": "Participants", "infobox_per\u00edodo": "Period", "infobox_regi\u00e3o": "Region", "infobox_rela\u00e7\u00f5es": "Relations", "infobox_rio": "River", "infobox_tipo": "Type", "infobox_usos": "Uses", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_fauna": "Fauna", "nav_label": "Main navigation", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species"};
-    var posLabels = {};
-    ['LEX','S','VC','ADV','PPASS','POSP','SUF','INTJ','VT','PRON','V','PRCL','PPAS','PPART','NUM','IP','DEM','CONJ','X','PROPN'].forEach(function(k) {
-        posLabels[k] = T['pos_' + k] || k;
-    });
-
-    fetch('../dictionary-data.json')
-        .then(function(r) { return r.json(); })
-        .then(function(json) {
-            var posTypes = {};
-            json.data.forEach(function(item) {
-                if (item.pos) posTypes[item.pos] = true;
-            });
-            var posFilter = document.getElementById('pos-filter');
-            Object.keys(posTypes).sort().forEach(function(pos) {
-                var opt = document.createElement('option');
-                opt.value = pos;
-                opt.textContent = pos;
-                posFilter.appendChild(opt);
-            });
-
-            document.getElementById('search-input').disabled = false;
-            posFilter.disabled = false;
-
-            document.getElementById('results').innerHTML =
-                '<div class="empty-state">' +
-                '<h2>' + T.dict_empty_title + '</h2>' +
-                '<p>' + T.dict_empty_text + '</p>' +
-                '</div>';
-
-            initSearchPage({
-                data: json.data,
-                fuseKeys: [
-                    { name: 'entry', weight: 2 },
-                    { name: 'definition', weight: 1.5 },
-                    { name: 'example_sent', weight: 1 },
-                    { name: 'comment', weight: 0.5 },
-                    { name: 'ipa', weight: 0.5 },
-                    { name: 'scientific_name', weight: 0.5 }
-                ],
-                filterField: 'pos',
-                filterElementId: 'pos-filter',
-                renderEntry: function(entry, matchMap) {
-                    var html = '<div class="entry">';
-
-                    html += '<div class="entry-header">';
-                    html += '<span class="entry-word" lang="bor">' + highlightMatches(entry.entry, matchMap['entry']) + '</span>';
-                    if (entry.ipa) {
-                        html += '<span class="entry-ipa">[' + highlightMatches(entry.ipa, matchMap['ipa']) + ']</span>';
-                    }
-                    if (entry.pos) {
-                        html += '<span class="entry-tag">' + escapeHtml(posLabels[entry.pos] || entry.pos) + '</span>';
-                    }
-                    html += '</div>';
-
-                    if (entry.definition) {
-                        html += '<p class="entry-definition">' + highlightMatches(entry.definition, matchMap['definition']) + '</p>';
-                    }
-                    if (entry.example_sent) {
-                        html += '<p class="entry-example">' + highlightMatches(entry.example_sent, matchMap['example_sent']) + '</p>';
-                    }
-                    if (entry.scientific_name) {
-                        html += '<p class="entry-scientific">' + T.dict_scientific_name + ': <em>' + highlightMatches(entry.scientific_name, matchMap['scientific_name']) + '</em></p>';
-                    }
-                    if (entry.comment) {
-                        html += '<div class="entry-comment">' + highlightMatches(entry.comment, matchMap['comment']) + '</div>';
-                    }
-
-                    if (entry.audio && entry.audio.length > 0) {
-                        html += '<div class="entry-audio">';
-                        for (var i = 0; i < entry.audio.length; i++) {
-                            var a = entry.audio[i];
-                            var mimeType = a.format === 'webm' ? 'audio/webm' : 'audio/wav';
-                            var speaker = a.speaker.charAt(0).toUpperCase() + a.speaker.slice(1);
-                            html += '<div class="audio-item">';
-                            html += '<span class="audio-speaker">' + escapeHtml(speaker) + '</span>';
-                            html += '<audio controls preload="none"><source src="../recordings/' + escapeHtml(a.file_path) + '" type="' + mimeType + '"></audio>';
-                            html += '</div>';
-                        }
-                        html += '</div>';
-                    }
-
-                    if (entry._linked_fauna && entry._linked_fauna.length > 0) {
-                        html += '<div class="entry-links" style="margin-top:0.5rem">';
-                        html += '<strong>' + T.see_in_fauna + ':</strong> ';
-                        html += entry._linked_fauna.map(function(f) {
-                            return '<a href="fauna.html?search=' + encodeURIComponent(f.name_bororo) + '">' + escapeHtml(f.name_bororo) + '</a>';
-                        }).join(', ');
-                        html += '</div>';
-                    }
-
-                    if (entry.pic_link || entry.wiki_link) {
-                        html += '<div class="entry-media">';
-                        if (entry.pic_link) {
-                            html += '<a href="' + escapeHtml(entry.pic_link) + '" target="_blank" rel="noopener">';
-                            html += '<img class="entry-thumbnail" src="' + escapeHtml(entry.pic_link) + '" alt="' + escapeHtml(entry.entry) + '" loading="lazy" onerror="this.style.display=\'none\'">';
-                            html += '</a>';
-                        }
-                        html += '<div class="entry-links">';
-                        if (entry.wiki_link) {
-                            html += '<a href="' + escapeHtml(entry.wiki_link) + '" target="_blank" rel="noopener">Wikipedia</a>';
-                        }
-                        html += '</div>';
-                        html += '</div>';
-                    }
-
-                    html += '</div>';
-                    return html;
-                },
-                labels: {
-                    results: function(n) { return n !== 1 ? T.dict_result_plural : T.dict_result_singular; },
-                    emptyTitle: T.dict_empty_title,
-                    emptyText: T.dict_empty_text,
-                    noResults: T.dict_no_results,
-                    noResultsHint: T.dict_no_results_hint,
-                    overflow: function(n) { return T.dict_overflow.replace('{n}', n); }
-                }
-            });
+    (function() {
+        var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "dict_all_pos": "All word classes", "dict_browse_hint": "Select an entry to see details", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_back_to_index": "Back to encyclopedia", "enc_breadcrumb_label": "Breadcrumb", "enc_browse_categories": "Browse by category", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_entry_type": "Type", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_featured_title": "Featured article", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_highlights_title": "Illustrated articles", "enc_last_updated": "Last updated", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_read_more": "Read more", "enc_references": "References", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_see_also": "See also", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "enc_welcome_text": "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people.", "entries_label": "entries", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_generated": "Generated with", "html_lang": "en", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_title": "About the Project", "index_hero_subtitle": "Bororo World", "index_hero_title": "Boe Eno Moto", "index_title": "Home", "infobox_cl\u00e3": "Clan", "infobox_coordenadas": "Coordinates", "infobox_dura\u00e7\u00e3o": "Duration", "infobox_esta\u00e7\u00e3o": "Season", "infobox_fam\u00edlia": "Family", "infobox_fun\u00e7\u00e3o": "Function", "infobox_fun\u00e7\u00f5es": "Functions", "infobox_habitat": "Habitat", "infobox_local": "Location", "infobox_material": "Material", "infobox_membros": "Members", "infobox_nome_cient\u00edfico": "Scientific name", "infobox_papel": "Role", "infobox_participantes": "Participants", "infobox_per\u00edodo": "Period", "infobox_regi\u00e3o": "Region", "infobox_rela\u00e7\u00f5es": "Relations", "infobox_rio": "River", "infobox_tipo": "Type", "infobox_usos": "Uses", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_fauna": "Fauna", "nav_label": "Main navigation", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_encyclopedia": "See in Encyclopedia", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species"};
+        var BASE_PATH = '../';
+        var posLabels = {};
+        ['LEX','S','VC','ADV','PPASS','POSP','SUF','INTJ','VT','PRON','V','PRCL','PPAS','PPART','NUM','IP','DEM','CONJ','X','PROPN'].forEach(function(k) {
+            posLabels[k] = T['pos_' + k] || k;
         });
+
+        var allEntries = [];
+        var entriesById = {};
+        var entriesByLetter = {};
+        var visibleEntries = [];
+        var selectedId = null;
+        var availableLetters = [];
+
+        var searchInput = document.getElementById('search-input');
+        var posFilter = document.getElementById('pos-filter');
+        var letterBar = document.getElementById('letter-bar');
+        var wordList = document.getElementById('word-list');
+        var detailPanel = document.getElementById('detail-panel');
+        var statsDiv = document.getElementById('stats');
+
+        function getEntryLetter(entry) {
+            var word = (entry.entry || '').replace(/^-+/, '');
+            if (!word) return '?';
+            return word[0].toUpperCase();
+        }
+
+        function buildLookups(entries) {
+            entriesById = {};
+            entriesByLetter = {};
+            for (var i = 0; i < entries.length; i++) {
+                var e = entries[i];
+                entriesById[e.id] = e;
+                var letter = getEntryLetter(e);
+                if (!entriesByLetter[letter]) entriesByLetter[letter] = [];
+                entriesByLetter[letter].push(e);
+            }
+            availableLetters = Object.keys(entriesByLetter).sort(function(a, b) {
+                return a.localeCompare(b);
+            });
+        }
+
+        function renderLetterBar(activeLetters) {
+            var html = '';
+            for (var i = 0; i < availableLetters.length; i++) {
+                var l = availableLetters[i];
+                var dimmed = activeLetters && activeLetters.indexOf(l) === -1;
+                html += '<button class="letter-btn' + (dimmed ? ' dimmed' : '') + '" data-letter="' + l + '">' + l + '</button>';
+            }
+            letterBar.innerHTML = html;
+        }
+
+        function renderWordList(entries) {
+            visibleEntries = entries;
+            var grouped = {};
+            var letters = [];
+            for (var i = 0; i < entries.length; i++) {
+                var l = getEntryLetter(entries[i]);
+                if (!grouped[l]) {
+                    grouped[l] = [];
+                    letters.push(l);
+                }
+                grouped[l].push(entries[i]);
+            }
+            letters.sort(function(a, b) { return a.localeCompare(b); });
+
+            var html = '';
+            for (var li = 0; li < letters.length; li++) {
+                var letter = letters[li];
+                var group = grouped[letter];
+                html += '<div class="letter-group" data-letter="' + letter + '" id="letter-' + letter + '">';
+                html += '<div class="letter-header">' + letter + ' <span class="letter-count">(' + group.length + ')</span></div>';
+                for (var gi = 0; gi < group.length; gi++) {
+                    var e = group[gi];
+                    var sel = e.id === selectedId ? ' selected' : '';
+                    html += '<div class="word-item' + sel + '" data-id="' + e.id + '">' + escapeHtml(e.entry) + '</div>';
+                }
+                html += '</div>';
+            }
+            wordList.innerHTML = html;
+
+            // Update letter bar
+            renderLetterBar(letters);
+        }
+
+        function renderDetail(entry) {
+            if (!entry) {
+                detailPanel.innerHTML = '<div class="detail-empty"><p>' + (T.dict_browse_hint || 'Selecione uma entrada para ver os detalhes') + '</p></div>';
+                return;
+            }
+
+            var html = '';
+            html += '<h2 class="detail-word" lang="bor">' + escapeHtml(entry.entry) + '</h2>';
+
+            html += '<div class="detail-meta">';
+            if (entry.ipa) {
+                html += '<span class="detail-ipa">[' + escapeHtml(entry.ipa) + ']</span>';
+            }
+            if (entry.pos) {
+                html += '<span class="detail-pos">' + escapeHtml(posLabels[entry.pos] || entry.pos) + '</span>';
+            }
+            html += '</div>';
+
+            if (entry.definition) {
+                html += '<div class="detail-definition">' + escapeHtml(entry.definition) + '</div>';
+            }
+
+            if (entry.example_sent) {
+                html += '<div class="detail-example">' + escapeHtml(entry.example_sent) + '</div>';
+            }
+
+            if (entry.scientific_name) {
+                html += '<div class="detail-scientific">' + (T.dict_scientific_name || 'Nome científico') + ': <em>' + escapeHtml(entry.scientific_name) + '</em></div>';
+            }
+
+            if (entry.comment) {
+                html += '<div class="detail-comment">' + escapeHtml(entry.comment) + '</div>';
+            }
+
+            // Audio
+            if (entry.audio && entry.audio.length > 0) {
+                html += '<div class="detail-audio">';
+                for (var i = 0; i < entry.audio.length; i++) {
+                    var a = entry.audio[i];
+                    var mimeType = a.format === 'webm' ? 'audio/webm' : 'audio/wav';
+                    var speaker = a.speaker.charAt(0).toUpperCase() + a.speaker.slice(1);
+                    html += '<div class="audio-item">';
+                    html += '<span class="audio-speaker">' + escapeHtml(speaker) + '</span>';
+                    html += '<audio controls preload="none"><source src="' + BASE_PATH + 'recordings/' + escapeHtml(a.file_path) + '" type="' + mimeType + '"></audio>';
+                    html += '</div>';
+                }
+                html += '</div>';
+            }
+
+            // Image
+            if (entry.pic_link) {
+                html += '<div class="detail-media">';
+                html += '<a href="' + escapeHtml(entry.pic_link) + '" target="_blank" rel="noopener">';
+                html += '<img src="' + escapeHtml(entry.pic_link) + '" alt="' + escapeHtml(entry.entry) + '" loading="lazy" onerror="this.parentNode.parentNode.style.display=\'none\'">';
+                html += '</a>';
+                html += '</div>';
+            }
+
+            // Cross-links
+            var hasLinks = (entry._linked_fauna && entry._linked_fauna.length > 0)
+                || (entry._linked_encyclopedia && entry._linked_encyclopedia.length > 0)
+                || entry.wiki_link;
+
+            if (hasLinks) {
+                html += '<div class="detail-links">';
+
+                if (entry._linked_fauna && entry._linked_fauna.length > 0) {
+                    for (var fi = 0; fi < entry._linked_fauna.length; fi++) {
+                        var f = entry._linked_fauna[fi];
+                        html += '<div class="link-row">';
+                        html += '<span class="link-icon">&#x1f43e;</span> ';
+                        html += '<a href="fauna.html?search=' + encodeURIComponent(f.name_bororo) + '">' + (T.see_in_fauna || 'Ver na Fauna') + ': ' + escapeHtml(f.name_bororo) + '</a>';
+                        html += '</div>';
+                    }
+                }
+
+                if (entry._linked_encyclopedia && entry._linked_encyclopedia.length > 0) {
+                    for (var ei = 0; ei < entry._linked_encyclopedia.length; ei++) {
+                        var enc = entry._linked_encyclopedia[ei];
+                        html += '<div class="link-row">';
+                        html += '<span class="link-icon">&#x1f4d6;</span> ';
+                        html += '<a href="encyclopedia/' + encodeURIComponent(enc.id) + '.html">' + (T.see_in_encyclopedia || 'Ver na Enciclopédia') + ': ' + escapeHtml(enc.title) + '</a>';
+                        html += '</div>';
+                    }
+                }
+
+                if (entry.wiki_link) {
+                    html += '<div class="link-row">';
+                    html += '<span class="link-icon">&#x1f310;</span> ';
+                    html += '<a href="' + escapeHtml(entry.wiki_link) + '" target="_blank" rel="noopener">Wikipedia</a>';
+                    html += '</div>';
+                }
+
+                html += '</div>';
+            }
+
+            detailPanel.innerHTML = html;
+        }
+
+        function selectEntry(id) {
+            selectedId = id;
+
+            // Update word list selection
+            var items = wordList.querySelectorAll('.word-item');
+            for (var i = 0; i < items.length; i++) {
+                if (parseInt(items[i].getAttribute('data-id')) === id) {
+                    items[i].classList.add('selected');
+                } else {
+                    items[i].classList.remove('selected');
+                }
+            }
+
+            var entry = entriesById[id];
+            renderDetail(entry);
+
+            // On mobile, scroll detail into view
+            if (window.innerWidth <= 700) {
+                detailPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function scrollToLetter(letter) {
+            var el = document.getElementById('letter-' + letter);
+            if (el) {
+                wordList.scrollTop = el.offsetTop - wordList.offsetTop;
+            }
+        }
+
+        function matchesSearch(entry, query) {
+            var q = query.toLowerCase();
+            var fields = [entry.entry, entry.definition, entry.ipa, entry.scientific_name, entry.comment];
+            for (var i = 0; i < fields.length; i++) {
+                if (fields[i] && fields[i].toLowerCase().indexOf(q) !== -1) return true;
+            }
+            return false;
+        }
+
+        function filterEntries() {
+            var query = searchInput.value.trim();
+            var pos = posFilter.value;
+
+            var filtered = allEntries;
+
+            if (query) {
+                filtered = filtered.filter(function(e) { return matchesSearch(e, query); });
+            }
+            if (pos) {
+                filtered = filtered.filter(function(e) { return e.pos === pos; });
+            }
+
+            renderWordList(filtered);
+
+            // Stats
+            if (query || pos) {
+                statsDiv.textContent = filtered.length + ' ' + (filtered.length !== 1
+                    ? (T.dict_result_plural || 'resultados encontrados')
+                    : (T.dict_result_singular || 'resultado encontrado'));
+            } else {
+                statsDiv.textContent = '';
+            }
+
+            // If selected entry is still visible, keep it selected
+            if (selectedId && entriesById[selectedId]) {
+                var stillVisible = filtered.some(function(e) { return e.id === selectedId; });
+                if (!stillVisible) {
+                    selectedId = null;
+                    renderDetail(null);
+                }
+            }
+        }
+
+        // Keyboard navigation
+        function getVisibleIds() {
+            var ids = [];
+            var items = wordList.querySelectorAll('.word-item');
+            for (var i = 0; i < items.length; i++) {
+                ids.push(parseInt(items[i].getAttribute('data-id')));
+            }
+            return ids;
+        }
+
+        function handleKeyDown(e) {
+            if (e.target === searchInput) return;
+
+            var ids = getVisibleIds();
+            if (ids.length === 0) return;
+
+            var idx = selectedId ? ids.indexOf(selectedId) : -1;
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                idx = idx < ids.length - 1 ? idx + 1 : idx;
+                selectEntry(ids[idx]);
+                var el = wordList.querySelector('.word-item.selected');
+                if (el) el.scrollIntoView({ block: 'nearest' });
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                idx = idx > 0 ? idx - 1 : 0;
+                selectEntry(ids[idx]);
+                var el = wordList.querySelector('.word-item.selected');
+                if (el) el.scrollIntoView({ block: 'nearest' });
+            }
+        }
+
+        // Debounce
+        var filterTimer;
+        function debouncedFilter() {
+            clearTimeout(filterTimer);
+            filterTimer = setTimeout(filterEntries, 150);
+        }
+
+        // Event listeners
+        wordList.addEventListener('click', function(e) {
+            var item = e.target.closest('.word-item');
+            if (item) {
+                selectEntry(parseInt(item.getAttribute('data-id')));
+            }
+        });
+
+        letterBar.addEventListener('click', function(e) {
+            var btn = e.target.closest('.letter-btn');
+            if (btn && !btn.classList.contains('dimmed')) {
+                scrollToLetter(btn.getAttribute('data-letter'));
+            }
+        });
+
+        searchInput.addEventListener('input', debouncedFilter);
+        posFilter.addEventListener('change', filterEntries);
+        document.addEventListener('keydown', handleKeyDown);
+
+        // Load data
+        fetch(BASE_PATH + 'dictionary-data.json')
+            .then(function(r) { return r.json(); })
+            .then(function(json) {
+                allEntries = json.data.sort(function(a, b) {
+                    var ae = (a.entry || '').replace(/^-+/, '');
+                    var be = (b.entry || '').replace(/^-+/, '');
+                    return ae.localeCompare(be, 'pt');
+                });
+
+                buildLookups(allEntries);
+
+                // Populate POS filter
+                var posTypes = {};
+                for (var i = 0; i < allEntries.length; i++) {
+                    if (allEntries[i].pos) posTypes[allEntries[i].pos] = true;
+                }
+                Object.keys(posTypes).sort().forEach(function(pos) {
+                    var opt = document.createElement('option');
+                    opt.value = pos;
+                    opt.textContent = posLabels[pos] || pos;
+                    posFilter.appendChild(opt);
+                });
+
+                searchInput.disabled = false;
+                posFilter.disabled = false;
+
+                // Check URL params
+                var urlParams = new URLSearchParams(window.location.search);
+                var initialSearch = urlParams.get('search');
+                var initialEntry = urlParams.get('entry');
+
+                if (initialSearch) {
+                    searchInput.value = initialSearch;
+                }
+
+                // Render initial list
+                filterEntries();
+
+                // Select initial entry
+                if (initialEntry) {
+                    var entryId = parseInt(initialEntry);
+                    if (entriesById[entryId]) {
+                        selectEntry(entryId);
+                        // Scroll to the selected entry in word list
+                        setTimeout(function() {
+                            var el = wordList.querySelector('.word-item.selected');
+                            if (el) el.scrollIntoView({ block: 'center' });
+                        }, 100);
+                    }
+                } else if (!initialSearch) {
+                    renderDetail(null);
+                }
+
+                searchInput.focus();
+            });
+    })();
     </script>
 </body>
 </html>

@@ -416,8 +416,12 @@
     {
       "id": "boe",
       "title": "Boe",
-      "abstract": "Boe -- sing. e plural Coisa, índio bororo, tempo astronómico, estado atmosférico.",
-      "categories": [],
+      "abstract": "Termo central da língua e da autoidentificação bororo, significando simultaneamente pessoa, coisa, mundo e condição existencial.",
+      "categories": [
+        "etnologia",
+        "língua",
+        "cosmologia"
+      ],
       "variants": [],
       "entry_type": "",
       "has_content": true
@@ -1071,10 +1075,7 @@
         "cosmologia/alma",
         "cosmologia/morte"
       ],
-      "variants": [
-        "Iága",
-        "Itága"
-      ],
+      "variants": [],
       "entry_type": "ritual",
       "has_content": true
     },
@@ -1754,7 +1755,7 @@
       }
     },
     "cosmologia": {
-      "_count": 16,
+      "_count": 17,
       "mitologia": {
         "_count": 1
       },
@@ -1842,18 +1843,22 @@
     },
     "geografia": {
       "_count": 2
+    },
+    "etnologia": {
+      "_count": 1
+    },
+    "língua": {
+      "_count": 1
     }
   },
   "featured": {
     "id": "boe",
     "title": "Boe",
-    "abstract": "Boe -- sing. e plural Coisa, índio bororo, tempo astronómico, estado atmosférico.",
+    "abstract": "Termo central da língua e da autoidentificação bororo, significando simultaneamente pessoa, coisa, mundo e condição existencial.",
     "image": {
-      "url": "images/boeEnc.jpg",
-      "alt": "Boe",
-      "credit": ""
+      "url": "images/bororo1.jpg"
     },
-    "content_excerpt": "Coisa2\n\n\nÍndio bororo: preliminares2.\n\n\nDivisão do grupo2\n\n\nOrigem do grupo2\n\n\nCaracteres físicos2\n\n\nCaracterísticas morais2\n\n\nÍndole do indivíduo bororo2\n\n\nFamília2\n\n\nReligião2\n\n\nLíngua2\n\n\nContatos com os brancos2\n\n\nRelações com outras tribos2\n\n\nEstado atual da tribo2\n\n\nBororo Ocidentais2\n\n\nBororo Orientais2\n\n\nObservações3\n\n\nTempo astronômico3.\n\n\nObservações4\n\n\nEstações1. CoisaÉ a forma da..."
+    "content_excerpt": "BOE\n\n\nEntre os Bororo, poucas palavras possuem extensão semântica comparável à forma boe.\n\nEla não corresponde apenas a “pessoa” ou “coisa”: trata-se de um termo que exprime existência, pertença e condição.\n\n\nPode designar:\n\n\n\num indivíduo\n\n\num membro do povo bororo\n\n\num ser animado ou inanimado\n\n\num acontecimento\n\n\no estado do tempo\n\n\numa condição do mundo\n\n\n\nAssim, boe funciona como uma..."
   },
   "highlights": [
     {

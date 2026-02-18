@@ -801,6 +801,24 @@ def cross_link_datasets():
                 })
             entry["_linked_dictionary"] = linked
 
+    # Dictionary → Encyclopedia: match by entry name vs encyclopedia title
+    enc_by_title = {}
+    for entry in encyclopedia["data"]:
+        title = (entry.get("title") or "").strip().lower().replace(" ", "-")
+        if title:
+            enc_by_title[title] = entry
+
+    enc_link_count = 0
+    for entry in dictionary["data"]:
+        raw_entry = (entry.get("entry") or "").strip().lower().lstrip("-").replace(" ", "-")
+        if raw_entry and raw_entry in enc_by_title:
+            enc_entry = enc_by_title[raw_entry]
+            entry.setdefault("_linked_encyclopedia", []).append({
+                "id": enc_entry["id"],
+                "title": enc_entry.get("title", ""),
+            })
+            enc_link_count += 1
+
     # Write updated files
     dict_file.write_text(
         json.dumps(dictionary, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -810,6 +828,7 @@ def cross_link_datasets():
     )
 
     print(f"  Cross-linked {link_count} dictionary↔fauna entries by scientific name")
+    print(f"  Cross-linked {enc_link_count} dictionary→encyclopedia entries by title")
 
 
 def generate_index(counts):

@@ -445,6 +445,12 @@
           "name_bororo": "Adugo",
           "name_portuguese": "Onça pintada"
         }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "adugo",
+          "title": "Adugo"
+        }
       ]
     },
     {
@@ -522,7 +528,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "adugodo",
+          "title": "Adugodo"
+        }
+      ]
     },
     {
       "id": 37,
@@ -564,7 +576,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ae",
+          "title": "Ae"
+        }
+      ]
     },
     {
       "id": 40,
@@ -578,7 +596,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ae",
+          "title": "Ae"
+        }
+      ]
     },
     {
       "id": 41,
@@ -1044,6 +1068,12 @@
           "id": 3,
           "name_bororo": "Aimearewy",
           "name_portuguese": "Gato mourisco / Jaguarundi"
+        }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "aimearewu",
+          "title": "Aimearewu"
         }
       ]
     },
@@ -4861,6 +4891,12 @@
           "speaker": "fernando",
           "format": "webm"
         }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "aroe",
+          "title": "Aroe"
+        }
       ]
     },
     {
@@ -6327,7 +6363,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "awara_are",
+          "title": "Awara are"
+        }
+      ]
     },
     {
       "id": 434,
@@ -6579,7 +6621,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ba_5_house_village",
+          "title": "Ba"
+        }
+      ]
     },
     {
       "id": 452,
@@ -6593,7 +6641,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ba_5_house_village",
+          "title": "Ba"
+        }
+      ]
     },
     {
       "id": 453,
@@ -6607,7 +6661,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ba_5_house_village",
+          "title": "Ba"
+        }
+      ]
     },
     {
       "id": 454,
@@ -6621,7 +6681,13 @@
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Coturnix_coturnix_eggs.jpg/500px-Coturnix_coturnix_eggs.jpg",
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ba_5_house_village",
+          "title": "Ba"
+        }
+      ]
     },
     {
       "id": 455,
@@ -9082,6 +9148,12 @@
           "file_path": "0023_elizete_bataru.webm",
           "speaker": "elizete",
           "format": "webm"
+        }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "bataru",
+          "title": "Bataru"
         }
       ]
     },
@@ -12035,6 +12107,12 @@
           "speaker": "valdemar",
           "format": "webm"
         }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "boe",
+          "title": "Boe"
+        }
       ]
     },
     {
@@ -12476,7 +12554,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "boe-eke",
+          "title": "Boe eke"
+        }
+      ]
     },
     {
       "id": 860,
@@ -12560,7 +12644,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "boe-ekudawu",
+          "title": "Boe ekudawu"
+        }
+      ]
     },
     {
       "id": 866,
@@ -12987,7 +13077,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "boe-ewadaru",
+          "title": "Boe ewadaru"
+        }
+      ]
     },
     {
       "id": 896,
@@ -14868,7 +14964,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "bokwado",
+          "title": "Bokwado"
+        }
+      ]
     },
     {
       "id": 1027,
@@ -16458,7 +16560,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "cai",
+          "title": "Cai"
+        }
+      ]
     },
     {
       "id": 1134,
@@ -16486,7 +16594,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "camu",
+          "title": "Camu"
+        }
+      ]
     },
     {
       "id": 1136,
@@ -16500,7 +16614,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "camugogo",
+          "title": "Camugogo"
+        }
+      ]
     },
     {
       "id": 1137,
@@ -16570,7 +16690,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ce",
+          "title": "Ce"
+        }
+      ]
     },
     {
       "id": 1142,
@@ -16584,7 +16710,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ce",
+          "title": "Ce"
+        }
+      ]
     },
     {
       "id": 1143,
@@ -16598,7 +16730,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ce",
+          "title": "Ce"
+        }
+      ]
     },
     {
       "id": 1144,
@@ -16668,7 +16806,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "cebegi",
+          "title": "Cebegi"
+        }
+      ]
     },
     {
       "id": 1149,
@@ -16682,7 +16826,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "cebegiwu",
+          "title": "Cebegiwu"
+        }
+      ]
     },
     {
       "id": 1150,
@@ -16752,7 +16902,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ceje",
+          "title": "Ceje"
+        }
+      ]
     },
     {
       "id": 1155,
@@ -16864,7 +17020,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ciriwore",
+          "title": "Ciriwore"
+        }
+      ]
     },
     {
       "id": 1163,
@@ -16906,7 +17068,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ciwabo-biri",
+          "title": "Ciwabo biri"
+        }
+      ]
     },
     {
       "id": 1166,
@@ -16969,7 +17137,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ciwaje-aroe",
+          "title": "Ciwaje aroe"
+        }
+      ]
     },
     {
       "id": 1170,
@@ -16983,7 +17157,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ciwaje-atugo",
+          "title": "Ciwaje atugo"
+        }
+      ]
     },
     {
       "id": 1171,
@@ -16997,7 +17177,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ciwaje-uiorubo",
+          "title": "Ciwaje uiorubo"
+        }
+      ]
     },
     {
       "id": 1172,
@@ -17025,7 +17211,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "ciwu",
+          "title": "Ciwu"
+        }
+      ]
     },
     {
       "id": 1174,
@@ -17053,7 +17245,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "coboje",
+          "title": "Coboje"
+        }
+      ]
     },
     {
       "id": 1176,
@@ -17361,7 +17559,13 @@
       "pic_link": null,
       "comment": "Espécie não identificada",
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "cucu",
+          "title": "Cucu"
+        }
+      ]
     },
     {
       "id": 1198,
@@ -24880,6 +25084,12 @@
           "speaker": "leonida",
           "format": "webm"
         }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "itaga",
+          "title": "Itaga"
+        }
       ]
     },
     {
@@ -26304,7 +26514,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "jagu",
+          "title": "Jagu"
+        }
+      ]
     },
     {
       "id": 1825,
@@ -26430,7 +26646,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "jajadoge",
+          "title": "Jajadoge"
+        }
+      ]
     },
     {
       "id": 1834,
@@ -26444,7 +26666,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "jajadoge",
+          "title": "Jajadoge"
+        }
+      ]
     },
     {
       "id": 1835,
@@ -26570,7 +26798,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "jakorewu",
+          "title": "Jakorewu"
+        }
+      ]
     },
     {
       "id": 1844,
@@ -26584,7 +26818,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "jaku",
+          "title": "jaku"
+        }
+      ]
     },
     {
       "id": 1845,
@@ -40992,7 +41232,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "kudoro",
+          "title": "Kudoro"
+        }
+      ]
     },
     {
       "id": 2854,
@@ -41006,7 +41252,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "kudoro",
+          "title": "Kudoro"
+        }
+      ]
     },
     {
       "id": 2855,

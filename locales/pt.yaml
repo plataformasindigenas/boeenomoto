@@ -61,6 +61,8 @@ dict_overflow: "Mostrando 100 de {n} resultados. Refine sua busca."
 dict_result_singular: "resultado encontrado"
 dict_result_plural: "resultados encontrados"
 dict_scientific_name: "Nome científico"
+dict_browse_hint: "Selecione uma entrada para ver os detalhes"
+dict_all_pos: "Todas as classes"
 
 # Fauna page
 fauna_title: "Fauna Bororo"
@@ -167,6 +169,7 @@ pos_PROPN: "Nome Próprio"
 see_also: "Ver também"
 see_in_fauna: "Ver na Fauna"
 see_in_dictionary: "Ver no Dicionário"
+see_in_encyclopedia: "Ver na Enciclopédia"
 
 # Common labels
 entries_label: "entradas"
