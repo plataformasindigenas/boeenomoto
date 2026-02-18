@@ -2,8 +2,6 @@
 id: itaga
 title: Itaga
 variants:
-- Iága
-- Itága
 abstract: >-
   Nome do ciclo funerário bororo. Inclui um conjunto longo e ritualmente estruturado
   de cerimônias: inicia-se com sinais de luto (entre eles, deixar o cabelo crescer)
@@ -28,9 +26,9 @@ see_also:
 - mori
 ---
 
-## Iága (Itága) — Funeral e ciclo funerário
+## Itaga — Funeral e ciclo funerário
 
-**Iága** (também grafado *Itága*, *I!ága*) é o nome do **ciclo funerário bororo**. A palavra é associada à ideia de corpo e cabeleira ( *ito* “corpo” + *aga* “cabeleira” ): o funeral envolve, entre outras coisas, o **luto marcado pelo cabelo** (deixar crescer; regras de corte) e a imagem das almas/espíritos como seres ornados de **longa cabeleira**.
+**Itaga** é o nome do **ciclo funerário bororo**. A palavra é associada à ideia de corpo e cabeleira ( *ito* “corpo” + *aga* “cabeleira” ): o funeral envolve, entre outras coisas, o **luto marcado pelo cabelo** (deixar crescer; regras de corte) e a imagem das almas/espíritos como seres ornados de **longa cabeleira**.
 
 Os funerais formam um **ciclo** que, em geral, dura **cerca de trinta dias**, mas pode ser ampliado por motivos práticos (viagens, mau tempo) ou sociais (tensões e disputas internas). A conclusão depende de condições favoráveis.
 
