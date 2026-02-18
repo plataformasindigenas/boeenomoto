@@ -2,7 +2,7 @@
 id: boe
 title: Boe
 variants: []
-abstract: Boe -- sing. e plural Coisa, índio bororo, tempo astronómico, estado atmosférico.
+abstract: Boe -- sing. e pl. Coisa, pessoa bororo, tempo astronómico, ambiente, estado atmosférico.
 categories: []
 date: '2026-01-04'
 url: ''
@@ -11,14 +11,7 @@ images:
   alt: Boe
   credit: ''
 examples:
-- bororo: ou kaiamodoge
-  translation: 'se são tribos inimigas, mas não boe. Os civilizados são Barae e os de raça negra são Tabae. de raça negra
-    são tabae. 2.1. Divisão da tribo Atualmente a designação mais conhecida dos membros da tribo bororo é Orari Mogodoge,
-    ou seja Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar uma das quatro partes em que,
-    segundo urna tradição bastante recente foi dividida a tribo. Dessa divisão resultaram os seguintes grupos: Bororos Ocidentais
-    Habitam a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação com os outros grupos. A língua
-    e, talvez, usos e costumes alteraram-se, conservando-se, porém, marcados traços de uma origem comum como parecem confirmar
-    os trabalhos de Waehneldt e Koslowski (Waehneldt 1864, XXVII: 193-229'
+- 
 - bororo: Koslowski 1895
   translation: 'VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski, porém, citando e transcrevendo Steinen,
     confunde os bororo ocidentais com os orientais, os quais últimos foram os únicos descritos pelo explorador. Os bororo
@@ -29,14 +22,13 @@ infobox: {}
 references: []
 see_also:
 - aroe
-- ecerae
-- arago
-- mori
+- tabae
+- baraedu
 ---
 
 ### Coisa2
 
-Índio bororo: preliminares2.
+Pessoa bororo:.
 
 ### Divisão do grupo2
 
@@ -80,9 +72,9 @@ Seu uso criterioso denota conhecimento da língua e elegância de expressão. Mu
 
 Os civilizados são Barae e os de raça negra são Tabae.de raça negra são tabae.
 
-#### Divisão da triboAtualmente a designação mais conhecida dos membros da tribo bororo é Orari Mogodoge,
+#### Divisão do grupo atualmente
 
-ou seja Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar uma das quatro partes em que, segundo urna tradição bastante recente foi dividida a tribo. Dessa divisão resultaram os seguintes grupos:Bororos OcidentaisHabitam a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação com os outros grupos.
+A designação mais conhecida dos membros da tribo bororo é Orari Mogodoge, ou seja Moradores das Plagas do Peixe Pintado. Essa expressão serve também para determinar uma das quatro partes em que, segundo urna tradição bastante recente foi dividida a tribo. Dessa divisão resultaram os seguintes grupos:Bororos OcidentaisHabitam a oeste do curso superior do rio Paraguai e perderam qualquer contato e relação com os outros grupos.
 
 A língua e, talvez, usos e costumes alteraram-se, conservando-se, porém, marcados traços de uma origem comum como parecem confirmar os trabalhos de Waehneldt e Koslowski (Waehneldt 1864, XXVII: 193-229; Koslowski 1895, VI: 375-441 ). Estes dois autores falam dos bororo ocidentais. Koslowski, porém, citando e transcrevendo Steinen, confunde os bororo ocidentais com os orientais, os quais últimos foram os únicos descritos pelo explorador.
 
@@ -98,9 +90,9 @@ A mesma lenda diz que os Utugo Kuridoge se originaram de um grupo de bororo do s
 
 Deve-se notar que conservaram inalterados costumes, tradições, língua, cantos e organização, como pessoalmente constatamos.O território ocupado por todos os citados grupos orientais e ocidentais pode-se com boa aproximação delimitar pela latitude sul 14º - 19º e pela longitude oeste de Greenwich 51º - 59º, ocupando assim urna área de cerca de 350.000 Km2. Entretanto inxeroravelmente invadido pelos civilizados que confinaram a maior parte dos bororo nas colônias da catequese salesiana e nas da catequese leiga.
 
-#### Origem do grupoÉ impossível determinar a origem dos bororo por indagacões diretas com indivíduos anci
+#### Origem do grupoÉ impossível determinar a origem dos bororo 
 
-ães ou moços os quais concordemente respondem: paerydyka 'nós não sabemos!'. As lendas, imperfeitas em sua cronologia e mudas sobre este problema, não oferecem nenhum interesse relativo à pesquisa. Em todos os casos os bororo nao tem a mínima idéia de grandes extensões de água salgada ou mares, embora possuam a forma po maerewu 'água que é sempre' i.e. 'água sem fim', ou seja 'mar', expressão forjada depois do contacto com os civilizados por causa de fotografias vistas, ou descrições ouvidas.
+por indagacões diretas com indivíduos anciães ou moços os quais concordemente respondem: paeruduka 'nós não sabemos!'. As lendas, imperfeitas em sua cronologia e mudas sobre este problema, não oferecem nenhum interesse relativo à pesquisa. Em todos os casos os bororo nao tem a mínima idéia de grandes extensões de água salgada ou mares, embora possuam a forma po maerewu 'água que é sempre' i.e. 'água sem fim', ou seja 'mar', expressão forjada depois do contacto com os civilizados por causa de fotografias vistas, ou descrições ouvidas.
 
 Deixando de lado várias hipóteses, lembramos a de Tonelli que faz provir os bororo do curso superio do rio Negro e do rio Orinoco (Tonelli 1927). Teriam chegado ao atual "habitat" pelos vales dos rios Negro, Amazonas, Mamoré, e Guaporé. Durante a emigração permaneceram por algum tempo entre os Chapacura da Bolívia.
 
