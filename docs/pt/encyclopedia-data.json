@@ -3,7 +3,7 @@
     "name": "bororo_encyclopedia",
     "description": "Bororo Encyclopedia Entries",
     "version": "2.0",
-    "record_count": 168
+    "record_count": 169
   },
   "data": [
     {
@@ -1063,6 +1063,22 @@
       "has_content": true
     },
     {
+      "id": "itaga",
+      "title": "Itaga",
+      "abstract": "Nome do ciclo funerário bororo. Inclui um conjunto longo e ritualmente estruturado de cerimônias: inicia-se com sinais de luto (entre eles, deixar o cabelo crescer) e culmina com a limpeza e ornamentação dos ossos, a preparação do cesto funerário (Aroe J'aro) e o sepultamento definitivo (frequentemente em água).",
+      "categories": [
+        "ritual/funeral",
+        "cosmologia/alma",
+        "cosmologia/morte"
+      ],
+      "variants": [
+        "Iága",
+        "Itága"
+      ],
+      "entry_type": "ritual",
+      "has_content": true
+    },
+    {
       "id": "itoborewu",
       "title": "Itoborewu",
       "abstract": "Itoborewu - (itobo 'parte basilar do pecíolo de folha de palmeira' + -re 'indicativo' + -wy 'relativizador') palmeira que apresenta partes basilares de pecíolos de fólhas presas ao estipe. Designação genérica de qualquer palmeira adulta.",
@@ -1702,9 +1718,9 @@
       }
     },
     "ritual": {
-      "_count": 18,
+      "_count": 19,
       "funeral": {
-        "_count": 3
+        "_count": 4
       },
       "representações": {
         "_count": 1
@@ -1738,18 +1754,18 @@
       }
     },
     "cosmologia": {
-      "_count": 14,
+      "_count": 16,
       "mitologia": {
         "_count": 1
       },
       "alma": {
-        "_count": 1
+        "_count": 2
       },
       "espírito": {
         "_count": 1
       },
       "morte": {
-        "_count": 2
+        "_count": 3
       },
       "xamanismo": {
         "_count": 2

@@ -1,25 +1,31 @@
 ---
 id: itaga
-headword: Itaga
+title: Itaga
 variants:
-gloss: Funeral; ciclo funerário bororo
-etymology: ito “corpo” + aga “cabeleira”
-summary: Nome do ciclo funerário bororo. Inclui um conjunto longo e ritualmente estruturado de cerimônias: inicia-se com sinais de luto (entre eles, deixar o cabelo crescer) e culmina com a limpeza e ornamentação dos ossos, a preparação do cesto funerário (Aroe J’aro) e o sepultamento definitivo (frequentemente em água).
-keywords:
-- funeral
-- ciclo funerário
-- luto
-- cabelo
-- Aroe
-- Aroe maiwu
-- Aroe etawara are
-- Marenaruie
-- Roia Kurirewu
-- Aroe jaro
-updated_at: '2026-02-18'
+- Iága
+- Itága
+abstract: >-
+  Nome do ciclo funerário bororo. Inclui um conjunto longo e ritualmente estruturado
+  de cerimônias: inicia-se com sinais de luto (entre eles, deixar o cabelo crescer)
+  e culmina com a limpeza e ornamentação dos ossos, a preparação do cesto funerário
+  (Aroe J'aro) e o sepultamento definitivo (frequentemente em água).
+categories:
+- ritual/funeral
+- cosmologia/alma
+- cosmologia/morte
+date: '2026-02-18'
+url: ''
 images: []
-sources:
 examples: []
+entry_type: ritual
+infobox:
+  duração: "~30 dias"
+  participantes: "Todos os clãs"
+  tipo: "Ciclo funerário"
+references: []
+see_also:
+- aroe
+- mori
 ---
 
 ## Iága (Itága) — Funeral e ciclo funerário

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itaga - Boe Eno Moto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: #F9F6F2;
+            color: #333;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #3D352F;
+            color: white;
+            padding: 0.5rem 1rem;
+            z-index: 100;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        nav {
+            background: #3D352F;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: rgba(255,255,255,0.15);
+        }
+        nav .brand {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        nav .lang-switch {
+            margin-left: auto;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        nav .lang-switch:hover {
+            opacity: 1;
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            color: #3D352F;
+        }
+        .subtitle {
+            color: #6B6B6B;
+            font-size: 0.95rem;
+        }
+        .search-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            margin-bottom: 1rem;
+        }
+        .search-row {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-input:focus {
+            border-color: #C75B39;
+            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
+        }
+        .filter-select {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #E8E4DF;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+        .stats {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #6B6B6B;
+        }
+        .results-container {
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #E8E4DF;
+            overflow: hidden;
+        }
+        .empty-state {
+            padding: 3rem;
+            text-align: center;
+            color: #6B6B6B;
+        }
+        .empty-state h2 {
+            margin: 0 0 0.5rem 0;
+            color: #6B6B6B;
+        }
+        .entry {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        .entry:last-child {
+            border-bottom: none;
+        }
+        .entry:hover {
+            background: #f8f9fa;
+        }
+        .entry-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.25rem;
+        }
+        .entry-word {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #3D352F;
+        }
+        .entry-secondary {
+            color: #6B6B6B;
+            font-size: 1rem;
+        }
+        .entry-ipa {
+            color: #6B6B6B;
+            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+        }
+        .entry-tag {
+            font-size: 0.75rem;
+            background: #F5EDE8;
+            color: #A84B2F;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .entry-definition {
+            margin: 0.5rem 0;
+            color: #444;
+        }
+        .entry-example {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            border-left: 3px solid #C75B39;
+            color: #555;
+            font-style: italic;
+        }
+        .entry-scientific {
+            font-style: italic;
+            color: #6B6B6B;
+            font-size: 0.9rem;
+        }
+        .entry-comment {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: #fff8e1;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #6B6B6B;
+        }
+        .entry-media {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+            align-items: flex-start;
+        }
+        .entry-thumbnail {
+            max-width: 120px;
+            max-height: 90px;
+            border-radius: 4px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .entry-thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .entry-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .entry-links a {
+            font-size: 0.85rem;
+            color: #C75B39;
+            text-decoration: none;
+        }
+        .entry-links a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #fff59d;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6B6B6B;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer a {
+            color: #C75B39;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .search-row {
+                flex-direction: column;
+            }
+            .search-input, .filter-select {
+                width: 100%;
+            }
+            .entry-thumbnail {
+                max-width: 80px;
+            }
+            nav {
+                justify-content: center;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+            }
+        }
+        
+.breadcrumb {
+    font-size: 0.9rem;
+    color: #6B6B6B;
+    margin-bottom: 1rem;
+}
+.breadcrumb a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-sep {
+    margin: 0 0.4rem;
+}
+article header {
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+article header h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+}
+.article-abstract {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+.article-variants {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+.variant-tag {
+    background: #E8E4DF;
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+    margin-right: 0.3rem;
+    font-style: italic;
+}
+.infobox {
+    float: right;
+    clear: right;
+    width: 260px;
+    margin: 0 0 1rem 1.5rem;
+    padding: 0;
+    border: 1px solid #C8B8A8;
+    background: #FAF8F5;
+    font-size: 0.88rem;
+}
+.infobox-header {
+    background: #E8DFD5;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+    color: #3D352F;
+    text-align: center;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image {
+    text-align: center;
+    padding: 0.75rem;
+    background: white;
+    border-bottom: 1px solid #C8B8A8;
+}
+.infobox-image img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+.infobox-image-credit {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 0.35rem;
+}
+.infobox-row {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #E8E4DF;
+}
+.infobox-row:last-child {
+    border-bottom: none;
+}
+.infobox-label {
+    font-weight: 500;
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.infobox-value {
+    color: #333;
+}
+.infobox-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+.infobox-keyword {
+    font-size: 0.75rem;
+    background: #E8E4DF;
+    color: #555;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+}
+.infobox-keyword a {
+    color: #555;
+    text-decoration: none;
+}
+.infobox-keyword a:hover {
+    text-decoration: underline;
+}
+.infobox-link a {
+    color: #C75B39;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+.infobox-link a:hover {
+    text-decoration: underline;
+}
+.toc {
+    display: inline-block;
+    background: #FAF8F5;
+    border: 1px solid #C8B8A8;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.9rem;
+    max-width: 100%;
+}
+.toc-title {
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toc-list li {
+    padding: 0.2rem 0;
+}
+.toc-list a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.toc-list a:hover {
+    text-decoration: underline;
+}
+.toc-h4 {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+}
+.article-content {
+    line-height: 1.7;
+    color: #333;
+}
+.article-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.article-content h3 {
+    font-size: 1.3rem;
+    color: #3D352F;
+    margin: 1.5rem 0 0.75rem 0;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #C8B8A8;
+    font-weight: 600;
+}
+.article-content h3:first-child {
+    margin-top: 0;
+}
+.article-content h4 {
+    font-size: 1.1rem;
+    color: #3D352F;
+    margin: 1.25rem 0 0.5rem 0;
+    font-weight: 600;
+}
+.article-content p {
+    margin: 0.75rem 0;
+    text-align: justify;
+}
+.article-content ul, .article-content ol {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+.article-content li {
+    margin: 0.35rem 0;
+}
+.article-content em {
+    font-style: italic;
+}
+.article-content strong {
+    font-weight: 600;
+    color: #2D2520;
+}
+.article-content hr {
+    border: none;
+    border-top: 1px solid #E8E4DF;
+    margin: 1.25rem 0;
+}
+.broken-link {
+    color: #cc0000;
+    text-decoration: underline wavy;
+}
+.examples-section {
+    margin-top: 1.25rem;
+}
+.examples-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.example-block {
+    background: linear-gradient(to right, #F5F0EB, #FAF8F5);
+    border-left: 4px solid #C75B39;
+    padding: 0.9rem 1rem;
+    margin: 0.6rem 0;
+    border-radius: 0 4px 4px 0;
+}
+.example-bororo {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #3D352F;
+    margin-bottom: 0.4rem;
+    font-style: italic;
+}
+.example-translation {
+    font-size: 0.92rem;
+    color: #666;
+    padding-left: 0.5rem;
+    border-left: 2px solid #DDD;
+    margin-left: 0.25rem;
+}
+.references-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.references-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.references-section ol {
+    padding-left: 1.5rem;
+}
+.references-section li {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444;
+}
+.ref-error {
+    color: #cc0000;
+}
+.see-also-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.see-also-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.see-also-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.see-also-section li a {
+    display: inline-block;
+    background: #F5EDE8;
+    color: #A84B2F;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.see-also-section li a:hover {
+    background: #E8DFD5;
+    text-decoration: underline;
+}
+.cross-links-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+}
+.cross-links-section h2 {
+    font-size: 1.2rem;
+    color: #3D352F;
+    margin-bottom: 0.75rem;
+}
+.cross-links-section a {
+    color: #C75B39;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.cross-links-section a:hover {
+    text-decoration: underline;
+}
+.article-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E8E4DF;
+    font-size: 0.85rem;
+    color: #888;
+}
+.article-footer .category-breadcrumbs {
+    margin-top: 0.5rem;
+}
+.article-footer .category-breadcrumbs a {
+    color: #C75B39;
+    text-decoration: none;
+}
+.article-footer .category-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #C75B39;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+    .infobox {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    article header h1 {
+        font-size: 1.5rem;
+    }
+    .article-content h3 {
+        font-size: 1.15rem;
+    }
+    .article-content h4 {
+        font-size: 1rem;
+    }
+    .article-content p {
+        text-align: left;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    
+    <nav aria-label="Main navigation">
+        <a href="../index.html" class="brand">Boe Eno Moto</a>
+        <a href="../dictionary.html">Dictionary</a>
+        <a href="../encyclopedia.html" class="active" aria-current="page">Encyclopedia</a>
+        <a href="../fauna.html">Fauna</a>
+        <a href="../bibliography.html">Bibliography</a>
+        
+        <a href="../../pt/encyclopedia.html" class="lang-switch">PT</a>
+        
+    </nav>
+
+    <main id="main-content">
+        
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../encyclopedia.html">Encyclopedia</a>
+        <span class="breadcrumb-sep">&rsaquo;</span>
+        <span>Itaga</span>
+    </nav>
+
+    <article>
+        <header>
+            <h1>Itaga</h1>
+            
+            <div class="article-variants">
+                Variants:
+                <span class="variant-tag">Iága</span><span class="variant-tag">Itága</span>
+            </div>
+            
+            
+            <p class="article-abstract">Nome do ciclo funerário bororo. Inclui um conjunto longo e ritualmente estruturado de cerimônias: inicia-se com sinais de luto (entre eles, deixar o cabelo crescer) e culmina com a limpeza e ornamentação dos ossos, a preparação do cesto funerário (Aroe J'aro) e o sepultamento definitivo (frequentemente em água).</p>
+            
+        </header>
+
+        
+        
+        
+        
+        <aside class="infobox">
+            <div class="infobox-header">Itaga</div>
+            
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Type</div>
+                <div class="infobox-value">ritual</div>
+            </div>
+            
+            
+                
+                <div class="infobox-row">
+                    <div class="infobox-label">Duration</div>
+                    <div class="infobox-value">~30 dias</div>
+                </div>
+                
+                <div class="infobox-row">
+                    <div class="infobox-label">Participants</div>
+                    <div class="infobox-value">Todos os clãs</div>
+                </div>
+                
+                <div class="infobox-row">
+                    <div class="infobox-label">Type</div>
+                    <div class="infobox-value">Ciclo funerário</div>
+                </div>
+                
+            
+            
+            <div class="infobox-row">
+                <div class="infobox-label">Categories</div>
+                <div class="infobox-keywords">
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=ritual/funeral">ritual/funeral</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=cosmologia/alma">cosmologia/alma</a></span>
+                    
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=cosmologia/morte">cosmologia/morte</a></span>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </aside>
+        
+
+        
+        <div class="toc"><div class="toc-title"></div><ul class='toc-list'><li><a href="#itaga-section-0">1. 1) Agonia</a></li><li class="toc-h4"><a href="#itaga-section-1">2. 1.1 Ornamentação do agonizante</a></li><li><a href="#itaga-section-2">3. 2) Morte</a></li><li class="toc-h4"><a href="#itaga-section-3">4. 2.2 Prantos e escarificações</a></li><li class="toc-h4"><a href="#itaga-section-4">5. 2.4 Colocação de flechas e arcos sobre o cadáver</a></li><li class="toc-h4"><a href="#itaga-section-5">6. 2.5 Incineração de objetos mais gastos</a></li><li><a href="#itaga-section-6">7. 3) Funerais</a></li><li><a href="#itaga-section-7">8. 3.1.1 Primeira noite depois da morte</a></li><li><a href="#itaga-section-8">9. 3.1.2 Primeiro dia depois da morte</a></li><li><a href="#itaga-section-9">10. 3.4.1 Primeiro dia do tríduo</a></li><li><a href="#itaga-section-10">11. 3.4.2 Segundo dia do tríduo</a></li><li><a href="#itaga-section-11">12. 3.4.3 Noite que precede o terceiro dia</a></li><li><a href="#itaga-section-12">13. 3.4.4 Terceiro dia do tríduo</a></li><li><a href="#itaga-section-13">14. 3.4.5 Noite que precede o paroxismo</a></li><li><a href="#itaga-section-14">15. Término do ciclo</a></li></ul></div>
+        
+
+        
+        <div class="article-content">
+            <h2>Iága (Itága) — Funeral e ciclo funerário</h2>
+<p><strong>Iága</strong> (também grafado <em>Itága</em>, <em>I!ága</em>) é o nome do <strong>ciclo funerário bororo</strong>. A palavra é associada à ideia de corpo e cabeleira ( <em>ito</em> “corpo” + <em>aga</em> “cabeleira” ): o funeral envolve, entre outras coisas, o <strong>luto marcado pelo cabelo</strong> (deixar crescer; regras de corte) e a imagem das almas/espíritos como seres ornados de <strong>longa cabeleira</strong>.</p>
+<p>Os funerais formam um <strong>ciclo</strong> que, em geral, dura <strong>cerca de trinta dias</strong>, mas pode ser ampliado por motivos práticos (viagens, mau tempo) ou sociais (tensões e disputas internas). A conclusão depende de condições favoráveis.</p>
+<hr />
+<h2>Variações importantes</h2>
+<ul>
+<li><strong>Quando não há ossos</strong> (morte longe da aldeia, por exemplo), os Bororo não deixam de prestar as homenagens: realizam o ciclo com adaptações, tomando como foco <strong>objetos pessoais</strong> do falecido (armas, enfeites etc.).</li>
+<li><strong>Crianças pequenas</strong>: defuntos com menos de <strong>cerca de seis anos</strong> costumam não receber o ciclo completo (os ossos seriam muito frágeis). Nesses casos, descreve-se um ritual mais breve: ornamentação com plumas, cantos, colocação em <strong>aroe jaro</strong> (cesto funerário) e deposição em água.</li>
+<li><strong>Gestante</strong>: segue-se o conjunto de regras consideradas normais.</li>
+<li><strong>Morte socialmente condenada</strong>: quando alguém é eliminado por ser considerado “mau”, pode haver exclusão ritual: descarte (água/fogo) ou inumação sem solenidade fora da aldeia.</li>
+</ul>
+<hr />
+<h2>Etapas do ciclo (visão geral)</h2>
+<ol>
+<li><strong>Agonia</strong></li>
+<li><strong>Morte</strong></li>
+<li><strong>Funerais</strong> (enterro temporário + período intermediário + tríduo final + paroxismo)</li>
+<li><strong>Inumação definitiva</strong></li>
+<li><strong>Notas críticas / variações</strong></li>
+</ol>
+<hr />
+<h2>Etapas do ciclo (descrição detalhada)</h2>
+<blockquote>
+<p>Observação: a seguir, a descrição está em português atualizado, mas preserva a ordem, a lógica e os nomes rituais do seu texto-base.</p>
+</blockquote>
+<h3 id="itaga-section-0">1) Agonia</h3>
+<h4 id="itaga-section-1">1.1 Ornamentação do agonizante</h4>
+<p>Quando uma pessoa entra na fase final da doença — às vezes dias antes da agonia propriamente dita — parentes e amigos se reúnem ao redor.</p>
+<ul>
+<li>Se a pessoa estiver com os cabelos crescidos por luto, eles são cortados de acordo com as regras tradicionais.</li>
+<li>Em seguida, o corpo é ornamentado: pasta vermelha de urucum, plumas coladas com <strong>kidoguru</strong> (resina), pinturas corporais e faciais.</li>
+<li>A cabeça pode ser coberta com um <strong>boe etao bu</strong>, “capacete” de plumas, como em uma grande festa.</li>
+<li>No caso de mulheres, podem aparecer desenhos e pinturas ligados ao subclã, especialmente quando há relações cerimoniais como <strong>mori</strong> (recompensa/retribuição) associadas a feitos do marido.</li>
+</ul>
+<h4>1.2 Execução do canto <em>Boe Ewimode Dukejewu Roia</em></h4>
+<p>Quando a agonia começa, todos entoam (de modo salmodiado) a primeira parte de um canto breve, acompanhado por <strong>ka</strong> (“tambor”). A segunda parte é recitada pelos chefes de cada clã: cada grupo tem sua composição própria, sob a denominação genérica <strong>Boe Ewimode Dukejewu Roia</strong>, “Canto da Agonia”.</p>
+<p>Os chefes se apresentam um por vez, ao som do maracá, seguindo uma ordem tradicional (que varia conforme a metade exógama/clãs do moribundo). Durante a agonia, os cantos são executados com voz “submissa” e cessam logo após a morte.</p>
+<hr />
+<h3 id="itaga-section-2">2) Morte</h3>
+<h4>2.1 Cobertura do cadáver e primeira execução dos <em>Marenarúie</em></h4>
+<p>No instante da morte, o falecido passa a ser considerado <strong>aroe</strong> (“alma”). Como tal, seu corpo não deve ser visto por mulheres e crianças: por isso, ele é coberto imediatamente com uma esteira; um abanico pode ser colocado sobre o rosto.</p>
+<p>A mãe (ou uma parenta próxima) anuncia oficialmente a morte com gritos altos. Em seguida, chefes de vários clãs, um por vez, recitam cantos chamados <strong>Marenarúie</strong>, próprios dos finados, em ordem tradicional.</p>
+<h4 id="itaga-section-3">2.2 Prantos e escarificações</h4>
+<p>Inicia-se então uma cena intensa: parentes e amigos realizam <strong>escarificações</strong> (cortes no peito, braços, pernas, coxas, rosto), deixando o sangue cair sobre o corpo coberto. Usam-se instrumentos como fragmentos de quartzo, dentes de piranha e, mais recentemente, pedaços de vidro.</p>
+<p>A escarificação cria uma relação particular: quem se escarifica contrai com os pais do defunto um tipo de <strong>parentesco de honra</strong>, que não altera regras de casamento, mas cria direitos de tratamento (chamar de pai/mãe; ser chamado de filho).</p>
+<p>Os objetos cortantes são entregues aos pais do finado; tentam usá-los, mas são contidos. Depois, tais objetos podem ser destruídos (ao fogo, pulverização etc.). Enquanto isso, ecoam prantos comuns e prantos rituais.</p>
+<h4>2.3 Primeira execução do <em>Roia Kurirewu</em></h4>
+<p>O <strong>Roia Kurirewu</strong> é um canto solene e longo, reservado a ocasiões maiores. Nesta fase, executam-se apenas algumas estrofes, na casa do finado, acompanhado pelo <strong>bapo kurirewu</strong> (grande maracá). Os cantores, aqui, não usam ornamentos.</p>
+<h4 id="itaga-section-4">2.4 Colocação de flechas e arcos sobre o cadáver</h4>
+<p>Há regras conforme a posição do morto:</p>
+<ul>
+<li>Se o morto for esposa ou filho de um homem, ele quebra suas próprias flechas e as coloca sobre o cadáver, junto com o arco inteiro.</li>
+<li>Se o morto for homem, depositam-se sobre ele seu arco e suas flechas inteiros.</li>
+<li>Parentes acrescentam flechas partidas e arcos inteiros.</li>
+</ul>
+<p>Antes da morte de um homem, a esposa ou uma parenta pode “preparar” armas e enfeites com resina (<strong>kido guru</strong>) e penugem branca ou preta. Se a morta for mulher, colam plumas em seus enfeites e no <strong>báku</strong> (bandeja feminina).</p>
+<h4 id="itaga-section-5">2.5 Incineração de objetos mais gastos</h4>
+<p>Perto da casa do finado, parentes acendem fogo e queimam objetos mais gastos e menos valiosos usados em vida.</p>
+<h4>2.6 Transladação do cadáver para o <strong>Bororo</strong> (pátio)</h4>
+<p>Ao pôr do sol, homens levantam o corpo na esteira e o levam ao pátio central, com vocalizações rituais que imitam a voz das almas. Se a morte ocorre à noite, algumas etapas podem ser abreviadas.</p>
+<hr />
+<h3 id="itaga-section-6">3) Funerais</h3>
+<h2>3.1 Primeira inumação (inumação temporária)</h2>
+<h3 id="itaga-section-7">3.1.1 Primeira noite depois da morte</h3>
+<p><strong>Segunda execução do <em>Roia Kurirewu</em></strong><br />
+Agora, no pátio, a execução é completa, e os cantores aparecem profusamente ornados (incluindo <strong>pariko</strong>, grande diadema de penas de arara).</p>
+<p><strong>Segunda execução dos <em>Marenarúie</em></strong><br />
+O chefe repete as palavras e convoca um parente do finado para cantar; se ele não tiver competência, escolhe-se outro cantor/chefe. Repete-se o procedimento para os demais <em>Marenarúie</em>.</p>
+<p><strong>Primeira execução do <em>Cibae Etawadu</em></strong><br />
+Ainda no pátio, entoa-se com solenidade o canto <strong>Cibae Etawadu</strong> e outros, prolongando-se pela noite.</p>
+<h3 id="itaga-section-8">3.1.2 Primeiro dia depois da morte</h3>
+<p><strong>Primeira execução de um <em>Kiege Barege</em></strong><br />
+Ao romper da aurora, um cantor, acompanhado por um grupo de mulheres, entoa um canto do conjunto chamado <strong>Kiege Barege</strong>.</p>
+<p><strong>Preparação da cova</strong><br />
+Mulheres da metade oposta à do finado cavam uma cova rasa no pátio.</p>
+<p><strong>Envolvimento do cadáver ao canto do <em>Bakure Enogwari</em></strong><br />
+Enquanto preparam a cova, os homens envolvem o cadáver nas esteiras, amarrando com embiras ao canto <strong>Bakure Enogwari</strong> (também chamado <strong>Aroe epododu kejeboe</strong>, “canto para o envolvimento do cadáver”). O corpo preparado fica como um fardo fusiforme.</p>
+<p><strong>Sepultamento temporário</strong><br />
+O corpo é sepultado sem grande solenidade adicional. Essa inumação é <strong>temporária</strong>, para acelerar a decomposição e permitir que, cerca de um mês depois, a carne seja retirada dos ossos com raspagem e lavagem.</p>
+<p><strong>Refeição</strong><br />
+Em geral, cada um come em sua casa ou realiza uma pequena caçada para obter alimento.</p>
+<p><strong>Cantos no <em>bai mana gejewu</em> (casa central)</strong><br />
+Na casa central executam-se cantos privativos dos membros da metade oposta à do finado, ao redor dos objetos que ele usou e que não foram incinerados.</p>
+<p><strong>Evocação das almas</strong><br />
+Por volta da tarde, o <strong>Aroe etawara are</strong> (xamã das almas) evoca as almas ao ritmo de seu maracá menor (<strong>baporogu</strong>) e instrumentos de sopro (<strong>pana</strong>, etc.). Recebe <strong>noa kuru</strong> (“água com tabatinga”, adoçada), bebe parte, fuma um cigarro e reserva bebida e cigarro para o futuro <strong>Aroe maiwu</strong>.</p>
+<p><strong>Canto <em>Roia Mugurewu</em></strong><br />
+Um chefe de canto, com mulheres, executa um fragmento de <strong>Roia Mugurewu</strong> (cantos com cantores assentados).</p>
+<p><strong>Terceira execução de um <em>Marenarúie</em></strong><br />
+O pai ou parente do finado repete palavras do <em>Marenarúie</em>, e o mesmo cantor do <em>Roia Mugurewu</em> o canta, acompanhado por mulheres.</p>
+<p><strong>Objetos do finado na cabeceira do túmulo</strong><br />
+Os homens levam objetos, bebida e cigarro reservados para a cabeceira do túmulo. É um momento interditado às mulheres (elas se recolhem, avisadas pelo som de instrumentos como <strong>ika</strong> e <strong>bapo kurirewu</strong>).</p>
+<p><strong>Refeição dos iadudoge (representantes de antigos finados)</strong><br />
+Preparam-se bebida e cigarros para os representantes de antigos defuntos, “alimentando” as almas personificadas por esses representantes.</p>
+<p><strong>Escolha do <em>Aroe maiwu</em></strong><br />
+Escolhe-se um jovem de valor que personificará a alma do finado nos funerais e, de certo modo, também em etapas futuras.</p>
+<hr />
+<h2>3.2 Período entre a primeira inumação e os últimos quatro dias</h2>
+<p><strong>Irrigação da cova</strong><br />
+Os parentes irrigam o túmulo (quando necessário) para acelerar a decomposição. Prantos rituais podem ser renovados na casa do finado.</p>
+<p><strong>Início das caçadas</strong><br />
+Após o sepultamento temporário, iniciam-se caçadas coletivas/individuais, frequentemente com a finalidade de obter uma onça que funcionará como <strong>mori</strong> (vingança/recompensa). O <em>Aroe maiwu</em> tem papel especial nessas caçadas.</p>
+<p><strong>Representações</strong><br />
+No intervalo, realizam-se representações em homenagem às almas (muitas facultativas, conforme vontade do chefe e prestígio do morto). Algumas tendem a ser obrigatórias na fase final.</p>
+<p><strong>Verificação da decomposição + novo <em>Roia Kurirewu</em></strong><br />
+Após cerca de uma lua (~20 dias), parentes homens abrem o túmulo na região da cabeça para verificar a decomposição, repetindo <strong>Roia Kurirewu</strong> de modo abreviado.</p>
+<p><strong>Determinação da data e da ordem final</strong><br />
+Se a decomposição estiver adiantada, marca-se a data e a ordem das cerimônias finais; caso contrário, recobre-se o túmulo e repete-se a verificação mais tarde.</p>
+<hr />
+<h2>3.3 Dia que precede o tríduo final</h2>
+<p>Realizam-se preparativos para a representação conhecida como <strong>Marido / Dança do Buriti</strong>, incluindo a confecção de elementos cerimoniais.</p>
+<hr />
+<h2>3.4 Tríduo final que precede a inumação definitiva</h2>
+<h3 id="itaga-section-9">3.4.1 Primeiro dia do tríduo</h3>
+<ul>
+<li>Grande representação do <strong>Marido / Dança do Buriti</strong>.</li>
+</ul>
+<h3 id="itaga-section-10">3.4.2 Segundo dia do tríduo</h3>
+<ul>
+<li>Caçada breve para alimentos.</li>
+<li>Preparação dos <strong>aijedoge</strong> (zunidores de madeira).</li>
+<li>Vedação da casa central para atos interditos a mulheres e crianças.</li>
+<li>Primeira execução do canto <strong>Ekurewuge</strong> e translação do cesto (da casa da cesteira para a do finado).</li>
+<li>Primeira manifestação dos <strong>Aijedoge Aroe</strong> (espíritos terríficos), com zunidores.</li>
+</ul>
+<h3 id="itaga-section-11">3.4.3 Noite que precede o terceiro dia</h3>
+<ul>
+<li>Cantos dirigidos pelo <strong>Aroe etawara are</strong> (xamã das almas), com instrumentos e convites aos Aijedoge.</li>
+<li>Primeira execução do <strong>Bure Etawadu</strong>.</li>
+<li>Execução do canto <strong>Aije Paru</strong> (por volta da meia-noite).</li>
+</ul>
+<h3 id="itaga-section-12">3.4.4 Terceiro dia do tríduo</h3>
+<ul>
+<li>Quarta execução dos <em>Marenarúie</em>.</li>
+<li>Transladação formal da cesta funerária para o <strong>bai mana gejewu</strong>.</li>
+<li>Cerimônia dos <strong>powaridoge aroe</strong> (instrumentos de sopro).</li>
+<li>Convites e preparativos para a segunda manifestação dos Aijedoge.</li>
+<li>Execução do canto <strong>Jokurega</strong>.</li>
+<li>Dança do <strong>Aroe maiwu</strong> com a cesta.</li>
+<li>Transladações sucessivas da cesta (casa central ↔ casa do finado), com nova execução de <strong>Cibae Etawadu</strong>.</li>
+<li>Possível imposição do <strong>ba</strong> (estojo peniano) a rapazes púberes.</li>
+<li>Primeira execução do canto <strong>Aroe Enogwari</strong> na casa central.</li>
+<li>Ornamentação intensa do <strong>Aroe maiwu</strong> (torná-lo irreconhecível).</li>
+<li>Segunda execução do <strong>Bure Etawadu</strong> e dança no pátio.</li>
+<li>Execução do <strong>Okudowuge</strong> e corrida ritual ao <strong>aije muga</strong>.</li>
+<li>Segunda manifestação: <strong>Representação dos Aijedoge Aroe</strong> (entrada, aproximação, homenagem ao Aroe maiwu, uso dos zunidores; mulheres e crianças escondidas).</li>
+<li>Incineração do arco e flechas do finado (com variações se o falecido tiver status ritual específico).</li>
+<li>Banho coletivo (purificação/recuperação).</li>
+<li>Sinal do término (batidas com esteiras no chão) e refeição.</li>
+</ul>
+<h3 id="itaga-section-13">3.4.5 Noite que precede o paroxismo</h3>
+<ul>
+<li>Quinta execução dos <em>Marenarúie</em>.</li>
+<li>Toque do <strong>ika</strong> (instrumento de sopro).</li>
+<li>Segunda execução do <strong>Aroe Enogwari</strong>.</li>
+<li>Convite oficial para a cerimônia de ornamentar os ossos.</li>
+<li>Execução de <strong>Roia Mugurewuge</strong> (cantos com cantores assentados).</li>
+<li>Evocação da alma pelo <strong>Aroe etawara are</strong>, convidando-a a ocupar o cesto.</li>
+</ul>
+<hr />
+<h2>3.5 Paroxismo dos funerais (sobre os ossos)</h2>
+<ul>
+<li>Segunda execução do <strong>Kiege Barege</strong> ao amanhecer.</li>
+<li>Segunda execução do <strong>Ekurewuge</strong>, com exumação e limpeza dos ossos.</li>
+<li>Transporte dos ossos e escarificações.</li>
+<li>Quarta execução do <strong>Roia Kurirewu</strong> (com restrições a mulheres/crianças).</li>
+<li>Execução de <strong>ika ako</strong> e terceira execução do <strong>Aroe Enogwari</strong>.</li>
+<li>Refeição dos homens.</li>
+<li>Ornamentação parcial do crânio.</li>
+<li>Execução de <strong>Roia Mugurewu Merijiwu</strong> e escarificações.</li>
+<li>Construção de um tabernáculo interno (bái ía) e evocação solene da alma.</li>
+<li>Destruição do tabernáculo e terceira execução do <strong>Cibae Etawadu</strong>.</li>
+<li>Nova execução de <strong>Roia Mugurewu Merijiwu</strong>.</li>
+<li>Quinta execução do <strong>Roia Kurirewu</strong>.</li>
+<li>Ornamentação final de ossos e crânio e colocação na <strong>aroe jaro</strong> (cesta funerária).</li>
+<li>Colocação do <strong>kodobie</strong> (faixa de embira) sobre a cesta.</li>
+<li>Transladação da cesta da casa central para a do finado e conclusão dessa fase.</li>
+</ul>
+<hr />
+<h2>3.6 Inumação definitiva (fechamento do ciclo)</h2>
+<p>Após alguns dias, marca-se a data da inumação definitiva.</p>
+<ul>
+<li>Na véspera, executa-se o canto <strong>Juredoge</strong>.</li>
+<li>Ao amanhecer, entoa-se um <strong>Kiege Barege</strong> associado ao transporte do cesto para a água; seguem-se execuções de <em>Marenarúie</em>.</li>
+<li>O <strong>Aroe maiwu</strong> recebe a cesta e parte com o cortejo para o <strong>aroe eiao</strong> (cemitério), frequentemente uma lagoa/remanso: a cesta é perfurada para a água entrar, amarrada a uma vara e fixada no fundo, parcialmente no lodo.</li>
+<li>O xamã permanece para invocar as almas e pedir que recebam o novo morador do reino dos mortos.</li>
+</ul>
+<h3>Entrega do <em>ae</em> (“cabelos”) ao Aroe maiwu</h3>
+<p>Ao retornarem (muitas vezes ao pôr do sol), parentes do finado entregam parte dos cabelos (<em>ae</em>) ao <em>iadu</em> e parte a uma parenta próxima. O representante do finado entrega os cabelos recebidos a uma parenta, que os passa a alguém para fiar e transformar em cordel; depois o artefato volta ao <strong>Aroe maiwu</strong>.</p>
+<h3 id="itaga-section-14">Término do ciclo</h3>
+<p>O encerramento do Iága inclui, com frequência, a destruição pelo fogo de objetos do finado e até da casa associada (variando conforme sexo/estado civil), além de esforços para reduzir marcas materiais da presença do morto (lugares de assento, apoios etc.).</p>
+<hr />
+<h2>Observação final</h2>
+<p>O <strong>Iága</strong> é uma sequência extensa de atos encadeados que reorganiza luto, relações sociais e o destino do corpo/ossos por meio de cantos, representações e papéis rituais (especialmente o <strong>Aroe maiwu</strong> e o <strong>Aroe etawara are</strong>), culminando no sepultamento definitivo do cesto funerário e na transição do regime de memória do morto.</p>
+
+        </div>
+        
+
+        
+
+        
+
+        
+        <section class="see-also-section">
+            <h2>See also</h2>
+            <ul>
+                
+                <li><a href="aroe.html">Aroe</a></li>
+                
+                <li><a href="mori.html">Mori</a></li>
+                
+            </ul>
+        </section>
+        
+
+        
+        
+        
+
+        <div class="article-footer">
+            
+            <div>Last updated: 2026-02-18</div>
+            
+            
+            <div class="category-breadcrumbs">
+                Categories:
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=ritual">ritual</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=ritual/funeral">funeral</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=cosmologia">cosmologia</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=cosmologia/alma">alma</a>
+                    
+                     &bull; 
+                
+                    
+                    
+                        
+                        <a href="../encyclopedia.html?category=cosmologia">cosmologia</a> &rsaquo; 
+                    
+                        
+                        <a href="../encyclopedia.html?category=cosmologia/morte">morte</a>
+                    
+                    
+                
+            </div>
+            
+        </div>
+    </article>
+
+    <a href="../encyclopedia.html" class="back-link">&larr; Back to encyclopedia</a>
+
+    </main>
+
+    <footer>
+        <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        
+    </footer>
+
+    <script src="../../js/common.js"></script>
+    
+</body>
+</html>
