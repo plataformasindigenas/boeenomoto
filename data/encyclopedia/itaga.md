@@ -123,6 +123,8 @@ O chefe repete as palavras e convoca um parente do finado para cantar; se ele n�
 **Primeira execução do *Cibae Etawadu***  
 Ainda no pátio, entoa-se com solenidade o canto **Cibae Etawadu** e outros, prolongando-se pela noite.
 
+![Cantor durante um funeral](images/itaga2.jpg)
+
 ### 3.1.2 Primeiro dia depois da morte
 
 **Primeira execução de um *Kiege Barege***  
