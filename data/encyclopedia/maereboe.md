@@ -142,7 +142,13 @@ A vida ritual não busca adorar esses espíritos, mas manter equilíbrio com ele
 
 ---
 
-## Observação
+## Nota etnográfica
 
-O sistema ligado ao **bari** e aos maereboe é considerado, em algumas tradições, distinto do sistema funerário centrado nas almas (*aroe*).  
-Ambos coexistem e estruturam a relação entre humanos, mortos e forças espirituais no universo bororo.
+Alguns autores antigos sugeriram que o sistema ritual associado ao **bari** e aos **maereboe** teria origem externa, possivelmente introduzido por contato intertribal, baseando-se na menor presença desses elementos em certos ciclos míticos e cantos tradicionais.
+
+Entretanto, registros posteriores demonstram que narrativas e práticas ligadas ao Pai dos Espíritos estão integradas ao conjunto da tradição bororo e não constituem um elemento marginal. A distinção percebida pelos observadores decorre sobretudo da existência de dois eixos rituais complementares:
+
+- o sistema funerário centrado nas almas (*aroe*)
+- o sistema xamânico ligado aos espíritos (*maereboe*)
+
+Assim, não se trata necessariamente de uma religião “estrangeira”, mas de uma dupla organização interna da cosmologia bororo.
