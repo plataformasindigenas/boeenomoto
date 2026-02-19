@@ -8,7 +8,7 @@ categories:
 - cultura material
 - ornamentos
 images:
-- url: images/ebukujewu2.jpg
+- url: images/ebukejewu2.jpg
   alt: Viseira cerimonial ebukujewu
   credit: 'Fabrício Ferraz Gerardi'
 - ritual
