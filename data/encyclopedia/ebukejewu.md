@@ -10,7 +10,7 @@ categories:
 images:
 - url: images/ebukejewu2.JPG
   alt: Viseira cerimonial ebukujewu
-  credit: 'Fabrício Ferraz Gerardi'
+  credit: 'Foto: Fabrício Ferraz Gerardi'
 - ritual
 date: '2026-02-18'
 references: []
