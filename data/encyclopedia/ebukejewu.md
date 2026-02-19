@@ -64,7 +64,7 @@ Sub-clã: **Kie Cebegiwuge**
 
 ---
 
-### 3. Ebukejewu ive oto padure oiagiwu oiaga padure oiagiwu  
+### 3. Ebukejewu iwe oto padure oiagiwu oiaga padure oiagiwu  
 *“viseira com trançado de acúleos de ouriço no centro”*  
 Duas variantes:
 
@@ -73,7 +73,7 @@ Duas variantes:
 
 ---
 
-### 4. Ebukejewu ive oto padure paru kejewu  
+### 4. Ebukejewu iwe oto padure paru kejewu  
 *“viseira com três conjuntos de trançados na base”*  
 Três grupos equidistantes de taquaras revestidas.  
 Sub-clã: **Baado Jebage Cobugiwuge Cobugiwuge**
