@@ -11,8 +11,8 @@ authors = [
 keywords = ["bororo", "indigenous", "linguistics", "dictionary", "fauna"]
 
 dependencies = [
-    "aptoro>=0.3.1",
-    "kodudo>=0.1.1",
+    "aptoro",
+    "kodudo",
     "bibtexparser>=1.4.0",
 ]
 
@@ -28,3 +28,6 @@ Repository = "https://github.com/plataformasindigenas/boeenomoto"
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []

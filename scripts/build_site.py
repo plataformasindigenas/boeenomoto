@@ -10,13 +10,10 @@ Also generates a root docs/index.html language picker.
 import json
 import re
 import shutil
-import subprocess
-import sys
-import tempfile
 from pathlib import Path
 
+import kodudo
 import yaml
-from jinja2 import Environment, FileSystemLoader
 
 BASE_DIR = Path(__file__).parent.parent
 CONFIG_DIR = BASE_DIR / "config"
@@ -105,12 +102,7 @@ def render_article_pages(locale: str, translations: dict):
     enc_dir = DOCS_DIR / locale / "encyclopedia"
     enc_dir.mkdir(parents=True, exist_ok=True)
 
-    # Set up Jinja2 environment
-    env = Environment(
-        loader=FileSystemLoader(str(TEMPLATE_DIR)),
-        autoescape=False,
-    )
-    template = env.get_template("article.html.j2")
+    template_path = TEMPLATE_DIR / "article.html.j2"
 
     for entry in entries:
         entry_id = entry.get("id", "")
@@ -121,19 +113,23 @@ def render_article_pages(locale: str, translations: dict):
         toc_html = ""
         if content_html:
             toc_html, content_html = _generate_toc(content_html, entry_id)
-            # Update entry with modified content that has heading IDs
             entry["content_html"] = content_html
 
-        html = template.render(
-            entry=entry,
-            toc_html=toc_html,
-            all_titles=all_titles,
-            t=translations,
-            locale=locale,
-            other_locale=other_locale,
-            base_path="../../",
-            page="encyclopedia",
-            title=entry.get("title", ""),
+        html = kodudo.render(
+            data=[entry],
+            template=template_path,
+            context={
+                "entry": entry,
+                "toc_html": toc_html,
+                "all_titles": all_titles,
+                "t": translations,
+                "locale": locale,
+                "other_locale": other_locale,
+                "base_path": "../../",
+                "page": "encyclopedia",
+                "title": entry.get("title", ""),
+            },
+            template_dirs=(TEMPLATE_DIR,),
         )
 
         output_path = enc_dir / f"{entry_id}.html"
@@ -152,45 +148,22 @@ def build_locale(locale: str, translations: dict):
     for config_path in sorted(CONFIG_DIR.glob("*.yaml")):
         name = config_path.stem
 
-        with open(config_path, "r", encoding="utf-8") as f:
-            config = yaml.safe_load(f)
+        batch = kodudo.load_config(config_path)
 
-        # Override output to locale subdirectory
-        original_output = config.get("output", "")
+        original_output = str(batch.config.output)
         output_filename = Path(original_output).name
-        config["output"] = f"../docs/{locale}/{output_filename}"
+        locale_output = f"../docs/{locale}/{output_filename}"
 
-        # Add translations and locale context
-        ctx = config.get("context", {})
-        ctx["t"] = translations
-        ctx["locale"] = locale
-        ctx["other_locale"] = other_locale
-        ctx["base_path"] = "../"
-        config["context"] = ctx
-
-        # Write temporary config
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".yaml", dir=str(CONFIG_DIR),
-            delete=False, encoding="utf-8"
-        ) as tmp:
-            yaml.dump(config, tmp, allow_unicode=True, default_flow_style=False)
-            tmp_path = Path(tmp.name)
-
-        try:
-            subprocess.run(
-                [sys.executable.replace("python", "kodudo"), "cook", str(tmp_path)],
-                check=True, capture_output=True, text=True
-            )
-        except subprocess.CalledProcessError as e:
-            # Try finding kodudo in the same venv
-            kodudo_path = Path(sys.executable).parent / "kodudo"
-            subprocess.run(
-                [str(kodudo_path), "cook", str(tmp_path)],
-                check=True
-            )
-        finally:
-            tmp_path.unlink()
-
+        kodudo.cook_from_config(
+            batch.config,
+            context={
+                "t": translations,
+                "locale": locale,
+                "other_locale": other_locale,
+                "base_path": "../",
+            },
+            output=locale_output,
+        )
         print(f"  [{locale}] Rendered {name}")
 
     # Render individual article pages

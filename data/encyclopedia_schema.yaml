@@ -6,17 +6,17 @@ primary_key: id
 fields:
   id: str
   title: str
-  variants: list?
+  variants: list = []
   abstract: str?
-  categories: list?
+  categories: list = []
   date: str?
   url: str?
-  images: list?
+  images: list = []
   content_md: str?
-  examples: list?
+  examples: list = []
   dictionary_ids: list?
   fauna_ids: list?
-  entry_type: str?
-  infobox: str?
-  references: list?
-  see_also: list?
+  entry_type: str = ""
+  infobox: dict?
+  references: list = []
+  see_also: list = []

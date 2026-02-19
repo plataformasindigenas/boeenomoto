@@ -44,11 +44,7 @@ def convert_dictionary():
     try:
         records = aptoro.validate(data, schema, collect_errors=True)
     except aptoro.ValidationError as e:
-        print(f"  Validation errors: {len(e.errors)}")
-        for error in e.errors[:10]:
-            print(f"    {error}")
-        if len(e.errors) > 10:
-            print(f"    ... and {len(e.errors) - 10} more errors")
+        print(e.summary())
         raise
 
     normalized_records = []
@@ -86,11 +82,7 @@ def convert_fauna():
     try:
         records = aptoro.validate(data, schema, collect_errors=True)
     except aptoro.ValidationError as e:
-        print(f"  Validation errors: {len(e.errors)}")
-        for error in e.errors[:10]:
-            print(f"    {error}")
-        if len(e.errors) > 10:
-            print(f"    ... and {len(e.errors) - 10} more errors")
+        print(e.summary())
         raise
 
     normalized_records = []
@@ -167,11 +159,7 @@ def convert_bibliography():
     try:
         records = aptoro.validate(data, schema, collect_errors=True)
     except aptoro.ValidationError as e:
-        print(f"  Validation errors: {len(e.errors)}")
-        for error in e.errors[:10]:
-            print(f"    {error}")
-        if len(e.errors) > 10:
-            print(f"    ... and {len(e.errors) - 10} more errors")
+        print(e.summary())
         raise
 
     normalized_records = []
@@ -258,72 +246,46 @@ def _html_to_text(html: str) -> str:
     return parser.get_text()
 
 
-def _parse_front_matter(path: Path) -> tuple[dict, str]:
-    raw = path.read_text(encoding="utf-8")
-    if not raw.startswith("---\n"):
-        raise ValueError(f"{path}: missing front matter start (---)")
-
-    parts = raw.split("\n---\n", 1)
-    if len(parts) != 2:
-        raise ValueError(f"{path}: missing front matter end (---)")
-
-    front_matter = yaml.safe_load(parts[0][4:]) or {}
-    if not isinstance(front_matter, dict):
-        raise ValueError(f"{path}: front matter must be a mapping")
-
-    body = parts[1].lstrip("\n")
-    return front_matter, body
-
-
 def _load_encyclopedia_entries() -> list[dict]:
     entries_dir = DATA_DIR / "encyclopedia"
     if not entries_dir.exists():
         raise FileNotFoundError(f"Missing encyclopedia directory: {entries_dir}")
 
-    md_files = sorted(p for p in entries_dir.rglob("*.md") if p.name != "README.md")
+    md_files = sorted(
+        p for p in entries_dir.rglob("*.md") if p.name != "README.md"
+    )
     if not md_files:
         raise FileNotFoundError(f"No markdown entries found in {entries_dir}")
+
+    # Read all .md files via aptoro's frontmatter reader
+    raw_entries = []
+    for path in md_files:
+        raw_entries.extend(
+            aptoro.read(str(path), format="frontmatter", body_key="content_md")
+        )
 
     entries: list[dict] = []
     seen_ids: set[str] = set()
 
-    for path in md_files:
-        front_matter, body = _parse_front_matter(path)
-        entry = dict(front_matter)
-        entry_id = entry.get("id")
-        if not entry_id:
-            raise ValueError(f"{path}: missing required front matter field 'id'")
-        if entry_id in seen_ids:
-            raise ValueError(f"Duplicate encyclopedia id: {entry_id}")
-        seen_ids.add(entry_id)
+    # Backwards compatibility renames
+    field_renames = {
+        "headword": "title",
+        "summary": "abstract",
+        "updated_at": "date",
+        "keywords": "categories",
+    }
 
-        entry["content_md"] = body.strip()
-
-        # Backwards compatibility: rename old field names → new
-        _field_renames = {
-            "headword": "title",
-            "summary": "abstract",
-            "updated_at": "date",
-            "keywords": "categories",
-        }
-        for old_name, new_name in _field_renames.items():
+    for entry in raw_entries:
+        for old_name, new_name in field_renames.items():
             if old_name in entry and new_name not in entry:
                 entry[new_name] = entry.pop(old_name)
 
-        # Defaults for optional list fields
-        for key in ("variants", "categories", "images", "examples", "references", "see_also"):
-            if entry.get(key) is None:
-                entry[key] = []
-
-        # Defaults for optional string fields
-        for key in ("entry_type", "infobox"):
-            if entry.get(key) is None:
-                entry[key] = ""
-
-        # Serialize infobox dict to JSON string for aptoro validation
-        infobox = entry.get("infobox")
-        if isinstance(infobox, dict):
-            entry["infobox"] = json.dumps(infobox, ensure_ascii=False) if infobox else ""
+        entry_id = entry.get("id")
+        if not entry_id:
+            raise ValueError("Missing required front matter field 'id'")
+        if entry_id in seen_ids:
+            raise ValueError(f"Duplicate encyclopedia id: {entry_id}")
+        seen_ids.add(entry_id)
 
         entries.append(entry)
 
@@ -484,11 +446,7 @@ def convert_encyclopedia():
     try:
         records = aptoro.validate(data, schema, collect_errors=True)
     except aptoro.ValidationError as e:
-        print(f"  Validation errors: {len(e.errors)}")
-        for error in e.errors[:10]:
-            print(f"    {error}")
-        if len(e.errors) > 10:
-            print(f"    ... and {len(e.errors) - 10} more errors")
+        print(e.summary())
         raise
 
     # Build set of all IDs for wikilink resolution
@@ -509,14 +467,7 @@ def convert_encyclopedia():
     for record in records:
         entry = asdict(record) if is_dataclass(record) else dict(record)
 
-        # Deserialize infobox from JSON string back to dict
-        infobox_str = entry.get("infobox") or ""
-        if infobox_str and isinstance(infobox_str, str):
-            try:
-                entry["infobox"] = json.loads(infobox_str)
-            except (json.JSONDecodeError, ValueError):
-                entry["infobox"] = {}
-        else:
+        if not entry.get("infobox"):
             entry["infobox"] = {}
 
         content_md = entry.get("content_md") or ""
@@ -660,11 +611,7 @@ def convert_recordings():
     try:
         records = aptoro.validate(data, schema, collect_errors=True)
     except aptoro.ValidationError as e:
-        print(f"  Validation errors: {len(e.errors)}")
-        for error in e.errors[:10]:
-            print(f"    {error}")
-        if len(e.errors) > 10:
-            print(f"    ... and {len(e.errors) - 10} more errors")
+        print(e.summary())
         raise
 
     normalized_records = []

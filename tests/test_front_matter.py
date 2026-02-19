@@ -22,64 +22,6 @@ def _run_python(code: str) -> subprocess.CompletedProcess:
     )
 
 
-def test_parse_valid_front_matter(tmp_path):
-    """Test parsing a valid markdown file with front matter."""
-    md_file = tmp_path / "test.md"
-    md_file.write_text("---\nid: test-1\ntitle: Test\n---\nBody content here.\n")
-
-    result = _run_python(f"""
-import sys; sys.path.insert(0, '{SCRIPTS_DIR}')
-from convert import _parse_front_matter
-from pathlib import Path
-fm, body = _parse_front_matter(Path('{md_file}'))
-assert fm['id'] == 'test-1'
-assert fm['title'] == 'Test'
-assert body.strip() == 'Body content here.'
-print('OK')
-""")
-    assert result.returncode == 0, f"Failed: {result.stderr}"
-
-
-def test_parse_missing_front_matter_start(tmp_path):
-    """Test that missing front matter start raises ValueError."""
-    md_file = tmp_path / "test.md"
-    md_file.write_text("No front matter here.\n")
-
-    result = _run_python(f"""
-import sys; sys.path.insert(0, '{SCRIPTS_DIR}')
-from convert import _parse_front_matter
-from pathlib import Path
-try:
-    _parse_front_matter(Path('{md_file}'))
-    print('ERROR: no exception raised')
-    sys.exit(1)
-except ValueError as e:
-    assert 'missing front matter start' in str(e)
-    print('OK')
-""")
-    assert result.returncode == 0, f"Failed: {result.stderr}"
-
-
-def test_parse_missing_front_matter_end(tmp_path):
-    """Test that missing front matter end raises ValueError."""
-    md_file = tmp_path / "test.md"
-    md_file.write_text("---\nid: test-1\nNo closing delimiter\n")
-
-    result = _run_python(f"""
-import sys; sys.path.insert(0, '{SCRIPTS_DIR}')
-from convert import _parse_front_matter
-from pathlib import Path
-try:
-    _parse_front_matter(Path('{md_file}'))
-    print('ERROR: no exception raised')
-    sys.exit(1)
-except ValueError as e:
-    assert 'missing front matter end' in str(e)
-    print('OK')
-""")
-    assert result.returncode == 0, f"Failed: {result.stderr}"
-
-
 def test_assert_no_html_clean():
     """Test that clean markdown passes HTML check."""
     result = _run_python(f"""
