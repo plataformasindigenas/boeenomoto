@@ -1,6 +1,6 @@
 ---
-id: ebukujewu
-title: Ebukujewu
+id: ebukejewu
+title: Ebukejewu
 variants:
 - ebukejewu
 abstract: Viseira cerimonial de penas usada em rituais bororo, associada à identificação de sub-clãs.
@@ -21,7 +21,7 @@ see_also:
 
 ## EBUKUJEWU
 
-**Ebukujewu** (e “rosto” + bukeje “sobre”) é uma viseira de penas usada em cerimônias bororo.  
+**Ebukejewu** (e “rosto” + bukeje “sobre”) é uma viseira de penas usada em cerimônias bororo.  
 A peça adapta-se à parte superior da fronte e, presa por cordéis atrás da cabeça, cobre quase todo o rosto.
 
 Em geral é usada junto ao **pariko** (grande diadema de penas de arara), mas também pode aparecer isoladamente.
