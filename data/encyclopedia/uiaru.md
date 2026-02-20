@@ -6,7 +6,7 @@ abstract: Planta conhecida como araticum-rasteiro, cujas folhas são usadas como
 categories:
 - botânica
 - cultura material
-image:
+images:
 - url: https://en.wikipedia.org/wiki/Annona_crassiflora
 date: '2026-02-18'
 references: []
