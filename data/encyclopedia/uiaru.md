@@ -7,7 +7,7 @@ categories:
 - botânica
 - cultura material
 images:
-- url: https://en.wikipedia.org/wiki/Annona_crassiflora
+- url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Araticum.JPG/500px-Araticum.JPG
 date: '2026-02-18'
 references: []
 see_also:
