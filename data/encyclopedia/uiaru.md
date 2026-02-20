@@ -16,7 +16,7 @@ see_also:
 
 ## UIARU
 
-**Uiaru** (“folha enrolada”) designa uma planta identificada como araticum-rasteiro (Annona crassiflora).
+**Uiaru** (_ia_ “folha" + _aru_ "enrolada”) designa uma planta identificada como araticum-rasteiro (Annona crassiflora).
 
 ---
 
