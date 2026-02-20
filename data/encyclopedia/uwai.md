@@ -55,8 +55,19 @@ Assim, o perigo associado ao jacaré não é apenas físico, mas espiritual.
 
 ## Constelação
 
-O nome **uwai** também designa uma constelação (*ikuieje*).  
-A associação entre animal terrestre e astro integra o sistema de correspondências entre céu e terra presente na cosmologia bororo.
+Na astronomia bororo, **Uwai** designa também uma constelação (*ikuieje*).  
+Ela não corresponde a uma única estrela, mas a um conjunto amplo de astros distribuídos pelo céu, aproximadamente nas regiões hoje identificadas como Corvus, Hydra e Virgo, podendo incluir ainda estrelas próximas à antiga Argo.
+
+Alguns narradores distinguem inclusive um “Uwai pequeno” e um “Uwai grande”, indicando que não se trata de uma figura fixa, mas de um sistema relacional de estrelas.
+
+---
+
+## Significado cosmológico
+
+O Uwai celeste não é uma metáfora do animal terrestre.  
+Ele é o próprio jacaré em sua forma celeste.
+
+Na cosmologia bororo, os seres do mundo possuem correspondentes no céu, formando um único sistema. Assim, a presença do jacaré no firmamento integra a rede de relações entre natureza, rituais e ordem do universo.
 
 ---
 
