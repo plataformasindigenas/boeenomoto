@@ -1,6 +1,6 @@
 ---
 id: perigara
-title: Perigára
+title: Perigara
 variants:
 - Tarigára
 abstract: Espírito aquático e nome de um trecho do rio São Lourenço associado a sua manifestação.
