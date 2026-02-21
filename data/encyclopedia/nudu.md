@@ -56,7 +56,7 @@ A principal proteção durante as noites frias consiste em:
 Não utilizam travesseiro.  
 Empregam um pedaço de madeira colocado sob o pescoço para manter a cabeça imóvel.
 
-Essa peça pode ser trabalhada e ornamentada com plumas quando pertence a um homem do clã Páiwọe.
+Essa peça pode ser trabalhada e ornamentada com plumas quando pertence a um homem do clã **Paiwoe**.
 
 ---
 
