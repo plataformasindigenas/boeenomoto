@@ -22,28 +22,28 @@ see_also:
 **Nabure**  
 Ararapiranga (Ara macao).
 
-Esta ave e uma das mais apreciadas pelos bororo e e criada com grande cuidado por dois motivos principais:
+Esta ave é uma das mais apreciadas pelos bororo e é criada com grande cuidado por dois motivos principais:
 
 1. fornecer penas e plumas para adornos  
-2. servir de suporte para a alimentacao das almas dos mortos, que por metempsicose temporaria podem habitar o animal e consumir cocos e outros alimentos
+2. servir de suporte para a alimentação das almas dos mortos, que por metempsicose temporária podem habitar o animal e consumir cocos e outros alimentos
 
-### Criacao
+### Criação
 
 As araras vivem soltas:
 
 - circulam pela choupana
 - caminham sobre o telhado
-- entram nas reservas alimenticias
-- pousam em arvores proximas
+- entram nas reservas alimentícias
+- pousam em árvores próximas
 
-A noite sao recolhidas com taquaras ou longos galhos.
+À noite são recolhidas com taquaras ou longos galhos.
 
-Durante viagens as mulheres levam suas araras no topo da cesta carregada nas costas. Se alguma se prende em galhos ao longo do caminho, os bororo retornam mesmo apos longo percurso para recupera-la.
+Durante viagens as mulheres levam suas araras no topo da cesta carregada nas costas. Se alguma se prende em galhos ao longo do caminho, os bororo retornam mesmo após longo percurso para recuperá-la.
 
 ### Retirada de penas
 
-Para retirar penas ou plumas a ave e deitada no chao.  
-O pescoco e a cabeca sao pressionados com um pedaco de madeira para impedir ferimentos pelo bico.
+Para retirar penas ou plumas a ave é deitada no chão.  
+O pescoço e a cabeça são pressionados com um pedaço de madeira para impedir ferimentos pelo bico.
 
-Entao e depenada entre gritos prolongados.  
-Por isso nao e raro observar araras totalmente sem plumagem ou com penas novas e brilhantes.
+Então é depenada entre gritos prolongados.  
+Por isso não é raro observar araras totalmente sem plumagem ou com penas novas e brilhantes.
