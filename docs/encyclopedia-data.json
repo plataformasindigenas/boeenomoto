@@ -3,7 +3,7 @@
     "name": "bororo_encyclopedia",
     "description": "Bororo Encyclopedia Entries",
     "version": "2.0",
-    "record_count": 169
+    "record_count": 184
   },
   "data": [
     {
@@ -180,7 +180,7 @@
     {
       "id": "aroe_eceba_kejebo",
       "title": "Aroe Eceba Kejebo",
-      "abstract": "Ritual bororo associado ao gavião-real (Aroe Eceba), envolvendo morte ritual do animal, oferenda, distribuição de penas, confecção de adornos e uma complexa cerimônia pública ligada às almas e aos direitos de primazia dos clãs.",
+      "abstract": "Ritual bororo associado ao gavião-real [(Harpia harpyja)](https://pt.wikipedia.org/wiki/Gavião-real) ou Aroe Eceba em bororo, envolvendo morte ritual do animal, oferenda, distribuição de penas, confecção de adornos e uma complexa cerimônia pública ligada às almas e aos direitos de primazia dos clãs.",
       "categories": [
         "ritual",
         "natureza/fauna/ave",
@@ -345,6 +345,18 @@
       "categories": [
         "cultura-material/habitação",
         "sociedade/espaço-social"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "bakaru",
+      "title": "Bakaru",
+      "abstract": "Narrativa tradicional bororo transmitida oralmente, usada para explicar o mundo, a origem dos seres e as relações culturais.",
+      "categories": [
+        "tradição oral",
+        "cosmologia"
       ],
       "variants": [],
       "entry_type": "",
@@ -681,13 +693,15 @@
       "has_content": false
     },
     {
-      "id": "cibai-kyrirewu",
-      "title": "Cibai kyrirewu",
-      "abstract": "Cibai Kyrirewu - nome próprio → Enciclopédia II v.",
-      "categories": [],
+      "id": "cibai-kurirewu",
+      "title": "Cibai kurirewu",
+      "abstract": "Nome próprio registrado na tradição bororo.",
+      "categories": [
+        "nomes próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
     },
     {
       "id": "cibaibo-bororo",
@@ -1032,13 +1046,30 @@
       "has_content": false
     },
     {
-      "id": "dyji",
-      "title": "Dyji",
-      "abstract": "Dyji - f. usada para nominalizar orações dependentes quando verbo principal é um intransitivo extendido que requer a posposição ji . exs. boe ekiarire atumode cebiji dyji 'os bororo não querem que tu te afastes de nós'; tawiajetudo inagoi tai dyji 'lembrai-vos daquilo que eu disse'.",
-      "categories": [],
+      "id": "duji",
+      "title": "Duji",
+      "abstract": "Partícula nominalizadora usada para transformar orações dependentes em complemento de verbos que regem a posposição ji.",
+      "categories": [
+        "gramática",
+        "morfossintaxe"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
+    },
+    {
+      "id": "ebukejewu",
+      "title": "Ebukejewu",
+      "abstract": "Viseira cerimonial de penas usada em rituais bororo, associada à identificação de sub-clãs.",
+      "categories": [
+        "cultura material",
+        "ornamentos"
+      ],
+      "variants": [
+        "ebukejewu"
+      ],
+      "entry_type": "",
+      "has_content": true
     },
     {
       "id": "ecerae",
@@ -1510,6 +1541,20 @@
       "has_content": false
     },
     {
+      "id": "maereboe",
+      "title": "Maereboe",
+      "abstract": "Categoria de espíritos da cosmologia bororo, associada ao Pai dos Espíritos (Maereboedoge Etuo) e ao sistema ritual conduzido pelo xamã dos espíritos (bari).",
+      "categories": [
+        "cosmologia",
+        "religião"
+      ],
+      "variants": [
+        "bope"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
       "id": "mano-kurirewu",
       "title": "Mano kurirewu",
       "abstract": "Mano kurirewu -- Ritual Boe-Bororo das duas rodas grandes de talos de caeté (Helicônia). Awyre pemegare! Mano Kurirewu pemegare! Boe eegarere boe etaidyre Assim falou o chefe cultural Bororo Antônio Kanajó na festa do Mano Kurirewu em Meruri no ano de 1995: \"Este é bom! Mano Kurirewu é bom! O povo se alegra, o povo gosta!\"",
@@ -1564,13 +1609,142 @@
       "has_content": false
     },
     {
-      "id": "pari-uke-jorubo",
-      "title": "Pari uke jorubo",
-      "abstract": "Pari uke jorubo (pari 'ema' seu + ke2 'alimento' + ji 'seu' + erubo 'vegetal mágico') [vegetal mágico de cujas frutas se alimenta a ema. Designação de um → erubo 'vegetal mágico'. 1 É um cipó do cerrado cujas folhas e raízes os Bororo mastigam para extrair o suco que espalmam pelas pernas a fim de terem resistência nas corridas como a ema. A fina raiz introduzida no esôfago, serve para provocar o vómito que os livra do peso no estómago e os torna mais ágeis para correr. Para outras noções → beo uke jorubo 'vegetal mágico da seriema'.",
-      "categories": [],
+      "id": "nudu",
+      "title": "Nudu",
+      "abstract": "Sono; estado de dormir e práticas de repouso entre os Bororo.",
+      "categories": [
+        "corpo",
+        "vida cotidiana"
+      ],
+      "variants": [
+        "nu"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "nugia",
+      "title": "Nugia",
+      "abstract": "Faixa de entrecasca de árvore usada para transportar crianças.",
+      "categories": [
+        "cultura material",
+        "cuidado infantil"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
+    },
+    {
+      "id": "nuiao",
+      "title": "Nuiao",
+      "abstract": "Sonho; experiência onírica considerada meio de conhecimento e decisão social na cultura bororo.",
+      "categories": [
+        "cosmologia",
+        "vida social",
+        "xamanismo"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "oca",
+      "title": "Oca",
+      "abstract": "Assobio articulado usado como forma de comunicação na língua bororo.",
+      "categories": [
+        "língua",
+        "comunicação"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "okwagiri",
+      "title": "Okwagiri",
+      "abstract": "Amamentação; ato de alimentar a criança com leite materno.",
+      "categories": [
+        "corpo",
+        "parentesco",
+        "práticas cotidianas"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "pari-uke-jorubo",
+      "title": "Pari uke jorubo",
+      "abstract": "Cipó mágico associado à ema, usado para adquirir resistência e agilidade nas corridas.",
+      "categories": [
+        "botânica",
+        "práticas corporais",
+        "magia"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "peguru-gigirirewu",
+      "title": "Peguru gigirirewu",
+      "abstract": "Intestino grosso no corpo humano.",
+      "categories": [
+        "anatomia"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "peguru",
+      "title": "Peguru",
+      "abstract": "Intestino no corpo humano.",
+      "categories": [
+        "anatomia"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "perigara",
+      "title": "Perigara",
+      "abstract": "Espírito aquático e nome de um trecho do rio São Lourenço associado a sua manifestação.",
+      "categories": [
+        "cosmologia",
+        "território"
+      ],
+      "variants": [
+        "Tarigára"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "po",
+      "title": "Po",
+      "abstract": "Água, rio ou curso d’água; elemento fundamental na organização territorial e na toponímia bororo.",
+      "categories": [
+        "natureza",
+        "território",
+        "língua"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "pogoga",
+      "title": "Pogoga",
+      "abstract": "Parte inferior do bico dos psitacídeos e, por extensão, recipiente feito de meia cabaça.",
+      "categories": [
+        "fauna",
+        "cultura material"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
     },
     {
       "id": "ra-2",
@@ -1584,8 +1758,12 @@
     {
       "id": "ra",
       "title": "Ra",
-      "abstract": "1\">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar de destaque na vida social dos bororo e lhes tomam grande parte do tempo. São em elevado número, adaptados a várias solenidades e circunstâncias. Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua sede apropriadada sejam o bai mana gejewy 'casa central', e o bororo 'pátio da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai",
-      "categories": [],
+      "abstract": "Canto; prática musical central na vida social e ritual bororo.",
+      "categories": [
+        "música",
+        "ritual",
+        "vida social"
+      ],
       "variants": [],
       "entry_type": "",
       "has_content": true
@@ -1600,13 +1778,18 @@
       "has_content": false
     },
     {
-      "id": "rakydy",
-      "title": "Rakydy",
-      "abstract": "Rakydy - Talvez. ex. Atumode? Uw, rakydy 'Irás? Sim, talvez.'",
-      "categories": [],
-      "variants": [],
+      "id": "rakudu",
+      "title": "Rakudu",
+      "abstract": "Advérbio modal indicando incerteza ou possibilidade, equivalente a “talvez”.",
+      "categories": [
+        "gramática",
+        "advérbios"
+      ],
+      "variants": [
+        "rakydy"
+      ],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
     },
     {
       "id": "ririgo",
@@ -1672,6 +1855,33 @@
       "has_content": false
     },
     {
+      "id": "uiaru",
+      "title": "Uiaru",
+      "abstract": "Planta conhecida como araticum-rasteiro, cujas folhas são usadas como fumo e como invólucro para tabaco.",
+      "categories": [
+        "botânica",
+        "cultura material"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "uwai",
+      "title": "Uwai",
+      "abstract": "Nome do jacaré (Caiman) e de uma constelação na cosmologia bororo, animal ritual associado ao xamã dos espíritos (bari).",
+      "categories": [
+        "fauna",
+        "ritual",
+        "cosmologia"
+      ],
+      "variants": [
+        "arogwa"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
       "id": "uwarinogo",
       "title": "Uwarinogo",
       "abstract": "Uwarinogo Gavião-tesoura (Elanoides forficatus).",
@@ -1692,7 +1902,7 @@
   ],
   "category_tree": {
     "natureza": {
-      "_count": 28,
+      "_count": 29,
       "fauna": {
         "_count": 21,
         "inseto": {
@@ -1719,7 +1929,7 @@
       }
     },
     "ritual": {
-      "_count": 19,
+      "_count": 21,
       "funeral": {
         "_count": 4
       },
@@ -1755,7 +1965,7 @@
       }
     },
     "cosmologia": {
-      "_count": 17,
+      "_count": 22,
       "mitologia": {
         "_count": 1
       },
@@ -1841,6 +2051,9 @@
         "_count": 1
       }
     },
+    "tradição oral": {
+      "_count": 1
+    },
     "geografia": {
       "_count": 2
     },
@@ -1848,6 +2061,72 @@
       "_count": 1
     },
     "língua": {
+      "_count": 3
+    },
+    "nomes próprios": {
+      "_count": 1
+    },
+    "gramática": {
+      "_count": 2
+    },
+    "morfossintaxe": {
+      "_count": 1
+    },
+    "cultura material": {
+      "_count": 4
+    },
+    "ornamentos": {
+      "_count": 1
+    },
+    "religião": {
+      "_count": 1
+    },
+    "corpo": {
+      "_count": 2
+    },
+    "vida cotidiana": {
+      "_count": 1
+    },
+    "cuidado infantil": {
+      "_count": 1
+    },
+    "vida social": {
+      "_count": 2
+    },
+    "xamanismo": {
+      "_count": 1
+    },
+    "comunicação": {
+      "_count": 1
+    },
+    "parentesco": {
+      "_count": 1
+    },
+    "práticas cotidianas": {
+      "_count": 1
+    },
+    "botânica": {
+      "_count": 2
+    },
+    "práticas corporais": {
+      "_count": 1
+    },
+    "magia": {
+      "_count": 1
+    },
+    "anatomia": {
+      "_count": 2
+    },
+    "território": {
+      "_count": 2
+    },
+    "fauna": {
+      "_count": 2
+    },
+    "música": {
+      "_count": 1
+    },
+    "advérbios": {
       "_count": 1
     }
   },
@@ -1898,6 +2177,13 @@
       }
     },
     {
+      "id": "aroe_eceba_kejebo",
+      "title": "Aroe Eceba Kejebo",
+      "image": {
+        "url": "images/aroeeceba1.jpg"
+      }
+    },
+    {
       "id": "aroe_eoprewu",
       "title": "Aroe eoprewu",
       "image": "images/enc_aroe_eoprewu_0.jpg"
@@ -1916,15 +2202,6 @@
       "title": "Ba",
       "image": {
         "url": "images/enc_ba_1_leaf_0.jpg",
-        "alt": "",
-        "credit": ""
-      }
-    },
-    {
-      "id": "ba_2_penile_sheath_daily",
-      "title": "Ba",
-      "image": {
-        "url": "images/enc_ba_2_penile_sheath_daily_0.jpg",
         "alt": "",
         "credit": ""
       }

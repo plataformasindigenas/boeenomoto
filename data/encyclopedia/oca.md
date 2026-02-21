@@ -8,10 +8,7 @@ categories:
 - comunicação
 date: '2026-02-18'
 references:
-- title: Die Pfiffsprache der Bororo
-  author: Klaus P. Wachter
-  year: 1989
-  type: artigo
+- Wachter1989Pfiffsprache
 see_also: []
 ---
 

@@ -6,9 +6,7 @@ abstract: Intestino no corpo humano.
 categories:
 - anatomia
 date: '2026-02-18'
-references:
-- title: Intestino
-  url: https://pt.wikipedia.org/wiki/Intestino
+references: []
 see_also:
 - peguru-gigirirewu
 - iwu

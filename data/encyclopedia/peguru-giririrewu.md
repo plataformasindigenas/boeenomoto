@@ -6,9 +6,7 @@ abstract: Intestino grosso no corpo humano.
 categories:
 - anatomia
 date: '2026-02-18'
-references:
-- title: Intestino grosso
-  url: https://pt.wikipedia.org/wiki/Intestino_grosso
+references: []
 see_also:
 - iwu
 ---
