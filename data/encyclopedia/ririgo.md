@@ -1,18 +1,20 @@
 ---
-id: ririgo
-title: Ririgo<sub>1</sub>
+id: ririgo-1
+title: Ririgo₁
 variants: []
-abstract: Ririgo1 - calor; go, suf. caus. incip. [fazer calor]. Aquecer, esquentar. imuguwy tu woe iwo iririgo boery keje
-  'assento-me bem aqui para me aquecer ao calor do sol'.
-categories: []
-date: '2026-01-04'
-url: ''
+abstract: Calor; fazer calor, aquecer, esquentar.
+categories:
+- linguagem
+- natureza
+date: '2026-02-21'
 images: []
-examples: []
-entry_type: ''
-infobox: {}
-references: []
+references:
+- ALBISETTI; VENTURELLI 1962
 see_also: []
 ---
 
+## RIRIGO₁
 
+**Ririgo** indica calor e, com valor causativo-incoativo, “fazer calor”, aquecer, esquentar.
+
+_ex._ **imuguwy tu woe iwo iririgo boery keje** — “assento-me bem aqui para me aquecer ao calor do sol”.
