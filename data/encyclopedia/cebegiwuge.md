@@ -2,9 +2,9 @@
 id: cebegiwuge
 title: Cebegiwuge
 variants: []
-abstract: Indivíduos ou elementos situados abaixo; nome de sub-cla.
+abstract: Indivíduos ou elementos situados abaixo; nome de sub-clã.
 categories:
-- organizacao social
+- organização social
 - termos relacionais
 date: '2026-02-18'
 images: []
@@ -22,8 +22,8 @@ Plural de **cebegiwu**.
 - pessoas que estao embaixo
 - coisas situadas abaixo
 
-O termo expressa relacao espacial inferior em oposicao a posicoes superiores.
+O termo expressa relação espacial inferior em oposição a posições superiores.
 
 ### Uso social
 
-Tambem designa os membros de um sub-cla localizado mais afastado a leste em relacao aos outros dois sub-clas do mesmo cla.
+Tambem designa os membros de um sub-clã localizado mais afastado a leste em relação aos outros dois sub-clãs do mesmo clã.
