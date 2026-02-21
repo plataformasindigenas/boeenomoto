@@ -2,55 +2,111 @@
 id: mori
 title: Mori
 variants: []
-abstract: "Vingança, reompensa. \nConceito central na vida social e ritual bororo, abrangendo vingança, recompensa, retribuição\
-  \ social, compensação de danos e obrigação ritual."
+abstract: Vingança, recompensa, retribuição ou pagamento; princípio central de reciprocidade e desagravo funerário na sociedade bororo.
 categories:
-- sociedade/vingança
-- ritual/retribuição
-- ritual
 - sociedade
-- cultura-material
-- natureza/fauna/mamífero
-- cosmologia/morte
-- ritual/funeral
-date: '2026-01-07'
-url: ''
+- ritual
+- morte
+- reciprocidade
+date: '2026-02-21'
 images: []
-examples: []
-entry_type: ritual
-infobox:
-  participantes: "Todos os clãs"
-  tipo: "Retribuição ritual"
-references: []
-see_also: []
+references:
+- ALBISETTI; VENTURELLI 1962
+- VIERTLER
+- NOVAES
+see_also:
+- aroe-maiwu
+- bope
+- bari
 ---
 
-O termo *mori* é um conceito central na organização social, moral e ritual dos Bororo. Trata-se de uma noção polissêmica que abrange ideias de vingança, retribuição, recompensa, compensação de danos, presente ritual e obrigação social, variando conforme o contexto em que é empregado.
+## MORI
 
-### Mori: vingança
+**Mori** designa vingança, recompensa, retribuição ou pagamento.
 
-Na acepção mais direta, mori significa vingança, no sentido claro de retaliar ou compensar uma ofensa grave. Exemplo: kajáo, mori mode — "espere, eu me vingarei".
+---
 
-### Mori: recompensa e retribuição social
+## 1. Mori: vingança
 
-A recompensa ou retribuição por um favor, ajuda ou objeto recebido é uma obrigação profundamente enraizada na tradição bororo. Trata-se de uma norma social incontornável: ninguém pode, nem deve, deixar de retribuir. Quem se esquece — voluntária ou involuntariamente — torna-se alvo de escárnio e desprezo coletivo.
+Emprega-se no sentido direto de vingança.
 
-A pessoa que recebe um favor deve, inevitavelmente, oferecer um mori, geralmente escolhido por iniciativa própria ou determinado por convenções tradicionais. Nessa acepção ampliada, mori pode corresponder a presente, dádiva, compensação por danos causados, agrado ou mimo ritual. Se um cão morde alguém, o ferido não deve reagir com hostilidade, mas aguarda o mori por parte do dono do animal.
+_ex._ **kajao mori moge** — “espera: vingar-me-ei”.
 
-Esse mori consiste, em geral, numa espalmação de pasta vermelha de urucum. Caso a retribuição demore, o ferido se considera ofendido e o proprietário do cão deixa de cumprir uma de suas obrigações sociais. Quando duas crianças brigam e uma sai prejudicada, o pai da criança agressora deve realizar o mori, espalhando pasta de urucum sobre a criança ofendida.
+---
 
-Se uma criança se machuca ao tropeçar em um objeto, a mãe, outra pessoa ou a própria criança executa o mori, batendo simbolicamente no objeto causador do ferimento. Quem perde ou danifica um objeto alheio deve compensar o prejuízo oferecendo um mori ao proprietário. Quando alguém se fere gravemente — por exemplo, ao cair de uma árvore ou ser picado por uma cobra — os parentes realizam o mori, tingindo o ferido com urucum e adornando-o com plumas.
+## 2. Mori: recompensa
 
-Em caçadas ou pescarias oficiais que envolvem um fágù, representante ritual de um defunto, se esse representante se machuca, os parentes do falecido devem chorar, escarificar-se e deixar cair sangue sobre ele. Após a recuperação, o ferido deve retribuir esse mori com outro mori, espalhando urucum sobre todos que participaram do luto ritual. Quando alguém retorna à aldeia após longa ausência, sem que se soubesse se estava vivo ou morto, entoa-se imediatamente o canto Roia Kurirewu, reservado aos defuntos.
+A recompensa ou retribuição por um favor ou por um objeto recebido é uma obrigação social extremamente forte e tradicional.  
+Ninguém pode deixar de retribuir. Quem esquece — voluntária ou involuntariamente — torna-se alvo de escárnio e desprezo.
 
-No dia seguinte, o recém-chegado recebe um mori, sendo untado com pasta vermelha de urucum. Por delicadeza e elegância, quem oferece um presente frequentemente minimiza o valor do objeto e tenta dissuadir o outro da obrigação de retribuir. Essa atitude, porém, é apenas uma fórmula de cortesia: ninguém a leva ao pé da letra, e a retribuição sempre ocorre.
+A pessoa que recebe um favor deve retribuir com alguma coisa, geralmente à sua escolha, mas às vezes conforme a tradição.
 
-Essas normas não se aplicam da mesma forma às relações entre Bororo e não indígenas. O Bororo não se sente obrigado a retribuir presentes recebidos de brancos, mas espera destes compensações generosas, justificando tal expectativa pela abundância de bens que os não indígenas possuem. Idosos e doentes graves são dispensados da obrigação do mori, embora expressem gratidão apertando com força a mão do doador e o objeto recebido.
+O termo pode significar também:
 
-### Mori: vingança ritual pela morte
+- presente
+- dádiva
+- reparação de danos
+- agrado
+- mimo
 
-Quando um Bororo morre, é escolhido um representante ritual do falecido, chamado aroe maiwu ("alma nova") ou iadu ("companheiro"). Sua principal obrigação é vingar a morte do representado. Essa vingança consiste em abater uma onça, cujo couro será entregue a um parente do defunto.
+### Exemplos
 
-A onça morta recebe o nome de mori, pois representa simultaneamente vingança e retribuição. Esse ato está ligado ao ritual denominado barege ekedodu, o "banquete das feras". Os Bororo acreditam que a morte é causada por um bope, espírito maléfico, e que a onça é, ela própria, um bope.
+- Se um cão morde alguém, o ferido não se ofende imediatamente, mas aguarda o mori do dono.  
+  O mori costuma consistir numa espalmação de pasta vermelha de urucu.  
+  Se demora, considera-se ofensa social.
 
-Assim, ao matar o felídeo, elimina-se um espírito causador de morte, realizando-se uma vingança de ordem social, ritual e cosmológica.
+- Quando duas crianças brigam e uma sai prejudicada, o pai da agressora espalma urucu na ofendida.
+
+- Se uma criança se fere ao tropeçar, bate-se simbolicamente no objeto causador.
+
+- Quem estraga ou perde objeto alheio deve dar mori ao proprietário.
+
+- Em ferimentos por queda ou picada de cobra, parentes aplicam urucu e plumas.
+
+- Em caçadas ou pescarias rituais envolvendo representante de morto, se este se fere, os parentes do defunto choram e se escarificam deixando cair sangue sobre ele.  
+  Depois de curado, o ferido retribui espalhando urucu nos participantes.
+
+- Quando alguém retorna após longa ausência, entoa-se o canto **Roia Kurirewu** (dos mortos) e no dia seguinte o recém-chegado recebe urucu.
+
+### Observações sociais
+
+Quem oferece um presente frequentemente diminui o valor do objeto para desencorajar retribuição — fórmula de delicadeza que não suspende a obrigação.
+
+A reciprocidade não é simétrica com não indígenas:  
+o Bororo não se considera obrigado a retribuir presentes aos brancos, mas espera compensações deles.
+
+Velhos e doentes graves são dispensados do mori e agradecem apertando a mão do doador.
+
+---
+
+## 3. Mori: vingança pela morte
+
+Quando um Bororo morre, escolhe-se um representante:
+
+**aroe maiwu** (“alma nova”) ou **iadu**.
+
+Sua obrigação principal é vingar o morto abatendo uma onça.  
+O couro é dado a um parente do defunto.
+
+A onça recebe o nome **mori** e está ligada ao ritual **berege ekedodu** (“banquete das feras”).
+
+Acredita-se que a morte seja causada por um **bope** (espírito maléfico) e que a onça seja um bope.  
+Matando o animal elimina-se um bope e realiza-se a vingança.
+
+---
+
+## Interpretação etnográfica
+
+Estudos posteriores mostram que o mori não é apenas compensação material, mas um mecanismo de reorganização social.
+
+A caça do animal de vingança confere prestígio ao caçador e cria obrigações recíprocas entre famílias.  
+O oferecimento do mori exige contrapartidas — ornamentos, nomes ou bens — inserindo o indivíduo na rede de relações sociais.
+
+Assim, o mori:
+
+- transforma dano em vínculo social
+- regula honra e prestígio
+- reintegra a pessoa substituta do morto à coletividade
+- recompõe a ordem após a morte
+
+Mais que vingança, trata-se de um processo de restauração do equilíbrio social e cosmológico.
