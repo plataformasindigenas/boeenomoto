@@ -7,7 +7,11 @@ categories:
 - língua
 - comunicação
 date: '2026-02-18'
-references: []
+references:
+- title: Die Pfiffsprache der Bororo
+  author: Klaus P. Wachter
+  year: 1989
+  type: artigo
 see_also: []
 ---
 
@@ -25,6 +29,16 @@ A forma varia conforme a distância entre os interlocutores:
 
 - curta distância — assobio entre dentes e lábios entreabertos
 - longa distância — assobio reforçado com dois dedos na boca
+
+---
+
+## Estrutura linguística
+
+Estudos fonéticos demonstram que a fala assobiada não constitui um simples código de sinais, mas uma realização acústica da própria língua.
+
+As vogais podem ser distinguidas pelo ouvinte mesmo sem vibração das cordas vocais, enquanto muitas consoantes aparecem como interrupções ou variações de altura do tom. Apesar dessa redução fonética, o significado das palavras permanece reconhecível.
+
+Assim, o assobio corresponde a uma forma comprimida da fala, preservando sua organização linguística e permitindo comunicação a grandes distâncias.
 
 ---
 
