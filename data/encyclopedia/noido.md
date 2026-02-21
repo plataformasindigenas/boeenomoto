@@ -2,22 +2,46 @@
 id: noido
 title: Noido
 variants: []
-abstract: Noido (no 'côco de babaçu' + ido 'estipe') estipe de côco de babaçu (Attalea speciosa). 1 É uma bela palmácea de
-  alto porte e de muitíssima utilidade aos bororo. Fornece-lhes alimentos com seus côcos, com o pericárpio verde, que é consumido
-  assado ou reduzido a farinha, com seu palmito e com sua seiva, que é retirada com a mesma técnica do → iworo 'bebida de
-  acurí'. O vinho de babaçu, porém, é muito menos abundante e de difícil extração. O bróto da palmeira proporciona insuperável
-  matéria prima para trabalhos de trançados, como cestas, abanicos e esteiras. Os folíolos do mesmo dão tangas e estojos penianos.
-  As fólhas adultas, que podem alcançar até oito metros de comprimento em exemplares novos, servem como ótima cobertura para
-  as choupanas.
-categories: []
-date: '2026-01-04'
-url: https://en.wikipedia.org/wiki/Attalea_speciosa
-images: []
-examples: []
-entry_type: ''
-infobox: {}
+abstract: Palmeira babacu (Orbignya martiana), de grande importancia alimentar e material para os bororo.
+categories:
+- etnobotanica
+- alimentacao
+- cultura material
+date: '2026-02-18'
+images:
+- url: images/babacu.jpg
+  alt: Palmeira babacu
 references: []
-see_also: []
+see_also:
+- noido-kuru
+- iworo
 ---
 
+## NOIDO
 
+**Noido** (_no_ 'coco de babacu' + _ido_ 'estipe')  
+Estipe do babacu, palmeira **Orbignya martiana**.
+
+Trata-se de uma palmacea de grande porte e de enorme utilidade para os bororo.
+
+### Alimentacao
+
+Fornece diversos alimentos:
+
+- cocos, cujo pericarpio verde e consumido assado ou reduzido a farinha
+- palmito
+- seiva, retirada pelo mesmo processo do **iworo**, bebida de acuri
+
+O vinho de babacu e menos abundante e mais dificil de extrair.
+
+### Uso material
+
+O broto fornece excelente materia prima para trancados:
+
+- cestas
+- abanicos
+- esteiras
+
+Os foliolos produzem tangas e estojos penianos.
+
+As folhas adultas, que podem atingir cerca de oito metros de comprimento em exemplares novos, servem como cobertura das choupanas.
