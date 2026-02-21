@@ -2,7 +2,7 @@
 id: noido
 title: Noido
 variants: []
-abstract: Palmeira babacu (Orbignya martiana), de grande importancia alimentar e material para os bororo.
+abstract: Palmeira babacu [(Orbignya martiana)](https://pt.wikipedia.org/wiki/Babaçu), de grande importancia alimentar e material para os bororo.
 categories:
 - etnobotanica
 - alimentacao
