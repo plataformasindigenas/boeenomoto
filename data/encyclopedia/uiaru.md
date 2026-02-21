@@ -7,7 +7,7 @@ categories:
 - botânica
 - cultura material
 images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Araticum.JPG/500px-Araticum.JPG
+- url: images/araticum_rasteiro.jpg
 date: '2026-02-18'
 references: []
 see_also:
