@@ -1,8 +1,7 @@
 ---
 id: rakudu
 title: Rakudu
-variants:
-- rakydy
+variants: []
 abstract: Advérbio modal indicando incerteza ou possibilidade, equivalente a “talvez”.
 categories:
 - gramática
