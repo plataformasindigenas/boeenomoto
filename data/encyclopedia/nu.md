@@ -1,7 +1,8 @@
 ---
-id: nu
-title: Nu
-variants: []
+id: nudu
+title: Nudu
+variants:
+- nu
 abstract: Sono; estado de dormir e práticas de repouso entre os Bororo.
 categories:
 - corpo
@@ -17,9 +18,9 @@ see_also:
 - bai-mana-gejewu
 ---
 
-## NU
+## NUDU
 
-**Nu** designa o sono.
+**Nudu** designa o sono.
 
 Exemplo: *inunure* — “estou com sono”.
 
