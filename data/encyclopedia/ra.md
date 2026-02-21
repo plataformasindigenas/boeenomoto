@@ -2,33 +2,98 @@
 id: ra
 title: Ra
 variants: []
-abstract: 1">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar de destaque
-  na vida social dos bororo e lhes tomam grande parte do tempo. São em elevado número, adaptados a várias solenidades e circunstâncias.
-  Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua sede apropriadada sejam o bai mana
-  gejewy 'casa central', e o bororo 'pátio da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai
-categories: []
-date: '2026-01-04'
-url: ''
+abstract: Canto; prática musical central na vida social e ritual bororo.
+categories:
+- música
+- ritual
+- vida social
+date: '2026-02-18'
 images: []
 examples:
-- bororo: alguns deles sao diurnos
-  translation: outros noturnos, alguns executados de pé, outros estando os cantores assentados. Além dos cantos próprios de
-    toda a tribo há muitos privativos de cada clã. Não se conhecem composições propriamente de guerra. Deve-se notar que na
-    linguagem comum o canto denomina-se boe eke roia (utilizando-se o classificador para alimento) e a execução do mesmo se
-    diz boe eke roia ko. 1">Ra1 - Canto. Ex. boeco paru boe eramode 'Ao anoitecer, os Bororo cantarão'. Os cantos ocupam lugar
-    de destaque na vida social dos bororo e lhes tomam grande parte do tempo. São em elevado número, adaptados a várias solenidades
-    e circunstâncias. Podem ser realizados em qualquer hora do dia e da noite e em qualquer lugar, embora sua sede apropriadada
-    sejam o bai mana gejewy 'casa central', e o bororo 'pátio da aldeia'. Os meninos, mesmo pequenos, aprendem-nos do pai
-entry_type: ''
-infobox: {}
+- bororo: boeco paru boe eramode
+  translation: Ao anoitecer, os Bororo cantarão.
 references: []
-see_also: []
+see_also:
+- bapo-kurirewu
+- baporogu
+- erubo
 ---
 
-e depois continuam o tirocínio na sociedade dos homens. Os bororo muito estimam quem tem clara e robusta dicção e nao poupam meios, o mais das vezes supersticiosos, para obterem boa voz. → erubo, remédio. Os cantos são sempre executados com a máxima seriedade e os cantores conservam os olhos fechados, especialmente os mestres de canto.
+## RA
 
-Muitas composições tem duração considerável, às vezes de horas, mas podem ser interrompidos, para descanso dos cantores, embora frequentemente os maracás nao parem de agitar-se, mesmo durante as pausas. São essencialmente cantados pelos homens, acolitados, em certas ocasiões também por mulheres as quais, em geral, não pronunciam as palavras mas emitem sons à guisa de eco. Isto, porém, nao impede que algumas saibam muitos cantos e que cooperem com esse conhecimento.
+**Ra** designa o canto.
 
-Normalmente, para marcar o ritmo usa-se um par de bapo kurirewu 'grande maracá', durante os funerais, e, fora dos mesmos, um de baporogu 'pequeno maracá'. Em algum canto aparecem também outros instrumentos como oika, o iworeboe, o parira, o pana, instrumentos musicais de sôpro, e o ka, 'tamboril'. Como dissemos os cantos sao muitíssimos e podem ser reunidos nestes principais grupos: cantos fúnebres, cantos para caça e pesca, cantos para festas sociais, como p. ex. para a perfuração do lábio das crianças; ; alguns deles sao diurnos, outros noturnos, alguns executados de pé, outros estando os cantores assentados.
+Na vida social bororo, os cantos ocupam posição de grande destaque e consomem parte significativa do tempo cotidiano.
 
-Além dos cantos próprios de toda a tribo há muitos privativos de cada clã. Não se conhecem composições propriamente de guerra. Deve-se notar que na linguagem comum o canto denomina-se boe eke roia (utilizando-se o classificador para alimento) e a execução do mesmo se diz boe eke roia ko.
+---
+
+## Aprendizagem
+
+Os meninos aprendem os cantos desde pequenos com o pai e depois continuam o aprendizado na sociedade dos homens.
+
+São muito estimados aqueles que possuem dicção clara e voz forte, e utilizam-se inclusive remédios (**erubo**) para melhorar a voz.
+
+---
+
+## Execução
+
+Os cantos podem ocorrer em qualquer hora do dia ou da noite e em qualquer lugar, embora os locais próprios sejam:
+
+- o **bai mana gejewu** (casa central)
+- o **bororo** (pátio da aldeia)
+
+São executados com grande seriedade; os cantores mantêm os olhos fechados, sobretudo os mestres de canto.
+
+Algumas composições duram horas.  
+Podem ser interrompidas para descanso, mas frequentemente os maracás continuam sendo agitados durante as pausas.
+
+---
+
+## Participação
+
+O canto é essencialmente masculino.  
+Em certas ocasiões mulheres acompanham emitindo sons semelhantes a eco, sem pronunciar as palavras, embora algumas conheçam muitos cantos.
+
+---
+
+## Instrumentos
+
+Para marcar o ritmo utilizam-se:
+
+- **bapo kurirewu** — grande maracá (especialmente funerais)
+- **baporogu** — pequeno maracá (outros contextos)
+
+Também podem aparecer:
+
+- oika
+- iworeboe
+- parira
+- pana (instrumentos de sopro)
+- ka (tamboril)
+
+---
+
+## Tipos de canto
+
+Principais grupos:
+
+- cantos fúnebres
+- cantos de caça e pesca
+- cantos de festas sociais (ex.: perfuração do lábio das crianças)
+
+Podem ser:
+
+- diurnos ou noturnos
+- executados de pé ou sentados
+
+Há cantos comuns a toda a tribo e outros privativos de cada clã.  
+Não existem composições especificamente de guerra.
+
+---
+
+## Terminologia
+
+Na linguagem comum:
+
+- **boe eke roia** — o canto (usando classificador de alimento)
+- **boe eke roia ko** — executar o canto
