@@ -8,8 +8,7 @@ categories:
 - flora
 - cultura-material
 - ritual
-images:
-- url: images/
+images: []
 date: '2026-02-21'
 images: []
 references:
