@@ -153,16 +153,16 @@ O sub-clã dos **Paiwoe Cebegiwuge** extinguiu-se; os bororo explicam como vinga
 
 | clã | Sub-clã |
 |---|---|
-| Baado jebage Cobugiwuge | Baado jebage Cobugiwuge |
+| **Baado jebage Cobugiwuge** | Baado jebage Cobugiwuge |
 |  | Baado jebage Cobugiwuge Boe Eiadadawuge |
 |  | Baado jebage Cobugiwuge Cebegiwuge |
-| Bokodori Ecerae | Bokodori Ecerae Cobugiwuge |
+| **Bokodori Ecerae** | Bokodori Ecerae Cobugiwuge |
 |  | Bokodori Ecerae Boe Eiadadawuge |
 |  | Bokodori Ecerae Cebegiwuge |
-| Kie | Kie Cobugiwuge |
+| **Kie** | Kie Cobugiwuge |
 |  | Kie Boe Eiadadawuge |
 |  | Kie Cebegiwuge |
-| Baado jebage Cebegiwuge | Baado jebage Cebegiwuge Cobugiwuge |
+| **Baado jebage Cebegiwuge** | Baado jebage Cebegiwuge Cobugiwuge |
 |  | Baado jebage Cebegiwuge Boe Eiadadawuge |
 |  | Baado jebage Cebegiwuge Cebegiwuge |
 
@@ -172,16 +172,16 @@ O sub-clã dos **Paiwoe Cebegiwuge** extinguiu-se; os bororo explicam como vinga
 
 | clã | Sub-clã |
 |---|---|
-| Paiwoe | Paiwoe Cobugiwuge |
+| **Paiwoe** | Paiwoe Cobugiwuge |
 |  | Paiwoe Boe Eiadadawuge |
 |  | Paiwoe Cebegiwuge |
-| Apiborege | Apiborege Cobugiwuge |
+| **Apiborege** | Apiborege Cobugiwuge |
 |  | Apiborege Boe Eiadadawuge |
 |  | Apiborege Cebegiwuge |
-| Aroroe | Aroroe Cobugiwuge |
+| **Aroroe** | Aroroe Cobugiwuge |
 |  | Aroroe Boe Eiadadawuge |
 |  | Aroroe Cebegiwuge |
-| Iwagududoge | (INSERIR lista correta completa conforme fonte; ha nota de interpolacão no texto) |
+| **Iwagududoge** | (INSERIR lista correta completa conforme fonte; ha nota de interpolacão no texto) |
 
 Nota: no texto ha observacão de que, por causas ignoradas, o clã dos **Iwagududoge** interpelou-se no clã dos **Aroroe**, que ficou parte a leste (Aroroe Cobugiwuge e Aroroe Boe Eiadadawuge) e parte a oeste (Aroroe Cebegiwuge). O clã conserva integridade apesar da divisao material. Fenomeno analogo ocorreu com o sub-clã (extinto) **Paiwoe Cebegiwuge**, que se localizou perto do **aije rea** no extremo oeste.
 
