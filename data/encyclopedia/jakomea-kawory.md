@@ -1,17 +1,25 @@
 ---
-id: jakomea-kawory
-title: Jakomea kawory
+id: jakomea-kaworu
+title: Jakomea kaworu
 variants: []
-abstract: Jakomea kawory - nome próprio (ver vol. II).
-categories: []
+abstract: Jakomea kaworu — nome próprio bororo (ver vol. II).
+categories:
+- nomes-proprios
 date: '2026-01-04'
 url: ''
 images: []
 examples: []
-entry_type: ''
+entry_type: antropônimo
 infobox: {}
-references: []
+references:
+- ALBISETTI; VENTURELLI, Enciclopédia Bororo, vol. II.
 see_also: []
 ---
 
+## Jakomea kaworu
 
+**Jakomea kaworu** é um nome próprio bororo registrado no volume II da *Enciclopédia Bororo*.
+
+Trata-se de antropônimo individual cuja ocorrência está documentada na fonte mencionada.
+
+---
