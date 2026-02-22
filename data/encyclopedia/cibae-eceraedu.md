@@ -41,5 +41,3 @@ A denominação deriva do totem **cibae** (“ararapiranga”), associado ao cl�
 Assim, o membro masculino pode ser referido tanto pelo nome principal do clã quanto por um de seus totens característicos.
 
 ---
-
-
