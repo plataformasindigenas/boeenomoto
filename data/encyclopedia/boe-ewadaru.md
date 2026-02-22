@@ -12,7 +12,7 @@ examples:
   translation: língua'). Provérbio, idiotismo, boato. Exs. akedu akagu kuo bure gogaji nono ' amarra bem a tua jaó'. Essa
     frase é comumente pronunciada por alguém que, tendo sido preso, consegue fugir. Origina-se do fato que a jaó, mesmo se
     cativa desde pequena logo que se ve solta foge e volta a seu ambiente natural
-entru_tupe: ''
+entry_type: ''
 infobox: {}
 references: []
 see_also: []
@@ -20,6 +20,6 @@ see_also: []
 
 (boe 'Bororo' + bataru 'palavra,língua'). Provérbio, idiotismo, boato.Exs. _akedu akagu kuo bure goga ji nono_ ' amarra bem a tua jaó'. Essa frase é comumente pronunciada por alguém que, tendo sido preso, consegue fugir.
 
-Origina-se do fato que a jaó, mesmo se cativa desde pequena logo que se ve solta foge e volta a seu ambiente natural; juko boere okwa porodo biji 'bororo podem furar o lábio ao macaco só depois de morto'. Esse idiotismo pode significar que ninguém é capaz de enganar quem o pronuncia assim como ninguém é capaz de furar o lábio do macaco quando vivo; _baru kigadu bace kigadu kori_ 'i.e. 'o céu é mais alvo que uma garça' _akigu kigadu kodu noidoia kigadu kori_ 'o algodão é mais alvo que um palmito de babaçu'.
+Origina-se do fato que a jaó, mesmo se cativa desde pequena logo que se ve solta foge e volta a seu ambiente natural; _juko boere okwa porodo biji_ 'bororo podem furar o lábio ao macaco só depois de morto'. Esse idiotismo pode significar que ninguém é capaz de enganar quem o pronuncia assim como ninguém é capaz de furar o lábio do macaco quando vivo; _baru kigadu bace kigadu kori_ 'i.e. 'o céu é mais alvo que uma garça' _akigu kigadu kodu noidoia kigadu kori_ 'o algodão é mais alvo que um palmito de babaçu'.
 
 Para pormenores sobre a língua → bataru 'palavra'.
