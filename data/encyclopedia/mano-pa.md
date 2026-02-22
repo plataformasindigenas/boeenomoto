@@ -1,6 +1,6 @@
 ---
-id: mano
-title: Mano
+id: mano pa
+title: Mano pa
 variants: []
 abstract: Ritual cerimonial central associado aos aroe, envolvendo corrida, cantos e rodas de caeté que representam peixes e a circulação das almas.
 categories:
