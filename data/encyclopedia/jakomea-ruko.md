@@ -1,8 +1,8 @@
 ---
-id: jakomea-ryko
-title: Jakomea ryko
+id: jakomea-ruko
+title: Jakomea ruko
 variants: []
-abstract: Jakomea ryko - nome próprio (ver vol. II).
+abstract: Jakomea ruko - nome próprio (ver vol. II).
 categories: []
 date: '2026-01-04'
 url: ''
