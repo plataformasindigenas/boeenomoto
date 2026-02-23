@@ -1,8 +1,8 @@
 ---
-id: jakomea-kyrirewu
-title: Jakomea kyrirewu
+id: jakomea-kurirewu
+title: Jakomea kurirewu
 variants: []
-abstract: Jakomea kyrirewu - nome próprio (ver vol. II).
+abstract: Jakomea kurirewu - nome próprio (ver vol. II).
 categories: []
 date: '2026-01-04'
 url: ''
