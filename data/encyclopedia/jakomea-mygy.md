@@ -1,8 +1,8 @@
 ---
-id: jakomea-mygy
-title: Jakomea mygy
+id: jakomea-mugu
+title: Jakomea mugu
 variants: []
-abstract: Jakomea mygy - nome próprio (ver vol. II).
+abstract: Jakomea mugu - nome próprio (ver vol. II).
 categories: []
 date: '2026-01-04'
 url: ''
