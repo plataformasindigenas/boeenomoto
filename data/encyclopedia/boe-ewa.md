@@ -246,6 +246,53 @@ Exemplo: os **Baado jebage Cobugiwuge Boe Eiadadawuge** podem ser apelidados de 
 
 Nota importante: a superioridade e inferioridade nao dizem respeito aos clãs (exceto no caso de Baado jebage), mas aos sub-clas, com relacão ao leste, considerado superior no reino dos mortos, onde os rios correm de leste para oeste.
 
+Metade dos **Ecerae**
+Membros da metade exógama cujos principais chefes tem o
+múnus de proclamar cantos. Para porenores --> **boe eimegejra** 'chefe de
+uma aldeia bororo'.
+
+**Baado jebage Cobugiwuge**: cla superior
+dos que sao encarregados de edificar
+a aldeia i.e. dos chefes superiores. Chefes Superiores. Nao conhecemos
+outras denominacões;
+
+
+**Baado jebage Cobugiwuge Cobugiwuge**
+Chefes Superiores, chefes supremos.
+
+**Boe Ao Kejewuge** (_boe ao_ 'sumidade, topo') aquéles que estão na
+sumidade da aldeia. Chef es Supremos.
+
+**Bororo Ecerae** (_boro_ _labrete de carapaça de caracol') 
+Os **Ecerae** possuidores de certo labrete;
+
+**Baado jebage Cobugiwuge Boe Eiadadawuge**, Chefes Superiores do sub-cla do centro.
+
+**Enogujeba Ecerae** Membros da metade dos
+**Ecerae**, do sub-clã que tem a primazia sobre o espírito **Enogujeba**;
+
+**Baado jebage Cobugiwuge Cebegiwuge**
+Chefes Superiores do sub-clã inferior.
+
+**Akaruio Ecerae** (Akarui = **Akaruio Bokodori**)
+Membros da metade dos **Ecerae** do
+sub-cla de **Akaruio Bokodori**
+
+**Muguio Ecerae** (**Muguio** = *Mugui Bokodori**)
+designacao de um célebre antepassado.
+Membros da metade dos **Ecerae** do
+sub~-la de **Muguio Bokodori**, que é
+outra alcunha de **Akaruio Bokodori**.
+
+**O Ecerae** Membros da metade dos **Ecerae**, do sub-clã que tem a primazia
+sobre o socó.
+
+**Bokodori Ecerae** 
+Os Tatus-Canastra da metade exógama situada ao
+norte.
+
+**Aroe** Bororo por excelência,  assim eles se consideram.
+
 (INSERIR o restante das denominações secundarias e lista completa conforme fonte.)
 
 ---
