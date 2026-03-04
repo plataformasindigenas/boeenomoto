@@ -1,6 +1,18 @@
 /**
- * Shared utilities for Boe Eno Moto search pages.
+ * Shared utilities for terradoc search pages.
  */
+
+/* ── Mobile nav toggle ── */
+(function() {
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    if (toggle && links) {
+        toggle.addEventListener('click', function() {
+            var open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+    }
+})();
 
 function escapeHtml(text) {
     if (!text) return '';
@@ -51,13 +63,16 @@ function debounce(func, wait) {
  * @param {Function} [config.onResults] - Optional callback after results are rendered
  */
 function initSearchPage(config) {
-    var fuse = new Fuse(config.data, {
-        keys: config.fuseKeys,
-        threshold: 0.4,
-        ignoreLocation: true,
-        includeMatches: true,
-        minMatchCharLength: 2
-    });
+    var fuse = null;
+    if (typeof Fuse !== 'undefined') {
+        fuse = new Fuse(config.data, {
+            keys: config.fuseKeys,
+            threshold: 0.4,
+            ignoreLocation: true,
+            includeMatches: true,
+            minMatchCharLength: 2
+        });
+    }
 
     var searchInput = document.getElementById('search-input');
     var filterSelect = config.filterElementId ? document.getElementById(config.filterElementId) : null;
@@ -69,6 +84,30 @@ function initSearchPage(config) {
         return entry[config.filterField] === filterValue;
     };
     var filterFn = config.filterFn || defaultFilterFn;
+
+    function getSearchValue(entry, key) {
+        var value = entry[key];
+        if (Array.isArray(value)) return value.join(' ');
+        if (value === null || value === undefined) return '';
+        return String(value);
+    }
+
+    function basicSearch(query) {
+        var q = query.toLowerCase();
+        return config.data
+            .filter(function(entry) {
+                for (var i = 0; i < config.fuseKeys.length; i++) {
+                    var keyName = config.fuseKeys[i].name;
+                    if (getSearchValue(entry, keyName).toLowerCase().indexOf(q) !== -1) {
+                        return true;
+                    }
+                }
+                return false;
+            })
+            .map(function(entry) {
+                return { item: entry };
+            });
+    }
 
     function search() {
         var query = searchInput.value.trim();
@@ -89,7 +128,7 @@ function initSearchPage(config) {
                 return;
             }
         } else {
-            currentResults = fuse.search(query);
+            currentResults = fuse ? fuse.search(query) : basicSearch(query);
             if (selectedFilter) {
                 currentResults = currentResults.filter(function(result) {
                     return filterFn(result.item, selectedFilter);
@@ -103,6 +142,7 @@ function initSearchPage(config) {
         if (count === 0) {
             resultsContainer.innerHTML =
                 '<div class="empty-state">' +
+                '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>' +
                 '<h2>' + config.labels.noResults + '</h2>' +
                 '<p>' + config.labels.noResultsHint + '</p>' +
                 '</div>';

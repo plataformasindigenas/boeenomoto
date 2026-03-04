@@ -13069,7 +13069,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "boe-ewa",
+          "title": "Boe ewa"
+        }
+      ]
     },
     {
       "id": 895,

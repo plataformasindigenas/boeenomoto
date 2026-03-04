@@ -1,274 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/favicon.ico">
     <title>Moto epa - Boe Eno Moto</title>
+    <link rel="stylesheet" href="../../css/terradoc.css">
+    <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1rem;
-            background: #F9F6F2;
-            color: #333;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #3D352F;
-            color: white;
-            padding: 0.5rem 1rem;
-            z-index: 100;
-            text-decoration: none;
-            border-radius: 0 0 4px 0;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        nav {
-            background: #3D352F;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-        nav a:hover, nav a.active {
-            background: rgba(255,255,255,0.15);
-        }
-        nav .brand {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        nav .lang-switch {
-            margin-left: auto;
-            font-size: 0.85rem;
-            opacity: 0.8;
-        }
-        nav .lang-switch:hover {
-            opacity: 1;
-        }
-        header {
-            text-align: center;
-            padding: 1rem 0;
-            border-bottom: 2px solid #e0e0e0;
-            margin-bottom: 1.5rem;
-        }
-        h1 {
-            margin: 0 0 0.5rem 0;
-            color: #3D352F;
-        }
-        .subtitle {
-            color: #6B6B6B;
-            font-size: 0.95rem;
-        }
-        .search-container {
-            background: white;
-            padding: 1rem;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            margin-bottom: 1rem;
-        }
-        .search-row {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .search-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .search-input:focus {
-            border-color: #C75B39;
-            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
-        }
-        .filter-select {
-            padding: 0.75rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            background: white;
-            cursor: pointer;
-        }
-        .stats {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-        }
-        .results-container {
-            background: white;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            overflow: hidden;
-        }
-        .empty-state {
-            padding: 3rem;
-            text-align: center;
-            color: #6B6B6B;
-        }
-        .empty-state h2 {
-            margin: 0 0 0.5rem 0;
-            color: #6B6B6B;
-        }
-        .entry {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        .entry:last-child {
-            border-bottom: none;
-        }
-        .entry:hover {
-            background: #f8f9fa;
-        }
-        .entry-header {
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
-        .entry-word {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #3D352F;
-        }
-        .entry-secondary {
-            color: #6B6B6B;
-            font-size: 1rem;
-        }
-        .entry-ipa {
-            color: #6B6B6B;
-            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
-        }
-        .entry-tag {
-            font-size: 0.75rem;
-            background: #F5EDE8;
-            color: #A84B2F;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .entry-definition {
-            margin: 0.5rem 0;
-            color: #444;
-        }
-        .entry-example {
-            margin: 0.5rem 0;
-            padding-left: 1rem;
-            border-left: 3px solid #C75B39;
-            color: #555;
-            font-style: italic;
-        }
-        .entry-scientific {
-            font-style: italic;
-            color: #6B6B6B;
-            font-size: 0.9rem;
-        }
-        .entry-comment {
-            margin-top: 0.5rem;
-            padding: 0.5rem;
-            background: #fff8e1;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #6B6B6B;
-        }
-        .entry-media {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.75rem;
-            align-items: flex-start;
-        }
-        .entry-thumbnail {
-            max-width: 120px;
-            max-height: 90px;
-            border-radius: 4px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .entry-thumbnail:hover {
-            transform: scale(1.05);
-        }
-        .entry-links {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .entry-links a {
-            font-size: 0.85rem;
-            color: #C75B39;
-            text-decoration: none;
-        }
-        .entry-links a:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            background: #fff59d;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
-        footer {
-            margin-top: 2rem;
-            padding: 1rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-            border-top: 1px solid #e0e0e0;
-        }
-        footer a {
-            color: #C75B39;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .search-row {
-                flex-direction: column;
-            }
-            .search-input, .filter-select {
-                width: 100%;
-            }
-            .entry-thumbnail {
-                max-width: 80px;
-            }
-            nav {
-                justify-content: center;
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                transition: none !important;
-            }
+        :root {
+            --td-color-primary: #3D352F;
+            --td-color-accent: #C75B39;
+            --td-color-accent-muted: #A84B2F;
+            --td-color-bg: #F9F6F2;
+            --td-color-bg-light: #F5EDE8;
+            --td-color-bg-infobox: #FAF8F5;
+            --td-color-border: #E8E4DF;
+            --td-color-border-dark: #C8B8A8;
+            --td-color-text: #333333;
+            --td-color-text-muted: #6B6B6B;
+            --td-color-highlight: #fff59d;
+            --td-color-warning-bg: #fff8e1;
+            --td-color-surface: #FFFFFF;
+            --td-color-border-light: #EEEEEE;
+            --td-color-text-secondary: #555555;
+            --td-color-accent-light: #FDF0EB;
+            --td-color-success: #5B8C5A;
+            --td-color-error: #CC0000;
+            --td-color-accent-ring: rgba(183, 82, 44, 0.2);
+            --td-radius: 4px;
+            --td-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --td-font-headings: ;
+            --td-font-mono: 'Lucida Sans Unicode', 'DejaVu Sans', monospace;
         }
 .breadcrumb {
     font-size: 0.9rem;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
     margin-bottom: 1rem;
 }
 .breadcrumb a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
 }
 .breadcrumb a:hover {
@@ -279,7 +50,7 @@
 }
 article header {
     text-align: left;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 2px solid var(--td-color-border);
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
 }
@@ -288,73 +59,75 @@ article header h1 {
     margin: 0 0 0.5rem 0;
 }
 .article-abstract {
-    color: #555;
+    color: var(--td-color-text-secondary);
     font-size: 1.05rem;
     line-height: 1.6;
     margin: 0.5rem 0;
 }
 .article-variants {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--td-color-text-secondary);
     margin-bottom: 0.5rem;
 }
 .variant-tag {
-    background: #E8E4DF;
+    background: var(--td-color-border);
     padding: 0.1rem 0.5rem;
-    border-radius: 3px;
+    border-radius: var(--td-radius);
     margin-right: 0.3rem;
     font-style: italic;
 }
 .infobox {
     float: right;
     clear: right;
-    width: 260px;
-    margin: 0 0 1rem 1.5rem;
+    width: 280px;
+    margin: 0 0 1.25rem 1.5rem;
     padding: 0;
-    border: 1px solid #C8B8A8;
-    background: #FAF8F5;
+    border: 1px solid var(--td-color-border-dark);
+    background: linear-gradient(to bottom, var(--td-color-bg-infobox), var(--td-color-surface));
     font-size: 0.88rem;
+    border-radius: var(--td-radius);
+    overflow: hidden;
 }
 .infobox-header {
-    background: #E8DFD5;
-    padding: 0.6rem 0.75rem;
+    background: var(--td-color-accent-light);
+    padding: 0.7rem 0.85rem;
     font-weight: 600;
-    color: #3D352F;
+    color: var(--td-color-primary);
     text-align: center;
-    border-bottom: 1px solid #C8B8A8;
+    border-bottom: 1px solid var(--td-color-border-dark);
 }
 .infobox-image {
     text-align: center;
-    padding: 0.75rem;
-    background: white;
-    border-bottom: 1px solid #C8B8A8;
+    padding: 0.85rem;
+    background: var(--td-color-surface);
+    border-bottom: 1px solid var(--td-color-border-dark);
 }
 .infobox-image img {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 240px;
     object-fit: contain;
-    border-radius: 2px;
+    border-radius: var(--td-radius);
 }
 .infobox-image-credit {
     font-size: 0.75rem;
-    color: #888;
+    color: var(--td-color-text-muted);
     margin-top: 0.35rem;
 }
 .infobox-row {
     padding: 0.5rem 0.75rem;
-    border-bottom: 1px solid #E8E4DF;
+    border-bottom: 1px solid var(--td-color-border);
 }
 .infobox-row:last-child {
     border-bottom: none;
 }
 .infobox-label {
     font-weight: 500;
-    color: #666;
+    color: var(--td-color-text-secondary);
     font-size: 0.8rem;
     margin-bottom: 0.2rem;
 }
 .infobox-value {
-    color: #333;
+    color: var(--td-color-text);
 }
 .infobox-keywords {
     display: flex;
@@ -363,30 +136,40 @@ article header h1 {
 }
 .infobox-keyword {
     font-size: 0.75rem;
-    background: #E8E4DF;
-    color: #555;
+    background: var(--td-color-border);
+    color: var(--td-color-text-secondary);
     padding: 0.15rem 0.4rem;
-    border-radius: 3px;
+    border-radius: var(--td-radius);
 }
 .infobox-keyword a {
-    color: #555;
+    color: var(--td-color-text-secondary);
     text-decoration: none;
 }
 .infobox-keyword a:hover {
     text-decoration: underline;
 }
 .infobox-link a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
     font-size: 0.85rem;
 }
 .infobox-link a:hover {
     text-decoration: underline;
 }
+.infobox-thumb {
+    display: inline-block;
+    margin: 2px;
+}
+.infobox-thumb img {
+    max-width: 50px;
+    max-height: 40px;
+    border-radius: 2px;
+    object-fit: cover;
+}
 .toc {
     display: inline-block;
-    background: #FAF8F5;
-    border: 1px solid #C8B8A8;
+    background: var(--td-color-bg-infobox);
+    border: 1px solid var(--td-color-border-dark);
     padding: 0.75rem 1.25rem;
     margin: 0.5rem 0 1rem 0;
     font-size: 0.9rem;
@@ -394,7 +177,7 @@ article header h1 {
 }
 .toc-title {
     font-weight: 600;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -407,7 +190,7 @@ article header h1 {
     padding: 0.2rem 0;
 }
 .toc-list a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
 }
 .toc-list a:hover {
@@ -419,7 +202,7 @@ article header h1 {
 }
 .article-content {
     line-height: 1.7;
-    color: #333;
+    color: var(--td-color-text);
 }
 .article-content::after {
     content: "";
@@ -428,18 +211,32 @@ article header h1 {
 }
 .article-content h3 {
     font-size: 1.3rem;
-    color: #3D352F;
-    margin: 1.5rem 0 0.75rem 0;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid #C8B8A8;
+    color: var(--td-color-primary);
+    margin: 2rem 0 0.75rem 0;
+    padding-left: 0.75rem;
+    border-left: 3px solid var(--td-color-accent);
     font-weight: 600;
+    line-height: 1.3;
 }
 .article-content h3:first-child {
     margin-top: 0;
 }
+.article-content > p:first-of-type {
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+.article-content > p:first-of-type::first-letter {
+    float: left;
+    font-size: 2.8rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--td-color-accent);
+    margin-right: 0.15rem;
+    margin-top: 0.05rem;
+}
 .article-content h4 {
     font-size: 1.1rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin: 1.25rem 0 0.5rem 0;
     font-weight: 600;
 }
@@ -459,55 +256,55 @@ article header h1 {
 }
 .article-content strong {
     font-weight: 600;
-    color: #2D2520;
+    color: var(--td-color-primary);
 }
 .article-content hr {
     border: none;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
     margin: 1.25rem 0;
 }
 .broken-link {
-    color: #cc0000;
+    color: var(--td-color-error);
     text-decoration: underline wavy;
 }
 .examples-section {
-    margin-top: 1.25rem;
+    margin-top: 2rem;
 }
 .examples-title {
     font-size: 1rem;
     font-weight: 600;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .example-block {
-    background: linear-gradient(to right, #F5F0EB, #FAF8F5);
-    border-left: 4px solid #C75B39;
+    background: linear-gradient(to right, var(--td-color-bg-light), var(--td-color-bg-infobox));
+    border-left: 4px solid var(--td-color-accent);
     padding: 0.9rem 1rem;
     margin: 0.6rem 0;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 var(--td-radius) var(--td-radius) 0;
 }
 .example-bororo {
     font-size: 1.05rem;
     font-weight: 500;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.4rem;
     font-style: italic;
 }
 .example-translation {
     font-size: 0.92rem;
-    color: #666;
+    color: var(--td-color-text-secondary);
     padding-left: 0.5rem;
-    border-left: 2px solid #DDD;
+    border-left: 2px solid var(--td-color-border-dark);
     margin-left: 0.25rem;
 }
 .references-section {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
 }
 .references-section h2 {
     font-size: 1.2rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .references-section ol {
@@ -517,19 +314,19 @@ article header h1 {
     margin: 0.5rem 0;
     font-size: 0.9rem;
     line-height: 1.5;
-    color: #444;
+    color: var(--td-color-text-secondary);
 }
 .ref-error {
-    color: #cc0000;
+    color: var(--td-color-error);
 }
 .see-also-section {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
 }
 .see-also-section h2 {
     font-size: 1.2rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .see-also-section ul {
@@ -541,29 +338,29 @@ article header h1 {
 }
 .see-also-section li a {
     display: inline-block;
-    background: #F5EDE8;
-    color: #A84B2F;
+    background: var(--td-color-bg-light);
+    color: var(--td-color-accent-muted);
     padding: 0.3rem 0.75rem;
-    border-radius: 4px;
+    border-radius: var(--td-radius);
     text-decoration: none;
     font-size: 0.9rem;
 }
 .see-also-section li a:hover {
-    background: #E8DFD5;
+    background: var(--td-color-accent-light);
     text-decoration: underline;
 }
 .cross-links-section {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
 }
 .cross-links-section h2 {
     font-size: 1.2rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .cross-links-section a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
     margin-right: 1rem;
 }
@@ -573,15 +370,15 @@ article header h1 {
 .article-footer {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
     font-size: 0.85rem;
-    color: #888;
+    color: var(--td-color-text-muted);
 }
 .article-footer .category-breadcrumbs {
     margin-top: 0.5rem;
 }
 .article-footer .category-breadcrumbs a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
 }
 .article-footer .category-breadcrumbs a:hover {
@@ -590,7 +387,7 @@ article header h1 {
 .back-link {
     display: inline-block;
     margin-top: 1.5rem;
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -622,15 +419,26 @@ article header h1 {
     <a href="#main-content" class="skip-link">Pular para conteúdo</a>
 
     <nav aria-label="Navegação principal">
-        <a href="../index.html" class="brand">Boe Eno Moto</a>
-        <a href="../dictionary.html">Dicionário</a>
-        <a href="../encyclopedia.html" class="active" aria-current="page">Enciclopédia</a>
-        <a href="../fauna.html">Fauna</a>
-        <a href="../bibliography.html">Bibliografia</a>
-        <a href="../../en/encyclopedia.html" class="lang-switch">EN</a>
+        <div class="td-nav-inner">
+            <a href="../index.html" class="brand">
+                <img src="../../images/logo.png" alt="" class="brand-logo">
+                <span>Boe Eno Moto</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <a href="../dictionary.html">Dicionário</a>
+                <a href="../encyclopedia.html" class="active" aria-current="page">Enciclopédia</a>
+                <a href="../fauna.html">Fauna</a>
+                <a href="../bibliography.html">Bibliografia</a>
+            </div>
+            <div class="lang-switch" aria-label="Seletor de idioma">
+                    <span class="lang-current" aria-current="true">Português</span>
+                    <a href="../../en/encyclopedia/moto-epa.html" class="lang-link">English</a>
+            </div>
+        </div>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" class="td-container">
     <nav class="breadcrumb" aria-label="Navegação">
         <a href="../encyclopedia.html">Enciclopédia</a>
         <span class="breadcrumb-sep">&rsaquo;</span>
@@ -640,18 +448,54 @@ article header h1 {
     <article>
         <header>
             <h1>Moto epa</h1>
-            <p class="article-abstract">Moto epa (moto 'terra' + epa 'para') [indivíduo que gosta de terra] - 1 A geofagia é um hábito que afe-ta alguns membros da tribo bororo, crianças e adultos, desde tempos imemoriais, como efeito de verminoses mais ou menos crônicas ou graves. Em alguns casos provoca a morte especialmente de crianças. Os geófagos preferem aterra queimada que, na choupana ou fora dela, encontram facilmente no ery pa 'lugar onde acendem o fogo'; nos campos a retiram dos termiteiros, queimados pelo fogo que periodicamente devasta os cerrados.</p>
+            <p class="article-abstract">Pessoa que pratica geofagia; individuo que come terra.</p>
         </header>
 
+        <aside class="infobox">
+            <div class="infobox-header">Moto epa</div>
+            <div class="infobox-row">
+                <div class="infobox-label">Categorias</div>
+                <div class="infobox-keywords">
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=saude">saude</a></span>
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=costumes">costumes</a></span>
+                </div>
+            </div>
+        </aside>
+
+        <div class="toc"><div class="toc-title"></div><ul class='toc-list'><li><a href="#moto-epa-section-0">1. Geofagia entre os bororo</a></li><li><a href="#moto-epa-section-1">2. Tipos de terra consumidos</a></li></ul></div>
+
+        <div class="article-content">
+            <h2>MOTO EPA</h2>
+<p><strong>Moto epa</strong> (moto ‘terra’ + epa ‘gostar de’)</p>
+<p>Designa o individuo que ingere terra.</p>
+<h3 id="moto-epa-section-0">Geofagia entre os bororo</h3>
+<p>A geofagia ocorre entre criancas e adultos desde tempos antigos.<br />
+E associada principalmente a verminoses cronicas ou graves e, em alguns casos, pode levar a morte, sobretudo de criancas.</p>
+<h3 id="moto-epa-section-1">Tipos de terra consumidos</h3>
+<p>Os geofagos preferem:</p>
+<ul>
+<li>terra queimada presente no <strong>ery pa</strong> (lugar do fogo)</li>
+<li>terra retirada de cupinzeiros queimados nos campos</li>
+</ul>
+<p>Essa terra e procurada tanto dentro quanto fora da choupana.</p>
+
+        </div>
 
 
 
-
-
+        <section class="see-also-section">
+            <h2>Ver também</h2>
+            <ul>
+                <li><a href="ery-pa.html">ery-pa</a></li>
+            </ul>
+        </section>
 
 
         <div class="article-footer">
-            <div>Última atualização: 2026-01-04</div>
+            <div>Última atualização: 2026-02-18</div>
+            <div class="category-breadcrumbs">
+                Categorias:
+                        <a href="../encyclopedia.html?category=saude">saude</a> &bull;                         <a href="../encyclopedia.html?category=costumes">costumes</a>            </div>
         </div>
     </article>
 
@@ -659,7 +503,9 @@ article header h1 {
     </main>
 
     <footer>
-        <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        <div class="td-container">
+            <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        </div>
     </footer>
 
     <script src="../../js/common.js"></script>

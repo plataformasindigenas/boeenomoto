@@ -1,266 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico">
     <title>Bororo Bibliography - Boe Eno Moto</title>
+    <link rel="stylesheet" href="../css/terradoc.css">
+    <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1rem;
-            background: #F9F6F2;
-            color: #333;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #3D352F;
-            color: white;
-            padding: 0.5rem 1rem;
-            z-index: 100;
-            text-decoration: none;
-            border-radius: 0 0 4px 0;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        nav {
-            background: #3D352F;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-        nav a:hover, nav a.active {
-            background: rgba(255,255,255,0.15);
-        }
-        nav .brand {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        nav .lang-switch {
-            margin-left: auto;
-            font-size: 0.85rem;
-            opacity: 0.8;
-        }
-        nav .lang-switch:hover {
-            opacity: 1;
-        }
-        header {
-            text-align: center;
-            padding: 1rem 0;
-            border-bottom: 2px solid #e0e0e0;
-            margin-bottom: 1.5rem;
-        }
-        h1 {
-            margin: 0 0 0.5rem 0;
-            color: #3D352F;
-        }
-        .subtitle {
-            color: #6B6B6B;
-            font-size: 0.95rem;
-        }
-        .search-container {
-            background: white;
-            padding: 1rem;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            margin-bottom: 1rem;
-        }
-        .search-row {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .search-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .search-input:focus {
-            border-color: #C75B39;
-            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
-        }
-        .filter-select {
-            padding: 0.75rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            background: white;
-            cursor: pointer;
-        }
-        .stats {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-        }
-        .results-container {
-            background: white;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            overflow: hidden;
-        }
-        .empty-state {
-            padding: 3rem;
-            text-align: center;
-            color: #6B6B6B;
-        }
-        .empty-state h2 {
-            margin: 0 0 0.5rem 0;
-            color: #6B6B6B;
-        }
-        .entry {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        .entry:last-child {
-            border-bottom: none;
-        }
-        .entry:hover {
-            background: #f8f9fa;
-        }
-        .entry-header {
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
-        .entry-word {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #3D352F;
-        }
-        .entry-secondary {
-            color: #6B6B6B;
-            font-size: 1rem;
-        }
-        .entry-ipa {
-            color: #6B6B6B;
-            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
-        }
-        .entry-tag {
-            font-size: 0.75rem;
-            background: #F5EDE8;
-            color: #A84B2F;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .entry-definition {
-            margin: 0.5rem 0;
-            color: #444;
-        }
-        .entry-example {
-            margin: 0.5rem 0;
-            padding-left: 1rem;
-            border-left: 3px solid #C75B39;
-            color: #555;
-            font-style: italic;
-        }
-        .entry-scientific {
-            font-style: italic;
-            color: #6B6B6B;
-            font-size: 0.9rem;
-        }
-        .entry-comment {
-            margin-top: 0.5rem;
-            padding: 0.5rem;
-            background: #fff8e1;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #6B6B6B;
-        }
-        .entry-media {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.75rem;
-            align-items: flex-start;
-        }
-        .entry-thumbnail {
-            max-width: 120px;
-            max-height: 90px;
-            border-radius: 4px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .entry-thumbnail:hover {
-            transform: scale(1.05);
-        }
-        .entry-links {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .entry-links a {
-            font-size: 0.85rem;
-            color: #C75B39;
-            text-decoration: none;
-        }
-        .entry-links a:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            background: #fff59d;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
-        footer {
-            margin-top: 2rem;
-            padding: 1rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-            border-top: 1px solid #e0e0e0;
-        }
-        footer a {
-            color: #C75B39;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .search-row {
-                flex-direction: column;
-            }
-            .search-input, .filter-select {
-                width: 100%;
-            }
-            .entry-thumbnail {
-                max-width: 80px;
-            }
-            nav {
-                justify-content: center;
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                transition: none !important;
-            }
+        :root {
+            --td-color-primary: #3D352F;
+            --td-color-accent: #C75B39;
+            --td-color-accent-muted: #A84B2F;
+            --td-color-bg: #F9F6F2;
+            --td-color-bg-light: #F5EDE8;
+            --td-color-bg-infobox: #FAF8F5;
+            --td-color-border: #E8E4DF;
+            --td-color-border-dark: #C8B8A8;
+            --td-color-text: #333333;
+            --td-color-text-muted: #6B6B6B;
+            --td-color-highlight: #fff59d;
+            --td-color-warning-bg: #fff8e1;
+            --td-color-surface: #FFFFFF;
+            --td-color-border-light: #EEEEEE;
+            --td-color-text-secondary: #555555;
+            --td-color-accent-light: #FDF0EB;
+            --td-color-success: #5B8C5A;
+            --td-color-error: #CC0000;
+            --td-color-accent-ring: rgba(183, 82, 44, 0.2);
+            --td-radius: 4px;
+            --td-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --td-font-headings: ;
+            --td-font-mono: 'Lucida Sans Unicode', 'DejaVu Sans', monospace;
         }
     </style>
 </head>
@@ -268,52 +39,1447 @@
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     <nav aria-label="Main navigation">
-        <a href="index.html" class="brand">Boe Eno Moto</a>
-        <a href="dictionary.html">Dictionary</a>
-        <a href="encyclopedia.html">Encyclopedia</a>
-        <a href="fauna.html">Fauna</a>
-        <a href="bibliography.html" class="active" aria-current="page">Bibliography</a>
-        <a href="../pt/bibliography.html" class="lang-switch">PT</a>
+        <div class="td-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="../images/logo.png" alt="" class="brand-logo">
+                <span>Boe Eno Moto</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <a href="dictionary.html">Dictionary</a>
+                <a href="encyclopedia.html">Encyclopedia</a>
+                <a href="fauna.html">Fauna</a>
+                <a href="bibliography.html" class="active" aria-current="page">Bibliography</a>
+            </div>
+            <div class="lang-switch" aria-label="Language selector">
+                    <a href="../pt/bibliography.html" class="lang-link">Português</a>
+                    <span class="lang-current" aria-current="true">English</span>
+            </div>
+        </div>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" class="td-container">
     <header>
         <h1>Bororo Bibliography</h1>
         <p class="subtitle">Bororo Bibliography References &mdash; 197 references</p>
     </header>
 
-    <div class="search-container">
-        <div class="search-row">
-            <input type="text" id="search-input" class="search-input" placeholder="Search (author, title, year)..." autocomplete="off" aria-label="Search">
-            <select id="type-filter" class="filter-select" aria-label="Filter results">
-                <option value="">All types</option>
-                <option value="article">article</option>
-                <option value="incollection">incollection</option>
-                <option value="mastersthesis">mastersthesis</option>
-                <option value="misc">misc</option>
-                <option value="phdthesis">phdthesis</option>
-            </select>
+    <div class="js-only">
+        <div class="search-container">
+            <div class="search-row">
+                <input type="text" id="search-input" class="search-input" placeholder="Search (author, title, year)..." autocomplete="off" aria-label="Search">
+                <select id="type-filter" class="filter-select" aria-label="Filter results">
+                    <option value="">All types</option>
+                    <option value="article">article</option>
+                    <option value="incollection">incollection</option>
+                    <option value="mastersthesis">mastersthesis</option>
+                    <option value="misc">misc</option>
+                    <option value="phdthesis">phdthesis</option>
+                </select>
+            </div>
+            <div class="stats" id="stats" aria-live="polite"></div>
         </div>
-        <div class="stats" id="stats" aria-live="polite"></div>
+
+        <div class="results-container" id="results" aria-live="polite">
+            <div class="empty-state">
+                <h2>Search the bibliography</h2>
+                <p>Type an author, title, or year to begin</p>
+            </div>
+        </div>
     </div>
 
-    <div class="results-container" id="results" aria-live="polite">
-        <div class="empty-state">
-            <h2>Search the bibliography</h2>
-            <p>Type an author, title, or year to begin</p>
+    <div class="no-js-only results-container">
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Adelaar2014Johann</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Adelaar, Willem F. H. and Hélène B. Brijnen</p><p class="entry-example">Johann Natterer and the Amazonian Languages.</p>            <p class="entry-scientific">
+2014, <em>Revista Brasileira de Linguística Antropológica</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Albisetti1948Estudos</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Albisetti, César</p><p class="entry-example">Estudos e Notas Complementares Sôbre Os Bororós Orientais</p>            <p class="entry-scientific">
+1948            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Albisetti1953Il</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Albisetti, César</p><p class="entry-example">Il Villagio Bororo.</p>            <p class="entry-scientific">
+1953, <em>Anthropos</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Albisetti1958Notulas</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Albisetti, César</p><p class="entry-example">Nótulas Morfemo-Etimológicas Da Língua Bororo</p>            <p class="entry-scientific">
+1958            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Albisetti1962aEnciclopedia</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Albisetti, César and Ángelo J. Venturelli</p><p class="entry-example">Enciclopédia Bororo I</p>            <p class="entry-scientific">
+1962a, Museu Regional Dom Bosco            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Aytai1979A</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Aytai, Desidério</p><p class="entry-example">A Linguagem de Assobio Dos Índios Bororo e Karajá.</p>            <p class="entry-scientific">
+1979, <em>Publicações Do Museu Municipal de Paulínia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Aytai1986Die</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Aytai, Desidério</p><p class="entry-example">Die Pfiff-Sprache Der Bororo Und Karaja.</p>            <p class="entry-scientific">
+1986, <em>Schweizerische Amerikanisten-Gesellschaft, Bulletin</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Baldus1937The</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Baldus, H</p><p class="entry-example">The Social Position of the Woman Among the Eastern Bororo (Transl. I. Lillios).</p>            <p class="entry-scientific">
+1937, <em>Ensaios de Etnologia Brasileira</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Baldus1979aA</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Baldus, Herbert</p><p class="entry-example">A Posição Social Da Mulher Entre Os Bororo Orientais.</p>            <p class="entry-scientific">
+1979a            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Baldus1979bO</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Baldus, Herbert</p><p class="entry-example">O Professor Tiago Marques e o Caçador Aipobureu: A Reação de Um Indivíduo Bororo à Influência Da Nossa Civilização.</p>            <p class="entry-scientific">
+1979b            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Bloemer1980Itaga</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Bloemer, Neusa Maria</p><p class="entry-example">Itága: Alguns Aspectos Do Funeral Bororo.</p>            <p class="entry-scientific">
+1980            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">BordignonEnawureu1987Os</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Bordignon Enawuréu, M</p><p class="entry-example">Os Boróros Na História Do Centro Oeste Brasileiro, 1716-1986</p>            <p class="entry-scientific">
+1987, Missão Salesiana de Mato Grosso/ CIMI-MT            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">BotelhodeMagalhaes1944O</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Botelho de Magalhães, A</p><p class="entry-example">O Problema Da Civilização Dos Índios No Brasil.</p>            <p class="entry-scientific">
+1944, <em>Area Indígena/Aldeia Indígena (Brasil)</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Bruggemann1986Die</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Brüggemann, Wolf</p><p class="entry-example">Die Verwandschaftsterminologie Der Bororó-Indianer: Rekonstruktion Und Analyse Mit Methoden Der Kognitiven Anthropologie.</p>            <p class="entry-scientific">
+1986            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Bulawski1979MitoRealidade</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Bulawski, Stefan</p><p class="entry-example">Mito-Realidade e Projeto de Um Povo.</p>            <p class="entry-scientific">
+1979            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Caldas1903Apontamentos</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Caldas, José Augusto</p><p class="entry-example">Apontamentos Para a Organisação Da Grammatica Bororó.</p>            <p class="entry-scientific">
+1903, 311-23            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Ochoa2001Processo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Ochoa, G. C., ed</p><p class="entry-example">Processo Evolutivo Da Pessoa Boróro</p>            <p class="entry-scientific">
+2001, UCDB            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">ed2002Meruri</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">ed</p><p class="entry-example">Merúri Na Visão de Um Ancião Boróro</p>            <p class="entry-scientific">
+2002            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Camargo2014Boe</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Camargo, Gonçalo Ochoa</p><p class="entry-example">Boe Ewadaru = a Língua Bororo: Breve Histórico e Elementos de Gramática</p>            <p class="entry-scientific">
+2014, Universidade Católica Dom Bosco            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Camargos2010Relacoes</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Camargos, Lidiane Szerwinsk</p><p class="entry-example">Relações Gramaticais, Aspecto, Modo e Modalidade Em Boróro.</p>            <p class="entry-scientific">
+2010            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Camargos2013Consolidando</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Camargos, Lidiane Szerwinsk</p><p class="entry-example">Consolidando Uma Proposta de Família Linguística Boróro. Contribuição Aos Estudos Histórico-Comparativos Do Tronco Macro-Jê.</p>            <p class="entry-scientific">
+2013            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Canzio1997Text</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Canzio, Riccardo</p><p class="entry-example">Text and Music in Bororo Chanting.</p>            <p class="entry-scientific">
+1997, <em>Bulletin de La Société Suisse Des Américanistes (= SAGB)</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Carvalho1946O</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Carvalho, S</p><p class="entry-example">O Grande Bandeirante Antônio Pires de Campo (1716-1756).</p>            <p class="entry-scientific">
+1946, <em>Revista Do Instituto Histórico Do Mato Grosso</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Castelnau1851Histoire</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Castelnau, Francis de</p><p class="entry-example">Histoire Du Voyage</p>            <p class="entry-scientific">
+1851            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1919A</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio</p><p class="entry-example">A Tribu Dos Boróros</p>            <p class="entry-scientific">
+1919, Papalaria Americana            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1925aI</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio</p><p class="entry-example">I Bororos Orientali Orarimugudoge Del Matto Grosso (Brasile)</p>            <p class="entry-scientific">
+1925a, Società Editrice Internazionale            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1925bOrarimugudoge</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio</p><p class="entry-example">Orarimugudoge</p>            <p class="entry-scientific">
+1925b            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1926Gramatica</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio</p><p class="entry-example">Gramatica Dei Bororos-Orarimugudoge de Matto Grosso</p>            <p class="entry-scientific">
+1926            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1939aA</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio</p><p class="entry-example">A Luz Do Cruzeiro Do Sul</p>            <p class="entry-scientific">
+1939a, Escolas Profissionais Salesianas            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1939bA</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio</p><p class="entry-example">À Luz Do Cruzeiro Do Sul: Os Índios Borôros-Orari Do Planalto Oriental de Mato Grosso e a Missão Salesiana</p>            <p class="entry-scientific">
+1939b, Escolas Profissionais Salesianas            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1983UkeWaguu</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio</p><p class="entry-example">Uké-Wagúu: Em Comemoração Aos 80 Anos Da Missão Salesiana de Mato Grosso</p>            <p class="entry-scientific">
+1983, UFMG            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1942aOs</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio and Cesar Albisetti</p><p class="entry-example">Os Boróros Orientais: Orarimogodogue Do Planalto Oriental de Mato Grosso</p>            <p class="entry-scientific">
+1942a, Companhia Editora Nacional            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Colbacchini1942bOs</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Colbacchini, Antonio and César Albisetti</p><p class="entry-example">Os Bororós Orientais Orarimogodogue Do Planalto Oriental de Mato Grosso: Con-Tri Buição Científica Da Missão Salesiana de Mato Grosso Aos Estudos de Etnografía e Etnología Brasileira</p>            <p class="entry-scientific">
+1942b, Companhía Editora Nacional            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Cook1908The</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Cook, W. A</p><p class="entry-example">The Bororo Indians of Matto Grosso, Brazil.</p>            <p class="entry-scientific">
+1908, <em>Smithsonian Miscellaneous Collections</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Cook1907The</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Cook, William A</p><p class="entry-example">The Bororo Indians of Matto Grosso, Brazil</p>            <p class="entry-scientific">
+1907            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1967The</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">The Social Organization of the Eastern Bororo.</p>            <p class="entry-scientific">
+1967            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1969aMens</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Men's House Associates Among the Eastern Bororo.</p>            <p class="entry-scientific">
+1969a, <em>Southwestern Journal of Anthropology</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1969bReciprocity</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Reciprocity and Hierarchy Among the Eastern Bororo.</p>            <p class="entry-scientific">
+1969b, <em>Man</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1973Ritual</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Ritual and Social Structure.</p>            <p class="entry-scientific">
+1973, Erdman's            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1976Reciprocidade</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Reciprocidade e Hierarquia Entre Os Borôro Orientais.</p>            <p class="entry-scientific">
+1976, Companhia Editora            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1977aLes</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Les Rélexions Du Soi (the Mirrored Self).</p>            <p class="entry-scientific">
+1977a            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1977bMy</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">My Brother the Parrot.</p>            <p class="entry-scientific">
+1977b, University of Pennsylvania Press            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1977cWhy</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Why Are the Bororo Matrilineal.</p>            <p class="entry-scientific">
+1977c, 245-58            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1979Selves</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Selves and Alters Among the Eastern Bororo.</p>            <p class="entry-scientific">
+1979            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1983Being</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Being and Essence: Totemic Reprersentations Among the Eastern Bororos.</p>            <p class="entry-scientific">
+1983, University of British Columbia Press            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1985Vital</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">Vital Souls: Bororo Cosmology, Natural Symbolism, and Shamanism</p>            <p class="entry-scientific">
+1985, University of Arizona Press            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crocker1992El</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Crocker, Jon Christopher</p><p class="entry-example">El Hombre-Mono Con Ojos de Metal: Maneras Bororo de Apodar a Los Otros.</p>            <p class="entry-scientific">
+1992, Siglo XXI de España            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crowell1983Gramatica</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Crowell, Janet I</p><p class="entry-example">Gramática Pedagógica Borôro</p>            <p class="entry-scientific">
+1983, Summer Institute of Linguistics            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crowell1973Cohesion</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Crowell, Thomas H</p><p class="entry-example">Cohesion in Bororo Discourse.</p>            <p class="entry-scientific">
+1973, <em>Linguistics</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crowell1977The</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Crowell, Thomas H</p><p class="entry-example">The Phonology of Bororo Verb, Postposition, and Noun Paradigms.</p>            <p class="entry-scientific">
+1977, <em>Arquivos de Anatomia e Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Crowell1979A</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Crowell, Thomas H</p><p class="entry-example">A Grammar of Bororo.</p>            <p class="entry-scientific">
+1979, Cornell University; Cornell University            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Cruz1941Dos</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Cruz, Manuel</p><p class="entry-example">Dos Nomes Entre Os Bororos.</p>            <p class="entry-scientific">
+1941, <em>Revista Do Instituto Histórico e Geográfico Brasileiro</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Cruz1942Em</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Cruz, Manuel</p><p class="entry-example">Em Tôrno de Livro</p>            <p class="entry-scientific">
+1942, 163-72            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Cruz1943O</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Cruz, Manuel</p><p class="entry-example">O Exorcismo Da Caça, Do Peixe e Das Frutas Ente Os Borôro</p>            <p class="entry-scientific">
+1943            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Dorta1981Pariko</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Dorta, Sonia Ferraro</p><p class="entry-example">Paríko: Etnografia de Um Artefato Plumário</p>            <p class="entry-scientific">
+1981, Museu Paulista            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Dorta1986Plumaria</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Dorta, Sonia Ferraro</p><p class="entry-example">Plumária Borôro.</p>            <p class="entry-scientific">
+1986, Vozes            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Untitled????</span>
+<span class="entry-tag">misc</span>            </div>
+            <p class="entry-scientific">
+????            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Dorta1954Uma</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Dorta, Sonia Ferraro</p><p class="entry-example">Uma</p>            <p class="entry-scientific">
+1954, <em>Boletim Paulista de Geografia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Dorta1965Contribuicao</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Dorta, Sonia Ferraro</p><p class="entry-example">Contribuição Do Bororo à Toponímia Brasílica</p>            <p class="entry-scientific">
+1965, IEB            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Enawureu1987Os</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Enawuréu, Mário Bordignon</p><p class="entry-example">Os Bororos Na História Do Centro-Oeste Brasileiro: Bó e-Ró Marigudúwo</p>            <p class="entry-scientific">
+1987, Missão Salesiana de Mato Grosso/ CIMI-MT            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Ewadaru1942Gramatica</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Ewadaru, Boe</p><p class="entry-example">Gramática Da Lingua Dos Boróros Orientais Orarimogodogue.</p>            <p class="entry-scientific">
+1942, Companhia Editora Nacional            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Fabian1982Ethnoastronomy</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Fabian, Stephen M</p><p class="entry-example">Ethnoastronomy of the Eastern Bororo Indians of Mato Grosso, Brazil.</p>            <p class="entry-scientific">
+1982            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Fabian1987Eastern</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Fabian, Stephen M</p><p class="entry-example">Eastern Bororo Space and Time: Structure, Process and Precise Knowledge Among a Native Brazilian People.</p>            <p class="entry-scientific">
+1987            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Fabian1992SpaceTime</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Fabian, Stephen M</p><p class="entry-example">Space-Time of the Bororo of Brazil</p>            <p class="entry-scientific">
+1992, University Press of Florida            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Freitas1910Os</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Freitas, Affonso A. de</p><p class="entry-example">Os Guayanás de Piratininga</p>            <p class="entry-scientific">
+1910            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Fric1906Contributions</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Fric, V. A. and P. Radin</p><p class="entry-example">Contributions to the Study of the Bororo Indians.</p>            <p class="entry-scientific">
+1906, <em>Journal of the Royal Anthropological Institute</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Fric1906Contributions</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Frič, Vojtěch A. and Paul Radin</p><p class="entry-example">Contributions to the Study of the Bororo Indians.</p>            <p class="entry-scientific">
+1906, <em>Journal of the Royal Anthropological Institute of Great Britain and Ireland</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Gross1983Village</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Gross, Daniel R</p><p class="entry-example">Village Movement in Relation to Resources in Amazonia.</p>            <p class="entry-scientific">
+1983, Academic Press            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Grubits1994Bororo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Grubits, S</p><p class="entry-example">Bororo: Identidade Em Construção</p>            <p class="entry-scientific">
+1994, UCDB/ CECITEC            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Grupioni1991Levantamento</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Grupioni, Luís Donisete Benzi</p><p class="entry-example">Levantamento de Coleções Bororo Em Museus Brasileiros.</p>            <p class="entry-scientific">
+1991, <em>Ciências Em Museus</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Grupioni1992Entre</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Grupioni, Luís Donisete Benzi</p><p class="entry-example">Entre Penas e Cores: Cultura Material e Identidade Bororo.</p>            <p class="entry-scientific">
+1992, <em>Cadernos de Campo</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Guerios1939O</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Guérios, Rosário F. Mansur</p><p class="entry-example">O Nexo Lingüístico Bororo/Merrime-Caiapó (Contribuição Para a Unidade Genética Das Línguas Americanas).</p>            <p class="entry-scientific">
+1939, <em>Revista Do Círculo de Estudos "Bandeirantes"</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Hartmann1966A</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Hartmann, Thekla</p><p class="entry-example">A Nomenclatura Botânica Dos Bororos</p>            <p class="entry-scientific">
+1966            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Hartmann1967A</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Hartmann, Thekla</p><p class="entry-example">A Nomenclatura Botânica Dos Bororos: Materiais Para Um Ensaio Etno-Botânico</p>            <p class="entry-scientific">
+1967, Instituto de Estudos Brasileiros, USP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Hartmann1971Zur</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Hartmann, Thekla</p><p class="entry-example">Zur Botanischen Nomenklatur Der Bororo-Indianer.</p>            <p class="entry-scientific">
+1971, <em>Zeitschrift Für Ethnologie</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Huestis1963Bororo</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Huestis, Esther</p><p class="entry-example">Bororo Spiritism as Revitalization.</p>            <p class="entry-scientific">
+1963, <em>Practical Anthropology</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Huestis1963Bororo</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Huestis, George</p><p class="entry-example">Bororo Clause Structure.</p>            <p class="entry-scientific">
+1963, <em>International Journal of American Linguistics</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Isaac1997Educacao</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Isaac, Paulo Augusto Mário</p><p class="entry-example">Educação Escolar Indígena Boe-Bororo: Alternativa e Resistência Em Tadarimana.</p>            <p class="entry-scientific">
+1997            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Koslowski1895Algunos</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Koslowski, Julio</p><p class="entry-example">Algunos Datos Sobre Los Indios Bororós.</p>            <p class="entry-scientific">
+1895, <em>Revista Del Museo de La Plata</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Koslowski1983Ritual</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Koslowski, Julio</p><p class="entry-example">Ritual de Um Funeral Bororo</p>            <p class="entry-scientific">
+1983, Museu Paranaense            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Langfur1999Myths</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Langfur, Hal</p><p class="entry-example">Myths of Pacification: Brazilian Frontier Settlements and the Subjugation of the Bororo Indians.</p>            <p class="entry-scientific">
+1999, <em>Journal of Social History</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Latham1862Elements</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Latham, Robert Gordon</p><p class="entry-example">Elements of Comparative Philology</p>            <p class="entry-scientific">
+1862, Walton; Maberly            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Levak1979Motherhood</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Levak, Milena Maselli</p><p class="entry-example">Motherhood by Death Among the Bororo Indians of Brazil</p>            <p class="entry-scientific">
+1979, Baywood Publishing Co            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Levak1971Kinship</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Levak, Zarko David</p><p class="entry-example">Kinship System and Social Structure of the Bororo of Pobojari.</p>            <p class="entry-scientific">
+1971            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1936Contribution</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Lévi-Strauss, C</p><p class="entry-example">Contribution a l'etude de l'organisation Sociale Des Indiens Bororo.</p>            <p class="entry-scientific">
+1936, 269-304            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1970Tristes</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Lévi-Strauss, C</p><p class="entry-example">Tristes Tropiques: An Anthropological Study of Primitive Societies in Brazil</p>            <p class="entry-scientific">
+1970, Atheneum            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1936Contribuicao</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Lévi-Strauss, </p><p class="entry-example">Contribuição Para o Estudo Da Organização Social Dos Índios Bororo.</p>            <p class="entry-scientific">
+1936, 5-80            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1944On</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Lévi-Strauss, </p><p class="entry-example">On Dual Organization in South America.</p>            <p class="entry-scientific">
+1944, <em>Area Indígena/Aldeia Indígena (Brasil)</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1952Les</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Lévi-Strauss, </p><p class="entry-example">Les Structures Sociales Dans Le Brésil Central Et Oriental.</p>            <p class="entry-scientific">
+1952            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1955Bororo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Lévi-Strauss, </p><p class="entry-example">Bororo.</p>            <p class="entry-scientific">
+1955            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1956Les</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Lévi-Strauss, </p><p class="entry-example">Les Organisations Dualistes Existent-Elles.</p>            <p class="entry-scientific">
+1956, <em>BTLV</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1963aDo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Lévi-Strauss, </p><p class="entry-example">Do Dual Organizations Exist? En:  Lévi-Strauss, Structural Anthropology: 132-163</p>            <p class="entry-scientific">
+1963a, Penguin Books            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">LeviStrauss1963bSocial</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Lévi-Strauss, </p><p class="entry-example">Social Structures of Central and Eastern Brazil.</p>            <p class="entry-scientific">
+1963b            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Lowie1942The</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Lowie, Robert H</p><p class="entry-example">The Bororo.</p>            <p class="entry-scientific">
+1942, 419-34            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Lowie1946The</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Lowie, Robert H</p><p class="entry-example">The Bororo.</p>            <p class="entry-scientific">
+1946, Bureau of American Ethnology            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Magalhaes1918Vocabulario</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Magalhães, Basilio de</p><p class="entry-example">Vocabulario Da Lingua Dos Borôros-Coroados Do Estado de Mato-Grosso.</p>            <p class="entry-scientific">
+1918, <em>Revista Do Instituto Historico e Geographico Brasileiro</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Os????Os</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-example">Os Boróros.</p>            <p class="entry-scientific">
+????, 107-19            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">MartinsRavagnani1996Os</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Martins Ravagnani, Oswaldo</p><p class="entry-example">Os Primeiros Aldeamentos Na Província de Goiás: Bororo e Kayapó Na Estrada Do Anhangüera.</p>            <p class="entry-scientific">
+1996            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Martius1867Wortersammlung</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Martius, Carl Friedrich Philip von</p><p class="entry-example">Wörtersammlung Brasilianischer Sprachen</p>            <p class="entry-scientific">
+1867, Friedrich Fleischer            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">MayburyLewis1960The</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Maybury-Lewis, David</p><p class="entry-example">The Analysis of Dual Organizations: A Methodological Critique.</p>            <p class="entry-scientific">
+1960, <em>BTLV</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">MelloRego1895Indios</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Mello Rego, M. do C</p><p class="entry-example">Índios de Matto Grosso: Os Bororos Coroados.</p>            <p class="entry-scientific">
+1895, <em>Revista Brasileira</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Untitled????</span>
+<span class="entry-tag">misc</span>            </div>
+            <p class="entry-scientific">
+????, Gazeta Maçonica            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">MontanoAragon1989Tribus</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Montaño Aragón, Mario</p><p class="entry-example">Tribus de La Selva II</p>            <p class="entry-scientific">
+1989, Don Bosco            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Montenegro1958Conservadorismo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Montenegro, Olman P</p><p class="entry-example">Conservadorismo e Mudança Na Cultura Bororo</p>            <p class="entry-scientific">
+1958, CAPES            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Montenegro1963Estrutura</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Montenegro, Olman P</p><p class="entry-example">Estrutura e Ritmo Da Sociedade Bororo.</p>            <p class="entry-scientific">
+1963            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">AdugoBoe????AdugoBoe</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-example">Adugo-Boe e-Mori. Alguns Aspectos Etnográficos Da Caça Da Onça Entre Os Bororo Do Mato Grosso.</p>            <p class="entry-scientific">
+????            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Muccilo1978Aspectos</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Muccilo, Regina Maia and I. Wüst</p><p class="entry-example">Aspectos Da Tecnologia Cerâmica Bororo.</p>            <p class="entry-scientific">
+1983, <em>Arquivos Do Museu de História Natural</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Untitled????</span>
+<span class="entry-tag">misc</span>            </div>
+            <p class="entry-scientific">
+????, Paz e Terra            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Muccilo1945Os</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Muccilo, Regina Maia and I. Wüst</p><p class="entry-example">Os Meios de Defesa Contra a Moléstia e a Morte Em Duas Tribos Brasileiras: Kaingang de Duque de Caxias e Bororo Oriental.</p>            <p class="entry-scientific">
+1983            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Newman1953The</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Newman, M. T</p><p class="entry-example">The Application of Ecological Rules to the Racial Anthropology of the Aboriginal New World.</p>            <p class="entry-scientific">
+1953, <em>American Anthropologist</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Nonato2008Ainore</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Nonato, Rafael Bezerra</p><p class="entry-example">Ainore Boe Egore: Um Estudo Descritivo Da Língua Bororo.</p>            <p class="entry-scientific">
+2008            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1981Trancas</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Tranças, Cabaças e Couros No Funeral Bororo: A Propósito de Um Processo de Constituição de Identidade.</p>            <p class="entry-scientific">
+1981, <em>Revista de Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1983As</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">As Casa Na Organização Social Do Espaço Bororo.</p>            <p class="entry-scientific">
+1983, Nobel/ EDUSP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1986Mulheres</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Mulheres, Homens e Heróis: Dinâminca e Permanência Através Do Cotidiano Da Vida Bororo</p>            <p class="entry-scientific">
+1986, FFLCH, USP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1990Jogo</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Jogo de Espelho: Imagens Da Representação Através Dos Outros</p>            <p class="entry-scientific">
+1990            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1991aTerritorio</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Território Bororo: Um Histórico Do Processo de Expropriação.</p>            <p class="entry-scientific">
+1991a, CEDI            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1991bEsclaves</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Esclaves Du Démon Ou Serviteurs de Dieu: Les Bororos Et La Mission Salésienne Au Brésil.</p>            <p class="entry-scientific">
+1991b, <em>Recherches Amérindiennes Au Québec</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1993Jogo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Jogo de Espelhos: Imagens Da Representação de Si Através Dos Outros</p>            <p class="entry-scientific">
+1993, EDUSP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1994aAije</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Aije: A Expressão Metafórica Da Sexualidade Entre Os Bororo.</p>            <p class="entry-scientific">
+1994a, <em>Revista de Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1994bBororo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Bororo Space - from Land to Territory</p>            <p class="entry-scientific">
+1994b            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1996A</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">A Épica Salvacionista e as Artimanhas de Resistência: As Missões Salesianas e Os Bororo de Mato Grosso.</p>            <p class="entry-scientific">
+1996, UNICAMP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1997The</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">The Play of Mirrors: The Representation of Self as Mirrored in the Other</p>            <p class="entry-scientific">
+1997, University of Texas Press            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1998Paisagem</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">Paisagem Bororo: De Terra a Território.</p>            <p class="entry-scientific">
+1998, Mercado de Letras            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1999A</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby</p><p class="entry-example">A Épica Salvacionista e as Artimanhas de Resistência: As Missões Salesianas e Os Bororo de Mato Grosso.</p>            <p class="entry-scientific">
+1999, Editora da UNICAMP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Novaes1991Territorio</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Novaes, Sylvia Caiuby and Paulo Serpa</p><p class="entry-example">Território Bororo: Um Histórico Do Processo de Expriopriação.</p>            <p class="entry-scientific">
+1991, <em>Aconteceu Especial</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Nowotny1949Aufzeichnungen</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Nowotny, Karl Anton</p><p class="entry-example">Aufzeichnungen Johann Natterers Über Die Aufenthaltsorte Brasilianischer Stämme in Den Jahren 1817 Bis 1835.</p>            <p class="entry-scientific">
+1949, <em>Archiv Für Völkerkunde</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Ochoa1995Dicionario</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Ochoa, Gonçalo C</p><p class="entry-example">Dicionário Bororo-Português</p>            <p class="entry-scientific">
+1995            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Oliveira1994Bororo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Oliveira, Sônia Grubits Gonçalves de</p><p class="entry-example">Bororo: Identidade Em Construção</p>            <p class="entry-scientific">
+1994, Cecitec            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Oosten1981Filiation</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Oosten, J. G</p><p class="entry-example">Filiation and Alliance in Three Bororo Myths: A Reconsideration of the Social Code in the First Chapters of</p>            <p class="entry-scientific">
+1981, <em>Bijdragen Tot de Taal-, Land- En Volkenkunde Uitgegegen Door Het Koninklijk Instituut</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Orbigny1839Lhomme</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Orbigny, Alcide Dessalines d'.'</p><p class="entry-example">L'homme Américain (de l'amérique Méridionale): Considéré Sous Ses Rapports Physiologiques Et Moraux</p>            <p class="entry-scientific">
+1839, Pitois-Levrault et C            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Pessina1908Elementos</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Pessina, José</p><p class="entry-example">Elementos de Gramática e Dicionário Da Língua Dos Bororos-Coroados</p>            <p class="entry-scientific">
+1908, Escolas Profissionais Salesianas            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Petrullo1932Primitive</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Petrullo, Vincenzo</p><p class="entry-example">Primitive Peoples of Matto Grosso, Brazil.</p>            <p class="entry-scientific">
+1932, <em>The Museum Journal</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Plitek1978Totenkult</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Plitek, Hark-Heinz</p><p class="entry-example">Totenkult Der Ge Und Bororo</p>            <p class="entry-scientific">
+1978, Renner Verlag: Hohenschäftlarn: Renner            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Ravagnani1996Os</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Ravagnani, Oswaldo Martins</p><p class="entry-example">Os Primeiros Aleamentos Na Província de Goiás: Bororo e Kaiapó Na Estrada Do Anhangüera.</p>            <p class="entry-scientific">
+1996, <em>Revista de Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Ribeiro1995Mano</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Ribeiro, Berta G., ed</p><p class="entry-example">Mano: Um Ritual Bororo e Uma Experiência Didático-Pedagógica</p>            <p class="entry-scientific">
+1995, Ceduc-MT            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Rodrigues1962Comparacao</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Rodrigues, Aryon D</p><p class="entry-example">Comparação Das Línguas Unutína e Boróro.</p>            <p class="entry-scientific">
+1962            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Rodrigues1993Uma</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Rodrigues, Aryon D</p><p class="entry-example">Uma Hipótese Sobre Flexão de Pessoa Em Boróro. Anais Da 45a.</p>            <p class="entry-scientific">
+1993            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Rodrigues1993Uma</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Rodrigues, Aryon Dall'Igna and Luciana Gonçalves Dourado</p><p class="entry-example">Uma Hipótese Sobre a Flexão de Pessoa Em Bororo.</p>            <p class="entry-scientific">
+1993, <em>In Anais Da 45a Reunião Anual Da SBPC,</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Rodrigues2007O</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Rodrigues, Aryon Dall'lgna</p><p class="entry-example">O Parentesco Genético Das Línguas Umutína e Boróro.</p>            <p class="entry-scientific">
+2007, Editora da UnB/FINATEC            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Rondon1948Esboco</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Rondon, Cândido Mariano da Silva</p><p class="entry-example">Esbôço Gramatical e Vocabulário Da Língua Dos Índios Bororó: Algumas Lendas e Notas Etnográficas Da Mesma Tribo</p>            <p class="entry-scientific">
+1948, Imprensa Nacional            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Saake1953A</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Saake, P. Guilherme</p><p class="entry-example">A Aculturação Dos Borôros Do Rio São Lourenço.</p>            <p class="entry-scientific">
+1953, <em>Revista de Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">SALESIANA1908Elementos</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">SALESIANA, MISSÃO</p><p class="entry-example">Elementos de Gramática e Diccionario Da Língua Dos Bororos</p>            <p class="entry-scientific">
+1908            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Salesiana1908Elementos</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Salesiana, Missão</p><p class="entry-example">Elementos de Grammatica e Diccionario Da Lingua Dos Boróros-Coroados de Mato Grosso</p>            <p class="entry-scientific">
+1908, Escolas Profissionaes Salesianas            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Sandalo2002Paralelismo</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Sandalo, Filomena</p><p class="entry-example">Paralelismo Fonológico Entre as Línguas Guaykurú e Bororó.</p>            <p class="entry-scientific">
+2002, UFPA            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Serpa1988Boe</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Serpa, Paulo Marcos N</p><p class="entry-example">Boe Epa</p>            <p class="entry-scientific">
+1988            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Silva1995No</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Silva, Carolina Joana da and Joana A. Fernandes Silva</p><p class="entry-example">No Ritmo Das Águas Do Pantanal</p>            <p class="entry-scientific">
+1995, USP-Nupaub            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Silva1980Os</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Silva, J. Romão de</p><p class="entry-example">Os Índios Bororos: Família Etno-Lingüística</p>            <p class="entry-scientific">
+1980, Editora e Distribuidora Valverde            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Steinen1894Unter</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Steinen, Karl von den</p><p class="entry-example">Unter Den Naturvölkern Zentral-Brasiliens: Reiseschilderung Und Ergebnisse Der Zweiten Schingú-Expedition 1887-88</p>            <p class="entry-scientific">
+1894, Dietrich Reimer            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Steinen1915Entre</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Steinen, Karl von den</p><p class="entry-example">Entre Os Borôros.</p>            <p class="entry-scientific">
+1915, 391-490            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">MayburyLewis1979Dialectical</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Maybury-Lewis, D., Sol, ed</p><p class="entry-example">Dialectical Societies: The Gê and Bororo of Central Brazil</p>            <p class="entry-scientific">
+1979            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Tonelli1927La</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Tonelli, Antonio</p><p class="entry-example">La Provenienza Degli Indi Bororo Orientali.</p>            <p class="entry-scientific">
+1927            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Tonelli1928aAlcune</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Tonelli, Antonio</p><p class="entry-example">Alcune Notizie Sui Báere e Sugli Aroettawarare</p>            <p class="entry-scientific">
+1928a, 395-413            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Tonelli1928bAlcune</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Tonelli, Antonio</p><p class="entry-example">Alcune Osservazioni Sulla Sintassi Della Lingua Degl'indi Bororo-Orari Del Matto Grosso (Brasile).</p>            <p class="entry-scientific">
+1928b, <em>In Atti Del XXII Congresso Internazionale Degli Americanisti, 1926,</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Tonelli1928cIl</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Tonelli, Antonio</p><p class="entry-example">Il Nome Dei Vivi e Dei Defunti (Aroe) Presso Gl'indi Orari (Bororo Orientali) Del Matto Grosso</p>            <p class="entry-scientific">
+1928c            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Tonelli1925La</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Tonelli, Antonio and Alfredo Trombetti</p><p class="entry-example">La Lingua Dei Bororo-Orarimugudoge Secondo i Materiali Pubblicati Dalle Missioni Salesiane</p>            <p class="entry-scientific">
+1925, Società Editrice Internazionale            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Trombetti1925La</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Trombetti, Alfredo</p><p class="entry-example">La Lingua Dei Bororos-Orarimugudoge</p>            <p class="entry-scientific">
+1925, Societè Editrice Internazionale            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Vangelista1995Indios</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Vangelista, Chiara</p><p class="entry-example">Indios y Soldados a Lo Largo de Una Línea Telegráfica: Los Bororo y Los Nambikwara y La Misión Rondon, Brasil, 1900-1930.</p>            <p class="entry-scientific">
+1995, <em>Relaciones de La Sociedad Argentina de Antropología</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Vangelista1996</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Vangelista, Chiara</p><p class="entry-example">" Missões Católicas e Políticas Tribais Na Frente de Expansão: Os Bororo Entre o Séc</p>            <p class="entry-scientific">
+1996, 165-97            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Vangelista2003A</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Vangelista, Chiara</p><p class="entry-example">A Expressão Do Modo e Do Aspecto Em Bororo.</p>            <p class="entry-scientific">
+2003, <em>Pesquisa Lingüística</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Vangelista2004Tempo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Vangelista, Chiara</p><p class="entry-example">Tempo, Aspecto e Modo Em Boróro.</p>            <p class="entry-scientific">
+2004            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viana2004Sobre</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Viana, Adriana M. S</p><p class="entry-example">Sobre a Língua Boróro.</p>            <p class="entry-scientific">
+2004            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viana2004Tempo</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Viana, Adriana Maria Soares</p><p class="entry-example">Tempo, Aspecto e Modo Em Boróro.</p>            <p class="entry-scientific">
+2004            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">VieiraFilho1981Problemas</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Vieira Filho, João Paulo Botelho</p><p class="entry-example">Problemas de Aculturação Alimentar Dos Xavante e Bororo.</p>            <p class="entry-scientific">
+1981, <em>Revista de Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1972As</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">As Aldeias Bororo: Alguns Aspetos de Sua Organização Social</p>            <p class="entry-scientific">
+1972            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1976As</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">As Aldeias Bororo: Alguns Aspectos de Sua Organização Social</p>            <p class="entry-scientific">
+1976, USP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1979A</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">A Noção de Pessoa Entre Os Bororo.</p>            <p class="entry-scientific">
+1979, <em>BMN</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1982Aroe</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">Aroe j=aro: Implicações Adaptativas Das Crianças e Práticas Funerárias Dos Bororo Do Brasil Central</p>            <p class="entry-scientific">
+1982            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1986A</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">A Formação Da Sociedade Bororo: Mitologia e Considerações Etno-Históricas.</p>            <p class="entry-scientific">
+1986, <em>Revista de Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1987aFragmentos</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">Fragmentos de Cosmologia Bororo: Xamãs, Oráculos e Ceremônias de Cura.</p>            <p class="entry-scientific">
+1987a, <em>Revista Do Museu Paulista</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1987bMito</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">Mito, Rito e Condições de Sobrevivência Entre Os Índios Bororo Do Mato Grosso: Esboço Para Uma Abordagem Interdisciplinar Do Fenômeno Mítico.</p>            <p class="entry-scientific">
+1987b, <em>Revista Do Instituto de Estudos Brasileiros</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1988Saudacao</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">Saudação, Hospitalidade e Nominação Ente Os Bororo Do Brasil Central.</p>            <p class="entry-scientific">
+1988, <em>Dédalo</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1989O</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">O Estudo Antropológico de Aldeias Indígenas No Brasil: Estado Atual de Uma Pesquisa Entre Os Bo-Roro.</p>            <p class="entry-scientific">
+1989, <em>Dédalo</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1990A</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">A Vaca Louca: Tendências Do Processo de Mudança Sócio-Cultural Entre Os Bororo.</p>            <p class="entry-scientific">
+1990, <em>Revista de Antropologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1991A</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">A Refeição Das Almas: Uma Interpretação Etnológica Do Funeral Dos Índios Bororo, Mato Grosso</p>            <p class="entry-scientific">
+1991, Editora da USP            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1993aCaminho</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">Caminho de Bakororo: Alguns Aspectos de Representações Da Vida Pós-Mortem Dos Índios Bororo Do Brasil Central.</p>            <p class="entry-scientific">
+1993a, <em>Imaginário</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Viertler1993bKarl</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Viertler, Renate Brigitte</p><p class="entry-example">Karl von Den Steinen e o Estudo Antropológico Dos Bororo.</p>            <p class="entry-scientific">
+1993b, EDUSP/ FAPESP, edited by Vera Pendeado Coelho            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Waehneldt1864Exploracao</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Waehneldt, R</p><p class="entry-example">Exploração Da Provincia de Matto Grosso.</p>            <p class="entry-scientific">
+1864, <em>Revista Trimensal de História e Geographia Brasi Leira / Journal Do Instituto Histórico e Geográphico Brasileiro</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Wilbert1983Folk</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Wilbert, Johannes and Karin Simoneau, eds</p><p class="entry-example">Folk Literature of the Bororo Indians</p>            <p class="entry-scientific">
+1983, UCLA Latin American Studies 57            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Wust1987A</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Wüst, Irmhild</p><p class="entry-example">A Pesquisa Arqueológica e Etnoarqueológica Na Parte Central Do Território Bororo, Mato Grosso: Primeiros Resultados</p>            <p class="entry-scientific">
+1987            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Wust1989Aspectos</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Wüst, Irmhild</p><p class="entry-example">Aspectos Da Ocupação Pré-Colonial Em Uma Área Nuclear Bororo Entre Os Rios Vermelho e Garças, MT.</p>            <p class="entry-scientific">
+1989, <em>Dédalo</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Wust1992Contribuicoes</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Wüst, Irmhild</p><p class="entry-example">Contribuições Arqueológicas, Etnoarqueológicas e Ethno-Históricas Para o Estudo Dos Grupos Tribais Do Brasil Central: O Caso Bororo.</p>            <p class="entry-scientific">
+1992, <em>Revista Do Museu de Arqueologia e Etnologia</em>            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Wust1994The</span>
+<span class="entry-tag">incollection</span>            </div>
+<p class="entry-definition">Wüst, Irmhild</p><p class="entry-example">The Eastern Bororo from an Archaeological Perspective.</p>            <p class="entry-scientific">
+1994, The University of Arizona Press            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">XimenodeVilleroy1891Apontamentos</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Ximeno de Villeroy, A</p><p class="entry-example">Apontamentos Sobre Linguajem Do Indio Coroado-Bororó.</p>            <p class="entry-scientific">
+1891, 81-91            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Zarur1989Art</span>
+<span class="entry-tag">phdthesis</span>            </div>
+<p class="entry-definition">Zarur, Elizabeth Netto Calil</p><p class="entry-example">Art and Symbolism in Central Brazil: The Bororo Indians of Mato Grosso.</p>            <p class="entry-scientific">
+1989            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Tolentino2009</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Tolentino, N. G. (</p>            <p class="entry-scientific">
+2009            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Velasco2018</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Velasco, F.A (</p>            <p class="entry-scientific">
+2018            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Ochoa1990</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Ochoa, G. C e Tugore Etua, F. C. (</p>            <p class="entry-scientific">
+1990            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Campos1892Breve</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Campos, Antonio Pires de (</p><p class="entry-example">Breve noticia que dá o capitão Antonio Pires de Campos do gentio barbaro que ha na derrota da viagem das minas do Cuyabá e seu reconcavo</p>            <p class="entry-scientific">
+1892            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Kujiboekureu2022</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Kujiboekureu, M. M. B. (</p>            <p class="entry-scientific">
+2022            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Wust1998</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Wüst, I. (</p>            <p class="entry-scientific">
+1998            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">KiegewaEkureu2023</span>
+<span class="entry-tag">mastersthesis</span>            </div>
+<p class="entry-definition">Kiegewa Ekureu, F. (</p>            <p class="entry-scientific">
+2023            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Kozak1983</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Kožak, V. (</p>            <p class="entry-scientific">
+1983            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">2016</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">(</p>            <p class="entry-scientific">
+2016            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Canevacci2013</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Canevacci, Massimo (</p>            <p class="entry-scientific">
+2013            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Canevacci2012</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Canevacci, Massimo (</p>            <p class="entry-scientific">
+2012            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Victorio2016</span>
+<span class="entry-tag">misc</span>            </div>
+<p class="entry-definition">Victorio, Roberto (</p>            <p class="entry-scientific">
+2016            </p>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-word">Wachter1989Pfiffsprache</span>
+<span class="entry-tag">article</span>            </div>
+<p class="entry-definition">Wachter, Klaus P.</p><p class="entry-example">Die Pfiffsprache der Bororo</p>            <p class="entry-scientific">
+1989            </p>
         </div>
     </div>
     </main>
 
     <footer>
-        <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
-<p>Schema v1.0</p>    </footer>
+        <div class="td-container">
+            <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+<p>Schema v1.0</p>        </div>
+    </footer>
 
     <script src="../js/common.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
-
     <script>
-    var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "dict_all_pos": "All word classes", "dict_browse_hint": "Select an entry to see details", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_back_to_index": "Back to encyclopedia", "enc_breadcrumb_label": "Breadcrumb", "enc_browse_categories": "Browse by category", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_entry_type": "Type", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_featured_title": "Featured article", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_highlights_title": "Illustrated articles", "enc_last_updated": "Last updated", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_read_more": "Read more", "enc_references": "References", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_see_also": "See also", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "enc_welcome_text": "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people.", "entries_label": "entries", "fauna_category_uncategorized": "Uncategorized", "fauna_detail_classification": "Bororo classification", "fauna_detail_family": "Family", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_select_hint": "Click an animal to see details", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_generated": "Generated with", "html_lang": "en", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_title": "About the Project", "index_hero_subtitle": "Bororo World", "index_hero_title": "Boe Eno Moto", "index_title": "Home", "infobox_cl\u00e3": "Clan", "infobox_coordenadas": "Coordinates", "infobox_dura\u00e7\u00e3o": "Duration", "infobox_esta\u00e7\u00e3o": "Season", "infobox_fam\u00edlia": "Family", "infobox_fun\u00e7\u00e3o": "Function", "infobox_fun\u00e7\u00f5es": "Functions", "infobox_habitat": "Habitat", "infobox_local": "Location", "infobox_material": "Material", "infobox_membros": "Members", "infobox_nome_cient\u00edfico": "Scientific name", "infobox_papel": "Role", "infobox_participantes": "Participants", "infobox_per\u00edodo": "Period", "infobox_regi\u00e3o": "Region", "infobox_rela\u00e7\u00f5es": "Relations", "infobox_rio": "River", "infobox_tipo": "Type", "infobox_usos": "Uses", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_fauna": "Fauna", "nav_label": "Main navigation", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_encyclopedia": "See in Encyclopedia", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species"};
+    var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_cta": "Explore", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "dict_all_pos": "All word classes", "dict_browse_hint": "Select an entry to see details", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_back_to_index": "Back to encyclopedia", "enc_breadcrumb_label": "Breadcrumb", "enc_browse_categories": "Browse by category", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_entry_type": "Type", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_featured_title": "Featured article", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_highlights_title": "Illustrated articles", "enc_last_updated": "Last updated", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_read_more": "Read more", "enc_references": "References", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_see_also": "See also", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "enc_welcome_text": "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people.", "entries_label": "entries", "fauna_category_uncategorized": "Uncategorized", "fauna_detail_classification": "Bororo classification", "fauna_detail_family": "Family", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_select_hint": "Click an animal to see details", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_generated": "Generated with", "footer_text": "", "html_lang": "en", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_title": "About the Project", "index_hero_subtitle": "Bororo World", "index_hero_title": "Boe Eno Moto", "index_title": "Home", "infobox_cl\u00e3": "Clan", "infobox_coordenadas": "Coordinates", "infobox_dura\u00e7\u00e3o": "Duration", "infobox_esta\u00e7\u00e3o": "Season", "infobox_fam\u00edlia": "Family", "infobox_fun\u00e7\u00e3o": "Function", "infobox_fun\u00e7\u00f5es": "Functions", "infobox_habitat": "Habitat", "infobox_local": "Location", "infobox_material": "Material", "infobox_membros": "Members", "infobox_nome_cient\u00edfico": "Scientific name", "infobox_papel": "Role", "infobox_participantes": "Participants", "infobox_per\u00edodo": "Period", "infobox_regi\u00e3o": "Region", "infobox_rela\u00e7\u00f5es": "Relations", "infobox_rio": "River", "infobox_tipo": "Type", "infobox_usos": "Uses", "lang_switch_label": "Language selector", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_fauna": "Fauna", "nav_label": "Main navigation", "nav_menu_label": "Menu", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_encyclopedia": "See in Encyclopedia", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species"};
 
     function formatAuthors(author) {
         if (!author) return '';

@@ -180,3 +180,9 @@ entries_label: "entries"
 species_label: "species"
 articles_label: "articles"
 references_label: "references"
+
+# Terradoc UI
+nav_menu_label: "Menu"
+lang_switch_label: "Language selector"
+footer_text: ""
+card_cta: "Explore"

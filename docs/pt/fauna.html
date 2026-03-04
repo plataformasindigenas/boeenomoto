@@ -1,266 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico">
     <title>Fauna Bororo - Boe Eno Moto</title>
+    <link rel="stylesheet" href="../css/terradoc.css">
+    <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1rem;
-            background: #F9F6F2;
-            color: #333;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #3D352F;
-            color: white;
-            padding: 0.5rem 1rem;
-            z-index: 100;
-            text-decoration: none;
-            border-radius: 0 0 4px 0;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        nav {
-            background: #3D352F;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-        nav a:hover, nav a.active {
-            background: rgba(255,255,255,0.15);
-        }
-        nav .brand {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        nav .lang-switch {
-            margin-left: auto;
-            font-size: 0.85rem;
-            opacity: 0.8;
-        }
-        nav .lang-switch:hover {
-            opacity: 1;
-        }
-        header {
-            text-align: center;
-            padding: 1rem 0;
-            border-bottom: 2px solid #e0e0e0;
-            margin-bottom: 1.5rem;
-        }
-        h1 {
-            margin: 0 0 0.5rem 0;
-            color: #3D352F;
-        }
-        .subtitle {
-            color: #6B6B6B;
-            font-size: 0.95rem;
-        }
-        .search-container {
-            background: white;
-            padding: 1rem;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            margin-bottom: 1rem;
-        }
-        .search-row {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .search-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .search-input:focus {
-            border-color: #C75B39;
-            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
-        }
-        .filter-select {
-            padding: 0.75rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            background: white;
-            cursor: pointer;
-        }
-        .stats {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-        }
-        .results-container {
-            background: white;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            overflow: hidden;
-        }
-        .empty-state {
-            padding: 3rem;
-            text-align: center;
-            color: #6B6B6B;
-        }
-        .empty-state h2 {
-            margin: 0 0 0.5rem 0;
-            color: #6B6B6B;
-        }
-        .entry {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        .entry:last-child {
-            border-bottom: none;
-        }
-        .entry:hover {
-            background: #f8f9fa;
-        }
-        .entry-header {
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
-        .entry-word {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #3D352F;
-        }
-        .entry-secondary {
-            color: #6B6B6B;
-            font-size: 1rem;
-        }
-        .entry-ipa {
-            color: #6B6B6B;
-            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
-        }
-        .entry-tag {
-            font-size: 0.75rem;
-            background: #F5EDE8;
-            color: #A84B2F;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .entry-definition {
-            margin: 0.5rem 0;
-            color: #444;
-        }
-        .entry-example {
-            margin: 0.5rem 0;
-            padding-left: 1rem;
-            border-left: 3px solid #C75B39;
-            color: #555;
-            font-style: italic;
-        }
-        .entry-scientific {
-            font-style: italic;
-            color: #6B6B6B;
-            font-size: 0.9rem;
-        }
-        .entry-comment {
-            margin-top: 0.5rem;
-            padding: 0.5rem;
-            background: #fff8e1;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #6B6B6B;
-        }
-        .entry-media {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.75rem;
-            align-items: flex-start;
-        }
-        .entry-thumbnail {
-            max-width: 120px;
-            max-height: 90px;
-            border-radius: 4px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .entry-thumbnail:hover {
-            transform: scale(1.05);
-        }
-        .entry-links {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .entry-links a {
-            font-size: 0.85rem;
-            color: #C75B39;
-            text-decoration: none;
-        }
-        .entry-links a:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            background: #fff59d;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
-        footer {
-            margin-top: 2rem;
-            padding: 1rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-            border-top: 1px solid #e0e0e0;
-        }
-        footer a {
-            color: #C75B39;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .search-row {
-                flex-direction: column;
-            }
-            .search-input, .filter-select {
-                width: 100%;
-            }
-            .entry-thumbnail {
-                max-width: 80px;
-            }
-            nav {
-                justify-content: center;
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                transition: none !important;
-            }
+        :root {
+            --td-color-primary: #3D352F;
+            --td-color-accent: #C75B39;
+            --td-color-accent-muted: #A84B2F;
+            --td-color-bg: #F9F6F2;
+            --td-color-bg-light: #F5EDE8;
+            --td-color-bg-infobox: #FAF8F5;
+            --td-color-border: #E8E4DF;
+            --td-color-border-dark: #C8B8A8;
+            --td-color-text: #333333;
+            --td-color-text-muted: #6B6B6B;
+            --td-color-highlight: #fff59d;
+            --td-color-warning-bg: #fff8e1;
+            --td-color-surface: #FFFFFF;
+            --td-color-border-light: #EEEEEE;
+            --td-color-text-secondary: #555555;
+            --td-color-accent-light: #FDF0EB;
+            --td-color-success: #5B8C5A;
+            --td-color-error: #CC0000;
+            --td-color-accent-ring: rgba(183, 82, 44, 0.2);
+            --td-radius: 4px;
+            --td-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --td-font-headings: ;
+            --td-font-mono: 'Lucida Sans Unicode', 'DejaVu Sans', monospace;
         }
 /* ── Showcase: reusable card-grid layout (showcase-* prefix) ── */
 
@@ -276,10 +47,10 @@
 .showcase-header .subtitle { margin: 0; }
 
 .showcase-controls {
-    background: white;
+    background: var(--td-color-surface);
     padding: 1rem;
-    border-radius: 4px;
-    border: 1px solid #E8E4DF;
+    border-radius: var(--td-radius);
+    border: 1px solid var(--td-color-border);
     margin-bottom: 1rem;
 }
 .showcase-controls .search-row {
@@ -290,11 +61,11 @@
 .showcase-stats {
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
 }
 .showcase-hint {
     text-align: center;
-    color: #9a9a9a;
+    color: var(--td-color-text-muted);
     font-size: 0.85rem;
     margin-bottom: 1rem;
 }
@@ -310,32 +81,32 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0.75rem;
-    background: #F5EDE8;
-    border-radius: 4px;
+    background: var(--td-color-bg-light);
+    border-radius: var(--td-radius);
     cursor: pointer;
     user-select: none;
     margin-bottom: 0.75rem;
     transition: background 0.15s;
 }
 .showcase-section-header:hover {
-    background: #efe3db;
+    background: var(--td-color-accent-light);
 }
 .showcase-section-header .chevron {
     font-size: 0.75rem;
     transition: transform 0.2s;
-    color: #A84B2F;
+    color: var(--td-color-accent-muted);
 }
 .showcase-section-header.collapsed .chevron {
     transform: rotate(-90deg);
 }
 .showcase-section-header .section-title {
     font-weight: 600;
-    color: #3D352F;
+    color: var(--td-color-primary);
     font-size: 0.95rem;
 }
 .showcase-section-header .section-count {
     font-size: 0.8rem;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
     margin-left: auto;
 }
 
@@ -351,8 +122,8 @@
 
 /* Card */
 .showcase-card {
-    background: white;
-    border-radius: 6px;
+    background: var(--td-color-surface);
+    border-radius: var(--td-radius);
     border: 2px solid transparent;
     overflow: hidden;
     cursor: pointer;
@@ -363,7 +134,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 .showcase-card.active {
-    border-color: #C75B39;
+    border-color: var(--td-color-accent);
 }
 .showcase-card.hidden { display: none; }
 
@@ -372,17 +143,17 @@
     height: 160px;
     object-fit: cover;
     display: block;
-    background: #F5EDE8;
+    background: var(--td-color-bg-light);
 }
 .showcase-card-placeholder {
     width: 100%;
     height: 160px;
-    background: #F5EDE8;
+    background: var(--td-color-bg-light);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
-    color: #D4C4B8;
+    color: var(--td-color-border-dark);
 }
 
 .showcase-card-body {
@@ -391,7 +162,7 @@
 .showcase-card-body .card-name {
     font-weight: 600;
     font-size: 0.9rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     line-height: 1.3;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -399,7 +170,7 @@
 }
 .showcase-card-body .card-sub {
     font-size: 0.8rem;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -408,9 +179,9 @@
 /* Inline detail panel (spans full grid width) */
 .showcase-detail {
     grid-column: 1 / -1;
-    background: white;
-    border: 2px solid #C75B39;
-    border-radius: 6px;
+    background: var(--td-color-surface);
+    border: 2px solid var(--td-color-accent);
+    border-radius: var(--td-radius);
     padding: 1.25rem;
     position: relative;
     margin: 0.25rem 0 0.5rem 0;
@@ -430,20 +201,20 @@
     min-width: 250px;
     max-height: 300px;
     object-fit: cover;
-    border-radius: 4px;
-    background: #F5EDE8;
+    border-radius: var(--td-radius);
+    background: var(--td-color-bg-light);
 }
 .showcase-detail-placeholder {
     width: 250px;
     min-width: 250px;
     height: 200px;
-    background: #F5EDE8;
-    border-radius: 4px;
+    background: var(--td-color-bg-light);
+    border-radius: var(--td-radius);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
-    color: #D4C4B8;
+    color: var(--td-color-border-dark);
 }
 .showcase-detail-info {
     flex: 1;
@@ -452,44 +223,44 @@
 .showcase-detail-info h3 {
     margin: 0 0 0.25rem 0;
     font-size: 1.35rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
 }
 .showcase-detail-info .detail-portuguese {
     font-size: 1rem;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
     margin-bottom: 0.5rem;
 }
 .showcase-detail-info .detail-scientific {
     font-style: italic;
-    color: #888;
+    color: var(--td-color-text-muted);
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
 }
 .showcase-detail-info .detail-field {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--td-color-text-secondary);
     margin-bottom: 0.3rem;
 }
 .showcase-detail-info .detail-field strong {
-    color: #3D352F;
+    color: var(--td-color-primary);
 }
 .showcase-detail-info .detail-tag {
     display: inline-block;
     font-size: 0.8rem;
-    background: #F5EDE8;
-    color: #A84B2F;
+    background: var(--td-color-bg-light);
+    color: var(--td-color-accent-muted);
     padding: 0.2rem 0.6rem;
-    border-radius: 4px;
+    border-radius: var(--td-radius);
     margin-top: 0.35rem;
     margin-bottom: 0.35rem;
 }
 .showcase-detail-info .detail-info-text {
     margin-top: 0.5rem;
     padding: 0.5rem;
-    background: #fff8e1;
-    border-radius: 4px;
+    background: var(--td-color-warning-bg);
+    border-radius: var(--td-radius);
     font-size: 0.9rem;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
 }
 .showcase-detail-links {
     margin-top: 0.75rem;
@@ -499,7 +270,7 @@
 }
 .showcase-detail-links a {
     font-size: 0.85rem;
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
 }
 .showcase-detail-links a:hover {
@@ -513,25 +284,39 @@
     border: none;
     font-size: 1.4rem;
     cursor: pointer;
-    color: #999;
+    color: var(--td-color-text-muted);
     line-height: 1;
     padding: 0.25rem;
 }
 .showcase-detail-close:hover {
-    color: #333;
+    color: var(--td-color-text);
 }
 
 /* No results */
 .showcase-no-results {
     padding: 3rem;
     text-align: center;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
 }
 .showcase-no-results h2 {
     margin: 0 0 0.5rem 0;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
 }
 
+/* Tablet */
+@media (max-width: 900px) and (min-width: 701px) {
+    .showcase-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .showcase-detail-layout {
+        gap: 1rem;
+    }
+    .showcase-detail-img,
+    .showcase-detail-placeholder {
+        width: 160px;
+        min-width: 140px;
+    }
+}
 /* Mobile */
 @media (max-width: 700px) {
     .showcase-grid {
@@ -564,15 +349,26 @@
     <a href="#main-content" class="skip-link">Pular para conteúdo</a>
 
     <nav aria-label="Navegação principal">
-        <a href="index.html" class="brand">Boe Eno Moto</a>
-        <a href="dictionary.html">Dicionário</a>
-        <a href="encyclopedia.html">Enciclopédia</a>
-        <a href="fauna.html" class="active" aria-current="page">Fauna</a>
-        <a href="bibliography.html">Bibliografia</a>
-        <a href="../en/fauna.html" class="lang-switch">EN</a>
+        <div class="td-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="../images/logo.png" alt="" class="brand-logo">
+                <span>Boe Eno Moto</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <a href="dictionary.html">Dicionário</a>
+                <a href="encyclopedia.html">Enciclopédia</a>
+                <a href="fauna.html" class="active" aria-current="page">Fauna</a>
+                <a href="bibliography.html">Bibliografia</a>
+            </div>
+            <div class="lang-switch" aria-label="Seletor de idioma">
+                    <span class="lang-current" aria-current="true">Português</span>
+                    <a href="../en/fauna.html" class="lang-link">English</a>
+            </div>
+        </div>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" class="td-container">
     <header>
         <h1>Fauna Bororo</h1>
         <p class="subtitle">Bororo Fauna Dictionary &mdash; 97 espécies</p>
@@ -615,13 +411,15 @@
     </main>
 
     <footer>
-        <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
-<p>Schema v1.0</p>    </footer>
+        <div class="td-container">
+            <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+<p>Schema v1.0</p>        </div>
+    </footer>
 
     <script src="../js/common.js"></script>
     <script>
     (function() {
-        var T = {"articles_label": "verbetes", "bib_empty_text": "Digite um autor, t\u00edtulo ou ano para come\u00e7ar", "bib_empty_title": "Pesquise a bibliografia", "bib_filter_all": "Todos os tipos", "bib_no_results": "Nenhum resultado", "bib_no_results_hint": "Tente um autor, t\u00edtulo ou ano diferente", "bib_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "bib_result_plural": "refer\u00eancias encontradas", "bib_result_singular": "refer\u00eancia encontrada", "bib_search_placeholder": "Pesquisar (autor, t\u00edtulo, ano)...", "bib_title": "Bibliografia Bororo", "card_bibliography_desc": "Refer\u00eancias bibliogr\u00e1ficas sobre a l\u00edngua, cultura e hist\u00f3ria do povo Bororo.", "card_bibliography_label": "refer\u00eancias", "card_bibliography_title": "Bibliografia", "card_dictionary_desc": "Palavras e express\u00f5es da l\u00edngua Bororo com tradu\u00e7\u00e3o para Portugu\u00eas, transcri\u00e7\u00e3o fon\u00e9tica e exemplos.", "card_dictionary_label": "entradas", "card_dictionary_title": "Dicion\u00e1rio", "card_encyclopedia_desc": "Verbetes sobre cultura, rituais, organiza\u00e7\u00e3o social e conhecimentos tradicionais do povo Bororo.", "card_encyclopedia_label": "verbetes", "card_encyclopedia_title": "Enciclop\u00e9dia", "card_fauna_desc": "Nomes de animais na l\u00edngua Bororo com classifica\u00e7\u00e3o tradicional, nomes cient\u00edficos e imagens.", "card_fauna_label": "esp\u00e9cies", "card_fauna_title": "Fauna", "dict_all_pos": "Todas as classes", "dict_browse_hint": "Selecione uma entrada para ver os detalhes", "dict_empty_text": "Digite uma palavra em Bororo ou Portugu\u00eas para come\u00e7ar", "dict_empty_title": "Pesquise no dicion\u00e1rio", "dict_filter_all": "Todas as classes", "dict_loading": "Carregando dicion\u00e1rio...", "dict_no_results": "Nenhum resultado", "dict_no_results_hint": "Tente uma palavra diferente ou altere o filtro", "dict_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "dict_result_plural": "resultados encontrados", "dict_result_singular": "resultado encontrado", "dict_scientific_name": "Nome cient\u00edfico", "dict_search_placeholder": "Pesquisar (Bororo ou Portugu\u00eas)...", "dict_title": "Dicion\u00e1rio Bororo", "enc_back_to_index": "Voltar \u00e0 enciclop\u00e9dia", "enc_breadcrumb_label": "Navega\u00e7\u00e3o", "enc_browse_categories": "Navegar por categorias", "enc_categories": "Categorias", "enc_collapse": "Clique para recolher", "enc_empty_text": "Digite um termo para come\u00e7ar", "enc_empty_title": "Pesquise na enciclop\u00e9dia", "enc_entry_type": "Tipo", "enc_examples": "Exemplos", "enc_external_link": "Ver refer\u00eancia externa", "enc_featured_title": "Verbete em destaque", "enc_filter_all": "Todas as categorias", "enc_filter_uncategorized": "Sem categoria", "enc_highlights_title": "Verbetes ilustrados", "enc_last_updated": "\u00daltima atualiza\u00e7\u00e3o", "enc_loading": "Carregando enciclop\u00e9dia...", "enc_more_images": "Mais imagens", "enc_no_results": "Nenhum resultado", "enc_no_results_hint": "Tente um termo diferente ou altere o filtro", "enc_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "enc_read_more": "Ler mais", "enc_references": "Refer\u00eancias", "enc_result_plural": "verbetes encontrados", "enc_result_singular": "verbete encontrado", "enc_search_placeholder": "Pesquisar na enciclop\u00e9dia...", "enc_see_also": "Ver tamb\u00e9m", "enc_title": "Enciclop\u00e9dia Bororo", "enc_toc_title": "Conte\u00fado", "enc_variants": "Variantes", "enc_welcome_text": "Enciclop\u00e9dia dedicada \u00e0 preserva\u00e7\u00e3o e documenta\u00e7\u00e3o dos saberes culturais, lingu\u00edsticos e etnogr\u00e1ficos do povo Bororo.", "entries_label": "entradas", "fauna_category_uncategorized": "Sem classifica\u00e7\u00e3o", "fauna_detail_classification": "Classifica\u00e7\u00e3o Bororo", "fauna_detail_family": "Fam\u00edlia", "fauna_empty_text": "Digite um nome em Bororo, Portugu\u00eas ou cient\u00edfico para come\u00e7ar", "fauna_empty_title": "Pesquise a fauna", "fauna_family": "Fam\u00edlia", "fauna_filter_all": "Todas as categorias", "fauna_no_results": "Nenhum resultado", "fauna_no_results_hint": "Tente um nome diferente ou altere o filtro", "fauna_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "fauna_result_plural": "esp\u00e9cies encontradas", "fauna_result_singular": "esp\u00e9cie encontrada", "fauna_search_placeholder": "Pesquisar (Bororo, Portugu\u00eas ou nome cient\u00edfico)...", "fauna_select_hint": "Clique em um animal para ver os detalhes", "fauna_title": "Fauna Bororo", "filter_label": "Filtrar resultados", "footer_and": "e", "footer_generated": "Gerado com", "html_lang": "pt-BR", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"mundo Bororo\") \u00e9 uma plataforma dedicada \u00e0 preserva\u00e7\u00e3o, documenta\u00e7\u00e3o e valoriza\u00e7\u00e3o dos saberes lingu\u00edsticos e culturais do povo Bororo.", "index_about_p2": "Este reposit\u00f3rio re\u00fane uma variedade de recursos lingu\u00edsticos e etnogr\u00e1ficos, tanto hist\u00f3ricos quanto contempor\u00e2neos, com o objetivo de apoiar o ensino, a pesquisa e os esfor\u00e7os de revitaliza\u00e7\u00e3o da l\u00edngua Bororo. A plataforma oferece um conjunto de ferramentas voltadas para o estudo lingu\u00edstico e antropol\u00f3gico.", "index_about_title": "Sobre o Projeto", "index_hero_subtitle": "Mundo Bororo", "index_hero_title": "Boe Eno Moto", "index_title": "In\u00edcio", "infobox_cl\u00e3": "Cl\u00e3", "infobox_coordenadas": "Coordenadas", "infobox_dura\u00e7\u00e3o": "Dura\u00e7\u00e3o", "infobox_esta\u00e7\u00e3o": "Esta\u00e7\u00e3o", "infobox_fam\u00edlia": "Fam\u00edlia", "infobox_fun\u00e7\u00e3o": "Fun\u00e7\u00e3o", "infobox_fun\u00e7\u00f5es": "Fun\u00e7\u00f5es", "infobox_habitat": "Habitat", "infobox_local": "Local", "infobox_material": "Material", "infobox_membros": "Membros", "infobox_nome_cient\u00edfico": "Nome cient\u00edfico", "infobox_papel": "Papel", "infobox_participantes": "Participantes", "infobox_per\u00edodo": "Per\u00edodo", "infobox_regi\u00e3o": "Regi\u00e3o", "infobox_rela\u00e7\u00f5es": "Rela\u00e7\u00f5es", "infobox_rio": "Rio", "infobox_tipo": "Tipo", "infobox_usos": "Usos", "nav_bibliography": "Bibliografia", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dicion\u00e1rio", "nav_encyclopedia": "Enciclop\u00e9dia", "nav_fauna": "Fauna", "nav_label": "Navega\u00e7\u00e3o principal", "pos_ADV": "Adv\u00e9rbio", "pos_CONJ": "Conjun\u00e7\u00e3o", "pos_DEM": "Demonstrativo", "pos_INTJ": "Interjei\u00e7\u00e3o", "pos_IP": "IP", "pos_LEX": "Lexema", "pos_NUM": "Numeral", "pos_POSP": "Posposi\u00e7\u00e3o", "pos_PPART": "Part\u00edcula", "pos_PPAS": "Part. Pass.", "pos_PPASS": "Part. Pass.", "pos_PRCL": "Part\u00edcula", "pos_PRON": "Pronome", "pos_PROPN": "Nome Pr\u00f3prio", "pos_S": "Substantivo", "pos_SUF": "Sufixo", "pos_V": "Verbo", "pos_VC": "Verbo Causativo", "pos_VT": "Verbo Trans.", "pos_X": "Outro", "references_label": "refer\u00eancias", "search_label": "Pesquisar", "see_also": "Ver tamb\u00e9m", "see_in_dictionary": "Ver no Dicion\u00e1rio", "see_in_encyclopedia": "Ver na Enciclop\u00e9dia", "see_in_fauna": "Ver na Fauna", "skip_link": "Pular para conte\u00fado", "species_label": "esp\u00e9cies"};
+        var T = {"articles_label": "verbetes", "bib_empty_text": "Digite um autor, t\u00edtulo ou ano para come\u00e7ar", "bib_empty_title": "Pesquise a bibliografia", "bib_filter_all": "Todos os tipos", "bib_no_results": "Nenhum resultado", "bib_no_results_hint": "Tente um autor, t\u00edtulo ou ano diferente", "bib_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "bib_result_plural": "refer\u00eancias encontradas", "bib_result_singular": "refer\u00eancia encontrada", "bib_search_placeholder": "Pesquisar (autor, t\u00edtulo, ano)...", "bib_title": "Bibliografia Bororo", "card_bibliography_desc": "Refer\u00eancias bibliogr\u00e1ficas sobre a l\u00edngua, cultura e hist\u00f3ria do povo Bororo.", "card_bibliography_label": "refer\u00eancias", "card_bibliography_title": "Bibliografia", "card_cta": "Explorar", "card_dictionary_desc": "Palavras e express\u00f5es da l\u00edngua Bororo com tradu\u00e7\u00e3o para Portugu\u00eas, transcri\u00e7\u00e3o fon\u00e9tica e exemplos.", "card_dictionary_label": "entradas", "card_dictionary_title": "Dicion\u00e1rio", "card_encyclopedia_desc": "Verbetes sobre cultura, rituais, organiza\u00e7\u00e3o social e conhecimentos tradicionais do povo Bororo.", "card_encyclopedia_label": "verbetes", "card_encyclopedia_title": "Enciclop\u00e9dia", "card_fauna_desc": "Nomes de animais na l\u00edngua Bororo com classifica\u00e7\u00e3o tradicional, nomes cient\u00edficos e imagens.", "card_fauna_label": "esp\u00e9cies", "card_fauna_title": "Fauna", "dict_all_pos": "Todas as classes", "dict_browse_hint": "Selecione uma entrada para ver os detalhes", "dict_empty_text": "Digite uma palavra em Bororo ou Portugu\u00eas para come\u00e7ar", "dict_empty_title": "Pesquise no dicion\u00e1rio", "dict_filter_all": "Todas as classes", "dict_loading": "Carregando dicion\u00e1rio...", "dict_no_results": "Nenhum resultado", "dict_no_results_hint": "Tente uma palavra diferente ou altere o filtro", "dict_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "dict_result_plural": "resultados encontrados", "dict_result_singular": "resultado encontrado", "dict_scientific_name": "Nome cient\u00edfico", "dict_search_placeholder": "Pesquisar (Bororo ou Portugu\u00eas)...", "dict_title": "Dicion\u00e1rio Bororo", "enc_back_to_index": "Voltar \u00e0 enciclop\u00e9dia", "enc_breadcrumb_label": "Navega\u00e7\u00e3o", "enc_browse_categories": "Navegar por categorias", "enc_categories": "Categorias", "enc_collapse": "Clique para recolher", "enc_empty_text": "Digite um termo para come\u00e7ar", "enc_empty_title": "Pesquise na enciclop\u00e9dia", "enc_entry_type": "Tipo", "enc_examples": "Exemplos", "enc_external_link": "Ver refer\u00eancia externa", "enc_featured_title": "Verbete em destaque", "enc_filter_all": "Todas as categorias", "enc_filter_uncategorized": "Sem categoria", "enc_highlights_title": "Verbetes ilustrados", "enc_last_updated": "\u00daltima atualiza\u00e7\u00e3o", "enc_loading": "Carregando enciclop\u00e9dia...", "enc_more_images": "Mais imagens", "enc_no_results": "Nenhum resultado", "enc_no_results_hint": "Tente um termo diferente ou altere o filtro", "enc_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "enc_read_more": "Ler mais", "enc_references": "Refer\u00eancias", "enc_result_plural": "verbetes encontrados", "enc_result_singular": "verbete encontrado", "enc_search_placeholder": "Pesquisar na enciclop\u00e9dia...", "enc_see_also": "Ver tamb\u00e9m", "enc_title": "Enciclop\u00e9dia Bororo", "enc_toc_title": "Conte\u00fado", "enc_variants": "Variantes", "enc_welcome_text": "Enciclop\u00e9dia dedicada \u00e0 preserva\u00e7\u00e3o e documenta\u00e7\u00e3o dos saberes culturais, lingu\u00edsticos e etnogr\u00e1ficos do povo Bororo.", "entries_label": "entradas", "fauna_category_uncategorized": "Sem classifica\u00e7\u00e3o", "fauna_detail_classification": "Classifica\u00e7\u00e3o Bororo", "fauna_detail_family": "Fam\u00edlia", "fauna_empty_text": "Digite um nome em Bororo, Portugu\u00eas ou cient\u00edfico para come\u00e7ar", "fauna_empty_title": "Pesquise a fauna", "fauna_family": "Fam\u00edlia", "fauna_filter_all": "Todas as categorias", "fauna_no_results": "Nenhum resultado", "fauna_no_results_hint": "Tente um nome diferente ou altere o filtro", "fauna_overflow": "Mostrando 100 de {n} resultados. Refine sua busca.", "fauna_result_plural": "esp\u00e9cies encontradas", "fauna_result_singular": "esp\u00e9cie encontrada", "fauna_search_placeholder": "Pesquisar (Bororo, Portugu\u00eas ou nome cient\u00edfico)...", "fauna_select_hint": "Clique em um animal para ver os detalhes", "fauna_title": "Fauna Bororo", "filter_label": "Filtrar resultados", "footer_and": "e", "footer_generated": "Gerado com", "footer_text": "", "html_lang": "pt-BR", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"mundo Bororo\") \u00e9 uma plataforma dedicada \u00e0 preserva\u00e7\u00e3o, documenta\u00e7\u00e3o e valoriza\u00e7\u00e3o dos saberes lingu\u00edsticos e culturais do povo Bororo.", "index_about_p2": "Este reposit\u00f3rio re\u00fane uma variedade de recursos lingu\u00edsticos e etnogr\u00e1ficos, tanto hist\u00f3ricos quanto contempor\u00e2neos, com o objetivo de apoiar o ensino, a pesquisa e os esfor\u00e7os de revitaliza\u00e7\u00e3o da l\u00edngua Bororo. A plataforma oferece um conjunto de ferramentas voltadas para o estudo lingu\u00edstico e antropol\u00f3gico.", "index_about_title": "Sobre o Projeto", "index_hero_subtitle": "Mundo Bororo", "index_hero_title": "Boe Eno Moto", "index_title": "In\u00edcio", "infobox_cl\u00e3": "Cl\u00e3", "infobox_coordenadas": "Coordenadas", "infobox_dura\u00e7\u00e3o": "Dura\u00e7\u00e3o", "infobox_esta\u00e7\u00e3o": "Esta\u00e7\u00e3o", "infobox_fam\u00edlia": "Fam\u00edlia", "infobox_fun\u00e7\u00e3o": "Fun\u00e7\u00e3o", "infobox_fun\u00e7\u00f5es": "Fun\u00e7\u00f5es", "infobox_habitat": "Habitat", "infobox_local": "Local", "infobox_material": "Material", "infobox_membros": "Membros", "infobox_nome_cient\u00edfico": "Nome cient\u00edfico", "infobox_papel": "Papel", "infobox_participantes": "Participantes", "infobox_per\u00edodo": "Per\u00edodo", "infobox_regi\u00e3o": "Regi\u00e3o", "infobox_rela\u00e7\u00f5es": "Rela\u00e7\u00f5es", "infobox_rio": "Rio", "infobox_tipo": "Tipo", "infobox_usos": "Usos", "lang_switch_label": "Seletor de idioma", "nav_bibliography": "Bibliografia", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dicion\u00e1rio", "nav_encyclopedia": "Enciclop\u00e9dia", "nav_fauna": "Fauna", "nav_label": "Navega\u00e7\u00e3o principal", "nav_menu_label": "Menu", "pos_ADV": "Adv\u00e9rbio", "pos_CONJ": "Conjun\u00e7\u00e3o", "pos_DEM": "Demonstrativo", "pos_INTJ": "Interjei\u00e7\u00e3o", "pos_IP": "IP", "pos_LEX": "Lexema", "pos_NUM": "Numeral", "pos_POSP": "Posposi\u00e7\u00e3o", "pos_PPART": "Part\u00edcula", "pos_PPAS": "Part. Pass.", "pos_PPASS": "Part. Pass.", "pos_PRCL": "Part\u00edcula", "pos_PRON": "Pronome", "pos_PROPN": "Nome Pr\u00f3prio", "pos_S": "Substantivo", "pos_SUF": "Sufixo", "pos_V": "Verbo", "pos_VC": "Verbo Causativo", "pos_VT": "Verbo Trans.", "pos_X": "Outro", "references_label": "refer\u00eancias", "search_label": "Pesquisar", "see_also": "Ver tamb\u00e9m", "see_in_dictionary": "Ver no Dicion\u00e1rio", "see_in_encyclopedia": "Ver na Enciclop\u00e9dia", "see_in_fauna": "Ver na Fauna", "skip_link": "Pular para conte\u00fado", "species_label": "esp\u00e9cies"};
         var ALL_DATA = [{"category": null, "classification_bororo": null, "dictionary_ids": null, "id": 95, "info": null, "name_bororo": "Gigo", "name_portuguese": "Abelha benjo\u00ed", "pic_link": "images/fauna_095_gigo.jpg", "scientific_name": null}, {"_linked_dictionary": [{"definition": "abelhas bor\u00e1.", "entry": "kidoguroe", "id": 2514}], "category": null, "classification_bororo": null, "dictionary_ids": null, "id": 97, "info": null, "name_bororo": "Kidoguroe", "name_portuguese": "Abelha bor\u00e1", "pic_link": "images/fauna_097_kidoguroe.jpg", "scientific_name": "Tetragona clavipes"}, {"category": "Falconidae", "classification_bororo": "Kiege Boemoriae", "dictionary_ids": null, "id": 41, "info": null, "name_bororo": "Makao", "name_portuguese": "Acau\u00e3", "pic_link": "images/fauna_041_makao.jpg", "scientific_name": "Herpetotheres cachinnans"}, {"category": "Threskiornithidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 65, "info": null, "name_bororo": "Bace ao kororogodyrewy", "name_portuguese": "Aiai\u00e1 (colhereiro-americano)", "pic_link": "images/fauna_065_bace_ao_kororogodyrewy.jpg", "scientific_name": "Platalea ajaja"}, {"category": "Anhimidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 71, "info": null, "name_bororo": "Tamigi", "name_portuguese": "Anhuma", "pic_link": "images/fauna_071_tamigi.jpg", "scientific_name": "Anhima cornuta"}, {"_linked_dictionary": [{"definition": "anta ( Tapirus terrestris)", "entry": "ki", "id": 2475}], "category": "Tapir\u00eddeos", "classification_bororo": "Barege Kurirewyge", "dictionary_ids": null, "id": 10, "info": null, "name_bororo": "Ki", "name_portuguese": "Anta", "pic_link": "images/fauna_010_ki.jpg", "scientific_name": "Tapirus terrestris"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "dictionary_ids": null, "id": 56, "info": null, "name_bororo": "Kudoro", "name_portuguese": "Arara-azul-grande", "pic_link": "images/fauna_056_kudoro.jpg", "scientific_name": "Anodorhynchus hyacinthinus"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "dictionary_ids": null, "id": 57, "info": null, "name_bororo": "Nabure", "name_portuguese": "Araracanga (arara vermelha)", "pic_link": "images/fauna_057_nabure.jpg", "scientific_name": "Ara macao"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "dictionary_ids": null, "id": 58, "info": null, "name_bororo": "Kuido", "name_portuguese": "Arara-canind\u00e9", "pic_link": "images/fauna_058_kuido.jpg", "scientific_name": "Ara ararauna"}, {"_linked_dictionary": [{"definition": "jaguatirica", "entry": "aipoburewu", "id": 74}], "category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 4, "info": null, "name_bororo": "Aipoburewy", "name_portuguese": "Barege boemoriae", "pic_link": "images/fauna_004_aipoburewy.jpg", "scientific_name": "Leopardus pardalis"}, {"category": "Delphinidae", "classification_bororo": "Barege pobo tadawyge", "dictionary_ids": null, "id": 34, "info": null, "name_bororo": "Jakorewy", "name_portuguese": "Boto", "pic_link": "images/fauna_034_jakorewy.jpg", "scientific_name": "Sotalia fluviatilis"}, {"category": "Atelidae", "classification_bororo": "Barege Akururewyge", "dictionary_ids": null, "id": 22, "info": null, "name_bororo": "Pai Corewy", "name_portuguese": "Bugio preto / Guariba-preto", "pic_link": "images/fauna_022_pai_corewy.jpg", "scientific_name": "Alouatta caraya"}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 66, "info": null, "name_bororo": "Bace auragodyrewy", "name_portuguese": "Cabe\u00e7a-seca", "pic_link": "images/fauna_066_bace_auragodyrewy.jpg", "scientific_name": "Cabe\u00e7a-seca"}, {"_linked_dictionary": [{"definition": "taia\u00e7u", "entry": "jugo kigadurewu", "id": 2290}], "category": "Taia\u00e7u\u00eddeos", "classification_bororo": "Barege Kurirewyge", "dictionary_ids": null, "id": 13, "info": null, "name_bororo": "Jui", "name_portuguese": "Caititu", "pic_link": "images/fauna_013_jui.jpg", "scientific_name": "Dicotyles tajacu"}, {"category": "Caviidae", "classification_bororo": "Barege pobo tadawyge", "dictionary_ids": null, "id": 29, "info": null, "name_bororo": "Akiwa", "name_portuguese": "Capivara", "pic_link": "images/fauna_029_akiwa.jpg", "scientific_name": "Hydrochoerus hydrochaeris"}, {"category": "Aramidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 72, "info": null, "name_bororo": "Karao", "name_portuguese": "Car\u00e3o", "pic_link": "images/fauna_072_karao.jpg", "scientific_name": "Aramus guarauna"}, {"category": null, "classification_bororo": "Barege Kurirewyge", "dictionary_ids": null, "id": 9, "info": null, "name_bororo": "Atubo", "name_portuguese": "Cariacu / Veado Galheiro", "pic_link": "images/fauna_009_atubo.jpg", "scientific_name": "Odocoileus virginianus"}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 69, "info": null, "name_bororo": "Parira", "name_portuguese": "Cegonha (?)", "pic_link": "images/fauna_069_parira.jpg", "scientific_name": null}, {"category": "Strigidae", "classification_bororo": "Kiege Boemoriae", "dictionary_ids": null, "id": 40, "info": null, "name_bororo": "Tagogo", "name_portuguese": "Coruja do campo / Coruja-buraqueira", "pic_link": "images/fauna_040_tagogo.jpg", "scientific_name": "Athene cunicularia"}, {"category": "Strigidae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 51, "info": null, "name_bororo": "Kaikai", "name_portuguese": "Coruj\u00e3o / Mocho", "pic_link": "images/fauna_051_kaikai.jpg", "scientific_name": "Bubo virginianus"}, {"category": "Strigidae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 50, "info": null, "name_bororo": "Kugu corewy", "name_portuguese": "Coruja preta", "pic_link": "images/fauna_050_kugu_corewy.jpg", "scientific_name": "Strix huhula"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "dictionary_ids": null, "id": 59, "info": null, "name_bororo": "Korao", "name_portuguese": "Curica (papagaio)", "pic_link": "images/fauna_059_korao.jpg", "scientific_name": "Amazona amazonica"}, {"category": "Dasyproctidae", "classification_bororo": "Barege kugure", "dictionary_ids": null, "id": 38, "info": null, "name_bororo": "Mea", "name_portuguese": "Cut\u00eda", "pic_link": "images/fauna_038_mea.jpg", "scientific_name": "Dasyprocta punctata"}, {"category": "Rheidae", "classification_bororo": "Kiege moto kejewyge", "dictionary_ids": null, "id": 92, "info": null, "name_bororo": "Pari", "name_portuguese": "Ema", "pic_link": "images/fauna_092_pari.jpg", "scientific_name": "Rhea americana"}, {"category": "Laridae", "classification_bororo": "Kiege kugary kejewyge", "dictionary_ids": null, "id": 82, "info": null, "name_bororo": "Tawie", "name_portuguese": "Gaivota do pantanal (?)", "pic_link": null, "scientific_name": null}, {"category": "Didelfi\u00eddeos", "classification_bororo": "Barege Akururewyge", "dictionary_ids": null, "id": 25, "info": null, "name_bororo": "Aka", "name_portuguese": "Gamb\u00e1", "pic_link": "images/fauna_025_aka.jpg", "scientific_name": "Didelphis marsupialis"}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 64, "info": null, "name_bororo": "Bace kaworyrewy", "name_portuguese": "Gar\u00e7a-azul", "pic_link": "images/fauna_064_bace_kaworyrewy.jpg", "scientific_name": "Egretta caerulea"}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 63, "info": null, "name_bororo": "Bace kuorewy", "name_portuguese": "Gar\u00e7a-branca-pequena", "pic_link": "images/fauna_063_bace_kuorewy.jpg", "scientific_name": "Egretta thula"}, {"category": null, "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 77, "info": null, "name_bororo": "O kaworurewy", "name_portuguese": "Gar\u00e7a-da-mata", "pic_link": "images/fauna_077_o_kaworurewy.jpg", "scientific_name": null}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 62, "info": null, "name_bororo": "Bace agarewy", "name_portuguese": "Gar\u00e7a real", "pic_link": "images/fauna_062_bace_agarewy.jpg", "scientific_name": "Ardea alba"}, {"_linked_dictionary": [{"definition": "gato mourisco/jaguarundi (Herpailurus yagouaroundi).", "entry": "aimearewu", "id": 70}], "category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 3, "info": null, "name_bororo": "Aimearewy", "name_portuguese": "Gato mourisco / Jaguarundi", "pic_link": "images/fauna_003_aimearewy.jpg", "scientific_name": "Herpailurus yagouaroundi"}, {"_linked_dictionary": [{"definition": "gavi\u00e3o caracar\u00e1, denominado tamb\u00e9m kituireu.", "entry": "kaga", "id": 2350}], "category": "Falconidae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 47, "info": null, "name_bororo": "Kaga", "name_portuguese": "Gavi\u00e3o Caracar\u00e1 / Pinh\u00e9", "pic_link": "images/fauna_047_kaga.jpg", "scientific_name": "Caracara plancus"}, {"category": "Falconidae", "classification_bororo": "Kiege Boemoriae", "dictionary_ids": null, "id": 44, "info": null, "name_bororo": "Kuruguga", "name_portuguese": "Gavi\u00e3o carcara\u00ed / Carrapateiro", "pic_link": "images/fauna_044_kuruguga.jpg", "scientific_name": "Milvago chimachima"}, {"category": null, "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 48, "info": null, "name_bororo": "Torowa", "name_portuguese": "Gavi\u00e3o Claro", "pic_link": null, "scientific_name": null}, {"category": "Accipitridae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 46, "info": null, "name_bororo": "Kuruga bure paru ekurewy", "name_portuguese": "Gavi\u00e3o-do-p\u00e9-amarelo / Gavi\u00e3o-carij\u00f3", "pic_link": "images/fauna_046_kuruga_bure_paru_ekurewy.jpg", "scientific_name": "Rupornis magnirostris"}, {"category": "Accipitridae", "classification_bororo": "Kiege Boemoriae", "dictionary_ids": null, "id": 42, "info": null, "name_bororo": "Aroeeceba", "name_portuguese": "Gavi\u00e3o real / Harpia", "pic_link": "images/fauna_042_aroeeceba.jpg", "scientific_name": "Harpia harpyja"}, {"category": "Falconidae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 49, "info": null, "name_bororo": "Kuruga bewerewy", "name_portuguese": "Gavi\u00e3o ximango", "pic_link": "images/fauna_049_kuruga_bewerewy.jpg", "scientific_name": "Milvago chimango"}, {"category": "Can\u00eddeos", "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 7, "info": null, "name_bororo": "Okwa", "name_portuguese": "Graxaim-do-mato / Cachorro-do-mato / Lobinho", "pic_link": "images/fauna_007_okwa.jpg", "scientific_name": "Cerdocyon thous"}, {"category": "Iguanidae", "classification_bororo": "Barege pobo tadawyge", "dictionary_ids": null, "id": 28, "info": null, "name_bororo": "Irui", "name_portuguese": "Iguana / Sinimbu", "pic_link": "images/fauna_028_irui.jpg", "scientific_name": "Iguana iguana"}, {"category": "Tinamidae", "classification_bororo": "Kiege moto kejewyge", "dictionary_ids": null, "id": 90, "info": null, "name_bororo": "Riwodo", "name_portuguese": "Inhmabu-Xoror\u00f3", "pic_link": "images/fauna_090_riwodo.jpg", "scientific_name": "Crypturellus parvirostris"}, {"_linked_dictionary": [{"definition": "irara ou papa-mel (Eira barbara)", "entry": "ipocerewu", "id": 1704}], "category": "Mustel\u00eddeos", "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 6, "info": null, "name_bororo": "Ipocerewy", "name_portuguese": "Irara / Papa mel", "pic_link": "images/fauna_006_ipocerewy.jpg", "scientific_name": "Eira barbara"}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 67, "info": null, "name_bororo": "Bace kogyio", "name_portuguese": "Jaburu (Tuiuiu)", "pic_link": "images/fauna_067_bace_kogyio.jpg", "scientific_name": "Jabiru mycteria"}, {"category": "Testudinidae", "classification_bororo": "Barege Borewyge", "dictionary_ids": null, "id": 18, "info": null, "name_bororo": "Jerigigi", "name_portuguese": "Jabuti", "pic_link": "images/fauna_018_jerigigi.jpg", "scientific_name": "Chelonoidis carbonarius"}, {"category": "Jacanidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 73, "info": null, "name_bororo": "Pegepege", "name_portuguese": "Ja\u00e7an\u00e3", "pic_link": "images/fauna_073_pegepege.jpg", "scientific_name": "Jacana jacana"}, {"category": "Alligatoridae", "classification_bororo": "Barege pobo tadawyge", "dictionary_ids": null, "id": 31, "info": null, "name_bororo": "Uwai", "name_portuguese": "Jacar\u00e9", "pic_link": "images/fauna_031_uwai.jpg", "scientific_name": "Caiman yacare"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "dictionary_ids": null, "id": 61, "info": null, "name_bororo": "Ore", "name_portuguese": "Jandaia-coquinho (periquito-rei / periquito-estrela)", "pic_link": "images/fauna_061_ore.jpg", "scientific_name": "Eupsittula aurea"}, {"_linked_dictionary": [{"definition": "jo\u00e3o-bobo (Nystalus chacuru).", "entry": "jokorogo", "id": 2167}], "category": null, "classification_bororo": "Kiege moto kejewyge", "dictionary_ids": null, "id": 93, "info": null, "name_bororo": "Jokorogo", "name_portuguese": "Jo\u00e3o-Bobo", "pic_link": "images/fauna_093_jokorogo.jpg", "scientific_name": "Nystalus chacuru"}, {"category": "Astyanax (gen.)", "classification_bororo": null, "dictionary_ids": null, "id": 32, "info": null, "name_bororo": "Meto", "name_portuguese": "Lambari", "pic_link": "images/fauna_032_meto.jpg", "scientific_name": null}, {"category": null, "classification_bororo": "Barege kugure", "dictionary_ids": null, "id": 37, "info": null, "name_bororo": "Amo", "name_portuguese": "Lebre / Tapiti", "pic_link": "images/fauna_037_amo.jpg", "scientific_name": "Sylvilagus brasiliensis"}, {"category": "Can\u00eddeos", "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 8, "info": null, "name_bororo": "Rie", "name_portuguese": "Lobo Guar\u00e1", "pic_link": "images/fauna_008_rie.jpg", "scientific_name": "Chrysocyon brachyurus / Canis jubatus"}, {"category": "Ceb\u00eddeos", "classification_bororo": "Barege Akururewyge", "dictionary_ids": null, "id": 23, "info": null, "name_bororo": "Juko", "name_portuguese": "Macaco", "pic_link": null, "scientific_name": null}, {"category": "Ciconiidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 68, "info": null, "name_bororo": "Bace mikurewy", "name_portuguese": "Maguari", "pic_link": "images/fauna_068_bace_mikurewy.jpg", "scientific_name": "Ciconia maguari"}, {"category": null, "classification_bororo": null, "dictionary_ids": null, "id": 94, "info": null, "name_bororo": "Penogogo", "name_portuguese": "Mamangaba", "pic_link": "images/fauna_094_penogogo.jpg", "scientific_name": "Bombus"}, {"category": null, "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 5, "info": null, "name_bororo": "Ierarae", "name_portuguese": "M\u00e3o-pelada", "pic_link": "images/fauna_005_ierarae.jpg", "scientific_name": "Procion\u00eddeos"}, {"category": "Anatidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 80, "info": null, "name_bororo": "Parabara", "name_portuguese": "Marreca-cabocla", "pic_link": "images/fauna_080_parabara.jpg", "scientific_name": "Dendrocygna autumnalis"}, {"category": "Alcedinidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 70, "info": null, "name_bororo": "Kadagare", "name_portuguese": "Martim Pescador", "pic_link": "images/fauna_070_kadagare.jpg", "scientific_name": null}, {"category": "Charadriidae", "classification_bororo": "Kiege kugary kejewyge", "dictionary_ids": null, "id": 83, "info": null, "name_bororo": "Ra porepore", "name_portuguese": "Mexeriqueira", "pic_link": "images/fauna_083_ra_porepore.jpg", "scientific_name": "Vanellus cayanus"}, {"category": "Strigidae", "classification_bororo": "Kiege Boemoriae", "dictionary_ids": null, "id": 43, "info": null, "name_bororo": "Kugu", "name_portuguese": "Murucututu-de-barriga-amarela", "pic_link": "images/fauna_043_kugu.jpg", "scientific_name": "Pulsatrix koeniswaldiana"}, {"_linked_dictionary": [{"definition": "on\u00e7a parda", "entry": "aigo", "id": 68}], "category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 2, "info": null, "name_bororo": "Aigo", "name_portuguese": "On\u00e7a parda", "pic_link": "images/fauna_002_aigo.jpg", "scientific_name": "Puma concolor"}, {"_linked_dictionary": [{"definition": "On\u00e7a pintada", "entry": "adugo", "id": 31}, {"definition": "on\u00e7a preta.", "entry": "adugo corewu", "id": 35}], "category": "Feil\u00eddeo", "classification_bororo": "Barege boemoriae", "dictionary_ids": null, "id": 1, "info": null, "name_bororo": "Adugo", "name_portuguese": "On\u00e7a pintada", "pic_link": "images/fauna_001_adugo.jpg", "scientific_name": "Panthera onca"}, {"category": "Erinaceidae", "classification_bororo": "Barege Akururewyge", "dictionary_ids": null, "id": 27, "info": null, "name_bororo": "Iwe", "name_portuguese": "Ouri\u00e7o", "pic_link": "images/fauna_027_iwe.jpg", "scientific_name": "Coendou prehensilis"}, {"_linked_dictionary": [{"definition": "paca. (Cuniculus paca)", "entry": "apu (pl. apue)", "id": 283}], "category": "Cuniculidae", "classification_bororo": "Barege kugure", "dictionary_ids": null, "id": 35, "info": null, "name_bororo": "Apu", "name_portuguese": "Paca", "pic_link": "images/fauna_035_apu.jpg", "scientific_name": "Cuniculus paca"}, {"category": "Anatidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 81, "info": null, "name_bororo": "Turubare corewy", "name_portuguese": "Pato-do-mato", "pic_link": "images/fauna_081_turubare_corewy.jpg", "scientific_name": "Cairina moschata"}, {"category": "Tinamidae", "classification_bororo": "Kiege moto kejewyge", "dictionary_ids": null, "id": 91, "info": null, "name_bororo": "Parikiogodo", "name_portuguese": "Perdiz", "pic_link": "images/fauna_091_parikiogodo.jpg", "scientific_name": "Rhynchotus rufescens"}, {"_linked_dictionary": [{"definition": "periquito vassourinha ( Forpus xanthopterygius); certo esp\u00edrito.", "entry": "kido1", "id": 2506}, {"definition": "Periquito-d\u0027asa-azul / tuim-de-asa-azul / periquito vassourinha ( Forpus xanthopterygius)", "entry": "kidoe etumana", "id": 2513}], "category": null, "classification_bororo": null, "dictionary_ids": null, "id": 96, "info": null, "name_bororo": "Kidoe etumana", "name_portuguese": "Periquito-d\u0027asa-azul / tuim-de-asa-azul / periquito vassourinha", "pic_link": "images/fauna_096_kidoe_etumana.jpg", "scientific_name": "Forpus xanthopterygius"}, {"category": "Psittacidae", "classification_bororo": "Kiege oto toiborewyge", "dictionary_ids": null, "id": 60, "info": null, "name_bororo": "Kido", "name_portuguese": "Periquito-verde", "pic_link": "images/fauna_060_kido.jpg", "scientific_name": "Brotogeris tirica"}, {"category": "Heliornithidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 78, "info": null, "name_bororo": "Bure puduga", "name_portuguese": "Picaparra (ipequi)", "pic_link": "images/fauna_078_bure_puduga.jpg", "scientific_name": "Heliornis fulica"}, {"category": null, "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 45, "info": null, "name_bororo": "Pia", "name_portuguese": "Pinh\u00e9", "pic_link": null, "scientific_name": null}, {"category": "Caviidae", "classification_bororo": "Barege kugure", "dictionary_ids": null, "id": 39, "info": null, "name_bororo": "Kurugo", "name_portuguese": "Pre\u00e1", "pic_link": "images/fauna_039_kurugo.jpg", "scientific_name": "Cavia aperea"}, {"category": "Procyonidae", "classification_bororo": "Barege Akururewyge", "dictionary_ids": null, "id": 21, "info": null, "name_bororo": "Kudobo", "name_portuguese": "Quati", "pic_link": "images/fauna_021_kudobo.jpg", "scientific_name": "Nasua narica"}, {"_linked_dictionary": [{"definition": "queixada.", "entry": "jugo", "id": 2289}], "category": "Taia\u00e7u\u00eddeos", "classification_bororo": "Barege Kurirewyge", "dictionary_ids": null, "id": 14, "info": null, "name_bororo": "Jugo", "name_portuguese": "Queixada", "pic_link": "images/fauna_014_jugo.jpg", "scientific_name": "Tayassu pecari"}, {"category": "Rallidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 74, "info": null, "name_bororo": "Kuocaga", "name_portuguese": "Saracura", "pic_link": "images/fauna_074_kuocaga.jpg", "scientific_name": null}, {"category": "Sciuridae", "classification_bororo": "Barege Akururewyge", "dictionary_ids": null, "id": 26, "info": null, "name_bororo": "Kodokodo", "name_portuguese": "Serelepe / Caxinguel\u00ea", "pic_link": "images/fauna_026_kodokodo.jpg", "scientific_name": null}, {"category": null, "classification_bororo": "Kiege moto kejewyge", "dictionary_ids": null, "id": 87, "info": null, "name_bororo": "Beo", "name_portuguese": "Siriema", "pic_link": "images/fauna_087_beo.jpg", "scientific_name": null}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 79, "info": null, "name_bororo": "Cu", "name_portuguese": "Soc\u00f3-boi", "pic_link": "images/fauna_079_cu.jpg", "scientific_name": "Tigrisoma lineatum"}, {"category": "Ardeidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 75, "info": null, "name_bororo": "Kudo", "name_portuguese": "Soc\u00f3-dorminhoco", "pic_link": "images/fauna_075_kudo.jpg", "scientific_name": "Nycticorax nycticorax"}, {"_linked_dictionary": [{"definition": "tamandu\u00e1 bandeira (Myrmecophaga tridactyla).", "entry": "buke2", "id": 1073}], "category": "Mirmecofag\u00eddeos", "classification_bororo": "Barege Kurirewyge", "dictionary_ids": null, "id": 12, "info": null, "name_bororo": "Buke", "name_portuguese": "Tamandu\u00e1-bandeira", "pic_link": "images/fauna_012_buke.jpg", "scientific_name": "Myrmecophaga tridactyla"}, {"category": "Myrmecophagidae", "classification_bororo": "Barege Akururewyge", "dictionary_ids": null, "id": 24, "info": null, "name_bororo": "Apogo", "name_portuguese": "Tamandu\u00e1-mirim / Mixila", "pic_link": "images/fauna_024_apogo.jpg", "scientific_name": "Tamandua tetradactyla"}, {"category": "Clamifor\u00eddeos", "classification_bororo": "Barege Borewyge", "dictionary_ids": null, "id": 17, "info": null, "name_bororo": "Enokuri", "name_portuguese": "Tatu-bola", "pic_link": "images/fauna_017_enokuri.jpg", "scientific_name": "Tolypeutes matacus"}, {"category": "Clamifor\u00eddeos", "classification_bororo": "Barege Borewyge", "dictionary_ids": null, "id": 16, "info": null, "name_bororo": "Bokodori", "name_portuguese": "Tatu-canastra", "pic_link": "images/fauna_016_bokodori.jpg", "scientific_name": "Priodontes maximus"}, {"category": null, "classification_bororo": "Barege Borewyge", "dictionary_ids": null, "id": 20, "info": null, "name_bororo": "Re\u00e1", "name_portuguese": "Tatu-galinha", "pic_link": null, "scientific_name": "Dasypus novemcinctus"}, {"category": "Dasipod\u00eddeos", "classification_bororo": "Barege Borewyge", "dictionary_ids": null, "id": 19, "info": null, "name_bororo": "Jerego", "name_portuguese": "Tatu-liso", "pic_link": "images/fauna_019_jerego.jpg", "scientific_name": "Dasypus novemcinctus"}, {"category": "Clamifor\u00eddeos", "classification_bororo": "Barege Borewyge", "dictionary_ids": null, "id": 15, "info": null, "name_bororo": "Bakodorirewy", "name_portuguese": "Tatupeba", "pic_link": "images/fauna_015_bakodorirewy.jpg", "scientific_name": "Euphractus sexcinctus"}, {"category": "Teiidae", "classification_bororo": "Barege kugure", "dictionary_ids": null, "id": 36, "info": null, "name_bororo": "Tuwogy", "name_portuguese": "Tei\u00fa", "pic_link": "images/fauna_036_tuwogy.jpg", "scientific_name": "Salvator merianae"}, {"category": "Cathartidae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 54, "info": null, "name_bororo": "Poburewy", "name_portuguese": "Urubu cabe\u00e7a preta", "pic_link": "images/fauna_054_poburewy.jpg", "scientific_name": "Coragyps atratus"}, {"_linked_dictionary": [{"definition": "urubu ca\u00e7ador, urubu cangalha (Cathartes aura)", "entry": "ciwaje", "id": 1168}], "category": "Cathartidae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 55, "info": null, "name_bororo": "Ciwaje", "name_portuguese": "Urubu da cabe\u00e7a vermelha", "pic_link": "images/fauna_055_ciwaje.jpg", "scientific_name": "Cathartes aura"}, {"_linked_dictionary": [{"definition": "urubu-rei. (Sarcoramphus papa)", "entry": "bai (pl. bae)", "id": 481}, {"definition": "urubu rei branco. (Sarcoramphus papa)", "entry": "bai tororewu", "id": 487}], "category": "Sarcosamphidae", "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 52, "info": null, "name_bororo": "Bai", "name_portuguese": "Urubu rei", "pic_link": "images/fauna_052_bai.jpg", "scientific_name": "Sarcoramphus papa"}, {"category": "Cerv\u00eddeos", "classification_bororo": "Barege Kurirewyge", "dictionary_ids": null, "id": 11, "info": null, "name_bororo": "Pobogo", "name_portuguese": "Veado-m\u00e3o-curta  / Veado Boror\u00f3", "pic_link": "images/fauna_011_pobogo.jpg", "scientific_name": "Mazama nana"}, {"category": "Anatidae", "classification_bororo": "Kiege pobo pobo tadawyge", "dictionary_ids": null, "id": 76, "info": "Amazonetta brasiliensis", "name_bororo": "Merire", "name_portuguese": null, "pic_link": "images/fauna_076_merire.jpg", "scientific_name": null}, {"category": null, "classification_bororo": "Kiege kugary kejewyge", "dictionary_ids": null, "id": 86, "info": null, "name_bororo": "Tawie baragadyxrewy", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege kugary kejewyge", "dictionary_ids": null, "id": 85, "info": null, "name_bororo": "Kugarure", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege kugary kejewyge", "dictionary_ids": null, "id": 84, "info": null, "name_bororo": "Tano", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege moto kejewyge", "dictionary_ids": null, "id": 88, "info": null, "name_bororo": "Parigogo", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege moto kejewyge", "dictionary_ids": null, "id": 89, "info": null, "name_bororo": "Monoko", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Kiege buregi toiburewyge", "dictionary_ids": null, "id": 53, "info": null, "name_bororo": "Kuruga je paru kujagurewy", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Barege pobo tadawyge", "dictionary_ids": null, "id": 33, "info": null, "name_bororo": "Baigabe", "name_portuguese": null, "pic_link": null, "scientific_name": null}, {"category": null, "classification_bororo": "Barege pobo tadawyge", "dictionary_ids": null, "id": 30, "info": null, "name_bororo": "Atomoio", "name_portuguese": null, "pic_link": null, "scientific_name": null}];
         var UNCATEGORIZED_LABEL = T.fauna_category_uncategorized || 'Sem classificação';
 
@@ -729,7 +527,7 @@
 
             var body = document.createElement('div');
             body.className = 'showcase-card-body';
-            body.innerHTML = '<div class="card-name" lang="bor">' + escapeHtml(entry.name_bororo) + '</div>' +
+            body.innerHTML = '<div class="card-name">' + escapeHtml(entry.name_bororo) + '</div>' +
                 (entry.name_portuguese ? '<div class="card-sub">' + escapeHtml(entry.name_portuguese) + '</div>' : '');
             card.appendChild(body);
 
@@ -794,7 +592,7 @@
             var info = document.createElement('div');
             info.className = 'showcase-detail-info';
 
-            var html = '<h3 lang="bor">' + escapeHtml(entry.name_bororo) + '</h3>';
+            var html = '<h3>' + escapeHtml(entry.name_bororo) + '</h3>';
             if (entry.name_portuguese) {
                 html += '<div class="detail-portuguese">' + escapeHtml(entry.name_portuguese) + '</div>';
             }

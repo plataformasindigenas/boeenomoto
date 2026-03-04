@@ -11,9 +11,7 @@ authors = [
 keywords = ["bororo", "indigenous", "linguistics", "dictionary", "fauna"]
 
 dependencies = [
-    "aptoro",
-    "kodudo",
-    "bibtexparser>=1.4.0",
+    "terradoc>=0.1.1",
 ]
 
 [project.optional-dependencies]

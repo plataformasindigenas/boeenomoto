@@ -116,8 +116,8 @@ def test_article_page_nav_links(docs_dir):
     assert '../dictionary.html' in content
     assert '../encyclopedia.html' in content
     assert '../fauna.html' in content
-    # Lang switch should use ../../ to go up to docs root
-    assert '../../en/encyclopedia.html' in content
+    # Lang switch should use ../../ to go to other locale's article
+    assert '../../en/encyclopedia/ecerae.html' in content
     # Back to index link
     assert '../encyclopedia.html' in content
 

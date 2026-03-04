@@ -1,274 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/favicon.ico">
     <title>Mori - Boe Eno Moto</title>
+    <link rel="stylesheet" href="../../css/terradoc.css">
+    <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1rem;
-            background: #F9F6F2;
-            color: #333;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #3D352F;
-            color: white;
-            padding: 0.5rem 1rem;
-            z-index: 100;
-            text-decoration: none;
-            border-radius: 0 0 4px 0;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        nav {
-            background: #3D352F;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-        nav a:hover, nav a.active {
-            background: rgba(255,255,255,0.15);
-        }
-        nav .brand {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        nav .lang-switch {
-            margin-left: auto;
-            font-size: 0.85rem;
-            opacity: 0.8;
-        }
-        nav .lang-switch:hover {
-            opacity: 1;
-        }
-        header {
-            text-align: center;
-            padding: 1rem 0;
-            border-bottom: 2px solid #e0e0e0;
-            margin-bottom: 1.5rem;
-        }
-        h1 {
-            margin: 0 0 0.5rem 0;
-            color: #3D352F;
-        }
-        .subtitle {
-            color: #6B6B6B;
-            font-size: 0.95rem;
-        }
-        .search-container {
-            background: white;
-            padding: 1rem;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            margin-bottom: 1rem;
-        }
-        .search-row {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .search-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .search-input:focus {
-            border-color: #C75B39;
-            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
-        }
-        .filter-select {
-            padding: 0.75rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            background: white;
-            cursor: pointer;
-        }
-        .stats {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-        }
-        .results-container {
-            background: white;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            overflow: hidden;
-        }
-        .empty-state {
-            padding: 3rem;
-            text-align: center;
-            color: #6B6B6B;
-        }
-        .empty-state h2 {
-            margin: 0 0 0.5rem 0;
-            color: #6B6B6B;
-        }
-        .entry {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        .entry:last-child {
-            border-bottom: none;
-        }
-        .entry:hover {
-            background: #f8f9fa;
-        }
-        .entry-header {
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
-        .entry-word {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #3D352F;
-        }
-        .entry-secondary {
-            color: #6B6B6B;
-            font-size: 1rem;
-        }
-        .entry-ipa {
-            color: #6B6B6B;
-            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
-        }
-        .entry-tag {
-            font-size: 0.75rem;
-            background: #F5EDE8;
-            color: #A84B2F;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .entry-definition {
-            margin: 0.5rem 0;
-            color: #444;
-        }
-        .entry-example {
-            margin: 0.5rem 0;
-            padding-left: 1rem;
-            border-left: 3px solid #C75B39;
-            color: #555;
-            font-style: italic;
-        }
-        .entry-scientific {
-            font-style: italic;
-            color: #6B6B6B;
-            font-size: 0.9rem;
-        }
-        .entry-comment {
-            margin-top: 0.5rem;
-            padding: 0.5rem;
-            background: #fff8e1;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #6B6B6B;
-        }
-        .entry-media {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.75rem;
-            align-items: flex-start;
-        }
-        .entry-thumbnail {
-            max-width: 120px;
-            max-height: 90px;
-            border-radius: 4px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .entry-thumbnail:hover {
-            transform: scale(1.05);
-        }
-        .entry-links {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .entry-links a {
-            font-size: 0.85rem;
-            color: #C75B39;
-            text-decoration: none;
-        }
-        .entry-links a:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            background: #fff59d;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
-        footer {
-            margin-top: 2rem;
-            padding: 1rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-            border-top: 1px solid #e0e0e0;
-        }
-        footer a {
-            color: #C75B39;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .search-row {
-                flex-direction: column;
-            }
-            .search-input, .filter-select {
-                width: 100%;
-            }
-            .entry-thumbnail {
-                max-width: 80px;
-            }
-            nav {
-                justify-content: center;
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                transition: none !important;
-            }
+        :root {
+            --td-color-primary: #3D352F;
+            --td-color-accent: #C75B39;
+            --td-color-accent-muted: #A84B2F;
+            --td-color-bg: #F9F6F2;
+            --td-color-bg-light: #F5EDE8;
+            --td-color-bg-infobox: #FAF8F5;
+            --td-color-border: #E8E4DF;
+            --td-color-border-dark: #C8B8A8;
+            --td-color-text: #333333;
+            --td-color-text-muted: #6B6B6B;
+            --td-color-highlight: #fff59d;
+            --td-color-warning-bg: #fff8e1;
+            --td-color-surface: #FFFFFF;
+            --td-color-border-light: #EEEEEE;
+            --td-color-text-secondary: #555555;
+            --td-color-accent-light: #FDF0EB;
+            --td-color-success: #5B8C5A;
+            --td-color-error: #CC0000;
+            --td-color-accent-ring: rgba(183, 82, 44, 0.2);
+            --td-radius: 4px;
+            --td-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --td-font-headings: ;
+            --td-font-mono: 'Lucida Sans Unicode', 'DejaVu Sans', monospace;
         }
 .breadcrumb {
     font-size: 0.9rem;
-    color: #6B6B6B;
+    color: var(--td-color-text-muted);
     margin-bottom: 1rem;
 }
 .breadcrumb a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
 }
 .breadcrumb a:hover {
@@ -279,7 +50,7 @@
 }
 article header {
     text-align: left;
-    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 2px solid var(--td-color-border);
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
 }
@@ -288,73 +59,75 @@ article header h1 {
     margin: 0 0 0.5rem 0;
 }
 .article-abstract {
-    color: #555;
+    color: var(--td-color-text-secondary);
     font-size: 1.05rem;
     line-height: 1.6;
     margin: 0.5rem 0;
 }
 .article-variants {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--td-color-text-secondary);
     margin-bottom: 0.5rem;
 }
 .variant-tag {
-    background: #E8E4DF;
+    background: var(--td-color-border);
     padding: 0.1rem 0.5rem;
-    border-radius: 3px;
+    border-radius: var(--td-radius);
     margin-right: 0.3rem;
     font-style: italic;
 }
 .infobox {
     float: right;
     clear: right;
-    width: 260px;
-    margin: 0 0 1rem 1.5rem;
+    width: 280px;
+    margin: 0 0 1.25rem 1.5rem;
     padding: 0;
-    border: 1px solid #C8B8A8;
-    background: #FAF8F5;
+    border: 1px solid var(--td-color-border-dark);
+    background: linear-gradient(to bottom, var(--td-color-bg-infobox), var(--td-color-surface));
     font-size: 0.88rem;
+    border-radius: var(--td-radius);
+    overflow: hidden;
 }
 .infobox-header {
-    background: #E8DFD5;
-    padding: 0.6rem 0.75rem;
+    background: var(--td-color-accent-light);
+    padding: 0.7rem 0.85rem;
     font-weight: 600;
-    color: #3D352F;
+    color: var(--td-color-primary);
     text-align: center;
-    border-bottom: 1px solid #C8B8A8;
+    border-bottom: 1px solid var(--td-color-border-dark);
 }
 .infobox-image {
     text-align: center;
-    padding: 0.75rem;
-    background: white;
-    border-bottom: 1px solid #C8B8A8;
+    padding: 0.85rem;
+    background: var(--td-color-surface);
+    border-bottom: 1px solid var(--td-color-border-dark);
 }
 .infobox-image img {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 240px;
     object-fit: contain;
-    border-radius: 2px;
+    border-radius: var(--td-radius);
 }
 .infobox-image-credit {
     font-size: 0.75rem;
-    color: #888;
+    color: var(--td-color-text-muted);
     margin-top: 0.35rem;
 }
 .infobox-row {
     padding: 0.5rem 0.75rem;
-    border-bottom: 1px solid #E8E4DF;
+    border-bottom: 1px solid var(--td-color-border);
 }
 .infobox-row:last-child {
     border-bottom: none;
 }
 .infobox-label {
     font-weight: 500;
-    color: #666;
+    color: var(--td-color-text-secondary);
     font-size: 0.8rem;
     margin-bottom: 0.2rem;
 }
 .infobox-value {
-    color: #333;
+    color: var(--td-color-text);
 }
 .infobox-keywords {
     display: flex;
@@ -363,30 +136,40 @@ article header h1 {
 }
 .infobox-keyword {
     font-size: 0.75rem;
-    background: #E8E4DF;
-    color: #555;
+    background: var(--td-color-border);
+    color: var(--td-color-text-secondary);
     padding: 0.15rem 0.4rem;
-    border-radius: 3px;
+    border-radius: var(--td-radius);
 }
 .infobox-keyword a {
-    color: #555;
+    color: var(--td-color-text-secondary);
     text-decoration: none;
 }
 .infobox-keyword a:hover {
     text-decoration: underline;
 }
 .infobox-link a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
     font-size: 0.85rem;
 }
 .infobox-link a:hover {
     text-decoration: underline;
 }
+.infobox-thumb {
+    display: inline-block;
+    margin: 2px;
+}
+.infobox-thumb img {
+    max-width: 50px;
+    max-height: 40px;
+    border-radius: 2px;
+    object-fit: cover;
+}
 .toc {
     display: inline-block;
-    background: #FAF8F5;
-    border: 1px solid #C8B8A8;
+    background: var(--td-color-bg-infobox);
+    border: 1px solid var(--td-color-border-dark);
     padding: 0.75rem 1.25rem;
     margin: 0.5rem 0 1rem 0;
     font-size: 0.9rem;
@@ -394,7 +177,7 @@ article header h1 {
 }
 .toc-title {
     font-weight: 600;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -407,7 +190,7 @@ article header h1 {
     padding: 0.2rem 0;
 }
 .toc-list a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
 }
 .toc-list a:hover {
@@ -419,7 +202,7 @@ article header h1 {
 }
 .article-content {
     line-height: 1.7;
-    color: #333;
+    color: var(--td-color-text);
 }
 .article-content::after {
     content: "";
@@ -428,18 +211,32 @@ article header h1 {
 }
 .article-content h3 {
     font-size: 1.3rem;
-    color: #3D352F;
-    margin: 1.5rem 0 0.75rem 0;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid #C8B8A8;
+    color: var(--td-color-primary);
+    margin: 2rem 0 0.75rem 0;
+    padding-left: 0.75rem;
+    border-left: 3px solid var(--td-color-accent);
     font-weight: 600;
+    line-height: 1.3;
 }
 .article-content h3:first-child {
     margin-top: 0;
 }
+.article-content > p:first-of-type {
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+.article-content > p:first-of-type::first-letter {
+    float: left;
+    font-size: 2.8rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--td-color-accent);
+    margin-right: 0.15rem;
+    margin-top: 0.05rem;
+}
 .article-content h4 {
     font-size: 1.1rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin: 1.25rem 0 0.5rem 0;
     font-weight: 600;
 }
@@ -459,55 +256,55 @@ article header h1 {
 }
 .article-content strong {
     font-weight: 600;
-    color: #2D2520;
+    color: var(--td-color-primary);
 }
 .article-content hr {
     border: none;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
     margin: 1.25rem 0;
 }
 .broken-link {
-    color: #cc0000;
+    color: var(--td-color-error);
     text-decoration: underline wavy;
 }
 .examples-section {
-    margin-top: 1.25rem;
+    margin-top: 2rem;
 }
 .examples-title {
     font-size: 1rem;
     font-weight: 600;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .example-block {
-    background: linear-gradient(to right, #F5F0EB, #FAF8F5);
-    border-left: 4px solid #C75B39;
+    background: linear-gradient(to right, var(--td-color-bg-light), var(--td-color-bg-infobox));
+    border-left: 4px solid var(--td-color-accent);
     padding: 0.9rem 1rem;
     margin: 0.6rem 0;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 var(--td-radius) var(--td-radius) 0;
 }
 .example-bororo {
     font-size: 1.05rem;
     font-weight: 500;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.4rem;
     font-style: italic;
 }
 .example-translation {
     font-size: 0.92rem;
-    color: #666;
+    color: var(--td-color-text-secondary);
     padding-left: 0.5rem;
-    border-left: 2px solid #DDD;
+    border-left: 2px solid var(--td-color-border-dark);
     margin-left: 0.25rem;
 }
 .references-section {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
 }
 .references-section h2 {
     font-size: 1.2rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .references-section ol {
@@ -517,19 +314,19 @@ article header h1 {
     margin: 0.5rem 0;
     font-size: 0.9rem;
     line-height: 1.5;
-    color: #444;
+    color: var(--td-color-text-secondary);
 }
 .ref-error {
-    color: #cc0000;
+    color: var(--td-color-error);
 }
 .see-also-section {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
 }
 .see-also-section h2 {
     font-size: 1.2rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .see-also-section ul {
@@ -541,29 +338,29 @@ article header h1 {
 }
 .see-also-section li a {
     display: inline-block;
-    background: #F5EDE8;
-    color: #A84B2F;
+    background: var(--td-color-bg-light);
+    color: var(--td-color-accent-muted);
     padding: 0.3rem 0.75rem;
-    border-radius: 4px;
+    border-radius: var(--td-radius);
     text-decoration: none;
     font-size: 0.9rem;
 }
 .see-also-section li a:hover {
-    background: #E8DFD5;
+    background: var(--td-color-accent-light);
     text-decoration: underline;
 }
 .cross-links-section {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
 }
 .cross-links-section h2 {
     font-size: 1.2rem;
-    color: #3D352F;
+    color: var(--td-color-primary);
     margin-bottom: 0.75rem;
 }
 .cross-links-section a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
     margin-right: 1rem;
 }
@@ -573,15 +370,15 @@ article header h1 {
 .article-footer {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #E8E4DF;
+    border-top: 1px solid var(--td-color-border);
     font-size: 0.85rem;
-    color: #888;
+    color: var(--td-color-text-muted);
 }
 .article-footer .category-breadcrumbs {
     margin-top: 0.5rem;
 }
 .article-footer .category-breadcrumbs a {
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
 }
 .article-footer .category-breadcrumbs a:hover {
@@ -590,7 +387,7 @@ article header h1 {
 .back-link {
     display: inline-block;
     margin-top: 1.5rem;
-    color: #C75B39;
+    color: var(--td-color-accent);
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -622,15 +419,26 @@ article header h1 {
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     <nav aria-label="Main navigation">
-        <a href="../index.html" class="brand">Boe Eno Moto</a>
-        <a href="../dictionary.html">Dictionary</a>
-        <a href="../encyclopedia.html" class="active" aria-current="page">Encyclopedia</a>
-        <a href="../fauna.html">Fauna</a>
-        <a href="../bibliography.html">Bibliography</a>
-        <a href="../../pt/encyclopedia.html" class="lang-switch">PT</a>
+        <div class="td-nav-inner">
+            <a href="../index.html" class="brand">
+                <img src="../../images/logo.png" alt="" class="brand-logo">
+                <span>Boe Eno Moto</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <a href="../dictionary.html">Dictionary</a>
+                <a href="../encyclopedia.html" class="active" aria-current="page">Encyclopedia</a>
+                <a href="../fauna.html">Fauna</a>
+                <a href="../bibliography.html">Bibliography</a>
+            </div>
+            <div class="lang-switch" aria-label="Language selector">
+                    <a href="../../pt/encyclopedia/mori.html" class="lang-link">Português</a>
+                    <span class="lang-current" aria-current="true">English</span>
+            </div>
+        </div>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" class="td-container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="../encyclopedia.html">Encyclopedia</a>
         <span class="breadcrumb-sep">&rsaquo;</span>
@@ -640,69 +448,126 @@ article header h1 {
     <article>
         <header>
             <h1>Mori</h1>
-            <p class="article-abstract">Vingança, reompensa. 
-Conceito central na vida social e ritual bororo, abrangendo vingança, recompensa, retribuição social, compensação de danos e obrigação ritual.</p>
+            <p class="article-abstract">Vingança, recompensa, retribuição ou pagamento; princípio central de reciprocidade e desagravo funerário na sociedade bororo.</p>
         </header>
 
         <aside class="infobox">
             <div class="infobox-header">Mori</div>
             <div class="infobox-row">
-                <div class="infobox-label">Type</div>
-                <div class="infobox-value">ritual</div>
-            </div>
-                <div class="infobox-row">
-                    <div class="infobox-label">Participants</div>
-                    <div class="infobox-value">Todos os clãs</div>
-                </div>
-                <div class="infobox-row">
-                    <div class="infobox-label">Type</div>
-                    <div class="infobox-value">Retribuição ritual</div>
-                </div>
-            <div class="infobox-row">
                 <div class="infobox-label">Categories</div>
                 <div class="infobox-keywords">
-                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=sociedade/vingan%C3%A7a">sociedade/vingança</a></span>
-                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=ritual/retribui%C3%A7%C3%A3o">ritual/retribuição</a></span>
-                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=ritual">ritual</a></span>
                     <span class="infobox-keyword"><a href="../encyclopedia.html?category=sociedade">sociedade</a></span>
-                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=cultura-material">cultura-material</a></span>
-                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=natureza/fauna/mam%C3%ADfero">natureza/fauna/mamífero</a></span>
-                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=cosmologia/morte">cosmologia/morte</a></span>
-                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=ritual/funeral">ritual/funeral</a></span>
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=ritual">ritual</a></span>
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=morte">morte</a></span>
+                    <span class="infobox-keyword"><a href="../encyclopedia.html?category=reciprocidade">reciprocidade</a></span>
                 </div>
             </div>
         </aside>
 
-        <div class="toc"><div class="toc-title"></div><ul class='toc-list'><li><a href="#mori-section-0">1. Mori: vingança</a></li><li><a href="#mori-section-1">2. Mori: recompensa e retribuição social</a></li><li><a href="#mori-section-2">3. Mori: vingança ritual pela morte</a></li></ul></div>
+        <div class="toc"><div class="toc-title"></div><ul class='toc-list'><li><a href="#mori-section-0">1. Exemplos</a></li><li><a href="#mori-section-1">2. Observações sociais</a></li></ul></div>
 
         <div class="article-content">
-            <p>O termo <em>mori</em> é um conceito central na organização social, moral e ritual dos Bororo. Trata-se de uma noção polissêmica que abrange ideias de vingança, retribuição, recompensa, compensação de danos, presente ritual e obrigação social, variando conforme o contexto em que é empregado.</p>
-<h3 id="mori-section-0">Mori: vingança</h3>
-<p>Na acepção mais direta, mori significa vingança, no sentido claro de retaliar ou compensar uma ofensa grave. Exemplo: kajáo, mori mode — &quot;espere, eu me vingarei&quot;.</p>
-<h3 id="mori-section-1">Mori: recompensa e retribuição social</h3>
-<p>A recompensa ou retribuição por um favor, ajuda ou objeto recebido é uma obrigação profundamente enraizada na tradição bororo. Trata-se de uma norma social incontornável: ninguém pode, nem deve, deixar de retribuir. Quem se esquece — voluntária ou involuntariamente — torna-se alvo de escárnio e desprezo coletivo.</p>
-<p>A pessoa que recebe um favor deve, inevitavelmente, oferecer um mori, geralmente escolhido por iniciativa própria ou determinado por convenções tradicionais. Nessa acepção ampliada, mori pode corresponder a presente, dádiva, compensação por danos causados, agrado ou mimo ritual. Se um cão morde alguém, o ferido não deve reagir com hostilidade, mas aguarda o mori por parte do dono do animal.</p>
-<p>Esse mori consiste, em geral, numa espalmação de pasta vermelha de urucum. Caso a retribuição demore, o ferido se considera ofendido e o proprietário do cão deixa de cumprir uma de suas obrigações sociais. Quando duas crianças brigam e uma sai prejudicada, o pai da criança agressora deve realizar o mori, espalhando pasta de urucum sobre a criança ofendida.</p>
-<p>Se uma criança se machuca ao tropeçar em um objeto, a mãe, outra pessoa ou a própria criança executa o mori, batendo simbolicamente no objeto causador do ferimento. Quem perde ou danifica um objeto alheio deve compensar o prejuízo oferecendo um mori ao proprietário. Quando alguém se fere gravemente — por exemplo, ao cair de uma árvore ou ser picado por uma cobra — os parentes realizam o mori, tingindo o ferido com urucum e adornando-o com plumas.</p>
-<p>Em caçadas ou pescarias oficiais que envolvem um fágù, representante ritual de um defunto, se esse representante se machuca, os parentes do falecido devem chorar, escarificar-se e deixar cair sangue sobre ele. Após a recuperação, o ferido deve retribuir esse mori com outro mori, espalhando urucum sobre todos que participaram do luto ritual. Quando alguém retorna à aldeia após longa ausência, sem que se soubesse se estava vivo ou morto, entoa-se imediatamente o canto Roia Kurirewu, reservado aos defuntos.</p>
-<p>No dia seguinte, o recém-chegado recebe um mori, sendo untado com pasta vermelha de urucum. Por delicadeza e elegância, quem oferece um presente frequentemente minimiza o valor do objeto e tenta dissuadir o outro da obrigação de retribuir. Essa atitude, porém, é apenas uma fórmula de cortesia: ninguém a leva ao pé da letra, e a retribuição sempre ocorre.</p>
-<p>Essas normas não se aplicam da mesma forma às relações entre Bororo e não indígenas. O Bororo não se sente obrigado a retribuir presentes recebidos de brancos, mas espera destes compensações generosas, justificando tal expectativa pela abundância de bens que os não indígenas possuem. Idosos e doentes graves são dispensados da obrigação do mori, embora expressem gratidão apertando com força a mão do doador e o objeto recebido.</p>
-<h3 id="mori-section-2">Mori: vingança ritual pela morte</h3>
-<p>Quando um Bororo morre, é escolhido um representante ritual do falecido, chamado aroe maiwu (&quot;alma nova&quot;) ou iadu (&quot;companheiro&quot;). Sua principal obrigação é vingar a morte do representado. Essa vingança consiste em abater uma onça, cujo couro será entregue a um parente do defunto.</p>
-<p>A onça morta recebe o nome de mori, pois representa simultaneamente vingança e retribuição. Esse ato está ligado ao ritual denominado barege ekedodu, o &quot;banquete das feras&quot;. Os Bororo acreditam que a morte é causada por um bope, espírito maléfico, e que a onça é, ela própria, um bope.</p>
-<p>Assim, ao matar o felídeo, elimina-se um espírito causador de morte, realizando-se uma vingança de ordem social, ritual e cosmológica.</p>
+            <h2>MORI</h2>
+<p><strong>Mori</strong> designa vingança, recompensa, retribuição ou pagamento.</p>
+<hr />
+<h2>1. Mori: vingança</h2>
+<p>Emprega-se no sentido direto de vingança.</p>
+<p><em>ex.</em> <strong>kajao mori moge</strong> — “espera: vingar-me-ei”.</p>
+<hr />
+<h2>2. Mori: recompensa</h2>
+<p>A recompensa ou retribuição por um favor ou por um objeto recebido é uma obrigação social extremamente forte e tradicional.<br />
+Ninguém pode deixar de retribuir. Quem esquece — voluntária ou involuntariamente — torna-se alvo de escárnio e desprezo.</p>
+<p>A pessoa que recebe um favor deve retribuir com alguma coisa, geralmente à sua escolha, mas às vezes conforme a tradição.</p>
+<p>O termo pode significar também:</p>
+<ul>
+<li>presente</li>
+<li>dádiva</li>
+<li>reparação de danos</li>
+<li>agrado</li>
+<li>mimo</li>
+</ul>
+<h3 id="mori-section-0">Exemplos</h3>
+<ul>
+<li>
+<p>Se um cão morde alguém, o ferido não se ofende imediatamente, mas aguarda o mori do dono.<br />
+O mori costuma consistir numa espalmação de pasta vermelha de urucu.<br />
+Se demora, considera-se ofensa social.</p>
+</li>
+<li>
+<p>Quando duas crianças brigam e uma sai prejudicada, o pai da agressora espalma urucu na ofendida.</p>
+</li>
+<li>
+<p>Se uma criança se fere ao tropeçar, bate-se simbolicamente no objeto causador.</p>
+</li>
+<li>
+<p>Quem estraga ou perde objeto alheio deve dar mori ao proprietário.</p>
+</li>
+<li>
+<p>Em ferimentos por queda ou picada de cobra, parentes aplicam urucu e plumas.</p>
+</li>
+<li>
+<p>Em caçadas ou pescarias rituais envolvendo representante de morto, se este se fere, os parentes do defunto choram e se escarificam deixando cair sangue sobre ele.<br />
+Depois de curado, o ferido retribui espalhando urucu nos participantes.</p>
+</li>
+<li>
+<p>Quando alguém retorna após longa ausência, entoa-se o canto <strong>Roia Kurirewu</strong> (dos mortos) e no dia seguinte o recém-chegado recebe urucu.</p>
+</li>
+</ul>
+<h3 id="mori-section-1">Observações sociais</h3>
+<p>Quem oferece um presente frequentemente diminui o valor do objeto para desencorajar retribuição — fórmula de delicadeza que não suspende a obrigação.</p>
+<p>A reciprocidade não é simétrica com não indígenas:<br />
+o Bororo não se considera obrigado a retribuir presentes aos brancos, mas espera compensações deles.</p>
+<p>Velhos e doentes graves são dispensados do mori e agradecem apertando a mão do doador.</p>
+<hr />
+<h2>3. Mori: vingança pela morte</h2>
+<p>Quando um Bororo morre, escolhe-se um representante:</p>
+<p><strong>aroe maiwu</strong> (“alma nova”) ou <strong>iadu</strong>.</p>
+<p>Sua obrigação principal é vingar o morto abatendo uma onça.<br />
+O couro é dado a um parente do defunto.</p>
+<p>A onça recebe o nome <strong>mori</strong> e está ligada ao ritual <strong>berege ekedodu</strong> (“banquete das feras”).</p>
+<p>Acredita-se que a morte seja causada por um <strong>bope</strong> (espírito maléfico) e que a onça seja um bope.<br />
+Matando o animal elimina-se um bope e realiza-se a vingança.</p>
+<hr />
+<h2>Interpretação etnográfica</h2>
+<p>Estudos posteriores mostram que o mori não é apenas compensação material, mas um mecanismo de reorganização social.</p>
+<p>A caça do animal de vingança confere prestígio ao caçador e cria obrigações recíprocas entre famílias.<br />
+O oferecimento do mori exige contrapartidas — ornamentos, nomes ou bens — inserindo o indivíduo na rede de relações sociais.</p>
+<p>Assim, o mori:</p>
+<ul>
+<li>transforma dano em vínculo social</li>
+<li>regula honra e prestígio</li>
+<li>reintegra a pessoa substituta do morto à coletividade</li>
+<li>recompõe a ordem após a morte</li>
+</ul>
+<p>Mais que vingança, trata-se de um processo de restauração do equilíbrio social e cosmológico.</p>
 
         </div>
 
 
+        <section class="references-section">
+            <h2>References</h2>
+            <ol>
+                <li class="ref-error">[ALBISETTI; VENTURELLI 1962] — reference not found</li>
+                <li class="ref-error">[VIERTLER] — reference not found</li>
+                <li class="ref-error">[NOVAES] — reference not found</li>
+            </ol>
+        </section>
 
+        <section class="see-also-section">
+            <h2>See also</h2>
+            <ul>
+                <li><a href="aroe-maiwu.html">aroe-maiwu</a></li>
+                <li><a href="bope.html">bope</a></li>
+                <li><a href="bari.html">bari</a></li>
+            </ul>
+        </section>
 
 
         <div class="article-footer">
-            <div>Last updated: 2026-01-07</div>
+            <div>Last updated: 2026-02-21</div>
             <div class="category-breadcrumbs">
                 Categories:
-                        <a href="../encyclopedia.html?category=sociedade">sociedade</a> &rsaquo;                         <a href="../encyclopedia.html?category=sociedade/vingan%C3%A7a">vingança</a> &bull;                         <a href="../encyclopedia.html?category=ritual">ritual</a> &rsaquo;                         <a href="../encyclopedia.html?category=ritual/retribui%C3%A7%C3%A3o">retribuição</a> &bull;                         <a href="../encyclopedia.html?category=ritual">ritual</a> &bull;                         <a href="../encyclopedia.html?category=sociedade">sociedade</a> &bull;                         <a href="../encyclopedia.html?category=cultura-material">cultura-material</a> &bull;                         <a href="../encyclopedia.html?category=natureza">natureza</a> &rsaquo;                         <a href="../encyclopedia.html?category=natureza/fauna">fauna</a> &rsaquo;                         <a href="../encyclopedia.html?category=natureza/fauna/mam%C3%ADfero">mamífero</a> &bull;                         <a href="../encyclopedia.html?category=cosmologia">cosmologia</a> &rsaquo;                         <a href="../encyclopedia.html?category=cosmologia/morte">morte</a> &bull;                         <a href="../encyclopedia.html?category=ritual">ritual</a> &rsaquo;                         <a href="../encyclopedia.html?category=ritual/funeral">funeral</a>            </div>
+                        <a href="../encyclopedia.html?category=sociedade">sociedade</a> &bull;                         <a href="../encyclopedia.html?category=ritual">ritual</a> &bull;                         <a href="../encyclopedia.html?category=morte">morte</a> &bull;                         <a href="../encyclopedia.html?category=reciprocidade">reciprocidade</a>            </div>
         </div>
     </article>
 
@@ -710,7 +575,9 @@ Conceito central na vida social e ritual bororo, abrangendo vingança, recompens
     </main>
 
     <footer>
-        <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        <div class="td-container">
+            <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        </div>
     </footer>
 
     <script src="../../js/common.js"></script>

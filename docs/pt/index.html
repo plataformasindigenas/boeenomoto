@@ -1,332 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico">
     <title>Início - Boe Eno Moto</title>
+    <link rel="stylesheet" href="../css/terradoc.css">
+    <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1rem;
-            background: #F9F6F2;
-            color: #333;
-        }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #3D352F;
-            color: white;
-            padding: 0.5rem 1rem;
-            z-index: 100;
-            text-decoration: none;
-            border-radius: 0 0 4px 0;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-        nav {
-            background: #3D352F;
-            padding: 0.75rem 1rem;
-            border-radius: 4px;
-            margin-bottom: 1.5rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
-        nav a:hover, nav a.active {
-            background: rgba(255,255,255,0.15);
-        }
-        nav .brand {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        nav .lang-switch {
-            margin-left: auto;
-            font-size: 0.85rem;
-            opacity: 0.8;
-        }
-        nav .lang-switch:hover {
-            opacity: 1;
-        }
-        header {
-            text-align: center;
-            padding: 1rem 0;
-            border-bottom: 2px solid #e0e0e0;
-            margin-bottom: 1.5rem;
-        }
-        h1 {
-            margin: 0 0 0.5rem 0;
-            color: #3D352F;
-        }
-        .subtitle {
-            color: #6B6B6B;
-            font-size: 0.95rem;
-        }
-        .search-container {
-            background: white;
-            padding: 1rem;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            margin-bottom: 1rem;
-        }
-        .search-row {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-        .search-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .search-input:focus {
-            border-color: #C75B39;
-            box-shadow: 0 0 0 2px rgba(199, 91, 57, 0.2);
-        }
-        .filter-select {
-            padding: 0.75rem;
-            font-size: 1rem;
-            border: 1px solid #E8E4DF;
-            border-radius: 4px;
-            background: white;
-            cursor: pointer;
-        }
-        .stats {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-        }
-        .results-container {
-            background: white;
-            border-radius: 4px;
-            border: 1px solid #E8E4DF;
-            overflow: hidden;
-        }
-        .empty-state {
-            padding: 3rem;
-            text-align: center;
-            color: #6B6B6B;
-        }
-        .empty-state h2 {
-            margin: 0 0 0.5rem 0;
-            color: #6B6B6B;
-        }
-        .entry {
-            padding: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-        .entry:last-child {
-            border-bottom: none;
-        }
-        .entry:hover {
-            background: #f8f9fa;
-        }
-        .entry-header {
-            display: flex;
-            align-items: baseline;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.25rem;
-        }
-        .entry-word {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #3D352F;
-        }
-        .entry-secondary {
-            color: #6B6B6B;
-            font-size: 1rem;
-        }
-        .entry-ipa {
-            color: #6B6B6B;
-            font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
-        }
-        .entry-tag {
-            font-size: 0.75rem;
-            background: #F5EDE8;
-            color: #A84B2F;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-        .entry-definition {
-            margin: 0.5rem 0;
-            color: #444;
-        }
-        .entry-example {
-            margin: 0.5rem 0;
-            padding-left: 1rem;
-            border-left: 3px solid #C75B39;
-            color: #555;
-            font-style: italic;
-        }
-        .entry-scientific {
-            font-style: italic;
-            color: #6B6B6B;
-            font-size: 0.9rem;
-        }
-        .entry-comment {
-            margin-top: 0.5rem;
-            padding: 0.5rem;
-            background: #fff8e1;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            color: #6B6B6B;
-        }
-        .entry-media {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.75rem;
-            align-items: flex-start;
-        }
-        .entry-thumbnail {
-            max-width: 120px;
-            max-height: 90px;
-            border-radius: 4px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .entry-thumbnail:hover {
-            transform: scale(1.05);
-        }
-        .entry-links {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .entry-links a {
-            font-size: 0.85rem;
-            color: #C75B39;
-            text-decoration: none;
-        }
-        .entry-links a:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            background: #fff59d;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
-        footer {
-            margin-top: 2rem;
-            padding: 1rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #6B6B6B;
-            border-top: 1px solid #e0e0e0;
-        }
-        footer a {
-            color: #C75B39;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .search-row {
-                flex-direction: column;
-            }
-            .search-input, .filter-select {
-                width: 100%;
-            }
-            .entry-thumbnail {
-                max-width: 80px;
-            }
-            nav {
-                justify-content: center;
-            }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                transition: none !important;
-            }
+        :root {
+            --td-color-primary: #3D352F;
+            --td-color-accent: #C75B39;
+            --td-color-accent-muted: #A84B2F;
+            --td-color-bg: #F9F6F2;
+            --td-color-bg-light: #F5EDE8;
+            --td-color-bg-infobox: #FAF8F5;
+            --td-color-border: #E8E4DF;
+            --td-color-border-dark: #C8B8A8;
+            --td-color-text: #333333;
+            --td-color-text-muted: #6B6B6B;
+            --td-color-highlight: #fff59d;
+            --td-color-warning-bg: #fff8e1;
+            --td-color-surface: #FFFFFF;
+            --td-color-border-light: #EEEEEE;
+            --td-color-text-secondary: #555555;
+            --td-color-accent-light: #FDF0EB;
+            --td-color-success: #5B8C5A;
+            --td-color-error: #CC0000;
+            --td-color-accent-ring: rgba(183, 82, 44, 0.2);
+            --td-radius: 4px;
+            --td-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --td-font-headings: ;
+            --td-font-mono: 'Lucida Sans Unicode', 'DejaVu Sans', monospace;
         }
         .hero {
             text-align: center;
-            padding: 2.5rem 1rem;
-            background: #3D352F;
+            padding: 3rem 1.5rem;
+            background: var(--td-color-primary);
             color: white;
-            border-radius: 4px;
-            margin-bottom: 2rem;
+            border-radius: var(--td-radius);
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
         }
         .hero h1 {
             color: white;
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
+            position: relative;
         }
         .hero p {
             font-size: 1.2rem;
-            opacity: 0.85;
+            opacity: 0.9;
             max-width: 600px;
             margin: 0 auto;
+            position: relative;
         }
         .platforms {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
         .platform-card {
-            background: white;
-            border-radius: 4px;
-            padding: 1.5rem;
-            border: 1px solid #E8E4DF;
+            background: var(--td-color-surface);
+            border-radius: var(--td-radius);
+            padding: 1.75rem;
+            border: 1px solid var(--td-color-border);
             text-decoration: none;
             color: inherit;
-            transition: border-color 0.2s;
-            display: block;
+            display: flex;
+            flex-direction: column;
         }
         .platform-card:hover {
-            border-color: #C75B39;
+            border-color: var(--td-color-accent);
+            transform: translateY(-2px);
         }
         .platform-card h2 {
             margin: 0 0 0.5rem 0;
-            color: #3D352F;
+            color: var(--td-color-primary);
             font-size: 1.4rem;
         }
-        .platform-card p {
+        .platform-card .card-desc {
             margin: 0 0 1rem 0;
-            color: #666;
+            color: var(--td-color-text-secondary);
+            flex: 1;
         }
-        .platform-card .count {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #C75B39;
+        .platform-card .card-footer {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--td-color-border-light);
         }
-        .platform-card .label {
+        .platform-card .card-count {
             font-size: 0.9rem;
-            color: #888;
+            color: var(--td-color-text-muted);
+        }
+        .platform-card .card-count strong {
+            font-size: 1.1rem;
+            color: var(--td-color-accent);
+        }
+        .platform-card .card-cta {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--td-color-accent);
         }
         .about {
-            background: white;
-            border-radius: 4px;
-            padding: 1.5rem;
-            border: 1px solid #E8E4DF;
+            background: var(--td-color-surface);
+            border-radius: var(--td-radius);
+            padding: 2rem;
+            border: 1px solid var(--td-color-border);
         }
         .about h2 {
             margin-top: 0;
-            color: #3D352F;
+            color: var(--td-color-primary);
         }
     </style>
 </head>
@@ -334,15 +123,26 @@
     <a href="#main-content" class="skip-link">Pular para conteúdo</a>
 
     <nav aria-label="Navegação principal">
-        <a href="index.html" class="brand">Boe Eno Moto</a>
-        <a href="dictionary.html">Dicionário</a>
-        <a href="encyclopedia.html">Enciclopédia</a>
-        <a href="fauna.html">Fauna</a>
-        <a href="bibliography.html">Bibliografia</a>
-        <a href="../en/index.html" class="lang-switch">EN</a>
+        <div class="td-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="../images/logo.png" alt="" class="brand-logo">
+                <span>Boe Eno Moto</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <a href="dictionary.html">Dicionário</a>
+                <a href="encyclopedia.html">Enciclopédia</a>
+                <a href="fauna.html">Fauna</a>
+                <a href="bibliography.html">Bibliografia</a>
+            </div>
+            <div class="lang-switch" aria-label="Seletor de idioma">
+                    <span class="lang-current" aria-current="true">Português</span>
+                    <a href="../en/index.html" class="lang-link">English</a>
+            </div>
+        </div>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" class="td-container">
     <div class="hero">
         <h1>Boe Eno Moto</h1>
         <p>Mundo Bororo</p>
@@ -351,30 +151,35 @@
     <div class="platforms">
         <a href="dictionary.html" class="platform-card">
             <h2>Dicionário</h2>
-            <p>Palavras e expressões da língua Bororo com tradução para Português, transcrição fonética e exemplos.</p>
-            <div class="count">2866</div>
-            <div class="label">entradas</div>
+            <p class="card-desc">Palavras e expressões da língua Bororo com tradução para Português, transcrição fonética e exemplos.</p>
+            <div class="card-footer">
+                <span class="card-count"><strong>2866</strong> entradas</span>
+                <span class="card-cta">Explorar &rarr;</span>
+            </div>
         </a>
-
         <a href="encyclopedia.html" class="platform-card">
             <h2>Enciclopédia</h2>
-            <p>Verbetes sobre cultura, rituais, organização social e conhecimentos tradicionais do povo Bororo.</p>
-            <div class="count">184</div>
-            <div class="label">verbetes</div>
+            <p class="card-desc">Verbetes sobre cultura, rituais, organização social e conhecimentos tradicionais do povo Bororo.</p>
+            <div class="card-footer">
+                <span class="card-count"><strong>202</strong> verbetes</span>
+                <span class="card-cta">Explorar &rarr;</span>
+            </div>
         </a>
-
         <a href="fauna.html" class="platform-card">
             <h2>Fauna</h2>
-            <p>Nomes de animais na língua Bororo com classificação tradicional, nomes científicos e imagens.</p>
-            <div class="count">97</div>
-            <div class="label">espécies</div>
+            <p class="card-desc">Nomes de animais na língua Bororo com classificação tradicional, nomes científicos e imagens.</p>
+            <div class="card-footer">
+                <span class="card-count"><strong>97</strong> espécies</span>
+                <span class="card-cta">Explorar &rarr;</span>
+            </div>
         </a>
-
         <a href="bibliography.html" class="platform-card">
             <h2>Bibliografia</h2>
-            <p>Referências bibliográficas sobre a língua, cultura e história do povo Bororo.</p>
-            <div class="count">197</div>
-            <div class="label">referências</div>
+            <p class="card-desc">Referências bibliográficas sobre a língua, cultura e história do povo Bororo.</p>
+            <div class="card-footer">
+                <span class="card-count"><strong>197</strong> referências</span>
+                <span class="card-cta">Explorar &rarr;</span>
+            </div>
         </a>
     </div>
 
@@ -386,7 +191,9 @@
     </main>
 
     <footer>
-        <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        <div class="td-container">
+            <p>Gerado com <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> e <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+        </div>
     </footer>
 
     <script src="../js/common.js"></script>

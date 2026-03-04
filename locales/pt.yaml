@@ -180,3 +180,9 @@ entries_label: "entradas"
 species_label: "espécies"
 articles_label: "verbetes"
 references_label: "referências"
+
+# Terradoc UI
+nav_menu_label: "Menu"
+lang_switch_label: "Seletor de idioma"
+footer_text: ""
+card_cta: "Explorar"

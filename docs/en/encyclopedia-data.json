@@ -3,7 +3,7 @@
     "name": "bororo_encyclopedia",
     "description": "Bororo Encyclopedia Entries",
     "version": "2.0",
-    "record_count": 184
+    "record_count": 202
   },
   "data": [
     {
@@ -417,6 +417,22 @@
       "has_content": true
     },
     {
+      "id": "boe-ewa",
+      "title": "Boe ewa",
+      "abstract": "Aldeia bororo. Entrada estrutural central sobre organizacão material, social, ritual e cosmológica da aldeia (boe ewa), com nomenclatura, origem lendaria, genealogia, organizacão espacial, clãs e sub-clas, bai mana gejewu, matrimonio e parentesco. (Em construcao.)",
+      "categories": [
+        "organizacao-social",
+        "cosmologia",
+        "territorio",
+        "arquitetura",
+        "parentesco",
+        "ritual"
+      ],
+      "variants": [],
+      "entry_type": "estrutura-central",
+      "has_content": true
+    },
+    {
       "id": "boe-ewadaru",
       "title": "Boe ewadaru",
       "abstract": "Provérbio, idiotismo, boato.",
@@ -560,11 +576,14 @@
     {
       "id": "cebegiwuge",
       "title": "Cebegiwuge",
-      "abstract": "Cebegiwuge (plural de cebegiwu) — Indivíduos que moram embaixo, coisas que estão embaixo; membros do sub-clã mais afastado do leste com relação aos outros dois sub-clãs do mesmo clã.",
-      "categories": [],
+      "abstract": "Indivíduos ou elementos situados abaixo; nome de sub-clã.",
+      "categories": [
+        "organização social",
+        "termos relacionais"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
     },
     {
       "id": "ceboere",
@@ -648,13 +667,21 @@
       "has_content": false
     },
     {
-      "id": "cibae-eceraedy",
-      "title": "Cibae eceraedy",
-      "abstract": "Cibae Eceraedy - Membro homem de um clã da metade dos Ecerae denominado também Aroe ou Bokodori Eceraedy ou Okoge Eceraedy.",
-      "categories": [],
-      "variants": [],
-      "entry_type": "",
-      "has_content": false
+      "id": "cibae-eceraedu",
+      "title": "Cibae eceraedu",
+      "abstract": "Cibae eceraedu — membro homem de um clã da metade dos Ecerae, também denominado Aroe, Bokodori eceraedu ou Okoge eceraedu.",
+      "categories": [
+        "organizacao-social",
+        "clas",
+        "nomes-clanicos"
+      ],
+      "variants": [
+        "Bokodori eceraedu",
+        "Okoge eceraedu",
+        "Aroe (em contexto clânico)"
+      ],
+      "entry_type": "designacao-clanica",
+      "has_content": true
     },
     {
       "id": "cibae-egyrea",
@@ -1003,11 +1030,13 @@
     {
       "id": "cobogi",
       "title": "Cobogi",
-      "abstract": "Cobogi - * posp. ? Em cima, do lado de cima, superioridade.",
-      "categories": [],
+      "abstract": "Posposicao indicando posicao superior ou acima.",
+      "categories": [
+        "gramatica"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
     },
     {
       "id": "cobogiwu-2",
@@ -1210,27 +1239,29 @@
       "has_content": false
     },
     {
-      "id": "jakomea-kawory",
-      "title": "Jakomea kawory",
-      "abstract": "Jakomea kawory - nome próprio (ver vol. II).",
+      "id": "jakomea-kaworu",
+      "title": "Jakomea kaworu",
+      "abstract": "Jakomea kaworu — nome próprio bororo (ver vol. II).",
+      "categories": [
+        "nomes-proprios"
+      ],
+      "variants": [],
+      "entry_type": "antropônimo",
+      "has_content": true
+    },
+    {
+      "id": "jakomea-kurirewu",
+      "title": "Jakomea kurirewu",
+      "abstract": "Jakomea kurirewu - nome próprio (ver vol. II).",
       "categories": [],
       "variants": [],
       "entry_type": "",
       "has_content": false
     },
     {
-      "id": "jakomea-kyrirewu",
-      "title": "Jakomea kyrirewu",
-      "abstract": "Jakomea kyrirewu - nome próprio (ver vol. II).",
-      "categories": [],
-      "variants": [],
-      "entry_type": "",
-      "has_content": false
-    },
-    {
-      "id": "jakomea-mygy",
-      "title": "Jakomea mygy",
-      "abstract": "Jakomea mygy - nome próprio (ver vol. II).",
+      "id": "jakomea-mugu",
+      "title": "Jakomea mugu",
+      "abstract": "Jakomea mugu - nome próprio (ver vol. II).",
       "categories": [],
       "variants": [],
       "entry_type": "",
@@ -1246,18 +1277,20 @@
       "has_content": false
     },
     {
-      "id": "jakomea-ridyrewu",
-      "title": "Jakomea ridyrewu",
-      "abstract": "Jakomea ridyrewu - nome próprio (ver vol. II).",
-      "categories": [],
+      "id": "jakomea-ridurewu",
+      "title": "Jakomea ridurewu",
+      "abstract": "Jakomea ridurewu — nome próprio bororo (ver vol. II).",
+      "categories": [
+        "nomes-proprios"
+      ],
       "variants": [],
-      "entry_type": "",
-      "has_content": false
+      "entry_type": "antropônimo",
+      "has_content": true
     },
     {
-      "id": "jakomea-ryko",
-      "title": "Jakomea ryko",
-      "abstract": "Jakomea ryko - nome próprio (ver vol. II).",
+      "id": "jakomea-ruko",
+      "title": "Jakomea ruko",
+      "abstract": "Jakomea ruko - nome próprio (ver vol. II).",
       "categories": [],
       "variants": [],
       "entry_type": "",
@@ -1354,6 +1387,19 @@
       "has_content": true
     },
     {
+      "id": "kaworodo",
+      "title": "Kaworodo",
+      "abstract": "Progenitora mítica do sub-clã Baado Jebage Cebegiwuge.",
+      "categories": [
+        "mitologia",
+        "organizacao-clanica",
+        "ancestralidade"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
       "id": "kudoro",
       "title": "Kudoro",
       "abstract": "Tipo de arara.",
@@ -1385,7 +1431,7 @@
     },
     {
       "id": "kurugugwa-ywariga",
-      "title": "Kurugugwa ywariga",
+      "title": "Kurugugwa uwariga",
       "abstract": "Kurugugwa wariga1 - * kurugugwa 'gavião-caracaraí'; u '(d)ele'; wariga penacho [gavião com penacho] Gavião-de-penacho.",
       "categories": [],
       "variants": [],
@@ -1555,10 +1601,134 @@
       "has_content": true
     },
     {
+      "id": "maguru",
+      "title": "Maguru",
+      "abstract": "Viagem coletiva sazonal para caça, pesca e coleta, com construção temporária de aldeias.",
+      "categories": [
+        "sociedade",
+        "territorio",
+        "subsistencia",
+        "mobilidade"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
       "id": "mano-kurirewu",
       "title": "Mano kurirewu",
       "abstract": "Mano kurirewu -- Ritual Boe-Bororo das duas rodas grandes de talos de caeté (Helicônia). Awyre pemegare! Mano Kurirewu pemegare! Boe eegarere boe etaidyre Assim falou o chefe cultural Bororo Antônio Kanajó na festa do Mano Kurirewu em Meruri no ano de 1995: \"Este é bom! Mano Kurirewu é bom! O povo se alegra, o povo gosta!\"",
       "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "mano-pa",
+      "title": "Mano pa",
+      "abstract": "Ritual cerimonial central associado aos aroe, envolvendo corrida, cantos e rodas de caeté que representam peixes e a circulação das almas.",
+      "categories": [
+        "ritual",
+        "cosmologia",
+        "sociedade",
+        "musica",
+        "cerimonial"
+      ],
+      "variants": [],
+      "entry_type": "ritual",
+      "has_content": true
+    },
+    {
+      "id": "mano",
+      "title": "Mano",
+      "abstract": "Caete ou piripiri utilizado para fabricar cilindros rituais do Mano aroe.",
+      "categories": [
+        "flora",
+        "cultura-material",
+        "ritual"
+      ],
+      "variants": [
+        "keo"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "marido-kuru",
+      "title": "Marido kuru",
+      "abstract": "Bebida não fermentada extraída do estipe do buriti.",
+      "categories": [
+        "alimentacao",
+        "bebidas",
+        "plantas"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "marido",
+      "title": "Marido",
+      "abstract": "Buriti (Mauritia sp.), grande palmeira de áreas alagadas; fonte de alimento, matéria-prima e bebida.",
+      "categories": [
+        "flora",
+        "alimentacao",
+        "cultura-material"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "mea",
+      "title": "Mea",
+      "abstract": "Tabaco, fumo, charuto ou cigarro; também presente, dádiva ou generosidade.",
+      "categories": [
+        "cultura-material",
+        "ritual",
+        "substancias",
+        "vida-social"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "meari",
+      "title": "Meari",
+      "abstract": "“Morro do tabaco”; topônimo nas proximidades da atual cidade de Poxoréu.",
+      "categories": [
+        "geografia",
+        "historia",
+        "cultura-material"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "meriri",
+      "title": "Meriri",
+      "abstract": "Substância dura e resplandecente; metal, brilho, excelência e dinheiro.",
+      "categories": [
+        "cultura-material",
+        "tecnologia",
+        "economia",
+        "história"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "micori",
+      "title": "Micori",
+      "abstract": "Designação do cipó-imbé e de um ribeirão afluente do Pogubo Cerewu (rio São Lourenço).",
+      "categories": [
+        "flora",
+        "hidrografia",
+        "cultura-material"
+      ],
       "variants": [],
       "entry_type": "",
       "has_content": true
@@ -1575,38 +1745,130 @@
     {
       "id": "mori",
       "title": "Mori",
-      "abstract": "Vingança, reompensa. \nConceito central na vida social e ritual bororo, abrangendo vingança, recompensa, retribuição social, compensação de danos e obrigação ritual.",
+      "abstract": "Vingança, recompensa, retribuição ou pagamento; princípio central de reciprocidade e desagravo funerário na sociedade bororo.",
       "categories": [
-        "sociedade/vingança",
-        "ritual/retribuição",
-        "ritual",
         "sociedade",
-        "cultura-material",
-        "natureza/fauna/mamífero",
-        "cosmologia/morte",
-        "ritual/funeral"
+        "ritual",
+        "morte",
+        "reciprocidade"
       ],
       "variants": [],
-      "entry_type": "ritual",
+      "entry_type": "",
       "has_content": true
     },
     {
       "id": "moto-epa",
       "title": "Moto epa",
-      "abstract": "Moto epa (moto 'terra' + epa 'para') [indivíduo que gosta de terra] - 1 A geofagia é um hábito que afe-ta alguns membros da tribo bororo, crianças e adultos, desde tempos imemoriais, como efeito de verminoses mais ou menos crônicas ou graves. Em alguns casos provoca a morte especialmente de crianças. Os geófagos preferem aterra queimada que, na choupana ou fora dela, encontram facilmente no ery pa 'lugar onde acendem o fogo'; nos campos a retiram dos termiteiros, queimados pelo fogo que periodicamente devasta os cerrados.",
-      "categories": [],
+      "abstract": "Pessoa que pratica geofagia; individuo que come terra.",
+      "categories": [
+        "saude",
+        "costumes"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
+    },
+    {
+      "id": "motori",
+      "title": "Motori",
+      "abstract": "Ave do ninho de barro (joao-de-barro) e, por extensao, tijolo ou adobe.",
+      "categories": [
+        "fauna",
+        "cultura material"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "muga",
+      "title": "Muga",
+      "abstract": "Lugar de sentar, morada ou casa; também banco ou cadeira.",
+      "categories": [
+        "cultura material",
+        "organizacao domestica",
+        "parentesco"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "nabure-eiari",
+      "title": "Nabure eiari",
+      "abstract": "Ninho da ararapiranga escavado em paredoes de laterita.",
+      "categories": [
+        "fauna",
+        "caca",
+        "tecnologia tradicional"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "nabure",
+      "title": "Nabure",
+      "abstract": "Ararapiranga (Ara macao), ave criada pelos bororo por suas penas e por seu papel espiritual.",
+      "categories": [
+        "fauna",
+        "cosmologia",
+        "cultura material"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "noa",
+      "title": "No a",
+      "abstract": "Semente do coco de babacu e, por extensao, tabatinga, alvura e nome de curso dagua.",
+      "categories": [
+        "etnobotanica",
+        "alimentacao",
+        "territorio",
+        "ritual"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "noido-kuru",
+      "title": "Noido kuru",
+      "abstract": "Bebida fermentada obtida da seiva do babacu, de efeito mais forte que a bebida de acuri.",
+      "categories": [
+        "etnobotanica",
+        "alimentacao"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
     },
     {
       "id": "noido",
       "title": "Noido",
-      "abstract": "Noido (no 'côco de babaçu' + ido 'estipe') estipe de côco de babaçu (Attalea speciosa). 1 É uma bela palmácea de alto porte e de muitíssima utilidade aos bororo. Fornece-lhes alimentos com seus côcos, com o pericárpio verde, que é consumido assado ou reduzido a farinha, com seu palmito e com sua seiva, que é retirada com a mesma técnica do → iworo 'bebida de acurí'. O vinho de babaçu, porém, é muito menos abundante e de difícil extração. O bróto da palmeira proporciona insuperável matéria prima para trabalhos de trançados, como cestas, abanicos e esteiras. Os folíolos do mesmo dão tangas e estojos penianos. As fólhas adultas, que podem alcançar até oito metros de comprimento em exemplares novos, servem como ótima cobertura para as choupanas.",
-      "categories": [],
+      "abstract": "Palmeira babacu [(Orbignya martiana)](https://pt.wikipedia.org/wiki/Babaçu), de grande importancia alimentar e material para os bororo.",
+      "categories": [
+        "etnobotanica",
+        "alimentacao",
+        "cultura material"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
+    },
+    {
+      "id": "nonogo",
+      "title": "Nonogo",
+      "abstract": "Designação geral de duas variedades de urucu (Bixa orellana e Bixa sp.), planta fundamental para a pintura corporal e ritual bororo.",
+      "categories": [
+        "etnobotanica",
+        "cosmetica ritual"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
     },
     {
       "id": "nudu",
@@ -1792,13 +2054,16 @@
       "has_content": true
     },
     {
-      "id": "ririgo",
-      "title": "Ririgo<sub>1</sub>",
-      "abstract": "Ririgo1 - calor; go, suf. caus. incip. [fazer calor]. Aquecer, esquentar. imuguwy tu woe iwo iririgo boery keje 'assento-me bem aqui para me aquecer ao calor do sol'.",
-      "categories": [],
+      "id": "ririgo-1",
+      "title": "Ririgo₁",
+      "abstract": "Calor; fazer calor, aquecer, esquentar.",
+      "categories": [
+        "linguagem",
+        "natureza"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": true
     },
     {
       "id": "ta",
@@ -1904,7 +2169,7 @@
     "natureza": {
       "_count": 29,
       "fauna": {
-        "_count": 21,
+        "_count": 20,
         "inseto": {
           "_count": 5
         },
@@ -1912,7 +2177,7 @@
           "_count": 3
         },
         "mamífero": {
-          "_count": 3
+          "_count": 2
         },
         "caça": {
           "_count": 2
@@ -1929,9 +2194,9 @@
       }
     },
     "ritual": {
-      "_count": 21,
+      "_count": 24,
       "funeral": {
-        "_count": 4
+        "_count": 3
       },
       "representações": {
         "_count": 1
@@ -1959,13 +2224,10 @@
       },
       "festas": {
         "_count": 1
-      },
-      "retribuição": {
-        "_count": 1
       }
     },
     "cosmologia": {
-      "_count": 22,
+      "_count": 24,
       "mitologia": {
         "_count": 1
       },
@@ -1976,7 +2238,7 @@
         "_count": 1
       },
       "morte": {
-        "_count": 3
+        "_count": 2
       },
       "xamanismo": {
         "_count": 2
@@ -1995,7 +2257,7 @@
       }
     },
     "cultura-material": {
-      "_count": 20,
+      "_count": 25,
       "arma": {
         "_count": 1
       },
@@ -2013,7 +2275,7 @@
       }
     },
     "sociedade": {
-      "_count": 16,
+      "_count": 17,
       "organização-social": {
         "_count": 9,
         "clãs": {
@@ -2030,9 +2292,6 @@
         "_count": 1
       },
       "contato": {
-        "_count": 1
-      },
-      "vingança": {
         "_count": 1
       }
     },
@@ -2055,7 +2314,19 @@
       "_count": 1
     },
     "geografia": {
+      "_count": 3
+    },
+    "organizacao-social": {
       "_count": 2
+    },
+    "territorio": {
+      "_count": 3
+    },
+    "arquitetura": {
+      "_count": 1
+    },
+    "parentesco": {
+      "_count": 3
     },
     "etnologia": {
       "_count": 1
@@ -2063,7 +2334,22 @@
     "língua": {
       "_count": 3
     },
+    "organização social": {
+      "_count": 1
+    },
+    "termos relacionais": {
+      "_count": 1
+    },
+    "clas": {
+      "_count": 1
+    },
+    "nomes-clanicos": {
+      "_count": 1
+    },
     "nomes próprios": {
+      "_count": 1
+    },
+    "gramatica": {
       "_count": 1
     },
     "gramática": {
@@ -2073,12 +2359,99 @@
       "_count": 1
     },
     "cultura material": {
-      "_count": 4
+      "_count": 8
     },
     "ornamentos": {
       "_count": 1
     },
+    "nomes-proprios": {
+      "_count": 2
+    },
+    "mitologia": {
+      "_count": 1
+    },
+    "organizacao-clanica": {
+      "_count": 1
+    },
+    "ancestralidade": {
+      "_count": 1
+    },
     "religião": {
+      "_count": 1
+    },
+    "subsistencia": {
+      "_count": 1
+    },
+    "mobilidade": {
+      "_count": 1
+    },
+    "musica": {
+      "_count": 1
+    },
+    "cerimonial": {
+      "_count": 1
+    },
+    "flora": {
+      "_count": 3
+    },
+    "alimentacao": {
+      "_count": 5
+    },
+    "bebidas": {
+      "_count": 1
+    },
+    "plantas": {
+      "_count": 1
+    },
+    "substancias": {
+      "_count": 1
+    },
+    "vida-social": {
+      "_count": 1
+    },
+    "historia": {
+      "_count": 1
+    },
+    "tecnologia": {
+      "_count": 1
+    },
+    "economia": {
+      "_count": 1
+    },
+    "história": {
+      "_count": 1
+    },
+    "hidrografia": {
+      "_count": 1
+    },
+    "morte": {
+      "_count": 1
+    },
+    "reciprocidade": {
+      "_count": 1
+    },
+    "saude": {
+      "_count": 1
+    },
+    "costumes": {
+      "_count": 1
+    },
+    "fauna": {
+      "_count": 5
+    },
+    "organizacao domestica": {
+      "_count": 1
+    },
+    "caca": {
+      "_count": 1
+    },
+    "tecnologia tradicional": {
+      "_count": 1
+    },
+    "etnobotanica": {
+      "_count": 4
+    },
+    "cosmetica ritual": {
       "_count": 1
     },
     "corpo": {
@@ -2099,9 +2472,6 @@
     "comunicação": {
       "_count": 1
     },
-    "parentesco": {
-      "_count": 1
-    },
     "práticas cotidianas": {
       "_count": 1
     },
@@ -2120,13 +2490,13 @@
     "território": {
       "_count": 2
     },
-    "fauna": {
-      "_count": 2
-    },
     "música": {
       "_count": 1
     },
     "advérbios": {
+      "_count": 1
+    },
+    "linguagem": {
       "_count": 1
     }
   },
