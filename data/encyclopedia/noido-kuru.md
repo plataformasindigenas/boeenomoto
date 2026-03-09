@@ -10,7 +10,7 @@ date: '2026-02-18'
 references: []
 see_also:
 - iworo
-- boe eke
+- boe-eke
 ---
 
 ## NOIDO KURU

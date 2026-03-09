@@ -26,18 +26,6 @@ module_labels:
   bibliography: "Bibliografia"
 
 theme:
+  preset: "terra"
   logo: "images/logo.png"
   favicon: "images/favicon.ico"
-  colors:
-    primary: "#3D352F"
-    accent: "#C75B39"
-    accent_muted: "#A84B2F"
-    bg: "#F9F6F2"
-    bg_light: "#F5EDE8"
-    bg_infobox: "#FAF8F5"
-    border: "#E8E4DF"
-    border_dark: "#C8B8A8"
-    text: "#333333"
-    text_muted: "#6B6B6B"
-    highlight: "#fff59d"
-    warning_bg: "#fff8e1"

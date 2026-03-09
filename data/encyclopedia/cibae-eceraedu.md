@@ -19,10 +19,10 @@ infobox:
   metade: Ecerae
   cla_principal: Bokodori Ecerae
 references:
-- ALBISETTI; VENTURELLI, Enciclopédia Bororo.
+- Albisetti1962aEnciclopedia
 see_also:
-- boe ewa
-- bokodori ecerae
+- boe-ewa
+- bokodori-ecerae
 - okoge
 - cibae
 - aroe

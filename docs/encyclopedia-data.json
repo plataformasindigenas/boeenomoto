@@ -3,7 +3,7 @@
     "name": "bororo_encyclopedia",
     "description": "Bororo Encyclopedia Entries",
     "version": "2.0",
-    "record_count": 202
+    "record_count": 231
   },
   "data": [
     {
@@ -156,6 +156,92 @@
       "has_content": true
     },
     {
+      "id": "aredu",
+      "title": "Aredu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "aroe-eceba-kejebo",
+      "title": "Aroe Eceba Kejebo",
+      "abstract": "Ritual bororo associado ao gavião-real [(Harpia harpyja)](https://pt.wikipedia.org/wiki/Gavião-real) ou Aroe Eceba em bororo, envolvendo morte ritual do animal, oferenda, distribuição de penas, confecção de adornos e uma complexa cerimônia pública ligada às almas e aos direitos de primazia dos clãs.",
+      "categories": [
+        "ritual",
+        "natureza/fauna/ave",
+        "cosmologia",
+        "cultura-material/ornamentação",
+        "ritual/adornos",
+        "sociedade/organização-social/clãs",
+        "cosmologia/espiritualidade",
+        "ritual/dança",
+        "ritual/canto"
+      ],
+      "variants": [
+        "Ritual do Gavião Real",
+        "Aroe Eceba"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "aroe-eoprewu",
+      "title": "Aroe eoprewu",
+      "abstract": "Inseto cuja forma lembra um cadáver enrolado em esteiras, motivo pelo qual recebe o nome Aroe eoprewu (“cadáver envolvido”). Designação genérica das jaquiranabóias (gênero Fulgora).",
+      "categories": [
+        "natureza/fauna/inseto",
+        "natureza/fauna",
+        "ritual/funeral",
+        "cosmologia",
+        "natureza/fauna/classificação",
+        "natureza"
+      ],
+      "variants": [
+        "jaquiranabóia",
+        "Fulgora"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "aroe-etawara-are",
+      "title": "Aroe etawara are",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "aroe-jakomea-po",
+      "title": "Aroe jakomea po",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "aroe-kodu",
+      "title": "Aroe kodu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "aroe-maiwu",
+      "title": "Aroe maiwu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "aroe",
       "title": "Aroe",
       "abstract": "Termo polissêmico central na cosmologia bororo. Pode designar coisas leves como pluma; alma e seu destino no além; espíritos/fantasmas e seres imaginários; cadáver; antepassados e epônimos de clãs; seres primaciais/privativos e direitos de primazia; além de categorias sociais e rituais ligadas à organização em clãs, metades e representações.",
@@ -178,48 +264,7 @@
       "has_content": true
     },
     {
-      "id": "aroe_eceba_kejebo",
-      "title": "Aroe Eceba Kejebo",
-      "abstract": "Ritual bororo associado ao gavião-real [(Harpia harpyja)](https://pt.wikipedia.org/wiki/Gavião-real) ou Aroe Eceba em bororo, envolvendo morte ritual do animal, oferenda, distribuição de penas, confecção de adornos e uma complexa cerimônia pública ligada às almas e aos direitos de primazia dos clãs.",
-      "categories": [
-        "ritual",
-        "natureza/fauna/ave",
-        "cosmologia",
-        "cultura-material/ornamentação",
-        "ritual/adornos",
-        "sociedade/organização-social/clãs",
-        "cosmologia/espiritualidade",
-        "ritual/dança",
-        "ritual/canto"
-      ],
-      "variants": [
-        "Ritual do Gavião Real",
-        "Aroe Eceba"
-      ],
-      "entry_type": "",
-      "has_content": true
-    },
-    {
-      "id": "aroe_eoprewu",
-      "title": "Aroe eoprewu",
-      "abstract": "Inseto cuja forma lembra um cadáver enrolado em esteiras, motivo pelo qual recebe o nome Aroe eoprewu (“cadáver envolvido”). Designação genérica das jaquiranabóias (gênero Fulgora).",
-      "categories": [
-        "natureza/fauna/inseto",
-        "natureza/fauna",
-        "ritual/funeral",
-        "cosmologia",
-        "natureza/fauna/classificação",
-        "natureza"
-      ],
-      "variants": [
-        "jaquiranabóia",
-        "Fulgora"
-      ],
-      "entry_type": "",
-      "has_content": true
-    },
-    {
-      "id": "awara_are",
+      "id": "awara-are",
       "title": "Awara are",
       "abstract": "Pessoa que retorna de uma viagem e é recebida com manifestações rituais de acolhimento, pranto e reconhecimento corporal entre os Bororo.",
       "categories": [
@@ -238,6 +283,20 @@
       "has_content": true
     },
     {
+      "id": "ba-1-leaf",
+      "title": "Ba",
+      "abstract": "Folíolo ou semifolíolo do broto de palmeira, especialmente do babaçu.",
+      "categories": [
+        "natureza/flora/palmeira",
+        "natureza/flora",
+        "cultura-material/artesanato",
+        "cultura-material/habitação"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
       "id": "ba-1",
       "title": "ba",
       "abstract": "aldeia; povoado bororo e sua disposição tradicional (casa central e casas na circunferência).",
@@ -246,6 +305,75 @@
         "cosmologia/xamanismo",
         "cultura-material",
         "sociedade/organização-social/metades"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "ba-2-penile-sheath-daily",
+      "title": "Ba",
+      "abstract": "Estojo peniano quotidiano, indumentária indispensável do homem bororo após a iniciação.",
+      "categories": [
+        "cultura-material/ornamentação",
+        "cultura-material/vestimenta",
+        "ritual/iniciação",
+        "etnografia"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "ba-2",
+      "title": "Ba",
+      "abstract": "1) folíolo ou semifolíolo do broto de babaçu; 2) estojo peniano quotidiano (indumentária indispensável do homem bororo após a iniciação); 3) certo tipo de boe etao kajejewu (‘coroa dos bororo’); 4) casa; 5) aldeia.",
+      "categories": [
+        "cultura-material/vestimenta",
+        "natureza/flora/palmeira",
+        "sociedade/organização-social/clãs",
+        "sociedade/organização-social/metades",
+        "cultura-material/habitação"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "ba-3-penile-sheath-festive",
+      "title": "Baera / Baerarewu",
+      "abstract": "Estojo peniano festivo, ornamentado, usado em cerimônias.",
+      "categories": [
+        "ritual",
+        "cultura-material/ornamentação",
+        "ritual/festas"
+      ],
+      "variants": [
+        "baera"
+      ],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "ba-4-crown",
+      "title": "Ba",
+      "abstract": "Certo tipo de coroa ritual dos Bororo, confeccionada com materiais vegetais.",
+      "categories": [
+        "cultura-material/ornamentação",
+        "ritual",
+        "cultura-material/vestimenta"
+      ],
+      "variants": [],
+      "entry_type": "",
+      "has_content": true
+    },
+    {
+      "id": "ba-5-house-village",
+      "title": "Ba",
+      "abstract": "Casa ou aldeia.",
+      "categories": [
+        "cultura-material/habitação",
+        "sociedade/espaço-social"
       ],
       "variants": [],
       "entry_type": "",
@@ -266,89 +394,22 @@
       "has_content": true
     },
     {
-      "id": "ba_1_leaf",
-      "title": "Ba",
-      "abstract": "Folíolo ou semifolíolo do broto de palmeira, especialmente do babaçu.",
-      "categories": [
-        "natureza/flora/palmeira",
-        "natureza/flora",
-        "cultura-material/artesanato",
-        "cultura-material/habitação"
-      ],
+      "id": "baado-jebage-cebegiwuge",
+      "title": "Baado jebage cebegiwuge",
+      "abstract": null,
+      "categories": [],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": false
     },
     {
-      "id": "ba_2",
-      "title": "Ba",
-      "abstract": "1) folíolo ou semifolíolo do broto de babaçu; 2) estojo peniano quotidiano (indumentária indispensável do homem bororo após a iniciação); 3) certo tipo de boe etao kajejewu (‘coroa dos bororo’); 4) casa; 5) aldeia.",
-      "categories": [
-        "cultura-material/vestimenta",
-        "natureza/flora/palmeira",
-        "sociedade/organização-social/clãs",
-        "sociedade/organização-social/metades",
-        "cultura-material/habitação"
-      ],
-      "variants": [
-        ""
-      ],
-      "entry_type": "",
-      "has_content": true
-    },
-    {
-      "id": "ba_2_penile_sheath_daily",
-      "title": "Ba",
-      "abstract": "Estojo peniano quotidiano, indumentária indispensável do homem bororo após a iniciação.",
-      "categories": [
-        "cultura-material/ornamentação",
-        "cultura-material/vestimenta",
-        "ritual/iniciação",
-        "etnografia"
-      ],
+      "id": "bai-mana-gejewu",
+      "title": "Bai mana gejewu",
+      "abstract": null,
+      "categories": [],
       "variants": [],
       "entry_type": "",
-      "has_content": true
-    },
-    {
-      "id": "ba_3_penile_sheath_festive",
-      "title": "Baera / Baerarewu",
-      "abstract": "Estojo peniano festivo, ornamentado, usado em cerimônias.",
-      "categories": [
-        "ritual",
-        "cultura-material/ornamentação",
-        "ritual/festas"
-      ],
-      "variants": [
-        "baera"
-      ],
-      "entry_type": "",
-      "has_content": true
-    },
-    {
-      "id": "ba_4_crown",
-      "title": "Ba",
-      "abstract": "Certo tipo de coroa ritual dos Bororo, confeccionada com materiais vegetais.",
-      "categories": [
-        "cultura-material/ornamentação",
-        "ritual",
-        "cultura-material/vestimenta"
-      ],
-      "variants": [],
-      "entry_type": "",
-      "has_content": true
-    },
-    {
-      "id": "ba_5_house_village",
-      "title": "Ba",
-      "abstract": "Casa ou aldeia.",
-      "categories": [
-        "cultura-material/habitação",
-        "sociedade/espaço-social"
-      ],
-      "variants": [],
-      "entry_type": "",
-      "has_content": true
+      "has_content": false
     },
     {
       "id": "bakaru",
@@ -363,7 +424,25 @@
       "has_content": true
     },
     {
-      "id": "baraedu_1",
+      "id": "bapo-kurirewu",
+      "title": "Bapo kurirewu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "baporogu",
+      "title": "Baporogu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "baraedu-1",
       "title": "Baraedu",
       "abstract": "Singular de barae. Termo geral para “civilizado” (não indígena) e entrada histórica sobre os primeiros contatos, as colônias do Pogúbo e a atuação salesiana (1718–1902).",
       "categories": [
@@ -381,6 +460,24 @@
       "has_content": true
     },
     {
+      "id": "baraedu",
+      "title": "Baraedu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "bari",
+      "title": "Bari",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "bataru",
       "title": "Bataru",
       "abstract": "A língua Bororo",
@@ -390,6 +487,15 @@
       "has_content": true
     },
     {
+      "id": "beo-uke-jorubo",
+      "title": "Beo uke jorubo",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "boadody",
       "title": "Boadody",
       "abstract": "Boadody - Enciclopédia Bororo",
@@ -397,6 +503,15 @@
       "variants": [],
       "entry_type": "",
       "has_content": true
+    },
+    {
+      "id": "boe-eimejera",
+      "title": "Boe eimejera",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
     },
     {
       "id": "boe-eke",
@@ -415,6 +530,15 @@
       "variants": [],
       "entry_type": "",
       "has_content": true
+    },
+    {
+      "id": "boe-epa",
+      "title": "Boe epa",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
     },
     {
       "id": "boe-ewa",
@@ -455,9 +579,27 @@
       "has_content": true
     },
     {
+      "id": "bokodori-ecerae",
+      "title": "Bokodori ecerae",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "bokwado",
       "title": "Bokwado",
       "abstract": "Bokwado Jatobá da floresta (Hymenaea courbaril).",
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "bope",
+      "title": "Bope",
+      "abstract": null,
       "categories": [],
       "variants": [],
       "entry_type": "",
@@ -1118,6 +1260,24 @@
       "has_content": true
     },
     {
+      "id": "erubo",
+      "title": "Erubo",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "ery-pa",
+      "title": "Ery pa",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "ewo-o-jorubo",
       "title": "Ewo o jorubo",
       "abstract": "Ewo o jorubo - * ewo 'cascavel'; o dente; ji, (d)ele; erubo, vegetal mágico [vegetal cuja flor seca apresenta pontas duras semelhantes a dentes de cascavel] Designação de um erubo. | É um cipó do cerrado cujas folhas esfregadas na flecha deveriam",
@@ -1125,6 +1285,15 @@
       "variants": [],
       "entry_type": "",
       "has_content": true
+    },
+    {
+      "id": "ikuieje",
+      "title": "Ikuieje",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
     },
     {
       "id": "itaga",
@@ -1143,6 +1312,24 @@
       "id": "itoborewu",
       "title": "Itoborewu",
       "abstract": "Itoborewu - (itobo 'parte basilar do pecíolo de folha de palmeira' + -re 'indicativo' + -wy 'relativizador') palmeira que apresenta partes basilares de pecíolos de fólhas presas ao estipe. Designação genérica de qualquer palmeira adulta.",
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "iworo",
+      "title": "Iworo",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "iwu",
+      "title": "Iwu",
+      "abstract": null,
       "categories": [],
       "variants": [],
       "entry_type": "",
@@ -1387,6 +1574,15 @@
       "has_content": true
     },
     {
+      "id": "kamorewu",
+      "title": "Kamorewu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "kaworodo",
       "title": "Kaworodo",
       "abstract": "Progenitora mítica do sub-clã Baado Jebage Cebegiwuge.",
@@ -1457,16 +1653,7 @@
       "has_content": false
     },
     {
-      "id": "list",
-      "title": "list",
-      "abstract": "Adugo1.txt",
-      "categories": [],
-      "variants": [],
-      "entry_type": "",
-      "has_content": false
-    },
-    {
-      "id": "ma_1",
+      "id": "ma-1",
       "title": "Ma",
       "abstract": "Folíolo de palmeira.",
       "categories": [
@@ -1480,7 +1667,7 @@
       "has_content": false
     },
     {
-      "id": "ma_3",
+      "id": "ma-3",
       "title": "Ma",
       "abstract": "Se, quando, mas.",
       "categories": [],
@@ -1524,7 +1711,7 @@
       "has_content": false
     },
     {
-      "id": "mae_1",
+      "id": "mae-1",
       "title": "Mae",
       "abstract": "Extensão, duração ilimitada, imensidade, continuidade, comprimento; deserto; tristeza.",
       "categories": [],
@@ -1533,7 +1720,7 @@
       "has_content": false
     },
     {
-      "id": "maedo_1",
+      "id": "maedo-1",
       "title": "Maedo",
       "abstract": "Alargar, estender, compridar, tardar; entristecer.",
       "categories": [],
@@ -1542,7 +1729,7 @@
       "has_content": false
     },
     {
-      "id": "maedodu_1",
+      "id": "maedodu-1",
       "title": "Maedodu",
       "abstract": "Alargado, estendido, encompridado, entristecido.",
       "categories": [],
@@ -1551,7 +1738,7 @@
       "has_content": false
     },
     {
-      "id": "maedodurewu_1",
+      "id": "maedodurewu-1",
       "title": "Maedodurewu",
       "abstract": "O (que foi) alargado, o (que foi) estendido, o (que foi) entristecido.",
       "categories": [],
@@ -1560,7 +1747,7 @@
       "has_content": false
     },
     {
-      "id": "maegodu_1-2",
+      "id": "maegodu-1-2",
       "title": "Maegodu",
       "abstract": "Continuidade, tristeza, arrependimento.",
       "categories": [],
@@ -1569,7 +1756,7 @@
       "has_content": false
     },
     {
-      "id": "maegodu_1",
+      "id": "maegodu-1",
       "title": "Maegodu",
       "abstract": "Continuidade, começar a estender-se.",
       "categories": [],
@@ -1578,7 +1765,7 @@
       "has_content": false
     },
     {
-      "id": "maekodudo_1",
+      "id": "maekodudo-1",
       "title": "Maekodudo",
       "abstract": "Fazer com continuidade, entristecer, arrepender-se.",
       "categories": [],
@@ -1613,6 +1800,24 @@
       "variants": [],
       "entry_type": "",
       "has_content": true
+    },
+    {
+      "id": "mano-akurararewu-aroe",
+      "title": "Mano akurararewu aroe",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "mano-aroe",
+      "title": "Mano aroe",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
     },
     {
       "id": "mano-kurirewu",
@@ -1820,6 +2025,15 @@
       "has_content": true
     },
     {
+      "id": "no",
+      "title": "No",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "noa",
       "title": "No a",
       "abstract": "Semente do coco de babacu e, por extensao, tabatinga, alvura e nome de curso dagua.",
@@ -1922,6 +2136,15 @@
       "has_content": true
     },
     {
+      "id": "okoge",
+      "title": "Okoge",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "okwagiri",
       "title": "Okwagiri",
       "abstract": "Amamentação; ato de alimentar a criança com leite materno.",
@@ -1946,6 +2169,15 @@
       "variants": [],
       "entry_type": "",
       "has_content": true
+    },
+    {
+      "id": "pariko",
+      "title": "Pariko",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
     },
     {
       "id": "peguru-gigirirewu",
@@ -2009,6 +2241,15 @@
       "has_content": true
     },
     {
+      "id": "pogubo-cerewu",
+      "title": "Pogubo cerewu",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "ra-2",
       "title": "Ra",
       "abstract": "Ra2 - Osso, ossada, esqueleto, região do corpo contendo ossos; membro viril em ereção; dureza; broto, galho; tábua (neol.). 1 A cópula é indicada com a locução rare 'ter ereção', mas essa expressão é pouco usada, pois aos ouvidos dos bororo não é decente. As frases encontradas nas lendas sao padu keje 'deito sobre', ou ure tuwygeje 'deitou-se sobre', ou mikody 'união carnal. A forma usual e delicada é, porém era okea 'brinquedo de mão', em vista dos atos preliminares da cópula. As relações sexuais, especialmente nos tempos de prosperidade da tribo, eram assaz espaçadas. Essa abstinência, aconselhada pelos velhos, devia conservar o vigor individual e, por conseguinte, o de toda a tribo. Nos tempos atuais os anciães confirmam e justificam seu ponto de vista notando a decadência física nos moços que nao seguem mais os cânones da passada rigidez. Não obstante sua abstinência, entretanto usavam e usam várias substâncias as quais atribuem poderes afrodisíacos como p. ex. bokwadobe 'resina de jatobá', o akiri i kuru 'resina de anjico', o kado eno guru 'seiva de broto de taquara'. As resinas são comidas frescas e o broto é ingerido cru.",
@@ -2066,6 +2307,15 @@
       "has_content": true
     },
     {
+      "id": "ro",
+      "title": "Ro",
+      "abstract": null,
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
       "id": "ta",
       "title": "Ta",
       "abstract": "Ta Tá - Extração, saída, cultivação. Ex. imode tadari ta ikeje 'desenterrarei batatas para comê-las'; kaibá imode ita? 'por onde sairei?'; imode nonogo ta? 'cultivarei urucu'.",
@@ -2075,7 +2325,7 @@
       "has_content": false
     },
     {
-      "id": "tabó",
+      "id": "tabo",
       "title": "Tabó",
       "abstract": "Tabó - Espírito misterioso imaginado como uma curta e grossa cobra de aproximadamente 20cm de diâmetro por 1 metro de comprimento. Pode ser preto ou vermelho. Afirmam os bororo que causa a morte de quem o vê.",
       "categories": [],
@@ -2114,6 +2364,15 @@
       "id": "tubore-tubore",
       "title": "Tubore tubore",
       "abstract": "Tubore tubore -- Lambaris [brinquedo durante o qual se repetem essas palavras]. Brinquedo infantil realizado nas praias dos rios. 1 Um dos participantes do jogo assenta-se num buraco escavado na areia com a quaJ é recoberto até ao pescoço. Logo os companheiros lhe puxam os cabelos e depois se afastam e se escondem enquanto um, rodeando o prisioneiro, repete as palavras tubore tubore. Por fim também ele se oculta. A um assobio de aviso o menino semienterrado levanta-se e, empunhando uma vareta, vai a procura dos companheiros. o primeiro que ele logra percutir ocupará o seu lugar e o folguedo recomeça.",
+      "categories": [],
+      "variants": [],
+      "entry_type": "",
+      "has_content": false
+    },
+    {
+      "id": "tugarege",
+      "title": "Tugarege",
+      "abstract": null,
       "categories": [],
       "variants": [],
       "entry_type": "",
@@ -2195,12 +2454,6 @@
     },
     "ritual": {
       "_count": 24,
-      "funeral": {
-        "_count": 3
-      },
-      "representações": {
-        "_count": 1
-      },
       "adornos": {
         "_count": 1
       },
@@ -2208,6 +2461,12 @@
         "_count": 1
       },
       "canto": {
+        "_count": 1
+      },
+      "funeral": {
+        "_count": 3
+      },
+      "representações": {
         "_count": 1
       },
       "retorno": {
@@ -2231,6 +2490,9 @@
       "mitologia": {
         "_count": 1
       },
+      "espiritualidade": {
+        "_count": 1
+      },
       "alma": {
         "_count": 2
       },
@@ -2251,9 +2513,6 @@
       },
       "antepassados": {
         "_count": 1
-      },
-      "espiritualidade": {
-        "_count": 1
       }
     },
     "cultura-material": {
@@ -2267,11 +2526,11 @@
       "habitação": {
         "_count": 6
       },
-      "vestimenta": {
-        "_count": 4
-      },
       "artesanato": {
         "_count": 2
+      },
+      "vestimenta": {
+        "_count": 4
       }
     },
     "sociedade": {
@@ -2295,18 +2554,18 @@
         "_count": 1
       }
     },
+    "etnografia": {
+      "_count": 2,
+      "história": {
+        "_count": 1
+      }
+    },
     "linguística": {
       "_count": 2,
       "polissemia": {
         "_count": 1
       },
       "topônimo": {
-        "_count": 1
-      }
-    },
-    "etnografia": {
-      "_count": 2,
-      "história": {
         "_count": 1
       }
     },
@@ -2547,16 +2806,29 @@
       }
     },
     {
-      "id": "aroe_eceba_kejebo",
+      "id": "aroe-eceba-kejebo",
       "title": "Aroe Eceba Kejebo",
       "image": {
         "url": "images/aroeeceba1.jpg"
       }
     },
     {
-      "id": "aroe_eoprewu",
+      "id": "aroe-eoprewu",
       "title": "Aroe eoprewu",
-      "image": "images/enc_aroe_eoprewu_0.jpg"
+      "image": {
+        "url": "images/enc_aroe_eoprewu_0.jpg",
+        "alt": "Aroe eoprewu",
+        "credit": ""
+      }
+    },
+    {
+      "id": "ba-1-leaf",
+      "title": "Ba",
+      "image": {
+        "url": "images/enc_ba_1_leaf_0.jpg",
+        "alt": "",
+        "credit": ""
+      }
     },
     {
       "id": "ba-1",
@@ -2565,15 +2837,6 @@
         "url": "images/enc_ba1_0.png",
         "alt": "planta da aldeia Kejari",
         "credit": "Lévi-Strauss (planta/diagrama)"
-      }
-    },
-    {
-      "id": "ba_1_leaf",
-      "title": "Ba",
-      "image": {
-        "url": "images/enc_ba_1_leaf_0.jpg",
-        "alt": "",
-        "credit": ""
       }
     }
   ]

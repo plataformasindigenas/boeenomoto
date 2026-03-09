@@ -18,9 +18,9 @@ infobox: {}
 references: []
 see_also:
 - aroe
-- aroe jakomea po
-- bai mana gejewu
-- boe eimejera
+- aroe-jakomea-po
+- bai-mana-gejewu
+- boe-eimejera
 - mori
 ---
 

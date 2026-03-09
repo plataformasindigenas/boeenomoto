@@ -4286,7 +4286,13 @@
       "pic_link": null,
       "comment": "Pode significar mãe na linguagem ritual",
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "aredu",
+          "title": "Aredu"
+        }
+      ]
     },
     {
       "id": 292,
@@ -5016,7 +5022,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "aroe-kodu",
+          "title": "Aroe kodu"
+        }
+      ]
     },
     {
       "id": 341,
@@ -5044,7 +5056,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "aroe-maiwu",
+          "title": "Aroe maiwu"
+        }
+      ]
     },
     {
       "id": 343,
@@ -6366,7 +6384,7 @@
       "encyclopedia_ids": null,
       "_linked_encyclopedia": [
         {
-          "id": "awara_are",
+          "id": "awara-are",
           "title": "Awara are"
         }
       ]
@@ -6624,7 +6642,7 @@
       "encyclopedia_ids": null,
       "_linked_encyclopedia": [
         {
-          "id": "ba_5_house_village",
+          "id": "ba",
           "title": "Ba"
         }
       ]
@@ -6644,7 +6662,7 @@
       "encyclopedia_ids": null,
       "_linked_encyclopedia": [
         {
-          "id": "ba_5_house_village",
+          "id": "ba",
           "title": "Ba"
         }
       ]
@@ -6664,7 +6682,7 @@
       "encyclopedia_ids": null,
       "_linked_encyclopedia": [
         {
-          "id": "ba_5_house_village",
+          "id": "ba",
           "title": "Ba"
         }
       ]
@@ -6684,7 +6702,7 @@
       "encyclopedia_ids": null,
       "_linked_encyclopedia": [
         {
-          "id": "ba_5_house_village",
+          "id": "ba",
           "title": "Ba"
         }
       ]
@@ -8167,7 +8185,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "baporogu",
+          "title": "Baporogu"
+        }
+      ]
     },
     {
       "id": 555,
@@ -8454,7 +8478,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "bari",
+          "title": "Bari"
+        }
+      ]
     },
     {
       "id": 575,
@@ -8468,7 +8498,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "bari",
+          "title": "Bari"
+        }
+      ]
     },
     {
       "id": 576,
@@ -12901,7 +12937,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "boe-epa",
+          "title": "Boe epa"
+        }
+      ]
     },
     {
       "id": 883,
@@ -26059,7 +26101,13 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null
+      "encyclopedia_ids": null,
+      "_linked_encyclopedia": [
+        {
+          "id": "iworo",
+          "title": "Iworo"
+        }
+      ]
     },
     {
       "id": 1793,
@@ -26098,6 +26146,12 @@
           "file_path": "0307_leonida_iwu.webm",
           "speaker": "leonida",
           "format": "webm"
+        }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "iwu",
+          "title": "Iwu"
         }
       ]
     },
@@ -34721,6 +34775,12 @@
           "file_path": "0696_fernando_kamorewu.webm",
           "speaker": "fernando",
           "format": "webm"
+        }
+      ],
+      "_linked_encyclopedia": [
+        {
+          "id": "kamorewu",
+          "title": "Kamorewu"
         }
       ]
     },

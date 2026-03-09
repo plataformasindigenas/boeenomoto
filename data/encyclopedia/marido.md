@@ -10,7 +10,7 @@ categories:
 date: '2026-02-21'
 images: []
 references:
-- ALBISETTI; VENTURELLI 1962
+- Albisetti1962aEnciclopedia
 see_also:
 - marido-kuru
 - iworo

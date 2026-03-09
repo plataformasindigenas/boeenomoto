@@ -1,0 +1,4 @@
+---
+id: aredu
+title: Aredu
+---

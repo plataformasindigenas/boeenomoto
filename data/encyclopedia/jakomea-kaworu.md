@@ -12,7 +12,7 @@ examples: []
 entry_type: antropônimo
 infobox: {}
 references:
-- ALBISETTI; VENTURELLI, Enciclopédia Bororo, vol. II.
+- Albisetti1962aEnciclopedia
 see_also: []
 ---
 

@@ -11,7 +11,7 @@ date: '2026-02-18'
 references: []
 see_also:
 - po
-- pogubo cerewu
+- pogubo-cerewu
 ---
 
 ## PERIGÁRA

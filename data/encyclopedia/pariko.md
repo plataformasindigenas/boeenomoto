@@ -1,0 +1,4 @@
+---
+id: pariko
+title: Pariko
+---

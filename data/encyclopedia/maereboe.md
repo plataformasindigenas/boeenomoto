@@ -13,7 +13,7 @@ see_also:
 - bari
 - aroe
 - boe
-- aroe kodu
+- aroe-kodu
 ---
 
 ## MAEREBOE

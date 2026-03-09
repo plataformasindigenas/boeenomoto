@@ -13,7 +13,7 @@ images:
 see_also:
 - aroe
 - baraedu
-- boe epa
+- boe-epa
 - tugarege
 - ecerae
 ---

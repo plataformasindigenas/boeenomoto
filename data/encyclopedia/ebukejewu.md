@@ -11,12 +11,11 @@ images:
 - url: images/ebukejewu2.JPG
   alt: Viseira cerimonial ebukujewu
   credit: 'Foto: Fabrício Ferraz Gerardi'
-- ritual
 date: '2026-02-18'
 references: []
 see_also:
 - pariko
-- boe epa
+- boe-epa
 ---
 
 ## EBUKUJEWU

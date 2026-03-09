@@ -31,8 +31,8 @@ references:
 see_also:
 - boe
 - arago
-- aroe_eceba_kejebo
-- aroe_eoprewu
+- aroe-eceba-kejebo
+- aroe-eoprewu
 - ecerae
 ---
 

@@ -11,8 +11,8 @@ categories:
 date: '2026-02-21'
 images: []
 references:
-- ALBISETTI; VENTURELLI 1962
-- VIERTLER 1976
+- Albisetti1962aEnciclopedia
+- Viertler1976As
 see_also:
 - boe-epa
 ---
