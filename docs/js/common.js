@@ -2,6 +2,30 @@
  * Shared utilities for terradoc search pages.
  */
 
+/* ── Scroll-aware nav ── */
+(function() {
+    var nav = document.getElementById('td-nav') || document.querySelector('nav');
+    if (nav) {
+        var threshold = 100;
+        var ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    if (window.scrollY > threshold) {
+                        nav.classList.add('scrolled');
+                    } else {
+                        nav.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        // Initial check
+        if (window.scrollY > threshold) nav.classList.add('scrolled');
+    }
+})();
+
 /* ── Mobile nav toggle ── */
 (function() {
     var toggle = document.querySelector('.nav-toggle');
@@ -10,6 +34,30 @@
         toggle.addEventListener('click', function() {
             var open = links.classList.toggle('open');
             toggle.setAttribute('aria-expanded', open);
+            document.body.classList.toggle('nav-open', open);
+        });
+    }
+})();
+
+/* ── Intersection Observer for scroll animations ── */
+(function() {
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('td-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.td-fade-in').forEach(function(el) {
+            observer.observe(el);
+        });
+    } else {
+        // Fallback: show all elements immediately
+        document.querySelectorAll('.td-fade-in').forEach(function(el) {
+            el.classList.add('td-visible');
         });
     }
 })();

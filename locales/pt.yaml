@@ -181,8 +181,65 @@ species_label: "espécies"
 articles_label: "verbetes"
 references_label: "referências"
 
+# Navigation (recordings)
+nav_recordings: "Corpus"
+
 # Terradoc UI
 nav_menu_label: "Menu"
 lang_switch_label: "Seletor de idioma"
-footer_text: ""
 card_cta: "Explorar"
+
+# Footer
+footer_description: >-
+  Plataforma dedicada à preservação, documentação e valorização dos saberes
+  linguísticos e culturais do povo Bororo.
+footer_nav_heading: "Navegação"
+footer_resources_heading: "Recursos"
+footer_contact_heading: "Contato"
+footer_email: ""
+footer_location: "Mato Grosso, Brasil"
+footer_credits: "Gerado com aptoro & kodudo"
+footer_license: ""
+footer_text: ""
+
+# Index page - hero & teasers
+index_hero_cta: "Explorar"
+index_view_all_dictionary: "Ver dicionário"
+index_view_all_encyclopedia: "Ver enciclopédia"
+index_view_all_fauna: "Ver fauna"
+index_gallery_title: "Imagens & Sons"
+index_gallery_subtitle: "Registros visuais e sonoros da cultura Bororo"
+index_about_subtitle: "Conheça a plataforma"
+index_about_who_title: "Quem somos"
+index_about_cite_title: "Como citar"
+index_about_cite: >-
+  ENOMOTO, T. Boe eno moto: Mundo Bororo [plataforma digital]. 2024.
+  Disponível em: https://plataformasindigenas.github.io/boeenomoto/
+index_about_partners_title: "Parceiros"
+index_quote: >-
+  A língua é o espírito do povo. Preservar a língua é preservar a alma de uma cultura.
+index_quote_attribution: "Provérbio Bororo"
+
+# Statistics labels
+stat_dictionary_entries: "entradas"
+stat_encyclopedia_entries: "verbetes"
+stat_fauna_entries: "espécies"
+stat_bibliography_entries: "referências"
+stat_recordings_entries: "gravações"
+
+# Recordings page
+rec_title: "Corpus de Gravações"
+rec_subtitle: "Registros sonoros da língua Bororo"
+rec_count_label: "gravações"
+rec_search_placeholder: "Pesquisar gravações..."
+rec_filters_title: "Filtros"
+rec_filter_format: "Formato"
+rec_filter_speaker: "Falante"
+rec_filter_match: "Tipo de match"
+rec_col_word: "Palavra"
+rec_col_speaker: "Falante"
+rec_col_date: "Data"
+rec_col_match: "Match"
+rec_col_audio: "Áudio"
+rec_no_results: "Nenhuma gravação encontrada"
+rec_overflow: "Mostrando 200 de {n} gravações. Refine sua busca."

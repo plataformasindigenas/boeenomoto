@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/fonts.css">
     <style>
         :root {
-            --td-color-primary: #2D4A3E;
-            --td-color-accent: #C2703E;
-            --td-color-bg: #F7F5F0;
-            --td-color-text: #2C2C2C;
-            --td-color-text-secondary: #555555;
+            --td-color-primary: #C81F2D;
+            --td-color-accent: #D4A03A;
+            --td-color-bg: #F4F1EA;
+            --td-color-text: #111827;
+            --td-color-text-secondary: #6B6F5A;
             --td-color-surface: #FFFFFF;
             --td-color-border: #DDD8CE;
-            --td-radius: 8px;
-            --td-font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --td-font-headings: 'Bitter', 'Georgia', 'Cambria', serif;
-            --td-term-color: #A85D33;
+            --td-radius: 28px;
+            --td-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --td-font-headings: 'Sora', 'Inter', sans-serif;
+            --td-term-color: #A01924;
             --td-term-weight: 600;
         }
         * { box-sizing: border-box; }
@@ -27,19 +27,64 @@
             line-height: 1.6;
             max-width: 600px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 4rem 1.5rem;
             background: var(--td-color-bg);
             color: var(--td-color-text);
             text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
-        h1 { color: var(--td-color-primary); font-size: 2.5rem; margin-bottom: 0.5rem; font-family: var(--td-font-headings); }
-        .subtitle { color: var(--td-color-text-secondary); font-size: 1.2rem; margin-bottom: 2rem; }
+        h1 {
+            color: var(--td-color-primary);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--td-font-headings);
+            letter-spacing: -0.02em;
+        }
+        .subtitle {
+            color: var(--td-color-text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
         .logo {
             width: 88px;
             height: 88px;
-            margin: 0 auto 1rem auto;
+            margin: 0 auto 1.5rem auto;
             display: block;
             object-fit: contain;
+        }
+        .logo-mark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        .logo-mark .ring-outer {
+            width: 72px;
+            height: 72px;
+            border: 3px solid var(--td-color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-mark .ring-inner {
+            width: 44px;
+            height: 44px;
+            border: 2px solid var(--td-color-text-secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-mark .ring-dot {
+            width: 16px;
+            height: 16px;
+            background: var(--td-color-primary);
+            border-radius: 50%;
         }
         .languages {
             display: flex;
@@ -55,11 +100,20 @@
             padding: 2rem 3rem;
             text-decoration: none;
             color: inherit;
-            transition: border-color 0.2s;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
             min-width: 200px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
-        .lang-card:hover { border-color: var(--td-color-accent); }
-        .lang-card h2 { margin: 0 0 0.25rem 0; color: var(--td-color-primary); font-family: var(--td-font-headings); }
+        .lang-card:hover {
+            border-color: var(--td-color-primary);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .lang-card h2 {
+            margin: 0 0 0.25rem 0;
+            color: var(--td-color-primary);
+            font-family: var(--td-font-headings);
+        }
     </style>
 </head>
 <body class="td-style-terra">

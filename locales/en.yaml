@@ -181,8 +181,65 @@ species_label: "species"
 articles_label: "articles"
 references_label: "references"
 
+# Navigation (recordings)
+nav_recordings: "Corpus"
+
 # Terradoc UI
 nav_menu_label: "Menu"
 lang_switch_label: "Language selector"
-footer_text: ""
 card_cta: "Explore"
+
+# Footer
+footer_description: >-
+  A platform dedicated to the preservation, documentation, and appreciation of
+  the linguistic and cultural knowledge of the Bororo people.
+footer_nav_heading: "Navigation"
+footer_resources_heading: "Resources"
+footer_contact_heading: "Contact"
+footer_email: ""
+footer_location: "Mato Grosso, Brazil"
+footer_credits: "Generated with aptoro & kodudo"
+footer_license: ""
+footer_text: ""
+
+# Index page - hero & teasers
+index_hero_cta: "Explore"
+index_view_all_dictionary: "View dictionary"
+index_view_all_encyclopedia: "View encyclopedia"
+index_view_all_fauna: "View fauna"
+index_gallery_title: "Images & Sounds"
+index_gallery_subtitle: "Visual and audio recordings of Bororo culture"
+index_about_subtitle: "Learn about the platform"
+index_about_who_title: "About us"
+index_about_cite_title: "How to cite"
+index_about_cite: >-
+  ENOMOTO, T. Boe eno moto: Bororo World [digital platform]. 2024.
+  Available at: https://plataformasindigenas.github.io/boeenomoto/
+index_about_partners_title: "Partners"
+index_quote: >-
+  Language is the spirit of the people. To preserve the language is to preserve the soul of a culture.
+index_quote_attribution: "Bororo proverb"
+
+# Statistics labels
+stat_dictionary_entries: "entries"
+stat_encyclopedia_entries: "articles"
+stat_fauna_entries: "species"
+stat_bibliography_entries: "references"
+stat_recordings_entries: "recordings"
+
+# Recordings page
+rec_title: "Recordings Corpus"
+rec_subtitle: "Audio recordings of the Bororo language"
+rec_count_label: "recordings"
+rec_search_placeholder: "Search recordings..."
+rec_filters_title: "Filters"
+rec_filter_format: "Format"
+rec_filter_speaker: "Speaker"
+rec_filter_match: "Match type"
+rec_col_word: "Word"
+rec_col_speaker: "Speaker"
+rec_col_date: "Date"
+rec_col_match: "Match"
+rec_col_audio: "Audio"
+rec_no_results: "No recordings found"
+rec_overflow: "Showing 200 of {n} recordings. Refine your search."

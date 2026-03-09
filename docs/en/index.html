@@ -10,55 +10,270 @@
     <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
     <style>
         :root {
-            --td-color-primary: #2D4A3E;
-            --td-color-accent: #C2703E;
-            --td-color-accent-muted: #A85D33;
-            --td-color-bg: #F7F5F0;
+            --td-color-primary: #C81F2D;
+            --td-color-accent: #D4A03A;
+            --td-color-accent-muted: #A01924;
+            --td-color-bg: #F4F1EA;
             --td-color-bg-light: #EDE9E0;
             --td-color-bg-infobox: #FAF8F4;
             --td-color-border: #DDD8CE;
             --td-color-border-dark: #B8AFA2;
-            --td-color-text: #2C2C2C;
-            --td-color-text-muted: #6B6B6B;
+            --td-color-text: #111827;
+            --td-color-text-muted: #6B6F5A;
             --td-color-highlight: #FFF9DB;
             --td-color-warning-bg: #FFF8E1;
             --td-color-surface: #FFFFFF;
             --td-color-border-light: #ECEAE5;
-            --td-color-text-secondary: #555555;
-            --td-color-accent-light: #FDF0EB;
+            --td-color-text-secondary: #6B6F5A;
+            --td-color-accent-light: #FDECEA;
             --td-color-success: #4A7C59;
             --td-color-error: #C44536;
-            --td-color-accent-ring: rgba(194, 112, 62, 0.2);
-            --td-radius: 8px;
-            --td-font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --td-font-headings: 'Bitter', 'Georgia', 'Cambria', serif;
-            --td-font-mono: 'Lucida Sans Unicode', 'DejaVu Sans', monospace;
-            --td-term-color: #A85D33;
+            --td-color-accent-ring: rgba(200, 31, 45, 0.2);
+            --td-radius: 28px;
+            --td-color-dark: #0B0F17;
+            --td-radius-lg: 28px;
+            --td-radius-pill: 999px;
+            --td-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --td-font-headings: 'Sora', 'Inter', sans-serif;
+            --td-font-mono: 'IBM Plex Mono', 'Consolas', monospace;
+            --td-term-color: #A01924;
             --td-term-weight: 600;
         }
-        .hero {
-            text-align: center;
-            padding: 3rem 1.5rem;
-            background: var(--td-color-primary);
-            color: white;
-            border-radius: var(--td-radius);
-            margin-bottom: 3rem;
+        /* ── Hero ── */
+        .index-hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
             position: relative;
             overflow: hidden;
+            padding: 6rem 0 4rem;
+            margin: -5rem -2rem 3rem;
         }
-        .hero h1 {
-            color: white;
+        .index-hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        .index-hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: var(--td-color-text);
+            margin: 0 0 1rem 0;
+        }
+        .index-hero-text p {
+            font-size: 1.25rem;
+            color: var(--td-color-text-muted);
+            max-width: 480px;
+            margin: 0 0 2rem 0;
+            line-height: 1.6;
+        }
+        .index-hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-photo-disc {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: var(--td-shadow-lg);
+            position: relative;
+            z-index: 2;
+        }
+        .hero-photo-disc img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-rings-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hero-small-target {
+            position: absolute;
+            bottom: 2rem;
+            right: 3rem;
+            z-index: 1;
+        }
+
+        /* ── Section teasers ── */
+        .index-section {
+            margin-bottom: 4rem;
+        }
+        .index-section .td-section-heading h2 {
+            font-size: 1.75rem;
+        }
+        .teaser-desc {
+            color: var(--td-color-text-secondary);
+            max-width: 640px;
+            line-height: 1.7;
+            margin: 0.5rem 0 1.25rem;
+        }
+        .teaser-count {
+            font-family: var(--td-font-headings);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--td-color-primary);
+            line-height: 1;
+            margin-right: 0.5rem;
+        }
+        .teaser-count-label {
+            font-size: 0.9rem;
+            color: var(--td-color-text-muted);
+        }
+        .teaser-stat {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ── Encyclopedia split teaser ── */
+        .enc-teaser-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        .enc-teaser-image {
+            border-radius: var(--td-radius);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+        .enc-teaser-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ── Fauna cards grid ── */
+        .fauna-teaser-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+        .fauna-teaser-card {
+            background: var(--td-color-surface);
+            border-radius: var(--td-radius);
+            border: 1px solid var(--td-color-border);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--td-shadow-sm);
+        }
+        .fauna-teaser-icon {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-            position: relative;
         }
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
+
+        /* ── Gallery teaser ── */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 0.75rem;
         }
+        .gallery-item {
+            border-radius: var(--td-radius);
+            overflow: hidden;
+            aspect-ratio: 1;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* ── About section ── */
+        .about-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .about-card {
+            background: var(--td-color-surface);
+            border-radius: var(--td-radius);
+            padding: 2rem;
+            border: 1px solid var(--td-color-border);
+            box-shadow: var(--td-shadow-sm);
+        }
+        .about-card h3 {
+            margin: 0 0 0.75rem 0;
+            font-size: 1.1rem;
+        }
+        .about-card p {
+            color: var(--td-color-text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .about-card-red {
+            background: var(--td-color-primary);
+            border-color: var(--td-color-primary);
+            color: white;
+        }
+        .about-card-red h3,
+        .about-card-red p {
+            color: white;
+        }
+        .about-quote {
+            border-left: 4px solid var(--td-color-primary);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            background: var(--td-color-surface);
+            border-radius: 0 var(--td-radius) var(--td-radius) 0;
+        }
+        .about-quote blockquote {
+            margin: 0;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--td-color-text-secondary);
+            line-height: 1.7;
+        }
+        .about-quote cite {
+            display: block;
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+            font-style: normal;
+            color: var(--td-color-text-muted);
+        }
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .stat-item {
+            padding: 1rem;
+        }
+        .stat-number {
+            font-family: var(--td-font-headings);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--td-color-primary);
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--td-color-text-muted);
+        }
+
+        /* Legacy card classes for compatibility */
         .platforms {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -76,7 +291,7 @@
             flex-direction: column;
         }
         .platform-card:hover {
-            border-color: var(--td-color-accent);
+            border-color: var(--td-color-primary);
             transform: translateY(-2px);
         }
         .platform-card h2 {
@@ -120,12 +335,48 @@
             margin-top: 0;
             color: var(--td-color-primary);
         }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .index-hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .index-hero-text h1 {
+                font-size: 2.5rem;
+            }
+            .index-hero-text p {
+                margin: 0 auto 2rem;
+            }
+            .hero-photo-disc {
+                width: 220px;
+                height: 220px;
+            }
+            .enc-teaser-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            .index-hero {
+                min-height: auto;
+                padding: 4rem 0 2rem;
+            }
+            .index-hero-text h1 {
+                font-size: 2rem;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body class="td-style-terra">
     <a href="#main-content" class="skip-link">Skip to content</a>
 
-    <nav aria-label="Main navigation">
+    <nav id="td-nav" aria-label="Main navigation">
         <div class="td-nav-inner">
             <a href="index.html" class="brand">
                 <img src="../images/logo.png" alt="" class="brand-logo">
@@ -137,68 +388,192 @@
                 <a href="encyclopedia.html">Encyclopedia</a>
                 <a href="fauna.html">Fauna</a>
                 <a href="bibliography.html">Bibliography</a>
+                <a href="recordings.html">Corpus</a>
             </div>
             <div class="lang-switch" aria-label="Language selector">
-                    <a href="../pt/index.html" class="lang-link">Português</a>
-                    <span class="lang-current" aria-current="true">English</span>
+                    <a href="../pt/index.html" class="lang-link">PT</a>
+<span class="lang-sep">/</span>                    <span class="lang-current" aria-current="true">EN</span>
             </div>
         </div>
     </nav>
 
     <main id="main-content" class="td-container">
-    <div class="hero">
-        <h1>Boe Eno Moto</h1>
-        <p>Bororo World</p>
-        <div style="width:80px;height:3px;background:var(--td-color-accent);margin:1.5rem auto 0;border-radius:2px;" aria-hidden="true"></div>
-    </div>
+    <section class="index-hero">
+        <div class="index-hero-inner">
+            <div class="index-hero-text">
+                <h1>Boe Eno Moto</h1>
+                <p>Bororo World</p>
+                <a href="#sections" class="td-pill td-pill-red">Explore &rarr;</a>
+            </div>
+            <div class="index-hero-visual">
+                <div class="hero-rings-bg">
+                    <div class="td-target-rings" style="width:400px;height:400px;" aria-hidden="true">
+    <div class="td-target-ring" style="width:400px;height:400px;"></div>
+    <div class="td-target-ring" style="width:calc(400px * 0.73);height:calc(400px * 0.73);"></div>
+    <div class="td-target-ring" style="width:calc(400px * 0.47);height:calc(400px * 0.47);"></div>
+</div>
+                </div>
+                <div class="hero-photo-disc">
+                    <img src="../images/bororo1.jpg" alt="Boe Eno Moto">
+                </div>
+            </div>
+        </div>
+        <div class="hero-small-target">
+            <div class="td-target-rings" style="width:64px;height:64px;" aria-hidden="true">
+    <div class="td-target-ring" style="width:64px;height:64px;border-width:1.5px;"></div>
+    <div class="td-target-ring" style="width:calc(64px * 0.6);height:calc(64px * 0.6);border-width:1.5px;"></div>
+    <div style="width:calc(64px * 0.2);height:calc(64px * 0.2);background:var(--td-color-primary);border-radius:50%;"></div>
+</div>
+        </div>
+    </section>
 
-    <div class="platforms">
-        <a href="dictionary.html" class="platform-card">
-            <h2>Dictionary</h2>
-            <p class="card-desc">Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.</p>
-            <div class="card-footer">
-                <span class="card-count"><strong>2866</strong> entries</span>
-                <span class="card-cta">Explore &rarr;</span>
-            </div>
-        </a>
-        <a href="encyclopedia.html" class="platform-card">
-            <h2>Encyclopedia</h2>
-            <p class="card-desc">Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.</p>
-            <div class="card-footer">
-                <span class="card-count"><strong>231</strong> articles</span>
-                <span class="card-cta">Explore &rarr;</span>
-            </div>
-        </a>
-        <a href="fauna.html" class="platform-card">
-            <h2>Fauna</h2>
-            <p class="card-desc">Animal names in the Bororo language with traditional classification, scientific names, and images.</p>
-            <div class="card-footer">
-                <span class="card-count"><strong>97</strong> species</span>
-                <span class="card-cta">Explore &rarr;</span>
-            </div>
-        </a>
-        <a href="bibliography.html" class="platform-card">
-            <h2>Bibliography</h2>
-            <p class="card-desc">Bibliographic references on the language, culture, and history of the Bororo people.</p>
-            <div class="card-footer">
-                <span class="card-count"><strong>196</strong> references</span>
-                <span class="card-cta">Explore &rarr;</span>
-            </div>
-        </a>
-    </div>
+    <div id="sections">
 
-    <div class="td-decor-motif" aria-hidden="true"><svg width="120px" height="8" viewBox="0 0 120 8" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="4" x2="52" y2="4" stroke="var(--td-color-border)" stroke-width="1.5"/><circle cx="60" cy="4" r="3" fill="var(--td-color-border)"/><line x1="68" y1="4" x2="120" y2="4" stroke="var(--td-color-border)" stroke-width="1.5"/></svg></div>
+    <section class="index-section td-fade-in">
+        <div class="td-section-heading">
+    <h2>Dictionary</h2>
+</div>
+        <div class="teaser-stat">
+            <span class="teaser-count">2866</span>
+            <span class="teaser-count-label">entries</span>
+        </div>
+        <p class="teaser-desc">Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.</p>
+        <a href="dictionary.html" class="td-pill td-pill-outline">View dictionary &rarr;</a>
+    </section>
 
-    <div class="about">
-        <h2>About the Project</h2>
-        <p><strong>Boe eno moto</strong> ("Bororo world") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.</p>
-        <p>This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.</p>
+    <section class="index-section td-fade-in">
+        <div class="td-section-heading">
+    <h2>Encyclopedia</h2>
+</div>
+        <div class="enc-teaser-grid">
+            <div>
+                <div class="teaser-stat">
+                    <span class="teaser-count">231</span>
+                    <span class="teaser-count-label">articles</span>
+                </div>
+                <p class="teaser-desc">Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.</p>
+                <a href="encyclopedia.html" class="td-pill td-pill-outline">View encyclopedia &rarr;</a>
+            </div>
+            <div class="enc-teaser-image">
+                <img src="../images/bororo1.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="index-section td-fade-in">
+        <div class="td-section-heading">
+    <h2>Fauna</h2>
+</div>
+        <div class="teaser-stat">
+            <span class="teaser-count">97</span>
+            <span class="teaser-count-label">species</span>
+        </div>
+        <p class="teaser-desc">Animal names in the Bororo language with traditional classification, scientific names, and images.</p>
+        <a href="fauna.html" class="td-pill td-pill-outline">View fauna &rarr;</a>
+    </section>
+
+    <section class="index-section td-fade-in">
+        <div class="td-section-heading">
+    <h2>Images & Sounds</h2>
+<p class="subtitle">Visual and audio recordings of Bororo culture</p></div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="../images/bororo1.jpg" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="index-section td-fade-in">
+        <div class="td-section-heading">
+    <h2>About the Project</h2>
+<p class="subtitle">Learn about the platform</p></div>
+
+        <div class="about-cards">
+            <div class="about-card">
+                <h3>About us</h3>
+                <p><strong>Boe eno moto</strong> ("Bororo world") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.</p>
+            </div>
+            <div class="about-card about-card-red">
+                <h3>How to cite</h3>
+                <p>ENOMOTO, T. Boe eno moto: Bororo World [digital platform]. 2024. Available at: https://plataformasindigenas.github.io/boeenomoto/</p>
+            </div>
+            <div class="about-card">
+                <h3>Partners</h3>
+                <p>This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.</p>
+            </div>
+        </div>
+
+        <div class="about-quote">
+            <blockquote>Language is the spirit of the people. To preserve the language is to preserve the soul of a culture.</blockquote>
+<cite>&mdash; Bororo proverb</cite>        </div>
+
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number">2866</div>
+                <div class="stat-label">entries</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">231</div>
+                <div class="stat-label">articles</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">97</div>
+                <div class="stat-label">species</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">196</div>
+                <div class="stat-label">references</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">834</div>
+                <div class="stat-label">recordings</div>
+            </div>
+        </div>
+    </section>
+
     </div>
     </main>
 
     <footer>
+        <div class="footer-adugo-spine" aria-hidden="true"></div>
         <div class="td-container">
-            <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="brand" style="color:white;text-decoration:none;font-family:var(--td-font-headings);font-weight:700;font-size:1.15rem;">
+                        <img src="../images/logo.png" alt="" class="brand-logo" style="filter:brightness(10);">
+                        Boe Eno Moto
+                    </a>
+                    <p class="footer-brand-desc">A platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <li><a href="encyclopedia.html">Encyclopedia</a></li>
+                        <li><a href="fauna.html">Fauna</a></li>
+                        <li><a href="bibliography.html">Bibliography</a></li>
+                        <li><a href="recordings.html">Corpus</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/plataformasindigenas/aptoro">aptoro</a></li>
+                        <li><a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">&#9906;</span>
+                        <span>Mato Grosso, Brazil</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Generated with aptoro & kodudo</p>
+                <p></p>
+            </div>
         </div>
     </footer>
 

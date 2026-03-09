@@ -10,70 +10,93 @@
     <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
     <style>
         :root {
-            --td-color-primary: #2D4A3E;
-            --td-color-accent: #C2703E;
-            --td-color-accent-muted: #A85D33;
-            --td-color-bg: #F7F5F0;
+            --td-color-primary: #C81F2D;
+            --td-color-accent: #D4A03A;
+            --td-color-accent-muted: #A01924;
+            --td-color-bg: #F4F1EA;
             --td-color-bg-light: #EDE9E0;
             --td-color-bg-infobox: #FAF8F4;
             --td-color-border: #DDD8CE;
             --td-color-border-dark: #B8AFA2;
-            --td-color-text: #2C2C2C;
-            --td-color-text-muted: #6B6B6B;
+            --td-color-text: #111827;
+            --td-color-text-muted: #6B6F5A;
             --td-color-highlight: #FFF9DB;
             --td-color-warning-bg: #FFF8E1;
             --td-color-surface: #FFFFFF;
             --td-color-border-light: #ECEAE5;
-            --td-color-text-secondary: #555555;
-            --td-color-accent-light: #FDF0EB;
+            --td-color-text-secondary: #6B6F5A;
+            --td-color-accent-light: #FDECEA;
             --td-color-success: #4A7C59;
             --td-color-error: #C44536;
-            --td-color-accent-ring: rgba(194, 112, 62, 0.2);
-            --td-radius: 8px;
-            --td-font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --td-font-headings: 'Bitter', 'Georgia', 'Cambria', serif;
-            --td-font-mono: 'Lucida Sans Unicode', 'DejaVu Sans', monospace;
-            --td-term-color: #A85D33;
+            --td-color-accent-ring: rgba(200, 31, 45, 0.2);
+            --td-radius: 28px;
+            --td-color-dark: #0B0F17;
+            --td-radius-lg: 28px;
+            --td-radius-pill: 999px;
+            --td-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --td-font-headings: 'Sora', 'Inter', sans-serif;
+            --td-font-mono: 'IBM Plex Mono', 'Consolas', monospace;
+            --td-term-color: #A01924;
             --td-term-weight: 600;
         }
 .enc-welcome {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: var(--td-color-primary);
-    color: white;
-    border-radius: var(--td-radius);
+    padding: 1.5rem 0 1rem;
     margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+.enc-welcome::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    width: 4px;
+    height: 48px;
+    background: var(--td-color-primary);
+    border-radius: 2px;
 }
 .enc-welcome h1 {
-    color: white;
+    color: var(--td-color-primary);
     margin: 0 0 0.5rem 0;
     font-size: 2rem;
 }
 .enc-welcome-text {
-    opacity: 0.9;
     max-width: 600px;
-    margin: 0 auto;
     font-size: 0.95rem;
     line-height: 1.6;
+    color: var(--td-color-text-secondary);
 }
 .enc-stat {
     font-size: 0.85rem;
-    opacity: 0.7;
+    color: var(--td-color-text-muted);
     margin-top: 0.5rem;
 }
 .portal-section {
     background: var(--td-color-surface);
     border: 1px solid var(--td-color-border);
     border-radius: var(--td-radius);
-    padding: 1.25rem;
+    padding: 1.5rem;
     margin-bottom: 1.5rem;
+    box-shadow: var(--td-shadow-sm);
 }
 .portal-section h2 {
     margin: 0 0 1rem 0;
     font-size: 1.1rem;
     color: var(--td-color-primary);
-    border-bottom: 2px solid var(--td-color-accent);
     padding-bottom: 0.5rem;
+    border-bottom: none;
+    position: relative;
+    padding-left: 1rem;
+}
+.portal-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    width: 3px;
+    height: 1.1em;
+    background: var(--td-color-primary);
+    border-radius: 2px;
 }
 .portal-columns {
     display: grid;
@@ -127,13 +150,18 @@
 }
 .featured-readmore {
     display: inline-block;
-    color: var(--td-color-accent-muted);
+    background: var(--td-color-primary);
+    color: white;
+    padding: 0.4rem 1.25rem;
+    border-radius: 999px;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.2s;
 }
 .featured-readmore:hover {
-    text-decoration: underline;
+    background: var(--td-color-accent-muted);
+    text-decoration: none;
 }
 .cat-list {
     list-style: none;
@@ -144,7 +172,7 @@
     padding: 0.3rem 0;
 }
 .cat-list a {
-    color: var(--td-color-accent-muted);
+    color: var(--td-color-primary);
     text-decoration: none;
     font-size: 0.95rem;
 }
@@ -224,9 +252,9 @@
 .entry-type-tag {
     font-size: 0.7rem;
     background: var(--td-color-accent-light);
-    color: var(--td-color-text-muted);
-    padding: 0.1rem 0.4rem;
-    border-radius: var(--td-radius);
+    color: var(--td-color-accent-muted);
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
 }
 .entry-summary {
     color: var(--td-color-text-secondary);
@@ -242,14 +270,16 @@
 }
 .entry-cat {
     font-size: 0.72rem;
-    background: var(--td-color-border);
-    color: var(--td-color-text-secondary);
-    padding: 0.12rem 0.4rem;
-    border-radius: var(--td-radius);
+    background: var(--td-color-accent-light);
+    color: var(--td-color-accent-muted);
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
     cursor: pointer;
+    transition: background 0.15s;
 }
 .entry-cat:hover {
     background: var(--td-color-border-dark);
+    color: white;
 }
 .entry-variants {
     font-size: 0.85rem;
@@ -259,7 +289,7 @@
 .variant-tag {
     background: var(--td-color-border);
     padding: 0.1rem 0.5rem;
-    border-radius: var(--td-radius);
+    border-radius: 999px;
     margin-right: 0.3rem;
     font-style: italic;
 }
@@ -294,7 +324,7 @@
 <body class="td-style-terra">
     <a href="#main-content" class="skip-link">Skip to content</a>
 
-    <nav aria-label="Main navigation">
+    <nav id="td-nav" aria-label="Main navigation">
         <div class="td-nav-inner">
             <a href="index.html" class="brand">
                 <img src="../images/logo.png" alt="" class="brand-logo">
@@ -306,10 +336,11 @@
                 <a href="encyclopedia.html" class="active" aria-current="page">Encyclopedia</a>
                 <a href="fauna.html">Fauna</a>
                 <a href="bibliography.html">Bibliography</a>
+                <a href="recordings.html">Corpus</a>
             </div>
             <div class="lang-switch" aria-label="Language selector">
-                    <a href="../pt/encyclopedia.html" class="lang-link">Português</a>
-                    <span class="lang-current" aria-current="true">English</span>
+                    <a href="../pt/encyclopedia.html" class="lang-link">PT</a>
+<span class="lang-sep">/</span>                    <span class="lang-current" aria-current="true">EN</span>
             </div>
         </div>
     </nav>
@@ -1517,14 +1548,51 @@
     </main>
 
     <footer>
+        <div class="footer-adugo-spine" aria-hidden="true"></div>
         <div class="td-container">
-            <p>Generated with <a href="https://github.com/plataformasindigenas/aptoro">aptoro</a> and <a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></p>
-<p>Schema v2.0</p>        </div>
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="brand" style="color:white;text-decoration:none;font-family:var(--td-font-headings);font-weight:700;font-size:1.15rem;">
+                        <img src="../images/logo.png" alt="" class="brand-logo" style="filter:brightness(10);">
+                        Boe Eno Moto
+                    </a>
+                    <p class="footer-brand-desc">A platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <li><a href="encyclopedia.html">Encyclopedia</a></li>
+                        <li><a href="fauna.html">Fauna</a></li>
+                        <li><a href="bibliography.html">Bibliography</a></li>
+                        <li><a href="recordings.html">Corpus</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/plataformasindigenas/aptoro">aptoro</a></li>
+                        <li><a href="https://github.com/plataformasindigenas/kodudo">kodudo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">&#9906;</span>
+                        <span>Mato Grosso, Brazil</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Generated with aptoro & kodudo</p>
+                <p></p>
+            </div>
+        </div>
     </footer>
 
     <script src="../js/common.js"></script>
     <script>
-    var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_cta": "Explore", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "dict_all_pos": "All word classes", "dict_browse_hint": "Select an entry to see details", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_back_to_index": "Back to encyclopedia", "enc_breadcrumb_label": "Breadcrumb", "enc_browse_categories": "Browse by category", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_entry_type": "Type", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_featured_title": "Featured article", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_highlights_title": "Illustrated articles", "enc_last_updated": "Last updated", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_read_more": "Read more", "enc_references": "References", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_see_also": "See also", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "enc_welcome_text": "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people.", "entries_label": "entries", "fauna_category_uncategorized": "Uncategorized", "fauna_detail_classification": "Bororo classification", "fauna_detail_family": "Family", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_select_hint": "Click an animal to see details", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_generated": "Generated with", "footer_text": "", "html_lang": "en", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_title": "About the Project", "index_hero_subtitle": "Bororo World", "index_hero_title": "Boe Eno Moto", "index_title": "Home", "infobox_cl\u00e3": "Clan", "infobox_coordenadas": "Coordinates", "infobox_dura\u00e7\u00e3o": "Duration", "infobox_esta\u00e7\u00e3o": "Season", "infobox_fam\u00edlia": "Family", "infobox_fun\u00e7\u00e3o": "Function", "infobox_fun\u00e7\u00f5es": "Functions", "infobox_habitat": "Habitat", "infobox_local": "Location", "infobox_material": "Material", "infobox_membros": "Members", "infobox_nome_cient\u00edfico": "Scientific name", "infobox_papel": "Role", "infobox_participantes": "Participants", "infobox_per\u00edodo": "Period", "infobox_regi\u00e3o": "Region", "infobox_rela\u00e7\u00f5es": "Relations", "infobox_rio": "River", "infobox_tipo": "Type", "infobox_usos": "Uses", "lang_switch_label": "Language selector", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_fauna": "Fauna", "nav_label": "Main navigation", "nav_menu_label": "Menu", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_encyclopedia": "See in Encyclopedia", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species"};
+    var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_cta": "Explore", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "dict_all_pos": "All word classes", "dict_browse_hint": "Select an entry to see details", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_back_to_index": "Back to encyclopedia", "enc_breadcrumb_label": "Breadcrumb", "enc_browse_categories": "Browse by category", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_entry_type": "Type", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_featured_title": "Featured article", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_highlights_title": "Illustrated articles", "enc_last_updated": "Last updated", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_read_more": "Read more", "enc_references": "References", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_see_also": "See also", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "enc_welcome_text": "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people.", "entries_label": "entries", "fauna_category_uncategorized": "Uncategorized", "fauna_detail_classification": "Bororo classification", "fauna_detail_family": "Family", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_select_hint": "Click an animal to see details", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_contact_heading": "Contact", "footer_credits": "Generated with aptoro \u0026 kodudo", "footer_description": "A platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "footer_email": "", "footer_generated": "Generated with", "footer_license": "", "footer_location": "Mato Grosso, Brazil", "footer_nav_heading": "Navigation", "footer_resources_heading": "Resources", "footer_text": "", "html_lang": "en", "index_about_cite": "ENOMOTO, T. Boe eno moto: Bororo World [digital platform]. 2024. Available at: https://plataformasindigenas.github.io/boeenomoto/", "index_about_cite_title": "How to cite", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_partners_title": "Partners", "index_about_subtitle": "Learn about the platform", "index_about_title": "About the Project", "index_about_who_title": "About us", "index_gallery_subtitle": "Visual and audio recordings of Bororo culture", "index_gallery_title": "Images \u0026 Sounds", "index_hero_cta": "Explore", "index_hero_subtitle": "Bororo World", "index_hero_title": "Boe Eno Moto", "index_quote": "Language is the spirit of the people. To preserve the language is to preserve the soul of a culture.", "index_quote_attribution": "Bororo proverb", "index_title": "Home", "index_view_all_dictionary": "View dictionary", "index_view_all_encyclopedia": "View encyclopedia", "index_view_all_fauna": "View fauna", "infobox_cl\u00e3": "Clan", "infobox_coordenadas": "Coordinates", "infobox_dura\u00e7\u00e3o": "Duration", "infobox_esta\u00e7\u00e3o": "Season", "infobox_fam\u00edlia": "Family", "infobox_fun\u00e7\u00e3o": "Function", "infobox_fun\u00e7\u00f5es": "Functions", "infobox_habitat": "Habitat", "infobox_local": "Location", "infobox_material": "Material", "infobox_membros": "Members", "infobox_nome_cient\u00edfico": "Scientific name", "infobox_papel": "Role", "infobox_participantes": "Participants", "infobox_per\u00edodo": "Period", "infobox_regi\u00e3o": "Region", "infobox_rela\u00e7\u00f5es": "Relations", "infobox_rio": "River", "infobox_tipo": "Type", "infobox_usos": "Uses", "lang_switch_label": "Language selector", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_fauna": "Fauna", "nav_label": "Main navigation", "nav_menu_label": "Menu", "nav_recordings": "Corpus", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "rec_col_audio": "Audio", "rec_col_date": "Date", "rec_col_match": "Match", "rec_col_speaker": "Speaker", "rec_col_word": "Word", "rec_count_label": "recordings", "rec_filter_format": "Format", "rec_filter_match": "Match type", "rec_filter_speaker": "Speaker", "rec_filters_title": "Filters", "rec_no_results": "No recordings found", "rec_overflow": "Showing 200 of {n} recordings. Refine your search.", "rec_search_placeholder": "Search recordings...", "rec_subtitle": "Audio recordings of the Bororo language", "rec_title": "Recordings Corpus", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_encyclopedia": "See in Encyclopedia", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species", "stat_bibliography_entries": "references", "stat_dictionary_entries": "entries", "stat_encyclopedia_entries": "articles", "stat_fauna_entries": "species", "stat_recordings_entries": "recordings"};
     var BASE_PATH = '../';
 
     function hasCategory(entry, value) {

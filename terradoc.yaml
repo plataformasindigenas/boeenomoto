@@ -24,8 +24,14 @@ module_labels:
   encyclopedia: "Enciclopédia"
   fauna: "Fauna"
   bibliography: "Bibliografia"
+  recordings: "Corpus"
 
 theme:
   preset: "terra"
   logo: "images/logo.png"
   favicon: "images/favicon.ico"
+  hero_image: "images/bororo1.jpg"
+  hero_height: "large"
+  border_radius: "28px"
+  colors:
+    dark: "#0B0F17"
