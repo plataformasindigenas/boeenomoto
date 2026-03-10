@@ -366,6 +366,32 @@
             z-index: 1;
         }
 
+        /* ── Sections label ── */
+        .sections-label {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 3.5rem 0 2.5rem;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        .sections-label-line {
+            flex: 1;
+            height: 1px;
+            background: var(--td-color-border-dark);
+            opacity: 0.35;
+        }
+        .sections-label-text {
+            font-family: var(--td-font-headings);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--td-color-primary);
+            opacity: 0.7;
+            white-space: nowrap;
+        }
+
         /* ── Section teasers — unified card layout ── */
         .index-section {
             margin-bottom: 4rem;
@@ -490,46 +516,6 @@
         .about-card-red p {
             color: white;
         }
-        .about-quote {
-            border-left: 4px solid var(--td-color-primary);
-            padding: 1.5rem 2rem;
-            margin: 2rem 0;
-            background: var(--td-color-surface);
-            border-radius: 0 var(--td-radius) var(--td-radius) 0;
-        }
-        .about-quote blockquote {
-            margin: 0;
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--td-color-text-secondary);
-            line-height: 1.7;
-        }
-        .about-quote cite {
-            display: block;
-            margin-top: 0.75rem;
-            font-size: 0.9rem;
-            font-style: normal;
-            color: var(--td-color-text-muted);
-        }
-        .stats-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            text-align: center;
-            margin-top: 2rem;
-        }
-        .stat-item {
-            padding: 1rem;
-        }
-        .stat-number {
-            font-family: var(--td-font-headings);
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--td-color-primary);
-        }
-        .stat-label {
-            font-size: 0.85rem;
-            color: var(--td-color-text-muted);
         }
 
         /* Legacy card classes for compatibility */
@@ -938,7 +924,13 @@
         </svg>
     </div>
 
-    <div id="sections">
+    <div class="sections-label" id="sections">
+        <span class="sections-label-line"></span>
+        <span class="sections-label-text">Explorar</span>
+        <span class="sections-label-line"></span>
+    </div>
+
+    <div>
 
 
     <section class="index-section td-fade-in">
@@ -1045,32 +1037,6 @@
             </div>
         </div>
 
-        <div class="about-quote">
-            <blockquote>A língua é o espírito do povo. Preservar a língua é preservar a alma de uma cultura.</blockquote>
-<cite>&mdash; Provérbio Bororo</cite>        </div>
-
-        <div class="stats-row">
-            <div class="stat-item">
-                <div class="stat-number">2866</div>
-                <div class="stat-label">entradas</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">231</div>
-                <div class="stat-label">verbetes</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">97</div>
-                <div class="stat-label">espécies</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">196</div>
-                <div class="stat-label">referências</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">834</div>
-                <div class="stat-label">gravações</div>
-            </div>
-        </div>
     </section>
 
     </div>

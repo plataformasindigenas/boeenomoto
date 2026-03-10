@@ -209,6 +209,7 @@ footer_text: ""
 
 # Index page - hero & teasers
 index_hero_cta: "Explorar"
+index_sections_title: "Explorar"
 index_view_all_dictionary: "Ver dicionário"
 index_view_all_encyclopedia: "Ver enciclopédia"
 index_view_all_fauna: "Ver fauna"
