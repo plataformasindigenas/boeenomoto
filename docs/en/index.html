@@ -137,15 +137,15 @@
             border-radius: 50%;
             overflow: hidden;
             z-index: 4;
+            transform: scale(1);
             box-shadow: 0 4px 20px rgba(0,0,0,0.14);
             transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.5s ease, z-index 0s;
             cursor: pointer;
         }
         .hero-photo-sat:hover {
-            transform: translateY(-3px) scale(1.22);
+            transform: scale(1.22);
             box-shadow: 0 8px 32px rgba(0,0,0,0.25);
             z-index: 10;
-            animation: none;
         }
         .hero-photo-sat img {
             width: 100%;
@@ -178,16 +178,6 @@
         }
 
         /* ── Hero background animations ── */
-        @keyframes hero-ring-expand {
-            0%   { transform: scale(0); opacity: 0.3; }
-            80%  { opacity: 0.1; }
-            100% { transform: scale(1); opacity: 0; }
-        }
-        @keyframes hero-diamond-expand {
-            0%   { transform: rotate(45deg) scale(0); opacity: 0.3; }
-            80%  { opacity: 0.1; }
-            100% { transform: rotate(45deg) scale(1); opacity: 0; }
-        }
         .hero-rings-bg-anim {
             position: absolute;
             inset: 0;
@@ -195,26 +185,83 @@
             height: 100%;
             pointer-events: none;
             z-index: 1;
+            shape-rendering: geometricPrecision;
         }
-        .hero-rings-bg-anim .hr-circle {
+        .hero-rings-bg-anim circle,
+        .hero-rings-bg-anim rect {
             fill: none;
-            stroke-width: 2;
-            animation: hero-ring-expand 10s ease-out infinite;
+            vector-effect: non-scaling-stroke;
+            stroke-linecap: square;
+            stroke-linejoin: miter;
+            stroke-miterlimit: 2;
+            paint-order: stroke;
         }
-        .hero-rings-bg-anim .hr-diamond {
-            fill: none;
-            stroke-width: 1.5;
-            animation: hero-diamond-expand 12s ease-out infinite;
-        }
+        .hero-rings-bg-anim circle { stroke-width: 3; }
+        .hero-rings-bg-anim rect { stroke-width: 2.6; }
         .hr-red { stroke: var(--td-color-primary); }
         .hr-dark { stroke: var(--td-color-dark, #0B0F17); }
-        .hr-dash-bead { stroke-dasharray: 3 5; }
-        .hr-dash-feather { stroke-dasharray: 8 12; }
+        .hr-dash-bead {
+            stroke-dasharray: 4 18 2 26 6 20 3 30;
+            stroke-linecap: square;
+            stroke-dashoffset: 5;
+        }
+        .hr-dash-feather {
+            stroke-dasharray: 26 30 12 44 18 28;
+            stroke-linecap: round;
+            stroke-dashoffset: 11;
+        }
+        .hr-dash-trace {
+            stroke-dasharray: 14 40 4 22 10 48 6 34;
+            stroke-linecap: round;
+            stroke-dashoffset: 17;
+        }
+        .hr-dash-marks {
+            stroke-dasharray: 3 16 5 26 2 38 7 22 4 30;
+            stroke-linecap: square;
+            stroke-dashoffset: 9;
+        }
+        /* Subtle moiety rhythm contrast: red denser, dark more spacious */
+        .hr-red.hr-dash-bead { stroke-dasharray: 4 14 2 20 6 16 3 24; }
+        .hr-dark.hr-dash-bead { stroke-dasharray: 5 22 3 30 7 20 4 34; }
+        .hr-red.hr-dash-feather { stroke-dasharray: 22 24 10 36 14 22; }
+        .hr-dark.hr-dash-feather { stroke-dasharray: 28 34 12 50 20 30; }
+        .hr-red.hr-dash-trace { stroke-dasharray: 12 32 4 18 8 36 6 26; }
+        .hr-dark.hr-dash-trace { stroke-dasharray: 16 44 5 26 12 54 7 38; }
+        .hr-red.hr-dash-marks { stroke-dasharray: 3 12 5 20 2 30 7 18 4 24; }
+        .hr-dark.hr-dash-marks { stroke-dasharray: 4 20 6 32 3 44 8 26 5 36; }
 
         /* ── Hero ambient animations ── */
-        @keyframes hero-float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-3px); }
+        @keyframes hero-sat-orbit-1 {
+            0% { translate: 0 0; }
+            20% { translate: 4px -6px; }
+            40% { translate: 8px -1px; }
+            60% { translate: 2px 5px; }
+            80% { translate: -4px 2px; }
+            100% { translate: 0 0; }
+        }
+        @keyframes hero-sat-orbit-2 {
+            0% { translate: 0 0; }
+            18% { translate: -5px -3px; }
+            36% { translate: -2px 5px; }
+            58% { translate: 6px 7px; }
+            78% { translate: 8px -2px; }
+            100% { translate: 0 0; }
+        }
+        @keyframes hero-sat-orbit-3 {
+            0% { translate: 0 0; }
+            22% { translate: 6px 3px; }
+            44% { translate: 1px 8px; }
+            63% { translate: -7px 4px; }
+            82% { translate: -5px -4px; }
+            100% { translate: 0 0; }
+        }
+        @keyframes hero-sat-orbit-4 {
+            0% { translate: 0 0; }
+            25% { translate: -3px 6px; }
+            46% { translate: -8px 1px; }
+            68% { translate: -2px -7px; }
+            86% { translate: 5px -5px; }
+            100% { translate: 0 0; }
         }
         @keyframes hero-baito-pulse {
             0%, 100% { opacity: 0.12; }
@@ -224,19 +271,22 @@
             0%, 100% { opacity: 0.42; }
             50% { opacity: 0.48; }
         }
-        .hero-photo-sat-1 { animation: hero-float 7s ease-in-out infinite; }
-        .hero-photo-sat-2 { animation: hero-float 6s ease-in-out -1.5s infinite; }
-        .hero-photo-sat-3 { animation: hero-float 8s ease-in-out -3s infinite; }
-        .hero-photo-sat-4 { animation: hero-float 6.5s ease-in-out -4.5s infinite; }
+        .hero-photo-sat-1 { animation: hero-sat-orbit-1 10.8s linear -1.3s infinite; }
+        .hero-photo-sat-2 { animation: hero-sat-orbit-2 9.4s linear -3.8s infinite; }
+        .hero-photo-sat-3 { animation: hero-sat-orbit-3 11.6s linear -6.1s infinite; }
+        .hero-photo-sat-4 { animation: hero-sat-orbit-4 8.9s linear -2.7s infinite; }
         .hero-baito-pulse { animation: hero-baito-pulse 4s ease-in-out infinite; }
         .hero-moiety-top { animation: hero-moiety-shimmer 7s ease-in-out infinite; }
         .hero-moiety-bot { animation: hero-moiety-shimmer 7s ease-in-out -3.5s infinite; }
         @media (prefers-reduced-motion: reduce) {
             .hero-photo-sat-1, .hero-photo-sat-2, .hero-photo-sat-3, .hero-photo-sat-4,
             .hero-baito-pulse, .hero-moiety-top, .hero-moiety-bot,
-            .hero-rings-bg-anim .hr-circle,
-            .hero-rings-bg-anim .hr-diamond {
+            .hero-rings-bg-anim circle,
+            .hero-rings-bg-anim rect {
                 animation: none;
+            }
+            .hero-rings-bg-anim {
+                display: none;
             }
         }
 
@@ -634,24 +684,108 @@
     <main id="main-content" class="td-container">
     <section class="index-hero">
         <svg class="hero-rings-bg-anim" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle class="hr-circle hr-red hr-dash-bead" cx="180" cy="200" r="100" style="animation-delay: 0s; animation-duration: 10s; transform-origin: 180px 200px;"/>
-            <circle class="hr-circle hr-red hr-dash-bead" cx="180" cy="200" r="130" style="animation-delay: -1s; animation-duration: 10s; transform-origin: 180px 200px;"/>
-            <circle class="hr-circle hr-red hr-dash-bead" cx="180" cy="200" r="160" style="animation-delay: -2s; animation-duration: 10s; transform-origin: 180px 200px;"/>
-            <rect class="hr-diamond hr-dark" x="860" y="110" width="80" height="80" rx="2" style="animation-delay: -3s; animation-duration: 12s; transform-origin: 900px 150px;"/>
-            <rect class="hr-diamond hr-dark" x="845" y="95" width="110" height="110" rx="2" style="animation-delay: -4s; animation-duration: 12s; transform-origin: 900px 150px;"/>
-            <rect class="hr-diamond hr-dark" x="830" y="80" width="140" height="140" rx="2" style="animation-delay: -5s; animation-duration: 12s; transform-origin: 900px 150px;"/>
-            <circle class="hr-circle hr-red" cx="550" cy="500" r="90" style="animation-delay: -6s; animation-duration: 11s; transform-origin: 550px 500px;"/>
-            <circle class="hr-circle hr-red" cx="550" cy="500" r="120" style="animation-delay: -7s; animation-duration: 11s; transform-origin: 550px 500px;"/>
-            <circle class="hr-circle hr-red" cx="550" cy="500" r="150" style="animation-delay: -8s; animation-duration: 11s; transform-origin: 550px 500px;"/>
-            <circle class="hr-circle hr-dark hr-dash-feather" cx="1050" cy="550" r="90" style="animation-delay: -2s; animation-duration: 13s; transform-origin: 1050px 550px;"/>
-            <circle class="hr-circle hr-dark hr-dash-feather" cx="1050" cy="550" r="120" style="animation-delay: -3s; animation-duration: 13s; transform-origin: 1050px 550px;"/>
-            <circle class="hr-circle hr-dark hr-dash-feather" cx="1050" cy="550" r="150" style="animation-delay: -4s; animation-duration: 13s; transform-origin: 1050px 550px;"/>
-            <rect class="hr-diamond hr-red" x="310" y="560" width="80" height="80" rx="2" style="animation-delay: -8s; animation-duration: 10s; transform-origin: 350px 600px;"/>
-            <rect class="hr-diamond hr-red" x="295" y="545" width="110" height="110" rx="2" style="animation-delay: -9s; animation-duration: 10s; transform-origin: 350px 600px;"/>
-            <rect class="hr-diamond hr-red" x="280" y="530" width="140" height="140" rx="2" style="animation-delay: -10s; animation-duration: 10s; transform-origin: 350px 600px;"/>
-            <circle class="hr-circle hr-dark" cx="750" cy="100" r="110" style="animation-delay: -5s; animation-duration: 12s; transform-origin: 750px 100px;"/>
-            <circle class="hr-circle hr-dark" cx="750" cy="100" r="140" style="animation-delay: -6s; animation-duration: 12s; transform-origin: 750px 100px;"/>
-            <circle class="hr-circle hr-dark" cx="750" cy="100" r="170" style="animation-delay: -7s; animation-duration: 12s; transform-origin: 750px 100px;"/>
+            <circle class="hr-red hr-dash-bead" cx="180" cy="200" r="14" opacity="0">
+                <animate attributeName="r" values="14;100" dur="10s" begin="0s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="0s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-red hr-dash-bead" cx="180" cy="200" r="14" opacity="0">
+                <animate attributeName="r" values="14;130" dur="10s" begin="-1s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="-1s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-red hr-dash-bead" cx="180" cy="200" r="14" opacity="0">
+                <animate attributeName="r" values="14;160" dur="10s" begin="-2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="-2s" repeatCount="indefinite"/>
+            </circle>
+            <g transform="translate(900,150)">
+                <rect class="hr-dark hr-dash-trace" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+                    <animate attributeName="width" values="14;80" dur="12s" begin="-3s" repeatCount="indefinite"/>
+                    <animate attributeName="height" values="14;80" dur="12s" begin="-3s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="-7;-40" dur="12s" begin="-3s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="-7;-40" dur="12s" begin="-3s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="-3s" repeatCount="indefinite"/>
+                </rect>
+            </g>
+            <g transform="translate(900,150)">
+                <rect class="hr-dark hr-dash-trace" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+                    <animate attributeName="width" values="14;110" dur="12s" begin="-4s" repeatCount="indefinite"/>
+                    <animate attributeName="height" values="14;110" dur="12s" begin="-4s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="-7;-55" dur="12s" begin="-4s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="-7;-55" dur="12s" begin="-4s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="-4s" repeatCount="indefinite"/>
+                </rect>
+            </g>
+            <g transform="translate(900,150)">
+                <rect class="hr-dark hr-dash-trace" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+                    <animate attributeName="width" values="14;140" dur="12s" begin="-5s" repeatCount="indefinite"/>
+                    <animate attributeName="height" values="14;140" dur="12s" begin="-5s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="-7;-70" dur="12s" begin="-5s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="-7;-70" dur="12s" begin="-5s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="-5s" repeatCount="indefinite"/>
+                </rect>
+            </g>
+            <circle class="hr-red hr-dash-marks" cx="550" cy="500" r="14" opacity="0">
+                <animate attributeName="r" values="14;90" dur="11s" begin="-6s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="11s" begin="-6s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-red hr-dash-marks" cx="550" cy="500" r="14" opacity="0">
+                <animate attributeName="r" values="14;120" dur="11s" begin="-7s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="11s" begin="-7s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-red hr-dash-marks" cx="550" cy="500" r="14" opacity="0">
+                <animate attributeName="r" values="14;150" dur="11s" begin="-8s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="11s" begin="-8s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-dark hr-dash-feather" cx="1050" cy="550" r="14" opacity="0">
+                <animate attributeName="r" values="14;90" dur="13s" begin="-2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="13s" begin="-2s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-dark hr-dash-feather" cx="1050" cy="550" r="14" opacity="0">
+                <animate attributeName="r" values="14;120" dur="13s" begin="-3s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="13s" begin="-3s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-dark hr-dash-feather" cx="1050" cy="550" r="14" opacity="0">
+                <animate attributeName="r" values="14;150" dur="13s" begin="-4s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="13s" begin="-4s" repeatCount="indefinite"/>
+            </circle>
+            <g transform="translate(350,600)">
+                <rect class="hr-red hr-dash-feather" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+                    <animate attributeName="width" values="14;80" dur="10s" begin="-8s" repeatCount="indefinite"/>
+                    <animate attributeName="height" values="14;80" dur="10s" begin="-8s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="-7;-40" dur="10s" begin="-8s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="-7;-40" dur="10s" begin="-8s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="-8s" repeatCount="indefinite"/>
+                </rect>
+            </g>
+            <g transform="translate(350,600)">
+                <rect class="hr-red hr-dash-feather" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+                    <animate attributeName="width" values="14;110" dur="10s" begin="-9s" repeatCount="indefinite"/>
+                    <animate attributeName="height" values="14;110" dur="10s" begin="-9s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="-7;-55" dur="10s" begin="-9s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="-7;-55" dur="10s" begin="-9s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="-9s" repeatCount="indefinite"/>
+                </rect>
+            </g>
+            <g transform="translate(350,600)">
+                <rect class="hr-red hr-dash-feather" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+                    <animate attributeName="width" values="14;140" dur="10s" begin="-10s" repeatCount="indefinite"/>
+                    <animate attributeName="height" values="14;140" dur="10s" begin="-10s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="-7;-70" dur="10s" begin="-10s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="-7;-70" dur="10s" begin="-10s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="-10s" repeatCount="indefinite"/>
+                </rect>
+            </g>
+            <circle class="hr-dark hr-dash-bead" cx="750" cy="100" r="14" opacity="0">
+                <animate attributeName="r" values="14;110" dur="12s" begin="-5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="-5s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-dark hr-dash-bead" cx="750" cy="100" r="14" opacity="0">
+                <animate attributeName="r" values="14;140" dur="12s" begin="-6s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="-6s" repeatCount="indefinite"/>
+            </circle>
+            <circle class="hr-dark hr-dash-bead" cx="750" cy="100" r="14" opacity="0">
+                <animate attributeName="r" values="14;170" dur="12s" begin="-7s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="-7s" repeatCount="indefinite"/>
+            </circle>
         </svg>
         <div class="index-hero-inner">
             <div class="index-hero-text">
@@ -692,29 +826,29 @@
                             <feGaussianBlur stdDeviation="1.2"/>
                         </filter>
                     </defs>
-                    <circle class="hero-moiety-top" cx="250" cy="250" r="230" style="fill:var(--td-color-primary)" opacity="0.45" clip-path="url(#vh-top)" filter="url(#vh-soft)"/>
-                    <circle class="hero-moiety-bot" cx="250" cy="250" r="230" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.45" clip-path="url(#vh-bot)" filter="url(#vh-soft)"/>
+                    <circle class="hero-moiety-top" cx="250" cy="250" r="230" style="fill:var(--td-color-primary)" opacity="0.3" clip-path="url(#vh-top)" filter="url(#vh-soft)"/>
+                    <circle class="hero-moiety-bot" cx="250" cy="250" r="230" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.3" clip-path="url(#vh-bot)" filter="url(#vh-soft)"/>
                     <g>
-                        <path d="M480,250 A230,230 0 0,0 20,250" fill="none" style="stroke:var(--td-color-primary)" stroke-width="2.5" opacity="0.16"/>
-                        <path d="M480,250 A230,230 0 0,1 20,250" fill="none" style="stroke:var(--td-color-dark, #0B0F17)" stroke-width="2.5" opacity="0.16"/>
+                        <path d="M480,250 A230,230 0 0,0 20,250" fill="none" style="stroke:var(--td-color-primary)" stroke-width="4" opacity="0.16"/>
+                        <path d="M480,250 A230,230 0 0,1 20,250" fill="none" style="stroke:var(--td-color-dark, #0B0F17)" stroke-width="4" opacity="0.16"/>
                         <line x1="20" y1="250" x2="480" y2="250" style="stroke:var(--td-color-text-muted, #6B6F5A)" stroke-width="1" opacity="0.12"/>
                         <circle cx="250" cy="250" r="165" fill="none" style="stroke:var(--td-color-primary)" stroke-width="1" opacity="0.06"/>
                     </g>
                     <g>
-                        <circle cx="250" cy="250" r="50" fill="none" style="stroke:var(--td-color-border-dark, #B8AFA2)" stroke-width="1.5" opacity="0.15"/>
+                        <circle cx="250" cy="250" r="50" fill="none" style="stroke:var(--td-color-border-dark, #B8AFA2)" stroke-width="4" opacity="0.15"/>
                         <circle class="hero-baito-pulse" cx="250" cy="250" r="35" style="fill:var(--td-color-accent)" opacity="0.15"/>
                         <circle cx="250" cy="250" r="18" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.18"/>
                     </g>
-                    <circle cx="31" cy="179" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="115" cy="64" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="250" cy="20" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="385" cy="64" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="469" cy="179" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="469" cy="321" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="385" cy="436" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="250" cy="480" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="115" cy="436" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
-                    <circle cx="31" cy="321" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.95" filter="url(#vh-dot)"/>
+                    <circle cx="31" cy="179" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="115" cy="64" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="250" cy="20" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="385" cy="64" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="469" cy="179" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="469" cy="321" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="385" cy="436" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="250" cy="480" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="115" cy="436" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
+                    <circle cx="31" cy="321" r="14" style="fill:var(--td-color-border-dark, #B8AFA2)" opacity="0.7" filter="url(#vh-dot)"/>
                 </svg>
 
                 <div class="hero-photo-main">
