@@ -483,41 +483,6 @@
             transform: scale(1.05);
         }
 
-        /* ── About section ── */
-        .about-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .about-card {
-            background: var(--td-color-surface);
-            border-radius: var(--td-radius);
-            padding: 2rem;
-            border: 1px solid var(--td-color-border);
-            box-shadow: var(--td-shadow-sm);
-        }
-        .about-card h3 {
-            margin: 0 0 0.75rem 0;
-            font-size: 1.1rem;
-        }
-        .about-card p {
-            color: var(--td-color-text-secondary);
-            font-size: 0.95rem;
-            margin: 0;
-            line-height: 1.6;
-        }
-        .about-card-red {
-            background: var(--td-color-primary);
-            border-color: var(--td-color-primary);
-            color: white;
-        }
-        .about-card-red h3,
-        .about-card-red p {
-            color: white;
-        }
-        }
-
         /* Legacy card classes for compatibility */
         .platforms {
             display: grid;
@@ -570,17 +535,6 @@
             font-weight: 600;
             color: var(--td-color-accent-muted);
         }
-        .about {
-            background: var(--td-color-surface);
-            border-radius: var(--td-radius);
-            padding: 2rem;
-            border: 1px solid var(--td-color-border);
-        }
-        .about h2 {
-            margin-top: 0;
-            color: var(--td-color-primary);
-        }
-
         /* ── Responsive ── */
         @media (max-width: 900px) {
             .index-hero-inner {
@@ -615,9 +569,6 @@
                 height: 220px;
             }
             .teaser-card {
-                grid-template-columns: 1fr;
-            }
-            .about-cards {
                 grid-template-columns: 1fr;
             }
         }
@@ -1025,27 +976,7 @@
         </div>
     </section>
 
-    <section class="index-section td-fade-in">
-        <div class="td-section-heading">
-    <h2>Sobre o Projeto</h2>
-<p class="subtitle">Conheça a plataforma</p></div>
 
-        <div class="about-cards">
-            <div class="about-card">
-                <h3>Quem somos</h3>
-                <p><strong>Boe eno moto</strong> ("mundo Bororo") é uma plataforma dedicada à preservação, documentação e valorização dos saberes linguísticos e culturais do povo Bororo.</p>
-            </div>
-            <div class="about-card about-card-red">
-                <h3>Como citar</h3>
-                <p>ENOMOTO, T. Boe eno moto: Mundo Bororo [plataforma digital]. 2024. Disponível em: https://plataformasindigenas.github.io/boeenomoto/</p>
-            </div>
-            <div class="about-card">
-                <h3>Parceiros</h3>
-                <p>Este repositório reúne uma variedade de recursos linguísticos e etnográficos, tanto históricos quanto contemporâneos, com o objetivo de apoiar o ensino, a pesquisa e os esforços de revitalização da língua Bororo. A plataforma oferece um conjunto de ferramentas voltadas para o estudo linguístico e antropológico.</p>
-            </div>
-        </div>
-
-    </section>
 
     </div>
     </main>
