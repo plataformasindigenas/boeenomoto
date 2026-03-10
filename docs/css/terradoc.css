@@ -819,7 +819,8 @@ select:focus-visible,
 
 /* ── Terra: Container ── */
 .td-style-terra .td-container {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /* ── Terra: Hero ── */
@@ -966,12 +967,14 @@ select:focus-visible,
         font-size: 2rem;
     }
     .td-style-terra .td-container {
-        padding: 0 1.25rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
 }
 @media (max-width: 768px) and (min-width: 601px) {
     .td-container {
-        padding: 0 1.25rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
 }
 @media (max-width: 600px) {
@@ -985,7 +988,8 @@ select:focus-visible,
         max-width: 80px;
     }
     .td-container {
-        padding: 0 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .footer-grid {
         grid-template-columns: 1fr;
@@ -998,7 +1002,8 @@ select:focus-visible,
         font-size: 1.75rem;
     }
     .td-style-terra .td-container {
-        padding: 0 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 @media (prefers-reduced-motion: reduce) {
