@@ -30,7 +30,17 @@ theme:
   preset: "terra"
   logo: "images/logo.png"
   favicon: "images/favicon.ico"
-  hero_image: "images/bororo1.jpg"
+  hero_image: "images/fauna.jpeg"
+  hero_images:
+    - "images/bororo1.jpg"
+    - "images/bar.jpeg"
+    - "images/chants.jpg"
+    - "images/video.jpg"
+  hero_stats:
+    - dictionary
+    - encyclopedia
+    - fauna
+    - recordings
   hero_height: "large"
   border_radius: "28px"
   colors:

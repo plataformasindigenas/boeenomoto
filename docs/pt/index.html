@@ -41,41 +41,154 @@
         }
         /* ── Hero ── */
         .index-hero {
-            min-height: 90vh;
+            min-height: 92vh;
             display: flex;
             align-items: center;
             position: relative;
             overflow: hidden;
-            padding: 6rem 0 4rem;
-            margin: -5rem -2rem 3rem;
+            padding: 7rem 0 2rem;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            background: linear-gradient(180deg, #E8E0D3 0%, #EDE9E0 45%, var(--td-color-bg) 100%);
         }
         .index-hero-inner {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            gap: 2rem;
             align-items: center;
-            max-width: 1080px;
+            max-width: 1120px;
             margin: 0 auto;
             padding: 0 2rem;
             width: 100%;
             position: relative;
             z-index: 2;
         }
+        .index-hero-text {
+            padding-right: 1rem;
+        }
         .index-hero-text h1 {
-            font-size: 3.5rem;
-            line-height: 1.1;
+            font-size: 4rem;
+            line-height: 1.05;
             letter-spacing: -0.03em;
             color: var(--td-color-text);
-            margin: 0 0 1rem 0;
+            margin: 0 0 0.35rem 0;
         }
-        .index-hero-text p {
-            font-size: 1.25rem;
+        .hero-tagline {
+            font-size: 1.3rem;
+            color: var(--td-color-primary);
+            font-weight: 500;
+            font-family: var(--td-font-headings);
+            margin: 0 0 1rem 0;
+            letter-spacing: -0.01em;
+        }
+        .index-hero-text .hero-subtitle {
+            font-size: 1.1rem;
             color: var(--td-color-text-muted);
-            max-width: 480px;
-            margin: 0 0 2rem 0;
+            max-width: 420px;
+            margin: 0 0 1.75rem 0;
             line-height: 1.6;
         }
+
+        /* ── Hero visual — photo cluster + village motif ── */
         .index-hero-visual {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1;
+            max-width: 480px;
+            justify-self: center;
+        }
+        .hero-village-svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-photo-main {
+            position: absolute;
+            width: 56%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .hero-photo-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-photo-sat {
+            position: absolute;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 4;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.14);
+            transition: transform 0.3s ease;
+        }
+        .hero-photo-sat:hover {
+            transform: scale(1.06);
+            z-index: 5;
+        }
+        .hero-photo-sat img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-photo-sat-1 {
+            width: 27%;
+            aspect-ratio: 1;
+            top: 1%;
+            right: 7%;
+        }
+        .hero-photo-sat-2 {
+            width: 23%;
+            aspect-ratio: 1;
+            bottom: 10%;
+            right: 1%;
+        }
+        .hero-photo-sat-3 {
+            width: 25%;
+            aspect-ratio: 1;
+            bottom: 3%;
+            left: 5%;
+        }
+        .hero-photo-sat-4 {
+            width: 21%;
+            aspect-ratio: 1;
+            top: 6%;
+            left: 1%;
+        }
+
+        /* ── Hero stats strip ── */
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--td-color-border);
+        }
+        .hero-stat {
+            display: flex;
+            flex-direction: column;
+        }
+        .hero-stat-num {
+            font-family: var(--td-font-headings);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--td-color-primary);
+            line-height: 1.1;
+        }
+        .hero-stat-label {
+            font-size: 0.78rem;
+            color: var(--td-color-text-muted);
+            margin-top: 0.15rem;
+        }
+
+        /* ── Fallback: single-photo hero (no hero_images) ── */
+        .index-hero-visual-single {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -337,16 +450,33 @@
         }
 
         /* ── Responsive ── */
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             .index-hero-inner {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            .index-hero-text h1 {
-                font-size: 2.5rem;
+            .index-hero-text {
+                padding-right: 0;
+                order: 1;
             }
-            .index-hero-text p {
-                margin: 0 auto 2rem;
+            .index-hero-text h1 {
+                font-size: 3rem;
+            }
+            .index-hero-text .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .index-hero-visual {
+                order: 2;
+                max-width: 360px;
+            }
+            .hero-stats {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+            .hero-stat {
+                align-items: center;
             }
             .hero-photo-disc {
                 width: 220px;
@@ -362,10 +492,36 @@
         @media (max-width: 600px) {
             .index-hero {
                 min-height: auto;
-                padding: 4rem 0 2rem;
+                padding: 5rem 0 2rem;
             }
             .index-hero-text h1 {
-                font-size: 2rem;
+                font-size: 2.4rem;
+            }
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+            .index-hero-visual {
+                max-width: 280px;
+            }
+            .hero-photo-sat-2,
+            .hero-photo-sat-4 {
+                display: none;
+            }
+            .hero-photo-sat-1 {
+                width: 30%;
+                top: 0;
+                right: 2%;
+            }
+            .hero-photo-sat-3 {
+                width: 28%;
+                bottom: 0;
+                left: 2%;
+            }
+            .hero-stats {
+                gap: 1rem;
+            }
+            .hero-stat-num {
+                font-size: 1.3rem;
             }
             .gallery-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -402,28 +558,71 @@
         <div class="index-hero-inner">
             <div class="index-hero-text">
                 <h1>Boe Eno Moto</h1>
-                <p>Mundo Bororo</p>
+                <p class="hero-tagline">Mundo Bororo</p>
+                <p class="hero-subtitle">Dicionário, enciclopédia, fauna e corpus sonoro do povo Bororo.</p>
                 <a href="#sections" class="td-pill td-pill-red">Explorar &rarr;</a>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">2866</span>
+                        <span class="hero-stat-label">entradas</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">231</span>
+                        <span class="hero-stat-label">verbetes</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">97</span>
+                        <span class="hero-stat-label">espécies</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">834</span>
+                        <span class="hero-stat-label">recordings</span>
+                    </div>
+                </div>
             </div>
+
             <div class="index-hero-visual">
-                <div class="hero-rings-bg">
-                    <div class="td-target-rings" style="width:400px;height:400px;" aria-hidden="true">
-    <div class="td-target-ring" style="width:400px;height:400px;"></div>
-    <div class="td-target-ring" style="width:calc(400px * 0.73);height:calc(400px * 0.73);"></div>
-    <div class="td-target-ring" style="width:calc(400px * 0.47);height:calc(400px * 0.47);"></div>
-</div>
+                <svg class="hero-village-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <clipPath id="top-half"><rect x="0" y="0" width="500" height="250"/></clipPath>
+                    <clipPath id="bottom-half"><rect x="0" y="250" width="500" height="250"/></clipPath>
+                    <circle cx="250" cy="250" r="230" style="fill:var(--td-color-primary)" opacity="0.05" clip-path="url(#top-half)"/>
+                    <circle cx="250" cy="250" r="230" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.05" clip-path="url(#bottom-half)"/>
+                    <circle cx="250" cy="250" r="230" fill="none" style="stroke:var(--td-color-primary)" stroke-width="1.5" opacity="0.18"/>
+                    <circle cx="250" cy="250" r="165" fill="none" style="stroke:var(--td-color-primary)" stroke-width="1" opacity="0.10"/>
+                    <circle cx="250" cy="250" r="90" fill="none" style="stroke:var(--td-color-accent)" stroke-width="1.5" opacity="0.20"/>
+                    <line x1="20" y1="250" x2="480" y2="250" style="stroke:var(--td-color-primary)" stroke-width="0.75" opacity="0.12"/>
+                    <circle cx="250" cy="22" r="6" style="fill:var(--td-color-primary)" opacity="0.14"/>
+                    <circle cx="370" cy="55" r="5" style="fill:var(--td-color-primary)" opacity="0.12"/>
+                    <circle cx="455" cy="140" r="5" style="fill:var(--td-color-primary)" opacity="0.12"/>
+                    <circle cx="130" cy="55" r="5" style="fill:var(--td-color-primary)" opacity="0.12"/>
+                    <circle cx="45" cy="140" r="5" style="fill:var(--td-color-primary)" opacity="0.12"/>
+                    <circle cx="250" cy="478" r="6" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.14"/>
+                    <circle cx="370" cy="445" r="5" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.12"/>
+                    <circle cx="455" cy="360" r="5" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.12"/>
+                    <circle cx="130" cy="445" r="5" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.12"/>
+                    <circle cx="45" cy="360" r="5" style="fill:var(--td-color-dark, #0B0F17)" opacity="0.12"/>
+                    <circle cx="250" cy="250" r="4" style="fill:var(--td-color-accent)" opacity="0.25"/>
+                </svg>
+
+                <div class="hero-photo-main">
+                    <img src="../images/fauna.jpeg" alt="Boe Eno Moto">
                 </div>
-                <div class="hero-photo-disc">
-                    <img src="../images/bororo1.jpg" alt="Boe Eno Moto">
+
+                <div class="hero-photo-sat hero-photo-sat-1">
+                    <img src="../images/bororo1.jpg" alt="" loading="lazy">
+                </div>
+                <div class="hero-photo-sat hero-photo-sat-2">
+                    <img src="../images/bar.jpeg" alt="" loading="lazy">
+                </div>
+                <div class="hero-photo-sat hero-photo-sat-3">
+                    <img src="../images/chants.jpg" alt="" loading="lazy">
+                </div>
+                <div class="hero-photo-sat hero-photo-sat-4">
+                    <img src="../images/video.jpg" alt="" loading="lazy">
                 </div>
             </div>
-        </div>
-        <div class="hero-small-target">
-            <div class="td-target-rings" style="width:64px;height:64px;" aria-hidden="true">
-    <div class="td-target-ring" style="width:64px;height:64px;border-width:1.5px;"></div>
-    <div class="td-target-ring" style="width:calc(64px * 0.6);height:calc(64px * 0.6);border-width:1.5px;"></div>
-    <div style="width:calc(64px * 0.2);height:calc(64px * 0.2);background:var(--td-color-primary);border-radius:50%;"></div>
-</div>
+
         </div>
     </section>
 
@@ -455,7 +654,7 @@
                 <a href="encyclopedia.html" class="td-pill td-pill-outline">Ver enciclopédia &rarr;</a>
             </div>
             <div class="enc-teaser-image">
-                <img src="../images/bororo1.jpg" alt="" loading="lazy">
+                <img src="../images/fauna.jpeg" alt="" loading="lazy">
             </div>
         </div>
     </section>
@@ -478,7 +677,7 @@
 <p class="subtitle">Registros visuais e sonoros da cultura Bororo</p></div>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="../images/bororo1.jpg" alt="" loading="lazy">
+                <img src="../images/fauna.jpeg" alt="" loading="lazy">
             </div>
         </div>
     </section>
