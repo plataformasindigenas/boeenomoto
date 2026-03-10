@@ -45,7 +45,7 @@ body {
 /* ── Skip link ── */
 .skip-link {
     position: absolute;
-    top: -40px;
+    top: -100%;
     left: 0;
     background: var(--td-color-primary);
     color: white;
@@ -53,9 +53,13 @@ body {
     z-index: 100;
     text-decoration: none;
     border-radius: 0 0 var(--td-radius) 0;
+    opacity: 0;
+    pointer-events: none;
 }
 .skip-link:focus {
     top: 0;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* ── Navigation ── */
