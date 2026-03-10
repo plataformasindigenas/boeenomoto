@@ -105,7 +105,8 @@
             border-radius: var(--td-radius);
             border: 1px solid var(--td-color-border);
             overflow: hidden;
-            min-height: 70vh;
+            height: calc(100vh - 10rem);
+            min-height: 420px;
             box-shadow: var(--td-shadow-sm);
         }
 
@@ -363,6 +364,7 @@
         @media (max-width: 700px) {
             .dict-layout {
                 flex-direction: column;
+                height: auto;
                 min-height: auto;
             }
             .dict-list-panel {
