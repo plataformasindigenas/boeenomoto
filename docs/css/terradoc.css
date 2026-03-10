@@ -544,20 +544,30 @@ footer a:hover {
 }
 .footer-adugo-spine {
     width: 100%;
-    height: 4px;
-    background: var(--td-color-primary);
+    height: 28px;
     position: relative;
-}
-.footer-adugo-spine::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    background: var(--td-color-primary);
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 8px,
+        var(--td-color-primary) 8px,
+        var(--td-color-primary) 12px,
+        transparent 12px,
+        transparent 26px,
+        var(--td-color-primary) 26px,
+        var(--td-color-primary) 29px,
+        transparent 29px,
+        transparent 44px,
+        var(--td-color-primary) 44px,
+        var(--td-color-primary) 48.5px,
+        transparent 48.5px,
+        transparent 58px
+    );
+    opacity: 0.35;
 }
 .footer-grid {
     display: grid;
