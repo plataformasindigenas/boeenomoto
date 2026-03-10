@@ -1,0 +1,59 @@
+- id: 1
+  title: "Funeral Bororo"
+  youtube_id: "uhxWDBM8gss"
+  thumbnail: "images/videos/funeral-bororo.jpg"
+  category: "ritual"
+
+- id: 2
+  title: "Aroe eceba"
+  youtube_id: "cBSYffDyAIk"
+  thumbnail: "images/videos/aroe-eceba.jpg"
+  category: "ritual"
+
+- id: 3
+  title: "Lugares históricos: Bororo e Xavante"
+  youtube_id: "HL9UaMAVpPg"
+  thumbnail: "images/videos/lugares-historicos.jpg"
+  category: "história"
+
+- id: 4
+  title: "Festa do Mano Kurireu: Ritual Boe-Bororo"
+  youtube_id: "fIbxLUEPlnI"
+  thumbnail: "images/videos/mano-kurireu.jpg"
+  category: "ritual"
+
+- id: 5
+  title: "Kado Rairewy"
+  youtube_id: "igeKDYWkfsQ"
+  thumbnail: "images/videos/kado-rairewy.jpg"
+  category: "ritual"
+
+- id: 6
+  title: "Construção da casa central (bai mana gejewy) de uma aldeia Bororo"
+  youtube_id: "rEhQzlYkcUQ"
+  thumbnail: "images/videos/bai-mana-gejewy.jpg"
+  category: "cultura"
+
+- id: 7
+  title: "Kuiada paru (festa bororo do milho)"
+  youtube_id: "okwx9di47og"
+  thumbnail: "images/videos/kuiada-paru.jpg"
+  category: "ritual"
+
+- id: 8
+  title: "Akurarorewy"
+  youtube_id: "WksLeBe8oTE"
+  thumbnail: "images/videos/akurarorewy.jpg"
+  category: "ritual"
+
+- id: 9
+  title: "Iniciação do jovem Xavante (1999, Meruri)"
+  youtube_id: "lbB28DgGKGk"
+  thumbnail: "images/videos/iniciacao-xavante.jpg"
+  category: "ritual"
+
+- id: 10
+  title: "Ritual do Marido e funeral (1989, Aldeia Garças)"
+  youtube_id: "8aKJlAlhT20"
+  thumbnail: "images/videos/ritual-marido-funeral.jpg"
+  category: "ritual"

@@ -52,6 +52,9 @@ card_bibliography_label: "references"
 card_recordings_title: "Recordings"
 card_recordings_desc: "Audio corpus with recordings of words and expressions in the Bororo language."
 card_recordings_label: "recordings"
+card_videos_title: "Videos"
+card_videos_desc: "Video recordings of Bororo rituals, ceremonies, and cultural practices hosted on YouTube."
+card_videos_label: "videos"
 
 # Dictionary page
 dict_title: "Bororo Dictionary"
@@ -188,6 +191,7 @@ references_label: "references"
 
 # Navigation (recordings)
 nav_recordings: "Corpus"
+nav_videos: "Videos"
 
 # Terradoc UI
 nav_menu_label: "Menu"
@@ -213,6 +217,7 @@ index_sections_title: "Explore"
 index_view_all_dictionary: "View dictionary"
 index_view_all_encyclopedia: "View encyclopedia"
 index_view_all_fauna: "View fauna"
+index_view_all_videos: "View videos"
 index_gallery_title: "Images & Sounds"
 index_gallery_subtitle: "Visual and audio recordings of Bororo culture"
 index_about_subtitle: "Learn about the platform"
@@ -232,6 +237,15 @@ stat_encyclopedia_entries: "articles"
 stat_fauna_entries: "species"
 stat_bibliography_entries: "references"
 stat_recordings_entries: "recordings"
+stat_videos_entries: "videos"
+
+# Recordings page
+# Videos page
+vid_title: "Videos"
+vid_subtitle: "Video recordings of Bororo culture"
+vid_count_label: "videos"
+vid_watch: "Watch on YouTube"
+vid_filter_all: "All categories"
 
 # Recordings page
 rec_title: "Recordings Corpus"

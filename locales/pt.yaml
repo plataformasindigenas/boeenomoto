@@ -52,6 +52,9 @@ card_bibliography_label: "referências"
 card_recordings_title: "Gravações"
 card_recordings_desc: "Corpus sonoro com gravações de palavras e expressões na língua Bororo."
 card_recordings_label: "gravações"
+card_videos_title: "Vídeos"
+card_videos_desc: "Registros em vídeo de rituais, cerimônias e práticas culturais do povo Bororo hospedados no YouTube."
+card_videos_label: "vídeos"
 
 # Dictionary page
 dict_title: "Dicionário Bororo"
@@ -188,6 +191,7 @@ references_label: "referências"
 
 # Navigation (recordings)
 nav_recordings: "Corpus"
+nav_videos: "Vídeos"
 
 # Terradoc UI
 nav_menu_label: "Menu"
@@ -213,6 +217,7 @@ index_sections_title: "Explorar"
 index_view_all_dictionary: "Ver dicionário"
 index_view_all_encyclopedia: "Ver enciclopédia"
 index_view_all_fauna: "Ver fauna"
+index_view_all_videos: "Ver vídeos"
 index_gallery_title: "Imagens & Sons"
 index_gallery_subtitle: "Registros visuais e sonoros da cultura Bororo"
 index_about_subtitle: "Conheça a plataforma"
@@ -232,6 +237,15 @@ stat_encyclopedia_entries: "verbetes"
 stat_fauna_entries: "espécies"
 stat_bibliography_entries: "referências"
 stat_recordings_entries: "gravações"
+stat_videos_entries: "vídeos"
+
+# Recordings page
+# Videos page
+vid_title: "Vídeos"
+vid_subtitle: "Registros em vídeo da cultura Bororo"
+vid_count_label: "vídeos"
+vid_watch: "Assistir no YouTube"
+vid_filter_all: "Todas as categorias"
 
 # Recordings page
 rec_title: "Corpus de Gravações"

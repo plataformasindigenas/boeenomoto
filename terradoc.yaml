@@ -18,6 +18,7 @@ modules:
   encyclopedia: { enabled: true }
   bibliography: { enabled: true }
   recordings: { enabled: true }
+  videos: { enabled: true }
 
 module_labels:
   dictionary: "Dicionário"
@@ -25,6 +26,7 @@ module_labels:
   fauna: "Fauna"
   bibliography: "Bibliografia"
   recordings: "Corpus"
+  videos: "Vídeos"
 
 theme:
   preset: "terra"

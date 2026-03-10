@@ -1,0 +1,13 @@
+name: bororo_videos
+description: Bororo Cultural Videos
+version: "1.0"
+primary_key: id
+
+fields:
+  id: int
+  title: str
+  youtube_id: str
+  thumbnail: str?
+  category: str?
+  description: str?
+  duration: str?
