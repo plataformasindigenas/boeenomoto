@@ -49,6 +49,7 @@ card_fauna_label: "espécies"
 card_bibliography_title: "Bibliografia"
 card_bibliography_desc: "Referências bibliográficas sobre a língua, cultura e história do povo Bororo."
 card_bibliography_label: "referências"
+card_recordings_label: "gravações"
 
 # Dictionary page
 dict_title: "Dicionário Bororo"
