@@ -366,54 +366,55 @@
             z-index: 1;
         }
 
-        /* ── Section teasers ── */
+        /* ── Section teasers — unified card layout ── */
         .index-section {
             margin-bottom: 4rem;
         }
         .index-section .td-section-heading h2 {
             font-size: 1.75rem;
         }
+        .teaser-card {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        .teaser-card-image {
+            border-radius: var(--td-radius);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+        .teaser-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .teaser-card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
         .teaser-desc {
             color: var(--td-color-text-secondary);
             max-width: 640px;
             line-height: 1.7;
-            margin: 0.5rem 0 1.25rem;
+            margin: 0.25rem 0 1rem;
         }
         .teaser-count {
             font-family: var(--td-font-headings);
-            font-size: 2.5rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: var(--td-color-primary);
             line-height: 1;
-            margin-right: 0.5rem;
         }
         .teaser-count-label {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--td-color-text-muted);
         }
         .teaser-stat {
             display: flex;
             align-items: baseline;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        /* ── Encyclopedia split teaser ── */
-        .enc-teaser-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-        }
-        .enc-teaser-image {
-            border-radius: var(--td-radius);
-            overflow: hidden;
-            aspect-ratio: 4/3;
-        }
-        .enc-teaser-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            gap: 0.4rem;
         }
 
         /* ── Fauna cards grid ── */
@@ -627,7 +628,7 @@
                 width: 220px;
                 height: 220px;
             }
-            .enc-teaser-grid {
+            .teaser-card {
                 grid-template-columns: 1fr;
             }
             .about-cards {
@@ -939,24 +940,34 @@
 
     <div id="sections">
 
+
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
     <h2>Dicionário</h2>
 </div>
-        <div class="teaser-stat">
-            <span class="teaser-count">2866</span>
-            <span class="teaser-count-label">entradas</span>
+        <div class="teaser-card">
+            <div class="teaser-card-image">
+                <img src="../images/bororo1.jpg" alt="" loading="lazy">
+            </div>
+            <div class="teaser-card-body">
+                <div class="teaser-stat">
+                    <span class="teaser-count">2866</span>
+                    <span class="teaser-count-label">entradas</span>
+                </div>
+                <p class="teaser-desc">Palavras e expressões da língua Bororo com tradução para Português, transcrição fonética e exemplos.</p>
+                <a href="dictionary.html" class="td-pill td-pill-outline">Ver dicionário &rarr;</a>
+            </div>
         </div>
-        <p class="teaser-desc">Palavras e expressões da língua Bororo com tradução para Português, transcrição fonética e exemplos.</p>
-        <a href="dictionary.html" class="td-pill td-pill-outline">Ver dicionário &rarr;</a>
     </section>
-
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
     <h2>Enciclopédia</h2>
 </div>
-        <div class="enc-teaser-grid">
-            <div>
+        <div class="teaser-card">
+            <div class="teaser-card-image">
+                <img src="../images/bar.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="teaser-card-body">
                 <div class="teaser-stat">
                     <span class="teaser-count">231</span>
                     <span class="teaser-count-label">verbetes</span>
@@ -964,22 +975,43 @@
                 <p class="teaser-desc">Verbetes sobre cultura, rituais, organização social e conhecimentos tradicionais do povo Bororo.</p>
                 <a href="encyclopedia.html" class="td-pill td-pill-outline">Ver enciclopédia &rarr;</a>
             </div>
-            <div class="enc-teaser-image">
-                <img src="../images/bar.jpeg" alt="" loading="lazy">
-            </div>
         </div>
     </section>
-
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
     <h2>Fauna</h2>
 </div>
-        <div class="teaser-stat">
-            <span class="teaser-count">97</span>
-            <span class="teaser-count-label">espécies</span>
+        <div class="teaser-card">
+            <div class="teaser-card-image">
+                <img src="../images/fauna.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="teaser-card-body">
+                <div class="teaser-stat">
+                    <span class="teaser-count">97</span>
+                    <span class="teaser-count-label">espécies</span>
+                </div>
+                <p class="teaser-desc">Nomes de animais na língua Bororo com classificação tradicional, nomes científicos e imagens.</p>
+                <a href="fauna.html" class="td-pill td-pill-outline">Ver fauna &rarr;</a>
+            </div>
         </div>
-        <p class="teaser-desc">Nomes de animais na língua Bororo com classificação tradicional, nomes científicos e imagens.</p>
-        <a href="fauna.html" class="td-pill td-pill-outline">Ver fauna &rarr;</a>
+    </section>
+    <section class="index-section td-fade-in">
+        <div class="td-section-heading">
+    <h2>Gravações</h2>
+</div>
+        <div class="teaser-card">
+            <div class="teaser-card-image">
+                <img src="../images/chants.jpg" alt="" loading="lazy">
+            </div>
+            <div class="teaser-card-body">
+                <div class="teaser-stat">
+                    <span class="teaser-count">834</span>
+                    <span class="teaser-count-label">gravações</span>
+                </div>
+                <p class="teaser-desc">Corpus sonoro com gravações de palavras e expressões na língua Bororo.</p>
+                <a href="recordings.html" class="td-pill td-pill-outline">Explorar &rarr;</a>
+            </div>
+        </div>
     </section>
 
     <section class="index-section td-fade-in">

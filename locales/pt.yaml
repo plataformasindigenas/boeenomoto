@@ -49,6 +49,8 @@ card_fauna_label: "espécies"
 card_bibliography_title: "Bibliografia"
 card_bibliography_desc: "Referências bibliográficas sobre a língua, cultura e história do povo Bororo."
 card_bibliography_label: "referências"
+card_recordings_title: "Gravações"
+card_recordings_desc: "Corpus sonoro com gravações de palavras e expressões na língua Bororo."
 card_recordings_label: "gravações"
 
 # Dictionary page
