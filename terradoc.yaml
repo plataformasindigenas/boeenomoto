@@ -30,7 +30,7 @@ theme:
   preset: "terra"
   logo: "images/logo.png"
   favicon: "images/favicon.ico"
-  hero_image: "images/fauna.jpeg"
+  hero_image: "images/fauna_full.png"
   hero_images:
     - "images/bororo1.jpg"
     - "images/bar.jpeg"
