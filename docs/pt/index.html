@@ -38,6 +38,7 @@
             --td-font-mono: 'IBM Plex Mono', 'Consolas', monospace;
             --td-term-color: #A01924;
             --td-term-weight: 600;
+            --td-color-gold: #D4A03A;
         }
         /* ── Hero ── */
         .index-hero {
@@ -144,7 +145,7 @@
         }
         .hero-photo-sat:hover {
             transform: scale(1.22);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 32px rgba(200,31,45,0.2);
             z-index: 10;
         }
         .hero-photo-sat img {
@@ -310,14 +311,30 @@
         /* ── Hero stats strip ── */
         .hero-stats {
             display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-            padding-top: 1.25rem;
-            border-top: 1px solid var(--td-color-border);
+            gap: 0;
+            margin-top: 0.75rem;
+            padding-top: 0;
+            border-top: none;
         }
         .hero-stat {
             display: flex;
             flex-direction: column;
+            padding: 0 1.5rem;
+            position: relative;
+        }
+        .hero-stat:first-child {
+            padding-left: 0;
+        }
+        .hero-stat:not(:first-child)::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 5px;
+            height: 5px;
+            background: var(--td-color-gold, #D4A03A);
+            opacity: 0.6;
         }
         .hero-stat-num {
             font-family: var(--td-font-headings);
@@ -378,8 +395,8 @@
         .sections-label-line {
             flex: 1;
             height: 1px;
-            background: var(--td-color-border-dark);
-            opacity: 0.35;
+            background: var(--td-color-gold, #D4A03A);
+            opacity: 0.4;
         }
         .sections-label-text {
             font-family: var(--td-font-headings);
@@ -387,9 +404,17 @@
             font-weight: 600;
             letter-spacing: 0.18em;
             text-transform: uppercase;
-            color: var(--td-color-primary);
-            opacity: 0.7;
+            color: var(--td-color-gold, #D4A03A);
+            opacity: 0.85;
             white-space: nowrap;
+        }
+        .sections-label-diamond {
+            width: 10px;
+            height: 10px;
+            background: var(--td-color-gold, #D4A03A);
+            transform: rotate(45deg);
+            opacity: 0.4;
+            flex-shrink: 0;
         }
 
         /* ── Section teasers — unified card layout ── */
@@ -404,6 +429,30 @@
             grid-template-columns: 2fr 3fr;
             gap: 2rem;
             align-items: center;
+            border-left: 4px solid var(--td-color-primary);
+            border-image: repeating-linear-gradient(
+                to bottom,
+                var(--teaser-accent, var(--td-color-primary)) 0px,
+                var(--teaser-accent, var(--td-color-primary)) 8px,
+                transparent 8px,
+                transparent 14px,
+                var(--teaser-accent, var(--td-color-primary)) 14px,
+                var(--teaser-accent, var(--td-color-primary)) 20px,
+                transparent 20px,
+                transparent 30px
+            ) 4;
+            padding-left: 1.5rem;
+        }
+        .teaser-card[data-section="dictionary"],
+        .teaser-card[data-section="recordings"] {
+            --teaser-accent: var(--td-color-primary);
+        }
+        .teaser-card[data-section="encyclopedia"],
+        .teaser-card[data-section="videos"] {
+            --teaser-accent: var(--td-color-dark, #0B0F17);
+        }
+        .teaser-card[data-section="fauna"] {
+            --teaser-accent: var(--td-color-gold, #D4A03A);
         }
         .teaser-card-image {
             border-radius: var(--td-radius);
@@ -414,6 +463,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.35s ease, filter 0.35s ease;
+        }
+        .teaser-card-image:hover img {
+            transform: scale(1.04);
+            filter: saturate(1.1) brightness(0.95);
         }
         .teaser-card-body {
             display: flex;
@@ -750,6 +804,7 @@
                 <p class="hero-subtitle">Plataforma dedicada à preservação, documentação e valorização dos saberes linguísticos e culturais do povo Bororo.</p>
                 <a href="#sections" class="td-pill td-pill-red">Explorar &rarr;</a>
 
+                <div style="width:60px;height:2px;background:var(--td-color-gold, #D4A03A);opacity:0.5;margin-top:2rem;border-radius:1px;" aria-hidden="true"></div>
                 <div class="hero-stats">
                     <div class="hero-stat">
                         <span class="hero-stat-num">2866</span>
@@ -878,7 +933,9 @@
 
     <div class="sections-label" id="sections">
         <span class="sections-label-line"></span>
+        <span class="sections-label-diamond"></span>
         <span class="sections-label-text">Explorar</span>
+        <span class="sections-label-diamond"></span>
         <span class="sections-label-line"></span>
     </div>
 
@@ -887,9 +944,16 @@
 
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
-    <h2>Dicionário</h2>
+    <div class="td-section-heading-bar" aria-hidden="true"></div>
+    <div class="td-section-heading-content">
+        <h2>Dicionário</h2>
+    </div>
+    <svg class="td-section-heading-motif" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14,2 L26,14 L14,26 L2,14 Z" fill="none" stroke="var(--td-color-gold, #D4A03A)" stroke-width="1.5" opacity="0.5"/>
+        <path d="M14,8 L20,14 L14,20 L8,14 Z" fill="var(--td-color-gold, #D4A03A)" opacity="0.18"/>
+    </svg>
 </div>
-        <div class="teaser-card">
+        <div class="teaser-card" data-section="dictionary">
             <div class="teaser-card-image">
                 <img src="../images/bororo1.jpg" alt="" loading="lazy">
             </div>
@@ -905,9 +969,16 @@
     </section>
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
-    <h2>Enciclopédia</h2>
+    <div class="td-section-heading-bar" aria-hidden="true"></div>
+    <div class="td-section-heading-content">
+        <h2>Enciclopédia</h2>
+    </div>
+    <svg class="td-section-heading-motif" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14,2 L26,14 L14,26 L2,14 Z" fill="none" stroke="var(--td-color-gold, #D4A03A)" stroke-width="1.5" opacity="0.5"/>
+        <path d="M14,8 L20,14 L14,20 L8,14 Z" fill="var(--td-color-gold, #D4A03A)" opacity="0.18"/>
+    </svg>
 </div>
-        <div class="teaser-card">
+        <div class="teaser-card" data-section="encyclopedia">
             <div class="teaser-card-image">
                 <img src="../images/bar.jpeg" alt="" loading="lazy">
             </div>
@@ -923,9 +994,16 @@
     </section>
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
-    <h2>Fauna</h2>
+    <div class="td-section-heading-bar" aria-hidden="true"></div>
+    <div class="td-section-heading-content">
+        <h2>Fauna</h2>
+    </div>
+    <svg class="td-section-heading-motif" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14,2 L26,14 L14,26 L2,14 Z" fill="none" stroke="var(--td-color-gold, #D4A03A)" stroke-width="1.5" opacity="0.5"/>
+        <path d="M14,8 L20,14 L14,20 L8,14 Z" fill="var(--td-color-gold, #D4A03A)" opacity="0.18"/>
+    </svg>
 </div>
-        <div class="teaser-card">
+        <div class="teaser-card" data-section="fauna">
             <div class="teaser-card-image">
                 <img src="../images/fauna.jpeg" alt="" loading="lazy">
             </div>
@@ -941,9 +1019,16 @@
     </section>
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
-    <h2>Gravações</h2>
+    <div class="td-section-heading-bar" aria-hidden="true"></div>
+    <div class="td-section-heading-content">
+        <h2>Gravações</h2>
+    </div>
+    <svg class="td-section-heading-motif" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14,2 L26,14 L14,26 L2,14 Z" fill="none" stroke="var(--td-color-gold, #D4A03A)" stroke-width="1.5" opacity="0.5"/>
+        <path d="M14,8 L20,14 L14,20 L8,14 Z" fill="var(--td-color-gold, #D4A03A)" opacity="0.18"/>
+    </svg>
 </div>
-        <div class="teaser-card">
+        <div class="teaser-card" data-section="recordings">
             <div class="teaser-card-image">
                 <img src="../images/chants.jpg" alt="" loading="lazy">
             </div>
@@ -959,9 +1044,16 @@
     </section>
     <section class="index-section td-fade-in">
         <div class="td-section-heading">
-    <h2>Vídeos</h2>
+    <div class="td-section-heading-bar" aria-hidden="true"></div>
+    <div class="td-section-heading-content">
+        <h2>Vídeos</h2>
+    </div>
+    <svg class="td-section-heading-motif" width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14,2 L26,14 L14,26 L2,14 Z" fill="none" stroke="var(--td-color-gold, #D4A03A)" stroke-width="1.5" opacity="0.5"/>
+        <path d="M14,8 L20,14 L14,20 L8,14 Z" fill="var(--td-color-gold, #D4A03A)" opacity="0.18"/>
+    </svg>
 </div>
-        <div class="teaser-card">
+        <div class="teaser-card" data-section="videos">
             <div class="teaser-card-image">
                 <img src="../images/video.jpg" alt="" loading="lazy">
             </div>
@@ -982,7 +1074,42 @@
     </main>
 
     <footer>
-        <div class="footer-adugo-spine" aria-hidden="true"></div>
+        <div class="footer-adugo-spine" aria-hidden="true">
+            <svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="14" x2="1200" y2="14" stroke="var(--td-color-primary)" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+                <g stroke="var(--td-color-primary)" stroke-linecap="round" opacity="0.12">
+                    <line x1="45" y1="5" x2="45" y2="23" stroke-width="2.5"/>
+                    <line x1="68" y1="7" x2="68" y2="21" stroke-width="3.5"/>
+                    <line x1="105" y1="3" x2="105" y2="25" stroke-width="2"/>
+                    <line x1="120" y1="8" x2="120" y2="20" stroke-width="4"/>
+                    <line x1="160" y1="6" x2="160" y2="22" stroke-width="2.8"/>
+                    <line x1="195" y1="4" x2="195" y2="24" stroke-width="3.2"/>
+                    <line x1="265" y1="5" x2="265" y2="23" stroke-width="3"/>
+                    <line x1="298" y1="3" x2="298" y2="25" stroke-width="3.8"/>
+                    <line x1="335" y1="8" x2="335" y2="20" stroke-width="3.5"/>
+                    <line x1="372" y1="6" x2="372" y2="22" stroke-width="4"/>
+                    <line x1="408" y1="7" x2="408" y2="21" stroke-width="3.2"/>
+                    <line x1="468" y1="3" x2="468" y2="25" stroke-width="3.5"/>
+                    <line x1="498" y1="1" x2="498" y2="27" stroke-width="4.2"/>
+                    <line x1="528" y1="7" x2="528" y2="21" stroke-width="3.8"/>
+                    <line x1="558" y1="2" x2="558" y2="26" stroke-width="3.2"/>
+                    <line x1="590" y1="1" x2="590" y2="27" stroke-width="2.5"/>
+                    <line x1="615" y1="3" x2="615" y2="25" stroke-width="2.2"/>
+                    <line x1="645" y1="2" x2="645" y2="26" stroke-width="3"/>
+                    <line x1="672" y1="4" x2="672" y2="24" stroke-width="3.5"/>
+                    <line x1="705" y1="3" x2="705" y2="25" stroke-width="3.8"/>
+                    <line x1="738" y1="1" x2="738" y2="27" stroke-width="4"/>
+                    <line x1="790" y1="4" x2="790" y2="24" stroke-width="2.5"/>
+                    <line x1="828" y1="3" x2="828" y2="25" stroke-width="2.8"/>
+                    <line x1="865" y1="8" x2="865" y2="20" stroke-width="2.2"/>
+                    <line x1="900" y1="6" x2="900" y2="22" stroke-width="2.6"/>
+                    <line x1="980" y1="4" x2="980" y2="24" stroke-width="3.5"/>
+                    <line x1="1040" y1="6" x2="1040" y2="22" stroke-width="3.8"/>
+                    <line x1="1095" y1="7" x2="1095" y2="21" stroke-width="3.5"/>
+                    <line x1="1160" y1="9" x2="1160" y2="19" stroke-width="4"/>
+                </g>
+            </svg>
+        </div>
         <div class="td-container">
             <div class="footer-grid">
                 <div class="footer-brand-col">

@@ -246,21 +246,27 @@ h1 {
     line-height: 1.5;
 }
 
-/* ── Section heading with red accent bar ── */
+/* ── Section heading with red accent bar + diamond motif ── */
 .td-section-heading {
-    position: relative;
-    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     margin-bottom: 1rem;
 }
-.td-section-heading::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.15em;
+.td-section-heading-bar {
     width: 4px;
-    height: 48px;
+    min-height: 40px;
+    align-self: stretch;
     background: var(--td-color-primary);
     border-radius: 2px;
+    flex-shrink: 0;
+}
+.td-section-heading-content {
+    flex: 1;
+}
+.td-section-heading-motif {
+    flex-shrink: 0;
+    opacity: 0.7;
 }
 .td-section-heading h1,
 .td-section-heading h2,
@@ -269,6 +275,16 @@ h1 {
 }
 .td-section-heading .subtitle {
     margin: 0.25rem 0 0 0;
+}
+
+/* ── Inner page split-circle badge ── */
+.td-page-badge {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 0.6rem;
+    flex-shrink: 0;
 }
 
 /* ── Card system ── */
@@ -545,29 +561,15 @@ footer a:hover {
 .footer-adugo-spine {
     width: 100%;
     height: 28px;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent 0px,
-        transparent 8px,
-        var(--td-color-primary) 8px,
-        var(--td-color-primary) 12px,
-        transparent 12px,
-        transparent 26px,
-        var(--td-color-primary) 26px,
-        var(--td-color-primary) 29px,
-        transparent 29px,
-        transparent 44px,
-        var(--td-color-primary) 44px,
-        var(--td-color-primary) 48.5px,
-        transparent 48.5px,
-        transparent 58px
-    );
-    opacity: 0.35;
+    position: relative;
+}
+.footer-adugo-spine svg {
+    width: 100%;
+    height: 100%;
 }
 .footer-grid {
     display: grid;
