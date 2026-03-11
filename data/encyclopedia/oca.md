@@ -4,8 +4,8 @@ title: Oca
 variants: []
 abstract: Assobio articulado usado como forma de comunicação na língua bororo.
 categories:
-- língua
-- comunicação
+- linguística
+- linguística/comunicação
 date: '2026-02-18'
 references:
 - Wachter1989Pfiffsprache

@@ -3,7 +3,8 @@ id: jagu
 title: Jagu
 variants: []
 abstract: Jagu -- adv. Absolutamente, completamente, mesmo.
-categories: []
+categories:
+- linguística/advérbios
 date: '2026-01-04'
 url: ''
 images: []

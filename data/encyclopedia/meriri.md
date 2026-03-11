@@ -5,9 +5,9 @@ variants: []
 abstract: Substância dura e resplandecente; metal, brilho, excelência e dinheiro.
 categories:
 - cultura-material
-- tecnologia
-- economia
-- história
+- cultura-material/tecnologia
+- sociedade/economia
+- etnografia/história
 date: '2026-02-21'
 images: []
 references:

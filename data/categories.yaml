@@ -1,16 +1,5 @@
-- advérbios
-- alimentacao
-- anatomia
-- ancestralidade
-- arquitetura
-- bebidas
-- botânica
-- caca
-- cerimonial
-- clas
-- comunicação
 - corpo
-- cosmetica ritual
+- corpo/práticas
 - cosmologia
 - cosmologia/alma
 - cosmologia/antepassados
@@ -20,39 +9,30 @@
 - cosmologia/mitologia
 - cosmologia/morte
 - cosmologia/primazia
+- cosmologia/religião
 - cosmologia/xamanismo
-- costumes
-- cuidado infantil
-- cultura material
 - cultura-material
+- cultura-material/alimentação
 - cultura-material/arma
 - cultura-material/artesanato
 - cultura-material/habitação
 - cultura-material/ornamentação
+- cultura-material/substâncias
+- cultura-material/tecnologia
 - cultura-material/vestimenta
-- economia
-- etnobotanica
+- cultura-material/vida-doméstica
 - etnografia
 - etnografia/história
-- etnologia
-- fauna
-- flora
 - geografia
-- gramatica
-- gramática
-- hidrografia
-- historia
-- história
-- linguagem
+- geografia/hidrografia
+- linguística
+- linguística/advérbios
+- linguística/comunicação
+- linguística/gramática
+- linguística/morfossintaxe
 - linguística/polissemia
+- linguística/termos-relacionais
 - linguística/topônimo
-- língua
-- magia
-- mitologia
-- mobilidade
-- morfossintaxe
-- morte
-- musica
 - música
 - natureza
 - natureza/fauna
@@ -63,24 +43,16 @@
 - natureza/fauna/mamífero
 - natureza/flora
 - natureza/flora/palmeira
-- nomes próprios
-- nomes-clanicos
-- nomes-proprios
-- organizacao domestica
-- organizacao-clanica
-- organizacao-social
-- organização social
-- ornamentos
-- parentesco
-- plantas
-- práticas corporais
-- práticas cotidianas
-- reciprocidade
-- religião
+- nomes-próprios
+- nomes-próprios/clânicos
+- organização-social
+- organização-social/clãs
+- organização-social/metades
 - ritual
 - ritual/acolhimento
 - ritual/adornos
 - ritual/canto
+- ritual/cosmética
 - ritual/dança
 - ritual/festas
 - ritual/funeral
@@ -88,23 +60,18 @@
 - ritual/pranto
 - ritual/representações
 - ritual/retorno
-- saude
+- saúde
 - sociedade
 - sociedade/contato
+- sociedade/costumes
+- sociedade/cuidado-infantil
+- sociedade/economia
 - sociedade/espaço-social
-- sociedade/organização-social
-- sociedade/organização-social/clãs
-- sociedade/organização-social/metades
+- sociedade/mobilidade
 - sociedade/parentesco
-- subsistencia
-- substancias
-- tecnologia
-- tecnologia tradicional
-- termos relacionais
-- territorio
+- sociedade/reciprocidade
+- sociedade/subsistência
+- sociedade/vida-cotidiana
+- sociedade/vida-social
 - território
-- tradição oral
-- vida cotidiana
-- vida social
-- vida-social
-- xamanismo
+- tradição-oral

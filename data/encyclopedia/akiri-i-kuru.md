@@ -3,7 +3,8 @@ id: akiri-i-kuru
 title: Akiri i kuru
 variants: []
 abstract: <em>akiri i</em> 'árvore angico' + <em>kuru</em> 'líquido, resina'
-categories: []
+categories:
+- natureza/flora
 date: '2026-01-04'
 url: ''
 images: []

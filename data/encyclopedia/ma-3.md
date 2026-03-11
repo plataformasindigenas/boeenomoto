@@ -3,7 +3,8 @@ id: ma-3
 title: Ma
 variants: []
 abstract: Se, quando, mas.
-categories: []
+categories:
+- linguística/gramática
 date: '2026-01-04'
 url: ''
 images: []

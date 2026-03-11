@@ -3,7 +3,8 @@ id: jaku
 title: jaku
 variants: []
 abstract: Jeito, boas maneiras
-categories: []
+categories:
+- linguística
 date: '2026-01-05'
 url: ''
 images: []

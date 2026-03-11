@@ -4,7 +4,7 @@ title: Ririgo₁
 variants: []
 abstract: Calor; fazer calor, aquecer, esquentar.
 categories:
-- linguagem
+- linguística
 - natureza
 date: '2026-02-21'
 images: []

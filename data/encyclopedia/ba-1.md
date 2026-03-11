@@ -2,12 +2,13 @@
 id: ba-1
 title: ba
 variants: []
-abstract: aldeia; povoado bororo e sua disposição tradicional (casa central e casas na circunferência).
+abstract: aldeia; povoado bororo e sua disposição tradicional (casa central e casas
+  na circunferência).
 categories:
 - cultura-material/habitação
 - cosmologia/xamanismo
 - cultura-material
-- sociedade/organização-social/metades
+- organização-social/metades
 date: '2026-01-07'
 url: ''
 images:
@@ -21,7 +22,9 @@ examples: []
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- ba
+- ba-5-house-village
 ---
 
 ### Ba: aldeia e organização espacial bororo

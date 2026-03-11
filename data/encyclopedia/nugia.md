@@ -4,8 +4,8 @@ title: Nugia
 variants: []
 abstract: Faixa de entrecasca de árvore usada para transportar crianças.
 categories:
-- cultura material
-- cuidado infantil
+- cultura-material
+- sociedade/cuidado-infantil
 date: '2026-02-18'
 images: []
 references: []

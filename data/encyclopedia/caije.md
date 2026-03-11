@@ -3,7 +3,8 @@ id: caije
 title: Caije
 variants: []
 abstract: Caije - Logo, imediatamente. ex. rekodyre piji, caije 'fugiu imediatamente'.
-categories: []
+categories:
+- linguística/advérbios
 date: '2026-01-04'
 url: ''
 images: []

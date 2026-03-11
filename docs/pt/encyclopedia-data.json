@@ -10,19 +10,36 @@
       "id": "adugo-aredu",
       "title": "adugo aredu",
       "abstract": "1. onça fêmea; 2. um ator da representação Adugodoge Aroe.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/mamífero",
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "adugo",
+        "adugo-biri"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "adugo-biri",
       "title": "Adugo biri",
       "abstract": "pele de jaguar.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação",
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "adugo",
+        "adugo-aredu",
+        "pariko"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "adugo-mutillidae",
@@ -37,7 +54,11 @@
         "formiga-onça"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "adugo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "adugo",
@@ -53,34 +74,60 @@
       ],
       "variants": [],
       "entry_type": "animal",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "adugo-aredu",
+        "adugo-biri",
+        "adugodo",
+        "adugodoge-aroe",
+        "adugo-mutillidae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "adugodo",
       "title": "Adugodo",
       "abstract": "Adugodo",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/mamífero"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "adugo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "adugodoge-aroe",
       "title": "Adugodoge aroe",
       "abstract": "1. um aroe etawujedu, representação; 2. atores da mesma representação.",
-      "categories": [],
+      "categories": [
+        "ritual/representações",
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "adugo",
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ae",
       "title": "Ae",
       "abstract": "",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "aimearewu",
@@ -92,7 +139,9 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "akiri-i-biri-batagagarewu",
@@ -105,43 +154,66 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "akiri-i-kuru",
       "title": "Akiri i kuru",
       "abstract": "<em>akiri i</em> 'árvore angico' + <em>kuru</em> 'líquido, resina'",
-      "categories": [],
+      "categories": [
+        "natureza/flora"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "akodo",
       "title": "Akodo",
       "abstract": "ako 'som' + -do 'sufixo causativo'.",
-      "categories": [],
+      "categories": [
+        "linguística",
+        "música"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "amoe-erubo",
       "title": "Amoe erubo",
       "abstract": "Amoe erubo",
-      "categories": [],
+      "categories": [
+        "cosmologia/xamanismo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "erubo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ao",
       "title": "Ao",
       "abstract": "Ao - plural ae1. Cabelo, cabeça → iwu, corpo humano; copa de árvore, coma, ponta, sumidade, extremidade, fim, término, acréscimo; uma ou mais estrófes acrescentadas no fim de certos cantos.",
-      "categories": [],
+      "categories": [
+        "corpo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "iwu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "arago",
@@ -153,16 +225,24 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "jakomea-ika"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "aredu",
       "title": "Aredu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "aroe-eceba-kejebo",
@@ -174,7 +254,7 @@
         "cosmologia",
         "cultura-material/ornamentação",
         "ritual/adornos",
-        "sociedade/organização-social/clãs",
+        "organização-social/clãs",
         "cosmologia/espiritualidade",
         "ritual/dança",
         "ritual/canto"
@@ -184,7 +264,12 @@
         "Aroe Eceba"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "aroe",
+        "pariko"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "aroe-eoprewu",
@@ -203,43 +288,72 @@
         "Fulgora"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "aroe-etawara-are",
       "title": "Aroe etawara are",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "aroe-jakomea-po",
       "title": "Aroe jakomea po",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "aroe",
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "aroe-kodu",
       "title": "Aroe kodu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "aroe-maiwu",
       "title": "Aroe maiwu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "aroe",
@@ -253,15 +367,26 @@
         "ritual/funeral",
         "cosmologia/xamanismo",
         "cosmologia/metempsicose",
-        "sociedade/organização-social/clãs",
-        "sociedade/organização-social/metades",
+        "organização-social/clãs",
+        "organização-social/metades",
         "cosmologia/primazia",
         "cosmologia/antepassados",
         "ritual/representações"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "aroe-eceba-kejebo",
+        "aroe-eoprewu",
+        "aroe-etawara-are",
+        "aroe-jakomea-po",
+        "aroe-kodu",
+        "aroe-maiwu",
+        "bope",
+        "itaga"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "awara-are",
@@ -280,7 +405,11 @@
         "aquele que chega de viagem"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe-ewa"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba-1-leaf",
@@ -294,7 +423,12 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba",
+        "ba-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba-1",
@@ -304,11 +438,16 @@
         "cultura-material/habitação",
         "cosmologia/xamanismo",
         "cultura-material",
-        "sociedade/organização-social/metades"
+        "organização-social/metades"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba",
+        "ba-5-house-village"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba-2-penile-sheath-daily",
@@ -322,7 +461,12 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba-2",
+        "ba-3-penile-sheath-festive"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba-2",
@@ -331,13 +475,18 @@
       "categories": [
         "cultura-material/vestimenta",
         "natureza/flora/palmeira",
-        "sociedade/organização-social/clãs",
-        "sociedade/organização-social/metades",
+        "organização-social/clãs",
+        "organização-social/metades",
         "cultura-material/habitação"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba",
+        "ba-2-penile-sheath-daily"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba-3-penile-sheath-festive",
@@ -352,7 +501,12 @@
         "baera"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba-2-penile-sheath-daily",
+        "ba-4-crown"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba-4-crown",
@@ -365,7 +519,12 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba-3-penile-sheath-festive",
+        "pariko"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba-5-house-village",
@@ -377,7 +536,12 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba-1",
+        "boe-ewa"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ba",
@@ -391,55 +555,85 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ba-1",
+        "ba-2",
+        "ba-1-leaf",
+        "ba-2-penile-sheath-daily",
+        "ba-3-penile-sheath-festive",
+        "ba-4-crown",
+        "ba-5-house-village"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "baado-jebage-cebegiwuge",
       "title": "Baado jebage cebegiwuge",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "bai-mana-gejewu",
       "title": "Bai mana gejewu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "bakaru",
       "title": "Bakaru",
       "abstract": "Narrativa tradicional bororo transmitida oralmente, usada para explicar o mundo, a origem dos seres e as relações culturais.",
       "categories": [
-        "tradição oral",
+        "tradição-oral",
         "cosmologia"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe-ewadaru"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "bapo-kurirewu",
       "title": "Bapo kurirewu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "baporogu",
       "title": "Baporogu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "baraedu-1",
@@ -457,365 +651,551 @@
         "barae"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "baraedu",
       "title": "Baraedu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "bari",
       "title": "Bari",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "bataru",
       "title": "Bataru",
       "abstract": "A língua Bororo",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "beo-uke-jorubo",
       "title": "Beo uke jorubo",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cosmologia/xamanismo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "erubo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "boadody",
       "title": "Boadody",
       "abstract": "Boadody - Enciclopédia Bororo",
-      "categories": [],
+      "categories": [
+        "sociedade"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "boe-eimejera",
       "title": "Boe eimejera",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "sociedade"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "boe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "boe-eke",
       "title": "Boe eke",
       "abstract": "1. Riqueza da alimentação Bororo",
-      "categories": [],
+      "categories": [
+        "cultura-material/alimentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "boe-ekudawu",
       "title": "Boe ekudawu",
       "abstract": "Designação genérica de qualquer artefato usado como esteira.",
-      "categories": [],
+      "categories": [
+        "cultura-material"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "boe-epa",
       "title": "Boe epa",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "sociedade"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "boe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "boe-ewa",
       "title": "Boe ewa",
       "abstract": "Aldeia bororo. Entrada estrutural central sobre organizacão material, social, ritual e cosmológica da aldeia (boe ewa), com nomenclatura, origem lendaria, genealogia, organizacão espacial, clãs e sub-clas, bai mana gejewu, matrimonio e parentesco. (Em construcao.)",
       "categories": [
-        "organizacao-social",
+        "organização-social",
         "cosmologia",
-        "territorio",
-        "arquitetura",
-        "parentesco",
+        "território",
+        "cultura-material/habitação",
+        "sociedade/parentesco",
         "ritual"
       ],
       "variants": [],
       "entry_type": "estrutura-central",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe",
+        "ba-5-house-village",
+        "ecerae",
+        "tugarege"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "boe-ewadaru",
       "title": "Boe ewadaru",
       "abstract": "Provérbio, idiotismo, boato.",
-      "categories": [],
+      "categories": [
+        "tradição-oral"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe",
+        "bakaru"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "boe",
       "title": "Boe",
       "abstract": "Termo central da língua e da autoidentificação bororo, significando simultaneamente pessoa, coisa, mundo e condição existencial.",
       "categories": [
-        "etnologia",
-        "língua",
+        "etnografia",
+        "linguística",
         "cosmologia"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe-ewa",
+        "boe-eke",
+        "boe-ekudawu",
+        "boe-epa",
+        "boe-eimejera",
+        "boe-ewadaru"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "bokodori-ecerae",
       "title": "Bokodori ecerae",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "organização-social/clãs"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ecerae",
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "bokwado",
       "title": "Bokwado",
       "abstract": "Bokwado Jatobá da floresta (Hymenaea courbaril).",
-      "categories": [],
+      "categories": [
+        "natureza/flora"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "bope",
       "title": "Bope",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "aroe",
+        "tabo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "butao-butu",
       "title": "Butao butu",
       "abstract": "<em>butao</em> 'queda' + <em>butu</em> 'chuva'",
-      "categories": [],
+      "categories": [
+        "natureza"
+      ],
       "variants": [
         "butao"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cai",
       "title": "Cai",
       "abstract": "Cai — Logo, imediatamente. ex. ure tugeragy cai, epa ji 'imediatamente pegou (outra flecha) para matá-lo'.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "caije",
       "title": "Caije",
       "abstract": "Caije - Logo, imediatamente. ex. rekodyre piji, caije 'fugiu imediatamente'.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "camu",
       "title": "Camu",
       "abstract": "Camu - Absolutamente.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "camugogo",
       "title": "Camugogo",
       "abstract": "Camugogo — Absolutamente. Ex. boe kimo camugogo 'absolutamente nada'.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "carugirirabo",
       "title": "Carugirirabo",
       "abstract": "Carugirirabo — *? Tomara, fosse sempre assim.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ce-2",
       "title": "Ce",
       "abstract": "Ce2 — Lá, até. ruture ce i oto kae 'subiu até o topo da árvore'.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ce-3",
       "title": "Ce",
       "abstract": "Ce3 — vart. de co Preto.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ce-4",
       "title": "Ce",
       "abstract": "Ce4 — varts. Nós, nosso, nossa, nossos, nossas (exclusivo). exs. cewadaru 'nossa palavra'; cedymode 'iremos'; cemode tugo pegado 'nós estragaremos a flecha'.",
-      "categories": [],
+      "categories": [
+        "linguística/gramática"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ce",
       "title": "Ce",
       "abstract": "Ce1 — Mãe. Note-se que a primeira pessoa da variação usa a forma myga e não ce.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cebegi",
       "title": "Cebegi",
       "abstract": "Cebegi — * ? Embaixo, do lado inferior.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cebegiwu",
       "title": "Cebegiwu",
       "abstract": "Cebegiwu (plural cebegiwuge) — (cebegi 'do lado de baixo' + -wy 'relativizador' aquele do lado de baixo. Indivíduo que mora embaixo, coisa que está embaixo; membro do sub-clã mais afastado do leste com relação aos outros dois sub-clãs do mesmo clã; ex. Kiedy Cebegiwu, Kiedy que mora embaixo i.e. membro do sub-clã dos Kie mais afastado do leste com relação aos outros dois sub-clãs do mesmo clã boe ewa, aldeia bororo.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cebegiwuge",
       "title": "Cebegiwuge",
       "abstract": "Indivíduos ou elementos situados abaixo; nome de sub-clã.",
       "categories": [
-        "organização social",
-        "termos relacionais"
+        "organização-social",
+        "linguística/termos-relacionais"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ceboere",
       "title": "Ceboere",
       "abstract": "Ceboere - vart. aceboere. forma que indica impaciência, satisfação, maravilha.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cegi",
       "title": "Cegi",
       "abstract": "Cegi pron.pess. 1.pluralex. nós, nosso, nossa, nossos, nossas. ex. cegi cedymode 'iremos'.",
-      "categories": [],
+      "categories": [
+        "linguística/gramática"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ceje-bari",
       "title": "Ceje bari",
       "abstract": "Ceje bari - Tipo de instrumento musical de sopro → akodo 'tocar instrumento'.",
-      "categories": [],
+      "categories": [
+        "música",
+        "cultura-material"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jure-bari",
+        "ceje",
+        "akodo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ceje",
       "title": "Ceje",
       "abstract": "Ceje - * f. onom. [ave que com o canto parece dizer ceje]. Gavião-fumaça (Buteogallus meridionalis).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cenawu-kyri",
       "title": "Cenawu kyri",
       "abstract": "Cenawu kyriCenawu Kyri - n. p. → Enciclopédia v. II.",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cerewu",
       "title": "Cerewu",
       "abstract": "Cerewu - vart. de corewu (ce3 'preto' + -re 'indicativo' + -wy 'relativizador'. O preto, o escuro. ex. po cerewu 'água escura'; rio Poxorewu.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cewy",
       "title": "Cewy",
       "abstract": "Cewy - Aquele (não visível ao falante e ouvinte).",
-      "categories": [],
+      "categories": [
+        "linguística/gramática"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cibae-eceba",
       "title": "Cibae eceba",
       "abstract": "Cibae Eceba - nome próprio. Enciclopédia II v.",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibae-ecerae",
       "title": "Cibae ecerae",
       "abstract": "Cibae Ecerae - plural de Cibae Eceraedy. Membros homens de um clã da metade dos Ecerae denominados também Aroe ou Bokodori Ecerae ou Okoge Ecerae → boe ewa 'aldeia bororo'.",
-      "categories": [],
+      "categories": [
+        "organização-social/clãs"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ecerae",
+        "bokodori-ecerae",
+        "cibae-eceraedu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibae-eceraedu",
       "title": "Cibae eceraedu",
       "abstract": "Cibae eceraedu — membro homem de um clã da metade dos Ecerae, também denominado Aroe, Bokodori eceraedu ou Okoge eceraedu.",
       "categories": [
-        "organizacao-social",
-        "clas",
-        "nomes-clanicos"
+        "organização-social",
+        "organização-social/clãs",
+        "nomes-próprios/clânicos"
       ],
       "variants": [
         "Bokodori eceraedu",
@@ -823,433 +1203,686 @@
         "Aroe (em contexto clânico)"
       ],
       "entry_type": "designacao-clanica",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "cibae-ecerae",
+        "ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibae-egyrea",
       "title": "Cibae egyrea",
       "abstract": "- * cibae 'araracanga'; e '3.PL'; egyrea 'listra dos olhos' [listra dos olhos das araracangas. Designação: 1. dos riscos de plumazinhas que ladeiam os olhos das araracangas; 2. de um tipo de boe ejiwu 'pintura facial dos bororo'. Nome próprio, ver Enciclopédia II v.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibae-eiari",
       "title": "Cibae eiari",
       "abstract": "Cibae Eiari - cibae 'araracangas'; e '(d)elas'; iari 'toca' [toca das araracangas]. Designação: 1. de um morro situado na região entre o curso superior do rio Itiquira e o do rio Correntes. 1 Os bororo afirmam que naquela montanha existem grutas nas quais se poderiam encontrar cestas funerárias contendo ossos e enfeites bororo. São colocadas sobre jiraus tendo aos lados potes de barro. Alicerçado nessa tradição o MRDB promoveu, em janeiro de 1960,",
-      "categories": [],
+      "categories": [
+        "geografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibae-modojeba",
       "title": "Cibae modojeba",
       "abstract": "Cibae Modojeba - nome próprio → Enciclopédia II v.",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibae",
       "title": "Cibae",
       "abstract": "Cibae - (sing = pl). Araracanga (Ara chloroptera).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cibai-kurirewu",
       "title": "Cibai kurirewu",
       "abstract": "Nome próprio registrado na tradição bororo.",
       "categories": [
-        "nomes próprios"
+        "nomes-próprios"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cibaibo-bororo",
       "title": "Cibaibo bororo",
       "abstract": "Cibaibo Bororo - * Cibaibo 'córego da araracanga'; Bororo aldeia [aldeia do córego da araracanga]. Antiga aldeia nas margens do córrego Cibaibo.",
-      "categories": [],
+      "categories": [
+        "geografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaibo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibaibo",
       "title": "Cibaibo",
       "abstract": "Cibaibo - * cibae 'araracanga'; po3 'água' [córrego da araracanga]. Pequeno afluente da direita do rio Cuiabá ao norte da cidade homônima. Nome próprio → Enciclopédia II v.",
-      "categories": [],
+      "categories": [
+        "geografia/hidrografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaibo-bororo",
+        "cibaiborewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibaiborewu",
       "title": "Cibaiborewu",
       "abstract": "Cibaiborewu - * Cibaibo 'córrego da araracanga'; re 'indicativo; wy 'relativizador' [córrego semelhante ao Cibaibo] Córrego afluente da direita do rio Cuiabá a montante da cidade homônima.",
-      "categories": [],
+      "categories": [
+        "geografia/hidrografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaibo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibairago",
       "title": "Cibairago",
       "abstract": "Cibairago - n. p. → Enciclopédia II v.",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibairewu",
       "title": "Cibairewu",
       "abstract": "Cibairewu - n. p. → Enciclopédia II v.",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibaiwo-ekurewu",
       "title": "Cibaiwo ekurewu",
       "abstract": "Cibaiwo Ekyrewu - Designação: 1. de certo tipo de boe ekeno tadawu 'adorno nasal dos bororo'; 2. de certo tipo de boe ekiga 'prego dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaiwo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibaiwo-je-ekurewu",
       "title": "Cibaiwo je ekurewu",
       "abstract": "Cibaiwo je ekurewu - Tipo de boe ekiga 'prego dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaiwo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibaiwo-kujagurewu",
       "title": "Cibaiwo kujagurewu",
       "abstract": "Cibaiwo kujagurewu - Designação: 1. de certo tipo de boe ekeno tadawu 'adorno nasal dos bororo'; 2. de certo tipo de boe ekiga 'prego dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaiwo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibaiwo",
       "title": "Cibaiwo",
       "abstract": "Cibaiwo - cibae 'araracangas'; iwo 'taquara' [taquara usada pelos membros do clã dos Cibae Ecerae, ou seja dos Bokodori Ecerae, para sorver a bebida de acuri]. Designação: 1. de canula usada pelos Bokodori Ecerae para sorver o iworo 'bebida de acuri': os membros dos outros clãs denominam-na poiwo; 2. de certo tipo de boe ekeno tadawu 'adorno nasal dos bororo'; 3. de certo tipo de boe ekiga 'prego dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaiwo-ekurewu",
+        "cibaiwo-je-ekurewu",
+        "cibaiwo-kujagurewu",
+        "cibaiwodo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cibaiwodo",
       "title": "Cibaiwodo",
       "abstract": "Cibaiwodo - Tipo de boe etao kajejewy 'coroa dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "cibaiwo",
+        "pariko"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "cigo",
       "title": "Cigo",
       "abstract": "Cigo - forma que indica 'abundância, muito'. ex. apega kyricigo 'és muito ruim'.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cigocigo",
       "title": "Cigocigo",
       "abstract": "Cigocigo - forma usada como 'abundância, muitíssimo'. ex. awara raícigocigore 'estrada longuíssima'.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cijiji",
       "title": "Cijiji",
       "abstract": "Cijiji - onomatopeia. Ave que com o canto parece dizer cijiji. Anu-branco (Guira guira). 1 Esta ave às vezes emite um canto que aos ouvidos dos bororo soa bika. Por isso, pode ser chamada também com este nome. Quando o anu-branco canta, dizendo cijiji, é sinal de bom agouro e quando diz bika o presságio é menos favorável.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cinadatao-imo",
       "title": "Cinadatao imo",
       "abstract": "Cinadatao imo - Designação : 1. de certo tipo de boe ejiwu 'pintura facial dos bororo'; 2. de certo tipo de boe epemegadody 'pintura somática dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação",
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cinadatao",
       "title": "Cinadatao",
       "abstract": "Cinadatao - * onomatopeia [ave que com o canto parece dizer cinadatao|. Canea (Nomonyx dominicus).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ciocio",
       "title": "Ciocio",
       "abstract": "Ciocio - *? Taruma-do-campo (talvez Vitex megapotamica) ou outra espécie do gênero Vitex.",
-      "categories": [],
+      "categories": [
+        "natureza/flora"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ciriwore",
       "title": "Ciriwore",
       "abstract": "Ciriwore - * ? Designação: 1. de um caruncho do jatobá; 2. de um aroe, espírito.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/inseto",
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ciwabo-bataru-okeadu-biri",
       "title": "Ciwabo bataru okeadu biri",
       "abstract": "Ciwabo bataru Okeadu - ciwabo 'japu'; bataru 'palavra'; okeadu 'brincadeira'; biri 'pele' [pele de japu-femea] Designação 1. da pele de japu fêmea com penas; 2. de certo tipo de boe ewiadawu 'brinco dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação",
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwabo-bataru-okeadu",
+        "ciwabo-biri"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwabo-bataru-okeadu",
       "title": "Ciwabo bataru okeadu",
       "abstract": "Ciwabo bataru Okeadu - ciwabo 'japu'; bataru 'palavra'; okeadu 'brincadeira' [japu que facilmente imita o canto de outras aves]. Japu-fêmea (Ostinops decumanus).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwabo",
+        "ciwabo-bataru-okeadu-biri"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwabo-biri",
       "title": "Ciwabo biri",
       "abstract": "Ciwabo biri - ciwabo 'japu'; biri 'pele' [pele de japu]. Designação: l. da pele de japu com penas ; 2. de certo tipo de boe ewiadawu, brinco dos bororo.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação",
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwabo",
+        "ciwabo-boro"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwabo-boro",
       "title": "Ciwabo boro",
       "abstract": "Ciwabo biri - ciwabo 'japu'; biri 'pele' [pele de japu]. Designação: l. da pele de japu com penas ; 2. de certo tipo de boe ewiadawu, brinco dos bororo.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwabo",
+        "ciwabo-biri"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwabo",
       "title": "Ciwabo",
       "abstract": "Ciwabo - (plural ciwaboe). * onomatopeia [ave que como canto parece dizer ciwabo|. Japu-macho (Psarocolius decumanus).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwabo-bataru-okeadu",
+        "ciwabo-biri",
+        "ciwabo-boro"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwabori-bororo",
       "title": "Ciwabori bororo",
       "abstract": "Ciwabori Bororo - Antiga aldeia ao sopé de um morro nas nascentes do rio Araguaia.",
-      "categories": [],
+      "categories": [
+        "geografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwabori"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwabori",
       "title": "Ciwabori",
       "abstract": "Ciwabori - ciwabo 'japu'; ri 'morro' [morro do japu]. Morro nas nascentes do r. Araguaia.",
-      "categories": [],
+      "categories": [
+        "geografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwabori-bororo",
+        "ciwabo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwae-aroe",
       "title": "Ciwae aroe",
       "abstract": "ciwae aroe - Designação: 1. de certo 'representação'; 2. do intérprete da mesma.",
-      "categories": [],
+      "categories": [
+        "ritual/representações"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwae",
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwae",
       "title": "Ciwae",
       "abstract": "ciwae - '' ? Urubu-caçador (Cathartes aura ruficollis).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwae-aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwaje-aroe",
       "title": "Ciwaje aroe",
       "abstract": "ciwaje aroe - Designação: 1. de certo aroe etawujedy 'representação'; 2. do intérprete da mesma.",
-      "categories": [],
+      "categories": [
+        "ritual/representações"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "aroe",
+        "ciwaje-atugo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwaje-atugo",
       "title": "Ciwaje atugo",
       "abstract": "ciwaje atugo - Tipo de boe epemegadody pintura somática dos bororo.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação",
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwaje-aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwaje-uiorubo",
       "title": "Ciwaje uiorubo",
       "abstract": "Ciwaje uiorubo - * iwaje 'urubu-caçador'; u '(d)ele'; erubo 'vegetal mágico' [arbusto mágico cujas raízes desprendem um mau cheiro semelhante ao do urubu-caçador]. Designação de um erubo 'vegetal mágico'. 1 Com suas folhas preparam infusões com as quais se banham a fim de evitarem qualquer doença.",
-      "categories": [],
+      "categories": [
+        "natureza/flora",
+        "cosmologia/xamanismo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwae",
+        "erubo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwororo",
       "title": "Ciwororo",
       "abstract": "Ciwororo - * f. onom. [ave que com o canto parece dizer ciwororo]. Choca (Thamnophilus doliatus radiatus).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ciwu-baga",
       "title": "Ciwu baga",
       "abstract": "Ciwu baga - * ciwu 'pica-pau'; baga 'curso d'água' [córrego do pica-pau]. Córrego afluente da esqeurda do Okiwabo 'ribeirão Kiuabo'.",
-      "categories": [],
+      "categories": [
+        "geografia/hidrografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ciwu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ciwu",
       "title": "Ciwu",
       "abstract": "Ciwu - * Vard. de pica-pau.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "co",
       "title": "Co",
       "abstract": "Co - variante de ce. Preto, escuridão, sujeira.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cobogi",
       "title": "Cobogi",
       "abstract": "Posposicao indicando posicao superior ou acima.",
       "categories": [
-        "gramatica"
+        "linguística/gramática"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cobogiwu-2",
       "title": "Cobogiwu",
       "abstract": "Cobogiwu - * (cobugi 'no lado de cima' + wy 'relativizador') [aquele que está no lado de cima]. Indivíduo que está no lado de cima, indivíduo que mora mais acima; designação de cada membro do sub-clã mais próximo ao leste com relação aos outros dois sub-clãs do mesmo clã. Kiedy Cobugiwu 'membro do sub-clã dos Kie que habita mais perto do leste com relação aos membros dos outros sub-cãs do mesmo clã'.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cobogiwu",
       "title": "Cobogiwu",
       "abstract": "Cobogiwu - * (cobugi 'no lado de cima' + wy 'relativizador') [aquele que está no lado de cima]. Indivíduo que está no lado de cima, indivíduo que mora mais acima; designação de cada membro do sub-clã mais próximo ao leste com relação aos outros dois sub-clãs do mesmo clã. Kiedy Cobugiwu 'membro do sub-clã dos Kie que habita mais perto do leste com relação aos membros dos outros sub-cãs do mesmo clã'.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "coboje",
       "title": "Coboje",
       "abstract": "Coboje - * ? posp. Em cima, em alto.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "cucu",
       "title": "Cucu",
       "abstract": "Cucu - * cucu *f. onom. [ave que com o canto parece dizer tchutchu. Vard. de ave Cyanocorax cyanopogon (Wied-Neuwied, 1821). | Quando os bororo ouvem cantar essa ave pensam que seja aviso de algum perigo iminente.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "duji",
       "title": "Duji",
       "abstract": "Partícula nominalizadora usada para transformar orações dependentes em complemento de verbos que regem a posposição ji.",
       "categories": [
-        "gramática",
-        "morfossintaxe"
+        "linguística/gramática",
+        "linguística/morfossintaxe"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ebukejewu",
       "title": "Ebukejewu",
       "abstract": "Viseira cerimonial de penas usada em rituais bororo, associada à identificação de sub-clãs.",
       "categories": [
-        "cultura material",
-        "ornamentos"
+        "cultura-material",
+        "cultura-material/ornamentação"
       ],
       "variants": [
         "ebukejewu"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "pariko",
+        "boe-epa"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ecerae",
       "title": "Ecerae",
       "abstract": "Homens pertencentes à metade exógama setentrional da aldeia bororo (Boe epa) e também denominação de um sub-clã específico dessa metade.",
       "categories": [
-        "sociedade/organização-social",
-        "sociedade/organização-social/metades",
-        "sociedade/organização-social/clãs"
+        "organização-social",
+        "organização-social/metades",
+        "organização-social/clãs"
       ],
       "variants": [
         "Eceraedo (singular)",
@@ -1257,43 +1890,74 @@
         "Baado Jebage Cebegiwuge Corewuge"
       ],
       "entry_type": "social_structure",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "tugarege",
+        "boe-ewa",
+        "bokodori-ecerae",
+        "cibae-ecerae"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "erubo",
       "title": "Erubo",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cosmologia/xamanismo",
+        "natureza/flora"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "amoe-erubo",
+        "ewo-o-jorubo",
+        "beo-uke-jorubo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ery-pa",
       "title": "Ery pa",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ewo-o-jorubo",
       "title": "Ewo o jorubo",
       "abstract": "Ewo o jorubo - * ewo 'cascavel'; o dente; ji, (d)ele; erubo, vegetal mágico [vegetal cuja flor seca apresenta pontas duras semelhantes a dentes de cascavel] Designação de um erubo. | É um cipó do cerrado cujas folhas esfregadas na flecha deveriam",
-      "categories": [],
+      "categories": [
+        "natureza/flora",
+        "cosmologia/xamanismo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "erubo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ikuieje",
       "title": "Ikuieje",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "itaga",
@@ -1306,294 +1970,475 @@
       ],
       "variants": [],
       "entry_type": "ritual",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "aroe",
+        "mori"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "itoborewu",
       "title": "Itoborewu",
       "abstract": "Itoborewu - (itobo 'parte basilar do pecíolo de folha de palmeira' + -re 'indicativo' + -wy 'relativizador') palmeira que apresenta partes basilares de pecíolos de fólhas presas ao estipe. Designação genérica de qualquer palmeira adulta.",
-      "categories": [],
+      "categories": [
+        "natureza/flora/palmeira"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "iworo",
       "title": "Iworo",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "iwu",
       "title": "Iwu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "corpo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ao",
+        "ra-2"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jagu",
       "title": "Jagu",
       "abstract": "Jagu -- adv. Absolutamente, completamente, mesmo.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "jajadoge-2",
       "title": "Jajadoge",
       "abstract": "<em>ji</em> 'sua' + <em>ia</em> 'abertura' + <em>doge</em> plural [",
-      "categories": [],
+      "categories": [
+        "natureza/fauna"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "jajadoge",
       "title": "Jajadoge",
       "abstract": "<em>jajá</em> onomatopeia + <em>doge</em> plural.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-atugo-padure-paru-jiwu-pariko",
       "title": "Jakomea atugo padure paru jiwu pariko",
       "abstract": "Jakomea atugo padure paru jiwu pariko - Tipo de boe etao kajejewy coroa dos bororo.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação",
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea",
+        "pariko"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-ekure",
       "title": "Jakomea ekure",
       "abstract": "Jakomea ekure - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-enawu",
       "title": "Jakomea enawu",
       "abstract": "Jakomea enaewy - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-epa",
       "title": "Jakomea epa",
       "abstract": "Jakomea epa - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-ewoeiga",
       "title": "Jakomea ewoeiga",
       "abstract": "Jakomea ewoeiga - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-ika",
       "title": "Jakomea ika",
       "abstract": "Jakomea ika - Tio de boeiga 'arco'",
-      "categories": [],
+      "categories": [
+        "cultura-material/arma"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea",
+        "arago"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-kago",
       "title": "Jakomea kago",
       "abstract": "Jakomea kago - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-kaworu",
       "title": "Jakomea kaworu",
       "abstract": "Jakomea kaworu — nome próprio bororo (ver vol. II).",
       "categories": [
-        "nomes-proprios"
+        "nomes-próprios"
       ],
       "variants": [],
       "entry_type": "antropônimo",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-kurirewu",
       "title": "Jakomea kurirewu",
       "abstract": "Jakomea kurirewu - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-mugu",
       "title": "Jakomea mugu",
       "abstract": "Jakomea mugu - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-okwoda",
       "title": "Jakomea okwoda",
       "abstract": "Jakomea okwoda - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-ridurewu",
       "title": "Jakomea ridurewu",
       "abstract": "Jakomea ridurewu — nome próprio bororo (ver vol. II).",
       "categories": [
-        "nomes-proprios"
+        "nomes-próprios"
       ],
       "variants": [],
       "entry_type": "antropônimo",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-ruko",
       "title": "Jakomea ruko",
       "abstract": "Jakomea ruko - nome próprio (ver vol. II).",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-utugo-by-ekurewu",
       "title": "Jakomea utugo by ekurewu",
       "abstract": "Jakomea utugo by ekurewu - Tipo de tugo 'flecha'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/arma"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea-utugo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-utugo-by-kujagurewu",
       "title": "Jakomea utugo by kujagurewu",
       "abstract": "Jakomea utugo by kujagurewu - Tipo de tugo 'flecha'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/arma"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea-utugo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea-utugo",
       "title": "Jakomea utugo",
       "abstract": "Jakomea utugo - Tipo de tugo 'flecha'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/arma"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "jakomea",
+        "jakomea-utugo-by-ekurewu",
+        "jakomea-utugo-by-kujagurewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakomea",
       "title": "Jakomea",
       "abstract": "Jakomea - Designação de um aroe 'espírito'.",
-      "categories": [],
+      "categories": [
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "aroe",
+        "jakomea-ika",
+        "jakomea-utugo",
+        "jakomea-kaworu",
+        "jakomea-ridurewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakorewu",
       "title": "Jakorewu",
       "abstract": "Jakorewu - Jakorewu - * (ji 3.SG + ako 'som' + re 'IND' + wy 'REL') [mamífero aquático que quando",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/mamífero"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "jakorewuge-eiao"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakorewuge-eiao",
       "title": "Jakorewuge eiao",
       "abstract": "<em>jakorewuge</em> 'boto' + <em>ge</em> 'plural' + <em>e</em> '3.pl' + <em>iao</em> 'localidade' [rio dos botos]",
-      "categories": [],
+      "categories": [
+        "geografia/hidrografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "jakorewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "jakoro-wari",
       "title": "Jakoro wari",
       "abstract": "Nome próprio.",
-      "categories": [],
+      "categories": [
+        "nomes-próprios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "jaku",
       "title": "jaku",
       "abstract": "Jeito, boas maneiras",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "jugodoge-eimiejera-uiorubo",
       "title": "Jugodoge eimiejera uiorubo",
       "abstract": "Jugodoge eimejera 'queixada, guia de uma manada de porcos'; u '(d)ele'; erubo 'vegetal mágico [vegetal mágico do queixada, guia de uma manada de porcos. Designação de um erubo, vegetal mágico'. | É a palmeira acuri, cujos côcos são comidos pelos queixadas. Deveria conferir aos bororo qualidades semelhantes as dos queixadas. Os chefes bororo espalham pela aldeia as folhas dela a fim de que os súditos sejam obedientes como são os queixadas a seu guia.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/mamífero",
+        "cosmologia/xamanismo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "jure-bari",
       "title": "Jure bari",
       "abstract": "Instrumento musical de sopro → akodo 'tocar instrumento'.",
-      "categories": [],
+      "categories": [
+        "música",
+        "cultura-material"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ceje-bari",
+        "akodo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "kamorewu",
       "title": "Kamorewu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "kaworodo",
       "title": "Kaworodo",
       "abstract": "Progenitora mítica do sub-clã Baado Jebage Cebegiwuge.",
       "categories": [
-        "mitologia",
-        "organizacao-clanica",
-        "ancestralidade"
+        "cosmologia/mitologia",
+        "organização-social/clãs",
+        "cosmologia/antepassados"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe-ewa",
+        "baado-jebage-cebegiwuge"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "kudoro",
@@ -1605,52 +2450,78 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "kuogo-i",
       "title": "Kuogo i",
       "abstract": "Kuogo i kuogo 'flor de paratudo'; í 'árvore' | árvore da flor de paratudo. Paratudo (Tecoma caraiba). É denominado também icegy i.",
-      "categories": [],
+      "categories": [
+        "natureza/flora"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "kurugugwa-upebo",
       "title": "Kurugugwa upebo",
       "abstract": "Kurugugwa upebo1 - Tipo de boe etao kajejewy 'coroa dos bororo'.",
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "pariko"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "kurugugwa-ywariga",
       "title": "Kurugugwa uwariga",
       "abstract": "Kurugugwa wariga1 - * kurugugwa 'gavião-caracaraí'; u '(d)ele'; wariga penacho [gavião com penacho] Gavião-de-penacho.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "kurugugwa-upebo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "kurugutugu",
       "title": "Kurugutugu",
       "abstract": "Kurugutugu -. * kuru, vôo; gutugu onom. [inseto que voa com vôo irregular] Lepidóptero, borboleta.",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/inseto"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "kururewu",
       "title": "Kururewu",
       "abstract": "Kururewu1 - * kuru natação; -rewu, suf. 'Nadador'. Embora os bororo não viagem por água e nao conheciam a canoa e seu uso, entretanto são habilíssimos nadadores. Para atravessarem rios, às vezes, nadam com um só braço carregando, com o outro, arco, flechas, caça e cestos. As mulheres frequentemente auxiliam-se com pequenos feixes de pecíolos secos de folhas de palmeiras ou de qualquer madeira leve, especialmente quando devem transportar pesos consideráveis em largos cursos dágua. Os índios podem permanecem embaixo d'água por um tempo notável, deixando surpreendido qualquer civilizado.",
-      "categories": [],
+      "categories": [
+        "sociedade/vida-cotidiana"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ma-1",
@@ -1664,16 +2535,22 @@
         "ba"
       ],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ma-3",
       "title": "Ma",
       "abstract": "Se, quando, mas.",
-      "categories": [],
+      "categories": [
+        "linguística/gramática"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "mace-eiao",
@@ -1685,7 +2562,9 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "mace-kigadurewu",
@@ -1697,7 +2576,9 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "mace",
@@ -1708,70 +2589,119 @@
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "mae-1",
       "title": "Mae",
       "abstract": "Extensão, duração ilimitada, imensidade, continuidade, comprimento; deserto; tristeza.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "maedo-1",
+        "maedodu-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maedo-1",
       "title": "Maedo",
       "abstract": "Alargar, estender, compridar, tardar; entristecer.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "mae-1",
+        "maedodu-1",
+        "maedodurewu-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maedodu-1",
       "title": "Maedodu",
       "abstract": "Alargado, estendido, encompridado, entristecido.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "maedo-1",
+        "maedodurewu-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maedodurewu-1",
       "title": "Maedodurewu",
       "abstract": "O (que foi) alargado, o (que foi) estendido, o (que foi) entristecido.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "maedodu-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maegodu-1-2",
       "title": "Maegodu",
       "abstract": "Continuidade, tristeza, arrependimento.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "maegodu-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maegodu-1",
       "title": "Maegodu",
       "abstract": "Continuidade, começar a estender-se.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "maegodu-1-2",
+        "maekodudo-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maekodudo-1",
       "title": "Maekodudo",
       "abstract": "Fazer com continuidade, entristecer, arrepender-se.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "maegodu-1"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maereboe",
@@ -1779,13 +2709,20 @@
       "abstract": "Categoria de espíritos da cosmologia bororo, associada ao Pai dos Espíritos (Maereboedoge Etuo) e ao sistema ritual conduzido pelo xamã dos espíritos (bari).",
       "categories": [
         "cosmologia",
-        "religião"
+        "cosmologia/religião"
       ],
       "variants": [
         "bope"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "bari",
+        "aroe",
+        "boe",
+        "aroe-kodu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "maguru",
@@ -1793,40 +2730,65 @@
       "abstract": "Viagem coletiva sazonal para caça, pesca e coleta, com construção temporária de aldeias.",
       "categories": [
         "sociedade",
-        "territorio",
-        "subsistencia",
-        "mobilidade"
+        "território",
+        "sociedade/subsistência",
+        "sociedade/mobilidade"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "boe-epa"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "mano-akurararewu-aroe",
       "title": "Mano akurararewu aroe",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "mano",
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "mano-aroe",
       "title": "Mano aroe",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "mano",
+        "mano-pa",
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "mano-kurirewu",
       "title": "Mano kurirewu",
       "abstract": "Mano kurirewu -- Ritual Boe-Bororo das duas rodas grandes de talos de caeté (Helicônia). Awyre pemegare! Mano Kurirewu pemegare! Boe eegarere boe etaidyre Assim falou o chefe cultural Bororo Antônio Kanajó na festa do Mano Kurirewu em Meruri no ano de 1995: \"Este é bom! Mano Kurirewu é bom! O povo se alegra, o povo gosta!\"",
-      "categories": [],
+      "categories": [
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "mano"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "mano-pa",
@@ -1836,19 +2798,23 @@
         "ritual",
         "cosmologia",
         "sociedade",
-        "musica",
-        "cerimonial"
+        "música"
       ],
       "variants": [],
       "entry_type": "ritual",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "mano",
+        "mano-aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "mano",
       "title": "Mano",
       "abstract": "Caete ou piripiri utilizado para fabricar cilindros rituais do Mano aroe.",
       "categories": [
-        "flora",
+        "natureza/flora",
         "cultura-material",
         "ritual"
       ],
@@ -1856,33 +2822,48 @@
         "keo"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "mano-pa",
+        "mano-aroe",
+        "mano-akurararewu-aroe",
+        "mano-kurirewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "marido-kuru",
       "title": "Marido kuru",
       "abstract": "Bebida não fermentada extraída do estipe do buriti.",
       "categories": [
-        "alimentacao",
-        "bebidas",
-        "plantas"
+        "cultura-material/alimentação",
+        "natureza/flora"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "iworo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "marido",
       "title": "Marido",
       "abstract": "Buriti (Mauritia sp.), grande palmeira de áreas alagadas; fonte de alimento, matéria-prima e bebida.",
       "categories": [
-        "flora",
-        "alimentacao",
+        "natureza/flora",
+        "cultura-material/alimentação",
         "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "marido-kuru",
+        "iworo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "mea",
@@ -1891,12 +2872,18 @@
       "categories": [
         "cultura-material",
         "ritual",
-        "substancias",
-        "vida-social"
+        "cultura-material/substâncias",
+        "sociedade/vida-social"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "meari",
+        "bari",
+        "aroe-etawara-are"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "meari",
@@ -1904,12 +2891,16 @@
       "abstract": "“Morro do tabaco”; topônimo nas proximidades da atual cidade de Poxoréu.",
       "categories": [
         "geografia",
-        "historia",
+        "etnografia/história",
         "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "mea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "meriri",
@@ -1917,35 +2908,47 @@
       "abstract": "Substância dura e resplandecente; metal, brilho, excelência e dinheiro.",
       "categories": [
         "cultura-material",
-        "tecnologia",
-        "economia",
-        "história"
+        "cultura-material/tecnologia",
+        "sociedade/economia",
+        "etnografia/história"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "baraedu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "micori",
       "title": "Micori",
       "abstract": "Designação do cipó-imbé e de um ribeirão afluente do Pogubo Cerewu (rio São Lourenço).",
       "categories": [
-        "flora",
-        "hidrografia",
+        "natureza/flora",
+        "geografia/hidrografia",
         "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "pogubo-cerewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "mori-2",
       "title": "Mori",
       "abstract": "Mori Vingança, recompensa, retribuição; pagamento (neol.).",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "mori",
@@ -1954,135 +2957,183 @@
       "categories": [
         "sociedade",
         "ritual",
-        "morte",
-        "reciprocidade"
+        "cosmologia/morte",
+        "sociedade/reciprocidade"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "aroe-maiwu",
+        "bope",
+        "bari"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "moto-epa",
       "title": "Moto epa",
       "abstract": "Pessoa que pratica geofagia; individuo que come terra.",
       "categories": [
-        "saude",
-        "costumes"
+        "saúde",
+        "sociedade/costumes"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ery-pa"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "motori",
       "title": "Motori",
       "abstract": "Ave do ninho de barro (joao-de-barro) e, por extensao, tijolo ou adobe.",
       "categories": [
-        "fauna",
-        "cultura material"
+        "natureza/fauna",
+        "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "muga",
       "title": "Muga",
       "abstract": "Lugar de sentar, morada ou casa; também banco ou cadeira.",
       "categories": [
-        "cultura material",
-        "organizacao domestica",
-        "parentesco"
+        "cultura-material",
+        "cultura-material/vida-doméstica",
+        "sociedade/parentesco"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ce"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "nabure-eiari",
       "title": "Nabure eiari",
       "abstract": "Ninho da ararapiranga escavado em paredoes de laterita.",
       "categories": [
-        "fauna",
-        "caca",
-        "tecnologia tradicional"
+        "natureza/fauna",
+        "natureza/fauna/caça",
+        "cultura-material/tecnologia"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "nabure"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "nabure",
       "title": "Nabure",
       "abstract": "Ararapiranga (Ara macao), ave criada pelos bororo por suas penas e por seu papel espiritual.",
       "categories": [
-        "fauna",
+        "natureza/fauna",
         "cosmologia",
-        "cultura material"
+        "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "nabure-eiari"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "no",
       "title": "No",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "noa",
       "title": "No a",
       "abstract": "Semente do coco de babacu e, por extensao, tabatinga, alvura e nome de curso dagua.",
       "categories": [
-        "etnobotanica",
-        "alimentacao",
-        "territorio",
+        "natureza/flora",
+        "cultura-material/alimentação",
+        "território",
         "ritual"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "no",
+        "noido",
+        "aroe-etawara-are"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "noido-kuru",
       "title": "Noido kuru",
       "abstract": "Bebida fermentada obtida da seiva do babacu, de efeito mais forte que a bebida de acuri.",
       "categories": [
-        "etnobotanica",
-        "alimentacao"
+        "natureza/flora",
+        "cultura-material/alimentação"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "iworo",
+        "boe-eke"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "noido",
       "title": "Noido",
       "abstract": "Palmeira babacu [(Orbignya martiana)](https://pt.wikipedia.org/wiki/Babaçu), de grande importancia alimentar e material para os bororo.",
       "categories": [
-        "etnobotanica",
-        "alimentacao",
-        "cultura material"
+        "natureza/flora",
+        "cultura-material/alimentação",
+        "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "noido-kuru",
+        "iworo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "nonogo",
       "title": "Nonogo",
       "abstract": "Designação geral de duas variedades de urucu (Bixa orellana e Bixa sp.), planta fundamental para a pintura corporal e ritual bororo.",
       "categories": [
-        "etnobotanica",
-        "cosmetica ritual"
+        "natureza/flora",
+        "ritual/cosmética"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "ro"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "nudu",
@@ -2090,25 +3141,34 @@
       "abstract": "Sono; estado de dormir e práticas de repouso entre os Bororo.",
       "categories": [
         "corpo",
-        "vida cotidiana"
+        "sociedade/vida-cotidiana"
       ],
       "variants": [
         "nu"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "kamorewu",
+        "bai-mana-gejewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "nugia",
       "title": "Nugia",
       "abstract": "Faixa de entrecasca de árvore usada para transportar crianças.",
       "categories": [
-        "cultura material",
-        "cuidado infantil"
+        "cultura-material",
+        "sociedade/cuidado-infantil"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "aredu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "nuiao",
@@ -2116,33 +3176,47 @@
       "abstract": "Sonho; experiência onírica considerada meio de conhecimento e decisão social na cultura bororo.",
       "categories": [
         "cosmologia",
-        "vida social",
-        "xamanismo"
+        "sociedade/vida-social",
+        "cosmologia/xamanismo"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "bari",
+        "aroe-etawara-are"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "oca",
       "title": "Oca",
       "abstract": "Assobio articulado usado como forma de comunicação na língua bororo.",
       "categories": [
-        "língua",
-        "comunicação"
+        "linguística",
+        "linguística/comunicação"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "okoge",
       "title": "Okoge",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "organização-social/clãs"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ecerae",
+        "tugarege"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "okwagiri",
@@ -2150,56 +3224,81 @@
       "abstract": "Amamentação; ato de alimentar a criança com leite materno.",
       "categories": [
         "corpo",
-        "parentesco",
-        "práticas cotidianas"
+        "sociedade/parentesco",
+        "sociedade/vida-cotidiana"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "pari-uke-jorubo",
       "title": "Pari uke jorubo",
       "abstract": "Cipó mágico associado à ema, usado para adquirir resistência e agilidade nas corridas.",
       "categories": [
-        "botânica",
-        "práticas corporais",
-        "magia"
+        "natureza/flora",
+        "corpo/práticas",
+        "cosmologia/xamanismo"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "beo-uke-jorubo",
+        "erubo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "pariko",
       "title": "Pariko",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "cultura-material/ornamentação",
+        "ritual"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ba-4-crown",
+        "aroe-eceba-kejebo",
+        "kurugugwa-upebo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "peguru-gigirirewu",
       "title": "Peguru gigirirewu",
       "abstract": "Intestino grosso no corpo humano.",
       "categories": [
-        "anatomia"
+        "corpo"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "iwu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "peguru",
       "title": "Peguru",
       "abstract": "Intestino no corpo humano.",
       "categories": [
-        "anatomia"
+        "corpo"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "peguru-gigirirewu",
+        "iwu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "perigara",
@@ -2213,7 +3312,12 @@
         "Tarigára"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "po",
+        "pogubo-cerewu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "po",
@@ -2222,41 +3326,56 @@
       "categories": [
         "natureza",
         "território",
-        "língua"
+        "linguística"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "pogoga",
       "title": "Pogoga",
       "abstract": "Parte inferior do bico dos psitacídeos e, por extensão, recipiente feito de meia cabaça.",
       "categories": [
-        "fauna",
-        "cultura material"
+        "natureza/fauna",
+        "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "pogubo-cerewu",
       "title": "Pogubo cerewu",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ra-2",
       "title": "Ra",
       "abstract": "Ra2 - Osso, ossada, esqueleto, região do corpo contendo ossos; membro viril em ereção; dureza; broto, galho; tábua (neol.). 1 A cópula é indicada com a locução rare 'ter ereção', mas essa expressão é pouco usada, pois aos ouvidos dos bororo não é decente. As frases encontradas nas lendas sao padu keje 'deito sobre', ou ure tuwygeje 'deitou-se sobre', ou mikody 'união carnal. A forma usual e delicada é, porém era okea 'brinquedo de mão', em vista dos atos preliminares da cópula. As relações sexuais, especialmente nos tempos de prosperidade da tribo, eram assaz espaçadas. Essa abstinência, aconselhada pelos velhos, devia conservar o vigor individual e, por conseguinte, o de toda a tribo. Nos tempos atuais os anciães confirmam e justificam seu ponto de vista notando a decadência física nos moços que nao seguem mais os cânones da passada rigidez. Não obstante sua abstinência, entretanto usavam e usam várias substâncias as quais atribuem poderes afrodisíacos como p. ex. bokwadobe 'resina de jatobá', o akiri i kuru 'resina de anjico', o kado eno guru 'seiva de broto de taquara'. As resinas são comidas frescas e o broto é ingerido cru.",
-      "categories": [],
+      "categories": [
+        "linguística",
+        "corpo"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "iwu"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "ra",
@@ -2265,137 +3384,201 @@
       "categories": [
         "música",
         "ritual",
-        "vida social"
+        "sociedade/vida-social"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "bapo-kurirewu",
+        "baporogu",
+        "erubo"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "rakojerewu",
       "title": "Rakojerewu",
       "abstract": "Rakojerewu (rakoje 'existência, ser + -re 'indicativo' + -wy 'relativizador'). Aquele ou aquilo que existe, que está de pé, o morador.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "rakudu",
       "title": "Rakudu",
       "abstract": "Advérbio modal indicando incerteza ou possibilidade, equivalente a “talvez”.",
       "categories": [
-        "gramática",
-        "advérbios"
+        "linguística/gramática",
+        "linguística/advérbios"
       ],
       "variants": [
         "rakydy"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ririgo-1",
       "title": "Ririgo₁",
       "abstract": "Calor; fazer calor, aquecer, esquentar.",
       "categories": [
-        "linguagem",
+        "linguística",
         "natureza"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ro",
       "title": "Ro",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "ta",
       "title": "Ta",
       "abstract": "Ta Tá - Extração, saída, cultivação. Ex. imode tadari ta ikeje 'desenterrarei batatas para comê-las'; kaibá imode ita? 'por onde sairei?'; imode nonogo ta? 'cultivarei urucu'.",
-      "categories": [],
+      "categories": [
+        "linguística"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "tabo",
       "title": "Tabó",
       "abstract": "Tabó - Espírito misterioso imaginado como uma curta e grossa cobra de aproximadamente 20cm de diâmetro por 1 metro de comprimento. Pode ser preto ou vermelho. Afirmam os bororo que causa a morte de quem o vê.",
-      "categories": [],
+      "categories": [
+        "cosmologia/espírito"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "bope",
+        "aroe"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "tadari-umana",
       "title": "Tadari umana",
       "abstract": "Tadari umana -- (tadari 'tubérculo comestível', u '3.SG', mana 'irmão mais velho'). 1. Variedade de tubérculo da floresta um pouco maior ue o tadari; 2. Rio afluente da esquerda do Pogybo 'rio vermelho', a montante da atual cidade de Rondonópolis, rio Tadarimana.",
-      "categories": [],
+      "categories": [
+        "natureza/flora",
+        "cultura-material/alimentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "tadari"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "tadari",
       "title": "Tadari",
       "abstract": "Tadari -- Variedade de tubérculo da florestaresta assaz apreciado na alimentação. Conhecem-se dois tipos: branco e roxo.",
-      "categories": [],
+      "categories": [
+        "natureza/flora",
+        "cultura-material/alimentação"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "tadari-umana",
+        "boe-eke"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "tori",
       "title": "Tori",
       "abstract": "Tori (plural tore). Morro, colina, serra, maciço, pedra; região correspondente a crista da tíbia iwu, corpo humano; região dorsal dos peixes perto da cauda. | A toponímia orográfica bororo obedece, à semelhança da hidrográfica, a alguma circunstância acidental. Assim teremos o morro do jaguar, o morro do urubu, o morro das ararapirangas, ou entao o morro da taquara, o morro dos xavante, o morro da gruta dos morcegos. De algumas elevações cujo nome os bororo ainda lembram, foi impossível determinar a etimologia e a localização. Alguns relevos, embora distintos, exibem a mesma denominação.",
-      "categories": [],
+      "categories": [
+        "linguística",
+        "geografia"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "tubore-tubore",
       "title": "Tubore tubore",
       "abstract": "Tubore tubore -- Lambaris [brinquedo durante o qual se repetem essas palavras]. Brinquedo infantil realizado nas praias dos rios. 1 Um dos participantes do jogo assenta-se num buraco escavado na areia com a quaJ é recoberto até ao pescoço. Logo os companheiros lhe puxam os cabelos e depois se afastam e se escondem enquanto um, rodeando o prisioneiro, repete as palavras tubore tubore. Por fim também ele se oculta. A um assobio de aviso o menino semienterrado levanta-se e, empunhando uma vareta, vai a procura dos companheiros. o primeiro que ele logra percutir ocupará o seu lugar e o folguedo recomeça.",
-      "categories": [],
+      "categories": [
+        "sociedade/vida-cotidiana"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "tugarege",
       "title": "Tugarege",
       "abstract": null,
-      "categories": [],
+      "categories": [
+        "organização-social/metades"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [
+        "ecerae",
+        "boe-ewa"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "uiaru",
       "title": "Uiaru",
       "abstract": "Planta conhecida como araticum-rasteiro, cujas folhas são usadas como fumo e como invólucro para tabaco.",
       "categories": [
-        "botânica",
-        "cultura material"
+        "natureza/flora",
+        "cultura-material"
       ],
       "variants": [],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "mea"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "uwai",
       "title": "Uwai",
       "abstract": "Nome do jacaré (Caiman) e de uma constelação na cosmologia bororo, animal ritual associado ao xamã dos espíritos (bari).",
       "categories": [
-        "fauna",
+        "natureza/fauna",
         "ritual",
         "cosmologia"
       ],
@@ -2403,57 +3586,73 @@
         "arogwa"
       ],
       "entry_type": "",
-      "has_content": true
+      "has_content": true,
+      "see_also": [
+        "bari",
+        "ikuieje"
+      ],
+      "wikilink_targets": []
     },
     {
       "id": "uwarinogo",
       "title": "Uwarinogo",
       "abstract": "Uwarinogo Gavião-tesoura (Elanoides forficatus).",
-      "categories": [],
+      "categories": [
+        "natureza/fauna/ave"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     },
     {
       "id": "woe",
       "title": "Woe",
       "abstract": "Woe adv Aqui.",
-      "categories": [],
+      "categories": [
+        "linguística/advérbios"
+      ],
       "variants": [],
       "entry_type": "",
-      "has_content": false
+      "has_content": false,
+      "see_also": [],
+      "wikilink_targets": []
     }
   ],
   "category_tree": {
     "natureza": {
-      "_count": 29,
+      "_count": 78,
       "fauna": {
-        "_count": 20,
+        "_count": 48,
+        "mamífero": {
+          "_count": 6
+        },
         "inseto": {
-          "_count": 5
+          "_count": 7
         },
         "classificação": {
           "_count": 3
         },
-        "mamífero": {
-          "_count": 2
-        },
         "caça": {
-          "_count": 2
+          "_count": 3
         },
         "ave": {
-          "_count": 2
+          "_count": 17
         }
       },
       "flora": {
-        "_count": 5,
+        "_count": 25,
         "palmeira": {
-          "_count": 2
+          "_count": 3
         }
       }
     },
     "ritual": {
-      "_count": 24,
+      "_count": 41,
+      "representações": {
+        "_count": 4
+      },
       "adornos": {
         "_count": 1
       },
@@ -2465,9 +3664,6 @@
       },
       "funeral": {
         "_count": 3
-      },
-      "representações": {
-        "_count": 1
       },
       "retorno": {
         "_count": 1
@@ -2483,12 +3679,51 @@
       },
       "festas": {
         "_count": 1
+      },
+      "cosmética": {
+        "_count": 1
+      }
+    },
+    "cultura-material": {
+      "_count": 69,
+      "ornamentação": {
+        "_count": 19
+      },
+      "arma": {
+        "_count": 5
+      },
+      "habitação": {
+        "_count": 7
+      },
+      "artesanato": {
+        "_count": 2
+      },
+      "vestimenta": {
+        "_count": 4
+      },
+      "alimentação": {
+        "_count": 8
+      },
+      "substâncias": {
+        "_count": 1
+      },
+      "tecnologia": {
+        "_count": 2
+      },
+      "vida-doméstica": {
+        "_count": 1
       }
     },
     "cosmologia": {
-      "_count": 24,
+      "_count": 45,
       "mitologia": {
-        "_count": 1
+        "_count": 2
+      },
+      "espírito": {
+        "_count": 10
+      },
+      "xamanismo": {
+        "_count": 10
       },
       "espiritualidade": {
         "_count": 1
@@ -2496,14 +3731,8 @@
       "alma": {
         "_count": 2
       },
-      "espírito": {
-        "_count": 1
-      },
       "morte": {
-        "_count": 2
-      },
-      "xamanismo": {
-        "_count": 2
+        "_count": 3
       },
       "metempsicose": {
         "_count": 1
@@ -2512,250 +3741,115 @@
         "_count": 1
       },
       "antepassados": {
+        "_count": 2
+      },
+      "religião": {
         "_count": 1
       }
     },
-    "cultura-material": {
-      "_count": 25,
-      "arma": {
+    "linguística": {
+      "_count": 63,
+      "polissemia": {
         "_count": 1
       },
-      "ornamentação": {
-        "_count": 4
+      "advérbios": {
+        "_count": 12
       },
-      "habitação": {
-        "_count": 6
+      "gramática": {
+        "_count": 7
       },
-      "artesanato": {
-        "_count": 2
+      "termos-relacionais": {
+        "_count": 1
       },
-      "vestimenta": {
-        "_count": 4
+      "morfossintaxe": {
+        "_count": 1
+      },
+      "topônimo": {
+        "_count": 1
+      },
+      "comunicação": {
+        "_count": 1
+      }
+    },
+    "música": {
+      "_count": 5
+    },
+    "corpo": {
+      "_count": 8,
+      "práticas": {
+        "_count": 1
+      }
+    },
+    "organização-social": {
+      "_count": 18,
+      "clãs": {
+        "_count": 9
+      },
+      "metades": {
+        "_count": 5
       }
     },
     "sociedade": {
-      "_count": 17,
-      "organização-social": {
-        "_count": 9,
-        "clãs": {
-          "_count": 4
-        },
-        "metades": {
-          "_count": 4
-        }
-      },
+      "_count": 27,
       "parentesco": {
-        "_count": 1
+        "_count": 4
       },
       "espaço-social": {
         "_count": 1
       },
       "contato": {
         "_count": 1
+      },
+      "vida-cotidiana": {
+        "_count": 4
+      },
+      "subsistência": {
+        "_count": 1
+      },
+      "mobilidade": {
+        "_count": 1
+      },
+      "vida-social": {
+        "_count": 3
+      },
+      "economia": {
+        "_count": 1
+      },
+      "reciprocidade": {
+        "_count": 1
+      },
+      "costumes": {
+        "_count": 1
+      },
+      "cuidado-infantil": {
+        "_count": 1
       }
     },
     "etnografia": {
-      "_count": 2,
+      "_count": 5,
       "história": {
-        "_count": 1
+        "_count": 3
       }
     },
-    "linguística": {
-      "_count": 2,
-      "polissemia": {
-        "_count": 1
-      },
-      "topônimo": {
-        "_count": 1
-      }
-    },
-    "tradição oral": {
-      "_count": 1
+    "tradição-oral": {
+      "_count": 2
     },
     "geografia": {
-      "_count": 3
-    },
-    "organizacao-social": {
-      "_count": 2
-    },
-    "territorio": {
-      "_count": 3
-    },
-    "arquitetura": {
-      "_count": 1
-    },
-    "parentesco": {
-      "_count": 3
-    },
-    "etnologia": {
-      "_count": 1
-    },
-    "língua": {
-      "_count": 3
-    },
-    "organização social": {
-      "_count": 1
-    },
-    "termos relacionais": {
-      "_count": 1
-    },
-    "clas": {
-      "_count": 1
-    },
-    "nomes-clanicos": {
-      "_count": 1
-    },
-    "nomes próprios": {
-      "_count": 1
-    },
-    "gramatica": {
-      "_count": 1
-    },
-    "gramática": {
-      "_count": 2
-    },
-    "morfossintaxe": {
-      "_count": 1
-    },
-    "cultura material": {
-      "_count": 8
-    },
-    "ornamentos": {
-      "_count": 1
-    },
-    "nomes-proprios": {
-      "_count": 2
-    },
-    "mitologia": {
-      "_count": 1
-    },
-    "organizacao-clanica": {
-      "_count": 1
-    },
-    "ancestralidade": {
-      "_count": 1
-    },
-    "religião": {
-      "_count": 1
-    },
-    "subsistencia": {
-      "_count": 1
-    },
-    "mobilidade": {
-      "_count": 1
-    },
-    "musica": {
-      "_count": 1
-    },
-    "cerimonial": {
-      "_count": 1
-    },
-    "flora": {
-      "_count": 3
-    },
-    "alimentacao": {
-      "_count": 5
-    },
-    "bebidas": {
-      "_count": 1
-    },
-    "plantas": {
-      "_count": 1
-    },
-    "substancias": {
-      "_count": 1
-    },
-    "vida-social": {
-      "_count": 1
-    },
-    "historia": {
-      "_count": 1
-    },
-    "tecnologia": {
-      "_count": 1
-    },
-    "economia": {
-      "_count": 1
-    },
-    "história": {
-      "_count": 1
-    },
-    "hidrografia": {
-      "_count": 1
-    },
-    "morte": {
-      "_count": 1
-    },
-    "reciprocidade": {
-      "_count": 1
-    },
-    "saude": {
-      "_count": 1
-    },
-    "costumes": {
-      "_count": 1
-    },
-    "fauna": {
-      "_count": 5
-    },
-    "organizacao domestica": {
-      "_count": 1
-    },
-    "caca": {
-      "_count": 1
-    },
-    "tecnologia tradicional": {
-      "_count": 1
-    },
-    "etnobotanica": {
-      "_count": 4
-    },
-    "cosmetica ritual": {
-      "_count": 1
-    },
-    "corpo": {
-      "_count": 2
-    },
-    "vida cotidiana": {
-      "_count": 1
-    },
-    "cuidado infantil": {
-      "_count": 1
-    },
-    "vida social": {
-      "_count": 2
-    },
-    "xamanismo": {
-      "_count": 1
-    },
-    "comunicação": {
-      "_count": 1
-    },
-    "práticas cotidianas": {
-      "_count": 1
-    },
-    "botânica": {
-      "_count": 2
-    },
-    "práticas corporais": {
-      "_count": 1
-    },
-    "magia": {
-      "_count": 1
-    },
-    "anatomia": {
-      "_count": 2
+      "_count": 13,
+      "hidrografia": {
+        "_count": 5
+      }
     },
     "território": {
-      "_count": 2
+      "_count": 5
     },
-    "música": {
-      "_count": 1
+    "nomes-próprios": {
+      "_count": 19,
+      "clânicos": {
+        "_count": 1
+      }
     },
-    "advérbios": {
-      "_count": 1
-    },
-    "linguagem": {
+    "saúde": {
       "_count": 1
     }
   },

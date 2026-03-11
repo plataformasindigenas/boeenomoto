@@ -2,11 +2,12 @@
 id: nuiao
 title: Nuiao
 variants: []
-abstract: Sonho; experiência onírica considerada meio de conhecimento e decisão social na cultura bororo.
+abstract: Sonho; experiência onírica considerada meio de conhecimento e decisão social
+  na cultura bororo.
 categories:
 - cosmologia
-- vida social
-- xamanismo
+- sociedade/vida-social
+- cosmologia/xamanismo
 date: '2026-02-18'
 references: []
 see_also:

@@ -5,8 +5,8 @@ variants:
 - rakydy
 abstract: Advérbio modal indicando incerteza ou possibilidade, equivalente a “talvez”.
 categories:
-- gramática
-- advérbios
+- linguística/gramática
+- linguística/advérbios
 date: '2026-02-18'
 images: []
 examples:

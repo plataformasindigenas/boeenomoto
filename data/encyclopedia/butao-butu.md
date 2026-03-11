@@ -4,7 +4,8 @@ title: Butao butu
 variants:
 - butao
 abstract: <em>butao</em> 'queda' + <em>butu</em> 'chuva'
-categories: []
+categories:
+- natureza
 date: '2026-01-04'
 url: ''
 images: []

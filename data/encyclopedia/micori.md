@@ -2,10 +2,11 @@
 id: micori
 title: Micori
 variants: []
-abstract: Designação do cipó-imbé e de um ribeirão afluente do Pogubo Cerewu (rio São Lourenço).
+abstract: Designação do cipó-imbé e de um ribeirão afluente do Pogubo Cerewu (rio
+  São Lourenço).
 categories:
-- flora
-- hidrografia
+- natureza/flora
+- geografia/hidrografia
 - cultura-material
 date: '2026-02-21'
 images: []

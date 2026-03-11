@@ -4,9 +4,9 @@ title: Kaworodo
 variants: []
 abstract: Progenitora mítica do sub-clã Baado Jebage Cebegiwuge.
 categories:
-- mitologia
-- organizacao-clanica
-- ancestralidade
+- cosmologia/mitologia
+- organização-social/clãs
+- cosmologia/antepassados
 date: '2026-02-22'
 images: []
 references:

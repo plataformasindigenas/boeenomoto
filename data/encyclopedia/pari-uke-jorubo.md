@@ -2,11 +2,12 @@
 id: pari-uke-jorubo
 title: Pari uke jorubo
 variants: []
-abstract: Cipó mágico associado à ema, usado para adquirir resistência e agilidade nas corridas.
+abstract: Cipó mágico associado à ema, usado para adquirir resistência e agilidade
+  nas corridas.
 categories:
-- botânica
-- práticas corporais
-- magia
+- natureza/flora
+- corpo/práticas
+- cosmologia/xamanismo
 date: '2026-02-18'
 references: []
 see_also:

@@ -4,9 +4,9 @@ title: Nabure eiari
 variants: []
 abstract: Ninho da ararapiranga escavado em paredoes de laterita.
 categories:
-- fauna
-- caca
-- tecnologia tradicional
+- natureza/fauna
+- natureza/fauna/caça
+- cultura-material/tecnologia
 date: '2026-02-18'
 images: []
 references: []

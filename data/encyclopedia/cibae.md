@@ -3,7 +3,8 @@ id: cibae
 title: Cibae
 variants: []
 abstract: Cibae - (sing = pl). Araracanga (Ara chloroptera).
-categories: []
+categories:
+- natureza/fauna/ave
 date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Arara-vermelha
 images: []

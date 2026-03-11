@@ -3,7 +3,8 @@ id: ciwu
 title: Ciwu
 variants: []
 abstract: Ciwu - * Vard. de pica-pau.
-categories: []
+categories:
+- natureza/fauna/ave
 date: '2026-01-04'
 url: ''
 images: []

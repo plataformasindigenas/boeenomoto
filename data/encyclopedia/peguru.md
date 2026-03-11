@@ -4,7 +4,7 @@ title: Peguru
 variants: []
 abstract: Intestino no corpo humano.
 categories:
-- anatomia
+- corpo
 date: '2026-02-18'
 references: []
 see_also:

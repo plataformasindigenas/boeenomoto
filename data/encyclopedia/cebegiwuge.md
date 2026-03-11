@@ -4,8 +4,8 @@ title: Cebegiwuge
 variants: []
 abstract: Indivíduos ou elementos situados abaixo; nome de sub-clã.
 categories:
-- organização social
-- termos relacionais
+- organização-social
+- linguística/termos-relacionais
 date: '2026-02-18'
 images: []
 references: []

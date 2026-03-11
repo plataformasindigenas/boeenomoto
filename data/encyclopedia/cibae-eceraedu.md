@@ -5,11 +5,12 @@ variants:
 - Bokodori eceraedu
 - Okoge eceraedu
 - Aroe (em contexto clânico)
-abstract: Cibae eceraedu — membro homem de um clã da metade dos Ecerae, também denominado Aroe, Bokodori eceraedu ou Okoge eceraedu.
+abstract: Cibae eceraedu — membro homem de um clã da metade dos Ecerae, também denominado
+  Aroe, Bokodori eceraedu ou Okoge eceraedu.
 categories:
-- organizacao-social
-- clas
-- nomes-clanicos
+- organização-social
+- organização-social/clãs
+- nomes-próprios/clânicos
 date: '2026-01-04'
 url: ''
 images: []
@@ -21,11 +22,8 @@ infobox:
 references:
 - Albisetti1962aEnciclopedia
 see_also:
-- boe-ewa
-- bokodori-ecerae
-- okoge
-- cibae
-- aroe
+- cibae-ecerae
+- ecerae
 ---
 
 ## Cibae eceraedu

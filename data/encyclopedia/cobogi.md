@@ -4,7 +4,7 @@ title: Cobogi
 variants: []
 abstract: Posposicao indicando posicao superior ou acima.
 categories:
-- gramatica
+- linguística/gramática
 date: '2026-02-18'
 images: []
 references: []

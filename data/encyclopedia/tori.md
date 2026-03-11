@@ -2,12 +2,16 @@
 id: tori
 title: Tori
 variants: []
-abstract: Tori (plural tore). Morro, colina, serra, maciço, pedra; região correspondente a crista da tíbia iwu, corpo humano;
-  região dorsal dos peixes perto da cauda. | A toponímia orográfica bororo obedece, à semelhança da hidrográfica, a alguma
-  circunstância acidental. Assim teremos o morro do jaguar, o morro do urubu, o morro das ararapirangas, ou entao o morro
-  da taquara, o morro dos xavante, o morro da gruta dos morcegos. De algumas elevações cujo nome os bororo ainda lembram,
-  foi impossível determinar a etimologia e a localização. Alguns relevos, embora distintos, exibem a mesma denominação.
-categories: []
+abstract: Tori (plural tore). Morro, colina, serra, maciço, pedra; região correspondente
+  a crista da tíbia iwu, corpo humano; região dorsal dos peixes perto da cauda. |
+  A toponímia orográfica bororo obedece, à semelhança da hidrográfica, a alguma circunstância
+  acidental. Assim teremos o morro do jaguar, o morro do urubu, o morro das ararapirangas,
+  ou entao o morro da taquara, o morro dos xavante, o morro da gruta dos morcegos.
+  De algumas elevações cujo nome os bororo ainda lembram, foi impossível determinar
+  a etimologia e a localização. Alguns relevos, embora distintos, exibem a mesma denominação.
+categories:
+- linguística
+- geografia
 date: '2026-01-04'
 url: ''
 images:

@@ -4,7 +4,7 @@ title: Cibai kurirewu
 variants: []
 abstract: Nome próprio registrado na tradição bororo.
 categories:
-- nomes próprios
+- nomes-próprios
 date: '2026-02-18'
 images: []
 examples: []

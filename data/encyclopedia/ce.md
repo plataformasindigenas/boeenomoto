@@ -2,8 +2,10 @@
 id: ce
 title: Ce
 variants: []
-abstract: Ce1 — Mãe. Note-se que a primeira pessoa da variação usa a forma myga e não ce.
-categories: []
+abstract: Ce1 — Mãe. Note-se que a primeira pessoa da variação usa a forma myga e
+  não ce.
+categories:
+- linguística
 date: '2026-01-04'
 url: ''
 images: []

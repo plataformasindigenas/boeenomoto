@@ -2,13 +2,13 @@
 id: mano-pa
 title: Mano pa
 variants: []
-abstract: Ritual cerimonial central associado aos aroe, envolvendo corrida, cantos e rodas de caeté que representam peixes e a circulação das almas.
+abstract: Ritual cerimonial central associado aos aroe, envolvendo corrida, cantos
+  e rodas de caeté que representam peixes e a circulação das almas.
 categories:
 - ritual
 - cosmologia
 - sociedade
-- musica
-- cerimonial
+- música
 date: '2026-01-07'
 entry_type: ritual
 infobox:
@@ -17,7 +17,9 @@ infobox:
   associado_a: aroe (almas)
   objeto_principal: rodas de caete
 references: []
-see_also: []
+see_also:
+- mano
+- mano-aroe
 ---
 
 ## Mano

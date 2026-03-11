@@ -13,7 +13,9 @@ examples: []
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- ba-1
+- boe-ewa
 ---
 
 Ba pode também designar a casa ou, por extensão, a aldeia. Esse uso refere-se ao espaço habitacional e social, distinguindo-se semanticamente dos sentidos ligados à indumentária masculina e aos artefatos rituais.

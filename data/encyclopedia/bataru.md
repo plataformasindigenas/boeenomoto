@@ -3,7 +3,8 @@ id: bataru
 title: Bataru
 variants: []
 abstract: A língua Bororo
-categories: []
+categories:
+- linguística
 date: '2026-01-04'
 url: ''
 images: []

@@ -3,7 +3,8 @@ id: cewy
 title: Cewy
 variants: []
 abstract: Cewy - Aquele (não visível ao falante e ouvinte).
-categories: []
+categories:
+- linguística/gramática
 date: '2026-01-04'
 url: ''
 images: []

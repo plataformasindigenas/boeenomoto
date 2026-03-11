@@ -5,8 +5,8 @@ variants: []
 abstract: Amamentação; ato de alimentar a criança com leite materno.
 categories:
 - corpo
-- parentesco
-- práticas cotidianas
+- sociedade/parentesco
+- sociedade/vida-cotidiana
 date: '2026-02-18'
 references: []
 see_also: []

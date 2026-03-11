@@ -3,7 +3,8 @@ id: cenawu-kyri
 title: Cenawu kyri
 variants: []
 abstract: Cenawu kyriCenawu Kyri - n. p. → Enciclopédia v. II.
-categories: []
+categories:
+- nomes-próprios
 date: '2026-01-04'
 url: ''
 images: []

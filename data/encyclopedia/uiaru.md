@@ -2,13 +2,14 @@
 id: uiaru
 title: Uiaru
 variants: []
-abstract: Planta conhecida como araticum-rasteiro, cujas folhas são usadas como fumo e como invólucro para tabaco.
+abstract: Planta conhecida como araticum-rasteiro, cujas folhas são usadas como fumo
+  e como invólucro para tabaco.
 categories:
-- botânica
-- cultura material
+- natureza/flora
+- cultura-material
+date: '2026-02-18'
 images:
 - url: images/araticum_rasteiro.jpg
-date: '2026-02-18'
 references: []
 see_also:
 - mea

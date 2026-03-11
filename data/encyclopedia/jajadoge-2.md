@@ -3,7 +3,8 @@ id: jajadoge-2
 title: Jajadoge
 variants: []
 abstract: <em>ji</em> 'sua' + <em>ia</em> 'abertura' + <em>doge</em> plural [
-categories: []
+categories:
+- natureza/fauna
 date: '2026-01-04'
 url: ''
 images: []

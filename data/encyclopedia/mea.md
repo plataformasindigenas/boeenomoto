@@ -6,8 +6,8 @@ abstract: Tabaco, fumo, charuto ou cigarro; também presente, dádiva ou generos
 categories:
 - cultura-material
 - ritual
-- substancias
-- vida-social
+- cultura-material/substâncias
+- sociedade/vida-social
 date: '2026-02-21'
 images: []
 references:

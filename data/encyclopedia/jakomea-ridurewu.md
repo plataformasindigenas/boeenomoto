@@ -4,7 +4,7 @@ title: Jakomea ridurewu
 variants: []
 abstract: Jakomea ridurewu — nome próprio bororo (ver vol. II).
 categories:
-- nomes-proprios
+- nomes-próprios
 date: '2026-01-04'
 url: ''
 images: []
@@ -13,7 +13,8 @@ entry_type: antropônimo
 infobox: {}
 references:
 - Albisetti1962aEnciclopedia
-see_also: []
+see_also:
+- jakomea
 ---
 
 ## Jakomea ridurewu

@@ -3,14 +3,15 @@ id: uwai
 title: Uwai
 variants:
 - arogwa
-abstract: Nome do jacaré (Caiman) e de uma constelação na cosmologia bororo, animal ritual associado ao xamã dos espíritos (bari).
+abstract: Nome do jacaré (Caiman) e de uma constelação na cosmologia bororo, animal
+  ritual associado ao xamã dos espíritos (bari).
 categories:
-- fauna
+- natureza/fauna
 - ritual
 - cosmologia
+date: '2026-02-18'
 images:
 - url: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Caiman_yacare.jpg/500px-Caiman_yacare.jpg
-date: '2026-02-18'
 references: []
 see_also:
 - bari

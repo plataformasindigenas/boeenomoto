@@ -120,6 +120,10 @@ enc_featured_title: "Featured article"
 enc_browse_categories: "Browse by category"
 enc_highlights_title: "Illustrated articles"
 enc_read_more: "Read more"
+enc_graph_title: "Connection map"
+enc_graph_all: "All"
+enc_graph_legend_category: "Category"
+enc_graph_legend_entry: "Article"
 
 # Infobox field labels
 infobox_participantes: "Participants"

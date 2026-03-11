@@ -3,7 +3,8 @@ id: ae
 title: Ae
 variants: []
 abstract: ''
-categories: []
+categories:
+- linguística
 date: '2026-01-04'
 url: ''
 images: []

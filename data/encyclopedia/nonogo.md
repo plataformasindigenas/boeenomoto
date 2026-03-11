@@ -2,13 +2,14 @@
 id: nonogo
 title: Nonogo
 variants: []
-abstract: Designação geral de duas variedades de urucu (Bixa orellana e Bixa sp.), planta fundamental para a pintura corporal e ritual bororo.
+abstract: Designação geral de duas variedades de urucu (Bixa orellana e Bixa sp.),
+  planta fundamental para a pintura corporal e ritual bororo.
 categories:
-- etnobotanica
-- cosmetica ritual
-images:
-- url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Urucum_-_fruto_vermelho.jpg/960px-Urucum_-_fruto_vermelho.jpg 
+- natureza/flora
+- ritual/cosmética
 date: '2026-02-18'
+images:
+- url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Urucum_-_fruto_vermelho.jpg/960px-Urucum_-_fruto_vermelho.jpg
 references: []
 see_also:
 - ro

@@ -2,12 +2,13 @@
 id: maguru
 title: Maguru
 variants: []
-abstract: Viagem coletiva sazonal para caça, pesca e coleta, com construção temporária de aldeias.
+abstract: Viagem coletiva sazonal para caça, pesca e coleta, com construção temporária
+  de aldeias.
 categories:
 - sociedade
-- territorio
-- subsistencia
-- mobilidade
+- território
+- sociedade/subsistência
+- sociedade/mobilidade
 date: '2026-02-21'
 images: []
 references:

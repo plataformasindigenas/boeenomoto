@@ -2,10 +2,11 @@
 id: marido
 title: Marido
 variants: []
-abstract: Buriti (Mauritia sp.), grande palmeira de áreas alagadas; fonte de alimento, matéria-prima e bebida.
+abstract: Buriti (Mauritia sp.), grande palmeira de áreas alagadas; fonte de alimento,
+  matéria-prima e bebida.
 categories:
-- flora
-- alimentacao
+- natureza/flora
+- cultura-material/alimentação
 - cultura-material
 date: '2026-02-21'
 images: []

@@ -3,7 +3,8 @@ id: ceboere
 title: Ceboere
 variants: []
 abstract: Ceboere - vart. aceboere. forma que indica impaciência, satisfação, maravilha.
-categories: []
+categories:
+- linguística
 date: '2026-01-04'
 url: ''
 images: []

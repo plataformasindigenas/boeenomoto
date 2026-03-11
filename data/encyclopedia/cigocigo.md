@@ -2,8 +2,10 @@
 id: cigocigo
 title: Cigocigo
 variants: []
-abstract: Cigocigo - forma usada como 'abundância, muitíssimo'. ex. awara raícigocigore 'estrada longuíssima'.
-categories: []
+abstract: Cigocigo - forma usada como 'abundância, muitíssimo'. ex. awara raícigocigore
+  'estrada longuíssima'.
+categories:
+- linguística/advérbios
 date: '2026-01-04'
 url: ''
 images: []

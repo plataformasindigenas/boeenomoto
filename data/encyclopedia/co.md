@@ -3,7 +3,8 @@ id: co
 title: Co
 variants: []
 abstract: Co - variante de ce. Preto, escuridão, sujeira.
-categories: []
+categories:
+- linguística
 date: '2026-01-04'
 url: ''
 images: []

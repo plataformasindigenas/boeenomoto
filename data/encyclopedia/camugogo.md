@@ -3,7 +3,8 @@ id: camugogo
 title: Camugogo
 variants: []
 abstract: Camugogo — Absolutamente. Ex. boe kimo camugogo 'absolutamente nada'.
-categories: []
+categories:
+- linguística/advérbios
 date: '2026-01-04'
 url: ''
 images: []

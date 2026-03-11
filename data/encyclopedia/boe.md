@@ -2,20 +2,22 @@
 id: boe
 title: Boe
 variants: []
-abstract: Termo central da língua e da autoidentificação bororo, significando simultaneamente pessoa, coisa, mundo e condição existencial.
+abstract: Termo central da língua e da autoidentificação bororo, significando simultaneamente
+  pessoa, coisa, mundo e condição existencial.
 categories:
-- etnologia
-- língua
+- etnografia
+- linguística
 - cosmologia
 date: '2026-02-18'
 images:
 - url: images/bororo1.jpg
 see_also:
-- aroe
-- baraedu
+- boe-ewa
+- boe-eke
+- boe-ekudawu
 - boe-epa
-- tugarege
-- ecerae
+- boe-eimejera
+- boe-ewadaru
 ---
 
 ## BOE

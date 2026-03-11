@@ -2,8 +2,8 @@
 id: adugo
 title: Adugo
 variants: []
-abstract: Designação bororo da onça-pintada (Panthera onca) e, por extensão metafórica, de insetos da família Mutillidae,
-  conhecidos como formiga-onça.
+abstract: Designação bororo da onça-pintada (Panthera onca) e, por extensão metafórica,
+  de insetos da família Mutillidae, conhecidos como formiga-onça.
 categories:
 - natureza/fauna
 - natureza/fauna/mamífero
@@ -20,11 +20,16 @@ images:
 examples: []
 entry_type: animal
 infobox:
-  nome_científico: "Panthera onca"
-  família: "Felidae"
-  habitat: "Cerrado, floresta"
+  nome_científico: Panthera onca
+  família: Felidae
+  habitat: Cerrado, floresta
 references: []
-see_also: []
+see_also:
+- adugo-aredu
+- adugo-biri
+- adugodo
+- adugodoge-aroe
+- adugo-mutillidae
 ---
 
 

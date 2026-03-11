@@ -3,19 +3,23 @@ id: boe-ewadaru
 title: Boe ewadaru
 variants: []
 abstract: Provérbio, idiotismo, boato.
-categories: []
+categories:
+- tradição-oral
 date: '2026-01-04'
 url: ''
 images: []
 examples:
 - bororo: (boe 'Bororo' + bataru 'palavra
-  translation: língua'). Provérbio, idiotismo, boato. Exs. akedu akagu kuo bure gogaji nono ' amarra bem a tua jaó'. Essa
-    frase é comumente pronunciada por alguém que, tendo sido preso, consegue fugir. Origina-se do fato que a jaó, mesmo se
-    cativa desde pequena logo que se ve solta foge e volta a seu ambiente natural
+  translation: língua'). Provérbio, idiotismo, boato. Exs. akedu akagu kuo bure gogaji
+    nono ' amarra bem a tua jaó'. Essa frase é comumente pronunciada por alguém que,
+    tendo sido preso, consegue fugir. Origina-se do fato que a jaó, mesmo se cativa
+    desde pequena logo que se ve solta foge e volta a seu ambiente natural
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- boe
+- bakaru
 ---
 
 (boe 'Bororo' + bataru 'palavra,língua'). Provérbio, idiotismo, boato.Exs. _akedu akagu kuo bure goga ji nono_ ' amarra bem a tua jaó'. Essa frase é comumente pronunciada por alguém que, tendo sido preso, consegue fugir.

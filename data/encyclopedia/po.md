@@ -2,11 +2,12 @@
 id: po
 title: Po
 variants: []
-abstract: Água, rio ou curso d’água; elemento fundamental na organização territorial e na toponímia bororo.
+abstract: Água, rio ou curso d’água; elemento fundamental na organização territorial
+  e na toponímia bororo.
 categories:
 - natureza
 - território
-- língua
+- linguística
 date: '2026-02-18'
 references: []
 see_also: []

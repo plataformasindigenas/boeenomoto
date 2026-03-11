@@ -2,10 +2,11 @@
 id: noido-kuru
 title: Noido kuru
 variants: []
-abstract: Bebida fermentada obtida da seiva do babacu, de efeito mais forte que a bebida de acuri.
+abstract: Bebida fermentada obtida da seiva do babacu, de efeito mais forte que a
+  bebida de acuri.
 categories:
-- etnobotanica
-- alimentacao
+- natureza/flora
+- cultura-material/alimentação
 date: '2026-02-18'
 references: []
 see_also:

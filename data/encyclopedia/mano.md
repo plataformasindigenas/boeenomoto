@@ -5,17 +5,18 @@ variants:
 - keo
 abstract: Caete ou piripiri utilizado para fabricar cilindros rituais do Mano aroe.
 categories:
-- flora
+- natureza/flora
 - cultura-material
 - ritual
-images: []
 date: '2026-02-21'
 images: []
 references:
 - Albisetti1962aEnciclopedia
 see_also:
+- mano-pa
 - mano-aroe
 - mano-akurararewu-aroe
+- mano-kurirewu
 ---
 
 ## MANO

@@ -120,6 +120,10 @@ enc_featured_title: "Verbete em destaque"
 enc_browse_categories: "Navegar por categorias"
 enc_highlights_title: "Verbetes ilustrados"
 enc_read_more: "Ler mais"
+enc_graph_title: "Mapa de conexões"
+enc_graph_all: "Todos"
+enc_graph_legend_category: "Categoria"
+enc_graph_legend_entry: "Verbete"
 
 # Infobox field labels
 infobox_participantes: "Participantes"

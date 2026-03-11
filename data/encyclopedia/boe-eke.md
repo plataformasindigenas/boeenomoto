@@ -3,7 +3,8 @@ id: boe-eke
 title: Boe eke
 variants: []
 abstract: 1. Riqueza da alimentação Bororo
-categories: []
+categories:
+- cultura-material/alimentação
 date: '2026-01-04'
 url: ''
 images:
@@ -14,7 +15,8 @@ examples: []
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- boe
 ---
 
 ### Riqueza da alimentação Bororo A região que foi e a que é ocupada pelos Bororo oferece uma dieta abund

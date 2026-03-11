@@ -2,16 +2,15 @@
 id: bakaru
 title: Bakaru
 variants: []
-abstract: Narrativa tradicional bororo transmitida oralmente, usada para explicar o mundo, a origem dos seres e as relações culturais.
+abstract: Narrativa tradicional bororo transmitida oralmente, usada para explicar
+  o mundo, a origem dos seres e as relações culturais.
 categories:
-- tradição oral
+- tradição-oral
 - cosmologia
 date: '2026-02-18'
 references: []
 see_also:
-- boe
-- maereboe
-- aroe
+- boe-ewadaru
 ---
 
 ## BAKARU

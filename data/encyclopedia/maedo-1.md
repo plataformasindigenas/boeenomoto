@@ -3,7 +3,8 @@ id: maedo-1
 title: Maedo
 variants: []
 abstract: Alargar, estender, compridar, tardar; entristecer.
-categories: []
+categories:
+- linguística
 date: '2026-01-04'
 url: ''
 images: []
@@ -15,7 +16,10 @@ examples:
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- mae-1
+- maedodu-1
+- maedodurewu-1
 ---
 
 

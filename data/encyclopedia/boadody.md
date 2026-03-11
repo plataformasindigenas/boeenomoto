@@ -3,7 +3,8 @@ id: boadody
 title: Boadody
 variants: []
 abstract: Boadody - Enciclopédia Bororo
-categories: []
+categories:
+- sociedade
 date: '2026-01-04'
 url: ''
 images: []

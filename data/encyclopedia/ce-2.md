@@ -3,7 +3,8 @@ id: ce-2
 title: Ce
 variants: []
 abstract: Ce2 — Lá, até. ruture ce i oto kae 'subiu até o topo da árvore'.
-categories: []
+categories:
+- linguística/advérbios
 date: '2026-01-04'
 url: ''
 images: []

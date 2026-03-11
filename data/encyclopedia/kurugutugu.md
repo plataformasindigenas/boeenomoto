@@ -2,8 +2,10 @@
 id: kurugutugu
 title: Kurugutugu
 variants: []
-abstract: Kurugutugu -. * kuru, vôo; gutugu onom. [inseto que voa com vôo irregular] Lepidóptero, borboleta.
-categories: []
+abstract: Kurugutugu -. * kuru, vôo; gutugu onom. [inseto que voa com vôo irregular]
+  Lepidóptero, borboleta.
+categories:
+- natureza/fauna/inseto
 date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Lepidoptera
 images: []

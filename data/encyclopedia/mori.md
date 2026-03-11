@@ -2,12 +2,13 @@
 id: mori
 title: Mori
 variants: []
-abstract: Vingança, recompensa, retribuição ou pagamento; princípio central de reciprocidade e desagravo funerário na sociedade bororo.
+abstract: Vingança, recompensa, retribuição ou pagamento; princípio central de reciprocidade
+  e desagravo funerário na sociedade bororo.
 categories:
 - sociedade
 - ritual
-- morte
-- reciprocidade
+- cosmologia/morte
+- sociedade/reciprocidade
 date: '2026-02-21'
 images: []
 references:

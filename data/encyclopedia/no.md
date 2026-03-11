@@ -1,4 +1,6 @@
 ---
-id: "no"
-title: "No"
+id: 'no'
+title: 'No'
+categories:
+- linguística
 ---

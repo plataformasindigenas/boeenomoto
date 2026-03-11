@@ -2,10 +2,11 @@
 id: pogoga
 title: Pogoga
 variants: []
-abstract: Parte inferior do bico dos psitacídeos e, por extensão, recipiente feito de meia cabaça.
+abstract: Parte inferior do bico dos psitacídeos e, por extensão, recipiente feito
+  de meia cabaça.
 categories:
-- fauna
-- cultura material
+- natureza/fauna
+- cultura-material
 date: '2026-02-18'
 references: []
 see_also: []

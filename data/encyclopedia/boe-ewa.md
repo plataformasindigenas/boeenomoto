@@ -2,13 +2,16 @@
 id: boe-ewa
 title: Boe ewa
 variants: []
-abstract: Aldeia bororo. Entrada estrutural central sobre organizacão material, social, ritual e cosmológica da aldeia (boe ewa), com nomenclatura, origem lendaria, genealogia, organizacão espacial, clãs e sub-clas, bai mana gejewu, matrimonio e parentesco. (Em construcao.)
+abstract: Aldeia bororo. Entrada estrutural central sobre organizacão material, social,
+  ritual e cosmológica da aldeia (boe ewa), com nomenclatura, origem lendaria, genealogia,
+  organizacão espacial, clãs e sub-clas, bai mana gejewu, matrimonio e parentesco.
+  (Em construcao.)
 categories:
-- organizacao-social
+- organização-social
 - cosmologia
-- territorio
-- arquitetura
-- parentesco
+- território
+- cultura-material/habitação
+- sociedade/parentesco
 - ritual
 date: '2026-02-22'
 url: ''
@@ -17,11 +20,10 @@ entry_type: estrutura-central
 infobox: {}
 references: []
 see_also:
-- aroe
-- aroe-jakomea-po
-- bai-mana-gejewu
-- boe-eimejera
-- mori
+- boe
+- ba-5-house-village
+- ecerae
+- tugarege
 ---
 
 > **AVISO**: Esta entrada esta **em construcao**.  

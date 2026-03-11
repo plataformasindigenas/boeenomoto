@@ -2,11 +2,12 @@
 id: nabure
 title: Nabure
 variants: []
-abstract: Ararapiranga (Ara macao), ave criada pelos bororo por suas penas e por seu papel espiritual.
+abstract: Ararapiranga (Ara macao), ave criada pelos bororo por suas penas e por seu
+  papel espiritual.
 categories:
-- fauna
+- natureza/fauna
 - cosmologia
-- cultura material
+- cultura-material
 date: '2026-02-18'
 images:
 - url: images/ararapiranga.jpg

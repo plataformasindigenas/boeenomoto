@@ -4,8 +4,9 @@ title: Aroe eoprewu
 variants:
 - jaquiranabóia
 - Fulgora
-abstract: Inseto cuja forma lembra um cadáver enrolado em esteiras, motivo pelo qual recebe o nome Aroe eoprewu (“cadáver
-  envolvido”). Designação genérica das jaquiranabóias (gênero Fulgora).
+abstract: Inseto cuja forma lembra um cadáver enrolado em esteiras, motivo pelo qual
+  recebe o nome Aroe eoprewu (“cadáver envolvido”). Designação genérica das jaquiranabóias
+  (gênero Fulgora).
 categories:
 - natureza/fauna/inseto
 - natureza/fauna
@@ -23,7 +24,8 @@ examples: []
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- aroe
 ---
 
 ### Aroe eoprewu — Jaquiranabóia

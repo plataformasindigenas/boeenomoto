@@ -4,9 +4,9 @@ title: Muga
 variants: []
 abstract: Lugar de sentar, morada ou casa; também banco ou cadeira.
 categories:
-- cultura material
-- organizacao domestica
-- parentesco
+- cultura-material
+- cultura-material/vida-doméstica
+- sociedade/parentesco
 date: '2026-02-18'
 images: []
 references: []

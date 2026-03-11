@@ -4,8 +4,8 @@ title: Awara are
 variants:
 - viajante
 - aquele que chega de viagem
-abstract: Pessoa que retorna de uma viagem e é recebida com manifestações rituais de acolhimento, pranto e reconhecimento
-  corporal entre os Bororo.
+abstract: Pessoa que retorna de uma viagem e é recebida com manifestações rituais
+  de acolhimento, pranto e reconhecimento corporal entre os Bororo.
 categories:
 - sociedade
 - ritual/retorno
@@ -20,7 +20,8 @@ examples: []
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- boe-ewa
 ---
 
 ### Awara are — O viajante

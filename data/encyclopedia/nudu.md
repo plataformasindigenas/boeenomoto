@@ -6,7 +6,7 @@ variants:
 abstract: Sono; estado de dormir e práticas de repouso entre os Bororo.
 categories:
 - corpo
-- vida cotidiana
+- sociedade/vida-cotidiana
 date: '2026-02-18'
 images: []
 examples:

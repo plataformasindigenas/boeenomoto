@@ -4,8 +4,8 @@ title: Moto epa
 variants: []
 abstract: Pessoa que pratica geofagia; individuo que come terra.
 categories:
-- saude
-- costumes
+- saúde
+- sociedade/costumes
 date: '2026-02-18'
 images: []
 references: []

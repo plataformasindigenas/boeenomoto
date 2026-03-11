@@ -4,8 +4,8 @@ title: Motori
 variants: []
 abstract: Ave do ninho de barro (joao-de-barro) e, por extensao, tijolo ou adobe.
 categories:
-- fauna
-- cultura material
+- natureza/fauna
+- cultura-material
 date: '2026-02-18'
 images:
 - url: https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rufous_Hornero_%28Furnarius_rufus%29.jpg/960px-Rufous_Hornero_%28Furnarius_rufus%29.jpg

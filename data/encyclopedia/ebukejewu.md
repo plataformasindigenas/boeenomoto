@@ -3,15 +3,16 @@ id: ebukejewu
 title: Ebukejewu
 variants:
 - ebukejewu
-abstract: Viseira cerimonial de penas usada em rituais bororo, associada à identificação de sub-clãs.
+abstract: Viseira cerimonial de penas usada em rituais bororo, associada à identificação
+  de sub-clãs.
 categories:
-- cultura material
-- ornamentos
+- cultura-material
+- cultura-material/ornamentação
+date: '2026-02-18'
 images:
 - url: images/ebukejewu2.JPG
   alt: Viseira cerimonial ebukujewu
   credit: 'Foto: Fabrício Ferraz Gerardi'
-date: '2026-02-18'
 references: []
 see_also:
 - pariko

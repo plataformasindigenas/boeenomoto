@@ -5,7 +5,7 @@ variants: []
 abstract: “Morro do tabaco”; topônimo nas proximidades da atual cidade de Poxoréu.
 categories:
 - geografia
-- historia
+- etnografia/história
 - cultura-material
 date: '2026-02-21'
 images: []

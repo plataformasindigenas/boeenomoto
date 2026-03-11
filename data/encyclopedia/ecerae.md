@@ -5,27 +5,28 @@ variants:
 - Eceraedo (singular)
 - Baado Jebage Cebegiwuge Cobugiwuge
 - Baado Jebage Cebegiwuge Corewuge
-abstract: Homens pertencentes à metade exógama setentrional da aldeia bororo (Boe epa) e também denominação de um sub-clã
-  específico dessa metade.
+abstract: Homens pertencentes à metade exógama setentrional da aldeia bororo (Boe
+  epa) e também denominação de um sub-clã específico dessa metade.
 categories:
-- sociedade/organização-social
-- sociedade/organização-social/metades
-- sociedade/organização-social/clãs
+- organização-social
+- organização-social/metades
+- organização-social/clãs
 date: '2026-02-17'
 url: ''
 images: []
 examples: []
 entry_type: social_structure
 infobox:
-  membros: "Metade setentrional"
-  funções: "Casamentos, obrigações cerimoniais"
+  membros: Metade setentrional
+  funções: Casamentos, obrigações cerimoniais
 references:
 - Albisetti1962aEnciclopedia
 - Colbacchini1925aI
 see_also:
-- boe
-- aroe
-- cebegiwuge
+- tugarege
+- boe-ewa
+- bokodori-ecerae
+- cibae-ecerae
 ---
 
 ### Ecerae — Membros da metade setentrional

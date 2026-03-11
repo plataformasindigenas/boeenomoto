@@ -2,17 +2,18 @@
 id: noa
 title: No a
 variants: []
-abstract: Semente do coco de babacu e, por extensao, tabatinga, alvura e nome de curso dagua.
+abstract: Semente do coco de babacu e, por extensao, tabatinga, alvura e nome de curso
+  dagua.
 categories:
-- etnobotanica
-- alimentacao
-- territorio
+- natureza/flora
+- cultura-material/alimentação
+- território
 - ritual
 date: '2026-02-18'
 images: []
 references: []
 see_also:
-- "no"
+- 'no'
 - noido
 - aroe-etawara-are
 ---

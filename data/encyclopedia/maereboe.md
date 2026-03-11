@@ -3,10 +3,11 @@ id: maereboe
 title: Maereboe
 variants:
 - bope
-abstract: Categoria de espíritos da cosmologia bororo, associada ao Pai dos Espíritos (Maereboedoge Etuo) e ao sistema ritual conduzido pelo xamã dos espíritos (bari).
+abstract: Categoria de espíritos da cosmologia bororo, associada ao Pai dos Espíritos
+  (Maereboedoge Etuo) e ao sistema ritual conduzido pelo xamã dos espíritos (bari).
 categories:
 - cosmologia
-- religião
+- cosmologia/religião
 date: '2026-02-18'
 references: []
 see_also:

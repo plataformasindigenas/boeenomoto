@@ -4,9 +4,8 @@ title: Marido kuru
 variants: []
 abstract: Bebida não fermentada extraída do estipe do buriti.
 categories:
-- alimentacao
-- bebidas
-- plantas
+- cultura-material/alimentação
+- natureza/flora
 date: '2026-02-21'
 images: []
 references:

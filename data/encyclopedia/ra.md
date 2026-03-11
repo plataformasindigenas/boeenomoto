@@ -6,7 +6,7 @@ abstract: Canto; prática musical central na vida social e ritual bororo.
 categories:
 - música
 - ritual
-- vida social
+- sociedade/vida-social
 date: '2026-02-18'
 images: []
 examples:

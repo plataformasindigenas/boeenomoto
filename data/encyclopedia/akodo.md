@@ -3,7 +3,9 @@ id: akodo
 title: Akodo
 variants: []
 abstract: ako 'som' + -do 'sufixo causativo'.
-categories: []
+categories:
+- linguística
+- música
 date: '2026-01-04'
 url: ''
 images: []

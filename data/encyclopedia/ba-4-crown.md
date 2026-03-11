@@ -14,7 +14,9 @@ examples: []
 entry_type: ''
 infobox: {}
 references: []
-see_also: []
+see_also:
+- ba-3-penile-sheath-festive
+- pariko
 ---
 
 Em um de seus usos, ba designa um certo tipo de boe etao kajejewu, isto é, uma coroa ritual bororo. Esse ornamento está associado a contextos cerimoniais específicos e é confeccionado com materiais vegetais, especialmente derivados de palmeiras.

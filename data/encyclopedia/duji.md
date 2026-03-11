@@ -2,10 +2,11 @@
 id: duji
 title: Duji
 variants: []
-abstract: Partícula nominalizadora usada para transformar orações dependentes em complemento de verbos que regem a posposição ji.
+abstract: Partícula nominalizadora usada para transformar orações dependentes em complemento
+  de verbos que regem a posposição ji.
 categories:
-- gramática
-- morfossintaxe
+- linguística/gramática
+- linguística/morfossintaxe
 date: '2026-02-18'
 images: []
 examples:
