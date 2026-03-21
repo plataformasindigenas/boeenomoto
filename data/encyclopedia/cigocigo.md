@@ -10,7 +10,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: Cigocigo - forma usada como 'abundância
+- indigenous: Cigocigo - forma usada como 'abundância
   translation: muitíssimo'. ex. awara raícigocigore 'estrada longuíssima'.
 entry_type: ''
 infobox: {}

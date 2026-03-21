@@ -1,5 +1,5 @@
-name: bororo_bibliography
-description: Bororo Bibliography References
+name: bibliography
+description: Bibliography References
 version: "1.0"
 primary_key: id
 

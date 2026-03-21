@@ -9,7 +9,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: Ceboere - vart. aceboere. forma que indica impaciência
+- indigenous: Ceboere - vart. aceboere. forma que indica impaciência
   translation: satisfação, maravilha.
 entry_type: ''
 infobox: {}

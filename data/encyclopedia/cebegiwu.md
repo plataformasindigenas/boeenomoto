@@ -14,7 +14,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: ex. Kiedy Cebegiwu
+- indigenous: ex. Kiedy Cebegiwu
   translation: Kiedy que mora embaixo i.e. membro do sub-clã dos Kie mais afastado
     do leste com relação aos outros dois sub-clãs do mesmo clã boe ewa, aldeia bororo.
 entry_type: ''

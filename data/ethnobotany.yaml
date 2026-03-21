@@ -1,5 +1,4 @@
 - id: 1
-  name_bororo: Nanai / morogorarewu
   name_portuguese: Abacaxi-do-mato / abacaxi-do-boku
   scientific_name: Ananas ananassoides (Baker) L.B. Sm.
   family: Bromieliaceae
@@ -13,8 +12,8 @@
   - village: Tadarimana
     level: biagare
   pic_link: images/ethnobotany_001_nanai_morogorarewu.jpg
+  name_indigenous: Nanai / morogorarewu
 - id: 2
-  name_bororo: Bokogorewu / jokukuie tae
   name_portuguese: Abil
   scientific_name: Pouteria torta subsp. glabara T.D penn.
   family: Sapotaceae
@@ -29,8 +28,8 @@
   - village: Tadarimana
     level: biagare
   pic_link: images/ethnobotany_002_bokogorewu_jokukuie_tae.jpg
+  name_indigenous: Bokogorewu / jokukuie tae
 - id: 3
-  name_bororo: Pariwa
   name_portuguese: Açoita-cavalo
   scientific_name: Luehea divaricata mart.
   family: Malvaceae
@@ -46,8 +45,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_003_pariwa.jpg
+  name_indigenous: Pariwa
 - id: 4
-  name_bororo: Akigoamekurewu
   name_portuguese: Algodão
   scientific_name: Gossypium hirsutum L.
   family: Malvaceae
@@ -63,8 +62,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_004_akigoamekurewu.jpg
+  name_indigenous: Akigoamekurewu
 - id: 5
-  name_bororo: Akigorewu (bacororoepa akigorewu)
   name_portuguese: Algodãozinho
   scientific_name: Cochlospermum regium (Schrank) pilg.
   family: Bixaceae
@@ -81,8 +80,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_005_akigorewu_bacororoepa_akigorewu.jpg
+  name_indigenous: Akigorewu (bacororoepa akigorewu)
 - id: 6
-  name_bororo: Mekodo parewu
   name_portuguese: Amarelão / garapa
   scientific_name: Apuleia leiocarpa (Vogel) J.F. Macbr.
   family: Fabaceae
@@ -96,8 +95,8 @@
     level: biagare
   - village: Tadarimana
     level: 1 -makare, 2 -biagare
+  name_indigenous: Mekodo parewu
 - id: 7
-  name_bororo: Batorarewu diorubo
   name_portuguese: Amendoim
   scientific_name: Chamaecrista spp. Moenche
   family: Fabaceae
@@ -106,8 +105,8 @@
   fruiting_period: diferentes epocas, conforme a especie
   environment: boku
   pic_link: images/ethnobotany_007_batorarewu_diorubo.jpg
+  name_indigenous: Batorarewu diorubo
 - id: 8
-  name_bororo: Oko
   name_portuguese: Amoeira-da-itura
   scientific_name: Maclura tinctoria (L.) D. Don ex Steud.
   family: Moraceae
@@ -122,8 +121,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_008_oko.jpg
+  name_indigenous: Oko
 - id: 9
-  name_bororo: Akiri kigado
   name_portuguese: Angico branco
   scientific_name: Anadenanthera colubrina (Vell.) Brenan
   family: Fabaceae
@@ -139,8 +138,8 @@
   - village: Tadarimana
     level: boe bokware
   pic_link: images/ethnobotany_009_akiri_kigado.jpg
+  name_indigenous: Akiri kigado
 - id: 10
-  name_bororo: akiri
   name_portuguese: Angico
   scientific_name: Anadenanthera falcata (Benth.) speg.
   family: Fabaceae
@@ -156,8 +155,8 @@
   - village: Tadarimana
     level: biagare
   pic_link: images/ethnobotany_010_akiri.jpg
+  name_indigenous: akiri
 - id: 11
-  name_bororo: Managurui / managururewu
   name_portuguese: Aricá
   scientific_name: Physocalymma scaberrimum Pohl
   family: Lythraceae
@@ -173,8 +172,8 @@
   - village: Tadarimana
     level: boe bokware
   pic_link: images/ethnobotany_011_managurui_managururewu.jpg
+  name_indigenous: Managurui / managururewu
 - id: 12
-  name_bororo: Burudui
   name_portuguese: Aroeira
   scientific_name: Myracrodruon urundeuva allemão
   family: Anacardiaceae
@@ -198,8 +197,8 @@
     level: biagare
   - village: Meruri
     level: construção, artesanato, medicinal
+  name_indigenous: Burudui
 - id: 13
-  name_bororo: Bacetaojiakirirewu
   name_portuguese: Assa-peixe
   scientific_name: Vernonanthura phosphorica (Vell.) H. Rob.
   family: Asteraceae
@@ -215,8 +214,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_013_bacetaojiakirirewu.jpg
+  name_indigenous: Bacetaojiakirirewu
 - id: 14
-  name_bororo: Paragorewu
   name_portuguese: Axixá
   scientific_name: Sterculia pruriens
   family: Malvaceae
@@ -231,8 +230,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_014_paragorewu.jpg
+  name_indigenous: Paragorewu
 - id: 15
-  name_bororo: Bo
   name_portuguese: Azedinho
   scientific_name: Sterculia striata A. St.-Hil-& naudin
   family: Malvaceae
@@ -246,8 +245,8 @@
     level: makare
   - village: Tadarimana
     level: biagare
+  name_indigenous: Bo
 - id: 16
-  name_bororo: Boe eto pagodae
   scientific_name: Oxalis densifolia Mart. ex Zucc.
   family: Oxilidaceae
   usage: Boere kody kowuje
@@ -261,8 +260,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_016_boe_eto_pagodae.jpg
+  name_indigenous: Boe eto pagodae
 - id: 17
-  name_bororo: Noido
   name_portuguese: Babaçu
   scientific_name: Attalea speciosa Mart.
   family: Areacaceae
@@ -277,8 +276,8 @@
   - village: Tadarimana
     level: biagare
   pic_link: images/ethnobotany_017_noido.jpg
+  name_indigenous: Noido
 - id: 18
-  name_bororo: Akudo (palmeira)
   name_portuguese: Bacaiuva / Bocaiuva / Macaúba
   scientific_name: Acrocomia aculeata (jacq.) lodd. ex Mart.
   family: Areacaceae
@@ -298,8 +297,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_018_akudo_palmeira.jpg
+  name_indigenous: Akudo (palmeira)
 - id: 19
-  name_bororo: Akudo (palmeira) / kuimare (pequeno)
   name_portuguese: Bacuri / acuri
   scientific_name: Acrocomia aculeata (jacq.) lodd. ex Mart.
   family: Areacaceae
@@ -317,8 +316,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_019_akudo_palmeira_kuimare_pequeno.jpg
+  name_indigenous: Akudo (palmeira) / kuimare (pequeno)
 - id: 20
-  name_bororo: Apegire (fruto) / apido (planta)
   name_portuguese: Bálsamo
   scientific_name: Impatiens walleriana
   usage: Ere baigado itoõe, iage ere bai towuge tabo. Ere pemegado tugeje ia boe ero
@@ -332,8 +331,8 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_020_apegire_fruto_apido_planta.jpg
+  name_indigenous: Apegire (fruto) / apido (planta)
 - id: 21
-  name_bororo: baiogo
   name_portuguese: Barbatimão-cascudo / fevereiro
   scientific_name: Stryphnodendron adstringens
   usage: Ere a kowuge, ere kudydo dure ere tugu juto
@@ -345,8 +344,8 @@
     level: makare
   - village: Tadarimana
     level: makare
+  name_indigenous: baiogo
 - id: 22
-  name_bororo: Poro ekarewu
   name_portuguese: Barbatimão-liso
   usage: Ere baigado itoõe, iage ere bai towuge tabo. Ere pemegado tugeje ia boe ero
     boekege. Ere kugudo, kowy (mugudo/ berego), buturedu dure ere kowuge Ere a kowuge,
@@ -359,42 +358,42 @@
     level: boe bokware
   - village: Tadarimana
     level: makare
+  name_indigenous: Poro ekarewu
 - id: 23
-  name_bororo: Betaga Erubo
   name_portuguese: Barbatimão-peludo
   usage: nowu a botugody kuru re ere tuioku kori epado ema, boe tore eia ekeru pegi
     epado ema. Emode nowu buturedu kowyge, ere mugudo, kowy jamedu.
+  name_indigenous: Betaga Erubo
 - id: 24
-  name_bororo: Betagaikonogo / Betaga Biri Kororogodyrewu
   name_portuguese: Baru
   usage: Ere kududo, kugudo, torudo, iworo kurudo ema (ia boe ero boe keje ekudumo
     ce. Emode nowu apidoia kowuje nowu ai ere kodarabodo ema, parikiboto, kodo, baku,
     Emode ai bu tuwai ao ji paru ji
+  name_indigenous: Betagaikonogo / Betaga Biri Kororogodyrewu
 - id: 25
-  name_bororo: Miacerewu Erubo
   name_portuguese: Batata-do-tiu
   scientific_name: Operculina macrocarpa
   usage: Ere meririku ipodo ema, bai ipogurure ema (bai ipo boiadadawu)
+  name_indigenous: Miacerewu Erubo
 - id: 26
-  name_bororo: Parori
   name_portuguese: Batata-marulete / batata-maroleite / batata-purunga
   usage: Ere kurodurogu kowuje
+  name_indigenous: Parori
 - id: 27
-  name_bororo: jekojagurewu (tadarimana) / Je kwugegurewu Erubo (piebaga)
   name_portuguese: Batatinha
   usage: Ere biri berego nowu kuru ere redo ariato tuwo tumugudo tada, areme ekogodae
     pegarewu epace, I biri kuru cere ekudumode emode reko tuwiri kuroduji bituwo
+  name_indigenous: jekojagurewu (tadarimana) / Je kwugegurewu Erubo (piebaga)
 - id: 28
-  name_bororo: pagadi ikuredo
   name_portuguese: Bate-caixa
   usage: Ere biri berego dure pemegare boe ecebae boeji
+  name_indigenous: pagadi ikuredo
 - id: 29
-  name_bororo: oko
   name_portuguese: Bolsa-de-pastor / bolsinha-de-pastor
   scientific_name: Capsella bursa-pastoris L.
   usage: Ukwa boe ere beredo du cere boe etore ekudure boe pegarewuji
+  name_indigenous: oko
 - id: 30
-  name_bororo: kie eke aru xaru / kie erubo
   name_portuguese: Bordão
   usage: Ere a kowu dure ere kowuje, ere a kududo, nowu tudu boere kurudo. nowu i
     ere kaiado ema bai ipogurure ema. nowu biri pemegare moce epace. Ere biri tugu
@@ -402,14 +401,15 @@
     ekogodae pega boeji, boe ekuiboka kori, boe epegaguru, boe ekuri kori. nowu biri
     kuru pemegare boe ekojariji, awagu mode toedo epare ema jamedu, boe toriwudo kori,
     boe ewureado kori pegare epa rema jamedu, umode tigera bararedo boe erageduwo
+  name_indigenous: kie eke aru xaru / kie erubo
 - id: 31
-  name_bororo: Tugorirewu
   name_portuguese: Bosta-de-baiano / carrapicho
   usage: 'Ere kagu pobo okodo kao dure ere reko pudui togorirewu boeji, etogorire
     jiu boeli, ewiri kigori pegarewu, pemegare mokuiao doge eto oia kigoriji, boe
     ewiri kigori pegarewu epare ema jamédu. Ukwa ere berego tuguduo kurue awu boe
     ekogodaeji: boe ewiri uru, boe ecebae ure tadudu-dodu, barogo peguru epa, boe
     pegaguru ku, barae kogodae pegarewu jeture-boeidu'
+  name_indigenous: Tugorirewu
 - id: 32
   name_portuguese: Buriti
   usage: Nowu ukwa kuru pe re pemegare barogo peguruji
@@ -492,7 +492,6 @@
 - id: 54
   usage: Boe ere tubaro ipodo ema boe ere tuwai jurado ema
 - id: 55
-  name_bororo: Poari iwo
   name_portuguese: Capim-bambu
   scientific_name: Merstachys spp. Spreng
   family: Poaceae
@@ -505,8 +504,8 @@
     level: makare
   - village: Tadarimana
     level: biagare
+  name_indigenous: Poari iwo
 - id: 56
-  name_bororo: Tugumana
   name_portuguese: Capim-flechinha
   scientific_name: Echinolaena inflexa
   family: Poaceae
@@ -521,8 +520,8 @@
     level: biagare
   - village: Meruri
     level: makare
+  name_indigenous: Tugumana
 - id: 57
-  name_bororo: Okuwadoge etoburewu
   name_portuguese: Capim gordura
   scientific_name: Melinis minutiflora
   family: Poaceae
@@ -538,6 +537,7 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_057_okuwadoge_etoburewu.jpg
+  name_indigenous: Okuwadoge etoburewu
 - id: 58
   usage: Boe ere nowu i biri beredo du boe elogore pudui tuwiri urul, turuwo kori,
     tugojari kurii, tuwiri pegai, etore ewudae re kurire pudui duji
@@ -576,7 +576,6 @@
 - id: 70
   usage: Boe ere tudogarado ema, tudogo epace, paro, kuiara, kaibori, aragodo
 - id: 71
-  name_bororo: Biaro poroporo
   name_portuguese: Coroadinho (piebaga)
   scientific_name: Mouriri elluptica
   family: Melastoituraceae
@@ -591,8 +590,8 @@
   - village: Tadarimana
     level: Biagare
   pic_link: images/ethnobotany_071_biaro_poroporo.jpg
+  name_indigenous: Biaro poroporo
 - id: 72
-  name_bororo: Taru
   name_portuguese: Curriola / fruta-de-viado (piebaga)
   scientific_name: Pouteria ramiflora
   family: Sapotaceae
@@ -607,6 +606,7 @@
   - village: Tadarimana
     level: Biagare
   pic_link: images/ethnobotany_072_taru.jpg
+  name_indigenous: Taru
 - id: 73
   usage: Boe ere nowu kuru bekuru tugu taoto tao kugudugoduwo tao pemegawo
 - id: 74
@@ -621,7 +621,6 @@
   usage: "Ere mugudo tuguduwo de ere berego, nowu aru ere gugudo poboto tuvo taimo\
     \ tabo, nowu a ere mugudo joru tada\n          beregodyo ere epado boe ewini"
 - id: 78
-  name_bororo: Riwodo erubo
   name_portuguese: Erva-de-andorinha / erva_de-passarinho
   scientific_name: Euphoria potentiloides
   family: Euphorbiaceae
@@ -634,8 +633,8 @@
     level: Makare
   - village: Tadarimana
     level: Biagare
+  name_indigenous: Riwodo erubo
 - id: 79
-  name_bororo: Ari
   name_portuguese: Figueira branca
   scientific_name: Ficus dendrocida
   family: Moraceae
@@ -649,6 +648,7 @@
     level: Makare
   - village: Tadarimana
     level: Makare
+  name_indigenous: Ari
 - id: 80
   usage: nowu ukuare ere mugudo joru tada ere beredo tuguduwo ce ere tugojari epado
     ema
@@ -658,7 +658,6 @@
   usage: Boe enoroe nure ema mare boe jerimaga, boe itaga kejere boere tugera kiowado
     ji
 - id: 83
-  name_bororo: Jorubo aogigirerewu
   name_portuguese: Garobinha
   scientific_name: Aspidosperma subincanum
   family: Apocynaceae
@@ -672,6 +671,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
+  name_indigenous: Jorubo aogigirerewu
 - id: 84
   usage: Nowu arogu kududo reko ia tuwure, tubogora kurodurewuji. Nowu ukwa ere mugudo
     joru tada ere berego tuguduwo ce togojari ku epace, ewo tugu pe-megado areme etorewudae,
@@ -708,7 +708,6 @@
 - id: 95
   usage: Boe etao epa nure ema boe eiogore ji tabo pemegawo motuwo
 - id: 96
-  name_bororo: Tori kobo
   name_portuguese: Ingá-mirim
   scientific_name: Inga sessilis
   family: Fabaceae
@@ -722,6 +721,7 @@
     level: Biagare
   - village: Tadarimana
     level: Biagare
+  name_indigenous: Tori kobo
 - id: 97
   usage: Nowu i ere tugera kiogwadoji bai epace, irado ema. Ere nowu iwoi, mea kogudo
     to tugeje
@@ -819,20 +819,19 @@
   usage: Boere kurodu kowuje, Boere ukwa kowu du boe elogore boe etonaregedu kodyre
     maiwuli tabo, boe eniao pegaji.
 - id: 131
-  name_bororo: Jukorewugeeiga
   name_portuguese: Pau-formiga
   scientific_name: Triplaris Americana
   family: Polygonaceae
   usage: Boe ere aru beredo (barure ekogodyre) barae ekogody (diabetes) ji
+  name_indigenous: Jukorewugeeiga
 - id: 132
-  name_bororo: Berago / Beragou i
   name_portuguese: Pau-Santo
   scientific_name: Kielmeyera coriacea
   family: Calophyllaceae
   usage: Boe ere to beragu udo ce boe ero kurirewu keje. Boe ere nowu beragu tugu
     ropa doge eworito boe ere tuwaiga bekurododore
+  name_indigenous: Berago / Beragou i
 - id: 133
-  name_bororo: Kietowudurewu
   name_portuguese: Pau-terrão / Pau-terra-amarelo
   scientific_name: Qualea grandiflora
   family: Vochysiaceaea
@@ -840,6 +839,7 @@
     tuieto boe ero kurirewu keje Boe ere tudu kowuje tubegaguru ji. Boe ere aru gugudo
     dure boe ere tugu tu tuieto boe ero kurirewu keje
   pic_link: images/ethnobotany_133_kietowudurewu.jpg
+  name_indigenous: Kietowudurewu
 - id: 134
   usage: boe jodo i biri keje boe ere tugu poboto du cere boe ekudure awagu oia ji
     boe ere reko oia mugaji jamedu. Boe ere tuwai ipodo ema jamedu
@@ -880,7 +880,6 @@
   usage: Boe ere aru kowuje turuwo waduwo turaji boe ere aru beredo tore eudae ure
     tubebaru korido duji
 - id: 150
-  name_bororo: Tadari
   usage: Boe enogwagere ji tugudy ji torudodu ji
   environment: Itura
   abundance:
@@ -890,61 +889,61 @@
     level: Biagare
   - village: Tadarimana
     level: Boe bokware
+  name_indigenous: Tadari
 - id: 151
-  name_bororo: Ore epa iorubo
   name_portuguese: Pau de barata
   scientific_name: Toulicia laevigata
   usage: Flexionam as folhas nas picadas da tucangira
+  name_indigenous: Ore epa iorubo
 - id: 152
-  name_bororo: Readoge iorubo
   name_portuguese: Caínca (cipó)
   scientific_name: Chiococca alba
   usage: O caule carbonizado, associado à almecega (kidoguru – resina da amescla ou
     breu branco) é aplicado nas inflamações
   pic_link: images/ethnobotany_152_readoge_iorubo.jpg
+  name_indigenous: Readoge iorubo
 - id: 153
-  name_bororo: Boe erubo bokwadui aro rumaga
   name_portuguese: Jatobá do Campo
   usage: As folhas na água substitui os sabonetes nos banhos evitando as doenças contagiosas
+  name_indigenous: Boe erubo bokwadui aro rumaga
 - id: 154
-  name_bororo: Boe okoripadi boikagigedu epa
   name_portuguese: Batata do Bugre
   usage: As folhas na água substitui os sabonetes nos banhos evitando as doenças contagiosas
+  name_indigenous: Boe okoripadi boikagigedu epa
 - id: 155
-  name_bororo: Cudobo iorubo
   name_portuguese: Cabelo de Negro (casca branca)
   scientific_name: Guazuma ulmifolia
   usage: Crença indígena, de que jogando as folhas na direção para qual a caça corre,
     diminui a ação, dando oportunidade de ser abatido pelos indígenas sem grandes
     esforços
   pic_link: images/ethnobotany_155_cudobo_iorubo.jpg
+  name_indigenous: Cudobo iorubo
 - id: 156
-  name_bororo: Kie o Jorubo ikui
   name_portuguese: Erva Molar / língua de vaca
   scientific_name: Holcus mollis
   usage: Esfregam as folha a noite nas pernas para não serem picados por cobras
+  name_indigenous: Kie o Jorubo ikui
 - id: 157
-  name_bororo: Ocerago
   name_portuguese: Gravatá / Macambira
   usage: As flores os bororo colocam nos orifícios das orelhas para terem vivacidade
     e não esquecerem os grandes cânticos religiosos
+  name_indigenous: Ocerago
 - id: 158
-  name_bororo: Bope iorubo / Meriri iorubo
   name_portuguese: Lírio do campo
   usage: Na ausência do Bari, as caças que abatem, e que são necessárias serem benzidas
     os bororo cobrem com as folhas as caças para que não recebam o castigo do Bope
     (espírito maligno que segundo a lenda, acompanha os bororo incrédulos.)
+  name_indigenous: Bope iorubo / Meriri iorubo
 - id: 159
-  name_bororo: Aroe erubo
   name_portuguese: Caeté
   usage: Por ocasião da festa do Marido, os bororo esfregam as folhas no corpo e colocam
     os ramos nas orelhas, para poderem ter relações sexuais e não morrerem
+  name_indigenous: Aroe erubo
 - id: 160
-  name_bororo: Betaga o jorubo
   name_portuguese: Dormideira
   usage: As raízes triturada, é passada nas distenções musculares eliminando as dores
+  name_indigenous: Betaga o jorubo
 - id: 161
-  name_bororo: Marido
   name_portuguese: Buriti
   scientific_name: Mauritia flexuosa L. f.
   usage: Tudu ere kududo, ere kuru pagodudo, betureboedo ema ere kurudo. Ere itaguru
@@ -958,66 +957,66 @@
     level: bokware
   - village: Tadarimana
     level: bokware
+  name_indigenous: Marido
 - id: 162
-  name_bororo: Parikigarewu
   name_portuguese: Canela de ema
   scientific_name: Vellozia squamata
   family: Velloziaceae
   usage: O fruto mastigado e expelido é remédio contra dores de garganta
   pic_link: images/ethnobotany_162_parikigarewu.jpg
+  name_indigenous: Parikigarewu
 - id: 163
-  name_bororo: Atuboe Jagarewu
   name_portuguese: Unha de Boi
   scientific_name: Bauhinia candicans Benth.
   usage: Quando por engano os bororo matam um veado servo (Atubo). caça esta que só
     por engano matam-a, amedrontados com a sentença de morte que lhe é atribuída,
     passam as folhas no rosto e ficam isentos do castigo
   pic_link: images/ethnobotany_163_atuboe_jagarewu.jpg
+  name_indigenous: Atuboe Jagarewu
 - id: 164
-  name_bororo: Care erubo biarepoporo
   name_portuguese: Coroa de frade
   usage: As folhas são colocadas nas redes de pesca para apanhar grande quantidade
     de peixes
+  name_indigenous: Care erubo biarepoporo
 - id: 165
-  name_bororo: Boecuri naregedo jorubo epa poro ji
   name_portuguese: Mulateira
   usage: A madeira carbonizada é passada sobre o ventre da mulher grávida para que
     i filho nasça robusto
+  name_indigenous: Boecuri naregedo jorubo epa poro ji
 - id: 166
-  name_bororo: Boto cujagurewu biagarewu
   name_portuguese: Japecanga
   usage: As raízes raspadas, passadas no rosto, permitem que o homem que estiver envenenado
     por outro nada sofra
+  name_indigenous: Boto cujagurewu biagarewu
 - id: 167
-  name_bororo: Arareuodarewu
   name_portuguese: Vinhático
   usage: As cascas na água bebem contra dores de barriga
+  name_indigenous: Arareuodarewu
 - id: 168
-  name_bororo: Curobo i
   name_portuguese: Imbirussú
   scientific_name: Pseudobombax grandiflorum
   usage: Todo homem que já matou muitas onças, ficam sujeito a sonhos maus com onças,
     para evitar isto, usam tirar uma imbira para amarrarem ao pescoço quando vão dormir
   pic_link: images/ethnobotany_168_curobo_i.jpg
+  name_indigenous: Curobo i
 - id: 169
-  name_bororo: Joguare o jorubo
   name_portuguese: Cruzeiro
   usage: Os frutos esmigalhados passam na cara dos cachorros, para tornarem bons para
     seguir a caça
+  name_indigenous: Joguare o jorubo
 - id: 170
-  name_bororo: Boe curi kuriepa ikurewu
   name_portuguese: Pega Pinto
   usage: Cozinham as folhas e bebem contra dores de barriga
+  name_indigenous: Boe curi kuriepa ikurewu
 - id: 171
-  name_bororo: Bacororoepa akigo orewu
   name_portuguese: Algodãozinho
   scientific_name: Cochlospermum regium
   family: Bixaceae
   usage: As raízes na água em banhos, após os cânticos, para evitar dores de cabeça,
     garganta, mal estar, etc
   pic_link: images/ethnobotany_171_bacororoepa_akigo_orewu.jpg
+  name_indigenous: Bacororoepa akigo orewu
 - id: 172
-  name_bororo: Koco
   name_portuguese: Cajú do campo/cajú do cerrado
   scientific_name: Anacardium humile A. St. Hil.
   usage: Boe ére kurodu kowuje, boe ere kurudo, barae ere juko etaregareudo ema, iwara
@@ -1037,84 +1036,84 @@
   - village: Meruri
     level: alimentício e medicinal
   pic_link: images/ethnobotany_172_koco.jpg
+  name_indigenous: Koco
 - id: 173
-  name_bororo: Parikiogodo o jorubo
   name_portuguese: Caroba
   scientific_name: Jacaranda caroba
   usage: A raiz em chá contra dores de urina
   pic_link: images/ethnobotany_173_parikiogodo_o_jorubo.jpg
+  name_indigenous: Parikiogodo o jorubo
 - id: 174
-  name_bororo: Boe erudogimano aro
   name_portuguese: Caeté
   usage: Por ocasião da festa do Mano, se por acaso as mulheres presenciam a sua chegada,
     adoecem de asma, então usam queimar a raiz desta planta, e misturam com almecega,
     passando no rosto das mulheres, e estas, ficam boas
+  name_indigenous: Boe erudogimano aro
 - id: 175
-  name_bororo: Kodu i iporewu
   name_portuguese: Figueira
   scientific_name: Ficus obtusifolia
   family: Moraceae
   usage: (merindiba) O leite da madeira é usado para conservar o urucum no estado
     pastoso
+  name_indigenous: Kodu i iporewu
 - id: 176
-  name_bororo: Iwararagarewu
   name_portuguese: Aritucum do campo
   scientific_name: Annona crassiflora
   usage: As raízes os bororo queimam, projetando a fumaça para o lado em que se encontra
     uma pessoa, que deseja que adoeça
   pic_link: images/ethnobotany_176_iwararagarewu.jpg
+  name_indigenous: Iwararagarewu
 - id: 177
-  name_bororo: Okwa iorubo
   name_portuguese: Chá de frade
   usage: Batem as folhas nas pernas para não cansarem nas caminhadas
+  name_indigenous: Okwa iorubo
 - id: 178
-  name_bororo: Koge eibarararewu
   name_portuguese: Pau de Morcego
   scientific_name: Andira fraxinifolia
   usage: As folhas substituem o sabão
+  name_indigenous: Koge eibarararewu
 - id: 179
-  name_bororo: Mearurewu
   name_portuguese: Fumo Bravo
   scientific_name: Solanum bullatum
   family: Solanaceae
   usage: As folhas esfregadas nas mãos, passam na parte frontal da cabeça contra dores
+  name_indigenous: Mearurewu
 - id: 180
-  name_bororo: Cogekereru í
   name_portuguese: Cambará
   usage: O chá das folhas tenras contra a tosse
+  name_indigenous: Cogekereru í
 - id: 181
-  name_bororo: Paragorewu iorubo
   name_portuguese: Ata do Mato
   usage: Colocam a imbira no pescoço quando viajam, para não adoecerem
+  name_indigenous: Paragorewu iorubo
 - id: 182
-  name_bororo: Arika
   name_portuguese: Marmelada de copinho
   usage: A madeira fazem armação do buque (rede de pesca)
+  name_indigenous: Arika
 - id: 183
-  name_bororo: Bukedaga enogo
   name_portuguese: Tucum
   usage: Cozinham o palmito e bebem a água contra febres
+  name_indigenous: Bukedaga enogo
 - id: 184
-  name_bororo: Boco ika
   name_portuguese: Marmelada Preta
   usage: O carvão do caule é passado no rosto, contra perturbações mentais
+  name_indigenous: Boco ika
 - id: 185
-  name_bororo: Eco ipo
   name_portuguese: Piqui
   scientific_name: Caryocar brasiliense
   family: Caryocaraceae
   usage: O carvão da madeira, os bororo comem contra a hemoptise (cuspir sangue)
+  name_indigenous: Eco ipo
 - id: 186
-  name_bororo: Kioro
   name_portuguese: Capim de praia
   usage: O caule queimado aplicam nas feridas
+  name_indigenous: Kioro
 - id: 187
-  name_bororo: Manaru tugo epa
   name_portuguese: Lixeira
   scientific_name: Aloysia virgata
   usage: Para lixar as pontas das flechas
+  name_indigenous: Manaru tugo epa
 - id: 188
-  name_bororo: Noakodo i / Rea tarewu / Rea doge etuararewu
   name_portuguese: Acaiacá/Cedro
   scientific_name: Cedrella fissilis vel.
   usage: Boe ere tumikado i rema, tudaraiga boe ewai ipoguru ure ema jamedu. Boe ere
@@ -1125,371 +1124,371 @@
     Fazem remédio para as galinhas não adoecerem.
   fruiting_period: junho-agosto
   pic_link: images/ethnobotany_188_noakodo_i_rea_tarewu_rea_doge_etuararewu.jpg
+  name_indigenous: Noakodo i / Rea tarewu / Rea doge etuararewu
 - id: 189
-  name_bororo: Cudo i
   name_portuguese: Timbó
   usage: Por ocasião das festas, as mulheres recusam a virem tomar parte nos cânticos,
     então um homem apanha as folhas, esfrega-as nas mãos, e, lança sobre as casas
     das mulheres, logo depois todas elas vêm tomar parte nos festejos
+  name_indigenous: Cudo i
 - id: 190
-  name_bororo: Jeporo
   name_portuguese: Aritucum folhas grandes
   usage: Esfregando as folhas nos olhos dos adversários cegam-nos imediatamente
+  name_indigenous: Jeporo
 - id: 191
-  name_bororo: Paekejorubo
   name_portuguese: Angelim
   scientific_name: Ormosia arborea
   family: Fabaceae
   usage: Mastigam as folhas para terem bôa voz
   pic_link: images/ethnobotany_191_paekejorubo.jpg
+  name_indigenous: Paekejorubo
 - id: 192
-  name_bororo: Kujare epa jorubo
   name_portuguese: Imbaíba / Umbaiba / Umbaúva
   scientific_name: Cecropia polystachya
   family: Urticaceae
   descriptions_of_use: Fazem chá das folhas contra tosse
+  name_indigenous: Kujare epa jorubo
 - id: 193
-  name_bororo: Joku kuie tai
   name_portuguese: Guavira
   descriptions_of_use: Passam a raiz carbonizada no rosto contra febres
+  name_indigenous: Joku kuie tai
 - id: 194
-  name_bororo: Boeto Pagodyda
   name_portuguese: Azedinha
   descriptions_of_use: Usam o sumo das folhas contra picada de escorpião
+  name_indigenous: Boeto Pagodyda
 - id: 195
-  name_bororo: Kie emogorurewu
   name_portuguese: Mama de Porca
   scientific_name: Rutaceae
   usage: Passam as folhas no seio das menores impúberes, para não terem seios grandes
     quando moças
+  name_indigenous: Kie emogorurewu
 - id: 196
-  name_bororo: Orogo iorubo
   name_portuguese: Curraleira
   scientific_name: Vassourinha-curraleira
   family: Malvaceae
   usage: Mastigam as folhas para serem bons para correr
+  name_indigenous: Orogo iorubo
 - id: 197
-  name_bororo: Aroecody corewu
   name_portuguese: Paineira
   scientific_name: Eriotheca gracilipes
   family: Malvaceae
   usage: As imbiras são usadas para amarrar as caças abatidas
+  name_indigenous: Aroecody corewu
 - id: 198
-  name_bororo: Boto kujagurewu
   name_portuguese: Limão bravo
   usage: O caule é usado nos feitiços
+  name_indigenous: Boto kujagurewu
 - id: 199
-  name_bororo: Ju umana
   name_portuguese: Mandioca Brava
   scientific_name: Manihot esculenta
   family: Euphorbiaceae
   usage: As folhas introduzem nos cazeiros das saúvas, extinguindo-as
   pic_link: images/ethnobotany_199_ju_umana.jpg
+  name_indigenous: Ju umana
 - id: 200
-  name_bororo: Kimao
   name_portuguese: Algodãozinho folhas espinhosas
   usage: Para os mesmos fins do N 25
+  name_indigenous: Kimao
 - id: 201
-  name_bororo: Jugodoge eimejera o jorubo
   name_portuguese: Unha de gato
   usage: Passam as folhas na boca, para quando conversarem atraírem as outras pessoas
+  name_indigenous: Jugodoge eimejera o jorubo
 - id: 202
-  name_bororo: Cogure iorubo
   name_portuguese: Hortelã do Campo
   usage: Bebem as folhas na água contra dores de garganta
+  name_indigenous: Cogure iorubo
 - id: 203
-  name_bororo: Ocoge iorubo
   name_portuguese: Alecrim
   usage: As folhas esmigalhadas com almecega, passam sobre o ventre da mulher que
     acabou de ter o parto, desaparecendo as dores
   pic_link: images/ethnobotany_203_ocoge_iorubo.jpg
+  name_indigenous: Ocoge iorubo
 - id: 204
-  name_bororo: Beojorubo
   name_portuguese: Canela de seriema
   usage: O caule queimado passam nas pernas dos meninos para não luxar
+  name_indigenous: Beojorubo
 - id: 205
-  name_bororo: Toroa i
   name_portuguese: Peroba
   scientific_name: Aspidosperma polyneuron
   family: Apocynaceae
   usage: (Ipê) Da madeira faziam antigamente o cabo dos machados de pedra
   pic_link: images/ethnobotany_205_toroa_i.jpg
+  name_indigenous: Toroa i
 - id: 206
-  name_bororo: Acorewu
   name_portuguese: Cascudo (olho de boi)
   usage: Passam o caule carbonizado no tórax em sentido longitudinal
+  name_indigenous: Acorewu
 - id: 207
-  name_bororo: Boetore echeba jorubo iôdo
   name_portuguese: Sete Sangrias
   scientific_name: Cuphea carthagenensis
   usage: Usam o leite no orifício labial para cicatrizar
+  name_indigenous: Boetore echeba jorubo iôdo
 - id: 208
-  name_bororo: Baregue evirerewu
   name_portuguese: Goiabinha do Mato
   scientific_name: Psidium guineense
   usage: A casca queimada, aplicam na cabeça contra a caspa e contra o embranquecimento
     prematuro dos cabelos
+  name_indigenous: Baregue evirerewu
 - id: 209
-  name_bororo: Jorubo Pakatuje
   name_portuguese: Roseira do Campo
   usage: Usam esfregar as folhas no corpo para evitar doenças
+  name_indigenous: Jorubo Pakatuje
 - id: 210
-  name_bororo: Baiugo
   name_portuguese: Imbirusú rasteiro
   usage: Esfregam o carvão da madeira, quando furam os dentes das onças abatidas
+  name_indigenous: Baiugo
 - id: 211
-  name_bororo: Baria i
   name_portuguese: Pau de Oleo
   scientific_name: Copaifera trapezifolia
   family: Fabaceae
   usage: O óleo passado sobre o ventre da mulher, faz com que esta fique gravida sempre
   pic_link: images/ethnobotany_211_baria_i.jpg
+  name_indigenous: Baria i
 - id: 212
-  name_bororo: Tabaro ó jorubo
   name_portuguese: Garrafãozinho
   usage: O banho do cozimento das folhas dado à mulher que acabou de ter o parto e
     ao recém nascido, faz com que este não seja traquinas (travesso, inquieto, danado)
+  name_indigenous: Tabaro ó jorubo
 - id: 213
-  name_bororo: Boe inuiaupega epa
   name_portuguese: Piúva do Campo
   usage: O carvão da madeira passam no rosto para evitar maus sonhos
+  name_indigenous: Boe inuiaupega epa
 - id: 214
-  name_bororo: Boeerubo podetugorogorewu
   name_portuguese: Negro Mina
   usage: As folhas esfregam no peito contra dores
+  name_indigenous: Boeerubo podetugorogorewu
 - id: 215
-  name_bororo: Aige iorubo
   name_portuguese: Boca de sapo
   scientific_name: Jacaranda brasiliana
   family: Bignoniaceae
   usage: As folhas passam no corpo da mulher que viu o Aije
+  name_indigenous: Aige iorubo
 - id: 216
-  name_bororo: Jugo epa
   name_portuguese: Erva Mijona
   usage: Esfregam as folhas nas pontas das flechas envenenando-as
+  name_indigenous: Jugo epa
 - id: 217
-  name_bororo: Jomo iorubo
   name_portuguese: Samambaia Mirim
   usage: Colocam as folhas nas orelhas quando vão pescar
+  name_indigenous: Jomo iorubo
 - id: 218
-  name_bororo: Roia epe
   name_portuguese: Semente de algodão
   usage: Socado, o óleo passam nos occipitais (nuca) para terem boa memoria
+  name_indigenous: Roia epe
 - id: 219
-  name_bororo: Nabure uke jorubo
   name_portuguese: Goiabinha do Cerrado
   usage: Mastigam as folhas para gritarem bem alto
+  name_indigenous: Nabure uke jorubo
 - id: 220
-  name_bororo: Marigido Ariri
   name_portuguese: Palmito da gariroba
   usage: O caule tenro queimado passam no ventre da mulher para ter filhos (Comem
     ou chupam também)
+  name_indigenous: Marigido Ariri
 - id: 221
-  name_bororo: Metygo iorubo
   name_portuguese: Cipó de Leite
   usage: Comem as folhas para terem voz grossa
+  name_indigenous: Metygo iorubo
 - id: 222
-  name_bororo: Marugodo uke iorubo
   name_portuguese: Cipó d'água
   usage: Passam o carvão do cipó na barriga das crianças contra a diarreia infantil
+  name_indigenous: Marugodo uke iorubo
 - id: 223
-  name_bororo: Mace inodorewu iorubo
   name_portuguese: Bolsa de carneiro
   usage: Passam o fruto queimado no peito contra asma
+  name_indigenous: Mace inodorewu iorubo
 - id: 224
-  name_bororo: Boigabe iorubo
   name_portuguese: Peroba do Campo (Ipê)
   usage: Esfregam e jogam as folhas evitando serem atingidos pelos raios
+  name_indigenous: Boigabe iorubo
 - id: 225
-  name_bororo: Kidoguro jaiwurewu
   name_portuguese: Garrafinha
   usage: As cinzas das folhas com almacega (kidoguru) passam no corpo como remédio
     e para pregarem os enfeites
+  name_indigenous: Kidoguro jaiwurewu
 - id: 226
-  name_bororo: Aragioro iorubo
   name_portuguese: Pau doce
   usage: As folhas socadas com um pouco de agua usam como vomitório após as picadas
     de cobras venenosas
+  name_indigenous: Aragioro iorubo
 - id: 227
-  name_bororo: Kiogorogo jorubo ore
   name_portuguese: Genciana
   usage: Esfregam as folhas no rosto para encontrarem muita caça
+  name_indigenous: Kiogorogo jorubo ore
 - id: 228
-  name_bororo: Kege tororewu
   name_portuguese: Mata Passo Bravo
   usage: Quando estão querendo matar arara na espera, e esta não aparece, cortam um
     galho desta planta e colocam sobre o esconderijo em que se encontram e logo parecem
     as araras
+  name_indigenous: Kege tororewu
 - id: 229
-  name_bororo: Meri iorubo
   name_portuguese: Cinco folhas
   scientific_name: Serjania erecta
   family: Sapindaceae
   usage: Quando nas longas caminhadas acham que com a luz do dia não alcançam o lugar
     desejado para pernoitar, cortam um pau fino desta planta e giram em direção do
     sol, acreditam que o sol para e espera o homem chegar ao lugar desejado
+  name_indigenous: Meri iorubo
 - id: 230
-  name_bororo: Kudobo iorubo
   name_portuguese: Raiz de Bugre
   scientific_name: Cordia salicifolia
   usage: Cogumelo (conhecido como chapéu de sapo) Esmigalhados esfregam na mão e passam
     nas crianças para serem ativos
+  name_indigenous: Kudobo iorubo
 - id: 231
-  name_bororo: Reco iorubo
   name_portuguese: Raiz de Bugre
   usage: A raiz socada em pequena quantidade com agua e bebida para engordar (Fortificante,
     tonificante)
+  name_indigenous: Reco iorubo
 - id: 232
-  name_bororo: Boiro
   name_portuguese: Ariri (folhas finas palmeira)
   usage: serve para amarrar outras plantas venenosas quando eliminam os seus desafetos
+  name_indigenous: Boiro
 - id: 233
-  name_bororo: Amo iorubo
   name_portuguese: Velame
   usage: A raiz carbonizada passam no corpo das crianças para não andarem muito
+  name_indigenous: Amo iorubo
 - id: 234
-  name_bororo: Uto iorubo
   name_portuguese: Assa peixe
   scientific_name: Vernonia polysphaera
   family: Asteraceae
   usage: Esfregam as folhas nas mulheres para não adoecerem
   pic_link: images/ethnobotany_234_uto_iorubo.jpg
+  name_indigenous: Uto iorubo
 - id: 235
-  name_bororo: Wiarurewu
   name_portuguese: Ariticum folha média, rasteiro
   usage: Queimam as folhas dentro de casa para evitar doenças
+  name_indigenous: Wiarurewu
 - id: 236
-  name_bororo: Iwaraga
   name_portuguese: Sofre-do-rim-quem-quer
   scientific_name: Duguetia furfuracea (A. St. Hil.) Benth & Hook; Duguetia marcgraviana
     Mart.
   family: Annonaceae
   usage: Cerrado, beira de córrego
   fruiting_period: abril a julho, outubro e novembro, fevereiro
+  name_indigenous: Iwaraga
 - id: 237
-  name_bororo: Urea aru bogodu
   name_portuguese: Pimenta-de-macaco / Pindaíba-vermelha
   scientific_name: Xilopia aromatica (Lam) Mart
   family: Annonaceae
   usage: Cerrado, beira de córrego
+  name_indigenous: Urea aru bogodu
 - id: 238
-  name_bororo: Maregetaoréu
   scientific_name: Anona dioica
+  name_indigenous: Maregetaoréu
 - id: 239
-  name_bororo: Atyie erubo
   scientific_name: Anemopaegna glaucuni
+  name_indigenous: Atyie erubo
 - id: 240
-  name_bororo: Bace uiorubo
   scientific_name: Anemopaegna arvensis
+  name_indigenous: Bace uiorubo
 - id: 241
-  name_bororo: Ikuredu emarewu
   scientific_name: Cremastus seeptrum
+  name_indigenous: Ikuredu emarewu
 - id: 242
-  name_bororo: Icegu i
   scientific_name: Tecoma ochracea
+  name_indigenous: Icegu i
 - id: 243
-  name_bororo: Kogoridoge erubo
   scientific_name: Jacaranda acutifolia
+  name_indigenous: Kogoridoge erubo
 - id: 244
-  name_bororo: Kuogo í
   scientific_name: Tecoma caraiba
+  name_indigenous: Kuogo í
 - id: 245
-  name_bororo: Kurugugwoe ewuregirewu
   scientific_name: Bignonia esoleta
+  name_indigenous: Kurugugwoe ewuregirewu
 - id: 246
-  name_bororo: Pari kiogododoge erubo
   scientific_name: Memora sp.
+  name_indigenous: Pari kiogododoge erubo
 - id: 247
-  name_bororo: Tugerurewu bokujiwy
   scientific_name: Zeyhera montana
+  name_indigenous: Tugerurewu bokujiwy
 - id: 248
-  name_bororo: Aroe ekudydyrewu i
   scientific_name: Eriotheca gracilipes (K. Schum) A. Rolinges
+  name_indigenous: Aroe ekudydyrewu i
 - id: 249
-  name_bororo: Boe erubo
   scientific_name: Eriope macrostachya Mart.
+  name_indigenous: Boe erubo
 - id: 250
-  name_bororo: Nonogo uiorubo
   scientific_name: Cordia sp.
+  name_indigenous: Nonogo uiorubo
 - id: 251
-  name_bororo: Moregege
   scientific_name: Dyckia wedelliana Baker
+  name_indigenous: Moregege
 - id: 252
-  name_bororo: Kido guru
   scientific_name: Protium heptaphyllum (Aubl.) March
   family: Burseraceae
   fruiting_period: novemro a janeiro
   pic_link: images/ethnobotany_252_kido_guru.jpg
+  name_indigenous: Kido guru
 - id: 253
-  name_bororo: Kido kuru
   scientific_name: Protium almecega March.
+  name_indigenous: Kido kuru
 - id: 254
-  name_bororo: Keo
   scientific_name: Ciperus gigantens Vahl.
+  name_indigenous: Keo
 - id: 255
-  name_bororo: Merireboe
   scientific_name: Rhynchospora sp.
+  name_indigenous: Merireboe
 - id: 256
-  name_bororo: Akigu orewu
   scientific_name: Cochlospermium regium (Mart. et Schr.) Pilger
   family: Cochlospermaceae
   fruiting_period: março a outubro
+  name_indigenous: Akigu orewu
 - id: 257
-  name_bororo: Apo uiorubo
   scientific_name: Eupatorium sp.
+  name_indigenous: Apo uiorubo
 - id: 258
-  name_bororo: Bace ika
   scientific_name: Vernonia ferruginea Less.
+  name_indigenous: Bace ika
 - id: 259
-  name_bororo: Boto kuru ekurewu / boe eraki caru / moto epa
   scientific_name: Chiquiragua sprengeliana Baker
+  name_indigenous: Boto kuru ekurewu / boe eraki caru / moto epa
 - id: 260
-  name_bororo: Muiawoe erubo
   scientific_name: Vernonia obovata Less. / Chrysolaena obovata (Less.) Dematt.
+  name_indigenous: Muiawoe erubo
 - id: 261
-  name_bororo: Poburewu uiorubo
   scientific_name: Trixis sp.
+  name_indigenous: Poburewu uiorubo
 - id: 262
-  name_bororo: Aipoburewuge erubo
   scientific_name: Evolvulus sp.
+  name_indigenous: Aipoburewuge erubo
 - id: 263
-  name_bororo: Jugodoge etoburewu
   scientific_name: Davilla lacunosa
+  name_indigenous: Jugodoge etoburewu
 - id: 264
-  name_bororo: Morie enogwarewu
   scientific_name: Doliocarpus sp.
+  name_indigenous: Morie enogwarewu
 - id: 265
-  name_bororo: Boto jerigigarewu
   scientific_name: Dioscorea multiflora Mart. ex Griseb.
   pic_link: images/ethnobotany_265_boto_jerigigarewu.jpg
+  name_indigenous: Boto jerigigarewu
 - id: 266
-  name_bororo: Kurugugwa ojorubo
+  name_indigenous: Kurugugwa ojorubo
 - id: 267
-  name_bororo: Je kujagurewuge erubo
   scientific_name: Jatropha sp.
+  name_indigenous: Je kujagurewuge erubo
 - id: 268
-  name_bororo: Riwodoe erubo
   scientific_name: Euphorbia caecorum Mart.
+  name_indigenous: Riwodoe erubo
 - id: 269
-  name_bororo: Amo uiorubo
   name_portuguese: Capim-de-campo-limpo
   scientific_name: Echnolaena inflexa (Poir) Chase
   fruiting_period: janeiro a maio
   pic_link: images/ethnobotany_269_amo_uiorubo.jpg
+  name_indigenous: Amo uiorubo
 - id: 270
-  name_bororo: Nore okori epa boe byty
   scientific_name: Axonopus chrysodactilus (Trin) Kuhlm
+  name_indigenous: Nore okori epa boe byty
 - id: 271
-  name_bororo: Aroe erubo
   scientific_name: Hypericum sp.
+  name_indigenous: Aroe erubo
 - id: 272
-  name_bororo: Beragu i
   name_portuguese: Pau-santo
   scientific_name: Kielmeyra aff. speciosa St. Hil.
   fruiting_period: março-abril
   pic_link: images/ethnobotany_272_beragu_i.jpg
+  name_indigenous: Beragu i
 - id: 275
-  name_bororo: Pora
   name_portuguese: Aguapé
   scientific_name: Echhornia crassipes (Mart.) Solms
   family: Pontederiaceae
@@ -1503,3 +1502,4 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
+  name_indigenous: Pora

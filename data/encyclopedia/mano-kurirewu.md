@@ -12,7 +12,7 @@ date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Helicônia
 images: []
 examples:
-- bororo: Este ritual também
+- indigenous: Este ritual também
   translation: 'como muitos dos rituais dos Boe-Bororo, está ligado ao culto dos finados
     e mostra a força, a valentia e a alegria do povo. Mas ele geralmente acontece
     fora do ritual fúnebre. É celebrado no findar da época do butao butu época da

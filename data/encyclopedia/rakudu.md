@@ -10,7 +10,7 @@ categories:
 date: '2026-02-18'
 images: []
 examples:
-- bororo: Atumode? Uw, rakudu.
+- indigenous: Atumode? Uw, rakudu.
   translation: Irás? Sim, talvez.
 references: []
 see_also: []

@@ -10,7 +10,7 @@ categories:
 date: '2026-02-18'
 images: []
 examples:
-- bororo: inunure
+- indigenous: inunure
   translation: estou com sono
 references: []
 see_also:

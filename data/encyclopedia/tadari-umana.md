@@ -13,7 +13,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: Tadari umana -- (tadari 'tubérculo comestível'
+- indigenous: Tadari umana -- (tadari 'tubérculo comestível'
   translation: u '3.SG', mana 'irmão mais velho'). 1. Variedade de tubérculo da floresta
     um pouco maior ue o tadari
 entry_type: ''

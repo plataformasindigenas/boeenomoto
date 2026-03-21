@@ -10,7 +10,7 @@ date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Lepidoptera
 images: []
 examples:
-- bororo: Kurugutugu -. * kuru
+- indigenous: Kurugutugu -. * kuru
   translation: vôo
 entry_type: ''
 infobox: {}

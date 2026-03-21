@@ -13,7 +13,7 @@ images:
   alt: Jaguarundi (Herpailurus yagouaroundi)
   credit: Wikimedia Commons
 examples:
-- bororo: Gato-mourisco
+- indigenous: Gato-mourisco
   translation: também conhecido como jaguarundi.
 entry_type: ''
 infobox: {}

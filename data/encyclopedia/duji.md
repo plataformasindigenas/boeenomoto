@@ -10,9 +10,9 @@ categories:
 date: '2026-02-18'
 images: []
 examples:
-- bororo: boe ekiarire atumode cebiji dyji
+- indigenous: boe ekiarire atumode cebiji dyji
   translation: os Bororo não querem que tu te afastes de nós
-- bororo: tawiajetudo inagoi tai dyji
+- indigenous: tawiajetudo inagoi tai dyji
   translation: lembrai-vos daquilo que eu disse
 references: []
 see_also: []

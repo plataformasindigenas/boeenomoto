@@ -1,5 +1,5 @@
-name: bororo_videos
-description: Bororo Cultural Videos
+name: videos
+description: Cultural Videos
 version: "1.0"
 primary_key: id
 

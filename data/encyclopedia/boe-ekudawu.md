@@ -9,11 +9,11 @@ date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Veado-campeiro
 images: []
 examples:
-- bororo: porém
+- indigenous: porém
   translation: quadriláteros com lados de aproximadamente Om250 feitos com uma tira
     de entrecasca enegrecida por imersão em lama, incorporada ao trançado. É comum
     a vários clãs de acórdo com os motivos pretos
-- bororo: ra 'pecíolo' [trançado que conserva
+- indigenous: ra 'pecíolo' [trançado que conserva
   translation: 'num dos lados, o pecíolo do broto de palmeira que serviu para a sua
     confeção]. Esteira de trançado grosseiro, tendo um dos lados maiores feito como
     próprio pecíolo do broto de babaçu que serviu para sua confeção. 2.2. Esteiras

@@ -15,7 +15,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: rewu
+- indigenous: rewu
   translation: suf. 'Nadador'. Embora os bororo não viagem por água e nao conheciam
     a canoa e seu uso, entretanto são habilíssimos nadadores. Para atravessarem rios,
     às vezes, nadam com um só braço carregando, com o outro, arco, flechas, caça e

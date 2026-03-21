@@ -1,5 +1,5 @@
-name: bororo_recordings
-description: Bororo Language Audio Recordings
+name: recordings
+description: Language Audio Recordings
 version: "1.0"
 primary_key: id
 

@@ -9,7 +9,7 @@ date: '2026-01-05'
 url: ''
 images: []
 examples:
-- bororo: amagodo jaku tabu
+- indigenous: amagodo jaku tabu
   translation: fala com jeito
 entry_type: ''
 infobox: {}

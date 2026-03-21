@@ -9,7 +9,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: Co - variante de ce. Preto
+- indigenous: Co - variante de ce. Preto
   translation: escuridão, sujeira.
 entry_type: ''
 infobox: {}

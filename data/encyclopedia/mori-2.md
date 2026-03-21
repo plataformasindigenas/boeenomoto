@@ -9,7 +9,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: agradecem
+- indigenous: agradecem
   translation: 'como de costume, apertando fortemente o objeto e a mao do doador.
     3. Mori: vingança pela morte de alguem Quando um bororo morre é escolhido um seu
     representante denominado aroe maiwu ''alma nova, ou iadu, companheiro, cuja obrigaçãão

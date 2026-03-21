@@ -1,5 +1,5 @@
-name: bororo_dicionario
-description: Bororo Dictionary Entries
+name: dictionary
+description: Dictionary Entries
 version: "1.0"
 primary_key: id
 

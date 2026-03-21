@@ -1,611 +1,611 @@
 - id: 95
   name_portuguese: Abelha benjoí
-  name_bororo: Gigo
   pic_link: images/fauna_095_gigo.jpg
+  name_indigenous: Gigo
 - id: 97
   name_portuguese: Abelha borá
-  name_bororo: Kidoguroe
   scientific_name: Tetragona clavipes
   pic_link: images/fauna_097_kidoguroe.jpg
+  name_indigenous: Kidoguroe
 - id: 41
   name_portuguese: Acauã
-  name_bororo: Makao
   scientific_name: Herpetotheres cachinnans
   category: Falconidae
-  classification_bororo: Kiege Boemoriae
   pic_link: images/fauna_041_makao.jpg
+  name_indigenous: Makao
+  classification_indigenous: Kiege Boemoriae
 - id: 65
   name_portuguese: Aiaiá (colhereiro-americano)
-  name_bororo: Bace ao kororogodyrewy
   scientific_name: Platalea ajaja
   category: Threskiornithidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_065_bace_ao_kororogodyrewy.jpg
+  name_indigenous: Bace ao kororogodyrewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 71
   name_portuguese: Anhuma
-  name_bororo: Tamigi
   scientific_name: Anhima cornuta
   category: Anhimidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_071_tamigi.jpg
+  name_indigenous: Tamigi
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 10
   name_portuguese: Anta
-  name_bororo: Ki
   scientific_name: Tapirus terrestris
   category: Tapirídeos
-  classification_bororo: Barege Kurirewyge
   pic_link: images/fauna_010_ki.jpg
+  name_indigenous: Ki
+  classification_indigenous: Barege Kurirewyge
 - id: 56
   name_portuguese: Arara-azul-grande
-  name_bororo: Kudoro
   scientific_name: Anodorhynchus hyacinthinus
   category: Psittacidae
-  classification_bororo: Kiege oto toiborewyge
   pic_link: images/fauna_056_kudoro.jpg
+  name_indigenous: Kudoro
+  classification_indigenous: Kiege oto toiborewyge
 - id: 57
   name_portuguese: Araracanga (arara vermelha)
-  name_bororo: Nabure
   scientific_name: Ara macao
   category: Psittacidae
-  classification_bororo: Kiege oto toiborewyge
   pic_link: images/fauna_057_nabure.jpg
+  name_indigenous: Nabure
+  classification_indigenous: Kiege oto toiborewyge
 - id: 58
   name_portuguese: Arara-canindé
-  name_bororo: Kuido
   scientific_name: Ara ararauna
   category: Psittacidae
-  classification_bororo: Kiege oto toiborewyge
   pic_link: images/fauna_058_kuido.jpg
+  name_indigenous: Kuido
+  classification_indigenous: Kiege oto toiborewyge
 - id: 4
   name_portuguese: Barege boemoriae
-  name_bororo: Aipoburewy
   scientific_name: Leopardus pardalis
   category: Feilídeo
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_004_aipoburewy.jpg
+  name_indigenous: Aipoburewy
+  classification_indigenous: Barege boemoriae
 - id: 34
   name_portuguese: Boto
-  name_bororo: Jakorewy
   scientific_name: Sotalia fluviatilis
   category: Delphinidae
-  classification_bororo: Barege pobo tadawyge
   pic_link: images/fauna_034_jakorewy.jpg
+  name_indigenous: Jakorewy
+  classification_indigenous: Barege pobo tadawyge
 - id: 22
   name_portuguese: Bugio preto / Guariba-preto
-  name_bororo: Pai Corewy
   scientific_name: Alouatta caraya
   category: Atelidae
-  classification_bororo: Barege Akururewyge
   pic_link: images/fauna_022_pai_corewy.jpg
+  name_indigenous: Pai Corewy
+  classification_indigenous: Barege Akururewyge
 - id: 66
   name_portuguese: Cabeça-seca
-  name_bororo: Bace auragodyrewy
   scientific_name: Cabeça-seca
   category: Ciconiidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_066_bace_auragodyrewy.jpg
+  name_indigenous: Bace auragodyrewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 13
   name_portuguese: Caititu
-  name_bororo: Jui
   scientific_name: Dicotyles tajacu
   category: Taiaçuídeos
-  classification_bororo: Barege Kurirewyge
   pic_link: images/fauna_013_jui.jpg
+  name_indigenous: Jui
+  classification_indigenous: Barege Kurirewyge
 - id: 29
   name_portuguese: Capivara
-  name_bororo: Akiwa
   scientific_name: Hydrochoerus hydrochaeris
   category: Caviidae
-  classification_bororo: Barege pobo tadawyge
   pic_link: images/fauna_029_akiwa.jpg
+  name_indigenous: Akiwa
+  classification_indigenous: Barege pobo tadawyge
 - id: 72
   name_portuguese: Carão
-  name_bororo: Karao
   scientific_name: Aramus guarauna
   category: Aramidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_072_karao.jpg
+  name_indigenous: Karao
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 9
   name_portuguese: Cariacu / Veado Galheiro
-  name_bororo: Atubo
   scientific_name: Odocoileus virginianus
-  classification_bororo: Barege Kurirewyge
   pic_link: images/fauna_009_atubo.jpg
+  name_indigenous: Atubo
+  classification_indigenous: Barege Kurirewyge
 - id: 69
   name_portuguese: Cegonha (?)
-  name_bororo: Parira
   category: Ciconiidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_069_parira.jpg
+  name_indigenous: Parira
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 40
   name_portuguese: Coruja do campo / Coruja-buraqueira
-  name_bororo: Tagogo
   scientific_name: Athene cunicularia
   category: Strigidae
-  classification_bororo: Kiege Boemoriae
   pic_link: images/fauna_040_tagogo.jpg
+  name_indigenous: Tagogo
+  classification_indigenous: Kiege Boemoriae
 - id: 51
   name_portuguese: Corujão / Mocho
-  name_bororo: Kaikai
   scientific_name: Bubo virginianus
   category: Strigidae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_051_kaikai.jpg
+  name_indigenous: Kaikai
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 50
   name_portuguese: Coruja preta
-  name_bororo: Kugu corewy
   scientific_name: Strix huhula
   category: Strigidae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_050_kugu_corewy.jpg
+  name_indigenous: Kugu corewy
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 59
   name_portuguese: Curica (papagaio)
-  name_bororo: Korao
   scientific_name: Amazona amazonica
   category: Psittacidae
-  classification_bororo: Kiege oto toiborewyge
   pic_link: images/fauna_059_korao.jpg
+  name_indigenous: Korao
+  classification_indigenous: Kiege oto toiborewyge
 - id: 38
   name_portuguese: Cutía
-  name_bororo: Mea
   scientific_name: Dasyprocta punctata
   category: Dasyproctidae
-  classification_bororo: Barege kugure
   pic_link: images/fauna_038_mea.jpg
+  name_indigenous: Mea
+  classification_indigenous: Barege kugure
 - id: 92
   name_portuguese: Ema
-  name_bororo: Pari
   scientific_name: Rhea americana
   category: Rheidae
-  classification_bororo: Kiege moto kejewyge
   pic_link: images/fauna_092_pari.jpg
+  name_indigenous: Pari
+  classification_indigenous: Kiege moto kejewyge
 - id: 82
   name_portuguese: Gaivota do pantanal (?)
-  name_bororo: Tawie
   category: Laridae
-  classification_bororo: Kiege kugary kejewyge
+  name_indigenous: Tawie
+  classification_indigenous: Kiege kugary kejewyge
 - id: 25
   name_portuguese: Gambá
-  name_bororo: Aka
   scientific_name: Didelphis marsupialis
   category: Didelfiídeos
-  classification_bororo: Barege Akururewyge
   pic_link: images/fauna_025_aka.jpg
+  name_indigenous: Aka
+  classification_indigenous: Barege Akururewyge
 - id: 64
   name_portuguese: Garça-azul
-  name_bororo: Bace kaworyrewy
   scientific_name: Egretta caerulea
   category: Ardeidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_064_bace_kaworyrewy.jpg
+  name_indigenous: Bace kaworyrewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 63
   name_portuguese: Garça-branca-pequena
-  name_bororo: Bace kuorewy
   scientific_name: Egretta thula
   category: Ardeidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_063_bace_kuorewy.jpg
+  name_indigenous: Bace kuorewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 77
   name_portuguese: Garça-da-mata
-  name_bororo: O kaworurewy
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_077_o_kaworurewy.jpg
+  name_indigenous: O kaworurewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 62
   name_portuguese: Garça real
-  name_bororo: Bace agarewy
   scientific_name: Ardea alba
   category: Ardeidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_062_bace_agarewy.jpg
+  name_indigenous: Bace agarewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 3
   name_portuguese: Gato mourisco / Jaguarundi
-  name_bororo: Aimearewy
   scientific_name: Herpailurus yagouaroundi
   category: Feilídeo
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_003_aimearewy.jpg
+  name_indigenous: Aimearewy
+  classification_indigenous: Barege boemoriae
 - id: 47
   name_portuguese: Gavião Caracará / Pinhé
-  name_bororo: Kaga
   scientific_name: Caracara plancus
   category: Falconidae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_047_kaga.jpg
+  name_indigenous: Kaga
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 44
   name_portuguese: Gavião carcaraí / Carrapateiro
-  name_bororo: Kuruguga
   scientific_name: Milvago chimachima
   category: Falconidae
-  classification_bororo: Kiege Boemoriae
   pic_link: images/fauna_044_kuruguga.jpg
+  name_indigenous: Kuruguga
+  classification_indigenous: Kiege Boemoriae
 - id: 48
   name_portuguese: Gavião Claro
-  name_bororo: Torowa
-  classification_bororo: Kiege buregi toiburewyge
+  name_indigenous: Torowa
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 46
   name_portuguese: Gavião-do-pé-amarelo / Gavião-carijó
-  name_bororo: Kuruga bure paru ekurewy
   scientific_name: Rupornis magnirostris
   category: Accipitridae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_046_kuruga_bure_paru_ekurewy.jpg
+  name_indigenous: Kuruga bure paru ekurewy
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 42
   name_portuguese: Gavião real / Harpia
-  name_bororo: Aroeeceba
   scientific_name: Harpia harpyja
   category: Accipitridae
-  classification_bororo: Kiege Boemoriae
   pic_link: images/fauna_042_aroeeceba.jpg
+  name_indigenous: Aroeeceba
+  classification_indigenous: Kiege Boemoriae
 - id: 49
   name_portuguese: Gavião ximango
-  name_bororo: Kuruga bewerewy
   scientific_name: Milvago chimango
   category: Falconidae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_049_kuruga_bewerewy.jpg
+  name_indigenous: Kuruga bewerewy
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 7
   name_portuguese: Graxaim-do-mato / Cachorro-do-mato / Lobinho
-  name_bororo: Okwa
   scientific_name: Cerdocyon thous
   category: Canídeos
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_007_okwa.jpg
+  name_indigenous: Okwa
+  classification_indigenous: Barege boemoriae
 - id: 28
   name_portuguese: Iguana / Sinimbu
-  name_bororo: Irui
   scientific_name: Iguana iguana
   category: Iguanidae
-  classification_bororo: Barege pobo tadawyge
   pic_link: images/fauna_028_irui.jpg
+  name_indigenous: Irui
+  classification_indigenous: Barege pobo tadawyge
 - id: 90
   name_portuguese: Inhmabu-Xororó
-  name_bororo: Riwodo
   scientific_name: Crypturellus parvirostris
   category: Tinamidae
-  classification_bororo: Kiege moto kejewyge
   pic_link: images/fauna_090_riwodo.jpg
+  name_indigenous: Riwodo
+  classification_indigenous: Kiege moto kejewyge
 - id: 6
   name_portuguese: Irara / Papa mel
-  name_bororo: Ipocerewy
   scientific_name: Eira barbara
   category: Mustelídeos
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_006_ipocerewy.jpg
+  name_indigenous: Ipocerewy
+  classification_indigenous: Barege boemoriae
 - id: 67
   name_portuguese: Jaburu (Tuiuiu)
-  name_bororo: Bace kogyio
   scientific_name: Jabiru mycteria
   category: Ciconiidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_067_bace_kogyio.jpg
+  name_indigenous: Bace kogyio
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 18
   name_portuguese: Jabuti
-  name_bororo: Jerigigi
   scientific_name: Chelonoidis carbonarius
   category: Testudinidae
-  classification_bororo: Barege Borewyge
   pic_link: images/fauna_018_jerigigi.jpg
+  name_indigenous: Jerigigi
+  classification_indigenous: Barege Borewyge
 - id: 73
   name_portuguese: Jaçanã
-  name_bororo: Pegepege
   scientific_name: Jacana jacana
   category: Jacanidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_073_pegepege.jpg
+  name_indigenous: Pegepege
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 31
   name_portuguese: Jacaré
-  name_bororo: Uwai
   scientific_name: Caiman yacare
   category: Alligatoridae
-  classification_bororo: Barege pobo tadawyge
   pic_link: images/fauna_031_uwai.jpg
+  name_indigenous: Uwai
+  classification_indigenous: Barege pobo tadawyge
 - id: 61
   name_portuguese: Jandaia-coquinho (periquito-rei / periquito-estrela)
-  name_bororo: Ore
   scientific_name: Eupsittula aurea
   category: Psittacidae
-  classification_bororo: Kiege oto toiborewyge
   pic_link: images/fauna_061_ore.jpg
+  name_indigenous: Ore
+  classification_indigenous: Kiege oto toiborewyge
 - id: 93
   name_portuguese: João-Bobo
-  name_bororo: Jokorogo
   scientific_name: Nystalus chacuru
-  classification_bororo: Kiege moto kejewyge
   pic_link: images/fauna_093_jokorogo.jpg
+  name_indigenous: Jokorogo
+  classification_indigenous: Kiege moto kejewyge
 - id: 32
   name_portuguese: Lambari
-  name_bororo: Meto
   category: Astyanax (gen.)
   pic_link: images/fauna_032_meto.jpg
+  name_indigenous: Meto
 - id: 37
   name_portuguese: Lebre / Tapiti
-  name_bororo: Amo
   scientific_name: Sylvilagus brasiliensis
-  classification_bororo: Barege kugure
   pic_link: images/fauna_037_amo.jpg
+  name_indigenous: Amo
+  classification_indigenous: Barege kugure
 - id: 8
   name_portuguese: Lobo Guará
-  name_bororo: Rie
   scientific_name: Chrysocyon brachyurus / Canis jubatus
   category: Canídeos
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_008_rie.jpg
+  name_indigenous: Rie
+  classification_indigenous: Barege boemoriae
 - id: 23
   name_portuguese: Macaco
-  name_bororo: Juko
   category: Cebídeos
-  classification_bororo: Barege Akururewyge
+  name_indigenous: Juko
+  classification_indigenous: Barege Akururewyge
 - id: 68
   name_portuguese: Maguari
-  name_bororo: Bace mikurewy
   scientific_name: Ciconia maguari
   category: Ciconiidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_068_bace_mikurewy.jpg
+  name_indigenous: Bace mikurewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 94
   name_portuguese: Mamangaba
-  name_bororo: Penogogo
   scientific_name: Bombus
   pic_link: images/fauna_094_penogogo.jpg
+  name_indigenous: Penogogo
 - id: 5
   name_portuguese: Mão-pelada
-  name_bororo: Ierarae
   scientific_name: Procionídeos
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_005_ierarae.jpg
+  name_indigenous: Ierarae
+  classification_indigenous: Barege boemoriae
 - id: 80
   name_portuguese: Marreca-cabocla
-  name_bororo: Parabara
   scientific_name: Dendrocygna autumnalis
   category: Anatidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_080_parabara.jpg
+  name_indigenous: Parabara
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 70
   name_portuguese: Martim Pescador
-  name_bororo: Kadagare
   category: Alcedinidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_070_kadagare.jpg
+  name_indigenous: Kadagare
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 83
   name_portuguese: Mexeriqueira
-  name_bororo: Ra porepore
   scientific_name: Vanellus cayanus
   category: Charadriidae
-  classification_bororo: Kiege kugary kejewyge
   pic_link: images/fauna_083_ra_porepore.jpg
+  name_indigenous: Ra porepore
+  classification_indigenous: Kiege kugary kejewyge
 - id: 43
   name_portuguese: Murucututu-de-barriga-amarela
-  name_bororo: Kugu
   scientific_name: Pulsatrix koeniswaldiana
   category: Strigidae
-  classification_bororo: Kiege Boemoriae
   pic_link: images/fauna_043_kugu.jpg
+  name_indigenous: Kugu
+  classification_indigenous: Kiege Boemoriae
 - id: 2
   name_portuguese: Onça parda
-  name_bororo: Aigo
   scientific_name: Puma concolor
   category: Feilídeo
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_002_aigo.jpg
+  name_indigenous: Aigo
+  classification_indigenous: Barege boemoriae
 - id: 1
   name_portuguese: Onça pintada
-  name_bororo: Adugo
   scientific_name: Panthera onca
   category: Feilídeo
-  classification_bororo: Barege boemoriae
   pic_link: images/fauna_001_adugo.jpg
+  name_indigenous: Adugo
+  classification_indigenous: Barege boemoriae
 - id: 27
   name_portuguese: Ouriço
-  name_bororo: Iwe
   scientific_name: Coendou prehensilis
   category: Erinaceidae
-  classification_bororo: Barege Akururewyge
   pic_link: images/fauna_027_iwe.jpg
+  name_indigenous: Iwe
+  classification_indigenous: Barege Akururewyge
 - id: 35
   name_portuguese: Paca
-  name_bororo: Apu
   scientific_name: Cuniculus paca
   category: Cuniculidae
-  classification_bororo: Barege kugure
   pic_link: images/fauna_035_apu.jpg
+  name_indigenous: Apu
+  classification_indigenous: Barege kugure
 - id: 81
   name_portuguese: Pato-do-mato
-  name_bororo: Turubare corewy
   scientific_name: Cairina moschata
   category: Anatidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_081_turubare_corewy.jpg
+  name_indigenous: Turubare corewy
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 91
   name_portuguese: Perdiz
-  name_bororo: Parikiogodo
   scientific_name: Rhynchotus rufescens
   category: Tinamidae
-  classification_bororo: Kiege moto kejewyge
   pic_link: images/fauna_091_parikiogodo.jpg
+  name_indigenous: Parikiogodo
+  classification_indigenous: Kiege moto kejewyge
 - id: 96
   name_portuguese: Periquito-d'asa-azul / tuim-de-asa-azul / periquito vassourinha
-  name_bororo: Kidoe etumana
   scientific_name: Forpus xanthopterygius
   pic_link: images/fauna_096_kidoe_etumana.jpg
+  name_indigenous: Kidoe etumana
 - id: 60
   name_portuguese: Periquito-verde
-  name_bororo: Kido
   scientific_name: Brotogeris tirica
   category: Psittacidae
-  classification_bororo: Kiege oto toiborewyge
   pic_link: images/fauna_060_kido.jpg
+  name_indigenous: Kido
+  classification_indigenous: Kiege oto toiborewyge
 - id: 78
   name_portuguese: Picaparra (ipequi)
-  name_bororo: Bure puduga
   scientific_name: Heliornis fulica
   category: Heliornithidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_078_bure_puduga.jpg
+  name_indigenous: Bure puduga
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 45
   name_portuguese: Pinhé
-  name_bororo: Pia
-  classification_bororo: Kiege buregi toiburewyge
+  name_indigenous: Pia
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 39
   name_portuguese: Preá
-  name_bororo: Kurugo
   scientific_name: Cavia aperea
   category: Caviidae
-  classification_bororo: Barege kugure
   pic_link: images/fauna_039_kurugo.jpg
+  name_indigenous: Kurugo
+  classification_indigenous: Barege kugure
 - id: 21
   name_portuguese: Quati
-  name_bororo: Kudobo
   scientific_name: Nasua narica
   category: Procyonidae
-  classification_bororo: Barege Akururewyge
   pic_link: images/fauna_021_kudobo.jpg
+  name_indigenous: Kudobo
+  classification_indigenous: Barege Akururewyge
 - id: 14
   name_portuguese: Queixada
-  name_bororo: Jugo
   scientific_name: Tayassu pecari
   category: Taiaçuídeos
-  classification_bororo: Barege Kurirewyge
   pic_link: images/fauna_014_jugo.jpg
+  name_indigenous: Jugo
+  classification_indigenous: Barege Kurirewyge
 - id: 74
   name_portuguese: Saracura
-  name_bororo: Kuocaga
   category: Rallidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_074_kuocaga.jpg
+  name_indigenous: Kuocaga
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 26
   name_portuguese: Serelepe / Caxinguelê
-  name_bororo: Kodokodo
   category: Sciuridae
-  classification_bororo: Barege Akururewyge
   pic_link: images/fauna_026_kodokodo.jpg
+  name_indigenous: Kodokodo
+  classification_indigenous: Barege Akururewyge
 - id: 87
   name_portuguese: Siriema
-  name_bororo: Beo
-  classification_bororo: Kiege moto kejewyge
   pic_link: images/fauna_087_beo.jpg
+  name_indigenous: Beo
+  classification_indigenous: Kiege moto kejewyge
 - id: 79
   name_portuguese: Socó-boi
-  name_bororo: Cu
   scientific_name: Tigrisoma lineatum
   category: Ardeidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_079_cu.jpg
+  name_indigenous: Cu
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 75
   name_portuguese: Socó-dorminhoco
-  name_bororo: Kudo
   scientific_name: Nycticorax nycticorax
   category: Ardeidae
-  classification_bororo: Kiege pobo pobo tadawyge
   pic_link: images/fauna_075_kudo.jpg
+  name_indigenous: Kudo
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 12
   name_portuguese: Tamanduá-bandeira
-  name_bororo: Buke
   scientific_name: Myrmecophaga tridactyla
   category: Mirmecofagídeos
-  classification_bororo: Barege Kurirewyge
   pic_link: images/fauna_012_buke.jpg
+  name_indigenous: Buke
+  classification_indigenous: Barege Kurirewyge
 - id: 24
   name_portuguese: Tamanduá-mirim / Mixila
-  name_bororo: Apogo
   scientific_name: Tamandua tetradactyla
   category: Myrmecophagidae
-  classification_bororo: Barege Akururewyge
   pic_link: images/fauna_024_apogo.jpg
+  name_indigenous: Apogo
+  classification_indigenous: Barege Akururewyge
 - id: 17
   name_portuguese: Tatu-bola
-  name_bororo: Enokuri
   scientific_name: Tolypeutes matacus
   category: Clamiforídeos
-  classification_bororo: Barege Borewyge
   pic_link: images/fauna_017_enokuri.jpg
+  name_indigenous: Enokuri
+  classification_indigenous: Barege Borewyge
 - id: 16
   name_portuguese: Tatu-canastra
-  name_bororo: Bokodori
   scientific_name: Priodontes maximus
   category: Clamiforídeos
-  classification_bororo: Barege Borewyge
   pic_link: images/fauna_016_bokodori.jpg
+  name_indigenous: Bokodori
+  classification_indigenous: Barege Borewyge
 - id: 20
   name_portuguese: Tatu-galinha
-  name_bororo: Reá
   scientific_name: Dasypus novemcinctus
-  classification_bororo: Barege Borewyge
+  name_indigenous: Reá
+  classification_indigenous: Barege Borewyge
 - id: 19
   name_portuguese: Tatu-liso
-  name_bororo: Jerego
   scientific_name: Dasypus novemcinctus
   category: Dasipodídeos
-  classification_bororo: Barege Borewyge
   pic_link: images/fauna_019_jerego.jpg
+  name_indigenous: Jerego
+  classification_indigenous: Barege Borewyge
 - id: 15
   name_portuguese: Tatupeba
-  name_bororo: Bakodorirewy
   scientific_name: Euphractus sexcinctus
   category: Clamiforídeos
-  classification_bororo: Barege Borewyge
   pic_link: images/fauna_015_bakodorirewy.jpg
+  name_indigenous: Bakodorirewy
+  classification_indigenous: Barege Borewyge
 - id: 36
   name_portuguese: Teiú
-  name_bororo: Tuwogy
   scientific_name: Salvator merianae
   category: Teiidae
-  classification_bororo: Barege kugure
   pic_link: images/fauna_036_tuwogy.jpg
+  name_indigenous: Tuwogy
+  classification_indigenous: Barege kugure
 - id: 54
   name_portuguese: Urubu cabeça preta
-  name_bororo: Poburewy
   scientific_name: Coragyps atratus
   category: Cathartidae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_054_poburewy.jpg
+  name_indigenous: Poburewy
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 55
   name_portuguese: Urubu da cabeça vermelha
-  name_bororo: Ciwaje
   scientific_name: Cathartes aura
   category: Cathartidae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_055_ciwaje.jpg
+  name_indigenous: Ciwaje
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 52
   name_portuguese: Urubu rei
-  name_bororo: Bai
   scientific_name: Sarcoramphus papa
   category: Sarcosamphidae
-  classification_bororo: Kiege buregi toiburewyge
   pic_link: images/fauna_052_bai.jpg
+  name_indigenous: Bai
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 11
   name_portuguese: Veado-mão-curta  / Veado Bororó
-  name_bororo: Pobogo
   scientific_name: Mazama nana
   category: Cervídeos
-  classification_bororo: Barege Kurirewyge
   pic_link: images/fauna_011_pobogo.jpg
+  name_indigenous: Pobogo
+  classification_indigenous: Barege Kurirewyge
 - id: 76
-  name_bororo: Merire
   category: Anatidae
-  classification_bororo: Kiege pobo pobo tadawyge
   info: Amazonetta brasiliensis
   pic_link: images/fauna_076_merire.jpg
+  name_indigenous: Merire
+  classification_indigenous: Kiege pobo pobo tadawyge
 - id: 86
-  name_bororo: Tawie baragadyxrewy
-  classification_bororo: Kiege kugary kejewyge
+  name_indigenous: Tawie baragadyxrewy
+  classification_indigenous: Kiege kugary kejewyge
 - id: 85
-  name_bororo: Kugarure
-  classification_bororo: Kiege kugary kejewyge
+  name_indigenous: Kugarure
+  classification_indigenous: Kiege kugary kejewyge
 - id: 84
-  name_bororo: Tano
-  classification_bororo: Kiege kugary kejewyge
+  name_indigenous: Tano
+  classification_indigenous: Kiege kugary kejewyge
 - id: 88
-  name_bororo: Parigogo
-  classification_bororo: Kiege moto kejewyge
+  name_indigenous: Parigogo
+  classification_indigenous: Kiege moto kejewyge
 - id: 89
-  name_bororo: Monoko
-  classification_bororo: Kiege moto kejewyge
+  name_indigenous: Monoko
+  classification_indigenous: Kiege moto kejewyge
 - id: 53
-  name_bororo: Kuruga je paru kujagurewy
-  classification_bororo: Kiege buregi toiburewyge
+  name_indigenous: Kuruga je paru kujagurewy
+  classification_indigenous: Kiege buregi toiburewyge
 - id: 33
-  name_bororo: Baigabe
-  classification_bororo: Barege pobo tadawyge
+  name_indigenous: Baigabe
+  classification_indigenous: Barege pobo tadawyge
 - id: 30
-  name_bororo: Atomoio
-  classification_bororo: Barege pobo tadawyge
+  name_indigenous: Atomoio
+  classification_indigenous: Barege pobo tadawyge

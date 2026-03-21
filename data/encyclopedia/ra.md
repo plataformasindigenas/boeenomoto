@@ -10,7 +10,7 @@ categories:
 date: '2026-02-18'
 images: []
 examples:
-- bororo: boeco paru boe eramode
+- indigenous: boeco paru boe eramode
   translation: Ao anoitecer, os Bororo cantarão.
 references: []
 see_also:

@@ -9,7 +9,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: (boe 'Bororo' + bataru 'palavra
+- indigenous: (boe 'Bororo' + bataru 'palavra
   translation: língua'). Provérbio, idiotismo, boato. Exs. akedu akagu kuo bure gogaji
     nono ' amarra bem a tua jaó'. Essa frase é comumente pronunciada por alguém que,
     tendo sido preso, consegue fugir. Origina-se do fato que a jaó, mesmo se cativa

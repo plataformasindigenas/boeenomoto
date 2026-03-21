@@ -442,7 +442,7 @@
       "_linked_fauna": [
         {
           "id": 1,
-          "name_bororo": "Adugo",
+          "name_indigenous": "Adugo",
           "name_portuguese": "Onça pintada"
         }
       ],
@@ -511,7 +511,7 @@
       "_linked_fauna": [
         {
           "id": 1,
-          "name_bororo": "Adugo",
+          "name_indigenous": "Adugo",
           "name_portuguese": "Onça pintada"
         }
       ]
@@ -998,7 +998,7 @@
       "_linked_fauna": [
         {
           "id": 2,
-          "name_bororo": "Aigo",
+          "name_indigenous": "Aigo",
           "name_portuguese": "Onça parda"
         }
       ]
@@ -1033,7 +1033,7 @@
       "_linked_fauna": [
         {
           "id": 3,
-          "name_bororo": "Aimearewy",
+          "name_indigenous": "Aimearewy",
           "name_portuguese": "Gato mourisco / Jaguarundi"
         }
       ],
@@ -1102,7 +1102,7 @@
       "_linked_fauna": [
         {
           "id": 4,
-          "name_bororo": "Aipoburewy",
+          "name_indigenous": "Aipoburewy",
           "name_portuguese": "Barege boemoriae"
         }
       ]
@@ -4035,7 +4035,7 @@
       "_linked_fauna": [
         {
           "id": 35,
-          "name_bororo": "Apu",
+          "name_indigenous": "Apu",
           "name_portuguese": "Paca"
         }
       ]
@@ -6868,7 +6868,7 @@
       "_linked_fauna": [
         {
           "id": 52,
-          "name_bororo": "Bai",
+          "name_indigenous": "Bai",
           "name_portuguese": "Urubu rei"
         }
       ]
@@ -6959,7 +6959,7 @@
       "_linked_fauna": [
         {
           "id": 52,
-          "name_bororo": "Bai",
+          "name_indigenous": "Bai",
           "name_portuguese": "Urubu rei"
         }
       ]
@@ -15242,7 +15242,7 @@
       "_linked_fauna": [
         {
           "id": 12,
-          "name_bororo": "Buke",
+          "name_indigenous": "Buke",
           "name_portuguese": "Tamanduá-bandeira"
         }
       ]
@@ -16645,7 +16645,7 @@
       "_linked_fauna": [
         {
           "id": 55,
-          "name_bororo": "Ciwaje",
+          "name_indigenous": "Ciwaje",
           "name_portuguese": "Urubu da cabeça vermelha"
         }
       ]
@@ -24192,7 +24192,7 @@
       "_linked_fauna": [
         {
           "id": 6,
-          "name_bororo": "Ipocerewy",
+          "name_indigenous": "Ipocerewy",
           "name_portuguese": "Irara / Papa mel"
         }
       ]
@@ -30729,7 +30729,7 @@
       "_linked_fauna": [
         {
           "id": 93,
-          "name_bororo": "Jokorogo",
+          "name_indigenous": "Jokorogo",
           "name_portuguese": "João-Bobo"
         }
       ]
@@ -32444,7 +32444,7 @@
       "_linked_fauna": [
         {
           "id": 14,
-          "name_bororo": "Jugo",
+          "name_indigenous": "Jugo",
           "name_portuguese": "Queixada"
         }
       ]
@@ -32465,7 +32465,7 @@
       "_linked_fauna": [
         {
           "id": 13,
-          "name_bororo": "Jui",
+          "name_indigenous": "Jui",
           "name_portuguese": "Caititu"
         }
       ]
@@ -33312,7 +33312,7 @@
       "_linked_fauna": [
         {
           "id": 47,
-          "name_bororo": "Kaga",
+          "name_indigenous": "Kaga",
           "name_portuguese": "Gavião Caracará / Pinhé"
         }
       ]
@@ -35075,7 +35075,7 @@
       "_linked_fauna": [
         {
           "id": 10,
-          "name_bororo": "Ki",
+          "name_indigenous": "Ki",
           "name_portuguese": "Anta"
         }
       ]
@@ -35516,7 +35516,7 @@
       "_linked_fauna": [
         {
           "id": 96,
-          "name_bororo": "Kidoe etumana",
+          "name_indigenous": "Kidoe etumana",
           "name_portuguese": "Periquito-d'asa-azul / tuim-de-asa-azul / periquito vassourinha"
         }
       ]
@@ -35621,7 +35621,7 @@
       "_linked_fauna": [
         {
           "id": 96,
-          "name_bororo": "Kidoe etumana",
+          "name_indigenous": "Kidoe etumana",
           "name_portuguese": "Periquito-d'asa-azul / tuim-de-asa-azul / periquito vassourinha"
         }
       ]
@@ -35642,7 +35642,7 @@
       "_linked_fauna": [
         {
           "id": 97,
-          "name_bororo": "Kidoguroe",
+          "name_indigenous": "Kidoguroe",
           "name_portuguese": "Abelha borá"
         }
       ]

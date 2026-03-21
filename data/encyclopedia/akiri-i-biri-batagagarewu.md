@@ -12,7 +12,7 @@ date: '2026-01-04'
 url: https://pt.wikipedia.org/wiki/Acacia
 images: []
 examples:
-- bororo: []
+- indigenous: []
   translation: []
 entry_type: ''
 infobox: {}

@@ -15,7 +15,7 @@ date: '2026-01-05'
 url: ''
 images: []
 examples:
-- bororo: <em>ino o ba</em>
+- indigenous: <em>ino o ba</em>
   translation: meu estojo peniano
 entry_type: ''
 infobox: {}

@@ -23,7 +23,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: Ra2 - Osso
+- indigenous: Ra2 - Osso
   translation: ossada, esqueleto, região do corpo contendo ossos
 entry_type: ''
 infobox: {}

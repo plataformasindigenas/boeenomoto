@@ -9,7 +9,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: []
+- indigenous: []
   translation: []
 entry_type: ''
 infobox: {}

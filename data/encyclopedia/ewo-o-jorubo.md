@@ -13,7 +13,7 @@ date: '2026-01-04'
 url: ''
 images: []
 examples:
-- bororo: erubo
+- indigenous: erubo
   translation: vegetal mágico [vegetal cuja flor seca apresenta pontas duras semelhantes
     a dentes de cascavel] Designação de um erubo. | É um cipó do cerrado cujas folhas
     esfregadas na flecha deveriam

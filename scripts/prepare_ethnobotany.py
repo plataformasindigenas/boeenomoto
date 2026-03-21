@@ -111,12 +111,15 @@ def transform_entry(entry: dict, download_images: bool = True) -> dict:
 
     # Copy standard fields
     result["id"] = entry["id"]
+    # Rename API's name_bororo to the generic name_indigenous
+    field_renames = {"name_bororo": "name_indigenous"}
     for field in ("name_bororo", "name_portuguese", "scientific_name", "family",
                   "usage", "types_of_use", "descriptions_of_use",
                   "fruiting_period", "environment"):
         val = entry.get(field)
         if val and str(val).strip():
-            result[field] = str(val).strip()
+            out_field = field_renames.get(field, field)
+            result[out_field] = str(val).strip()
 
     # Collapse abundance fields into list
     abundance = []
@@ -132,7 +135,7 @@ def transform_entry(entry: dict, download_images: bool = True) -> dict:
     if pic_link and str(pic_link).strip():
         pic_link = str(pic_link).strip()
         if download_images:
-            name = result.get("name_bororo") or result.get("name_portuguese") or ""
+            name = result.get("name_indigenous") or result.get("name_portuguese") or ""
             local = download_image(pic_link, result["id"], name)
             if local:
                 result["pic_link"] = local
@@ -166,7 +169,7 @@ def main():
     print(f"\nWrote {len(transformed)} entries to {output_file}")
 
     # Stats
-    fields = ["name_bororo", "name_portuguese", "scientific_name", "family",
+    fields = ["name_indigenous", "name_portuguese", "scientific_name", "family",
               "usage", "types_of_use", "descriptions_of_use",
               "fruiting_period", "environment", "abundance", "pic_link"]
     print("\nField completeness:")
