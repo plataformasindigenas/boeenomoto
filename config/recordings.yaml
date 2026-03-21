@@ -1,3 +1,0 @@
-input: ../data/recordings.json
-template: templates/recordings.html.j2
-output: ../docs/recordings.html

@@ -17,7 +17,7 @@ modules:
   fauna: { enabled: true }
   encyclopedia: { enabled: true }
   bibliography: { enabled: true }
-  recordings: { enabled: true }
+  recordings: { enabled: false }
   videos: { enabled: true }
 
 module_labels:
@@ -42,7 +42,7 @@ theme:
     - dictionary
     - encyclopedia
     - fauna
-    - recordings
+    - bibliography
   hero_height: "large"
   border_radius: "28px"
   colors:
