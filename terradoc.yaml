@@ -32,7 +32,7 @@ module_labels:
 
 theme:
   preset: "terra"
-  logo: "images/logo.png"
+  logo: "images/logo.svg"
   favicon: "images/favicon.ico"
   hero_image: "images/fauna_full.png"
   hero_images:
@@ -46,6 +46,11 @@ theme:
     - fauna
     - bibliography
   hero_height: "large"
+  hero_background: "moiety"
+  hero_motif: "moiety"
+  hero_divider: "moiety"
+  page_badge: "moiety"
+  grain_pattern: "dots"
   border_radius: "28px"
   colors:
     dark: "#0B0F17"
