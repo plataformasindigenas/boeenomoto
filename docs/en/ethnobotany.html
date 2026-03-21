@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico">
+    <title>Bororo Ethnobotany - Boe Eno Moto</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/terradoc.css">
+    <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+    <style>
+        :root {
+            --td-color-primary: #C81F2D;
+            --td-color-accent: #D4A03A;
+            --td-color-accent-muted: #A01924;
+            --td-color-bg: #F4F1EA;
+            --td-color-bg-light: #EDE9E0;
+            --td-color-bg-infobox: #FAF8F4;
+            --td-color-border: #DDD8CE;
+            --td-color-border-dark: #B8AFA2;
+            --td-color-text: #111827;
+            --td-color-text-muted: #6B6F5A;
+            --td-color-highlight: #FFF9DB;
+            --td-color-warning-bg: #FFF8E1;
+            --td-color-surface: #FFFFFF;
+            --td-color-border-light: #ECEAE5;
+            --td-color-text-secondary: #6B6F5A;
+            --td-color-accent-light: #FDECEA;
+            --td-color-success: #4A7C59;
+            --td-color-error: #C44536;
+            --td-color-accent-ring: rgba(200, 31, 45, 0.2);
+            --td-radius: 28px;
+            --td-color-dark: #0B0F17;
+            --td-radius-lg: 28px;
+            --td-radius-pill: 999px;
+            --td-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --td-font-headings: 'Sora', 'Inter', sans-serif;
+            --td-font-mono: 'IBM Plex Mono', 'Consolas', monospace;
+            --td-term-color: #A01924;
+            --td-term-weight: 600;
+            --td-color-gold: #D4A03A;
+        }
+/* ── Showcase: reusable card-grid layout (showcase-* prefix) ── */
+
+.showcase-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+.showcase-header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    width: 4px;
+    height: 48px;
+    background: var(--td-color-primary);
+    border-radius: 2px;
+}
+.showcase-header h1 { margin: 0; }
+.showcase-header .subtitle { margin: 0; }
+
+.showcase-controls {
+    background: var(--td-color-surface);
+    padding: 1rem;
+    border-radius: var(--td-radius);
+    border: 1px solid var(--td-color-border);
+    margin-bottom: 1rem;
+    box-shadow: var(--td-shadow-sm);
+}
+.showcase-controls .search-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.showcase-controls .search-input {
+    border-radius: 999px;
+}
+.showcase-controls .filter-select {
+    border-radius: 999px;
+}
+.showcase-stats {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--td-color-text-muted);
+}
+.showcase-hint {
+    text-align: center;
+    color: var(--td-color-text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+/* Section (category group) */
+.showcase-section {
+    margin-bottom: 1.5rem;
+}
+.showcase-section.hidden { display: none; }
+
+.showcase-section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--td-color-bg-light);
+    border-radius: 999px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 0.75rem;
+    transition: background 0.15s;
+}
+.showcase-section-header:hover {
+    background: var(--td-color-accent-light);
+}
+.showcase-section-header .chevron {
+    font-size: 0.75rem;
+    transition: transform 0.2s;
+    color: var(--td-color-primary);
+}
+.showcase-section-header.collapsed .chevron {
+    transform: rotate(-90deg);
+}
+.showcase-section-header .section-title {
+    font-weight: 600;
+    color: var(--td-color-primary);
+    font-size: 0.95rem;
+}
+.showcase-section-header .section-count {
+    font-size: 0.8rem;
+    color: var(--td-color-text-muted);
+    margin-left: auto;
+}
+
+/* Card grid */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 0.75rem;
+}
+.showcase-section-header.collapsed + .showcase-grid {
+    display: none;
+}
+
+/* Card */
+.showcase-card {
+    background: var(--td-color-surface);
+    border-radius: var(--td-radius);
+    border: 2px solid transparent;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.showcase-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.showcase-card.active {
+    border-color: var(--td-color-primary);
+}
+.showcase-card.hidden { display: none; }
+
+.showcase-card-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    background: var(--td-color-bg-light);
+    border-radius: 50%;
+    margin: 1rem auto 0;
+}
+.showcase-card-placeholder {
+    width: 100px;
+    height: 100px;
+    background: var(--td-color-bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--td-color-border-dark);
+    border-radius: 50%;
+    margin: 1rem auto 0;
+}
+
+.showcase-card-body {
+    padding: 0.5rem 0.6rem;
+}
+.showcase-card-body .card-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--td-color-primary);
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.showcase-card-body .card-sub {
+    font-size: 0.8rem;
+    color: var(--td-color-text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Inline detail panel (spans full grid width) */
+.showcase-detail {
+    grid-column: 1 / -1;
+    background: var(--td-color-surface);
+    border: 2px solid var(--td-color-primary);
+    border-radius: var(--td-radius);
+    padding: 1.5rem;
+    position: relative;
+    margin: 0.25rem 0 0.5rem 0;
+    animation: showcase-detail-in 0.2s ease-out;
+    box-shadow: var(--td-shadow-md);
+}
+@keyframes showcase-detail-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.showcase-detail-layout {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.showcase-detail-img {
+    width: 250px;
+    min-width: 250px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: var(--td-radius);
+    background: var(--td-color-bg-light);
+}
+.showcase-detail-placeholder {
+    width: 250px;
+    min-width: 250px;
+    height: 200px;
+    background: var(--td-color-bg-light);
+    border-radius: var(--td-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--td-color-border-dark);
+}
+.showcase-detail-info {
+    flex: 1;
+    min-width: 0;
+}
+.showcase-detail-info h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.35rem;
+    color: var(--td-color-primary);
+}
+.showcase-detail-info .detail-portuguese {
+    font-size: 1rem;
+    color: var(--td-color-text-muted);
+    margin-bottom: 0.5rem;
+}
+.showcase-detail-info .detail-scientific {
+    font-style: italic;
+    color: var(--td-color-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+.showcase-detail-info .detail-field {
+    font-size: 0.9rem;
+    color: var(--td-color-text-secondary);
+    margin-bottom: 0.3rem;
+}
+.showcase-detail-info .detail-field strong {
+    color: var(--td-color-primary);
+}
+.showcase-detail-info .detail-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    background: var(--td-color-accent-light);
+    color: var(--td-color-accent-muted);
+    padding: 0.2rem 0.75rem;
+    border-radius: 999px;
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    margin-right: 0.25rem;
+}
+.showcase-detail-info .detail-info-text {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: var(--td-color-warning-bg);
+    border-radius: var(--td-radius);
+    font-size: 0.9rem;
+    color: var(--td-color-text-muted);
+}
+.showcase-detail-info .detail-info-text + .detail-info-text {
+    margin-top: 0.35rem;
+}
+.showcase-detail-info .detail-abundance {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+.showcase-detail-info .detail-abundance table {
+    border-collapse: collapse;
+    margin-top: 0.25rem;
+}
+.showcase-detail-info .detail-abundance td {
+    padding: 0.15rem 0.75rem 0.15rem 0;
+    color: var(--td-color-text-secondary);
+}
+.showcase-detail-info .detail-abundance td:first-child {
+    font-weight: 600;
+    color: var(--td-color-primary);
+}
+.showcase-detail-links {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+.showcase-detail-links a {
+    font-size: 0.85rem;
+    color: var(--td-color-primary);
+    text-decoration: none;
+}
+.showcase-detail-links a:hover {
+    text-decoration: underline;
+}
+.showcase-detail-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--td-color-text-muted);
+    line-height: 1;
+    padding: 0.25rem;
+}
+.showcase-detail-close:hover {
+    color: var(--td-color-text);
+}
+
+/* No results */
+.showcase-no-results {
+    padding: 3rem;
+    text-align: center;
+    color: var(--td-color-text-muted);
+}
+.showcase-no-results h2 {
+    margin: 0 0 0.5rem 0;
+    color: var(--td-color-text-muted);
+}
+
+/* Tablet */
+@media (max-width: 900px) and (min-width: 701px) {
+    .showcase-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .showcase-detail-layout {
+        gap: 1rem;
+    }
+    .showcase-detail-img,
+    .showcase-detail-placeholder {
+        width: 160px;
+        min-width: 140px;
+    }
+}
+/* Mobile */
+@media (max-width: 700px) {
+    .showcase-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    .showcase-card-img,
+    .showcase-card-placeholder {
+        height: 120px;
+    }
+    .showcase-detail-layout {
+        flex-direction: column;
+    }
+    .showcase-detail-img,
+    .showcase-detail-placeholder {
+        width: 100%;
+        min-width: 0;
+        max-height: 220px;
+    }
+    .showcase-controls .search-row {
+        flex-direction: column;
+    }
+    .showcase-controls .search-row .search-input,
+    .showcase-controls .search-row .filter-select {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body class="td-style-terra">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <nav id="td-nav" aria-label="Main navigation">
+        <div class="td-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="../images/logo.png" alt="" class="brand-logo">
+                <span>Boe Eno Moto</span>
+            </a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <a href="dictionary.html">Dictionary</a>
+                <a href="encyclopedia.html">Encyclopedia</a>
+                <a href="fauna.html">Fauna</a>
+                <a href="ethnobotany.html" class="active" aria-current="page">Ethnobotany</a>
+                <a href="bibliography.html">Bibliography</a>
+                <a href="videos.html">Videos</a>
+            </div>
+            <div class="lang-switch" aria-label="Language selector">
+                    <a href="../pt/ethnobotany.html" class="lang-link">PT</a>
+<span class="lang-sep">/</span>                    <span class="lang-current" aria-current="true">EN</span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" class="td-container">
+    <header>
+        <h1><span class="td-decor-marker" style="width:10px;height:10px;background:var(--td-color-accent);border-radius:50%;" aria-hidden="true"></span> Bororo Ethnobotany <svg class="td-page-badge" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12,1 A11,11 0 0,1 23,12 L1,12 A11,11 0 0,1 12,1 Z" fill="var(--td-color-primary)" opacity="0.2"/>
+    <path d="M12,23 A11,11 0 0,1 1,12 L23,12 A11,11 0 0,1 12,23 Z" fill="var(--td-color-dark, #0B0F17)" opacity="0.2"/>
+    <circle cx="12" cy="12" r="11" fill="none" stroke="var(--td-color-primary)" stroke-width="1.2" opacity="0.3"/>
+    <line x1="1" y1="12" x2="23" y2="12" stroke="var(--td-color-text-muted)" stroke-width="0.6" opacity="0.2"/>
+</svg></h1>
+        <p class="subtitle">Bororo Ethnobotany Entries &mdash; 273 plants found</p>
+    </header>
+
+    <div class="showcase-controls">
+        <div class="search-row">
+            <input type="text" id="showcase-search" class="search-input"
+                   placeholder="Search (Bororo, Portuguese, or scientific name)..."
+                   autocomplete="off"
+                   aria-label="Search">
+            <select id="showcase-filter" class="filter-select"
+                    aria-label="Filter results">
+                <option value="">All families</option>
+                <option value="Anacardiaceae">Anacardiaceae</option>
+                <option value="Annonaceae">Annonaceae</option>
+                <option value="Apocynaceae">Apocynaceae</option>
+                <option value="Areacaceae">Areacaceae</option>
+                <option value="Asteraceae">Asteraceae</option>
+                <option value="Bignoniaceae">Bignoniaceae</option>
+                <option value="Bixaceae">Bixaceae</option>
+                <option value="Bromieliaceae">Bromieliaceae</option>
+                <option value="Burseraceae">Burseraceae</option>
+                <option value="Calophyllaceae">Calophyllaceae</option>
+                <option value="Caryocaraceae">Caryocaraceae</option>
+                <option value="Cochlospermaceae">Cochlospermaceae</option>
+                <option value="Euphorbiaceae">Euphorbiaceae</option>
+                <option value="Fabaceae">Fabaceae</option>
+                <option value="Lythraceae">Lythraceae</option>
+                <option value="Malvaceae">Malvaceae</option>
+                <option value="Melastoituraceae">Melastoituraceae</option>
+                <option value="Moraceae">Moraceae</option>
+                <option value="Oxilidaceae">Oxilidaceae</option>
+                <option value="Poaceae">Poaceae</option>
+                <option value="Polygonaceae">Polygonaceae</option>
+                <option value="Pontederiaceae">Pontederiaceae</option>
+                <option value="Sapindaceae">Sapindaceae</option>
+                <option value="Sapotaceae">Sapotaceae</option>
+                <option value="Solanaceae">Solanaceae</option>
+                <option value="Urticaceae">Urticaceae</option>
+                <option value="Velloziaceae">Velloziaceae</option>
+                <option value="Vochysiaceaea">Vochysiaceaea</option>
+            </select>
+        </div>
+        <div class="showcase-stats" id="showcase-stats" aria-live="polite"></div>
+    </div>
+
+    <div class="td-decor-motif" aria-hidden="true"><svg width="120px" height="8" viewBox="0 0 120 8" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="4" x2="52" y2="4" stroke="var(--td-color-border)" stroke-width="1.5"/><circle cx="60" cy="4" r="3" fill="var(--td-color-border)"/><line x1="68" y1="4" x2="120" y2="4" stroke="var(--td-color-border)" stroke-width="1.5"/></svg></div>
+
+    <p class="showcase-hint" id="showcase-hint">Click a plant to see details</p>
+
+    <div id="showcase-container"></div>
+
+    <div class="showcase-no-results" id="showcase-no-results" style="display:none">
+        <h2>No results</h2>
+        <p>Try a different name or change the filter</p>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-adugo-spine" aria-hidden="true">
+            <svg viewBox="0 0 1200 28" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="14" x2="1200" y2="14" stroke="var(--td-color-primary)" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+                <g stroke="var(--td-color-primary)" stroke-linecap="round" opacity="0.12">
+                    <line x1="45" y1="5" x2="45" y2="23" stroke-width="2.5"/>
+                    <line x1="68" y1="7" x2="68" y2="21" stroke-width="3.5"/>
+                    <line x1="105" y1="3" x2="105" y2="25" stroke-width="2"/>
+                    <line x1="120" y1="8" x2="120" y2="20" stroke-width="4"/>
+                    <line x1="160" y1="6" x2="160" y2="22" stroke-width="2.8"/>
+                    <line x1="195" y1="4" x2="195" y2="24" stroke-width="3.2"/>
+                    <line x1="265" y1="5" x2="265" y2="23" stroke-width="3"/>
+                    <line x1="298" y1="3" x2="298" y2="25" stroke-width="3.8"/>
+                    <line x1="335" y1="8" x2="335" y2="20" stroke-width="3.5"/>
+                    <line x1="372" y1="6" x2="372" y2="22" stroke-width="4"/>
+                    <line x1="408" y1="7" x2="408" y2="21" stroke-width="3.2"/>
+                    <line x1="468" y1="3" x2="468" y2="25" stroke-width="3.5"/>
+                    <line x1="498" y1="1" x2="498" y2="27" stroke-width="4.2"/>
+                    <line x1="528" y1="7" x2="528" y2="21" stroke-width="3.8"/>
+                    <line x1="558" y1="2" x2="558" y2="26" stroke-width="3.2"/>
+                    <line x1="590" y1="1" x2="590" y2="27" stroke-width="2.5"/>
+                    <line x1="615" y1="3" x2="615" y2="25" stroke-width="2.2"/>
+                    <line x1="645" y1="2" x2="645" y2="26" stroke-width="3"/>
+                    <line x1="672" y1="4" x2="672" y2="24" stroke-width="3.5"/>
+                    <line x1="705" y1="3" x2="705" y2="25" stroke-width="3.8"/>
+                    <line x1="738" y1="1" x2="738" y2="27" stroke-width="4"/>
+                    <line x1="790" y1="4" x2="790" y2="24" stroke-width="2.5"/>
+                    <line x1="828" y1="3" x2="828" y2="25" stroke-width="2.8"/>
+                    <line x1="865" y1="8" x2="865" y2="20" stroke-width="2.2"/>
+                    <line x1="900" y1="6" x2="900" y2="22" stroke-width="2.6"/>
+                    <line x1="980" y1="4" x2="980" y2="24" stroke-width="3.5"/>
+                    <line x1="1040" y1="6" x2="1040" y2="22" stroke-width="3.8"/>
+                    <line x1="1095" y1="7" x2="1095" y2="21" stroke-width="3.5"/>
+                    <line x1="1160" y1="9" x2="1160" y2="19" stroke-width="4"/>
+                </g>
+            </svg>
+        </div>
+        <div class="td-container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="brand" style="color:white;text-decoration:none;font-family:var(--td-font-headings);font-weight:700;font-size:1.15rem;display:inline-flex;align-items:center;gap:0.6rem;">
+                        <img src="../images/logo.png" alt="" class="brand-logo" style="width:56px;height:56px;">
+                        Boe Eno Moto
+                    </a>
+                    <p class="footer-brand-desc">A platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="dictionary.html">Dictionary</a></li>
+                        <li><a href="encyclopedia.html">Encyclopedia</a></li>
+                        <li><a href="fauna.html">Fauna</a></li>
+                        <li><a href="ethnobotany.html">Ethnobotany</a></li>
+                        <li><a href="bibliography.html">Bibliography</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">&#9906;</span>
+                        <span>Mato Grosso, Brazil</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Generated with <a href="https://pypi.org/project/terradoc/">terradoc</a>, <a href="https://pypi.org/project/aptoro/">aptoro</a> &amp; <a href="https://pypi.org/project/kodudo/">kodudo</a></p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/common.js"></script>
+    <script>
+    (function() {
+        var T = {"articles_label": "articles", "bib_empty_text": "Type an author, title, or year to begin", "bib_empty_title": "Search the bibliography", "bib_filter_all": "All types", "bib_no_results": "No results", "bib_no_results_hint": "Try a different author, title, or year", "bib_overflow": "Showing 100 of {n} results. Refine your search.", "bib_result_plural": "references found", "bib_result_singular": "reference found", "bib_search_placeholder": "Search (author, title, year)...", "bib_title": "Bororo Bibliography", "card_bibliography_desc": "Bibliographic references on the language, culture, and history of the Bororo people.", "card_bibliography_label": "references", "card_bibliography_title": "Bibliography", "card_cta": "Explore", "card_dictionary_desc": "Words and expressions in the Bororo language with Portuguese translations, phonetic transcriptions, and examples.", "card_dictionary_label": "entries", "card_dictionary_title": "Dictionary", "card_encyclopedia_desc": "Articles about culture, rituals, social organization, and traditional knowledge of the Bororo people.", "card_encyclopedia_label": "articles", "card_encyclopedia_title": "Encyclopedia", "card_ethnobotany_desc": "Plants used by the Bororo people with Bororo names, traditional uses, botanical families, and images.", "card_ethnobotany_label": "plants", "card_ethnobotany_title": "Ethnobotany", "card_fauna_desc": "Animal names in the Bororo language with traditional classification, scientific names, and images.", "card_fauna_label": "species", "card_fauna_title": "Fauna", "card_recordings_desc": "Audio corpus with recordings of words and expressions in the Bororo language.", "card_recordings_label": "recordings", "card_recordings_title": "Recordings", "card_videos_desc": "Video recordings of Bororo rituals, ceremonies, and cultural practices hosted on YouTube.", "card_videos_label": "videos", "card_videos_title": "Videos", "dict_all_pos": "All word classes", "dict_browse_hint": "Select an entry to see details", "dict_empty_text": "Type a word in Bororo or Portuguese to begin", "dict_empty_title": "Search the dictionary", "dict_filter_all": "All word classes", "dict_loading": "Loading dictionary...", "dict_no_results": "No results", "dict_no_results_hint": "Try a different word or change the filter", "dict_overflow": "Showing 100 of {n} results. Refine your search.", "dict_result_plural": "results found", "dict_result_singular": "result found", "dict_scientific_name": "Scientific name", "dict_search_placeholder": "Search (Bororo or Portuguese)...", "dict_title": "Bororo Dictionary", "enc_back_to_index": "Back to encyclopedia", "enc_breadcrumb_label": "Breadcrumb", "enc_browse_categories": "Browse by category", "enc_categories": "Categories", "enc_collapse": "Click to collapse", "enc_empty_text": "Type a term to begin", "enc_empty_title": "Search the encyclopedia", "enc_entry_type": "Type", "enc_examples": "Examples", "enc_external_link": "View external reference", "enc_featured_title": "Featured article", "enc_filter_all": "All categories", "enc_filter_uncategorized": "Uncategorized", "enc_graph_all": "All", "enc_graph_legend_category": "Category", "enc_graph_legend_entry": "Article", "enc_graph_title": "Connection map", "enc_highlights_title": "Illustrated articles", "enc_last_updated": "Last updated", "enc_loading": "Loading encyclopedia...", "enc_more_images": "More images", "enc_no_results": "No results", "enc_no_results_hint": "Try a different term or change the filter", "enc_overflow": "Showing 100 of {n} results. Refine your search.", "enc_read_more": "Read more", "enc_references": "References", "enc_result_plural": "articles found", "enc_result_singular": "article found", "enc_search_placeholder": "Search the encyclopedia...", "enc_see_also": "See also", "enc_title": "Bororo Encyclopedia", "enc_toc_title": "Contents", "enc_variants": "Variants", "enc_welcome_text": "An encyclopedia dedicated to the preservation and documentation of the cultural, linguistic, and ethnographic knowledge of the Bororo people.", "entries_label": "entries", "ethnobotany_category_uncategorized": "No family", "ethnobotany_detail_abundance": "Abundance", "ethnobotany_detail_environment": "Environment", "ethnobotany_detail_family": "Botanical family", "ethnobotany_detail_fruiting": "Fruiting period", "ethnobotany_detail_usage": "Usage (Bororo)", "ethnobotany_detail_usage_pt": "Usage description", "ethnobotany_filter_all": "All families", "ethnobotany_no_results": "No results", "ethnobotany_no_results_hint": "Try a different name or change the filter", "ethnobotany_result_plural": "plants found", "ethnobotany_result_singular": "plant found", "ethnobotany_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "ethnobotany_select_hint": "Click a plant to see details", "ethnobotany_title": "Bororo Ethnobotany", "fauna_category_uncategorized": "Uncategorized", "fauna_detail_classification": "Bororo classification", "fauna_detail_family": "Family", "fauna_empty_text": "Type a name in Bororo, Portuguese, or scientific to begin", "fauna_empty_title": "Search the fauna", "fauna_family": "Family", "fauna_filter_all": "All categories", "fauna_no_results": "No results", "fauna_no_results_hint": "Try a different name or change the filter", "fauna_overflow": "Showing 100 of {n} results. Refine your search.", "fauna_result_plural": "species found", "fauna_result_singular": "species found", "fauna_search_placeholder": "Search (Bororo, Portuguese, or scientific name)...", "fauna_select_hint": "Click an animal to see details", "fauna_title": "Bororo Fauna", "filter_label": "Filter results", "footer_and": "and", "footer_contact_heading": "Contact", "footer_credits": "Generated with aptoro \u0026 kodudo", "footer_description": "A platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "footer_email": "", "footer_generated": "Generated with", "footer_license": "", "footer_location": "Mato Grosso, Brazil", "footer_nav_heading": "Navigation", "footer_resources_heading": "Resources", "footer_text": "", "html_lang": "en", "index_about_cite": "ENOMOTO, T. Boe eno moto: Bororo World [digital platform]. 2024. Available at: https://plataformasindigenas.github.io/boeenomoto/", "index_about_cite_title": "How to cite", "index_about_p1": "\u003cstrong\u003eBoe eno moto\u003c/strong\u003e (\"Bororo world\") is a platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_about_p2": "This repository brings together a variety of linguistic and ethnographic resources, both historical and contemporary, with the goal of supporting teaching, research, and revitalization efforts for the Bororo language. The platform offers a set of tools aimed at linguistic and anthropological study.", "index_about_partners_title": "Partners", "index_about_subtitle": "Learn about the platform", "index_about_title": "About the Project", "index_about_who_title": "About us", "index_gallery_subtitle": "Visual and audio recordings of Bororo culture", "index_gallery_title": "Images \u0026 Sounds", "index_hero_cta": "Explore", "index_hero_subtitle": "A platform dedicated to the preservation, documentation, and appreciation of the linguistic and cultural knowledge of the Bororo people.", "index_hero_tagline": "The Bororo World", "index_hero_title": "Boe Eno Moto", "index_quote": "Language is the spirit of the people. To preserve the language is to preserve the soul of a culture.", "index_quote_attribution": "Bororo proverb", "index_sections_title": "Explore", "index_title": "Home", "index_view_all_dictionary": "View dictionary", "index_view_all_encyclopedia": "View encyclopedia", "index_view_all_fauna": "View fauna", "index_view_all_videos": "View videos", "infobox_cl\u00e3": "Clan", "infobox_coordenadas": "Coordinates", "infobox_dura\u00e7\u00e3o": "Duration", "infobox_esta\u00e7\u00e3o": "Season", "infobox_fam\u00edlia": "Family", "infobox_fun\u00e7\u00e3o": "Function", "infobox_fun\u00e7\u00f5es": "Functions", "infobox_habitat": "Habitat", "infobox_local": "Location", "infobox_material": "Material", "infobox_membros": "Members", "infobox_nome_cient\u00edfico": "Scientific name", "infobox_papel": "Role", "infobox_participantes": "Participants", "infobox_per\u00edodo": "Period", "infobox_regi\u00e3o": "Region", "infobox_rela\u00e7\u00f5es": "Relations", "infobox_rio": "River", "infobox_tipo": "Type", "infobox_usos": "Uses", "lang_switch_label": "Language selector", "nav_bibliography": "Bibliography", "nav_brand": "Boe Eno Moto", "nav_dictionary": "Dictionary", "nav_encyclopedia": "Encyclopedia", "nav_ethnobotany": "Ethnobotany", "nav_fauna": "Fauna", "nav_label": "Main navigation", "nav_menu_label": "Menu", "nav_recordings": "Corpus", "nav_videos": "Videos", "pos_ADV": "Adverb", "pos_CONJ": "Conjunction", "pos_DEM": "Demonstrative", "pos_INTJ": "Interjection", "pos_IP": "IP", "pos_LEX": "Lexeme", "pos_NUM": "Numeral", "pos_POSP": "Postposition", "pos_PPART": "Particle", "pos_PPAS": "Past Part.", "pos_PPASS": "Past Part.", "pos_PRCL": "Particle", "pos_PRON": "Pronoun", "pos_PROPN": "Proper Noun", "pos_S": "Noun", "pos_SUF": "Suffix", "pos_V": "Verb", "pos_VC": "Causative Verb", "pos_VT": "Trans. Verb", "pos_X": "Other", "rec_col_audio": "Audio", "rec_col_date": "Date", "rec_col_match": "Match", "rec_col_speaker": "Speaker", "rec_col_word": "Word", "rec_count_label": "recordings", "rec_filter_format": "Format", "rec_filter_match": "Match type", "rec_filter_speaker": "Speaker", "rec_filters_title": "Filters", "rec_no_results": "No recordings found", "rec_overflow": "Showing 200 of {n} recordings. Refine your search.", "rec_search_placeholder": "Search recordings...", "rec_subtitle": "Audio recordings of the Bororo language", "rec_title": "Recordings Corpus", "references_label": "references", "search_label": "Search", "see_also": "See also", "see_in_dictionary": "See in Dictionary", "see_in_encyclopedia": "See in Encyclopedia", "see_in_fauna": "See in Fauna", "skip_link": "Skip to content", "species_label": "species", "stat_bibliography_entries": "references", "stat_dictionary_entries": "entries", "stat_encyclopedia_entries": "articles", "stat_ethnobotany_entries": "plants", "stat_fauna_entries": "species", "stat_recordings_entries": "recordings", "stat_videos_entries": "videos", "vid_count_label": "videos", "vid_filter_all": "All categories", "vid_subtitle": "Video recordings of Bororo culture", "vid_title": "Videos", "vid_watch": "Watch on YouTube"};
+        var ALL_DATA = [{"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura (pobo okwa)", "family": "Bromieliaceae", "fruiting_period": "Julho / agosto", "id": 1, "name_bororo": "Nanai / morogorarewu", "name_portuguese": "Abacaxi-do-mato / abacaxi-do-boku", "pic_link": "images/ethnobotany_001_nanai_morogorarewu.jpg", "scientific_name": "Ananas ananassoides (Baker) L.B. Sm.", "types_of_use": null, "usage": null}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura (pobo okwa)", "family": "Sapotaceae", "fruiting_period": "Outubro a janeiro", "id": 2, "name_bororo": "Bokogorewu / jokukuie tae", "name_portuguese": "Abil", "pic_link": "images/ethnobotany_002_bokogorewu_jokukuie_tae.jpg", "scientific_name": "Pouteria torta subsp. glabara T.D penn.", "types_of_use": null, "usage": "Ere kurody kowuje, ere kurudo tugeje tuguduwo ce"}, {"abundance": [{"level": "maka jokody kare", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura", "family": "Malvaceae", "fruiting_period": "Maio a agosto", "id": 3, "name_bororo": "Pariwa", "name_portuguese": "A\u00e7oita-cavalo", "pic_link": "images/ethnobotany_003_pariwa.jpg", "scientific_name": "Luehea divaricata mart.", "types_of_use": null, "usage": "Boe modo iwo tawuje, tugera magaduwo ia boe ero tabo (turo monogodae, boe ero boe ego biadodu"}, {"abundance": [{"level": "biagare", "village": "Pi\u00e9baga"}, {"level": "maka jokody kare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura", "family": "Malvaceae", "fruiting_period": "Epoca de cultivo", "id": 4, "name_bororo": "Akigoamekurewu", "name_portuguese": "Algod\u00e3o", "pic_link": "images/ethnobotany_004_akigoamekurewu.jpg", "scientific_name": "Gossypium hirsutum L.", "types_of_use": null, "usage": "Boere a codo kidoguro tabo, dure boere reko tuwia paruji tumeadae pemegawo boe ero jamedu boeji"}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura, boku", "family": "Bixaceae", "fruiting_period": "Agosto", "id": 5, "name_bororo": "Akigorewu (bacororoepa akigorewu)", "name_portuguese": "Algod\u00e3ozinho", "pic_link": "images/ethnobotany_005_akigorewu_bacororoepa_akigorewu.jpg", "scientific_name": "Cochlospermum regium (Schrank) pilg.", "types_of_use": null, "usage": "Boere boe jodo ukwa keje dure boere berago, tuguri kori epado ema, tuwire kigori jamedu. As ra\u00edzes na \u00e1gua em banhos, ap\u00f3s os c\u00e2nticos, para evitar dores de cabe\u00e7a, garganta, mal estar etc"}, {"abundance": [{"level": "bokwado makare; rumuga biagare", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "1 -makare, 2 -biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura, boku", "family": "Fabaceae", "fruiting_period": "Janeiro / fereiro", "id": 6, "name_bororo": "Mekodo parewu", "name_portuguese": "Amarel\u00e3o / garapa", "pic_link": null, "scientific_name": "Apuleia leiocarpa (Vogel) J.F. Macbr.", "types_of_use": null, "usage": "boere ika, kamorewu, ira, bai ipodo nowu i tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": "boku", "family": "Fabaceae", "fruiting_period": "diferentes epocas, conforme a especie", "id": 7, "name_bororo": "Batorarewu diorubo", "name_portuguese": "Amendoim", "pic_link": "images/ethnobotany_007_batorarewu_diorubo.jpg", "scientific_name": "Chamaecrista spp. Moenche", "types_of_use": null, "usage": "boere nowu i rugudu reko boetore enogwaji ere tugo tuiagibero pega ro pega kawo ei. boere reko aredu kuiarurewudukuriji onogaredo areduwo ema"}, {"abundance": [{"level": "maka jokody kare", "village": "Pi\u00e9baga"}, {"level": "boe bokware", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura (kurugwa okwa)", "family": "Moraceae", "fruiting_period": "Dezembro / janeiro", "id": 8, "name_bororo": "Oko", "name_portuguese": "Amoeira-da-itura", "pic_link": "images/ethnobotany_008_oko.jpg", "scientific_name": "Maclura tinctoria (L.) D. Don ex Steud.", "types_of_use": null, "usage": "boere nowu i biri kuru epado boe ekuri kori boe ewija kuri epado ema jamedu"}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "boe bokware", "village": "C\u00f3rrego Grande"}, {"level": "boe bokware", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boe bokware", "family": "Fabaceae", "fruiting_period": "Julho / agosto", "id": 9, "name_bororo": "Akiri kigado", "name_portuguese": "Angico branco", "pic_link": "images/ethnobotany_009_akiri_kigado.jpg", "scientific_name": "Anadenanthera colubrina (Vell.) Brenan", "types_of_use": null, "usage": "Boe erigire ema, boe ewai lpore ema. Boere aroia kabidodu epa towuje nowu urugudu tabo, nowu jorubo kudu pemegare boe ewaboji"}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura", "family": "Fabaceae", "fruiting_period": "Julho / setembro", "id": 10, "name_bororo": "akiri", "name_portuguese": "Angico", "pic_link": "images/ethnobotany_010_akiri.jpg", "scientific_name": "Anadenanthera falcata (Benth.) speg.", "types_of_use": null, "usage": "Boere paro ipo, bai ipodo ema, boe erigire ema jamedu a rogure boere tugiedo ema. Boere nowu i toguru ta dure boere berego boe ekojari epace"}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "boe bokware", "village": "C\u00f3rrego Grande"}, {"level": "boe bokware", "village": "Tadarimana"}], "descriptions_of_use": "usam a madeira na constru\u00e7\u00e3o de casas", "environment": "kurugwa okwa pobo okwa", "family": "Lythraceae", "fruiting_period": "Agosto / setembro", "id": 11, "name_bororo": "Managurui / managururewu", "name_portuguese": "Aric\u00e1", "pic_link": "images/ethnobotany_011_managurui_managururewu.jpg", "scientific_name": "Physocalymma scaberrimum Pohl", "types_of_use": "constru\u00e7\u00e3o", "usage": null}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "boe bokware", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}, {"level": "constru\u00e7\u00e3o, artesanato, medicinal", "village": "Meruri"}], "descriptions_of_use": "usam na constru\u00e7\u00e3o de casas e cercas, para fazer arco pil\u00e3o e lan\u00e7a (borduna). Cozinham a casca at\u00e9 ficar melada e passam em fraturas, ferimentos, coceiras, contus\u00f5es e c\u00e3ibra. Usam a entrecasaca para luxa\u00e7\u00e3o e tomam o cozimento como preventivo de c\u00e2ncer de \u00fatero.", "environment": "itura (pobo okwa jiwu)", "family": "Anacardiaceae", "fruiting_period": "Julho a setembro", "id": 12, "name_bororo": "Burudui", "name_portuguese": "Aroeira", "pic_link": null, "scientific_name": "Myracrodruon urundeuva allem\u00e3o", "types_of_use": "constru\u00e7\u00e3o, medicinal", "usage": "Boere bai ipodo ema. Boere balgado, kalborido, aragodo ema Jamedu.Boere biri mugudo nowu bekuru remawu bogai t  Kuru remawure boere mado ia tugorirebe ji ia tugugodae ji, ake epare ema jamedu, Boere kuru berego t\u00faguduwo ce boe etoriwudu, boe ekuiboka, boe ataga kori pegarewu ji:"}, {"abundance": [{"level": "maka jokody kare", "village": "Pi\u00e9baga"}, {"level": "boe bokware", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura", "family": "Asteraceae", "fruiting_period": "Agosto", "id": 13, "name_bororo": "Bacetaojiakirirewu", "name_portuguese": "Assa-peixe", "pic_link": "images/ethnobotany_013_bacetaojiakirirewu.jpg", "scientific_name": "Vernonanthura phosphorica (Vell.) H. Rob.", "types_of_use": null, "usage": "Boere bai ipodo ema. Boere baigado, kaiborido, aragodo ema jamedu. Boere biri mugudo nowu bekuru remawu bogai t"}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku", "family": "Malvaceae", "fruiting_period": "Mar\u00e7o / abril", "id": 14, "name_bororo": "Paragorewu", "name_portuguese": "Axix\u00e1", "pic_link": "images/ethnobotany_014_paragorewu.jpg", "scientific_name": "Sterculia pruriens", "types_of_use": null, "usage": "Boere aru berego boe ekojari, ake epace"}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku, boe gigadu", "family": "Malvaceae", "fruiting_period": "Junho a agosto", "id": 15, "name_bororo": "Bo", "name_portuguese": "Azedinho", "pic_link": null, "scientific_name": "Sterculia striata A. St.-Hil-\u0026 naudin", "types_of_use": null, "usage": "Kodure boere kowuje. Aru berego kuru pemegare boe etoriwudu kori ji"}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku", "family": "Oxilidaceae", "fruiting_period": "Mar\u00e7o", "id": 16, "name_bororo": "Boe eto pagodae", "name_portuguese": null, "pic_link": "images/ethnobotany_016_boe_eto_pagodae.jpg", "scientific_name": "Oxalis densifolia Mart. ex Zucc.", "types_of_use": null, "usage": "Boere kody kowuje"}, {"_linked_encyclopedia": [{"id": "noido", "title": "Noido"}], "abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku, boe gigadu", "family": "Areacaceae", "fruiting_period": "Agosto / Setembro", "id": 17, "name_bororo": "Noido", "name_portuguese": "Baba\u00e7u", "pic_link": "images/ethnobotany_017_noido.jpg", "scientific_name": "Attalea speciosa Mart.", "types_of_use": null, "usage": "Boere a gori kowuje. Boere ikado tabo, bai aodo ema jamedu"}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "boe bokware", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": "comem o palmito, fazem farnha para mingau, comem a fruta; e usam a mat\u00e9ria prima para tran\u00e7ados", "environment": "itura, boku", "family": "Areacaceae", "fruiting_period": "Dezembro a mar\u00e7o", "id": 18, "name_bororo": "Akudo (palmeira)", "name_portuguese": "Bacaiuva / Bocaiuva / Maca\u00faba", "pic_link": "images/ethnobotany_018_akudo_palmeira.jpg", "scientific_name": "Acrocomia aculeata (jacq.) lodd. ex Mart.", "types_of_use": "alimento, constru\u00e7\u00e3o, artesanato", "usage": "Boere tuioku kori epado nowu raru kuruce. Boere toedo aru keje tuwo kuru remo turuwo kori ji. Boere aru berego Boe ewiri uru, boe ekojari epare ema jamedu. Boere taimo nowu kuru tabo tuwiri kigori pegarewu ji"}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku, boe gigadu", "family": "Areacaceae", "fruiting_period": "Dezembro a mar\u00e7o", "id": 19, "name_bororo": "Akudo (palmeira) / kuimare (pequeno)", "name_portuguese": "Bacuri / acuri", "pic_link": "images/ethnobotany_019_akudo_palmeira_kuimare_pequeno.jpg", "scientific_name": "Acrocomia aculeata (jacq.) lodd. ex Mart.", "types_of_use": null, "usage": "Boere nowu no kududo dure boere kugudo, noa a boere kowuje itoia jamedu, Boe ero makare nowu ai tabo: kodo, kodorabo, parikiboto. Boere nowu ai bu tuwai ao ji, tuwai paru ji. Boe enogwagere noa a ji, itoiaji barae ekogodae anemia ji. nowu no kudy pemegare barae egore"}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura", "family": null, "fruiting_period": null, "id": 20, "name_bororo": "Apegire (fruto) / apido (planta)", "name_portuguese": "B\u00e1lsamo", "pic_link": "images/ethnobotany_020_apegire_fruto_apido_planta.jpg", "scientific_name": "Impatiens walleriana", "types_of_use": null, "usage": "Ere baigado ito\u00f5e, iage ere bai towuge tabo. Ere pemegado tugeje ia boe ero boekege. Ere kugudo, kowu (mugudo/ berego), buturedu dure ere kowuge."}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku, itura", "family": null, "fruiting_period": null, "id": 21, "name_bororo": "baiogo", "name_portuguese": "Barbatim\u00e3o-cascudo / fevereiro", "pic_link": null, "scientific_name": "Stryphnodendron adstringens", "types_of_use": null, "usage": "Ere a kowuge, ere kudydo dure ere tugu juto"}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "boe bokware", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura", "family": null, "fruiting_period": null, "id": 22, "name_bororo": "Poro ekarewu", "name_portuguese": "Barbatim\u00e3o-liso", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere baigado ito\u00f5e, iage ere bai towuge tabo. Ere pemegado tugeje ia boe ero boekege. Ere kugudo, kowy (mugudo/ berego), buturedu dure ere kowuge Ere a kowuge, ere kududo dure ere tugu juto"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 23, "name_bororo": "Betaga Erubo", "name_portuguese": "Barbatim\u00e3o-peludo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "nowu a botugody kuru re ere tuioku kori epado ema, boe tore eia ekeru pegi epado ema. Emode nowu buturedu kowyge, ere mugudo, kowy jamedu."}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 24, "name_bororo": "Betagaikonogo / Betaga Biri Kororogodyrewu", "name_portuguese": "Baru", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere kududo, kugudo, torudo, iworo kurudo ema (ia boe ero boe keje ekudumo ce. Emode nowu apidoia kowuje nowu ai ere kodarabodo ema, parikiboto, kodo, baku, Emode ai bu tuwai ao ji paru ji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 25, "name_bororo": "Miacerewu Erubo", "name_portuguese": "Batata-do-tiu", "pic_link": null, "scientific_name": "Operculina macrocarpa", "types_of_use": null, "usage": "Ere meririku ipodo ema, bai ipogurure ema (bai ipo boiadadawu)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 26, "name_bororo": "Parori", "name_portuguese": "Batata-marulete / batata-maroleite / batata-purunga", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere kurodurogu kowuje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 27, "name_bororo": "jekojagurewu (tadarimana) / Je kwugegurewu Erubo (piebaga)", "name_portuguese": "Batatinha", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere biri berego nowu kuru ere redo ariato tuwo tumugudo tada, areme ekogodae pegarewu epace, I biri kuru cere ekudumode emode reko tuwiri kuroduji bituwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 28, "name_bororo": "pagadi ikuredo", "name_portuguese": "Bate-caixa", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere biri berego dure pemegare boe ecebae boeji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 29, "name_bororo": "oko", "name_portuguese": "Bolsa-de-pastor / bolsinha-de-pastor", "pic_link": null, "scientific_name": "Capsella bursa-pastoris L.", "types_of_use": null, "usage": "Ukwa boe ere beredo du cere boe etore ekudure boe pegarewuji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 30, "name_bororo": "kie eke aru xaru / kie erubo", "name_portuguese": "Bord\u00e3o", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere a kowu dure ere kowuje, ere a kududo, nowu tudu boere kurudo. nowu i ere kaiado ema bai ipogurure ema. nowu biri pemegare moce epace. Ere biri tugu poboto dure ere tugu ia poari boeto tuguduwo ce dure erubore ema awu boe ewiri ekogodae pega boeji, boe ekuiboka kori, boe epegaguru, boe ekuri kori. nowu biri kuru pemegare boe ekojariji, awagu mode toedo epare ema jamedu, boe toriwudo kori, boe ewureado kori pegare epa rema jamedu, umode tigera bararedo boe erageduwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 31, "name_bororo": "Tugorirewu", "name_portuguese": "Bosta-de-baiano / carrapicho", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere kagu pobo okodo kao dure ere reko pudui togorirewu boeji, etogorire jiu boeli, ewiri kigori pegarewu, pemegare mokuiao doge eto oia kigoriji, boe ewiri kigori pegarewu epare ema jam\u00e9du. Ukwa ere berego tuguduo kurue awu boe ekogodaeji: boe ewiri uru, boe ecebae ure tadudu-dodu, barogo peguru epa, boe pegaguru ku, barae kogodae pegarewu jeture-boeidu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 32, "name_bororo": null, "name_portuguese": "Buriti", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Nowu ukwa kuru pe re pemegare barogo peguruji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 33, "name_bororo": null, "name_portuguese": "Buritirana", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere mugudo, kowytuwo kowuje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 34, "name_bororo": null, "name_portuguese": "Buta(piebaga)", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere ukwa kowu dure ere codo boei, boere ia tubagudure ceboe kowuje dukeje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 35, "name_bororo": null, "name_portuguese": "Caba\u00e7a", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere biri berego nowu kuru pemegare boe epegaguru, boe epegaguru kuji. Nowu biri kobo, boe erubore ema tuwaidigiriwo karei"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 36, "name_bororo": null, "name_portuguese": "Cabaelo-de-nego / corticeiro", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Aru boere reko aroe ewiriji, aroe akedu mariguwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 37, "name_bororo": null, "name_portuguese": "Caetano / mel\u00e3o-de-s\u00e3o-caetano", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere ai, ukwa berego tuguduwo kuruce, boe emokowudo epa"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 38, "name_bororo": null, "name_portuguese": "Caia pia / cara pia", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Tudu ere kududo, ere kuru pagodydo, betureboedo ema ere kurudo. Ere itaguru tawuje tuwo baiga ikudo, nowu ai bai awujiwure ema, ere torodo ema, tureruwo fabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 39, "name_bororo": null, "name_portuguese": "Caite", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere t\u00fawaigado ito\u00e8e, boe ekuiere nowu itaguruce, boere kodo towuje ai tabo oro tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 40, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Erubore ema tubegagurugi. Rore pa pal jewuge boere ekuiedo ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 41, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Emode akodo turagodykeje. Boe ewabore ema turagoduwo tabo, boewo pobo reko tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 42, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Bai ipoguru boiadodawure ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 43, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe emode etaimo nowu iwara kuruce ukwa kuru\u00e8e boe ewiri uru epa nure ema, barae ekogodae pegarewu epa nure ema jamedu (dengue, doen\u00e7a de chagas, mal\u00e1ria, gastrite, e tosse) boe ekojari. Aru kuru boe elogore pudui bara ekogodae pegarewu ji (hepatite) boe etore ewudu beregadugody epa nure ema jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 44, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere nowu ukwa kow uredudui kodi boe eiogi boe etaora koriji nowu kudurogu boe elogore pudui boe eia pegaji boe eia kuroduji. Boe ere nowu jorubo ukwa kurudo duji re boe enogwagere boe enoroja pegaji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 45, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere mano tawuje aroe padui baiadada dukeje ple aroedo ture remagu pui jamedu mano tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 46, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "boe ere tugowudu bitudo a pemegare tuwo boe ekuri butudo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 47, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurodu kowuje, boe ere kurudo, barae ere juko etaregarewudo ema, iwara jore tow pobo betu rirewu rogu, barae ere betureboe bekurudu tabo. Anacardiaceae Boe ere nowu a gori kowuje. Boe emode nowu koo araka bu tu (goiaba) kigadurewu i biri keje boe ere beredo pemegare boe epegaguruji. Nowu ukwa boe eiogore pudui ecew barae egore tori meture boe etadaduji (pedra na ves\u00edcula), eew barae ekogodae iere (diabete e colesterol alto) epa nure ema jamedu. Boe ere beredo du boe ekudure ce to kori epace peegare tuwo boe etodo kabi jamedu (depurativo)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 48, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tugera pemegado etaimoda jurubo kuruce du boe ere kurireboe etaimo ce ewidugugoduwo boe etore jokuru kurirewu jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 49, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe emode tumikado I de tuwai ipodo ema jamedu. Boe ere i biri beredo tugojari epace nowu biri boe epegagur epa\u00f5e"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 50, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe eno ipo bigody nure ema tumeruwo tumika tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 51, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe eiogore pudui nowu iwara ukwa tabo tori meture boe etoriwudo tada duji (pedra nos rins), barae ekogodae iere (ves\u00edcula), boe epegaguru, boe ekure kurire boe epiji du, awagu oia pegarewu (t\u00e9tano). Ere taimo nowu aru kuruce, ekera biadodur\u00e9 nowu aru tabo, pegarewu monorewu ewo utudo tubiji, ewo barigu tubiji. Ere nowu okora udo turugadu ewo manodo ema (aiagodyre ereru mode tabo). Ere nowu tudu kuru, nowu kurodu kuru reko ia boe, awagoe etoegudure jiboei"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 52, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere aru ukwa beredo boe eiogore pudui tabo ake ji, boe ekojari biakure boe eiduji, boe ewiri uruji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 53, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere boe jodo i biri keje kody keje boe eiogore pudui tabo taora koriji tumedugody ji. Kuru pemegare boe eto koriji. Boe ere nowu i biri kurudo du boe eiogore pudui tabo ecewu barae ekogodae pegarewu ure tugeragu boe ei boe erare piji duji, Boe erubore tudu rogue bokureboeji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 54, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tubaro ipodo ema boe ere tuwai jurado ema"}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "itura", "family": "Poaceae", "fruiting_period": null, "id": 55, "name_bororo": "Poari iwo", "name_portuguese": "Capim-bambu", "pic_link": null, "scientific_name": "Merstachys spp. Spreng", "types_of_use": null, "usage": "Boe emaragodyre ji boe ero kurirewuto biarewuto"}, {"abundance": [{"level": "boku, boe gigadu", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}, {"level": "makare", "village": "Meruri"}], "descriptions_of_use": null, "environment": "itura, boku", "family": "Poaceae", "fruiting_period": null, "id": 56, "name_bororo": "Tugumana", "name_portuguese": "Capim-flechinha", "pic_link": null, "scientific_name": "Echinolaena inflexa", "types_of_use": null, "usage": "Boe ere urugudurogu reko areme emoguro ji uwo kori akedudo"}, {"abundance": [{"level": "makare", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku, boe gigadu", "family": "Poaceae", "fruiting_period": "Abril", "id": 57, "name_bororo": "Okuwadoge etoburewu", "name_portuguese": "Capim gordura", "pic_link": "images/ethnobotany_057_okuwadoge_etoburewu.jpg", "scientific_name": "Melinis minutiflora", "types_of_use": null, "usage": "Boe ere nowu jorubo kurudo du tabore boe eiogore pudui boe etogorire pudui duji boe edawu korire pudui duji, boe ewogody boe ewiri kigoriji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 58, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere nowu i biri beredo du boe elogore pudui tuwiri urul, turuwo kori, tugojari kurii, tuwiri pegai, etore ewudae re kurire pudui duji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 59, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere aru tugu tu tudo tui turemo boeto du oto dai tuwure jo kawo awagu keje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 60, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere aru uredudu kodi bace ei, Ukwa kow du urugudu rogure boe ereireko pudui uwo boe pegarewu ja do boe epiji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 61, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere boe etore etaimo aru kuruce emeru mariguwo. Boe eiogore boe etore ei ukwa tabo ekawo tugeragu boe pegarewuji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 62, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere awu ukwa beredo pemegare boe ewareduji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 63, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ewai ipore ema meriri iku ipore ema jamedu-"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 64, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tumikado i rema, tudaraiga boe ewai ipoguru ure ema jamedu. Boe ere aru araka beredo boe ekuri kori epace du boe ere boe etore etaimo ce jamedu eduruwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 65, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere aru ukwa bu tu pugeje dure boe ere berego boe eiogore tore ei eto botu mariguwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 66, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurodu mugudo kurudo boe ere kurodurogu kowuje. Boe ere kuru butudo baito. I biri pemegare boe epegaruruji tuwo boe eragedudo jamedu boe eiogore pudui tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 67, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere udo ainono kodydu reore (rakare kodi durure kodi)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 68, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurodu kowje, iere kaweredo ere nowu enogu kowuje. Ere nowu kaidaga ai oro, ereru tabo (boe itaga, boe jerimaga keje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 69, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere tugeragu nowu kaguruji tugojari epa\u00f5e, baere tuwogado, boe ekera, boe ewure bokodyre, boe etonaregedo buture maiwu ukunabo bitu mariguwo\\nArecaceae\\nBoe ere nowu kaidaga a kururogu barigu tuiokuto, taiwo pemegawo, tuiorudu pemegawo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 70, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tudogarado ema, tudogo epace, paro, kuiara, kaibori, aragodo"}, {"abundance": [{"level": "Maka jokodykare", "village": "Pi\u00e9baga"}, {"level": "Makare", "village": "C\u00f3rrego Grande"}, {"level": "Biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "Boku", "family": "Melastoituraceae", "fruiting_period": "Fevereiro / mar\u00e7o", "id": 71, "name_bororo": "Biaro poroporo", "name_portuguese": "Coroadinho (piebaga)", "pic_link": "images/ethnobotany_071_biaro_poroporo.jpg", "scientific_name": "Mouriri elluptica", "types_of_use": null, "usage": "Boe ere nowu biaru poporo kurodu ere kurudo tuguduwo ce"}, {"abundance": [{"level": "Maka jokodykare", "village": "Pi\u00e9baga"}, {"level": "Biagare", "village": "C\u00f3rrego Grande"}, {"level": "Biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "Boku, boe gigady", "family": "Sapotaceae", "fruiting_period": "Fevereiro / mar\u00e7o", "id": 72, "name_bororo": "Taru", "name_portuguese": "Curriola / fruta-de-viado (piebaga)", "pic_link": "images/ethnobotany_072_taru.jpg", "scientific_name": "Pouteria ramiflora", "types_of_use": null, "usage": "Boe ere kurodu kowuje, boe ekere ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 73, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere nowu kuru bekuru tugu taoto tao kugudugoduwo tao pemegawo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 74, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe erbore ema nowu aru, iwara, ukwa ere mugudo joru tada tuguduwo ce, uwo tugu pemegado, igurudu pemegawo boe erubo nure ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 75, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere nowu aru tugu taokudawu kuda, iadu ere taimo nowu aru kuruce boe ewudugugoduwo, boekori kawo boe"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 76, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere ikudo toreduwo to barege ebo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 77, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere mugudo tuguduwo de ere berego, nowu aru ere gugudo poboto tuvo taimo tabo, nowu a ere mugudo joru tada\n          beregodyo ere epado boe ewini"}, {"abundance": [{"level": "Makare", "village": "Pi\u00e9baga"}, {"level": "Makare", "village": "C\u00f3rrego Grande"}, {"level": "Biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "Boku", "family": "Euphorbiaceae", "fruiting_period": null, "id": 78, "name_bororo": "Riwodo erubo", "name_portuguese": "Erva-de-andorinha / erva_de-passarinho", "pic_link": null, "scientific_name": "Euphoria potentiloides", "types_of_use": null, "usage": "nowu aru kur\u00f9rogu boe ere reko tuwia, togwa poro ji bity mariguwo"}, {"abundance": [{"level": "Makare", "village": "Pi\u00e9baga"}, {"level": "Makare", "village": "C\u00f3rrego Grande"}, {"level": "Makare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "Itura (pobo okwa)", "family": "Moraceae", "fruiting_period": "Agosto / setembro", "id": 79, "name_bororo": "Ari", "name_portuguese": "Figueira branca", "pic_link": null, "scientific_name": "Ficus dendrocida", "types_of_use": null, "usage": "Boe enoroe, boe jerimaga, boe itaga kejere pemegadodure"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 80, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "nowu ukuare ere mugudo joru tada ere beredo tuguduwo ce ere tugojari epado ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 81, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "nowu aru ere mugudo joru tada ere beredo tuguduwo ce ere tugojari epado ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 82, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe enoroe nure ema mare boe jerimaga, boe itaga kejere boere tugera kiowado ji"}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "makare", "village": "C\u00f3rrego Grande"}, {"level": "biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "Boe jaguru (itura, boku)", "family": "Apocynaceae", "fruiting_period": null, "id": 83, "name_bororo": "Jorubo aogigirerewu", "name_portuguese": "Garobinha", "pic_link": null, "scientific_name": "Aspidosperma subincanum", "types_of_use": null, "usage": "Nowu ukware ere mugudo joru tada berego tuguduwo ce, ere tuguri kori, tubegaguru, tugiboka kori epado ema jamedu, uwo tugu pemegado"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 84, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Nowu arogu kududo reko ia tuwure, tubogora kurodurewuji. Nowu ukwa ere mugudo joru tada ere berego tuguduwo ce togojari ku epace, ewo tugu pe-megado areme etorewudae, boe etore eku epado ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 85, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurodu kowuje, boe ere kodyre maidu tudu kowuje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 86, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurodu kowuje. Nowu araka ere mugudo joru tada beregodyre nowu i biri pemegare boe epegaguru epa reno"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 87, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tugera kiogwado ji tuwai epace, irawo ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 88, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere nowu kurodu mugudo joru tada enogwagere ji. Jaoboe mariguduboe enogwagere kuduji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 89, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe erubore nowu aru, nowu ukwa, boe eku pemegawo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 90, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere nowu biri padure i kejewu tugu ia meririto pobo tabo, nowu biri ere mugudo joru tada ekudure ce turageduwo. Nowu i tabo ere toroe boe ipodo ema taraiga"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 91, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Enogwagere nowo kurodurogu ji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 92, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere aru mugudo joru tada berego ere epado tuwiri uru, taora kori. Boe ere kowu joruto uredududo uwo boe pegarewu barigu utudo, laboe biarewure ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 93, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "nowu aru, nowu ukwa boe ere tore etaimo kuruce tore ekogody kawo, tore epega kawo dubogaire eroino ji. Boe ere nowu uru mugudo joru tada tugu-duwo e tuwiri uru epace, tugojari epace, tuguri kori epace"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 94, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere araka mugudo joru tada jorubo boe ekojari i epado ema (ikuri epado ema). Boe erubore nowu ioide, boe ere tugana kado, boe ere tumure kado. boere iwoi tawuje kogudo nowu korirewu kajeje. Ere nowu araka mugudo joru tada tugojari epado ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 95, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe etao epa nure ema boe eiogore ji tabo pemegawo motuwo"}, {"abundance": [{"level": "Makare", "village": "Pi\u00e9baga"}, {"level": "Biagare", "village": "C\u00f3rrego Grande"}, {"level": "Biagare", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "Itura (pobo okwa)", "family": "Fabaceae", "fruiting_period": "Novembro a fevereiro", "id": 96, "name_bororo": "Tori kobo", "name_portuguese": "Ing\u00e1-mirim", "pic_link": null, "scientific_name": "Inga sessilis", "types_of_use": null, "usage": "Boe enogware nowu kurodu ji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 97, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Nowu i ere tugera kiogwadoji bai epace, irado ema. Ere nowu iwoi, mea kogudo to tugeje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 98, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe enogwagere nowu kuroduji, ere kurudo. Ere nowu aru mugudo joru tada, ere tuiedawu kori epado ema, ere\n          awu areme etoroja epado ema, epeme-gawo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 99, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe eiogore aroe ei tabo boe ere etugu moto du oto dai"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 100, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ukwa kowudodure, cododure boe etorei, erijodu rewo pudui, erijodu mariguwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 101, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurudo tugeje enogwagere ji. nowu i ure turugado boe ewai, ika, epace. Ere nowu i biri mugudo jory tada boe ecegurugudo epa, boe ekigori epa. Ere nowu a kowy joruto ere nowu tubegaguru epado ema. Ere nowu kody, nowu i kuru tadu, epado boe emearudu ewaduwo pudui, tugu cowo. Ere nowu biri okodo tapira mokuro kuru kao tyiorubodo ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 102, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boedoge ere kurudo enogwagere kody ji. Ere nowu kurucodo ewo tadugodo tabo. Ere awu toroe meriri boe ipodo nowu bie ipoce. Ere aroe ekedo ema toro baito. Ere udo urugado bekurudo tuwo tugu taoto, tao kororogoduwo. Ere nowu kurodu, jorubo kurudo ema, cegurugudu epace, tugu cowo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 103, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere ikado ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 104, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere ikado ema. nowu ibiri ere tugu poboto tuwure kori epado ema, togorire puduido, tuguri kori, tugiboka kori epado ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 105, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere tugiedo, bourado ema paduwo tuwugeje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 106, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe eiogore pudui boe ero kurirewu keje boe ero biarewu keje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 107, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tugedo ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 108, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere bekurudo tao epace, nowu ukwa ere reko tuwureadoji, tuwureado kawo tuwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 109, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "nowu aru ere mugudo joru tada boe etore jokuruga doge etaragudu kigody akeduwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 110, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Ere aru mugudo joru tada ekudure ce, nowu aru ere gugudo jamedu tuwo reko tubogora kuroduji, epogora bokodyre ere rekoji jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 111, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurodu kowuje. Ere nowu tudu kagu poboto, tuiorubodo ema, boe ekuri kori pegarewu, boe epegaguru, bakuru korewu peagody. Ere nowu oku mug\u00fcdu joru tada, du ekudure ce, ere areme etoroja epado ema, uwo etoroja pemegado, ekuibokwa kori epado ema jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 112, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere aru berego du boe eiogore aredu kogogodaeji tabo. Boe eiogore aredu ji kuiaruwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 113, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere ukwa, aru ureduduwo uwo tuiodo boe pegarewu keje, boere nowu i biri ukwa beredo boe ekuri kori, boe ewiri kurodu, boe etaora"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 114, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Barae ere nowu ira bu tuwai aoji, boere aru, ukwa, kowuje jui tabo du boe eiogore negedorogu kodyi maidurogu ji,\n          boe pegarewu jetu kawoji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 115, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere boe jodo keje du ekudure kuruce tugojari ji, tuwiri uruji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 116, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Kodure boere kowuje, boe eiogore torei aru tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 117, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe eigore pudui, ukwa tabo tuwo pobogo kowuje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 118, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere kurodu kowje, boere betudo, boere kurudo. Boere i kuru okodo norigo kao. Boe erigirire ema. Boe ekera magadure boe eroji kuru tabo. Kuru pemegare boe ekuri kori ji. Kuru pemegare boe epegaguru kuji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 119, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe eiogore tugogoriji, tuwiri kurody ji tabo, i kuru pemegare boe ekuiboka kori ji jamedu. Boe biri, aru beredo du boere reko kigori pegarewuji, awu barae egore diabete epare ema. Boe ekuiboka kori epare ema jamedu. Boe eiogore tugogoriji aru tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 120, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere aru, ukwa berego du pemegare boe etaora kori ji barae egore conceptivo ji jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 121, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere ukwa berego boe ekuri kori epace"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 122, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere kurodu kowuje, boere kurudo jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 123, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere kurodu kowuje, boere kurudo jamedu, boere aru enogu beredo boe epegag\u00faru epace"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 124, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere kurodu kowuje boere kurudo jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 125, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere ukwa beredo boe epegaguru, boe ekuri kugudu epace jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 126, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere nowu ito kuru epado boe eto kori epace, boe ekojari epace, awu boe ekeno meadu jiwu boe ekogodae"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 127, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere reko, boe etore kodyre maiwu biriji kiogwagiri otodai (boe ero iedodu). Boe eto kori epare nowu i kuru, boere nowu i uru berego tugojari epace awu\\nboe ekeno meadu jiwu boe ekogodae epare ema jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 128, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere Kurodu kowuje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 129, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere i biri kuru tawuje du boe ekudure ce boere reko awagu oiaji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 130, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boere kurodu kowuje, Boere ukwa kowu du boe elogore boe etonaregedu kodyre maiwuli tabo, boe eniao pegaji."}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Polygonaceae", "fruiting_period": null, "id": 131, "name_bororo": "Jukorewugeeiga", "name_portuguese": "Pau-formiga", "pic_link": null, "scientific_name": "Triplaris Americana", "types_of_use": null, "usage": "Boe ere aru beredo (barure ekogodyre) barae ekogody (diabetes) ji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Calophyllaceae", "fruiting_period": null, "id": 132, "name_bororo": "Berago / Beragou i", "name_portuguese": "Pau-Santo", "pic_link": null, "scientific_name": "Kielmeyera coriacea", "types_of_use": null, "usage": "Boe ere to beragu udo ce boe ero kurirewu keje. Boe ere nowu beragu tugu ropa doge eworito boe ere tuwaiga bekurododore"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Vochysiaceaea", "fruiting_period": null, "id": 133, "name_bororo": "Kietowudurewu", "name_portuguese": "Pau-terr\u00e3o / Pau-terra-amarelo", "pic_link": "images/ethnobotany_133_kietowudurewu.jpg", "scientific_name": "Qualea grandiflora", "types_of_use": null, "usage": "Boe ere tudu kowuje tubegaguru ji. Boe ere aru gugudo dure boe ere tugu tu tuieto boe ero kurirewu keje Boe ere tudu kowuje tubegaguru ji. Boe ere aru gugudo dure boe ere tugu tu tuieto boe ero kurirewu keje"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 134, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "boe jodo i biri keje boe ere tugu poboto du cere boe ekudure awagu oia ji boe ere reko oia mugaji jamedu. Boe ere tuwai ipodo ema jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 135, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere ukwa i biri beredo du cere boe ekudure tubegaguruji, tuguri koruji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 136, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe erubore nowu tudurogu kuruce akogo akeduwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 137, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere ukwa beredo du boe erubore ema barae ekogodoe e ekure duji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 138, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere turagedu epado ukwa kuruce"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 139, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere ikudo kodyduce"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 140, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "tugudu kowuje a jamedu. Boe enogwagere kaguru tugo boeto. Boe ekaia ure i ce. Boe ere kurirewu to. Boe enoguagere aru kuruji turageduwo ukwa boe etori wuduji. Boe ere berego tugojari raiji, aru areme emoguro kori ji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 141, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere ukwa beredo boe e kigadure duji, boe etore e ekure duji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 142, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tugu tugeto, aru pemegare bokureboeji."}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 143, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tuwai jurado ema ipodo ema. Boe ere barege ekogodado do ema"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 144, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tugodydudo ema, tuwai jurado tuwai aogajejeu megajejeudo ema jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 145, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere kurodu kowuje kurudo jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 146, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere tuwaido ipoce boe ere kow mace dogei jamedu. Boe ere taimo i biri kuru ce tuguri kugudu tugu tabo duji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 147, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere i biri beredo du cere boe ekudure tore eudae ure boe epebaru korido duji pemegare tuwo boe etodo kabi jamedu"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 148, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere ukwa beredo du cere boe ekudure barae ekogodae mugure boe ekui boka keje duji boe ewiri uruji jamedu."}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 149, "name_bororo": null, "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe ere aru kowuje turuwo waduwo turaji boe ere aru beredo tore eudae ure tubebaru korido duji"}, {"_linked_encyclopedia": [{"id": "tadari", "title": "Tadari"}], "abundance": [{"level": "Biagare", "village": "Pi\u00e9baga"}, {"level": "Biagare", "village": "C\u00f3rrego Grande"}, {"level": "Boe bokware", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "Itura", "family": null, "fruiting_period": null, "id": 150, "name_bororo": "Tadari", "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Boe enogwagere ji tugudy ji torudodu ji"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 151, "name_bororo": "Ore epa iorubo", "name_portuguese": "Pau de barata", "pic_link": null, "scientific_name": "Toulicia laevigata", "types_of_use": null, "usage": "Flexionam as folhas nas picadas da tucangira"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 152, "name_bororo": "Readoge iorubo", "name_portuguese": "Ca\u00ednca (cip\u00f3)", "pic_link": "images/ethnobotany_152_readoge_iorubo.jpg", "scientific_name": "Chiococca alba", "types_of_use": null, "usage": "O caule carbonizado, associado \u00e0 almecega (kidoguru \u2013 resina da amescla ou breu branco) \u00e9 aplicado nas inflama\u00e7\u00f5es"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 153, "name_bororo": "Boe erubo bokwadui aro rumaga", "name_portuguese": "Jatob\u00e1 do Campo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As folhas na \u00e1gua substitui os sabonetes nos banhos evitando as doen\u00e7as contagiosas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 154, "name_bororo": "Boe okoripadi boikagigedu epa", "name_portuguese": "Batata do Bugre", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As folhas na \u00e1gua substitui os sabonetes nos banhos evitando as doen\u00e7as contagiosas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 155, "name_bororo": "Cudobo iorubo", "name_portuguese": "Cabelo de Negro (casca branca)", "pic_link": "images/ethnobotany_155_cudobo_iorubo.jpg", "scientific_name": "Guazuma ulmifolia", "types_of_use": null, "usage": "Cren\u00e7a ind\u00edgena, de que jogando as folhas na dire\u00e7\u00e3o para qual a ca\u00e7a corre, diminui a a\u00e7\u00e3o, dando oportunidade de ser abatido pelos ind\u00edgenas sem grandes esfor\u00e7os"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 156, "name_bororo": "Kie o Jorubo ikui", "name_portuguese": "Erva Molar / l\u00edngua de vaca", "pic_link": null, "scientific_name": "Holcus mollis", "types_of_use": null, "usage": "Esfregam as folha a noite nas pernas para n\u00e3o serem picados por cobras"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 157, "name_bororo": "Ocerago", "name_portuguese": "Gravat\u00e1 / Macambira", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As flores os bororo colocam nos orif\u00edcios das orelhas para terem vivacidade e n\u00e3o esquecerem os grandes c\u00e2nticos religiosos"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 158, "name_bororo": "Bope iorubo / Meriri iorubo", "name_portuguese": "L\u00edrio do campo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Na aus\u00eancia do Bari, as ca\u00e7as que abatem, e que s\u00e3o necess\u00e1rias serem benzidas os bororo cobrem com as folhas as ca\u00e7as para que n\u00e3o recebam o castigo do Bope (esp\u00edrito maligno que segundo a lenda, acompanha os bororo incr\u00e9dulos.)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 159, "name_bororo": "Aroe erubo", "name_portuguese": "Caet\u00e9", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Por ocasi\u00e3o da festa do Marido, os bororo esfregam as folhas no corpo e colocam os ramos nas orelhas, para poderem ter rela\u00e7\u00f5es sexuais e n\u00e3o morrerem"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 160, "name_bororo": "Betaga o jorubo", "name_portuguese": "Dormideira", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As ra\u00edzes triturada, \u00e9 passada nas disten\u00e7\u00f5es musculares eliminando as dores"}, {"_linked_encyclopedia": [{"id": "marido", "title": "Marido"}], "abundance": [{"level": "bokware", "village": "Pi\u00e9baga"}, {"level": "bokware", "village": "Tadarimana"}], "descriptions_of_use": "com o fruto fazem farinha, vinho doce e suco. Tiram a seda do broto para fazer fio de arco. A palha serve para fazer telhado, artesanato, saias (usadas no ritual)", "environment": null, "family": null, "fruiting_period": null, "id": 161, "name_bororo": "Marido", "name_portuguese": "Buriti", "pic_link": null, "scientific_name": "Mauritia flexuosa L. f.", "types_of_use": "alimento, artesanato, constru\u00e7\u00e3o, ritual", "usage": "Tudu ere kududo, ere kuru pagodudo, betureboedo ema ere kurudo. Ere itaguru tawuje tuwo ba\u00edga ikudo, nowu ai bai awujiwure ema, ere torodo ema, tureruwo tabo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Velloziaceae", "fruiting_period": null, "id": 162, "name_bororo": "Parikigarewu", "name_portuguese": "Canela de ema", "pic_link": "images/ethnobotany_162_parikigarewu.jpg", "scientific_name": "Vellozia squamata", "types_of_use": null, "usage": "O fruto mastigado e expelido \u00e9 rem\u00e9dio contra dores de garganta"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 163, "name_bororo": "Atuboe Jagarewu", "name_portuguese": "Unha de Boi", "pic_link": "images/ethnobotany_163_atuboe_jagarewu.jpg", "scientific_name": "Bauhinia candicans Benth.", "types_of_use": null, "usage": "Quando por engano os bororo matam um veado servo (Atubo). ca\u00e7a esta que s\u00f3 por engano matam-a, amedrontados com a senten\u00e7a de morte que lhe \u00e9 atribu\u00edda, passam as folhas no rosto e ficam isentos do castigo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 164, "name_bororo": "Care erubo biarepoporo", "name_portuguese": "Coroa de frade", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As folhas s\u00e3o colocadas nas redes de pesca para apanhar grande quantidade de peixes"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 165, "name_bororo": "Boecuri naregedo jorubo epa poro ji", "name_portuguese": "Mulateira", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "A madeira carbonizada \u00e9 passada sobre o ventre da mulher gr\u00e1vida para que i filho nas\u00e7a robusto"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 166, "name_bororo": "Boto cujagurewu biagarewu", "name_portuguese": "Japecanga", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As ra\u00edzes raspadas, passadas no rosto, permitem que o homem que estiver envenenado por outro nada sofra"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 167, "name_bororo": "Arareuodarewu", "name_portuguese": "Vinh\u00e1tico", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As cascas na \u00e1gua bebem contra dores de barriga"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 168, "name_bororo": "Curobo i", "name_portuguese": "Imbiruss\u00fa", "pic_link": "images/ethnobotany_168_curobo_i.jpg", "scientific_name": "Pseudobombax grandiflorum", "types_of_use": null, "usage": "Todo homem que j\u00e1 matou muitas on\u00e7as, ficam sujeito a sonhos maus com on\u00e7as, para evitar isto, usam tirar uma imbira para amarrarem ao pesco\u00e7o quando v\u00e3o dormir"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 169, "name_bororo": "Joguare o jorubo", "name_portuguese": "Cruzeiro", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Os frutos esmigalhados passam na cara dos cachorros, para tornarem bons para seguir a ca\u00e7a"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 170, "name_bororo": "Boe curi kuriepa ikurewu", "name_portuguese": "Pega Pinto", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Cozinham as folhas e bebem contra dores de barriga"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Bixaceae", "fruiting_period": null, "id": 171, "name_bororo": "Bacororoepa akigo orewu", "name_portuguese": "Algod\u00e3ozinho", "pic_link": "images/ethnobotany_171_bacororoepa_akigo_orewu.jpg", "scientific_name": "Cochlospermum regium", "types_of_use": null, "usage": "As ra\u00edzes na \u00e1gua em banhos, ap\u00f3s os c\u00e2nticos, para evitar dores de cabe\u00e7a, garganta, mal estar, etc"}, {"abundance": [{"level": "aliment\u00edcio e medicinal", "village": "Meruri"}], "descriptions_of_use": "comem o fruto fazem suco, sovete, doce. Comem a castanha torrada, fazem ch\u00e1 de broto de Koco com a casaca da goiaba branca para a diarreia. A raiz \u00e9 usada para tratar pedra na ves\u00edcula, diabetes, e colesterol alto. Fazem ch\u00e1 para dor de dente e depurativo. As folhas tenras mastigadas passam nos olhos para provocarem a ins\u00f4nia", "environment": null, "family": null, "fruiting_period": "setembro-novembro", "id": 172, "name_bororo": "Koco", "name_portuguese": "Caj\u00fa do campo/caj\u00fa do cerrado", "pic_link": "images/ethnobotany_172_koco.jpg", "scientific_name": "Anacardium humile A. St. Hil.", "types_of_use": null, "usage": "Boe \u00e9re kurodu kowuje, boe ere kurudo, barae ere juko etaregareudo ema, iwara jore towu pobo betu rirewurogu, barae ere betureboe bekurudu tabo. Boe ere nowu a gori kowuje. Boe emode nowu koco araka bu tu (goiaba) kigadurewu i biri keje boe ere beredo pemegare boe epegaguru ji. Nowu ukwa boe eiog ore pudui ecewu barae egore tori mature boe etadaduji (pedra na ves\u00edcula), ecewu barae ekogodae iere (diabete e colesterol alto) epanure ema jamedu Boe ere beredo du boe ekudure ce to kori epace pemegare tuwo boe etodo kabi jamedu (depurativo)."}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 173, "name_bororo": "Parikiogodo o jorubo", "name_portuguese": "Caroba", "pic_link": "images/ethnobotany_173_parikiogodo_o_jorubo.jpg", "scientific_name": "Jacaranda caroba", "types_of_use": null, "usage": "A raiz em ch\u00e1 contra dores de urina"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 174, "name_bororo": "Boe erudogimano aro", "name_portuguese": "Caet\u00e9", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Por ocasi\u00e3o da festa do Mano, se por acaso as mulheres presenciam a sua chegada, adoecem de asma, ent\u00e3o usam queimar a raiz desta planta, e misturam com almecega, passando no rosto das mulheres, e estas, ficam boas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Moraceae", "fruiting_period": null, "id": 175, "name_bororo": "Kodu i iporewu", "name_portuguese": "Figueira", "pic_link": null, "scientific_name": "Ficus obtusifolia", "types_of_use": null, "usage": "(merindiba) O leite da madeira \u00e9 usado para conservar o urucum no estado pastoso"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 176, "name_bororo": "Iwararagarewu", "name_portuguese": "Aritucum do campo", "pic_link": "images/ethnobotany_176_iwararagarewu.jpg", "scientific_name": "Annona crassiflora", "types_of_use": null, "usage": "As ra\u00edzes os bororo queimam, projetando a fuma\u00e7a para o lado em que se encontra uma pessoa, que deseja que adoe\u00e7a"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 177, "name_bororo": "Okwa iorubo", "name_portuguese": "Ch\u00e1 de frade", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Batem as folhas nas pernas para n\u00e3o cansarem nas caminhadas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 178, "name_bororo": "Koge eibarararewu", "name_portuguese": "Pau de Morcego", "pic_link": null, "scientific_name": "Andira fraxinifolia", "types_of_use": null, "usage": "As folhas substituem o sab\u00e3o"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Solanaceae", "fruiting_period": null, "id": 179, "name_bororo": "Mearurewu", "name_portuguese": "Fumo Bravo", "pic_link": null, "scientific_name": "Solanum bullatum", "types_of_use": null, "usage": "As folhas esfregadas nas m\u00e3os, passam na parte frontal da cabe\u00e7a contra dores"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 180, "name_bororo": "Cogekereru \u00ed", "name_portuguese": "Cambar\u00e1", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O ch\u00e1 das folhas tenras contra a tosse"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 181, "name_bororo": "Paragorewu iorubo", "name_portuguese": "Ata do Mato", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Colocam a imbira no pesco\u00e7o quando viajam, para n\u00e3o adoecerem"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 182, "name_bororo": "Arika", "name_portuguese": "Marmelada de copinho", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "A madeira fazem arma\u00e7\u00e3o do buque (rede de pesca)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 183, "name_bororo": "Bukedaga enogo", "name_portuguese": "Tucum", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Cozinham o palmito e bebem a \u00e1gua contra febres"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 184, "name_bororo": "Boco ika", "name_portuguese": "Marmelada Preta", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O carv\u00e3o do caule \u00e9 passado no rosto, contra perturba\u00e7\u00f5es mentais"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Caryocaraceae", "fruiting_period": null, "id": 185, "name_bororo": "Eco ipo", "name_portuguese": "Piqui", "pic_link": null, "scientific_name": "Caryocar brasiliense", "types_of_use": null, "usage": "O carv\u00e3o da madeira, os bororo comem contra a hemoptise (cuspir sangue)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 186, "name_bororo": "Kioro", "name_portuguese": "Capim de praia", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O caule queimado aplicam nas feridas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 187, "name_bororo": "Manaru tugo epa", "name_portuguese": "Lixeira", "pic_link": null, "scientific_name": "Aloysia virgata", "types_of_use": null, "usage": "Para lixar as pontas das flechas"}, {"abundance": null, "descriptions_of_use": "Usam a madeira para fazer canoa, remo, e para a constru\u00e7\u00e3o de casas. fazem ch\u00e1 do broto da folha para c\u00f3lica e banho para fortificar a crian\u00e7a. Fazem rem\u00e9dio para as galinhas n\u00e3o adoecerem.", "environment": null, "family": null, "fruiting_period": "junho-agosto", "id": 188, "name_bororo": "Noakodo i / Rea tarewu / Rea doge etuararewu", "name_portuguese": "Acaiac\u00e1/Cedro", "pic_link": "images/ethnobotany_188_noakodo_i_rea_tarewu_rea_doge_etuararewu.jpg", "scientific_name": "Cedrella fissilis vel.", "types_of_use": "constru\u00e7\u00e3o, artesanato, medicinal", "usage": "Boe ere tumikado i rema, tudaraiga boe ewai ipoguru ure ema jamedu. Boe ere aru araka beredo boe ekuri kori epace du boe ere boe etore etaimo ce jamedu eduruwo"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 189, "name_bororo": "Cudo i", "name_portuguese": "Timb\u00f3", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Por ocasi\u00e3o das festas, as mulheres recusam a virem tomar parte nos c\u00e2nticos, ent\u00e3o um homem apanha as folhas, esfrega-as nas m\u00e3os, e, lan\u00e7a sobre as casas das mulheres, logo depois todas elas v\u00eam tomar parte nos festejos"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 190, "name_bororo": "Jeporo", "name_portuguese": "Aritucum folhas grandes", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Esfregando as folhas nos olhos dos advers\u00e1rios cegam-nos imediatamente"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Fabaceae", "fruiting_period": null, "id": 191, "name_bororo": "Paekejorubo", "name_portuguese": "Angelim", "pic_link": "images/ethnobotany_191_paekejorubo.jpg", "scientific_name": "Ormosia arborea", "types_of_use": null, "usage": "Mastigam as folhas para terem b\u00f4a voz"}, {"abundance": null, "descriptions_of_use": "Fazem ch\u00e1 das folhas contra tosse", "environment": null, "family": "Urticaceae", "fruiting_period": null, "id": 192, "name_bororo": "Kujare epa jorubo", "name_portuguese": "Imba\u00edba / Umbaiba / Umba\u00fava", "pic_link": null, "scientific_name": "Cecropia polystachya", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": "Passam a raiz carbonizada no rosto contra febres", "environment": null, "family": null, "fruiting_period": null, "id": 193, "name_bororo": "Joku kuie tai", "name_portuguese": "Guavira", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": "Usam o sumo das folhas contra picada de escorpi\u00e3o", "environment": null, "family": null, "fruiting_period": null, "id": 194, "name_bororo": "Boeto Pagodyda", "name_portuguese": "Azedinha", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 195, "name_bororo": "Kie emogorurewu", "name_portuguese": "Mama de Porca", "pic_link": null, "scientific_name": "Rutaceae", "types_of_use": null, "usage": "Passam as folhas no seio das menores imp\u00faberes, para n\u00e3o terem seios grandes quando mo\u00e7as"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Malvaceae", "fruiting_period": null, "id": 196, "name_bororo": "Orogo iorubo", "name_portuguese": "Curraleira", "pic_link": null, "scientific_name": "Vassourinha-curraleira", "types_of_use": null, "usage": "Mastigam as folhas para serem bons para correr"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Malvaceae", "fruiting_period": null, "id": 197, "name_bororo": "Aroecody corewu", "name_portuguese": "Paineira", "pic_link": null, "scientific_name": "Eriotheca gracilipes", "types_of_use": null, "usage": "As imbiras s\u00e3o usadas para amarrar as ca\u00e7as abatidas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 198, "name_bororo": "Boto kujagurewu", "name_portuguese": "Lim\u00e3o bravo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O caule \u00e9 usado nos feiti\u00e7os"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Euphorbiaceae", "fruiting_period": null, "id": 199, "name_bororo": "Ju umana", "name_portuguese": "Mandioca Brava", "pic_link": "images/ethnobotany_199_ju_umana.jpg", "scientific_name": "Manihot esculenta", "types_of_use": null, "usage": "As folhas introduzem nos cazeiros das sa\u00favas, extinguindo-as"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 200, "name_bororo": "Kimao", "name_portuguese": "Algod\u00e3ozinho folhas espinhosas", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Para os mesmos fins do N 25"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 201, "name_bororo": "Jugodoge eimejera o jorubo", "name_portuguese": "Unha de gato", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Passam as folhas na boca, para quando conversarem atra\u00edrem as outras pessoas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 202, "name_bororo": "Cogure iorubo", "name_portuguese": "Hortel\u00e3 do Campo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Bebem as folhas na \u00e1gua contra dores de garganta"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 203, "name_bororo": "Ocoge iorubo", "name_portuguese": "Alecrim", "pic_link": "images/ethnobotany_203_ocoge_iorubo.jpg", "scientific_name": null, "types_of_use": null, "usage": "As folhas esmigalhadas com almecega, passam sobre o ventre da mulher que acabou de ter o parto, desaparecendo as dores"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 204, "name_bororo": "Beojorubo", "name_portuguese": "Canela de seriema", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O caule queimado passam nas pernas dos meninos para n\u00e3o luxar"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Apocynaceae", "fruiting_period": null, "id": 205, "name_bororo": "Toroa i", "name_portuguese": "Peroba", "pic_link": "images/ethnobotany_205_toroa_i.jpg", "scientific_name": "Aspidosperma polyneuron", "types_of_use": null, "usage": "(Ip\u00ea) Da madeira faziam antigamente o cabo dos machados de pedra"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 206, "name_bororo": "Acorewu", "name_portuguese": "Cascudo (olho de boi)", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Passam o caule carbonizado no t\u00f3rax em sentido longitudinal"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 207, "name_bororo": "Boetore echeba jorubo i\u00f4do", "name_portuguese": "Sete Sangrias", "pic_link": null, "scientific_name": "Cuphea carthagenensis", "types_of_use": null, "usage": "Usam o leite no orif\u00edcio labial para cicatrizar"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 208, "name_bororo": "Baregue evirerewu", "name_portuguese": "Goiabinha do Mato", "pic_link": null, "scientific_name": "Psidium guineense", "types_of_use": null, "usage": "A casca queimada, aplicam na cabe\u00e7a contra a caspa e contra o embranquecimento prematuro dos cabelos"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 209, "name_bororo": "Jorubo Pakatuje", "name_portuguese": "Roseira do Campo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Usam esfregar as folhas no corpo para evitar doen\u00e7as"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 210, "name_bororo": "Baiugo", "name_portuguese": "Imbirus\u00fa rasteiro", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Esfregam o carv\u00e3o da madeira, quando furam os dentes das on\u00e7as abatidas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Fabaceae", "fruiting_period": null, "id": 211, "name_bororo": "Baria i", "name_portuguese": "Pau de Oleo", "pic_link": "images/ethnobotany_211_baria_i.jpg", "scientific_name": "Copaifera trapezifolia", "types_of_use": null, "usage": "O \u00f3leo passado sobre o ventre da mulher, faz com que esta fique gravida sempre"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 212, "name_bororo": "Tabaro \u00f3 jorubo", "name_portuguese": "Garraf\u00e3ozinho", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O banho do cozimento das folhas dado \u00e0 mulher que acabou de ter o parto e ao rec\u00e9m nascido, faz com que este n\u00e3o seja traquinas (travesso, inquieto, danado)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 213, "name_bororo": "Boe inuiaupega epa", "name_portuguese": "Pi\u00fava do Campo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O carv\u00e3o da madeira passam no rosto para evitar maus sonhos"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 214, "name_bororo": "Boeerubo podetugorogorewu", "name_portuguese": "Negro Mina", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As folhas esfregam no peito contra dores"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Bignoniaceae", "fruiting_period": null, "id": 215, "name_bororo": "Aige iorubo", "name_portuguese": "Boca de sapo", "pic_link": null, "scientific_name": "Jacaranda brasiliana", "types_of_use": null, "usage": "As folhas passam no corpo da mulher que viu o Aije"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 216, "name_bororo": "Jugo epa", "name_portuguese": "Erva Mijona", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Esfregam as folhas nas pontas das flechas envenenando-as"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 217, "name_bororo": "Jomo iorubo", "name_portuguese": "Samambaia Mirim", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Colocam as folhas nas orelhas quando v\u00e3o pescar"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 218, "name_bororo": "Roia epe", "name_portuguese": "Semente de algod\u00e3o", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Socado, o \u00f3leo passam nos occipitais (nuca) para terem boa memoria"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 219, "name_bororo": "Nabure uke jorubo", "name_portuguese": "Goiabinha do Cerrado", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Mastigam as folhas para gritarem bem alto"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 220, "name_bororo": "Marigido Ariri", "name_portuguese": "Palmito da gariroba", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "O caule tenro queimado passam no ventre da mulher para ter filhos (Comem ou chupam tamb\u00e9m)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 221, "name_bororo": "Metygo iorubo", "name_portuguese": "Cip\u00f3 de Leite", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Comem as folhas para terem voz grossa"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 222, "name_bororo": "Marugodo uke iorubo", "name_portuguese": "Cip\u00f3 d\u0027\u00e1gua", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Passam o carv\u00e3o do cip\u00f3 na barriga das crian\u00e7as contra a diarreia infantil"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 223, "name_bororo": "Mace inodorewu iorubo", "name_portuguese": "Bolsa de carneiro", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Passam o fruto queimado no peito contra asma"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 224, "name_bororo": "Boigabe iorubo", "name_portuguese": "Peroba do Campo (Ip\u00ea)", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Esfregam e jogam as folhas evitando serem atingidos pelos raios"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 225, "name_bororo": "Kidoguro jaiwurewu", "name_portuguese": "Garrafinha", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As cinzas das folhas com almacega (kidoguru) passam no corpo como rem\u00e9dio e para pregarem os enfeites"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 226, "name_bororo": "Aragioro iorubo", "name_portuguese": "Pau doce", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "As folhas socadas com um pouco de agua usam como vomit\u00f3rio ap\u00f3s as picadas de cobras venenosas"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 227, "name_bororo": "Kiogorogo jorubo ore", "name_portuguese": "Genciana", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Esfregam as folhas no rosto para encontrarem muita ca\u00e7a"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 228, "name_bororo": "Kege tororewu", "name_portuguese": "Mata Passo Bravo", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Quando est\u00e3o querendo matar arara na espera, e esta n\u00e3o aparece, cortam um galho desta planta e colocam sobre o esconderijo em que se encontram e logo parecem as araras"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Sapindaceae", "fruiting_period": null, "id": 229, "name_bororo": "Meri iorubo", "name_portuguese": "Cinco folhas", "pic_link": null, "scientific_name": "Serjania erecta", "types_of_use": null, "usage": "Quando nas longas caminhadas acham que com a luz do dia n\u00e3o alcan\u00e7am o lugar desejado para pernoitar, cortam um pau fino desta planta e giram em dire\u00e7\u00e3o do sol, acreditam que o sol para e espera o homem chegar ao lugar desejado"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 230, "name_bororo": "Kudobo iorubo", "name_portuguese": "Raiz de Bugre", "pic_link": null, "scientific_name": "Cordia salicifolia", "types_of_use": null, "usage": "Cogumelo (conhecido como chap\u00e9u de sapo) Esmigalhados esfregam na m\u00e3o e passam nas crian\u00e7as para serem ativos"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 231, "name_bororo": "Reco iorubo", "name_portuguese": "Raiz de Bugre", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "A raiz socada em pequena quantidade com agua e bebida para engordar (Fortificante, tonificante)"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 232, "name_bororo": "Boiro", "name_portuguese": "Ariri (folhas finas palmeira)", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "serve para amarrar outras plantas venenosas quando eliminam os seus desafetos"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 233, "name_bororo": "Amo iorubo", "name_portuguese": "Velame", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "A raiz carbonizada passam no corpo das crian\u00e7as para n\u00e3o andarem muito"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Asteraceae", "fruiting_period": null, "id": 234, "name_bororo": "Uto iorubo", "name_portuguese": "Assa peixe", "pic_link": "images/ethnobotany_234_uto_iorubo.jpg", "scientific_name": "Vernonia polysphaera", "types_of_use": null, "usage": "Esfregam as folhas nas mulheres para n\u00e3o adoecerem"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 235, "name_bororo": "Wiarurewu", "name_portuguese": "Ariticum folha m\u00e9dia, rasteiro", "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": "Queimam as folhas dentro de casa para evitar doen\u00e7as"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Annonaceae", "fruiting_period": "abril a julho, outubro e novembro, fevereiro", "id": 236, "name_bororo": "Iwaraga", "name_portuguese": "Sofre-do-rim-quem-quer", "pic_link": null, "scientific_name": "Duguetia furfuracea (A. St. Hil.) Benth \u0026 Hook; Duguetia marcgraviana Mart.", "types_of_use": null, "usage": "Cerrado, beira de c\u00f3rrego"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Annonaceae", "fruiting_period": null, "id": 237, "name_bororo": "Urea aru bogodu", "name_portuguese": "Pimenta-de-macaco / Pinda\u00edba-vermelha", "pic_link": null, "scientific_name": "Xilopia aromatica (Lam) Mart", "types_of_use": null, "usage": "Cerrado, beira de c\u00f3rrego"}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 238, "name_bororo": "Maregetaor\u00e9u", "name_portuguese": null, "pic_link": null, "scientific_name": "Anona dioica", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 239, "name_bororo": "Atyie erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Anemopaegna glaucuni", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 240, "name_bororo": "Bace uiorubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Anemopaegna arvensis", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 241, "name_bororo": "Ikuredu emarewu", "name_portuguese": null, "pic_link": null, "scientific_name": "Cremastus seeptrum", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 242, "name_bororo": "Icegu i", "name_portuguese": null, "pic_link": null, "scientific_name": "Tecoma ochracea", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 243, "name_bororo": "Kogoridoge erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Jacaranda acutifolia", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 244, "name_bororo": "Kuogo \u00ed", "name_portuguese": null, "pic_link": null, "scientific_name": "Tecoma caraiba", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 245, "name_bororo": "Kurugugwoe ewuregirewu", "name_portuguese": null, "pic_link": null, "scientific_name": "Bignonia esoleta", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 246, "name_bororo": "Pari kiogododoge erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Memora sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 247, "name_bororo": "Tugerurewu bokujiwy", "name_portuguese": null, "pic_link": null, "scientific_name": "Zeyhera montana", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 248, "name_bororo": "Aroe ekudydyrewu i", "name_portuguese": null, "pic_link": null, "scientific_name": "Eriotheca gracilipes (K. Schum) A. Rolinges", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 249, "name_bororo": "Boe erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Eriope macrostachya Mart.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 250, "name_bororo": "Nonogo uiorubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Cordia sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 251, "name_bororo": "Moregege", "name_portuguese": null, "pic_link": null, "scientific_name": "Dyckia wedelliana Baker", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Burseraceae", "fruiting_period": "novemro a janeiro", "id": 252, "name_bororo": "Kido guru", "name_portuguese": null, "pic_link": "images/ethnobotany_252_kido_guru.jpg", "scientific_name": "Protium heptaphyllum (Aubl.) March", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 253, "name_bororo": "Kido kuru", "name_portuguese": null, "pic_link": null, "scientific_name": "Protium almecega March.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 254, "name_bororo": "Keo", "name_portuguese": null, "pic_link": null, "scientific_name": "Ciperus gigantens Vahl.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 255, "name_bororo": "Merireboe", "name_portuguese": null, "pic_link": null, "scientific_name": "Rhynchospora sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": "Cochlospermaceae", "fruiting_period": "mar\u00e7o a outubro", "id": 256, "name_bororo": "Akigu orewu", "name_portuguese": null, "pic_link": null, "scientific_name": "Cochlospermium regium (Mart. et Schr.) Pilger", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 257, "name_bororo": "Apo uiorubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Eupatorium sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 258, "name_bororo": "Bace ika", "name_portuguese": null, "pic_link": null, "scientific_name": "Vernonia ferruginea Less.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 259, "name_bororo": "Boto kuru ekurewu / boe eraki caru / moto epa", "name_portuguese": null, "pic_link": null, "scientific_name": "Chiquiragua sprengeliana Baker", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 260, "name_bororo": "Muiawoe erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Vernonia obovata Less. / Chrysolaena obovata (Less.) Dematt.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 261, "name_bororo": "Poburewu uiorubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Trixis sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 262, "name_bororo": "Aipoburewuge erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Evolvulus sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 263, "name_bororo": "Jugodoge etoburewu", "name_portuguese": null, "pic_link": null, "scientific_name": "Davilla lacunosa", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 264, "name_bororo": "Morie enogwarewu", "name_portuguese": null, "pic_link": null, "scientific_name": "Doliocarpus sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 265, "name_bororo": "Boto jerigigarewu", "name_portuguese": null, "pic_link": "images/ethnobotany_265_boto_jerigigarewu.jpg", "scientific_name": "Dioscorea multiflora Mart. ex Griseb.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 266, "name_bororo": "Kurugugwa ojorubo", "name_portuguese": null, "pic_link": null, "scientific_name": null, "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 267, "name_bororo": "Je kujagurewuge erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Jatropha sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 268, "name_bororo": "Riwodoe erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Euphorbia caecorum Mart.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": "janeiro a maio", "id": 269, "name_bororo": "Amo uiorubo", "name_portuguese": "Capim-de-campo-limpo", "pic_link": "images/ethnobotany_269_amo_uiorubo.jpg", "scientific_name": "Echnolaena inflexa (Poir) Chase", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 270, "name_bororo": "Nore okori epa boe byty", "name_portuguese": null, "pic_link": null, "scientific_name": "Axonopus chrysodactilus (Trin) Kuhlm", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": null, "id": 271, "name_bororo": "Aroe erubo", "name_portuguese": null, "pic_link": null, "scientific_name": "Hypericum sp.", "types_of_use": null, "usage": null}, {"abundance": null, "descriptions_of_use": null, "environment": null, "family": null, "fruiting_period": "mar\u00e7o-abril", "id": 272, "name_bororo": "Beragu i", "name_portuguese": "Pau-santo", "pic_link": "images/ethnobotany_272_beragu_i.jpg", "scientific_name": "Kielmeyra aff. speciosa St. Hil.", "types_of_use": null, "usage": null}, {"abundance": [{"level": "boe bokware", "village": "Pi\u00e9baga"}, {"level": "biagare", "village": "C\u00f3rrego Grande"}, {"level": "boe bokware", "village": "Tadarimana"}], "descriptions_of_use": null, "environment": "boku", "family": "Pontederiaceae", "fruiting_period": "Vegetativa", "id": 275, "name_bororo": "Pora", "name_portuguese": "Aguap\u00e9", "pic_link": null, "scientific_name": "Echhornia crassipes (Mart.) Solms", "types_of_use": null, "usage": "nowu aru kuru remawure, boe ake epado ema, mare ima emaragodae. (Aroe rubo.)"}];
+        var UNCATEGORIZED_LABEL = T.ethnobotany_category_uncategorized || 'Sem família';
+
+        var container = document.getElementById('showcase-container');
+        var searchInput = document.getElementById('showcase-search');
+        var filterSelect = document.getElementById('showcase-filter');
+        var statsEl = document.getElementById('showcase-stats');
+        var noResultsEl = document.getElementById('showcase-no-results');
+        var hintEl = document.getElementById('showcase-hint');
+
+        var activeDetailEntry = null;
+        var activeDetailEl = null;
+        var activeCardEl = null;
+
+        // ── Helpers ──
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            var d = document.createElement('div');
+            d.textContent = text;
+            return d.innerHTML;
+        }
+
+        function normalize(s) {
+            return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        // ── Group & sort ──
+
+        function groupByFamily(entries) {
+            var groups = {};
+            for (var i = 0; i < entries.length; i++) {
+                var e = entries[i];
+                var fam = e.family || '__uncategorized__';
+                if (!groups[fam]) groups[fam] = [];
+                groups[fam].push(e);
+            }
+            var sorted = Object.keys(groups).filter(function(k) { return k !== '__uncategorized__'; }).sort();
+            if (groups['__uncategorized__']) sorted.push('__uncategorized__');
+            return sorted.map(function(k) {
+                groups[k].sort(function(a, b) {
+                    return (a.name_bororo || a.name_portuguese || '').localeCompare(b.name_bororo || b.name_portuguese || '');
+                });
+                return { category: k, label: k === '__uncategorized__' ? UNCATEGORIZED_LABEL : k, entries: groups[k] };
+            });
+        }
+
+        // ── Render ──
+
+        function renderAll() {
+            var groups = groupByFamily(ALL_DATA);
+            container.innerHTML = '';
+            for (var g = 0; g < groups.length; g++) {
+                var group = groups[g];
+                var section = document.createElement('div');
+                section.className = 'showcase-section';
+                section.setAttribute('data-category', group.category);
+
+                var header = document.createElement('div');
+                header.className = 'showcase-section-header';
+                header.innerHTML = '<span class="chevron">&#9662;</span>' +
+                    '<span class="section-title">' + escapeHtml(group.label) + '</span>' +
+                    '<span class="section-count" data-total="' + group.entries.length + '">' + group.entries.length + '</span>';
+                header.addEventListener('click', toggleSection);
+                section.appendChild(header);
+
+                var grid = document.createElement('div');
+                grid.className = 'showcase-grid';
+                for (var i = 0; i < group.entries.length; i++) {
+                    grid.appendChild(renderCard(group.entries[i]));
+                }
+                section.appendChild(grid);
+                container.appendChild(section);
+            }
+            updateStats();
+        }
+
+        function renderCard(entry) {
+            var card = document.createElement('div');
+            card.className = 'showcase-card';
+            card.setAttribute('data-id', entry.id);
+
+            var displayName = entry.name_bororo || entry.name_portuguese || entry.scientific_name || ('# ' + entry.id);
+
+            if (entry.pic_link) {
+                var img = document.createElement('img');
+                img.className = 'showcase-card-img';
+                img.src = '../' + entry.pic_link;
+                img.alt = displayName;
+                img.loading = 'lazy';
+                img.onerror = function() {
+                    var ph = document.createElement('div');
+                    ph.className = 'showcase-card-placeholder';
+                    ph.textContent = '\uD83C\uDF3F';
+                    this.replaceWith(ph);
+                };
+                card.appendChild(img);
+            } else {
+                var ph = document.createElement('div');
+                ph.className = 'showcase-card-placeholder';
+                ph.textContent = '\uD83C\uDF3F';
+                card.appendChild(ph);
+            }
+
+            var body = document.createElement('div');
+            body.className = 'showcase-card-body';
+            body.innerHTML = '<div class="card-name">' + escapeHtml(entry.name_bororo || entry.name_portuguese || '') + '</div>' +
+                (entry.name_portuguese && entry.name_bororo ? '<div class="card-sub">' + escapeHtml(entry.name_portuguese) + '</div>' :
+                 entry.scientific_name ? '<div class="card-sub">' + escapeHtml(entry.scientific_name) + '</div>' : '');
+            card.appendChild(body);
+
+            card.addEventListener('click', function() {
+                onCardClick(entry, card);
+            });
+
+            return card;
+        }
+
+        // ── Detail panel ──
+
+        function onCardClick(entry, cardEl) {
+            if (activeDetailEntry && activeDetailEntry.id === entry.id) {
+                closeDetail();
+                return;
+            }
+            closeDetail();
+
+            activeDetailEntry = entry;
+            activeCardEl = cardEl;
+            cardEl.classList.add('active');
+
+            var detail = document.createElement('div');
+            detail.className = 'showcase-detail';
+
+            var closeBtn = document.createElement('button');
+            closeBtn.className = 'showcase-detail-close';
+            closeBtn.innerHTML = '&times;';
+            closeBtn.setAttribute('aria-label', 'Close');
+            closeBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeDetail();
+            });
+            detail.appendChild(closeBtn);
+
+            var layout = document.createElement('div');
+            layout.className = 'showcase-detail-layout';
+
+            // Image
+            if (entry.pic_link) {
+                var img = document.createElement('img');
+                img.className = 'showcase-detail-img';
+                img.src = '../' + entry.pic_link;
+                img.alt = entry.name_bororo || entry.name_portuguese || '';
+                img.onerror = function() {
+                    var ph = document.createElement('div');
+                    ph.className = 'showcase-detail-placeholder';
+                    ph.textContent = '\uD83C\uDF3F';
+                    this.replaceWith(ph);
+                };
+                layout.appendChild(img);
+            } else {
+                var ph = document.createElement('div');
+                ph.className = 'showcase-detail-placeholder';
+                ph.textContent = '\uD83C\uDF3F';
+                layout.appendChild(ph);
+            }
+
+            // Info
+            var info = document.createElement('div');
+            info.className = 'showcase-detail-info';
+
+            var html = '';
+            if (entry.name_bororo) {
+                html += '<h3>' + escapeHtml(entry.name_bororo) + '</h3>';
+            }
+            if (entry.name_portuguese) {
+                html += '<div class="detail-portuguese">' + escapeHtml(entry.name_portuguese) + '</div>';
+            }
+            if (!entry.name_bororo && entry.name_portuguese) {
+                // Promote portuguese to heading if no bororo name
+                html = '<h3>' + escapeHtml(entry.name_portuguese) + '</h3>' + html.replace(/<div class="detail-portuguese">.*?<\/div>/, '');
+            }
+            if (entry.scientific_name) {
+                html += '<div class="detail-scientific">' + escapeHtml(entry.scientific_name) + '</div>';
+            }
+            if (entry.family) {
+                html += '<div class="detail-field"><strong>' + escapeHtml(T.ethnobotany_detail_family || 'Família') + ':</strong> ' + escapeHtml(entry.family) + '</div>';
+            }
+
+            // Usage (Bororo)
+            if (entry.usage) {
+                html += '<div class="detail-info-text"><strong>' + escapeHtml(T.ethnobotany_detail_usage || 'Uso (Bororo)') + ':</strong> ' + escapeHtml(entry.usage) + '</div>';
+            }
+
+            // Descriptions of use (Portuguese)
+            if (entry.descriptions_of_use) {
+                html += '<div class="detail-info-text"><strong>' + escapeHtml(T.ethnobotany_detail_usage_pt || 'Descrição do uso') + ':</strong> ' + escapeHtml(entry.descriptions_of_use) + '</div>';
+            }
+
+            // Types of use as tag badges
+            if (entry.types_of_use) {
+                var types = entry.types_of_use.split(/[,;]/);
+                for (var ti = 0; ti < types.length; ti++) {
+                    var t = types[ti].trim();
+                    if (t) html += '<span class="detail-tag">' + escapeHtml(t) + '</span>';
+                }
+            }
+
+            // Fruiting period
+            if (entry.fruiting_period) {
+                html += '<div class="detail-field"><strong>' + escapeHtml(T.ethnobotany_detail_fruiting || 'Frutificação') + ':</strong> ' + escapeHtml(entry.fruiting_period) + '</div>';
+            }
+
+            // Environment
+            if (entry.environment) {
+                html += '<div class="detail-field"><strong>' + escapeHtml(T.ethnobotany_detail_environment || 'Ambiente') + ':</strong> ' + escapeHtml(entry.environment) + '</div>';
+            }
+
+            // Abundance table
+            if (entry.abundance && entry.abundance.length > 0) {
+                html += '<div class="detail-abundance"><strong>' + escapeHtml(T.ethnobotany_detail_abundance || 'Abundância') + ':</strong>';
+                html += '<table>';
+                for (var a = 0; a < entry.abundance.length; a++) {
+                    var ab = entry.abundance[a];
+                    html += '<tr><td>' + escapeHtml(ab.village) + '</td><td>' + escapeHtml(ab.level) + '</td></tr>';
+                }
+                html += '</table></div>';
+            }
+
+            // Cross-links
+            if (entry._linked_dictionary && entry._linked_dictionary.length > 0) {
+                html += '<div class="showcase-detail-links"><strong>' + escapeHtml(T.see_in_dictionary || 'Ver no Dicionário') + ':</strong> ';
+                html += entry._linked_dictionary.map(function(d) {
+                    return '<a href="dictionary.html?search=' + encodeURIComponent(d.entry) + '">' + escapeHtml(d.entry) + '</a>';
+                }).join(', ');
+                html += '</div>';
+            }
+            if (entry._linked_encyclopedia && entry._linked_encyclopedia.length > 0) {
+                html += '<div class="showcase-detail-links"><strong>' + escapeHtml(T.see_in_encyclopedia || 'Ver na Enciclopédia') + ':</strong> ';
+                html += entry._linked_encyclopedia.map(function(d) {
+                    return '<a href="encyclopedia/' + encodeURIComponent(d.id) + '.html">' + escapeHtml(d.title) + '</a>';
+                }).join(', ');
+                html += '</div>';
+            }
+
+            info.innerHTML = html;
+            layout.appendChild(info);
+            detail.appendChild(layout);
+
+            // Insert after the card in the grid
+            var grid = cardEl.parentNode;
+            var next = cardEl.nextSibling;
+            if (next) {
+                grid.insertBefore(detail, next);
+            } else {
+                grid.appendChild(detail);
+            }
+            activeDetailEl = detail;
+
+            if (window.innerWidth <= 700) {
+                setTimeout(function() {
+                    detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 50);
+            }
+        }
+
+        function closeDetail() {
+            if (activeDetailEl) {
+                activeDetailEl.remove();
+                activeDetailEl = null;
+            }
+            if (activeCardEl) {
+                activeCardEl.classList.remove('active');
+                activeCardEl = null;
+            }
+            activeDetailEntry = null;
+        }
+
+        // ── Section collapse/expand ──
+
+        function toggleSection(e) {
+            var header = e.currentTarget;
+            header.classList.toggle('collapsed');
+        }
+
+        // ── Search & filter ──
+
+        function matchesSearch(entry, query) {
+            if (!query) return true;
+            var q = normalize(query);
+            return normalize(entry.name_bororo).indexOf(q) !== -1 ||
+                   normalize(entry.name_portuguese).indexOf(q) !== -1 ||
+                   normalize(entry.scientific_name).indexOf(q) !== -1 ||
+                   normalize(entry.family).indexOf(q) !== -1 ||
+                   normalize(entry.usage).indexOf(q) !== -1 ||
+                   normalize(entry.environment).indexOf(q) !== -1;
+        }
+
+        function filterEntries() {
+            closeDetail();
+            var query = searchInput.value.trim();
+            var famFilter = filterSelect.value;
+            var visibleCount = 0;
+
+            var sections = container.querySelectorAll('.showcase-section');
+            for (var s = 0; s < sections.length; s++) {
+                var section = sections[s];
+                var sectionCat = section.getAttribute('data-category');
+                var cards = section.querySelectorAll('.showcase-card');
+                var sectionVisible = 0;
+
+                var sectionMatchesFam = !famFilter ||
+                    sectionCat === famFilter ||
+                    (famFilter === '__uncategorized__' && sectionCat === '__uncategorized__');
+
+                for (var c = 0; c < cards.length; c++) {
+                    var cardId = parseInt(cards[c].getAttribute('data-id'));
+                    var entry = ALL_DATA.find(function(e) { return e.id === cardId; });
+                    var visible = sectionMatchesFam && entry && matchesSearch(entry, query);
+                    cards[c].classList.toggle('hidden', !visible);
+                    if (visible) {
+                        sectionVisible++;
+                        visibleCount++;
+                    }
+                }
+
+                section.classList.toggle('hidden', sectionVisible === 0);
+                var countEl = section.querySelector('.section-count');
+                if (countEl) countEl.textContent = sectionVisible;
+
+                if (query || famFilter) {
+                    var hdr = section.querySelector('.showcase-section-header');
+                    if (hdr) hdr.classList.remove('collapsed');
+                }
+            }
+
+            noResultsEl.style.display = visibleCount === 0 ? '' : 'none';
+            updateStats(visibleCount);
+        }
+
+        function updateStats(count) {
+            if (count === undefined) count = ALL_DATA.length;
+            var label = count !== 1 ? (T.ethnobotany_result_plural || 'plantas') : (T.ethnobotany_result_singular || 'planta');
+            statsEl.textContent = count + ' ' + label;
+        }
+
+        // ── Debounce ──
+
+        function debounce(fn, ms) {
+            var timer;
+            return function() {
+                clearTimeout(timer);
+                timer = setTimeout(fn, ms);
+            };
+        }
+
+        // ── Init ──
+
+        renderAll();
+
+        searchInput.addEventListener('input', debounce(filterEntries, 200));
+        filterSelect.addEventListener('change', filterEntries);
+
+        // URL param support
+        var urlParams = new URLSearchParams(window.location.search);
+        var initialSearch = urlParams.get('search');
+        var initialFam = urlParams.get('family');
+        if (initialSearch) {
+            searchInput.value = initialSearch;
+            filterEntries();
+        }
+        if (initialFam) {
+            filterSelect.value = initialFam;
+            filterEntries();
+        }
+    })();
+    </script>
+</body>
+</html>

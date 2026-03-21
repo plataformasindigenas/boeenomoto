@@ -700,14 +700,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0014_elizete_aerega.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 48,
@@ -847,14 +840,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0612_fernando_aiagodu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 58,
@@ -924,14 +910,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0016_erotildes_aidu.webm",
-          "speaker": "erotildes",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 63,
@@ -1016,18 +995,6 @@
       "comment": null,
       "fauna_ids": null,
       "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0252_gleide_aigo.webm",
-          "speaker": "gleide",
-          "format": "webm"
-        },
-        {
-          "file_path": "0269_valdemar_aigo.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ],
       "_linked_fauna": [
         {
           "id": 2,
@@ -1180,14 +1147,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0017_elizete_aiwo.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 78,
@@ -1565,14 +1525,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0592_nazario_ake.webm",
-          "speaker": "nazario",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 105,
@@ -1600,14 +1553,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0593_nazario_ake_tawuje.webm",
-          "speaker": "nazario",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 107,
@@ -1621,14 +1567,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0552_leonida_akedo.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 108,
@@ -1642,19 +1581,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0553_leonida_akedu.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        },
-        {
-          "file_path": "0556_pedrosa_akedu.webm",
-          "speaker": "pedrosa",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 109,
@@ -1668,14 +1595,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0154_valdemar_akedudo.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 110,
@@ -1955,14 +1875,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0107_valdemar_akigu_kodu.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 130,
@@ -2088,14 +2001,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0432_leonida_akirodo.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 139,
@@ -2837,14 +2743,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0171_valdemar_akudo.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 192,
@@ -3124,14 +3023,7 @@
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tupinambis_merianae_Pantanal.jpg/960px-Tupinambis_merianae_Pantanal.jpg",
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0831_bosco_amema.webm",
-          "speaker": "bosco",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 212,
@@ -3173,14 +3065,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0312_leonida_amirewu.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 215,
@@ -3194,14 +3079,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0474_leonida_rabbit.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 216,
@@ -3817,14 +3695,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0281_leonida_aora.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 260,
@@ -3880,14 +3751,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0770_fernando_ao_tadawu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 264,
@@ -4390,19 +4254,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0006_elizete_aregodu.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        },
-        {
-          "file_path": "0772_fernando_aregodu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 299,
@@ -4696,14 +4548,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0106_valdemar_aria_meriri.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 320,
@@ -4886,18 +4731,6 @@
       "comment": null,
       "fauna_ids": null,
       "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0019_elizete_aroe.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        },
-        {
-          "file_path": "0626_fernando_aroe.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ],
       "_linked_encyclopedia": [
         {
           "id": "aroe",
@@ -4973,14 +4806,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0189_elizete_aroe_eimejera.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 338,
@@ -5468,14 +5294,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0020_elizete_aru.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 372,
@@ -5965,14 +5784,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0406_benito_atuge.webm",
-          "speaker": "benito",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 407,
@@ -6014,14 +5826,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0140_valdemar_atugodo.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 410,
@@ -6315,24 +6120,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0188_elizete_awagu.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        },
-        {
-          "file_path": "0368_benito_awagu.webm",
-          "speaker": "benito",
-          "format": "webm"
-        },
-        {
-          "file_path": "0632_fernando_awagu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 431,
@@ -6346,14 +6134,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0633_fernando_awara.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 432,
@@ -7055,19 +6836,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0214_valdemar_bai.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        },
-        {
-          "file_path": "0221_valdemar_bai.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 480,
@@ -7501,14 +7270,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0236_valdemar_baiporo_epa.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 510,
@@ -8032,29 +7794,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0074_jussila_bakuru.webm",
-          "speaker": "jussila",
-          "format": "webm"
-        },
-        {
-          "file_path": "0407_benito_bakuru.webm",
-          "speaker": "benito",
-          "format": "webm"
-        },
-        {
-          "file_path": "0563_pedrosa_bakuru.webm",
-          "speaker": "pedrosa",
-          "format": "webm"
-        },
-        {
-          "file_path": "0640_fernando_bakuru.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 547,
@@ -8096,19 +7836,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0022_elizete_bapera.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        },
-        {
-          "file_path": "0595_nazario_bapera.webm",
-          "speaker": "nazario",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 550,
@@ -8164,14 +7892,7 @@
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Heart_tee_four_chamber_view.jpg/960px-Heart_tee_four_chamber_view.jpg",
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0779_fernando_bapo.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 554,
@@ -8205,14 +7926,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0524_leonida_baradu.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 556,
@@ -8868,29 +8582,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0210_valdemar_baru.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        },
-        {
-          "file_path": "0217_valdemar_baru.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        },
-        {
-          "file_path": "0564_pedrosa_baru.webm",
-          "speaker": "pedrosa",
-          "format": "webm"
-        },
-        {
-          "file_path": "0780_fernando_baru.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 602,
@@ -9185,13 +8877,6 @@
       "comment": null,
       "fauna_ids": null,
       "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0023_elizete_bataru.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ],
       "_linked_encyclopedia": [
         {
           "id": "bataru",
@@ -10065,14 +9750,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0078_jussila_beregodu.webm",
-          "speaker": "jussila",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 685,
@@ -10324,14 +10002,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0645_fernando_betureboe.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 703,
@@ -10359,14 +10030,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0024_elizete_bi.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 705,
@@ -10506,19 +10170,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0212_valdemar_biado.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        },
-        {
-          "file_path": "0219_valdemar_biado.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 715,
@@ -10644,14 +10296,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0167_valdemar_biagodu.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 724,
@@ -10707,14 +10352,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0282_leonida_biaja.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 728,
@@ -11330,14 +10968,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0597_nazario_bire.webm",
-          "speaker": "nazario",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 772,
@@ -11673,14 +11304,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0300_leonida_bito.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 796,
@@ -12143,13 +11767,6 @@
       "comment": null,
       "fauna_ids": null,
       "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0150_valdemar_boe.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ],
       "_linked_encyclopedia": [
         {
           "id": "boe",
@@ -12379,14 +11996,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0283_leonida_boe_bo.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 845,
@@ -12832,14 +12442,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0784_fernando_boe_emuga.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 876,
@@ -13585,14 +13188,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0002_elizete_boe_karega.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 928,
@@ -14348,14 +13944,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0148_valdemar_boekaguru.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 982,
@@ -14383,14 +13972,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0439_leonida_boe_kimo.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 984,
@@ -14404,19 +13986,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0069_jussila_boe_kori.webm",
-          "speaker": "jussila",
-          "format": "webm"
-        },
-        {
-          "file_path": "0648_fernando_boe_kori.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 985,
@@ -14738,14 +14308,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0247_valdemar_boigodu.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1008,
@@ -14913,14 +14476,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0786_fernando_boku.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1020,
@@ -15052,19 +14608,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0118_valdemar_bokwaro.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        },
-        {
-          "file_path": "0441_leonida_bokwaro.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1029,
@@ -15092,14 +14636,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0442_leonida_bopona.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1031,
@@ -15197,14 +14734,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0443_leonida_borewu.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1038,
@@ -15386,14 +14916,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0652_fernando_botudo.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1051,
@@ -15463,24 +14986,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0026_elizete_bowuje.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        },
-        {
-          "file_path": "0505_leonida_bowuje.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        },
-        {
-          "file_path": "0653_fernando_bowuje.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1056,
@@ -15564,14 +15070,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0787_fernando_bubutu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1062,
@@ -15956,14 +15455,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0284_leonida_bure.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1089,
@@ -16089,14 +15581,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0788_fernando_bureado.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1098,
@@ -16138,14 +15623,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0005_elizete_buregi.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1101,
@@ -16509,14 +15987,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0657_fernando_butugugodu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1127,
@@ -19635,14 +19106,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0285_leonida_enoja.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1342,
@@ -20468,24 +19932,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0286_leonida_eru.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        },
-        {
-          "file_path": "0409_benito_eru.webm",
-          "speaker": "benito",
-          "format": "webm"
-        },
-        {
-          "file_path": "0660_fernando_eru.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1401,
@@ -21185,19 +20632,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0175_valdemar_gorido.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        },
-        {
-          "file_path": "0447_leonida_gorido.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1451,
@@ -21939,14 +21374,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0664_fernando_iage.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1504,
@@ -22758,14 +22186,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0036_erotildes_ibora.webm",
-          "speaker": "erotildes",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1562,
@@ -23045,14 +22466,7 @@
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/9/92/Gray1234.png",
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0287_leonida_iera.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1582,
@@ -23360,14 +22774,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0667_fernando_iguru.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1604,
@@ -23535,14 +22942,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0669_fernando_ikodo.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1616,
@@ -23962,14 +23362,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0670_fernando_ikurudu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1646,
@@ -24081,14 +23474,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0288_leonida_inegi.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1654,
@@ -24963,14 +24349,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0673_fernando_iro.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1716,
@@ -25096,14 +24475,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0795_fernando_irui.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1725,
@@ -25132,13 +24504,6 @@
       "comment": null,
       "fauna_ids": null,
       "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0451_leonida_itaga.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ],
       "_linked_encyclopedia": [
         {
           "id": "itaga",
@@ -25438,19 +24803,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0289_leonida_itoru.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        },
-        {
-          "file_path": "0374_benito_itoru.webm",
-          "speaker": "benito",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1748,
@@ -25576,14 +24929,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0080_jussila_itura.webm",
-          "speaker": "jussila",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1757,
@@ -25863,14 +25209,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0675_fernando_iwogu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1777,
@@ -25996,14 +25335,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0676_fernando_iworewu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1786,
@@ -26136,18 +25468,6 @@
       "comment": null,
       "fauna_ids": null,
       "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0037_erotildes_iwu.webm",
-          "speaker": "erotildes",
-          "format": "webm"
-        },
-        {
-          "file_path": "0307_leonida_iwu.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ],
       "_linked_encyclopedia": [
         {
           "id": "iwu",
@@ -26335,14 +25655,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0677_fernando_jado.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1808,
@@ -27408,19 +26721,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0455_leonida_jawuji.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        },
-        {
-          "file_path": "0680_fernando_jawuji.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1882,
@@ -28106,14 +27407,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0039_erotildes_jekiripagado.webm",
-          "speaker": "erotildes",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 1931,
@@ -29317,14 +28611,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0155_valdemar_jerigi.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2017,
@@ -29632,14 +28919,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0798_fernando_jerimaga.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2039,
@@ -29989,14 +29269,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0685_fernando_jetadu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2064,
@@ -31977,14 +31250,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0688_fernando_jokuru.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2205,
@@ -32432,14 +31698,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0041_erotildes_jorubo.webm",
-          "speaker": "erotildes",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2237,
@@ -33041,19 +32300,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0008_elizete_jorugudu.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        },
-        {
-          "file_path": "0198_elizete_jorugudu.webm",
-          "speaker": "elizete",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2280,
@@ -33179,14 +32426,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0043_erotildes_ju.webm",
-          "speaker": "erotildes",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2289,
@@ -33256,14 +32496,7 @@
       "pic_link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sow_with_piglet.jpg/500px-Sow_with_piglet.jpg",
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0690_fernando_jugorewu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2293,
@@ -33375,14 +32608,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0161_valdemar_ju_kudu.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2301,
@@ -33648,14 +32874,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0457_leonida_kabi.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2320,
@@ -33781,29 +33000,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0081_jussila_kado.webm",
-          "speaker": "jussila",
-          "format": "webm"
-        },
-        {
-          "file_path": "0345_benito_kado.webm",
-          "speaker": "benito",
-          "format": "webm"
-        },
-        {
-          "file_path": "0574_pedrosa_kado.webm",
-          "speaker": "pedrosa",
-          "format": "webm"
-        },
-        {
-          "file_path": "0575_pedrosa_kado.webm",
-          "speaker": "pedrosa",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2329,
@@ -34412,14 +33609,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0508_leonida_kaia.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2372,
@@ -34475,14 +33665,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0694_fernando_kaibori.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2376,
@@ -34650,14 +33833,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0072_jussila_kajeje.webm",
-          "speaker": "jussila",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2388,
@@ -34770,13 +33946,6 @@
       "comment": null,
       "fauna_ids": null,
       "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0696_fernando_kamorewu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ],
       "_linked_encyclopedia": [
         {
           "id": "kamorewu",
@@ -34796,19 +33965,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0576_pedrosa_kana.webm",
-          "speaker": "pedrosa",
-          "format": "webm"
-        },
-        {
-          "file_path": "0697_fernando_kana.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2397,
@@ -34948,14 +34105,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0291_leonida_kanabo.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2407,
@@ -35613,14 +34763,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0699_fernando_kaworurewu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2454,
@@ -36824,14 +35967,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0292_leonida_kiga.webm",
-          "speaker": "leonida",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2538,
@@ -36845,14 +35981,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0700_fernando_kigadu.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2539,
@@ -36908,14 +36037,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0421_benito_kigadurewu.webm",
-          "speaker": "benito",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2543,
@@ -37097,14 +36219,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0805_fernando_kigori.webm",
-          "speaker": "fernando",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2556,
@@ -37454,14 +36569,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0348_benito_kiogo.webm",
-          "speaker": "benito",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2581,
@@ -40051,14 +39159,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0152_valdemar_korao.webm",
-          "speaker": "valdemar",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2766,
@@ -40744,14 +39845,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0088_jussila_kowu.webm",
-          "speaker": "jussila",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2815,
@@ -41045,14 +40139,7 @@
       "pic_link": null,
       "comment": null,
       "fauna_ids": null,
-      "encyclopedia_ids": null,
-      "audio": [
-        {
-          "file_path": "0046_erotildes_kudae.webm",
-          "speaker": "erotildes",
-          "format": "webm"
-        }
-      ]
+      "encyclopedia_ids": null
     },
     {
       "id": 2836,
