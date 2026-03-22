@@ -7,10 +7,7 @@ categories:
 - cultura-material/alimentação
 date: '2026-01-04'
 url: ''
-images:
-- url: images/acuriCoco.jpg
-  alt: Boe eke
-  credit: ''
+images: []
 examples: []
 entry_type: ''
 infobox: {}

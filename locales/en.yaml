@@ -289,3 +289,35 @@ rec_col_match: "Match"
 rec_col_audio: "Audio"
 rec_no_results: "No recordings found"
 rec_overflow: "Showing 200 of {n} recordings. Refine your search."
+
+# About page
+nav_about: "About"
+about_title: "Boe Eno Moto"
+about_subtitle: "Digital platform for documentation and revitalization of the Bororo language and culture"
+about_mission_heading: "Mission"
+about_mission: >
+  <p><strong>Boe Eno Moto</strong> (<em>Bororo World</em>) is an initiative of the
+  <a href="https://portal.plataformasindigenas.org">Indigenous Languages Platform</a>
+  dedicated to the documentation, preservation, and revitalization of the Bororo people's
+  language and culture.</p>
+  <p>Our goal is to make linguistic, ethnographic, and cultural materials available
+  in accessible digital formats, contributing to the strengthening of Bororo identity
+  and to academic research on Brazilian indigenous languages.</p>
+about_partners_heading: "Team & Partners"
+about_partners: >
+  <p>This project is developed in collaboration with:</p>
+  <p><strong>Unifacc</strong> — University center, institutional partner<br>
+  <strong>Salesian Mission of Mato Grosso</strong> — Historic partnership with indigenous peoples of the region<br>
+  <strong>Uppsala University</strong> — Support in computational linguistics and technology</p>
+about_contact_heading: "Contact"
+about_contact: >
+  <p>For more information about the project, collaborations, or contributions:</p>
+  <p><strong>Email:</strong> <a href="mailto:info@plataformasindigenas.org">info@plataformasindigenas.org</a><br>
+  <strong>Portal:</strong> <a href="https://portal.plataformasindigenas.org">portal.plataformasindigenas.org</a></p>
+about_citation_heading: "How to Cite"
+about_citation: "Indigenous Languages Platform. Boe Eno Moto: Digital Platform of the Bororo Language and Culture. Available at: https://boeenomoto.onrender.com. Accessed: 2026."
+about_tools_heading: "Technology"
+about_tools: "<p>This platform was built with open-source tools developed specifically for indigenous language documentation:</p>"
+about_tool_terradoc: "Site generation framework for indigenous language documentation"
+about_tool_aptoro: "Data conversion and processing pipeline"
+about_tool_kodudo: "Template rendering engine"

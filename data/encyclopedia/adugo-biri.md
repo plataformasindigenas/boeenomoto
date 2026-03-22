@@ -8,10 +8,7 @@ categories:
 - ritual
 date: '2026-01-04'
 url: ''
-images:
-- url: images/adugo_biri.jpg
-  alt: Adugo biri
-  credit: ''
+images: []
 examples: []
 entry_type: ''
 infobox: {}
