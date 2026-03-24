@@ -41,5 +41,8 @@ Thumbs.db
 # Build artifacts (generated JSON)
 data/*.json
 
+# Build output
+docs/
+
 # Keep the docs directory
 !docs/.gitkeep
