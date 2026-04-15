@@ -41,6 +41,13 @@ Thumbs.db
 # Build artifacts (generated JSON)
 data/*.json
 
+# One-off audio import script and its reports (not committed)
+scripts/import_audio_archive.py
+data/audio/_import_report.md
+data/audio/_pre_import_audio_refs.tsv
+data/audio/_dropped_rows.tsv
+data/dictionary.tsv.bak
+
 # Build output
 docs/
 
