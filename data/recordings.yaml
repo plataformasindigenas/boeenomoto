@@ -24,10 +24,10 @@
   raw_word: boe_karega
   normalized_word: boe karega
   variant_num: null
-  dictionary_id: 927
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: null
+  match_type: remap_orphan
+  needs_review: true
+  notes: 'remap: old dictionary_id had no entry in pre-migration TSV'
 - id: 3
   file_path: 0003_elizete_kagariga.webm
   format: webm
@@ -70,7 +70,7 @@
   raw_word: buregi
   normalized_word: buregi
   variant_num: null
-  dictionary_id: 1100
+  dictionary_id: 1410
   match_type: exact
   needs_review: false
   notes: null
@@ -85,7 +85,7 @@
   raw_word: aregodu
   normalized_word: aregodu
   variant_num: null
-  dictionary_id: 298
+  dictionary_id: 672
   match_type: exact
   needs_review: false
   notes: null
@@ -115,10 +115,10 @@
   raw_word: jorugudu
   normalized_word: jorugudu
   variant_num: null
-  dictionary_id: 2279
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: null
+  match_type: remap_orphan
+  needs_review: true
+  notes: 'remap: old dictionary_id had no entry in pre-migration TSV'
 - id: 9
   file_path: 0009_elizete_pogurure.webm
   format: webm
@@ -205,7 +205,7 @@
   raw_word: aerega
   normalized_word: aerega
   variant_num: null
-  dictionary_id: 47
+  dictionary_id: 1
   match_type: exact
   needs_review: false
   notes: null
@@ -235,7 +235,7 @@
   raw_word: aidu
   normalized_word: aidu
   variant_num: null
-  dictionary_id: 62
+  dictionary_id: 4
   match_type: exact
   needs_review: false
   notes: null
@@ -250,7 +250,7 @@
   raw_word: aiwo
   normalized_word: aiwo
   variant_num: null
-  dictionary_id: 77
+  dictionary_id: 471
   match_type: exact
   needs_review: false
   notes: null
@@ -281,7 +281,7 @@
   raw_word: aroe
   normalized_word: aroe
   variant_num: null
-  dictionary_id: 332
+  dictionary_id: 700
   match_type: exact
   needs_review: false
   notes: null
@@ -296,7 +296,7 @@
   raw_word: aru
   normalized_word: aru
   variant_num: null
-  dictionary_id: 371
+  dictionary_id: 736
   match_type: exact
   needs_review: false
   notes: null
@@ -328,7 +328,7 @@
   raw_word: bapera
   normalized_word: bapera
   variant_num: null
-  dictionary_id: 549
+  dictionary_id: 897
   match_type: exact
   needs_review: false
   notes: null
@@ -343,7 +343,7 @@
   raw_word: bataru
   normalized_word: bataru
   variant_num: null
-  dictionary_id: 622
+  dictionary_id: 964
   match_type: exact
   needs_review: false
   notes: null
@@ -358,7 +358,7 @@
   raw_word: bi
   normalized_word: bi
   variant_num: null
-  dictionary_id: 704
+  dictionary_id: 1045
   match_type: exact
   needs_review: false
   notes: null
@@ -388,7 +388,7 @@
   raw_word: bowuje
   normalized_word: bowuje
   variant_num: null
-  dictionary_id: 1055
+  dictionary_id: 112
   match_type: exact
   needs_review: false
   notes: null
@@ -539,7 +539,7 @@
   raw_word: ibora
   normalized_word: ibora
   variant_num: null
-  dictionary_id: 1561
+  dictionary_id: 1856
   match_type: exact
   needs_review: false
   notes: null
@@ -554,7 +554,7 @@
   raw_word: iwu
   normalized_word: iwu
   variant_num: null
-  dictionary_id: 1794
+  dictionary_id: 2078
   match_type: exact
   needs_review: false
   notes: null
@@ -584,10 +584,10 @@
   raw_word: jekiripagado
   normalized_word: jekiripagado
   variant_num: null
-  dictionary_id: 1930
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: null
+  match_type: remap_orphan
+  needs_review: true
+  notes: 'remap: old dictionary_id had no entry in pre-migration TSV'
 - id: 40
   file_path: 0040_erotildes_joku.webm
   format: webm
@@ -615,7 +615,7 @@
   raw_word: jorubo
   normalized_word: jorubo
   variant_num: null
-  dictionary_id: 2236
+  dictionary_id: 2457
   match_type: exact
   needs_review: false
   notes: null
@@ -645,7 +645,7 @@
   raw_word: ju
   normalized_word: ju
   variant_num: null
-  dictionary_id: 2288
+  dictionary_id: 2491
   match_type: exact
   needs_review: false
   notes: null
@@ -690,7 +690,7 @@
   raw_word: kudae
   normalized_word: kudae
   variant_num: null
-  dictionary_id: 2835
+  dictionary_id: 3016
   match_type: exact
   needs_review: false
   notes: null
@@ -1036,7 +1036,7 @@
   raw_word: boe_kori
   normalized_word: boe kori
   variant_num: null
-  dictionary_id: 984
+  dictionary_id: 1305
   match_type: exact
   needs_review: false
   notes: 'Full name: Jussila Tore Boudo'
@@ -1081,7 +1081,7 @@
   raw_word: kajeje
   normalized_word: kajeje
   variant_num: null
-  dictionary_id: 2387
+  dictionary_id: 2585
   match_type: exact
   needs_review: false
   notes: 'Full name: Jussila Tore Boudo'
@@ -1111,7 +1111,7 @@
   raw_word: bakuru
   normalized_word: bakuru
   variant_num: null
-  dictionary_id: 546
+  dictionary_id: 895
   match_type: exact
   needs_review: false
   notes: 'Full name: Jussila Tore Boudo'
@@ -1171,7 +1171,7 @@
   raw_word: beregodu
   normalized_word: beregodu
   variant_num: null
-  dictionary_id: 684
+  dictionary_id: 1026
   match_type: exact
   needs_review: false
   notes: 'Full name: Jussila Tore Boudo'
@@ -1201,7 +1201,7 @@
   raw_word: itura
   normalized_word: itura
   variant_num: null
-  dictionary_id: 1756
+  dictionary_id: 2041
   match_type: exact
   needs_review: false
   notes: 'Full name: Jussila Tore Boudo'
@@ -1216,7 +1216,7 @@
   raw_word: kado
   normalized_word: kado
   variant_num: null
-  dictionary_id: 2328
+  dictionary_id: 2528
   match_type: exact
   needs_review: false
   notes: 'Full name: Jussila Tore Boudo'
@@ -1321,7 +1321,7 @@
   raw_word: kowu
   normalized_word: kowu
   variant_num: null
-  dictionary_id: 2814
+  dictionary_id: 2997
   match_type: exact
   needs_review: false
   notes: 'Full name: Jussila Tore Boudo'
@@ -1591,7 +1591,7 @@
   raw_word: aria_meriri
   normalized_word: aria meriri
   variant_num: null
-  dictionary_id: 319
+  dictionary_id: 689
   match_type: exact
   needs_review: false
   notes: null
@@ -1606,7 +1606,7 @@
   raw_word: akigu_kodu
   normalized_word: akigu kodu
   variant_num: null
-  dictionary_id: 129
+  dictionary_id: 12
   match_type: exact
   needs_review: false
   notes: null
@@ -1771,7 +1771,7 @@
   raw_word: bokwaro
   normalized_word: bokwaro
   variant_num: null
-  dictionary_id: 1028
+  dictionary_id: 1345
   match_type: exact
   needs_review: false
   notes: null
@@ -2102,7 +2102,7 @@
   raw_word: atugodo
   normalized_word: atugodo
   variant_num: null
-  dictionary_id: 409
+  dictionary_id: 770
   match_type: exact
   needs_review: false
   notes: null
@@ -2223,7 +2223,7 @@
   raw_word: boekaguru
   normalized_word: boekaguru
   variant_num: null
-  dictionary_id: 981
+  dictionary_id: 1302
   match_type: exact
   needs_review: false
   notes: null
@@ -2253,7 +2253,7 @@
   raw_word: boe
   normalized_word: boe
   variant_num: null
-  dictionary_id: 828
+  dictionary_id: 1153
   match_type: exact
   needs_review: false
   notes: null
@@ -2283,7 +2283,7 @@
   raw_word: korao
   normalized_word: korao
   variant_num: null
-  dictionary_id: 2765
+  dictionary_id: 2949
   match_type: exact
   needs_review: false
   notes: null
@@ -2313,7 +2313,7 @@
   raw_word: akedudo
   normalized_word: akedudo
   variant_num: null
-  dictionary_id: 109
+  dictionary_id: 499
   match_type: exact
   needs_review: false
   notes: null
@@ -2328,7 +2328,7 @@
   raw_word: jerigi
   normalized_word: jerigi
   variant_num: null
-  dictionary_id: 2016
+  dictionary_id: 2278
   match_type: exact
   needs_review: false
   notes: null
@@ -2419,10 +2419,10 @@
   raw_word: ju_kudu
   normalized_word: ju kudu
   variant_num: null
-  dictionary_id: 2300
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: 2502
+  match_type: remap_ambiguous
+  needs_review: true
+  notes: 'remap: entry ''jurea'' matches multiple new ids ([2502, 2503]); using 2502'
 - id: 162
   file_path: 0162_valdemar_poboruture.webm
   format: webm
@@ -2509,7 +2509,7 @@
   raw_word: biagodu
   normalized_word: biagodu
   variant_num: null
-  dictionary_id: 723
+  dictionary_id: 1061
   match_type: exact
   needs_review: false
   notes: null
@@ -2569,7 +2569,7 @@
   raw_word: akudo
   normalized_word: akudo
   variant_num: null
-  dictionary_id: 191
+  dictionary_id: 576
   match_type: exact
   needs_review: false
   notes: null
@@ -2629,7 +2629,7 @@
   raw_word: gorido
   normalized_word: gorido
   variant_num: null
-  dictionary_id: 1450
+  dictionary_id: 1748
   match_type: exact
   needs_review: false
   notes: null
@@ -2824,7 +2824,7 @@
   raw_word: awagu
   normalized_word: awagu
   variant_num: null
-  dictionary_id: 430
+  dictionary_id: 789
   match_type: exact
   needs_review: false
   notes: null
@@ -2839,7 +2839,7 @@
   raw_word: aroe_eimejera
   normalized_word: aroe eimejera
   variant_num: null
-  dictionary_id: 337
+  dictionary_id: 704
   match_type: exact
   needs_review: false
   notes: null
@@ -2974,10 +2974,10 @@
   raw_word: jorugudu
   normalized_word: jorugudu
   variant_num: null
-  dictionary_id: 2279
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: null
+  match_type: remap_orphan
+  needs_review: true
+  notes: 'remap: old dictionary_id had no entry in pre-migration TSV'
 - id: 199
   file_path: 0199_elizete_ricodu.webm
   format: webm
@@ -3154,7 +3154,7 @@
   raw_word: baru
   normalized_word: baru
   variant_num: null
-  dictionary_id: 601
+  dictionary_id: 944
   match_type: exact
   needs_review: false
   notes: null
@@ -3184,7 +3184,7 @@
   raw_word: biado
   normalized_word: biado
   variant_num: null
-  dictionary_id: 714
+  dictionary_id: 1055
   match_type: exact
   needs_review: false
   notes: null
@@ -3214,7 +3214,7 @@
   raw_word: bai
   normalized_word: bai
   variant_num: null
-  dictionary_id: 479
+  dictionary_id: 831
   match_type: exact
   needs_review: false
   notes: null
@@ -3259,7 +3259,7 @@
   raw_word: baru
   normalized_word: baru
   variant_num: null
-  dictionary_id: 601
+  dictionary_id: 944
   match_type: exact
   needs_review: false
   notes: null
@@ -3289,7 +3289,7 @@
   raw_word: biado
   normalized_word: biado
   variant_num: null
-  dictionary_id: 714
+  dictionary_id: 1055
   match_type: exact
   needs_review: false
   notes: null
@@ -3319,7 +3319,7 @@
   raw_word: bai
   normalized_word: bai
   variant_num: null
-  dictionary_id: 479
+  dictionary_id: 831
   match_type: exact
   needs_review: false
   notes: null
@@ -3545,7 +3545,7 @@
   raw_word: baiporo_epa
   normalized_word: baiporo epa
   variant_num: null
-  dictionary_id: 509
+  dictionary_id: 860
   match_type: exact
   needs_review: false
   notes: null
@@ -3710,7 +3710,7 @@
   raw_word: boigodu
   normalized_word: boigodu
   variant_num: null
-  dictionary_id: 1007
+  dictionary_id: 1327
   match_type: exact
   needs_review: false
   notes: null
@@ -3786,7 +3786,7 @@
   raw_word: aigo
   normalized_word: aigo
   variant_num: null
-  dictionary_id: 68
+  dictionary_id: 462
   match_type: exact
   needs_review: false
   notes: null
@@ -4045,7 +4045,7 @@
   raw_word: aigo
   normalized_word: aigo
   variant_num: null
-  dictionary_id: 68
+  dictionary_id: 462
   match_type: exact
   needs_review: false
   notes: null
@@ -4227,7 +4227,7 @@
   raw_word: aora
   normalized_word: aora
   variant_num: null
-  dictionary_id: 259
+  dictionary_id: 638
   match_type: exact
   needs_review: false
   notes: null
@@ -4242,7 +4242,7 @@
   raw_word: biaja
   normalized_word: biaja
   variant_num: null
-  dictionary_id: 727
+  dictionary_id: 1065
   match_type: exact
   needs_review: false
   notes: null
@@ -4257,7 +4257,7 @@
   raw_word: boeBo
   normalized_word: boe bo
   variant_num: null
-  dictionary_id: 844
+  dictionary_id: 1167
   match_type: exact
   needs_review: false
   notes: null
@@ -4272,7 +4272,7 @@
   raw_word: bure
   normalized_word: bure
   variant_num: null
-  dictionary_id: 1088
+  dictionary_id: 115
   match_type: exact
   needs_review: false
   notes: null
@@ -4287,7 +4287,7 @@
   raw_word: enoja
   normalized_word: enoja
   variant_num: null
-  dictionary_id: 1341
+  dictionary_id: 1645
   match_type: exact
   needs_review: false
   notes: null
@@ -4302,7 +4302,7 @@
   raw_word: eru01
   normalized_word: eru
   variant_num: 1
-  dictionary_id: 1400
+  dictionary_id: 1699
   match_type: exact
   needs_review: false
   notes: null
@@ -4317,7 +4317,7 @@
   raw_word: iera
   normalized_word: iera
   variant_num: null
-  dictionary_id: 1581
+  dictionary_id: 1874
   match_type: exact
   needs_review: false
   notes: null
@@ -4332,7 +4332,7 @@
   raw_word: inegi
   normalized_word: inegi
   variant_num: null
-  dictionary_id: 1653
+  dictionary_id: 1944
   match_type: exact
   needs_review: false
   notes: null
@@ -4347,7 +4347,7 @@
   raw_word: itoru01
   normalized_word: itoru
   variant_num: 1
-  dictionary_id: 1747
+  dictionary_id: 2034
   match_type: exact
   needs_review: false
   notes: null
@@ -4377,7 +4377,7 @@
   raw_word: kanabo
   normalized_word: kanabo
   variant_num: null
-  dictionary_id: 2406
+  dictionary_id: 2602
   match_type: exact
   needs_review: false
   notes: null
@@ -4392,7 +4392,7 @@
   raw_word: kiga
   normalized_word: kiga
   variant_num: null
-  dictionary_id: 2537
+  dictionary_id: 2729
   match_type: exact
   needs_review: false
   notes: null
@@ -4512,7 +4512,7 @@
   raw_word: bito
   normalized_word: bito
   variant_num: null
-  dictionary_id: 795
+  dictionary_id: 1122
   match_type: exact
   needs_review: false
   notes: null
@@ -4617,7 +4617,7 @@
   raw_word: iwu
   normalized_word: iwu
   variant_num: null
-  dictionary_id: 1794
+  dictionary_id: 2078
   match_type: exact
   needs_review: false
   notes: null
@@ -4692,7 +4692,7 @@
   raw_word: amirewu
   normalized_word: amirewu
   variant_num: null
-  dictionary_id: 214
+  dictionary_id: 20
   match_type: exact
   needs_review: false
   notes: null
@@ -5194,7 +5194,7 @@
   raw_word: kado01
   normalized_word: kado
   variant_num: 1
-  dictionary_id: 2328
+  dictionary_id: 2528
   match_type: exact
   needs_review: false
   notes: null
@@ -5239,7 +5239,7 @@
   raw_word: kiogo
   normalized_word: kiogo
   variant_num: null
-  dictionary_id: 2580
+  dictionary_id: 2772
   match_type: exact
   needs_review: false
   notes: null
@@ -5539,7 +5539,7 @@
   raw_word: awagu01
   normalized_word: awagu
   variant_num: 1
-  dictionary_id: 430
+  dictionary_id: 789
   match_type: exact
   needs_review: false
   notes: null
@@ -5630,7 +5630,7 @@
   raw_word: itoru02
   normalized_word: itoru
   variant_num: 2
-  dictionary_id: 1747
+  dictionary_id: 2034
   match_type: exact
   needs_review: false
   notes: null
@@ -6110,7 +6110,7 @@
   raw_word: atuge
   normalized_word: atuge
   variant_num: null
-  dictionary_id: 406
+  dictionary_id: 46
   match_type: exact
   needs_review: false
   notes: null
@@ -6125,7 +6125,7 @@
   raw_word: bakuru01
   normalized_word: bakuru
   variant_num: 1
-  dictionary_id: 546
+  dictionary_id: 895
   match_type: exact
   needs_review: false
   notes: null
@@ -6155,7 +6155,7 @@
   raw_word: eru02
   normalized_word: eru
   variant_num: 2
-  dictionary_id: 1400
+  dictionary_id: 1699
   match_type: exact
   needs_review: false
   notes: null
@@ -6335,7 +6335,7 @@
   raw_word: kigadurewu
   normalized_word: kigadurewu
   variant_num: null
-  dictionary_id: 2542
+  dictionary_id: 2734
   match_type: exact
   needs_review: false
   notes: null
@@ -6500,7 +6500,7 @@
   raw_word: akirodo
   normalized_word: akirodo
   variant_num: null
-  dictionary_id: 138
+  dictionary_id: 525
   match_type: exact
   needs_review: false
   notes: null
@@ -6607,7 +6607,7 @@
   raw_word: boeKimo
   normalized_word: boe kimo
   variant_num: null
-  dictionary_id: 983
+  dictionary_id: 1304
   match_type: exact
   needs_review: false
   notes: null
@@ -6637,7 +6637,7 @@
   raw_word: bokwaro
   normalized_word: bokwaro
   variant_num: null
-  dictionary_id: 1028
+  dictionary_id: 1345
   match_type: exact
   needs_review: false
   notes: null
@@ -6652,7 +6652,7 @@
   raw_word: bopona
   normalized_word: bopona
   variant_num: null
-  dictionary_id: 1030
+  dictionary_id: 1347
   match_type: exact
   needs_review: false
   notes: null
@@ -6667,7 +6667,7 @@
   raw_word: borewu
   normalized_word: borewu
   variant_num: null
-  dictionary_id: 1037
+  dictionary_id: 1354
   match_type: exact
   needs_review: false
   notes: null
@@ -6727,7 +6727,7 @@
   raw_word: gorido
   normalized_word: gorido
   variant_num: null
-  dictionary_id: 1450
+  dictionary_id: 1748
   match_type: exact
   needs_review: false
   notes: null
@@ -6787,7 +6787,7 @@
   raw_word: itaga
   normalized_word: itaga
   variant_num: null
-  dictionary_id: 1726
+  dictionary_id: 2015
   match_type: exact
   needs_review: false
   notes: null
@@ -6847,7 +6847,7 @@
   raw_word: jawuji01
   normalized_word: jawuji
   variant_num: 1
-  dictionary_id: 1881
+  dictionary_id: 2159
   match_type: exact
   needs_review: false
   notes: null
@@ -6877,7 +6877,7 @@
   raw_word: kabi
   normalized_word: kabi
   variant_num: null
-  dictionary_id: 2319
+  dictionary_id: 2520
   match_type: exact
   needs_review: false
   notes: null
@@ -7132,7 +7132,7 @@
   raw_word: rabbit
   normalized_word: rabbit
   variant_num: null
-  dictionary_id: 215
+  dictionary_id: 598
   match_type: definition_search
   needs_review: true
   notes: 'Matched via definition: amo (pl. amoe)'
@@ -7597,7 +7597,7 @@
   raw_word: bowuje01
   normalized_word: bowuje
   variant_num: 1
-  dictionary_id: 1055
+  dictionary_id: 112
   match_type: exact
   needs_review: false
   notes: null
@@ -7642,7 +7642,7 @@
   raw_word: kaia
   normalized_word: kaia
   variant_num: null
-  dictionary_id: 2371
+  dictionary_id: 2570
   match_type: exact
   needs_review: false
   notes: null
@@ -7882,7 +7882,7 @@
   raw_word: baradu
   normalized_word: baradu
   variant_num: null
-  dictionary_id: 555
+  dictionary_id: 902
   match_type: exact
   needs_review: false
   notes: null
@@ -8311,7 +8311,7 @@
   raw_word: akedo
   normalized_word: akedo
   variant_num: null
-  dictionary_id: 107
+  dictionary_id: 497
   match_type: exact
   needs_review: false
   notes: null
@@ -8326,7 +8326,7 @@
   raw_word: akedu01
   normalized_word: akedu
   variant_num: 1
-  dictionary_id: 108
+  dictionary_id: 498
   match_type: exact
   needs_review: false
   notes: null
@@ -8372,7 +8372,7 @@
   raw_word: akedu02
   normalized_word: akedu
   variant_num: 2
-  dictionary_id: 108
+  dictionary_id: 498
   match_type: exact
   needs_review: false
   notes: null
@@ -8479,7 +8479,7 @@
   raw_word: bakuru02
   normalized_word: bakuru
   variant_num: 2
-  dictionary_id: 546
+  dictionary_id: 895
   match_type: exact
   needs_review: false
   notes: null
@@ -8494,7 +8494,7 @@
   raw_word: baru02
   normalized_word: baru
   variant_num: 2
-  dictionary_id: 601
+  dictionary_id: 944
   match_type: exact
   needs_review: false
   notes: null
@@ -8645,7 +8645,7 @@
   raw_word: kado02
   normalized_word: kado
   variant_num: 2
-  dictionary_id: 2328
+  dictionary_id: 2528
   match_type: exact
   needs_review: false
   notes: null
@@ -8660,7 +8660,7 @@
   raw_word: kado03
   normalized_word: kado
   variant_num: 3
-  dictionary_id: 2328
+  dictionary_id: 2528
   match_type: exact
   needs_review: false
   notes: null
@@ -8675,7 +8675,7 @@
   raw_word: kana01
   normalized_word: kana
   variant_num: 1
-  dictionary_id: 2396
+  dictionary_id: 2593
   match_type: exact
   needs_review: false
   notes: null
@@ -8918,7 +8918,7 @@
   raw_word: ake
   normalized_word: ake
   variant_num: null
-  dictionary_id: 104
+  dictionary_id: 494
   match_type: exact
   needs_review: false
   notes: null
@@ -8933,7 +8933,7 @@
   raw_word: akeTawuje
   normalized_word: ake tawuje
   variant_num: null
-  dictionary_id: 106
+  dictionary_id: 496
   match_type: exact
   needs_review: false
   notes: null
@@ -8963,7 +8963,7 @@
   raw_word: bapera
   normalized_word: bapera
   variant_num: null
-  dictionary_id: 549
+  dictionary_id: 897
   match_type: exact
   needs_review: false
   notes: null
@@ -8993,7 +8993,7 @@
   raw_word: bire
   normalized_word: bire
   variant_num: null
-  dictionary_id: 771
+  dictionary_id: 1100
   match_type: exact
   needs_review: false
   notes: null
@@ -9219,7 +9219,7 @@
   raw_word: aiagodu
   normalized_word: aiagodu
   variant_num: null
-  dictionary_id: 57
+  dictionary_id: 453
   match_type: exact
   needs_review: false
   notes: null
@@ -9429,7 +9429,7 @@
   raw_word: aroe
   normalized_word: aroe
   variant_num: null
-  dictionary_id: 332
+  dictionary_id: 700
   match_type: exact
   needs_review: false
   notes: null
@@ -9519,7 +9519,7 @@
   raw_word: awagu02
   normalized_word: awagu
   variant_num: 2
-  dictionary_id: 430
+  dictionary_id: 789
   match_type: exact
   needs_review: false
   notes: null
@@ -9534,7 +9534,7 @@
   raw_word: awara
   normalized_word: awara
   variant_num: null
-  dictionary_id: 431
+  dictionary_id: 790
   match_type: exact
   needs_review: false
   notes: null
@@ -9641,7 +9641,7 @@
   raw_word: bakuru03
   normalized_word: bakuru
   variant_num: 3
-  dictionary_id: 546
+  dictionary_id: 895
   match_type: exact
   needs_review: false
   notes: null
@@ -9717,7 +9717,7 @@
   raw_word: betureboe
   normalized_word: betureboe
   variant_num: null
-  dictionary_id: 702
+  dictionary_id: 1043
   match_type: exact
   needs_review: false
   notes: null
@@ -9762,7 +9762,7 @@
   raw_word: boeKori
   normalized_word: boe kori
   variant_num: null
-  dictionary_id: 984
+  dictionary_id: 1305
   match_type: exact
   needs_review: false
   notes: null
@@ -9822,7 +9822,7 @@
   raw_word: botudo
   normalized_word: botudo
   variant_num: null
-  dictionary_id: 1050
+  dictionary_id: 1366
   match_type: exact
   needs_review: false
   notes: null
@@ -9837,7 +9837,7 @@
   raw_word: bowuje02
   normalized_word: bowuje
   variant_num: 2
-  dictionary_id: 1055
+  dictionary_id: 112
   match_type: exact
   needs_review: false
   notes: null
@@ -9897,7 +9897,7 @@
   raw_word: butugugodu
   normalized_word: butugugodu
   variant_num: null
-  dictionary_id: 1126
+  dictionary_id: 1436
   match_type: exact
   needs_review: false
   notes: null
@@ -9943,7 +9943,7 @@
   raw_word: eru03
   normalized_word: eru
   variant_num: 3
-  dictionary_id: 1400
+  dictionary_id: 1699
   match_type: exact
   needs_review: false
   notes: null
@@ -10005,7 +10005,7 @@
   raw_word: iage
   normalized_word: iage
   variant_num: null
-  dictionary_id: 1503
+  dictionary_id: 1801
   match_type: exact
   needs_review: false
   notes: null
@@ -10050,7 +10050,7 @@
   raw_word: iguru
   normalized_word: iguru
   variant_num: null
-  dictionary_id: 1603
+  dictionary_id: 1896
   match_type: exact
   needs_review: false
   notes: null
@@ -10080,7 +10080,7 @@
   raw_word: ikodo
   normalized_word: ikodo
   variant_num: null
-  dictionary_id: 1615
+  dictionary_id: 1908
   match_type: exact
   needs_review: false
   notes: null
@@ -10095,7 +10095,7 @@
   raw_word: ikurudu
   normalized_word: ikurudu
   variant_num: null
-  dictionary_id: 1645
+  dictionary_id: 1937
   match_type: exact
   needs_review: false
   notes: null
@@ -10140,7 +10140,7 @@
   raw_word: iro
   normalized_word: iro
   variant_num: null
-  dictionary_id: 1715
+  dictionary_id: 2004
   match_type: exact
   needs_review: false
   notes: null
@@ -10170,7 +10170,7 @@
   raw_word: iwogu
   normalized_word: iwogu
   variant_num: null
-  dictionary_id: 1776
+  dictionary_id: 2061
   match_type: exact
   needs_review: false
   notes: null
@@ -10185,7 +10185,7 @@
   raw_word: iworewu
   normalized_word: iworewu
   variant_num: null
-  dictionary_id: 1785
+  dictionary_id: 2070
   match_type: exact
   needs_review: false
   notes: null
@@ -10200,7 +10200,7 @@
   raw_word: jado
   normalized_word: jado
   variant_num: null
-  dictionary_id: 1807
+  dictionary_id: 2091
   match_type: exact
   needs_review: false
   notes: null
@@ -10245,7 +10245,7 @@
   raw_word: jawuji02
   normalized_word: jawuji
   variant_num: 2
-  dictionary_id: 1881
+  dictionary_id: 2159
   match_type: exact
   needs_review: false
   notes: null
@@ -10321,10 +10321,10 @@
   raw_word: jetadu
   normalized_word: jetadu
   variant_num: null
-  dictionary_id: 2063
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: 2313
+  match_type: remap_ambiguous
+  needs_review: true
+  notes: 'remap: entry ''jetara'' matches multiple new ids ([2313, 2314]); using 2313'
 - id: 686
   file_path: 0686_fernando_jobugiwo.webm
   format: webm
@@ -10366,7 +10366,7 @@
   raw_word: jokuru
   normalized_word: jokuru
   variant_num: null
-  dictionary_id: 2204
+  dictionary_id: 2436
   match_type: exact
   needs_review: false
   notes: null
@@ -10396,7 +10396,7 @@
   raw_word: jugorewu
   normalized_word: jugorewu
   variant_num: null
-  dictionary_id: 2292
+  dictionary_id: 2495
   match_type: exact
   needs_review: false
   notes: null
@@ -10456,7 +10456,7 @@
   raw_word: kaibori
   normalized_word: kaibori
   variant_num: null
-  dictionary_id: 2375
+  dictionary_id: 2574
   match_type: exact
   needs_review: false
   notes: null
@@ -10486,7 +10486,7 @@
   raw_word: kamorewu
   normalized_word: kamorewu
   variant_num: null
-  dictionary_id: 2395
+  dictionary_id: 2592
   match_type: exact
   needs_review: false
   notes: null
@@ -10501,7 +10501,7 @@
   raw_word: kana02
   normalized_word: kana
   variant_num: 2
-  dictionary_id: 2396
+  dictionary_id: 2593
   match_type: exact
   needs_review: false
   notes: null
@@ -10531,7 +10531,7 @@
   raw_word: kaworurewu
   normalized_word: kaworurewu
   variant_num: null
-  dictionary_id: 2453
+  dictionary_id: 2647
   match_type: exact
   needs_review: false
   notes: null
@@ -10546,7 +10546,7 @@
   raw_word: kigadu
   normalized_word: kigadu
   variant_num: null
-  dictionary_id: 2538
+  dictionary_id: 2730
   match_type: exact
   needs_review: false
   notes: null
@@ -11597,7 +11597,7 @@
   raw_word: aoTadawu
   normalized_word: ao tadawu
   variant_num: null
-  dictionary_id: 263
+  dictionary_id: 642
   match_type: exact
   needs_review: false
   notes: null
@@ -11627,7 +11627,7 @@
   raw_word: aregodu
   normalized_word: aregodu
   variant_num: null
-  dictionary_id: 298
+  dictionary_id: 672
   match_type: exact
   needs_review: false
   notes: null
@@ -11732,7 +11732,7 @@
   raw_word: bapo
   normalized_word: bapo
   variant_num: null
-  dictionary_id: 553
+  dictionary_id: 900
   match_type: exact
   needs_review: false
   notes: null
@@ -11747,7 +11747,7 @@
   raw_word: baru
   normalized_word: baru
   variant_num: null
-  dictionary_id: 601
+  dictionary_id: 944
   match_type: exact
   needs_review: false
   notes: null
@@ -11807,10 +11807,11 @@
   raw_word: boeEmuga
   normalized_word: boe emuga
   variant_num: null
-  dictionary_id: 875
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: 1197
+  match_type: remap_ambiguous
+  needs_review: true
+  notes: 'remap: entry ''Boe epa'' matches multiple new ids ([1197, 1198]); using
+    1197'
 - id: 785
   file_path: 0785_fernando_boiako.webm
   format: webm
@@ -11837,7 +11838,7 @@
   raw_word: boku
   normalized_word: boku
   variant_num: null
-  dictionary_id: 1019
+  dictionary_id: 1337
   match_type: exact
   needs_review: false
   notes: null
@@ -11852,7 +11853,7 @@
   raw_word: bubutu
   normalized_word: bubutu
   variant_num: null
-  dictionary_id: 1061
+  dictionary_id: 1375
   match_type: exact
   needs_review: false
   notes: null
@@ -11867,7 +11868,7 @@
   raw_word: bureado
   normalized_word: bureado
   variant_num: null
-  dictionary_id: 1097
+  dictionary_id: 1408
   match_type: exact
   needs_review: false
   notes: null
@@ -11973,7 +11974,7 @@
   raw_word: irui
   normalized_word: irui
   variant_num: null
-  dictionary_id: 1724
+  dictionary_id: 2013
   match_type: exact
   needs_review: false
   notes: null
@@ -12018,10 +12019,10 @@
   raw_word: jerimaga
   normalized_word: jerimaga
   variant_num: null
-  dictionary_id: 2038
-  match_type: exact
-  needs_review: false
-  notes: null
+  dictionary_id: null
+  match_type: remap_orphan
+  needs_review: true
+  notes: 'remap: old dictionary_id had no entry in pre-migration TSV'
 - id: 799
   file_path: 0799_fernando_jerimaga_girorire.webm
   format: webm
@@ -12123,7 +12124,7 @@
   raw_word: kigori
   normalized_word: kigori
   variant_num: null
-  dictionary_id: 2555
+  dictionary_id: 2747
   match_type: exact
   needs_review: false
   notes: null
@@ -12515,7 +12516,7 @@
   raw_word: amema
   normalized_word: amema
   variant_num: null
-  dictionary_id: 211
+  dictionary_id: 596
   match_type: exact
   needs_review: false
   notes: null
