@@ -7,12 +7,15 @@ fields:
   id: int
   entry: str
   ipa: str?
-  pos: str[LEX|S|VC|ADV|PPASS|POSP|SUF|INTJ|VT|PRON|V|PRCL|PPAS|PPART|NUM|IP|DEM|CONJ|X|PROPN]
+  pos: str[LEX|S|VC|ADV|PPASS|POSP|SUF|INTJ|VT|PRON|V|PRCL|PPAS|PPART|NUM|IP|DEM|CONJ|X|PROPN|EXP]?
   definition: str?
   example_sent: str?
   scientific_name: str?
   wiki_link: str?
   pic_link: str?
   comment: str?
+  audio: list[str]?
+  created_at: str?
+  marked: bool?
   fauna_ids: list?
   encyclopedia_ids: list?
