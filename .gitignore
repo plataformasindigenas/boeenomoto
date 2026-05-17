@@ -38,6 +38,17 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Local screenshots (not part of the site)
+fullpage*.png
+
+# Raw source data for other site instances — these live on disk for cross-site
+# reuse but should not be committed here. The "Independent raw data per site"
+# roadmap item (AGENTS.md) will move them into enawenenawe/.
+raw_corpus/
+raw_dicionario.tsv
+raw_especies.xml
+raw_fauna_cards.html
+
 # Build artifacts (generated JSON)
 data/*.json
 
