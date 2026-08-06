@@ -71,3 +71,9 @@ docs/
 # copies js/css/fonts/audio, not images). Keep them tracked.
 !docs/images/
 !docs/images/**
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
