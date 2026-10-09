@@ -80,6 +80,7 @@ def main(src):
         clans.setdefault((p["metade"], p["cla"]), []).append(p)
 
     overview_rows, clan_ids, skipped = [], [], []
+    all_imgs, all_seen = [], set()
     for (metade, cla), items in clans.items():
         cid = "pinturas-" + slug(cla)
         clan_ids.append(cid)
@@ -94,6 +95,9 @@ def main(src):
             if url not in seen:  # same file twice in one clan gallery
                 seen.add(url)
                 imgs.append((url, label))
+            if url not in all_seen:  # ... and once in the overview gallery
+                all_seen.add(url)
+                all_imgs.append((url, f"{label} — {cla}"))
             desc = p["descricao"]
             desc = "" if not desc or desc == PLACEHOLDER else desc
             rows.append(f"- **{label}**" + (f" — {desc}" if desc else ""))
@@ -116,7 +120,7 @@ def main(src):
     (OUT_MD / "pinturas-faciais.md").write_text(entry(
         "pinturas-faciais", "Pinturas faciais",
         "Pinturas faciais Boe (boe ejiwu), organizadas por metade, clã e subclã.",
-        [], body, ["boe-ewa", "ecerae", "tugarege"] + clan_ids,
+        all_imgs, body, ["boe-ewa", "ecerae", "tugarege"] + clan_ids,
         {"registros": str(len(data))}))
     print(f"{len(data)} paintings, {len(clans)} clans, skipped: {skipped}")
 

@@ -330,3 +330,9 @@ index_spotlight_stat: "123"
 index_spotlight_stat_label: "pinturas"
 index_spotlight_cta: "Ver as pinturas"
 index_spotlight_href: "encyclopedia/pinturas-faciais.html"
+
+# Entry gallery
+enc_gallery: "Galeria"
+enc_gallery_close: "Fechar"
+enc_gallery_prev: "Anterior"
+enc_gallery_next: "Seguinte"
