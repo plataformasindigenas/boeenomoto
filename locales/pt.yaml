@@ -320,3 +320,13 @@ about_tools: "<p>Esta plataforma foi construída com ferramentas de código aber
 about_tool_terradoc: "Framework de geração de sites para documentação linguística indígena"
 about_tool_aptoro: "Pipeline de conversão e processamento de dados"
 about_tool_kodudo: "Motor de renderização de templates"
+
+# Index page - spotlight card
+index_spotlight_title: "Pinturas faciais"
+index_spotlight_desc: "Boe Ejiwu: as pinturas faciais Bororo, organizadas por metade, clã e subclã. Um acervo em construção, com dados do projeto Boe Ejerare."
+index_spotlight_image: "images/pinturas/kidogurojaka.jpg"
+index_spotlight_image_alt: "Pintura facial Kidoguro Jaka"
+index_spotlight_stat: "123"
+index_spotlight_stat_label: "pinturas"
+index_spotlight_cta: "Ver as pinturas"
+index_spotlight_href: "encyclopedia/pinturas-faciais.html"

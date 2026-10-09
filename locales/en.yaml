@@ -321,3 +321,13 @@ about_tools: "<p>This platform was built with open-source tools developed specif
 about_tool_terradoc: "Site generation framework for indigenous language documentation"
 about_tool_aptoro: "Data conversion and processing pipeline"
 about_tool_kodudo: "Template rendering engine"
+
+# Index page - spotlight card
+index_spotlight_title: "Facial paintings"
+index_spotlight_desc: "Boe Ejiwu: Bororo facial paintings, organised by moiety, clan and subclan. A work in progress, with data from the Boe Ejerare project."
+index_spotlight_image: "images/pinturas/kidogurojaka.jpg"
+index_spotlight_image_alt: "Facial painting Kidoguro Jaka"
+index_spotlight_stat: "123"
+index_spotlight_stat_label: "paintings"
+index_spotlight_cta: "See the paintings"
+index_spotlight_href: "encyclopedia/pinturas-faciais.html"
