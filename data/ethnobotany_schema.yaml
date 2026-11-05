@@ -1,0 +1,20 @@
+name: ethnobotany
+description: Ethnobotany entries
+version: "1.0"
+primary_key: id
+
+fields:
+  id: int
+  name_indigenous: str?
+  name_portuguese: str?
+  scientific_name: str?
+  family: str?
+  usage: str?
+  types_of_use: str?
+  descriptions_of_use: str?
+  fruiting_period: str?
+  environment: str?
+  abundance: list?
+  pic_link: str?
+  pic_credit: str?
+  pic_source: str?
