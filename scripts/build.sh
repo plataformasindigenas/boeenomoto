@@ -4,6 +4,6 @@
 # verbatim into the site root), terradoc.yaml, locales/, config/.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-terradoc build --config terradoc.yaml --out docs --bundle-dir .terradoc/bundle --clean "$@"
+terradoc build --config terradoc.yaml --out docs --bundle-dir .terradoc/bundle "$@"
 echo ""
 echo "Open docs/index.html in your browser to preview the site."
