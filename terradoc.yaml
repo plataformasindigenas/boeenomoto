@@ -19,6 +19,7 @@ modules:
   encyclopedia: { enabled: true }
   bibliography: { enabled: true }
   recordings: { enabled: false }
+  corpus: { enabled: false }  # no corpus data yet; enable with config/corpus.yaml
   videos: { enabled: true }
 
 module_labels:
