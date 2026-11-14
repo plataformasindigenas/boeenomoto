@@ -64,10 +64,7 @@ data/recordings.yaml.pre-remap.bak
 # Build output
 docs/
 
-# Keep the docs directory
-!docs/.gitkeep
+# Images live in static/images/ (copied verbatim into the site by terradoc >= 0.11).
 
-# Images are stored directly under docs/ (no source dir; terradoc only
-# copies js/css/fonts/audio, not images). Keep them tracked.
-!docs/images/
-!docs/images/**
+# terradoc export bundle (build intermediate)
+.terradoc/
