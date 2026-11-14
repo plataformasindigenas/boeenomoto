@@ -1,1 +1,1 @@
-terradoc==0.11.0
+terradoc==0.12.0

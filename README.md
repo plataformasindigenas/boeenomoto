@@ -2,6 +2,9 @@
 
 Linguistic and cultural resources platform for the Bororo people.
 
+**Para editar o site, leia [COMO-EDITAR.md](COMO-EDITAR.md).** Every push is checked and
+published automatically (master → https://boeenomoto.terradoc.org/, other branches → previews).
+
 ## Repository Structure
 
 ```
@@ -54,7 +57,7 @@ boeenomoto/
 │   ├── test_front_matter.py
 │   └── test_build.py
 └── .github/workflows/
-    └── build-deploy.yml     # CI/CD for GitHub Pages
+    └── site.yml             # check, build and publish every branch (terradoc workflow)
 ```
 
 ## Available Platforms

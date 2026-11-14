@@ -1,0 +1,3 @@
+# Who is told (@-mentioned) when a publication fails because of these files.
+# GitHub syntax: the last matching line wins.
+*    @tresoldi
