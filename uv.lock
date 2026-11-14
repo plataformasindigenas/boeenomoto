@@ -12,26 +12,16 @@ wheels = [
 ]
 
 [[package]]
-name = "aptoro"
-version = "0.3.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pydantic" },
-    { name = "pyyaml" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/9d/d4/8c148db929bf4b5cc5d9aa9d6edc2528ecf05e88e3c1fe101c62362b51bd/aptoro-0.3.1.tar.gz", hash = "sha256:91443f773d8c67e0582f035d03ee728e498a82ae7f864a29062b2b53941552dd", size = 45725, upload-time = "2026-01-23T11:29:37.97Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d4/2b/40505d1158f39b6b8528b004a3e7acafc53b325767fdd7b705c3a8da00aa/aptoro-0.3.1-py3-none-any.whl", hash = "sha256:e4f67d859643b55a500ea8bd94c20af5c83d3f1d1dba1c97975b133b1f3330bd", size = 37460, upload-time = "2026-01-23T11:29:36.529Z" },
-]
-
-[[package]]
 name = "bibtexparser"
-version = "1.4.4"
+version = "2.1.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "pyparsing" },
+    { name = "pylatexenc" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/44/1c/577d3ce406e88f370e80a6ebf76ae52a2866521e0b585e8ec612759894f1/bibtexparser-1.4.4.tar.gz", hash = "sha256:093b6c824f7a71d3a748867c4057b71f77c55b8dbc07efc993b781771520d8fb", size = 55594, upload-time = "2026-01-29T18:58:01.366Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/bb/38f8b2ee3e3da9161fb4a845fb04b4ccb0b8d5a5f5e25aaea39154073532/bibtexparser-2.1.0.tar.gz", hash = "sha256:9f48851eef4693cb7ef6897f7628966c5d0ef49b6403b13a862679a4c313d176", size = 88630, upload-time = "2026-10-02T16:11:35.234Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/86/df/b0898588ad7c1a1c1cb50dcf1afbac1b656ad1ce5373c895b49138b00894/bibtexparser-2.1.0-py3-none-any.whl", hash = "sha256:3b4b1de50ce45ee9091ccca72e1efc8732ab3ef615b70bcecc537c17cd84753e", size = 50128, upload-time = "2026-10-02T16:11:34.111Z" },
+]
 
 [[package]]
 name = "boeenomoto"
@@ -49,7 +39,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0" },
-    { name = "terradoc", specifier = ">=0.2.0" },
+    { name = "terradoc", specifier = "==0.11.0" },
 ]
 provides-extras = ["dev"]
 
@@ -93,19 +83,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/df/bf/f7da0350254c0ed7c72f3e33cef02e048281fec7ecec5f032d4aac52226b/jinja2-3.1.6.tar.gz", hash = "sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d", size = 245115, upload-time = "2025-03-05T20:05:02.478Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl", hash = "sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67", size = 134899, upload-time = "2025-03-05T20:05:00.369Z" },
-]
-
-[[package]]
-name = "kodudo"
-version = "0.1.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "jinja2" },
-    { name = "pyyaml" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/46/4b/1d42256ef6339a61edcf0bf8b7f1e9c7b68550b12c64c9967141c41c77b1/kodudo-0.1.1.tar.gz", hash = "sha256:f8dfacd65cffdf328cbaf51abee5f1c39194b7c417cb925396e42d1cd0d7ea3e", size = 25178, upload-time = "2026-01-23T11:43:48.177Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/db/b0/596fc18bda4ed79c3a10b02aa489683d79b6d8e202638189cacabc26d321/kodudo-0.1.1-py3-none-any.whl", hash = "sha256:c6c907c7f84155a0eb36a5fe63ff3226a29655a6a608625b71a1e1f4547884b8", size = 23510, upload-time = "2026-01-23T11:43:47.083Z" },
 ]
 
 [[package]]
@@ -355,12 +332,12 @@ wheels = [
 ]
 
 [[package]]
-name = "pyparsing"
-version = "3.3.2"
+name = "pylatexenc"
+version = "2.11"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f3/91/9c6ee907786a473bf81c5f53cf703ba0957b23ab84c264080fb5a450416f/pyparsing-3.3.2.tar.gz", hash = "sha256:c777f4d763f140633dcb6d8a3eda953bf7a214dc4eff598413c070bcdc117cbc", size = 6851574, upload-time = "2026-01-21T03:57:59.36Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/52/45/ddb0fb04acf95fe9cf9c369814dbdd08651bd2c9ee455f142651e06f4488/pylatexenc-2.11.tar.gz", hash = "sha256:305a072a99ce736246049c9da05841b9d718c0f7ea8888f5f596cf15cb621053", size = 165743, upload-time = "2026-07-25T17:26:31.534Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl", hash = "sha256:850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d", size = 122781, upload-time = "2026-01-21T03:57:55.912Z" },
+    { url = "https://files.pythonhosted.org/packages/e7/06/3d67bd912ef337aa4856b466121d03f304aa1bb4d804f9298b6227cd227e/pylatexenc-2.11-py2.py3-none-any.whl", hash = "sha256:e78e7391d6c104f1ed150e21cfaa58016cdb50aa54406a2eecb793649ffdfdd0", size = 137533, upload-time = "2026-07-25T17:26:30.141Z" },
 ]
 
 [[package]]
@@ -436,21 +413,20 @@ wheels = [
 
 [[package]]
 name = "terradoc"
-version = "0.3.0"
+version = "0.11.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "aptoro" },
     { name = "bibtexparser" },
     { name = "click" },
     { name = "jinja2" },
-    { name = "kodudo" },
     { name = "markdown-it-py" },
     { name = "mdit-py-plugins" },
+    { name = "pydantic" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/65/c7790922e145bb5cdff72cec28af3a3f9d6782e1797a6f64ceb640e5ed33/terradoc-0.3.0.tar.gz", hash = "sha256:9b6b2f0d519582cdbb9a535a2257292a3b1843a26e7cf835ebb24da099caed3f", size = 330652, upload-time = "2026-03-11T05:51:21.095Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/51/9a/c3161fad8a57b53420721451e601a4f1928efb11a5e6a3997974675767e8/terradoc-0.11.0.tar.gz", hash = "sha256:1eb22947860e64dec954261cd38c003c88356503d7dda0a5b4290c08cbf276b9", size = 377616, upload-time = "2026-11-14T01:54:44.562Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a4/76/a9664cac174b5d52f59905829f4e2eb2142d614975922141e65b3f6286cf/terradoc-0.3.0-py3-none-any.whl", hash = "sha256:a75e837745f4e5603ec875737ef67f6f83956732f91216ec67ed8d5ec5f73446", size = 326293, upload-time = "2026-03-11T05:51:17.37Z" },
+    { url = "https://files.pythonhosted.org/packages/d3/69/27057769ceda5f1b4f1ef54959daa0f5ddb4e79d574cfbabcd45bfd6b094/terradoc-0.11.0-py3-none-any.whl", hash = "sha256:d31300556fcd1c390398995de7114f56fef70f11733896135ac56f536a095fbf", size = 381534, upload-time = "2026-11-14T01:54:41.763Z" },
 ]
 
 [[package]]
