@@ -1,47 +1,48 @@
 - id: 1
   name_portuguese: Abacaxi-do-mato / abacaxi-do-boku
   scientific_name: Ananas ananassoides (Baker) L.B. Sm.
-  family: Bromieliaceae
+  family: Bromeliaceae
   fruiting_period: Julho / agosto
-  environment: itura (pobo okwa)
+  environment: boku
   abundance:
   - village: Piébaga
-    level: makare
+    level: boe bokwaré
   - village: Córrego Grande
-    level: biagare
+    level: makare
   - village: Tadarimana
     level: biagare
   pic_link: images/ethnobotany_001_nanai_morogorarewu.jpg
-  name_indigenous: Nanai / morogorarewu
+  name_indigenous: Nanai / morogoreu
+  usage: Boere nowu tudu beredo, boewo reko tuwiri koridodu ure tubegadoduji
 - id: 2
   name_portuguese: Abil
-  scientific_name: Pouteria torta subsp. glabara T.D penn.
+  scientific_name: cf. Pouteria torta subsp. glabra T.D. Penn.
   family: Sapotaceae
-  usage: Ere kurody kowuje, ere kurudo tugeje tuguduwo ce
+  usage: Ere kurodu kowuje, ere kurudo tugeje tuguduwo če
   fruiting_period: Outubro a janeiro
-  environment: itura (pobo okwa)
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: images/ethnobotany_002_bokogorewu_jokukuie_tae.jpg
+  name_indigenous: Bokogoreu / jokukuie
+- id: 3
+  name_portuguese: Açoita-cavalo
+  scientific_name: Luehea divaricata Mart.
+  family: Malvaceae
+  usage: Boe mode iwoi tawuje, tugera magaduwo ia boe ero tabo (turo monogodae, boe
+    ero boe ego biadodu)
+  fruiting_period: Maio a agosto
+  environment: itura, boku
   abundance:
   - village: Piébaga
     level: makare
   - village: Córrego Grande
-    level: biagare
-  - village: Tadarimana
-    level: biagare
-  pic_link: images/ethnobotany_002_bokogorewu_jokukuie_tae.jpg
-  name_indigenous: Bokogorewu / jokukuie tae
-- id: 3
-  name_portuguese: Açoita-cavalo
-  scientific_name: Luehea divaricata mart.
-  family: Malvaceae
-  usage: Boe modo iwo tawuje, tugera magaduwo ia boe ero tabo (turo monogodae, boe
-    ero boe ego biadodu
-  fruiting_period: Maio a agosto
-  environment: itura
-  abundance:
-  - village: Piébaga
-    level: maka jokody kare
-  - village: Córrego Grande
-    level: biagare
+    level: maka jokodu kare
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_003_pariwa.jpg
@@ -50,28 +51,28 @@
   name_portuguese: Algodão
   scientific_name: Gossypium hirsutum L.
   family: Malvaceae
-  usage: Boere a codo kidoguro tabo, dure boere reko tuwia paruji tumeadae pemegawo
+  usage: Boere a čodo kidoguru tabo, dure boere reko tuwia paruji tumeadae pemegawo
     boe ero jamedu boeji
-  fruiting_period: Epoca de cultivo
-  environment: itura
+  fruiting_period: Época de cultivo
+  environment: boe ekujei
   abundance:
   - village: Piébaga
-    level: biagare
+    level: boe bokware
   - village: Córrego Grande
-    level: maka jokody kare
+    level: maka jokodu kare
   - village: Tadarimana
-    level: makare
+    level: boe bokware
   pic_link: images/ethnobotany_004_akigoamekurewu.jpg
-  name_indigenous: Akigoamekurewu
+  name_indigenous: Akigoamekureu
 - id: 5
   name_portuguese: Algodãozinho
-  scientific_name: Cochlospermum regium (Schrank) pilg.
+  scientific_name: Cochlospermum regium (Schrank) Pilg.
   family: Bixaceae
-  usage: Boere boe jodo ukwa keje dure boere berago, tuguri kori epado ema, tuwire
+  usage: Boere boe jodo ukwa keje dure boere berego, tuguri kori epado ema, tuwiri
     kigori jamedu. As raízes na água em banhos, após os cânticos, para evitar dores
     de cabeça, garganta, mal estar etc
   fruiting_period: Agosto
-  environment: itura, boku
+  environment: boku, boe gigadu
   abundance:
   - village: Piébaga
     level: makare
@@ -80,72 +81,62 @@
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_005_akigorewu_bacororoepa_akigorewu.jpg
-  name_indigenous: Akigorewu (bacororoepa akigorewu)
+  name_indigenous: Akigoreu
 - id: 6
   name_portuguese: Amarelão / garapa
   scientific_name: Apuleia leiocarpa (Vogel) J.F. Macbr.
   family: Fabaceae
-  usage: boere ika, kamorewu, ira, bai ipodo nowu i tabo
-  fruiting_period: Janeiro / fereiro
-  environment: itura, boku
+  usage: Boere ika, kamoreu, ira, bai ipodo nowu i tabo
+  fruiting_period: Janeiro / fevereiro
+  environment: itura
   abundance:
   - village: Piébaga
-    level: bokwado makare; rumuga biagare
-  - village: Córrego Grande
     level: biagare
+  - village: Córrego Grande
+    level: makare
   - village: Tadarimana
-    level: 1 -makare, 2 -biagare
-  name_indigenous: Mekodo parewu
+    level: biagare
+  name_indigenous: Mekodo pareu
 - id: 7
   name_portuguese: Amendoim
   scientific_name: Chamaecrista spp. Moenche
   family: Fabaceae
-  usage: boere nowu i rugudu reko boetore enogwaji ere tugo tuiagibero pega ro pega
-    kawo ei. boere reko aredu kuiarurewudukuriji onogaredo areduwo ema
-  fruiting_period: diferentes epocas, conforme a especie
+  usage: Boere nowu i rugudu reko boetore enogwaji ere tugu tuiagibe ro pega kawo
+    ei. Boere reko aredu kuiarureudo kuriji onoragedu areduwo ema
+  fruiting_period: Diferentes épocas, conforme a espécie
   environment: boku
   pic_link: images/ethnobotany_007_batorarewu_diorubo.jpg
-  name_indigenous: Batorarewu diorubo
-- id: 8
-  name_portuguese: Amoeira-da-itura
-  scientific_name: Maclura tinctoria (L.) D. Don ex Steud.
-  family: Moraceae
-  usage: boere nowu i biri kuru epado boe ekuri kori boe ewija kuri epado ema jamedu
-  fruiting_period: Dezembro / janeiro
-  environment: itura (kurugwa okwa)
+  name_indigenous: Batorareu diorubo
   abundance:
   - village: Piébaga
-    level: maka jokody kare
+    level: makare
   - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+- id: 8
+  name_portuguese: Amoreira-da-itura
+  scientific_name: Maclura tinctoria (L.) D. Don ex Steud.
+  family: Moraceae
+  usage: Boere nowu i biri kuru epado boe ekuri kori boe ewijia kori epado ema jamedu
+  fruiting_period: Dezembro / janeiro
+  environment: itura
+  abundance:
+  - village: Piébaga
     level: boe bokware
+  - village: Córrego Grande
+    level: biagare
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_008_oko.jpg
-  name_indigenous: Oko
+  name_indigenous: Óko
 - id: 9
   name_portuguese: Angico branco
   scientific_name: Anadenanthera colubrina (Vell.) Brenan
   family: Fabaceae
-  usage: Boe erigire ema, boe ewai lpore ema. Boere aroia kabidodu epa towuje nowu
+  usage: Boe erigire ema, boe ewai ipore ema. Boere aroia kabidodu epa towuje nowu
     urugudu tabo, nowu jorubo kudu pemegare boe ewaboji
-  fruiting_period: Julho / agosto
-  environment: boe bokware
-  abundance:
-  - village: Piébaga
-    level: boe bokware
-  - village: Córrego Grande
-    level: boe bokware
-  - village: Tadarimana
-    level: boe bokware
-  pic_link: images/ethnobotany_009_akiri_kigado.jpg
-  name_indigenous: Akiri kigado
-- id: 10
-  name_portuguese: Angico
-  scientific_name: Anadenanthera falcata (Benth.) speg.
-  family: Fabaceae
-  usage: Boere paro ipo, bai ipodo ema, boe erigire ema jamedu a rogure boere tugiedo
-    ema. Boere nowu i toguru ta dure boere berego boe ekojari epace
-  fruiting_period: Julho / setembro
+  fruiting_period: Julho a agosto
   environment: itura
   abundance:
   - village: Piébaga
@@ -153,9 +144,26 @@
   - village: Córrego Grande
     level: makare
   - village: Tadarimana
+    level: maka jokodu kare
+  pic_link: images/ethnobotany_009_akiri_kigado.jpg
+  name_indigenous: Akiri kigado
+- id: 10
+  name_portuguese: Angico
+  scientific_name: Anadenanthera falcata (Benth.) Speg.
+  family: Fabaceae
+  usage: Boere paro ipo, bai ipodo ema, boe erigire ema jamedu a rogure boere tugujedo
+    ema. Boere nowu i toguru ta dure boere berego boe ekojari epače
+  fruiting_period: Junho a setembro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
     level: biagare
+  - village: Tadarimana
+    level: makare
   pic_link: images/ethnobotany_010_akiri.jpg
-  name_indigenous: akiri
+  name_indigenous: Akiri
 - id: 11
   name_portuguese: Aricá
   scientific_name: Physocalymma scaberrimum Pohl
@@ -163,58 +171,59 @@
   types_of_use: construção
   descriptions_of_use: usam a madeira na construção de casas
   fruiting_period: Agosto / setembro
-  environment: kurugwa okwa pobo okwa
+  environment: itura (boe jaguru)
   abundance:
   - village: Piébaga
-    level: boe bokware
+    level: makare
   - village: Córrego Grande
-    level: boe bokware
+    level: biagare
   - village: Tadarimana
-    level: boe bokware
+    level: biagare
   pic_link: images/ethnobotany_011_managurui_managururewu.jpg
-  name_indigenous: Managurui / managururewu
+  name_indigenous: Managuruí / mana-gurureu
+  usage: Boere bai ipodo ema
 - id: 12
   name_portuguese: Aroeira
-  scientific_name: Myracrodruon urundeuva allemão
+  scientific_name: Myracrodruon urundeuva Allemão
   family: Anacardiaceae
-  usage: 'Boere bai ipodo ema. Boere balgado, kalborido, aragodo ema Jamedu.Boere
-    biri mugudo nowu bekuru remawu bogai t  Kuru remawure boere mado ia tugorirebe
-    ji ia tugugodae ji, ake epare ema jamedu, Boere kuru berego túguduwo ce boe etoriwudu,
-    boe ekuiboka, boe ataga kori pegarewu ji:'
+  usage: Boere bai ipodo ema. Boere baigado, kaiborido, aragodo ema Jamedu. Boere
+    biri mugudo nowu bekuru remawu bogai t
   types_of_use: construção, medicinal
   descriptions_of_use: usam na construção de casas e cercas, para fazer arco pilão
     e lança (borduna). Cozinham a casca até ficar melada e passam em fraturas, ferimentos,
     coceiras, contusões e cãibra. Usam a entrecasaca para luxação e tomam o cozimento
     como preventivo de câncer de útero.
-  fruiting_period: Julho a setembro
-  environment: itura (pobo okwa jiwu)
+  fruiting_period: Junho a setembro
+  environment: itura, boku
   abundance:
   - village: Piébaga
-    level: boe bokware
+    level: biagare
   - village: Córrego Grande
-    level: boe bokware
+    level: biagare
   - village: Tadarimana
     level: biagare
   - village: Meruri
     level: construção, artesanato, medicinal
-  name_indigenous: Burudui
+  name_indigenous: Burudúi
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/298789755/medium.jpeg
+  pic_credit: © Frederico Acaz Sonntag, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/803529
 - id: 13
   name_portuguese: Assa-peixe
   scientific_name: Vernonanthura phosphorica (Vell.) H. Rob.
   family: Asteraceae
-  usage: Boere bai ipodo ema. Boere baigado, kaiborido, aragodo ema jamedu. Boere
-    biri mugudo nowu bekuru remawu bogai t
+  usage: Boere aru berego boe ekojari, ake epače
   fruiting_period: Agosto
-  environment: itura
+  environment: boku
   abundance:
   - village: Piébaga
-    level: maka jokody kare
+    level: biagare
   - village: Córrego Grande
-    level: boe bokware
+    level: maka jokodu kare
   - village: Tadarimana
     level: makare
   pic_link: images/ethnobotany_013_bacetaojiakirirewu.jpg
-  name_indigenous: Bacetaojiakirirewu
+  name_indigenous: Bacetaojiakirireu
 - id: 14
   name_portuguese: Axixá
   scientific_name: Sterculia pruriens
@@ -232,26 +241,28 @@
   pic_link: images/ethnobotany_014_paragorewu.jpg
   name_indigenous: Paragorewu
 - id: 15
-  name_portuguese: Azedinho
-  scientific_name: Sterculia striata A. St.-Hil-& naudin
+  name_portuguese: Axixá
+  scientific_name: Sterculia striata A. St.-Hil. & Naudin
   family: Malvaceae
-  usage: Kodure boere kowuje. Aru berego kuru pemegare boe etoriwudu kori ji
+  usage: Boere a gori kowuje. Boere ikado tabo, bai aodo ema jamedu
   fruiting_period: Junho a agosto
-  environment: boku, boe gigadu
+  environment: itura (pobo okwa)
   abundance:
   - village: Piébaga
-    level: makare
+    level: biagare
   - village: Córrego Grande
-    level: makare
+    level: biagare
   - village: Tadarimana
     level: biagare
-  name_indigenous: Bo
+  name_indigenous: Bó
 - id: 16
   scientific_name: Oxalis densifolia Mart. ex Zucc.
-  family: Oxilidaceae
-  usage: Boere kody kowuje
+  family: Oxalidaceae
+  usage: Boere Tuiokú kori epado nowu raru kuruče. Boere toedo aru keje tuwo kuru
+    remo turuwo koriji. Boere aru berego Boe ewiri uru, boe ekojari epare ema jamedu.
+    Boere taimó nowu kuru tabo tuwiri kigori pegareuji
   fruiting_period: Março
-  environment: boku
+  environment: itura, boku, boe gigadu
   abundance:
   - village: Piébaga
     level: makare
@@ -261,20 +272,24 @@
     level: makare
   pic_link: images/ethnobotany_016_boe_eto_pagodae.jpg
   name_indigenous: Boe eto pagodae
+  name_portuguese: Azedinho
 - id: 17
   name_portuguese: Babaçu
   scientific_name: Attalea speciosa Mart.
-  family: Areacaceae
-  usage: Boere a gori kowuje. Boere ikado tabo, bai aodo ema jamedu
-  fruiting_period: Agosto / Setembro
-  environment: boku, boe gigadu
+  family: Arecaceae
+  usage: 'Boere nowu no kududo dure boere kugudo, noa a boere kowuje itoia jamedu,
+    Boe ero makare nowu ai tabo: kodo, kodorabo, parikibotó. Boere nowu ai bu tuwai
+    aoji, tuwai paruji. Boe enogwagere noa a ji, itoiaji barae ekogodae anemia ji.
+    Nowu no kudu pemegare barae egore'
+  fruiting_period: Agosto / setembro (Piebaga)
+  environment: itura
   abundance:
   - village: Piébaga
-    level: makare
+    level: boe bokware
   - village: Córrego Grande
-    level: biagare
+    level: boe bokware
   - village: Tadarimana
-    level: biagare
+    level: makare
   pic_link: images/ethnobotany_017_noido.jpg
   name_indigenous: Noido
 - id: 18
@@ -299,22 +314,21 @@
   pic_link: images/ethnobotany_018_akudo_palmeira.jpg
   name_indigenous: Akudo (palmeira)
 - id: 19
-  name_portuguese: Bacuri / acuri
-  scientific_name: Acrocomia aculeata (jacq.) lodd. ex Mart.
-  family: Areacaceae
-  usage: 'Boere nowu no kududo dure boere kugudo, noa a boere kowuje itoia jamedu,
-    Boe ero makare nowu ai tabo: kodo, kodorabo, parikiboto. Boere nowu ai bu tuwai
-    ao ji, tuwai paru ji. Boe enogwagere noa a ji, itoiaji barae ekogodae anemia ji.
-    nowu no kudy pemegare barae egore'
+  name_portuguese: Bacaiúva / bocaiúva / macaúba
+  scientific_name: Acrocomia aculeata (Jacq.) Lodd. ex Mart.
+  family: Arecaceae
+  usage: Ere baigado itoče, iage ere bai towuge tabo. Ere pemegado tugeje ia boe ero
+    boekege. Ere kugudo, kowu (mugudo / berego), buturedu dure ere kowuge. Ere a kowuge,
+    ere kududo dure ere tugu juto
   fruiting_period: Dezembro a março
-  environment: boku, boe gigadu
+  environment: itura, boku, boe gigadu
   abundance:
   - village: Piébaga
     level: makare
   - village: Córrego Grande
     level: makare
   - village: Tadarimana
-    level: makare
+    level: boe bokware
   pic_link: images/ethnobotany_019_akudo_palmeira_kuimare_pequeno.jpg
   name_indigenous: Akudo (palmeira) / kuimare (pequeno)
 - id: 20
@@ -415,35 +429,153 @@
   usage: Nowu ukwa kuru pe re pemegare barogo peguruji
 - id: 33
   name_portuguese: Buritirana
-  usage: Ere mugudo, kowytuwo kowuje
+  usage: Erubore ema tubegagurugi. Rore pai-pai jewuge boere ekuiedo ema
+  name_indigenous: Tugogo
+  scientific_name: Mauritiella aritura (Mart.) Burret
+  family: Arecaceae
+  fruiting_period: Abril
+  environment: itura (pobo okwa)
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/40081445/medium.jpeg
+  pic_credit: © Nelson Wisnik, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/25848933
 - id: 34
-  name_portuguese: Buta(piebaga)
-  usage: Ere ukwa kowu dure ere codo boei, boere ia tubagudure ceboe kowuje dukeje
+  name_portuguese: Buta (Piebaga)
+  usage: Emode akodo turagodukeje. Boe ewabore ema turagoduwo tabo, boewo pobo reko
+    tabo
+  name_indigenous: Butobo
+  scientific_name: Não Identificada
+  fruiting_period: Março / abril
+  environment: itura, boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: boe bokware
 - id: 35
   name_portuguese: Cabaça
-  usage: Ere biri berego nowu kuru pemegare boe epegaguru, boe epegaguru kuji. Nowu
-    biri kobo, boe erubore ema tuwaidigiriwo karei
+  usage: Bai ipoguru boiadodawure ema
+  name_indigenous: Aroe ekuie poari
+  scientific_name: Lagenaria vulgaris Ser.
+  family: Cucurbitaceae
+  fruiting_period: Outubro a janeiro
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/48036942/medium.jpg
+  pic_credit: © Melinda Hoehn, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/164415
 - id: 36
-  name_portuguese: Cabaelo-de-nego / corticeiro
-  usage: Aru boere reko aroe ewiriji, aroe akedu mariguwo
+  name_portuguese: Cabelo-de-nego / corticeiro
+  usage: Boe emode etaimo nowu iwara kuruče ukwa kuruče boe ewiri uru epa nure ema,
+    barae ekogodae pegareu epa nure ema jamedu (dengue, doença de chagas, malária,
+    gastrite, e tosse) boe ekojari. Aru kuru boe eiogore pudui barae ekogodae pegareuji
+    (hepatite) boe etore ewudu beregadugodu epa nure ema jamedu
+  name_indigenous: Kiogorogo Ojorube
+  scientific_name: Erythroxylum suberosum A. St.-Hil.
+  family: Erythroxylaceae
+  fruiting_period: Abril
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/102488040/medium.jpeg
+  pic_credit: © Leonardo Bergamini, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/840302
 - id: 37
   name_portuguese: Caetano / melão-de-são-caetano
-  usage: Ere ai, ukwa berego tuguduwo kuruce, boe emokowudo epa
+  usage: Boe ere nowu ukwa kowu ureduduji kodi boe eiogi boe etaora koriji nowu kudu
+    rogu boe eiogore pudui boe eia pegaji boe eia kuroduji. Boe ere nowu jorubo ukwa
+    kurudo duji re boe enogwagere boe enoroja pegaji
+  name_indigenous: Ikuredu Bakarogo Ekure
+  scientific_name: Momordicata charantia L.
+  family: Cucurbitaceae
+  fruiting_period: Dezembro a abril
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/45184981/medium.jpeg
+  pic_credit: © John P Friel, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/28968536
 - id: 38
-  name_portuguese: Caia pia / cara pia
-  usage: Tudu ere kududo, ere kuru pagodydo, betureboedo ema ere kurudo. Ere itaguru
-    tawuje tuwo baiga ikudo, nowu ai bai awujiwure ema, ere torodo ema, tureruwo fabo
+  name_portuguese: Caia piá / cara piá
+  usage: Boe ere mano tawuje aroe padui baiadada dukeje ere aroedo ture remagu pui
+    jamedu mano tabo
+  name_indigenous: Gerigige Etore Erubo
+  scientific_name: Dorstenia cayapia Vell.
+  family: Moraceae
+  fruiting_period: Agosto / setembro
+  environment: kurugwa tada pobo jaguru towo, bogo jaguru
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/14296293/medium.jpg
+  pic_credit: © Rich Hoyer, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/870004
 - id: 39
-  name_portuguese: Caite
-  usage: Ere túwaigado itoèe, boe ekuiere nowu itaguruce, boere kodo towuje ai tabo
-    oro tabo
+  name_portuguese: Caité
+  usage: Boe emode kurodu kowuje boe ere kurudo jamedu. Boe ere nowu i biri kururu
+    boe ekudure če boe ewiri uruji boe ekuri koriji. Nowu biri pemegado tuwo boe ere
+    tugowudu bitudo a pemegare tuwo boe ekuri butudo
+  name_indigenous: Mano
+  scientific_name: Heliconia spp.
+  family: Heliconiaceae
+  fruiting_period: Janeiro a março
+  environment: itura (bogo jaguru)
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/348148000/medium.jpeg
+  pic_credit: © zhijunli, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/84964
 - id: 40
   usage: Erubore ema tubegagurugi. Rore pa pal jewuge boere ekuiedo ema
+  name_portuguese: Tipo de batata, redonda, branca
+  name_indigenous: Pobodori
 - id: 41
   usage: Emode akodo turagodykeje. Boe ewabore ema turagoduwo tabo, boewo pobo reko
     tabo
 - id: 42
   usage: Bai ipoguru boiadodawure ema
+  name_portuguese: Velame
+  name_indigenous: Amo Erubo
+  scientific_name: Merremia tomentosa (Choisy) Hallier
+  family: Convolvlaceae
+  fruiting_period: Junho a outubro
+  environment: Boku
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/125209048/medium.jpeg
+  pic_credit: © Ricardo Dislich, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/76547300
 - id: 43
   usage: Boe emode etaimo nowu iwara kuruce ukwa kuruèe boe ewiri uru epa nure ema,
     barae ekogodae pegarewu epa nure ema jamedu (dengue, doença de chagas, malária,
@@ -453,81 +585,180 @@
   usage: Boe ere nowu ukwa kow uredudui kodi boe eiogi boe etaora koriji nowu kudurogu
     boe elogore pudui boe eia pegaji boe eia kuroduji. Boe ere nowu jorubo ukwa kurudo
     duji re boe enogwagere boe enoroja pegaji
+  name_portuguese: Vassourinha-de-bruxa
+  name_indigenous: Kidoboe Emijeva Uiorubo / Kudobo Mitodu Ojorubo
+  scientific_name: Ouratea floribunda De Wild.
+  family: Ochnaceae
+  fruiting_period: Ano inteiro
+  environment: boku
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/92676190/medium.jpeg
+  pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/988445
 - id: 45
   usage: Boe ere mano tawuje aroe padui baiadada dukeje ple aroedo ture remagu pui
     jamedu mano tabo
+  name_portuguese: Urucum
+  name_indigenous: Nonogo
+  scientific_name: Bixa orellana L.
+  family: Bixaceae
+  fruiting_period: Agosto / Setembro
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/613886818/medium.jpg
+  pic_credit: © UNIRSE Irzalee,Ortiz, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/337665393
 - id: 46
   usage: boe ere tugowudu bitudo a pemegare tuwo boe ekuri butudo
 - id: 47
-  usage: Boe ere kurodu kowuje, boe ere kurudo, barae ere juko etaregarewudo ema,
-    iwara jore tow pobo betu rirewu rogu, barae ere betureboe bekurudu tabo. Anacardiaceae
-    Boe ere nowu a gori kowuje. Boe emode nowu koo araka bu tu (goiaba) kigadurewu
-    i biri keje boe ere beredo pemegare boe epegaguruji. Nowu ukwa boe eiogore pudui
-    ecew barae egore tori meture boe etadaduji (pedra na vesícula), eew barae ekogodae
-    iere (diabete e colesterol alto) epa nure ema jamedu. Boe ere beredo du boe ekudure
-    ce to kori epace peegare tuwo boe etodo kabi jamedu (depurativo)
+  usage: Boe ere kurodu kowuje, boe ere kurudo, barae ere juko etaregareudo ema, iwara
+    jore towu pobo betu rirewu rogu, barae ere betureboe bekurudu tabo. Boe ere nowu
+    a gori kowuje. Boe emode nowu kočo araka bu tu (goiaba) kigadureu i biri keje
+    boe ere beredo pemegare boe epegaguruji. Nowu ukwa boe eiogore pudui ečewu barae
+    egore tori meture boe etadaduji (pedra na vesícula), ečewu barae ekogodae iere
+    (diabete e colesterol alto) epa nure ema jamedu. Boe ere beredo du boe ekudure
+    če to kori epače pemegare tuwo boe etodo kabi jamedu (depurativo)
+  name_portuguese: Cajá
+  name_indigenous: Jatugo
+  scientific_name: Spondias mombin L.
+  family: Anacardiaceae
+  fruiting_period: Setembro a novembro
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/604477/medium.jpeg
+  pic_credit: © Marco Schmidt, CC BY-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/85098
 - id: 48
   usage: Boe ere tugera pemegado etaimoda jurubo kuruce du boe ere kurireboe etaimo
     ce ewidugugoduwo boe etore jokuru kurirewu jamedu
 - id: 49
-  usage: Boe emode tumikado I de tuwai ipodo ema jamedu. Boe ere i biri beredo tugojari
-    epace nowu biri boe epegagur epaõe
+  usage: Boe emode tumikado i če tuwai ipodo ema jamedu. Boe ere i biri beredo tugojari
+    epače nowu biri boe epegaguru epače
+  name_portuguese: Calmante
+  name_indigenous: Piekiegue Taroreu
+  scientific_name: Chamaesyce spp. Gray
+  family: Euphorbiaceae
+  fruiting_period: Abril a julho
+  environment: itura (kurugwa okwa)
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/411858/medium.jpg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/792275
 - id: 50
   usage: Boe eno ipo bigody nure ema tumeruwo tumika tabo
 - id: 51
   usage: Boe eiogore pudui nowu iwara ukwa tabo tori meture boe etoriwudo tada duji
-    (pedra nos rins), barae ekogodae iere (vesícula), boe epegaguru, boe ekure kurire
-    boe epiji du, awagu oia pegarewu (tétano). Ere taimo nowu aru kuruce, ekera biadoduré
-    nowu aru tabo, pegarewu monorewu ewo utudo tubiji, ewo barigu tubiji. Ere nowu
-    okora udo turugadu ewo manodo ema (aiagodyre ereru mode tabo). Ere nowu tudu kuru,
-    nowu kurodu kuru reko ia boe, awagoe etoegudure jiboei
+    (pedra nos rins), barae ekogodae iere (vesícula), boe epegaguru, boe eku re kurire
+    boe epiji du, awagu oia pegareu (tétano). Ere taimо nowu aru kuruče, ekera biadodure
+    nowu aru tabo, pegareu monoreu ewo utudo tubiji, ewo barigu tubiji. Ere nowu okora
+    udo turugadu ewo manodo ema (aiagodure ereru mode tabo). Ere nowu tudu kuru, nowu
+    kurodu kuru reko ia boe, awagoe etoegudure jiboei
+  name_portuguese: Cana brava
+  name_indigenous: Togoriwo
+  scientific_name: Gynerium sagittatum (Aubl.) P. Beauv.
+  family: Poaceae
+  fruiting_period: Abril a maio
+  environment: itura, boku, boe gigadu (bogo jaguru)
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/523479874/medium.jpg
+  pic_credit: © thaven, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/290970483
 - id: 52
-  usage: Boe ere aru ukwa beredo boe eiogore pudui tabo ake ji, boe ekojari biakure
-    boe eiduji, boe ewiri uruji
+  usage: Boe ere aru ukwa beredo boe eiogore pudui tabo akeji, boe ekojari biakure
+    boe eidujii, boe ewiri ureji
+  name_portuguese: Cana-de-macaco
+  name_indigenous: Koriu / Koreu / Koriwo
+  scientific_name: Costus spiralis (Jacq.) Roscoe
+  family: Costaceae
+  fruiting_period: Maio a junho
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/346692638/medium.jpeg
+  pic_credit: © saul_olpado, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/196921731
 - id: 53
-  usage: Boe ere boe jodo i biri keje kody keje boe eiogore pudui tabo taora koriji
-    tumedugody ji. Kuru pemegare boe eto koriji. Boe ere nowu i biri kurudo du boe
-    eiogore pudui tabo ecewu barae ekogodae pegarewu ure tugeragu boe ei boe erare
-    piji duji, Boe erubore tudu rogue bokureboeji
+  usage: Boe ere boe jodo i biri keje kodu keje boe eiogore pudui tabo taora koriji
+    tumedugoduji. Kuru pemegare boe eto koriji. Boe ere nowu i biri kurudo du boe
+    eiogore pudui tabo ečewu barae ekogodae pegareu ure tugeragu boe ei boe erare
+    piji duji, Boe erubore tudu roguče bokureboeji
+  name_portuguese: Canela-da-rapaziada
+  name_indigenous: Ipare Pogo Rareu
+  scientific_name: Piper arboreum Aubl.
+  family: Piperaceae
+  fruiting_period: Abril
+  environment: itura, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/296140199/medium.jpeg
+  pic_credit: © João Arthur Rabello, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/274192
 - id: 54
   usage: Boe ere tubaro ipodo ema boe ere tuwai jurado ema
+  name_portuguese: Cansansã
+  name_indigenous: Tuguje / Oto Raireu / Ruwo Etal Jerareu
+  scientific_name: Cnidosculus spp. Pohl
+  family: Euphorbiaceae
+  fruiting_period: Agosto a novembro
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: maka jokodu kare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/103570/medium.jpg
+  pic_credit: © Jason Sharp, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/81816
 - id: 55
   name_portuguese: Capim-bambu
-  scientific_name: Merstachys spp. Spreng
+  scientific_name: Merostachys spp. Spreng.
   family: Poaceae
-  usage: Boe emaragodyre ji boe ero kurirewuto biarewuto
-  environment: itura
+  usage: Boe ere urugudu rogu reko areme emoguro ji uwo kori akedudo
+  environment: itura, boku
   abundance:
   - village: Piébaga
     level: boe bokware
   - village: Córrego Grande
-    level: makare
-  - village: Tadarimana
     level: biagare
-  name_indigenous: Poari iwo
+  - village: Tadarimana
+    level: makare
+  name_indigenous: Poari Iwo
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/220792692/medium.jpg
+  pic_credit: © Liu Idárraga Orozco, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/129887955
 - id: 56
   name_portuguese: Capim-flechinha
-  scientific_name: Echinolaena inflexa
-  family: Poaceae
-  usage: Boe ere urugudurogu reko areme emoguro ji uwo kori akedudo
-  environment: itura, boku
-  abundance:
-  - village: Piébaga
-    level: boku, boe gigadu
-  - village: Córrego Grande
-    level: makare
-  - village: Tadarimana
-    level: biagare
-  - village: Meruri
-    level: makare
-  name_indigenous: Tugumana
-- id: 57
-  name_portuguese: Capim gordura
-  scientific_name: Melinis minutiflora
+  scientific_name: Echinolaena inflexa (Poir.) Chase
   family: Poaceae
   usage: Boe ere nowu jorubo kurudo du tabore boe eiogore pudui boe etogorire pudui
-    duji boe edawu korire pudui duji, boe ewogody boe ewiri kigoriji
-  fruiting_period: Abril
+    duji boe edawu korire pudui duji, boe ewogodu boe ewiri kigori ji
   environment: boku, boe gigadu
   abundance:
   - village: Piébaga
@@ -536,134 +767,410 @@
     level: biagare
   - village: Tadarimana
     level: makare
+  - village: Meruri
+    level: makare
+  name_indigenous: Tugumana
+  fruiting_period: Abril
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/29546859/medium.jpeg
+  pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/835663
+- id: 57
+  name_portuguese: Capim-gordura
+  scientific_name: Melinis minutiflora P. Beauv.
+  family: Poaceae
+  usage: Boe ere nowu i biri beredo du boe eiogore pudui tuwiri uruji, turuwo koriji,
+    tugojari kuriji, tuwiri pegaji, etore ewudae re kurire pudui duji
+  fruiting_period: Abril a setembro
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
   pic_link: images/ethnobotany_057_okuwadoge_etoburewu.jpg
-  name_indigenous: Okuwadoge etoburewu
+  name_indigenous: Okuwa Doge Etobu-reu
 - id: 58
   usage: Boe ere nowu i biri beredo du boe elogore pudui tuwiri urul, turuwo kori,
     tugojari kurii, tuwiri pegai, etore ewudae re kurire pudui duji
 - id: 59
   usage: Boe ere aru tugu tu tudo tui turemo boeto du oto dai tuwure jo kawo awagu
     keje
+  name_portuguese: Capitão-do-boe gigadu
+  name_indigenous: Juria í
+  scientific_name: Terminalia argentea Mart.
+  family: Combretaceae
+  fruiting_period: Agosto / setembro
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: maka jokodu kare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/28111316/medium.jpeg
+  pic_credit: © Germaine Alexander Parada, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/810587
 - id: 60
-  usage: Boe ere aru uredudu kodi bace ei, Ukwa kow du urugudu rogure boe ereireko
-    pudui uwo boe pegarewu ja do boe epiji
+  usage: Boe ere aru uredudu kodi bače ei, Ukwa kowu du urugudu rogure boe ere reko
+    pudui uwo boe pegareu ja do boe epiji
+  name_portuguese: Capotão
+  name_indigenous: Ikui
+  scientific_name: Salvertia convallariodora A. St.-Hil.
+  family: Vochysiaceae
+  fruiting_period: Agosto / setembro
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/42349184/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/701984
 - id: 61
-  usage: Boe ere boe etore etaimo aru kuruce emeru mariguwo. Boe eiogore boe etore
-    ei ukwa tabo ekawo tugeragu boe pegarewuji
+  usage: Boe ere boe etore etaimo aru kuruče emeru mariguwo. Boe eiogore boe etore
+    ei ukwa tabo ekawo tugeragu boe pegareuji
+  name_portuguese: Caroba
+  name_indigenous: Kigore Doge Erubo / Mace Erubo
+  scientific_name: Jacaranda cuspidifolia Mart.
+  family: Bignoniaceae
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/54257742/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/426940
 - id: 62
   usage: Boe ere awu ukwa beredo pemegare boe ewareduji
+  name_portuguese: Carobinha
+  name_indigenous: Pariki Iogoda Erubo
+  scientific_name: Adenocalymma nodosum (Silva Manso) L.G. Lohmann
+  family: Bignoniaceae
+  environment: boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/42501612/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/854052
 - id: 63
-  usage: Boe ewai ipore ema meriri iku ipore ema jamedu-
+  usage: Boe ewai ipore ema meriri iku ipore ema jamedu
+  name_portuguese: Carrapicho-de-carneiro / ovelha
+  name_indigenous: Bekururebe
+  scientific_name: Desmodium spp. Desv.
+  family: Fabaceae
+  fruiting_period: Julho / agosto
+  environment: itura e boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: maka jokodu kare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/46046446/medium.jpeg
+  pic_credit: © Mark Kluge, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/85324
 - id: 64
   usage: Boe ere tumikado i rema, tudaraiga boe ewai ipoguru ure ema jamedu. Boe ere
-    aru araka beredo boe ekuri kori epace du boe ere boe etore etaimo ce jamedu eduruwo
+    aru araka beredo boe ekuri kori epače du boe ere boe etore etaimo če jamedu eduruwo
+  name_portuguese: Chapéu-de-couro / capotão
+  name_indigenous: Merurireu
+  scientific_name: Salvertia convallariodora A. St.-Hil.
+  family: Vochysiaceae
+  fruiting_period: Junho a agosto
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/42349184/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/701984
 - id: 65
   usage: Boe ere aru ukwa bu tu pugeje dure boe ere berego boe eiogore tore ei eto
     botu mariguwo
 - id: 66
-  usage: Boe ere kurodu mugudo kurudo boe ere kurodurogu kowuje. Boe ere kuru butudo
+  usage: Boe ere kurodu mugudo kurudo boe ere kurodu rogu kowuje. Boe ere kuru butudo
     baito. I biri pemegare boe epegaruruji tuwo boe eragedudo jamedu boe eiogore pudui
     tabo
+  name_portuguese: Chapuleta
+  name_indigenous: Jugodoge Etore Erubo
+  scientific_name: Não Identificada
+  fruiting_period: Agosto / setembro; fevereiro / março
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
 - id: 67
-  usage: Ere udo ainono kodydu reore (rakare kodi durure kodi)
+  usage: Ere udo ainono kodudu rerore (rakare kodi durure kodi)
+  name_portuguese: Chico-magro / mutamba
+  name_indigenous: Eka
+  scientific_name: Guazuma ulmifolia Lam.
+  family: Malvaceae
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: maka jokodu kare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/30822626/medium.jpeg
+  pic_credit: © Christian Grenier, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/154538
 - id: 68
-  usage: Boe ere kurodu kowje, iere kaweredo ere nowu enogu kowuje. Ere nowu kaidaga
-    ai oro, ereru tabo (boe itaga, boe jerimaga keje
+  usage: Boe ere kurodu kowuje, iere kaweredo ere nowu enogu kowuje. Ere nowu kaidaga
+    ai oro, ereru tabo (boe itaga, boe jerimaga keje)
+  name_portuguese: Coco-do-boku
+  name_indigenous: Kaidaga (planta), Kaweredu (coco)
+  scientific_name: Syagrus flexuosa (Mart.) Becc.
+  family: Arecaceae
+  fruiting_period: Fevereiro / março
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/95658395/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/366058
 - id: 69
   usage: Ere tugeragu nowu kaguruji tugojari epaõe, baere tuwogado, boe ekera, boe
     ewure bokodyre, boe etonaregedo buture maiwu ukunabo bitu mariguwo\nArecaceae\nBoe
     ere nowu kaidaga a kururogu barigu tuiokuto, taiwo pemegawo, tuiorudu pemegawo
 - id: 70
-  usage: Boe ere tudogarado ema, tudogo epace, paro, kuiara, kaibori, aragodo
-- id: 71
-  name_portuguese: Coroadinho (piebaga)
-  scientific_name: Mouriri elluptica
-  family: Melastoituraceae
-  usage: Boe ere nowu biaru poporo kurodu ere kurudo tuguduwo ce
-  fruiting_period: Fevereiro / março
-  environment: Boku
+  usage: Boe ere tudogarado ema, tudogo epače, paro, kuiara, kaibori, aragodo
+  name_portuguese: Coquinho
+  name_indigenous: Kaidaga éku / Kaido
+  scientific_name: Syagrus flexuosa (Mart.) Becc.
+  family: Arecaceae
+  environment: boku
   abundance:
   - village: Piébaga
-    level: Maka jokodykare
+    level: makare
   - village: Córrego Grande
-    level: Makare
+    level: makare
   - village: Tadarimana
-    level: Biagare
-  pic_link: images/ethnobotany_071_biaro_poroporo.jpg
-  name_indigenous: Biaro poroporo
-- id: 72
-  name_portuguese: Curriola / fruta-de-viado (piebaga)
-  scientific_name: Pouteria ramiflora
-  family: Sapotaceae
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/95658395/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/366058
+- id: 71
+  name_portuguese: Coroadinho (Piebaga)
+  scientific_name: Mouriri elliptica Mart.
+  family: Melastoit uraceae
   usage: Boe ere kurodu kowuje, boe ekere ema
   fruiting_period: Fevereiro / março
-  environment: Boku, boe gigady
+  environment: boku
   abundance:
   - village: Piébaga
-    level: Maka jokodykare
+    level: maka jokodu kare
   - village: Córrego Grande
-    level: Biagare
+    level: makare
   - village: Tadarimana
-    level: Biagare
+    level: biagare
+  pic_link: images/ethnobotany_071_biaro_poroporo.jpg
+  name_indigenous: Biaru Poroporo
+- id: 72
+  name_portuguese: Curriola / fruta-de-veado (Piebaga)
+  scientific_name: Pouteria ramiflora (Mart.) Radlk.
+  family: Sapotaceae
+  usage: Boe ere nowu kuru bekuru tugu taoto tao kugudugod u wo tao pemegawo
+  fruiting_period: Fevereiro / março
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
   pic_link: images/ethnobotany_072_taru.jpg
   name_indigenous: Taru
 - id: 73
   usage: Boe ere nowu kuru bekuru tugu taoto tao kugudugoduwo tao pemegawo
 - id: 74
-  usage: Boe erbore ema nowu aru, iwara, ukwa ere mugudo joru tada tuguduwo ce, uwo
-    tugu pemegado, igurudu pemegawo boe erubo nure ema
+  usage: Boe erubore ema nowu aru, iwara, ukwa ere mugudo joru tada tuguduwo če, uwo
+    tugu pemegado, čigurudu pemegawo boe erubo nure ema
+  name_portuguese: Dama-dançante
+  name_indigenous: Bóe Etáo Epá
+  scientific_name: Hippeastrum goianum (Ravenna) Meerow
+  family: Amaryllidaceae
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/101842600/medium.jpeg
+  pic_credit: © Renan Cassimiro, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/841688
 - id: 75
-  usage: Ere nowu aru tugu taokudawu kuda, iadu ere taimo nowu aru kuruce boe ewudugugoduwo,
+  usage: Ere nowu aru tugu taokudawu kuda, iadu ere taimo nowu aru kuruče boe ewudugugoduwo,
     boekori kawo boe
+  name_portuguese: Doradinha
+  name_indigenous: Koge Erubo
+  scientific_name: Palicourea coriacea (Cham.) K. Schum.
+  family: Rubiaceae
+  fruiting_period: Abril
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/1852710/medium.jpg
+  pic_credit: © Morten Ross, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/1495739
 - id: 76
   usage: Ere ikudo toreduwo to barege ebo
-- id: 77
-  usage: "Ere mugudo tuguduwo de ere berego, nowu aru ere gugudo poboto tuvo taimo\
-    \ tabo, nowu a ere mugudo joru tada\n          beregodyo ere epado boe ewini"
-- id: 78
-  name_portuguese: Erva-de-andorinha / erva_de-passarinho
-  scientific_name: Euphoria potentiloides
-  family: Euphorbiaceae
-  usage: nowu aru kurùrogu boe ere reko tuwia, togwa poro ji bity mariguwo
-  environment: Boku
+  name_portuguese: Dormideira
+  name_indigenous: Koge etoreu
+  scientific_name: Mimosa pudica L.
+  family: Fabaceae
+  environment: boe gigadu
   abundance:
   - village: Piébaga
-    level: Makare
+    level: makare
   - village: Córrego Grande
-    level: Makare
+    level: makare
   - village: Tadarimana
-    level: Biagare
-  name_indigenous: Riwodo erubo
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/58693887/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/51921
+- id: 77
+  usage: Ere mugudo tuguduwo če ere berego, nowu aru ere gugudo poboto tuwo taimo
+    tabo. Nowu a ere mugudo joru tada beregoduwo ere epado boe ewiri uru, boe etaora
+    kori
+  name_portuguese: Embira-langada
+  name_indigenous: Apidoreu
+  scientific_name: Trema micrantha (L.) Blume
+  family: Cannabaceae
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/75838231/medium.jpeg
+  pic_credit: © Martin Reith, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/169902
+- id: 78
+  name_portuguese: Erva-de-andorinha / erva-de-passarinho
+  scientific_name: Euphorbia potentilloides Boiss.
+  family: Euphorbiaceae
+  usage: Boe enoroe, boe jerimaga, boe itaga kejere pemegadodure
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  name_indigenous: Riwódoe Erúbo
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/100454059/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/507676
 - id: 79
   name_portuguese: Figueira branca
-  scientific_name: Ficus dendrocida
+  scientific_name: Ficus dendrocida Kunth
   family: Moraceae
-  usage: Boe enoroe, boe jerimaga, boe itaga kejere pemegadodure
+  usage: Nowu ukware ere mugudo joru tada ere beredo tuguduwo če ere tugojari epado
+    ema
   fruiting_period: Agosto / setembro
-  environment: Itura (pobo okwa)
+  environment: itura (pobo okwa)
   abundance:
   - village: Piébaga
-    level: Makare
+    level: makare
   - village: Córrego Grande
-    level: Makare
+    level: makare
   - village: Tadarimana
-    level: Makare
+    level: makare
   name_indigenous: Ari
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/23700143/medium.jpeg
+  pic_credit: © Mateo Hernandez Schmidt, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/192402
 - id: 80
   usage: nowu ukuare ere mugudo joru tada ere beredo tuguduwo ce ere tugojari epado
     ema
 - id: 81
-  usage: nowu aru ere mugudo joru tada ere beredo tuguduwo ce ere tugojari epado ema
+  usage: Nowu aru ere mugudo joru tada ere beredo tuguduwo če ere tugojari epado ema
+  name_portuguese: Folha-de-vick / guiné
+  name_indigenous: Urugo Aru
+  scientific_name: Petiveria alliacea L.
+  family: Phytolaccaceae
+  fruiting_period: Abril
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/465630038/medium.jpg
+  pic_credit: © Deborah E Barber, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/259393990
 - id: 82
   usage: Boe enoroe nure ema mare boe jerimaga, boe itaga kejere boere tugera kiowado
     ji
+  name_portuguese: Folha-santa / fura-olho
+  name_indigenous: Kimao Itura Tadawu
+  scientific_name: Sorocea bonplandii (Baill.) W.C. Burger, Lanj. & Wess. Boer
+  family: Moraceae
+  fruiting_period: Novembro / dezembro
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/377187139/medium.jpeg
+  pic_credit: © Liu Idárraga Orozco, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/212263338
 - id: 83
   name_portuguese: Garobinha
-  scientific_name: Aspidosperma subincanum
+  scientific_name: Aspidosperma subincanum Mart. ex A. DC.
   family: Apocynaceae
-  usage: Nowu ukware ere mugudo joru tada berego tuguduwo ce, ere tuguri kori, tubegaguru,
-    tugiboka kori epado ema jamedu, uwo tugu pemegado
-  environment: Boe jaguru (itura, boku)
+  usage: Nowu a rogu kududo reko ia tuwure, tubogora kurodureuji. Nowu ukwa ere mugudo
+    joru tada ere berego tuguduwo če togojari ku epače, ewo tugu pemegado areme etorewudae,
+    boe etore eku epado ema
+  environment: boe jaguru (itura, boku)
   abundance:
   - village: Piébaga
     level: boe bokware
@@ -671,107 +1178,498 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  name_indigenous: Jorubo aogigirerewu
+  name_indigenous: Jorubo Aogigirereu
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/122861181/medium.jpg
+  pic_credit: © Ariane Pereira, CC BY-NC-ND, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/785502
 - id: 84
   usage: Nowu arogu kududo reko ia tuwure, tubogora kurodurewuji. Nowu ukwa ere mugudo
     joru tada ere berego tuguduwo ce togojari ku epace, ewo tugu pe-megado areme etorewudae,
     boe etore eku epado ema
 - id: 85
-  usage: Boe ere kurodu kowuje, boe ere kodyre maidu tudu kowuje
+  usage: Boe ere kurodu kowuje, boe ere kodure maidu tudu kowuje
+  name_portuguese: Gervão
+  name_indigenous: boe bokware
+  scientific_name: Stachytarpheta jamaicensis (L.) Vahl
+  family: Verbenaceae
+  environment: boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/388149349/medium.jpeg
+  pic_credit: © Dayron Breto, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/169322
 - id: 86
-  usage: Boe ere kurodu kowuje. Nowu araka ere mugudo joru tada beregodyre nowu i
+  usage: Boe ere kurodu kowuje. Nowu araka ere mugudo joru tada beregodure nowu i
     biri pemegare boe epegaguru epa reno
+  name_portuguese: Goiaba-do-mato
+  name_indigenous: Goiaba Umana / Barege Ewirireu / Itura Tadauru
+  scientific_name: Myrcia tomentosa (Aubl.) DC.
+  family: Myrtaceae
+  fruiting_period: Julho / agosto
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/44562360/medium.jpg
+  pic_credit: © Angel Fernandez, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/782314
 - id: 87
-  usage: Boe ere tugera kiogwado ji tuwai epace, irawo ema
+  usage: Boe ere tugera kiogwado ji tuwai epače, irawo ema
+  name_portuguese: Goiabinha-do-boku / araçá amarelo
+  name_indigenous: Umana
+  scientific_name: Psidium cattleyanum Sabine
+  family: Myrtaceae
+  fruiting_period: Março / abril
+  environment: itura, boku (biagare)
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/688574824/medium.jpg
+  pic_credit: © beatriz sabino, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/376593836
 - id: 88
   usage: Ere nowu kurodu mugudo joru tada enogwagere ji. Jaoboe mariguduboe enogwagere
     kuduji
+  name_portuguese: Gonçalo-alves
+  name_indigenous: Buruduí Umana
+  scientific_name: Astronium fraxinifolium Schott
+  family: Anacardiaceae
+  fruiting_period: Setembro
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: maka jokodu kare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/451127860/medium.jpeg
+  pic_credit: © leojales, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/184431
 - id: 89
   usage: Boe erubore nowu aru, nowu ukwa, boe eku pemegawo
 - id: 90
   usage: Ere nowu biri padure i kejewu tugu ia meririto pobo tabo, nowu biri ere mugudo
-    joru tada ekudure ce turageduwo. Nowu i tabo ere toroe boe ipodo ema taraiga
+    joru tada ekudure če turageduwo. Nowu i tabo ere toroe boe ipodo ema taraiga
+  name_portuguese: Guaranazinho
+  name_indigenous: Baría Bokujjiwo
+  scientific_name: copaifera martii Hayne
+  family: Fabaceae
+  fruiting_period: Setembro a dezembro
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/594698162/medium.jpg
+  pic_credit: © thiago_saiefert, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/328212284
 - id: 91
-  usage: Enogwagere nowo kurodurogu ji
+  usage: Enogwagere nowu kurodu roguji
+  name_portuguese: Guatambu / guatangu / pereira
+  name_indigenous: Bače Enodoreu / Mače Enodoreu
+  scientific_name: Aspidosperma subincanum Mart. ex A. DC.
+  family: Apocynaceae
+  fruiting_period: Abril
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/122861181/medium.jpg
+  pic_credit: © Ariane Pereira, CC BY-NC-ND, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/785502
 - id: 92
   usage: Boe ere aru mugudo joru tada berego ere epado tuwiri uru, taora kori. Boe
     ere kowu joruto uredududo uwo boe pegarewu barigu utudo, laboe biarewure ema
 - id: 93
-  usage: nowu aru, nowu ukwa boe ere tore etaimo kuruce tore ekogody kawo, tore epega
-    kawo dubogaire eroino ji. Boe ere nowu uru mugudo joru tada tugu-duwo e tuwiri
-    uru epace, tugojari epace, tuguri kori epace
+  usage: Nowu aru, nowu ukwa boe ere tore etaimo kuruče tore ekogodu kawo, tore epega
+    kawo dubogaire eroino ji. Boe ere nowu uru mugudo joru tada tuguduwo če tuwiri
+    uru epače, tugojari epače, tuguri kori epače
+  name_portuguese: Guiné
+  name_indigenous: Rugo
+  scientific_name: Petiveria alliacea L.
+  family: Phytolaccaceae
+  fruiting_period: Abril
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/465630038/medium.jpg
+  pic_credit: © Deborah E Barber, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/259393990
 - id: 94
   usage: Boe ere araka mugudo joru tada jorubo boe ekojari i epado ema (ikuri epado
-    ema). Boe erubore nowu ioide, boe ere tugana kado, boe ere tumure kado. boere
-    iwoi tawuje kogudo nowu korirewu kajeje. Ere nowu araka mugudo joru tada tugojari
+    ema). Boe erubore nowu iwoiče, boe ere tugana kado, boe ere tuwure kado, boere
+    iwoi tawuje kogudo nowu korirewu kajaje, ere nowu araka mugudo joru tada tugojari
     epado ema
+  name_portuguese: Hortelãzinho
+  name_indigenous: Rokoe Ewodoreu
+  scientific_name: Hyptis hilarii Benth.
+  family: Lamiaceae
+  fruiting_period: Abril
+  environment: pobo okwa
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: boe bokware
 - id: 95
   usage: Boe etao epa nure ema boe eiogore ji tabo pemegawo motuwo
+  name_portuguese: Imbaúba / embaúba / baueira
+  name_indigenous: Kowai
+  scientific_name: Cecropia lyratiloba Miq.
+  family: Urticaceae
+  fruiting_period: Abril a junho
+  environment: itura (pobo okwa)
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
 - id: 96
   name_portuguese: Ingá-mirim
-  scientific_name: Inga sessilis
+  scientific_name: Inga sessilis (Vell.) Mart.
   family: Fabaceae
   usage: Boe enogware nowu kurodu ji
   fruiting_period: Novembro a fevereiro
-  environment: Itura (pobo okwa)
+  environment: itura (pobo okwa)
   abundance:
   - village: Piébaga
-    level: Makare
+    level: makare
   - village: Córrego Grande
-    level: Biagare
+    level: biagare
   - village: Tadarimana
-    level: Biagare
+    level: biagare
   name_indigenous: Tori kobo
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/167830795/medium.jpeg
+  pic_credit: © Yuri Tedéo, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/464440
 - id: 97
-  usage: Nowu i ere tugera kiogwadoji bai epace, irado ema. Ere nowu iwoi, mea kogudo
+  usage: Nowu i ere tugera kiogwadoji bai epače, irado ema. Ere nowu iwoi, mea kogudo
     to tugeje
+  name_portuguese: Ipê amarelo
+  name_indigenous: Irui í
+  scientific_name: Handroanthus ochraceus (Cham.) Mattos
+  family: Bignoniaceae
+  fruiting_period: Junho a agosto
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/24961755/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/551431
 - id: 98
-  usage: "Boe enogwagere nowu kuroduji, ere kurudo. Ere nowu aru mugudo joru tada,\
-    \ ere tuiedawu kori epado ema, ere\n          awu areme etoroja epado ema, epeme-gawo"
+  usage: Boe enogwagere nowu kuroduji, ere kurudo. Ere nowu aru mugudo joru tada,
+    ere tuiedawu kori epado ema, ere awu areme etoroja epado ema, epemegawo
+  name_portuguese: Jaboticaba-do-boku
+  name_indigenous: Kuro cereu - fruto pequeno preto
+  scientific_name: Mouriri pusa Gardner ex Hook.
+  family: Melastoit uraceae
+  fruiting_period: Setembro / outubro
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/176126105/medium.jpeg
+  pic_credit: © alexandre callou sampaio, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/563893
 - id: 99
   usage: Boe eiogore aroe ei tabo boe ere etugu moto du oto dai
+  name_portuguese: Jacaré
+  name_indigenous: Koge Eibararareu (Córrego Grande)
+  scientific_name: Samanea tubulosa (Benth.) Barneby & J.W. Grimes
+  family: Fabaceae
+  fruiting_period: Maio a julho
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: maka jokodu kare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/27442166/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/138597
 - id: 100
   usage: Ukwa kowudodure, cododure boe etorei, erijodu rewo pudui, erijodu mariguwo
 - id: 101
-  usage: Boe ere kurudo tugeje enogwagere ji. nowu i ure turugado boe ewai, ika, epace.
-    Ere nowu i biri mugudo jory tada boe ecegurugudo epa, boe ekigori epa. Ere nowu
-    a kowy joruto ere nowu tubegaguru epado ema. Ere nowu kody, nowu i kuru tadu,
-    epado boe emearudu ewaduwo pudui, tugu cowo. Ere nowu biri okodo tapira mokuro
-    kuru kao tyiorubodo ema
+  usage: Boe ere kurudo tugeje enogwagere ji. Nowu i ure turugado boe ewai, ika, epače.
+    Ere nowu i biri mugudo joru tada boe ečegurugudo epa, boe ekigori epa. Ere nowu
+    a kowu joruto ere nowu tubegaguru epado ema. Ere nowu kodu, nowu i kuru tadu,
+    epado boe emearudu ewaduwo pudui, tugu čowo. Ere nowu biri okodo tapira mokuro
+    kuru kao tuiorubodo ema
+  name_portuguese: Jatobá-da-itura
+  name_indigenous: Bokwado (itura); Bokado (Piebaga)
+  scientific_name: Hymenaea courbaril L.
+  family: Fabaceae
+  fruiting_period: Junho a outubro
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: Bokwado - makare; Rumaga biagare
+  - village: Córrego Grande
+    level: biagare dos 2
+  - village: Tadarimana
+    level: 1 - makare, 2 - biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/456165450/medium.jpeg
+  pic_credit: © leojales, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/139075
 - id: 102
-  usage: Boedoge ere kurudo enogwagere kody ji. Ere nowu kurucodo ewo tadugodo tabo.
-    Ere awu toroe meriri boe ipodo nowu bie ipoce. Ere aroe ekedo ema toro baito.
-    Ere udo urugado bekurudo tuwo tugu taoto, tao kororogoduwo. Ere nowu kurodu, jorubo
-    kurudo ema, cegurugudu epace, tugu cowo
+  usage: Boedoge ere kurudo enogwagere koduji. Ere nowu kuručodo ewo tadugodo tabo.
+    Ere awu toroe meriri boe ipodo nowu bie ipoče. Ere aroe ekedo ema toro baito.
+    Ere udo turugado bekurudo tuwo tugu taoto, tao kororogoduwo. Ere nowu kurodu,
+    jorubo kurudo ema, čegurugudu epače, tugu čowo
+  name_portuguese: Jenipapo
+  name_indigenous: Bie
+  scientific_name: Genipa americana L.
+  family: Rubiaceae
+  fruiting_period: Outubro a janeiro
+  environment: itura (kurugwa okwa)
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/177579025/medium.jpeg
+  pic_credit: © Lucas Kaminski, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/105788506
 - id: 103
   usage: Boe ere ikado ema
+  name_portuguese: Jenipapo-bravo
+  name_indigenous: Jorúbo Ipo / Jorubo í
+  scientific_name: Tocoyena formosa (Cham. & Schltdl.) K. Schum.
+  family: Rubiaceae
+  fruiting_period: Agosto / setembro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/102435693/medium.jpeg
+  pic_credit: © Ricardo Dislich, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/787921
 - id: 104
-  usage: Boe ere ikado ema. nowu ibiri ere tugu poboto tuwure kori epado ema, togorire
-    puduido, tuguri kori, tugiboka kori epado ema
+  usage: Boe ere ikado ema. Nowu ibiri ere tugu poboto tuwure kori epado ema, togorire
+    puduido, tuguri kori, tuguiboka kori epado ema
+  name_portuguese: Jequitibá
+  name_indigenous: Okwami
+  scientific_name: Cariniana rubra Gardner ex Miers
+  family: Lecythidaceae
+  fruiting_period: Junho a outubro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/456008762/medium.jpeg
+  pic_credit: © jbio, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/254569911
 - id: 105
-  usage: Ere tugiedo, bourado ema paduwo tuwugeje
+  usage: Ere tuguiedo, bourado ema paduwo tuwugeje
+  name_portuguese: Lágrima-de-nossa-senhora
+  name_indigenous: Paie Jokuro
+  scientific_name: Coix lacryma-jobi L.
+  family: Poaceae
+  environment: kurugwa okwa pobo okwa
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/56026659/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/145588
 - id: 106
-  usage: Boe eiogore pudui boe ero kurirewu keje boe ero biarewu keje
+  usage: Boe eiogore pudui boe ero kurireu keje boe ero biareu keje
+  name_portuguese: Laranjeira-do-mato
+  name_indigenous: Meri Jorubo Iorubo
+  scientific_name: Sloanea guianensis (Aubl.) Benth.
+  family: Elaeocarpaceae
+  fruiting_period: Novembro / dezembro
+  environment: itura (pobo okwa jiwu)
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/116558685/medium.jpeg
+  pic_credit: © Tarciso Leão, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/1092441
 - id: 107
   usage: Boe ere tugedo ema
+  name_portuguese: Limãozinho
+  name_indigenous: Rimao Reo
+  scientific_name: Não Identificada
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: makare
 - id: 108
-  usage: Ere bekurudo tao epace, nowu ukwa ere reko tuwureadoji, tuwureado kawo tuwo
+  usage: Ere bekurudo tao epače, nowu ukwa ere reko tuwureadoji, tuwureado kawo tuwo
+  name_portuguese: Lírio / cebola-brava
+  name_indigenous: boe bokware
+  scientific_name: Hedychium coronarium J. Koenig
+  family: Zingiberaceae
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/80462699/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/143955
 - id: 109
-  usage: nowu aru ere mugudo joru tada boe etore jokuruga doge etaragudu kigody akeduwo
+  usage: Nowu aru ere mugudo joru tada boe etore jokuruga doge etaragudu kigodu akeduwo
+  name_portuguese: Lixeira
+  name_indigenous: Manai (Pieaga)
+  scientific_name: Curatella americana L.
+  family: Dilleniaceae
+  fruiting_period: Novembro
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/558290802/medium.jpg
+  pic_credit: © mateus macedo, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/84585
 - id: 110
-  usage: Ere aru mugudo joru tada ekudure ce, nowu aru ere gugudo jamedu tuwo reko
-    tubogora kuroduji, epogora bokodyre ere rekoji jamedu
+  usage: Ere aru mugudo joru tada ekudure če, nowu aru ere gugudo jamedu tuwo reko
+    tubogora kuroduji, epogora bokodure ere rekoji jamedu
+  name_portuguese: Lixeirinha
+  name_indigenous: Jugodoge Etabureu / Jugo Doge Etore Erubo
+  scientific_name: Davilla elliptica A. St.-Hil.
+  family: Dilleniaceae
+  fruiting_period: Abril
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/69024177/medium.jpg
+  pic_credit: © rosindia, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/902203
 - id: 111
   usage: Boe ere kurodu kowuje. Ere nowu tudu kagu poboto, tuiorubodo ema, boe ekuri
-    kori pegarewu, boe epegaguru, bakuru korewu peagody. Ere nowu oku mugüdu joru
-    tada, du ekudure ce, ere areme etoroja epado ema, uwo etoroja pemegado, ekuibokwa
-    kori epado ema jamedu
+    kori pegareu, boe epegaguru, bakuru koreu peagodu. Ere nowu oku mugudu joru tada,
+    du ekudure če, ere areme etoroja epado ema, uwo etoroja pemegado, ekuibokwa kori
+    epado ema jamedu
+  name_portuguese: Lobeira / fruta-de-lobo
+  name_indigenous: Rie
+  scientific_name: Solanum lycocarpum A. St.-Hil.
+  family: Solanaceae
+  fruiting_period: Fevereiro a abril
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/240293072/medium.jpeg
+  pic_credit: © a_f_r, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/347865
 - id: 112
   usage: Boere aru berego du boe eiogore aredu kogogodaeji tabo. Boe eiogore aredu
     ji kuiaruwo
+  name_portuguese: Malva branca
+  name_indigenous: Rarukugudugodu
+  scientific_name: Croton goyazensis Müll. Arg.
+  family: Euphorbiaceae
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/97866966/medium.jpg
+  pic_credit: © rosindia, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/1136114
 - id: 113
-  usage: Boere ukwa, aru ureduduwo uwo tuiodo boe pegarewu keje, boere nowu i biri
+  usage: Boere ukwa, aru ureduduwo uwo tuiodo boe pegareu keje, boere nowu i biri
     ukwa beredo boe ekuri kori, boe ewiri kurodu, boe etaora
+  name_portuguese: Mama-cadela
+  name_indigenous: Kimau
+  scientific_name: Brosimum gaudichaudii Trécul
+  family: Moraceae
+  fruiting_period: Agosto
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/70546664/medium.jpg
+  pic_credit: © Reuber Brandão, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/481786
 - id: 114
   usage: "Barae ere nowu ira bu tuwai aoji, boere aru, ukwa, kowuje jui tabo du boe\
     \ eiogore negedorogu kodyi maidurogu ji,\n          boe pegarewu jetu kawoji"
@@ -779,34 +1677,187 @@
   usage: Boere boe jodo keje du ekudure kuruce tugojari ji, tuwiri uruji
 - id: 116
   usage: Kodure boere kowuje, boe eiogore torei aru tabo
+  name_portuguese: Marolinho
+  name_indigenous: Uiaru
+  scientific_name: Annona dioica A. St.-Hil.
+  family: Annonaceae
+  fruiting_period: Abril a maio
+  environment: boku, itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/58531859/medium.jpg
+  pic_credit: © kapiuna, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/989769
 - id: 117
-  usage: Boe eigore pudui, ukwa tabo tuwo pobogo kowuje
+  usage: Boe eiogore pudui, ukwa tabo tuwo pobogo kowuje
+  name_portuguese: Mororó (arbusto)
+  name_indigenous: Pobogo Doge Erubo
+  scientific_name: Bauhinia spp. L.
+  family: Fabaceae
+  fruiting_period: Agosto / setembro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/240298213/medium.jpg
+  pic_credit: © Simon Attwood, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/68226
 - id: 118
-  usage: Boere kurodu kowje, boere betudo, boere kurudo. Boere i kuru okodo norigo
-    kao. Boe erigirire ema. Boe ekera magadure boe eroji kuru tabo. Kuru pemegare
-    boe ekuri kori ji. Kuru pemegare boe epegaguru kuji
+  usage: Boere kurodu kowuje, boere betudo, boere kurudo. Boere i kuru okodo nonogo
+    kao. Boe erigire ema. Boe ekera magadure boe eroji kuru tabo. Kuru pemegare boe
+    ekuri koriji. Kuru pemegare boe epegaguru kuji
+  name_portuguese: Mangaba
+  name_indigenous: Bato
+  scientific_name: Hancornia speciosa Gomes
+  family: Apocynaceae
+  fruiting_period: Setembro a novembro; fevereiro / março
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/11592001/medium.jpg
+  pic_credit: © João Medeiros, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/563886
 - id: 119
-  usage: Boe eiogore tugogoriji, tuwiri kurody ji tabo, i kuru pemegare boe ekuiboka
-    kori ji jamedu. Boe biri, aru beredo du boere reko kigori pegarewuji, awu barae
+  usage: Boe eiogore tugogoriji, tuwiri kuroduji tabo, i kuru pemegare boe ekuiboka
+    koriji jamedu. Boe biri, aru beredo du boere reko kigori pegareuji, awu barae
     egore diabete epare ema. Boe ekuiboka kori epare ema jamedu. Boe eiogore tugogoriji
     aru tabo
+  name_portuguese: Mangaba-brava / pacari
+  name_indigenous: Akorewu
+  scientific_name: Lafoensia pacari A. St.-Hil.
+  family: Lythraceae
+  fruiting_period: Março a maio
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/246538629/medium.jpg
+  pic_credit: © Mauricio Mercadante, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/347879
 - id: 120
-  usage: Boere aru, ukwa berego du pemegare boe etaora kori ji barae egore conceptivo
+  usage: Boere aru, ukwa berego du pemegare boe etaora koriji barae egore conceptivo
     ji jamedu
+  name_portuguese: Maracanã / manacá
+  name_indigenous: Akiwe Etore Ekejo-rubo
+  scientific_name: Spiranthera odoratissima A. St.-Hil.
+  family: Rutaceae
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/460783370/medium.jpeg
+  pic_credit: © claudia_mermelstein, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/256921343
 - id: 121
-  usage: Boere ukwa berego boe ekuri kori epace
+  usage: Boere ukwa berego boe ekuri kori epače
+  name_portuguese: Maracujazinho
+  name_indigenous: Bakugu / Pogobo
+  scientific_name: Passiflora spp. L.
+  family: Passifloraceae
+  fruiting_period: Abril
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/60918461/medium.jpg
+  pic_credit: © skitterbug, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/51452
 - id: 122
   usage: Boere kurodu kowuje, boere kurudo jamedu
+  name_portuguese: Marmelada (fruto verde)
+  name_indigenous: Ari i
+  scientific_name: Alibertia verrucosa S.Moore
+  family: Rubiaceae
+  fruiting_period: Dezembro a março
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
 - id: 123
   usage: Boere kurodu kowuje, boere kurudo jamedu, boere aru enogu beredo boe epegagúru
     epace
 - id: 124
   usage: Boere kurodu kowuje boere kurudo jamedu
+  name_portuguese: Marolo / araticum / cabeça-de-nego
+  name_indigenous: Mareguetaureu / Mareguetau (Córrego Grande)
+  scientific_name: Annona coriacea Mart.
+  family: Annonaceae
+  fruiting_period: Janeiro a abril
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/101199524/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/563848
 - id: 125
-  usage: Boere ukwa beredo boe epegaguru, boe ekuri kugudu epace jamedu
+  usage: Boere ukwa beredo boe epegaguru, boe ekuri kugudu epače jamedu
+  name_portuguese: Marra pinto
+  name_indigenous: Bekururebe / Boe Etore Erubo
+  scientific_name: Bidens spp. L.
+  family: Asteraceae
+  fruiting_period: Abril
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/78688129/medium.jpg
+  pic_credit: © PINKE, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/50204
 - id: 126
-  usage: Boere nowu ito kuru epado boe eto kori epace, boe ekojari epace, awu boe
+  usage: Boere nowu ito kuru epado boe eto kori epače, boe ekojari epače, awu boe
     ekeno meadu jiwu boe ekogodae
+  name_portuguese: Mescla-aroeira / Breu sucuruba (“macho” - “dá pouca resina”)
+  name_indigenous: Kido
+  scientific_name: Trattinickia rhoifolia Willd.
+  family: Burseraceae
+  fruiting_period: Agosto / setembro; fevereiro / março
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: maka jokodu kare
+  - village: Tadarimana
+    level: makare
 - id: 127
   usage: Boere reko, boe etore kodyre maiwu biriji kiogwagiri otodai (boe ero iedodu).
     Boe eto kori epare nowu i kuru, boere nowu i uru berego tugojari epace awu\nboe
@@ -824,6 +1875,9 @@
   family: Polygonaceae
   usage: Boe ere aru beredo (barure ekogodyre) barae ekogody (diabetes) ji
   name_indigenous: Jukorewugeeiga
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/256921561/medium.jpeg
+  pic_credit: © Todd Boland, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/186651
 - id: 132
   name_portuguese: Pau-Santo
   scientific_name: Kielmeyera coriacea
@@ -831,6 +1885,9 @@
   usage: Boe ere to beragu udo ce boe ero kurirewu keje. Boe ere nowu beragu tugu
     ropa doge eworito boe ere tuwaiga bekurododore
   name_indigenous: Berago / Beragou i
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/170370208/medium.jpg
+  pic_credit: © Joás, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/601744
 - id: 133
   name_portuguese: Pau-terrão / Pau-terra-amarelo
   scientific_name: Qualea grandiflora
@@ -924,10 +1981,25 @@
   usage: Esfregam as folha a noite nas pernas para não serem picados por cobras
   name_indigenous: Kie o Jorubo ikui
 - id: 157
-  name_portuguese: Gravatá / Macambira
-  usage: As flores os bororo colocam nos orifícios das orelhas para terem vivacidade
-    e não esquecerem os grandes cânticos religiosos
-  name_indigenous: Ocerago
+  name_portuguese: Gravatá
+  usage: Boe erubore nowu aru, nowu ukwa, boe eku pemegawo. As flores os bororo colocam
+    nos orifícios das orelhas para terem vivacidade e não esquecerem os grandes cânticos
+    religiosos
+  name_indigenous: Očebaka (itura) / kido (boku)
+  scientific_name: Bromelia pinguin L.
+  family: Bromeliaceae
+  fruiting_period: Outubro
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/64669430/medium.jpg
+  pic_credit: © PRAC VALLES, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/154798
 - id: 158
   name_portuguese: Lírio do campo
   usage: Na ausência do Bari, as caças que abatem, e que são necessárias serem benzidas
@@ -946,18 +2018,23 @@
 - id: 161
   name_portuguese: Buriti
   scientific_name: Mauritia flexuosa L. f.
-  usage: Tudu ere kududo, ere kuru pagodudo, betureboedo ema ere kurudo. Ere itaguru
-    tawuje tuwo baíga ikudo, nowu ai bai awujiwure ema, ere torodo ema, tureruwo tabo
+  usage: Ere tuwaigado itoče, boe ekuierе nowu itaguruče, boere kodo towuje ai tabo
+    oro tabo
   types_of_use: alimento, artesanato, construção, ritual
   descriptions_of_use: com o fruto fazem farinha, vinho doce e suco. Tiram a seda
     do broto para fazer fio de arco. A palha serve para fazer telhado, artesanato,
     saias (usadas no ritual)
   abundance:
   - village: Piébaga
-    level: bokware
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
   - village: Tadarimana
-    level: bokware
-  name_indigenous: Marido
+    level: boe bokware
+  name_indigenous: Marido (árvore) / Mano (fruto)
+  family: Arecaceae
+  fruiting_period: Setembro / outubro
+  environment: itura, boku, boe gigadu (boe jaguru, bogo jaguru)
 - id: 162
   name_portuguese: Canela de ema
   scientific_name: Vellozia squamata
@@ -985,9 +2062,23 @@
   name_indigenous: Boecuri naregedo jorubo epa poro ji
 - id: 166
   name_portuguese: Japecanga
-  usage: As raízes raspadas, passadas no rosto, permitem que o homem que estiver envenenado
+  usage: Ukwa kowudodure, čododure boe etorei, erijodu rewo pudui, erijodu mariguwo.
+    As raízes raspadas, passadas no rosto, permitem que o homem que estiver envenenado
     por outro nada sofra
-  name_indigenous: Boto cujagurewu biagarewu
+  name_indigenous: Bóto Jerigigaréu
+  scientific_name: Smilax brasiliensis Spreng.
+  family: Smilacaceae
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/104608029/medium.jpg
+  pic_credit: © Maria Clara Gil, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/81830
 - id: 167
   name_portuguese: Vinhático
   usage: As cascas na água bebem contra dores de barriga
@@ -1017,15 +2108,10 @@
   pic_link: images/ethnobotany_171_bacororoepa_akigo_orewu.jpg
   name_indigenous: Bacororoepa akigo orewu
 - id: 172
-  name_portuguese: Cajú do campo/cajú do cerrado
-  scientific_name: Anacardium humile A. St. Hil.
-  usage: Boe ére kurodu kowuje, boe ere kurudo, barae ere juko etaregareudo ema, iwara
-    jore towu pobo betu rirewurogu, barae ere betureboe bekurudu tabo. Boe ere nowu
-    a gori kowuje. Boe emode nowu koco araka bu tu (goiaba) kigadurewu i biri keje
-    boe ere beredo pemegare boe epegaguru ji. Nowu ukwa boe eiog ore pudui ecewu barae
-    egore tori mature boe etadaduji (pedra na vesícula), ecewu barae ekogodae iere
-    (diabete e colesterol alto) epanure ema jamedu Boe ere beredo du boe ekudure ce
-    to kori epace pemegare tuwo boe etodo kabi jamedu (depurativo).
+  name_portuguese: Cajuzinho
+  scientific_name: Anacardium humile A. St.-Hil.
+  usage: Boe ere tugera pemegado etaimoda jurubo kuruče du boe ere kurireboe etaimo
+    če ewudugugoduwo boe etore jokuru kurireu jamedu
   descriptions_of_use: comem o fruto fazem suco, sovete, doce. Comem a castanha torrada,
     fazem chá de broto de Koco com a casaca da goiaba branca para a diarreia. A raiz
     é usada para tratar pedra na vesícula, diabetes, e colesterol alto. Fazem chá
@@ -1033,10 +2119,18 @@
     provocarem a insônia
   fruiting_period: setembro-novembro
   abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
   - village: Meruri
     level: alimentício e medicinal
   pic_link: images/ethnobotany_172_koco.jpg
-  name_indigenous: Koco
+  name_indigenous: Kočo
+  family: Anacardiaceae
+  environment: boku
 - id: 173
   name_portuguese: Caroba
   scientific_name: Jacaranda caroba
@@ -1056,6 +2150,9 @@
   usage: (merindiba) O leite da madeira é usado para conservar o urucum no estado
     pastoso
   name_indigenous: Kodu i iporewu
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/37394303/medium.jpeg
+  pic_credit: © Marvin López M., CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/285682
 - id: 176
   name_portuguese: Aritucum do campo
   scientific_name: Annona crassiflora
@@ -1078,14 +2175,45 @@
   family: Solanaceae
   usage: As folhas esfregadas nas mãos, passam na parte frontal da cabeça contra dores
   name_indigenous: Mearurewu
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/353822534/medium.jpeg
+  pic_credit: © Douglas Meyer, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/200531792
 - id: 180
-  name_portuguese: Cambará
-  usage: O chá das folhas tenras contra a tosse
-  name_indigenous: Cogekereru í
+  name_portuguese: Cambará / pau-de-tucano
+  usage: Boe eno ipo bigodu nure ema tumeruwo tumika tabo. O chá das folhas tenras
+    contra a tosse
+  name_indigenous: Kogekureu í
+  scientific_name: Vochysia tucanorum Mart.
+  family: Vochysiaceae
+  environment: pobo okwa
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/462692857/medium.jpg
+  pic_credit: © rick_costa, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/153008
 - id: 181
-  name_portuguese: Ata do Mato
-  usage: Colocam a imbira no pescoço quando viajam, para não adoecerem
-  name_indigenous: Paragorewu iorubo
+  name_portuguese: Atinha-do-mato
+  usage: Boere kodu kowuje. Colocam a imbira no pescoço quando viajam, para não adoecerem
+  name_indigenous: Paragóreu
+  scientific_name: Annona sp.
+  family: Annonaceae
+  fruiting_period: Março / abril
+  environment: itura, boku (biagare)
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/29200458/medium.jpeg
+  pic_credit: © David W K Foster, CC BY-NC-ND, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/69974
 - id: 182
   name_portuguese: Marmelada de copinho
   usage: A madeira fazem armação do buque (rede de pesca)
@@ -1095,9 +2223,24 @@
   usage: Cozinham o palmito e bebem a água contra febres
   name_indigenous: Bukedaga enogo
 - id: 184
-  name_portuguese: Marmelada Preta
-  usage: O carvão do caule é passado no rosto, contra perturbações mentais
-  name_indigenous: Boco ika
+  name_portuguese: Marmelada preta
+  usage: Boere kurodu kowuje, boere kurudo jamedu, boere aru enogu beredo boe epegaguru
+    epače. O carvão do caule é passado no rosto, contra perturbações mentais
+  name_indigenous: Boko i
+  scientific_name: Cordiera macrophylla (K. Schum.) Kuntze
+  family: Rubiaceae
+  fruiting_period: Julho / agosto
+  environment: itura, boku (pobo okwa)
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/235542626/medium.jpeg
+  pic_credit: © Eric Fischer Rempe, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/137869846
 - id: 185
   name_portuguese: Piqui
   scientific_name: Caryocar brasiliense
@@ -1114,17 +2257,26 @@
   usage: Para lixar as pontas das flechas
   name_indigenous: Manaru tugo epa
 - id: 188
-  name_portuguese: Acaiacá/Cedro
-  scientific_name: Cedrella fissilis vel.
-  usage: Boe ere tumikado i rema, tudaraiga boe ewai ipoguru ure ema jamedu. Boe ere
-    aru araka beredo boe ekuri kori epace du boe ere boe etore etaimo ce jamedu eduruwo
+  name_portuguese: Cedro
+  scientific_name: Cedrela fissilis Vell.
+  usage: Boe ere aru ukwa bu tu pugeje dure boe ere berego boe eiogore tore ei eto
+    botu mariguwo
   types_of_use: construção, artesanato, medicinal
   descriptions_of_use: Usam a madeira para fazer canoa, remo, e para a construção
     de casas. fazem chá do broto da folha para cólica e banho para fortificar a criança.
     Fazem remédio para as galinhas não adoecerem.
   fruiting_period: junho-agosto
   pic_link: images/ethnobotany_188_noakodo_i_rea_tarewu_rea_doge_etuararewu.jpg
-  name_indigenous: Noakodo i / Rea tarewu / Rea doge etuararewu
+  name_indigenous: Noakodo í / Rea tareu (tadarimana); Rea doge’etuarareu (Piebaga)
+  family: Meliaceae
+  environment: bogo jaguru
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
 - id: 189
   name_portuguese: Timbó
   usage: Por ocasião das festas, as mulheres recusam a virem tomar parte nos cânticos,
@@ -1148,20 +2300,53 @@
   family: Urticaceae
   descriptions_of_use: Fazem chá das folhas contra tosse
   name_indigenous: Kujare epa jorubo
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/372038728/medium.jpg
+  pic_credit: © Luis Peter Piña Pizango, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/936819
 - id: 193
-  name_portuguese: Guavira
+  name_portuguese: Guavira / guabiroba
   descriptions_of_use: Passam a raiz carbonizada no rosto contra febres
-  name_indigenous: Joku kuie tai
+  name_indigenous: Jokukujetai
+  scientific_name: boe gigadumanesia adamantium (Cambess.) O. Berg
+  family: Myrtaceae
+  usage: Boe ere aru mugudo joru tada berego ere epado tuwiri uru, taora kori. Boe
+    ere kowu joruto uredududo uwo boe pegarewu barigu utudo, laboe biareure ema
+  fruiting_period: Janeiro a março
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/26499623/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/563856
 - id: 194
   name_portuguese: Azedinha
   descriptions_of_use: Usam o sumo das folhas contra picada de escorpião
   name_indigenous: Boeto Pagodyda
 - id: 195
-  name_portuguese: Mama de Porca
-  scientific_name: Rutaceae
-  usage: Passam as folhas no seio das menores impúberes, para não terem seios grandes
-    quando moças
-  name_indigenous: Kie emogorurewu
+  name_portuguese: Mamica-de-porca
+  scientific_name: Zanthoxylum rhoifolium Lam. / Zanthoxylum riedelianum Engl.
+  usage: Barae ere nowu ira bu tuwai aoji, boere aru, ukwa, kowuje jui tabo du boe
+    eiogore negedo rogu kodui maidu roguji, boe pegareu jetu kawoji. Passam as folhas
+    no seio das menores impúberes, para não terem seios grandes quando moças
+  name_indigenous: Kiemogurureu
+  family: Rutaceae
+  fruiting_period: Outubro a dezembro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/249095240/medium.jpeg
+  pic_credit: © Eric Fischer Rempe, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/281420
 - id: 196
   name_portuguese: Curraleira
   scientific_name: Vassourinha-curraleira
@@ -1169,22 +2354,46 @@
   usage: Mastigam as folhas para serem bons para correr
   name_indigenous: Orogo iorubo
 - id: 197
-  name_portuguese: Paineira
-  scientific_name: Eriotheca gracilipes
+  name_portuguese: Imbitu / Paineira do boku
+  scientific_name: Eriotheca gracilipes (K. Schum.) A. Robyns
   family: Malvaceae
-  usage: As imbiras são usadas para amarrar as caças abatidas
-  name_indigenous: Aroecody corewu
+  usage: Boedoge enogware nowu kuwo a ji. Boedogere kuwo oro pemegado parikibotoče,
+    kodoraboče ere nowu ai bu tuwai aoji tuwai epače. As imbiras são usadas para amarrar
+    as caças abatidas
+  name_indigenous: Aroé Ekududuréu í
+  fruiting_period: Outubro / novembro
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/424066495/medium.jpeg
+  pic_credit: © Richard Matheus Fernandes, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/238212980
 - id: 198
   name_portuguese: Limão bravo
   usage: O caule é usado nos feitiços
   name_indigenous: Boto kujagurewu
 - id: 199
-  name_portuguese: Mandioca Brava
-  scientific_name: Manihot esculenta
+  name_portuguese: Mandioca-brava
+  scientific_name: Manihot esculenta Crantz
   family: Euphorbiaceae
-  usage: As folhas introduzem nos cazeiros das saúvas, extinguindo-as
+  usage: Boere boe jodo keje du ekudure kuruče tugojariji, tuwiri uruji. As folhas
+    introduzem nos cazeiros das saúvas, extinguindo-as
   pic_link: images/ethnobotany_199_ju_umana.jpg
   name_indigenous: Ju umana
+  fruiting_period: Ano inteiro
+  environment: itura, boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: makare
 - id: 200
   name_portuguese: Algodãozinho folhas espinhosas
   usage: Para os mesmos fins do N 25
@@ -1238,12 +2447,24 @@
   usage: Esfregam o carvão da madeira, quando furam os dentes das onças abatidas
   name_indigenous: Baiugo
 - id: 211
-  name_portuguese: Pau de Oleo
-  scientific_name: Copaifera trapezifolia
+  name_portuguese: Copaíba / pau-d’óleo
+  scientific_name: Copaifera langsdorffii Desf.
   family: Fabaceae
-  usage: O óleo passado sobre o ventre da mulher, faz com que esta fique gravida sempre
+  usage: Ere tugeragu nowu kaguruji tugojari epače, baere tuwogado, boe ekera, boe
+    ewure bokodure, boe etonaregedo buture maiwu ukunabo bitu mariguwo. Boe ere nowu
+    kaidaga a kuru rogu barigu tuiokuto, taiwo pemegawo, tuiorudu pemegawo. O óleo
+    passado sobre o ventre da mulher, faz com que esta fique gravida sempre
   pic_link: images/ethnobotany_211_baria_i.jpg
-  name_indigenous: Baria i
+  name_indigenous: Baria í
+  fruiting_period: Agosto
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
 - id: 212
   name_portuguese: Garrafãozinho
   usage: O banho do cozimento das folhas dado à mulher que acabou de ter o parto e
@@ -1263,6 +2484,9 @@
   family: Bignoniaceae
   usage: As folhas passam no corpo da mulher que viu o Aije
   name_indigenous: Aige iorubo
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/330115032/medium.jpg
+  pic_credit: © pedrosantoss, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/910596
 - id: 216
   name_portuguese: Erva Mijona
   usage: Esfregam as folhas nas pontas das flechas envenenando-as
@@ -1366,6 +2590,9 @@
   usage: Cerrado, beira de córrego
   fruiting_period: abril a julho, outubro e novembro, fevereiro
   name_indigenous: Iwaraga
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/619306511/medium.jpg
+  pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/340329794
 - id: 237
   name_portuguese: Pimenta-de-macaco / Pindaíba-vermelha
   scientific_name: Xilopia aromatica (Lam) Mart
@@ -1405,6 +2632,9 @@
 - id: 248
   scientific_name: Eriotheca gracilipes (K. Schum) A. Rolinges
   name_indigenous: Aroe ekudydyrewu i
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/424066495/medium.jpeg
+  pic_credit: © Richard Matheus Fernandes, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/238212980
 - id: 249
   scientific_name: Eriope macrostachya Mart.
   name_indigenous: Boe erubo
@@ -1415,11 +2645,23 @@
   scientific_name: Dyckia wedelliana Baker
   name_indigenous: Moregege
 - id: 252
-  scientific_name: Protium heptaphyllum (Aubl.) March
+  scientific_name: Protium heptaphyllum (Aubl.) Marchand
   family: Burseraceae
-  fruiting_period: novemro a janeiro
+  fruiting_period: Agosto / setembro; fevereiro / março
   pic_link: images/ethnobotany_252_kido_guru.jpg
-  name_indigenous: Kido guru
+  name_indigenous: Kidoguro
+  name_portuguese: Mescla-aroeira (“fêmea” - “dá muita resina”)
+  usage: Boere reko, boe etore kodure maiwu biriji kiogwagiri otodai (boe ero iedodu).
+    Boe eto kori epare nowu i kuru, boere nowu i uru berego tugojari epače awu boe
+    ekeno meadu jiwu boe ekogodae epare ema jamedu
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
 - id: 253
   scientific_name: Protium almecega March.
   name_indigenous: Kido kuru
@@ -1452,6 +2694,9 @@
 - id: 262
   scientific_name: Evolvulus sp.
   name_indigenous: Aipoburewuge erubo
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/176127203/medium.jpeg
+  pic_credit: © 陳育賢, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/83418
 - id: 263
   scientific_name: Davilla lacunosa
   name_indigenous: Jugodoge etoburewu
@@ -1490,11 +2735,343 @@
   name_indigenous: Beragu i
 - id: 275
   name_portuguese: Aguapé
-  scientific_name: Echhornia crassipes (Mart.) Solms
+  scientific_name: Eichhornia crassipes (Mart.) Solms
   family: Pontederiaceae
-  usage: nowu aru kuru remawure, boe ake epado ema, mare ima emaragodae. (Aroe rubo.)
+  usage: Nowu aru kuru remaure, boere ake epado ema, Mare ime emaragadae. (Aroe erubo)
   fruiting_period: Vegetativa
+  environment: kurugwa okwa pobo okwa
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  name_indigenous: Póra
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/28107964/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/962637
+- id: 276
+  name_portuguese: Arnica
+  name_indigenous: boe bokware
+  scientific_name: Lychnophora spp. Mart.
+  family: Asteraceae
+  usage: Kuru remaure boere mado ia tugorirebeji ia tugugodaeji, ake epare ema jamedu,
+    Boere kuru berego tuguduwo če boe etoriwudu, boe ekuiboka, boe ataga kori pegareuji
+  fruiting_period: Ano inteiro
+  environment: boku (tori paru)
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/298696621/medium.jpeg
+  pic_credit: © Joey Santore, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/172091263
+- id: 277
+  name_portuguese: Atinha-do-boku
+  name_indigenous: Iwararagareu
+  scientific_name: Duguetia furfuracea (A. St.-Hil.) Saff.
+  family: Annonaceae
+  usage: Kodure boere kowuje. Aru berego kuru pemegare boe etoriwudu koriji
+  fruiting_period: Abril a maio
   environment: boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/619306511/medium.jpg
+  pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/340329794
+- id: 278
+  name_portuguese: Bacaiúva / bocaiúva / macaúba
+  name_indigenous: Akudo (palmeira) / ako (fruta grande)
+  scientific_name: Acrocomia aculeata (Jacq.) Lodd. ex Mart.
+  family: Arecaceae
+  usage: Ere baigado itoče, iage ere bai towuge tabo. Ere pemegado tugeje ia boe ero
+    boekege. Ere kugudo, kowu (mugudo / berego), buturedu dure ere kowuge. Ere a kowuge,
+    ere kududo dure ere tugu juto
+  fruiting_period: Dezembro a março
+  environment: itura, boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/584808/medium.jpg
+  pic_credit: © mauroguanandi, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/244459
+- id: 279
+  name_portuguese: Bacuri / acuri
+  name_indigenous: Apegire (fruto) / apido (planta)
+  scientific_name: Attalea phalerata Mart. ex Spreng.
+  family: Arecaceae
+  usage: Nowu a botugodu kuru re ere tuioku kori. epado ema, boe tore eia ekeru peča
+    epado ema. Emode nowu buturedu kowuge, ere mugudo, kowu jamedu. Ere kududo, kugudo,
+    torudo, iworo kurudo ema (ia boe ero boe keje ekudumo če. Emode nowu apidoia kowuje
+    nowu ai ere kodarabodo ema, parikiboto, kodo, baku, Emode ai bu tuwai aoji paruji
+  fruiting_period: Janeiro a abril
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/12330626/medium.jpg
+  pic_credit: © Rich Hoyer, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/67511
+- id: 280
+  name_portuguese: Bálsamo
+  name_indigenous: Baiogo
+  scientific_name: Myroxylon peruiferum L. f.
+  family: Fabaceae
+  usage: Ere meririku ipodo ema, bai ipogurure ema (bai ipo boiadadawu)
+  fruiting_period: Outubro / novembro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: maka jokodu kare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/144637905/medium.jpg
+  pic_credit: © Arthur Gomes, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/280702
+- id: 281
+  name_portuguese: Banha-de-galinha
+  name_indigenous: Poro Ekareu
+  scientific_name: Swartzia flaemingii Raddi
+  family: Fabaceae
+  usage: Eré kurudo rogu kowuje
+  fruiting_period: Janeiro / fevereiro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/255672088/medium.jpg
+  pic_credit: © alexandre callou sampaio, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/1325545
+- id: 282
+  name_portuguese: Barbatimão-cascudo / faveiro
+  name_indigenous: Betaga Erubo
+  scientific_name: Dimorphandra mollis Benth.
+  family: Fabaceae
+  usage: Ere biri berego nowu kuru ere redo ariato tuwo tumugudo tada, areme ekogodae
+    pegareu epače, I biri kuru čere ekudumode emode reko tuwiri kuroduji bituwo
+  fruiting_period: Março a julho
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/348283563/medium.jpeg
+  pic_credit: © Bruno Luka de Souza Bambirra Silveira, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/197708762
+- id: 283
+  name_portuguese: Barbatimão-liso
+  name_indigenous: Betagaikonogo / Betaga Biri Kororogo-dureu
+  scientific_name: Stryphnodendron polyphyllum Mart.
+  family: Fabaceae
+  usage: Ere biri berego dure pemegare boe ečebae boeji
+  fruiting_period: Julho a setembro
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/34257506/medium.jpeg
+  pic_credit: © Rogério Gribel, CC BY-NC-ND, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/802656
+- id: 284
+  name_portuguese: Barbatimão-peludo
+  name_indigenous: Miaçereu Erubo
+  scientific_name: Stryphnodendron pumilum Glaz.
+  family: Fabaceae
+  usage: Ukwa boe ere beredo du čere boe etore ekudure boe pegareuji
+  fruiting_period: Julho a setembro
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/101682161/medium.jpeg
+  pic_credit: © Renan Cassimiro, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/833848
+- id: 285
+  name_portuguese: Baru
+  name_indigenous: Parori
+  scientific_name: Dipteryx alata Vogel
+  family: Fabaceae
+  usage: Ere a kowu dure ere kowuje, ere a kududo, nowu tudu boere kurudo. Nowu i
+    ere naiado ema bai ipogurure ema. Nowu biri pemegare moče epače. Ere biri tugu
+    poboto dure ere tugu ia poari boeto tuguduwo če dure erubore ema awu boe ewiri
+    ekogodae pega boeji, boe ekuiboka kori, boe epegaguru, boe ekuri kori. Nowu biri
+    kuru pemegare boe ekojari, awagu mode toedo epare ema jamedu, boe toriwudo kori,
+    boe ewureado kori pegare epa rema jamedu, umode tigera bararedo boe erageduwo
+  fruiting_period: Agosto / setembro
+  environment: itura, boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/174136/medium.jpg
+  pic_credit: © Mauricio Mercadante, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/153017
+- id: 286
+  name_portuguese: Batata-do-tiú
+  name_indigenous: Jekojagureu (Tadarimana) / Je Kwugegureu Erubo (Piebaga)
+  scientific_name: Não Identificada
+  family: Não Identificada
+  usage: 'Ere kagu pobo okodo kao dure ere reko pudui togorireu boeji, etogorire jiu
+    boeji, ewiri kigori pegareu, pemegare mokui ao doge eto oia kigori ji, boe ewiri
+    kigori pegareu epare ema jamedu. Ukwa ere berego tugudu kuruče awu boe ekogodaeji:
+    boe ewiri uru, boe ečebae ure tadudu-dodu, barogo peguru epa, boe pegaguru ku,
+    barae kogodae pegareu jeture-boeidu'
+  fruiting_period: Abril
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+- id: 287
+  name_portuguese: Batata-marulete / Batata-maroleite / Batata-purga
+  name_indigenous: Pagadi Ikuredo
+  scientific_name: Exogonium purga (Wender.) Benth.
+  family: Convolvulaceae
+  usage: Nowu ukwa kuru pe re pemegare barogo peguruji
+  fruiting_period: Abril
+  environment: itura (pobo okwa)
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/576671290/medium.jpg
+  pic_credit: © Pete Siminski, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/277789
+- id: 288
+  name_portuguese: Batata-do-tiú
+  name_indigenous: Jekojagureu (Tadarimana) / Je Kwugegureu Erubo (Piebaga)
+  scientific_name: Não Identificada
+  family: Não Identificada
+  usage: Ere mugudo, kowu tuwo kowuje
+  fruiting_period: Agosto a outubro; janeiro / fevereiro
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
+- id: 289
+  name_portuguese: Batatinha
+  name_indigenous: Okó
+  scientific_name: Não Identificada
+  family: Convolvulaceae
+  usage: Ere ukwa kowu dure ere čodo boei, boere ia tubagudure čeboe kowuje dukeje
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+- id: 290
+  name_portuguese: Bate-caixa
+  name_indigenous: Kíe eké aru xáru / Kie erubo
+  scientific_name: Palicourea rigida Kunth
+  family: Rubiaceae
+  usage: Ere biri berego nowu kuru pemegare boe epegaguru, boe epegaguru kuji. Nowu
+    biri kobo, boe erubore ema tuwaidigiriwo karei
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/593087546/medium.jpg
+  pic_credit: © Eric Fischer Rempe, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/336439
+- id: 291
+  name_portuguese: Bolsa-de-pastor / Bolsinha-de-pastor
+  name_indigenous: Tugoriréu Bokujíwu
+  scientific_name: Zeyheria montana Mart.
+  family: Bignoniaceae
+  usage: Aru boere reko aroe ewiriji, aroe akedu mariguwo
+  fruiting_period: Julho / agosto
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: maka jokodu kare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/64808780/medium.jpeg
+  pic_credit: © Leonardo Bergamini, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/40878340
+- id: 292
+  name_portuguese: Bordão
+  name_indigenous: Kogue Eibarararéu
+  scientific_name: Samanea tubulosa (Benth.) Barneby & J.W. Grimes
+  family: Fabaceae
+  usage: Ere ai, ukwa berego tuguduwo kuruce, boe emokowudo epa
+  fruiting_period: Janeiro a julho
+  environment: boku
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/27442166/medium.jpeg
+  pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/138597
+- id: 293
+  name_portuguese: Bosta-de-baiano / carrapicho
+  name_indigenous: Bekorurebe / Bekuru-rebe
+  scientific_name: Emilia fosbergii Nicolson
+  family: Asteraceae
+  usage: Tudu ere kududo, ere kuru pagodudo, betureboedo ema ere kurudo. Ere itaguru
+    tawuje tuwo baiga ikudo, nowu ai bai awujiwure ema, ere torodo ema, tureruwo tabo
+  fruiting_period: Novembro a fevereiro
+  environment: itura, boku, boe gigadu (pobo okwa jiwu)
   abundance:
   - village: Piébaga
     level: boe bokware
@@ -1502,4 +3079,191 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
-  name_indigenous: Pora
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/27556530/medium.jpeg
+  pic_credit: Domínio público (CC0), via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/129103
+- id: 294
+  name_portuguese: Canzileiro
+  name_indigenous: Taraí
+  scientific_name: Platypodium elegans Vogel
+  family: Fabaceae
+  usage: Boe emaragodure ji boe ero kurireuto bia reuto
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/28111006/medium.jpeg
+  pic_credit: © Germaine Alexander Parada, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/138697
+- id: 295
+  name_portuguese: Cipó-de-fogo
+  name_indigenous: Mórie Enogwaréu
+  scientific_name: Pyrostegia venusta (Ker Gawl.) Miers
+  family: Bignoniaceae
+  environment: maka jokodu kare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/85275005/medium.jpg
+  pic_credit: © pvrooman, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/126634
+- id: 296
+  name_portuguese: Coração-de-negro
+  name_indigenous: Ira oia kaworureu
+  scientific_name: Peltogyne confertiflora (Mart. ex Hayne) Benth.
+  family: Fabaceae
+  usage: Boe ere nowu biaru poporo kurodu ere kurudo tuguduwo če
+  fruiting_period: Julho a setembro
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: maka jokodu kare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/526392981/medium.jpg
+  pic_credit: © leojales, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/1514983
+- id: 297
+  name_portuguese: Erva-do-bicho
+  name_indigenous: Rubo Erubo (Piebaga) / Inorubo Erubo
+  scientific_name: Polygonum acuminatum Kunth
+  family: Polygonaceae
+  usage: Nowu arú kuru rogu boe ere reko tuwia, togwa poroji bitu mariguwo
+  fruiting_period: Abril
+  environment: itura, bogo jaguru
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/1459849/medium.JPG
+  pic_credit: © Juan Carlos López Domínguez, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/129979
+- id: 298
+  name_portuguese: Gameleira
+  name_indigenous: Kodui
+  scientific_name: Ficus insipida Willd.
+  family: Moraceae
+  usage: Nowu ukware ere mugudo joru tada berego tuguduwo če, ere tuguri kori, tubegaguru,
+    tuguiboka kori epado ema jamedu, uwo tugu pemegado
+  fruiting_period: Agosto / setembro
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/99390683/medium.jpg
+  pic_credit: © Reinaldo Aguilar, CC BY-NC-SA, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/273850
+- id: 299
+  name_portuguese: Imbé
+  name_indigenous: Atumeririreu
+  scientific_name: Monstera adansonii Schott
+  family: Araceae
+  usage: Boe ere toroe boe epado ema. Ere tumijorido če tugo epače, boe ere kogudo
+    ika boe ekuika kajaje. Ere kago epado ema karei. Boedogere joru tugu nowu iwoito
+    ureduduwo
+  environment: itura
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: makare
+  - village: Tadarimana
+    level: makare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/451925925/medium.jpeg
+  pic_credit: © Pedro H. Martins, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/206267
+- id: 300
+  name_portuguese: Imbé-costela-de-adão
+  name_indigenous: Mičori
+  scientific_name: Philodendron spp. Schott
+  family: Araceae
+  usage: Boedoge ere iwoi tawuje tuwo aroe epado nowu kodudu tabo
+  fruiting_period: Janeiro a junho
+  environment: itura, boku
+  abundance:
+  - village: Piébaga
+    level: biagare
+  - village: Córrego Grande
+    level: boe bokware
+  - village: Tadarimana
+    level: maka jokodu kare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/201260269/medium.jpeg
+  pic_credit: © Alisson Fierro-Minda, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/69807
+- id: 301
+  name_portuguese: Indaiá / catulé
+  name_indigenous: Kuwo ai
+  scientific_name: Syagrus comosa (Mart.) Mart.
+  family: Arecaceae
+  usage: Boe enogware nowu kuroduji
+  fruiting_period: Agosto a novembro
+  environment: boku, boe gigadu
+  abundance:
+  - village: Piébaga
+    level: boe bokware
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: boe bokware
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/103108866/medium.jpg
+  pic_credit: © luedemann_g, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/observations/64161979
+- id: 302
+  name_portuguese: Ingá-bola
+  name_indigenous: Boroboiakareu
+  scientific_name: Inga cylindrica (Vell.) Mart.
+  family: Fabaceae
+  usage: Boe enogware nowu kuroduji
+  fruiting_period: Novembro a fevereiro
+  environment: itura (pobo okwa)
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/54940739/medium.jpeg
+  pic_credit: © Douglas, CC BY, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/709589
+- id: 303
+  name_portuguese: Ingá-de-metro
+  name_indigenous: Kirareu / Kiewarareu / kiorareu
+  scientific_name: Inga edulis Mart.
+  family: Fabaceae
+  usage: Boe enogware nowu kuroduji
+  fruiting_period: Novembro a fevereiro
+  environment: itura (pobo okwa)
+  abundance:
+  - village: Piébaga
+    level: makare
+  - village: Córrego Grande
+    level: biagare
+  - village: Tadarimana
+    level: biagare
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/174974139/medium.jpg
+  pic_credit: © Randall Jiménez, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/209926
+- id: 304
+  name_portuguese: Jatobá-do-boku
+  name_indigenous: Rumaga (boku)
+  scientific_name: Hymenaea stigonocarpa Mart. ex Hayne
+  family: Fabaceae
+  usage: Boe ere kurudo tugeje enogwagere ji. Nowu i ure turugado boe ewai, ika, epače.
+    Ere nowu i biri mugudo joru tada boe ečegurugudo epa, boe ekigori epa. Ere nowu
+    a kowu joruto ere nowu tubegaguru epado ema. Ere nowu kodu, nowu i kuru tadu,
+    epado boe emearudu ewaduwo pudui, tugu čowo. Ere nowu biri okodo tapira mokuro
+    kuru kao tuiorubodo ema
+  fruiting_period: Junho a outubro
+  environment: boku
+  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/120822986/medium.jpeg
+  pic_credit: © Estevão Fernandes de Souza, CC BY-NC, via iNaturalist
+  pic_source: https://www.inaturalist.org/taxa/563887
