@@ -1,59 +1,73 @@
+# consent: every row must say `approved` (community consent for this site to
+# publish/host it) or `external` (someone else's public video that we only
+# embed). All ten below are external YouTube embeds (owner, 2026-11-14).
+
 - id: 1
   title: "Funeral Bororo"
   youtube_id: "uhxWDBM8gss"
+  consent: external
   thumbnail: "images/videos/funeral-bororo.jpg"
   category: "ritual"
 
 - id: 2
   title: "Aroe eceba"
   youtube_id: "cBSYffDyAIk"
+  consent: external
   thumbnail: "images/videos/aroe-eceba.jpg"
   category: "ritual"
 
 - id: 3
   title: "Lugares históricos: Bororo e Xavante"
   youtube_id: "HL9UaMAVpPg"
+  consent: external
   thumbnail: "images/videos/lugares-historicos.jpg"
   category: "história"
 
 - id: 4
   title: "Festa do Mano Kurireu: Ritual Boe-Bororo"
   youtube_id: "fIbxLUEPlnI"
+  consent: external
   thumbnail: "images/videos/mano-kurireu.jpg"
   category: "ritual"
 
 - id: 5
   title: "Kado Rairewy"
   youtube_id: "igeKDYWkfsQ"
+  consent: external
   thumbnail: "images/videos/kado-rairewy.jpg"
   category: "ritual"
 
 - id: 6
   title: "Construção da casa central (bai mana gejewy) de uma aldeia Bororo"
   youtube_id: "rEhQzlYkcUQ"
+  consent: external
   thumbnail: "images/videos/bai-mana-gejewy.jpg"
   category: "cultura"
 
 - id: 7
   title: "Kuiada paru (festa bororo do milho)"
   youtube_id: "okwx9di47og"
+  consent: external
   thumbnail: "images/videos/kuiada-paru.jpg"
   category: "ritual"
 
 - id: 8
   title: "Akurarorewy"
   youtube_id: "WksLeBe8oTE"
+  consent: external
   thumbnail: "images/videos/akurarorewy.jpg"
   category: "ritual"
 
 - id: 9
   title: "Iniciação do jovem Xavante (1999, Meruri)"
   youtube_id: "lbB28DgGKGk"
+  consent: external
   thumbnail: "images/videos/iniciacao-xavante.jpg"
   category: "ritual"
 
 - id: 10
   title: "Ritual do Marido e funeral (1989, Aldeia Garças)"
   youtube_id: "8aKJlAlhT20"
+  consent: external
   thumbnail: "images/videos/ritual-marido-funeral.jpg"
   category: "ritual"
