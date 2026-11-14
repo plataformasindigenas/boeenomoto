@@ -205,7 +205,7 @@
   - village: Meruri
     level: construção, artesanato, medicinal
   name_indigenous: Burudúi
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/298789755/medium.jpeg
+  pic_link: images/ethnobotany_012_inaturalist.jpg
   pic_credit: © Frederico Acaz Sonntag, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/803529
 - id: 13
@@ -442,7 +442,7 @@
     level: makare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/40081445/medium.jpeg
+  pic_link: images/ethnobotany_033_inaturalist.jpg
   pic_credit: © Nelson Wisnik, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/25848933
 - id: 34
@@ -475,7 +475,7 @@
     level: boe bokware
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/48036942/medium.jpg
+  pic_link: images/ethnobotany_035_inaturalist.jpg
   pic_credit: © Melinda Hoehn, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/164415
 - id: 36
@@ -496,7 +496,7 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/102488040/medium.jpeg
+  pic_link: images/ethnobotany_036_inaturalist.jpg
   pic_credit: © Leonardo Bergamini, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/840302
 - id: 37
@@ -516,7 +516,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/45184981/medium.jpeg
+  pic_link: images/ethnobotany_037_inaturalist.jpg
   pic_credit: © John P Friel, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/28968536
 - id: 38
@@ -535,7 +535,7 @@
     level: boe bokware
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/14296293/medium.jpg
+  pic_link: images/ethnobotany_038_inaturalist.jpg
   pic_credit: © Rich Hoyer, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/870004
 - id: 39
@@ -555,7 +555,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/348148000/medium.jpeg
+  pic_link: images/ethnobotany_039_inaturalist.jpg
   pic_credit: © zhijunli, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/84964
 - id: 40
@@ -573,7 +573,7 @@
   family: Convolvlaceae
   fruiting_period: Junho a outubro
   environment: Boku
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/125209048/medium.jpeg
+  pic_link: images/ethnobotany_042_inaturalist.jpg
   pic_credit: © Ricardo Dislich, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/76547300
 - id: 43
@@ -591,7 +591,7 @@
   family: Ochnaceae
   fruiting_period: Ano inteiro
   environment: boku
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/92676190/medium.jpeg
+  pic_link: images/ethnobotany_044_inaturalist.jpg
   pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/988445
 - id: 45
@@ -602,7 +602,7 @@
   scientific_name: Bixa orellana L.
   family: Bixaceae
   fruiting_period: Agosto / Setembro
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/613886818/medium.jpg
+  pic_link: images/ethnobotany_045_inaturalist.jpg
   pic_credit: © UNIRSE Irzalee,Ortiz, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/337665393
 - id: 46
@@ -628,7 +628,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/604477/medium.jpeg
+  pic_link: images/ethnobotany_047_inaturalist.jpg
   pic_credit: © Marco Schmidt, CC BY-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/85098
 - id: 48
@@ -650,7 +650,7 @@
     level: boe bokware
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/411858/medium.jpg
+  pic_link: images/ethnobotany_049_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/792275
 - id: 50
@@ -675,7 +675,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/523479874/medium.jpg
+  pic_link: images/ethnobotany_051_inaturalist.jpg
   pic_credit: © thaven, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/290970483
 - id: 52
@@ -694,7 +694,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/346692638/medium.jpeg
+  pic_link: images/ethnobotany_052_inaturalist.jpg
   pic_credit: © saul_olpado, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/196921731
 - id: 53
@@ -715,7 +715,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/296140199/medium.jpeg
+  pic_link: images/ethnobotany_053_inaturalist.jpg
   pic_credit: © João Arthur Rabello, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/274192
 - id: 54
@@ -733,7 +733,7 @@
     level: boe bokware
   - village: Tadarimana
     level: maka jokodu kare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/103570/medium.jpg
+  pic_link: images/ethnobotany_054_inaturalist.jpg
   pic_credit: © Jason Sharp, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/81816
 - id: 55
@@ -750,7 +750,7 @@
   - village: Tadarimana
     level: makare
   name_indigenous: Poari Iwo
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/220792692/medium.jpg
+  pic_link: images/ethnobotany_055_inaturalist.jpg
   pic_credit: © Liu Idárraga Orozco, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/129887955
 - id: 56
@@ -771,7 +771,7 @@
     level: makare
   name_indigenous: Tugumana
   fruiting_period: Abril
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/29546859/medium.jpeg
+  pic_link: images/ethnobotany_056_inaturalist.jpg
   pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/835663
 - id: 57
@@ -810,7 +810,7 @@
     level: maka jokodu kare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/28111316/medium.jpeg
+  pic_link: images/ethnobotany_059_inaturalist.jpg
   pic_credit: © Germaine Alexander Parada, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/810587
 - id: 60
@@ -829,7 +829,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/42349184/medium.jpeg
+  pic_link: images/ethnobotany_060_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/701984
 - id: 61
@@ -847,7 +847,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/54257742/medium.jpeg
+  pic_link: images/ethnobotany_061_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/426940
 - id: 62
@@ -864,7 +864,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/42501612/medium.jpeg
+  pic_link: images/ethnobotany_062_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/854052
 - id: 63
@@ -882,7 +882,7 @@
     level: biagare
   - village: Tadarimana
     level: maka jokodu kare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/46046446/medium.jpeg
+  pic_link: images/ethnobotany_063_inaturalist.jpg
   pic_credit: © Mark Kluge, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/85324
 - id: 64
@@ -901,7 +901,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/42349184/medium.jpeg
+  pic_link: images/ethnobotany_064_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/701984
 - id: 65
@@ -937,7 +937,7 @@
     level: maka jokodu kare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/30822626/medium.jpeg
+  pic_link: images/ethnobotany_067_inaturalist.jpg
   pic_credit: © Christian Grenier, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/154538
 - id: 68
@@ -956,7 +956,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/95658395/medium.jpeg
+  pic_link: images/ethnobotany_068_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/366058
 - id: 69
@@ -977,7 +977,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/95658395/medium.jpeg
+  pic_link: images/ethnobotany_070_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/366058
 - id: 71
@@ -1029,7 +1029,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/101842600/medium.jpeg
+  pic_link: images/ethnobotany_074_inaturalist.jpg
   pic_credit: © Renan Cassimiro, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/841688
 - id: 75
@@ -1048,7 +1048,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/1852710/medium.jpg
+  pic_link: images/ethnobotany_075_inaturalist.jpg
   pic_credit: © Morten Ross, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/1495739
 - id: 76
@@ -1065,7 +1065,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/58693887/medium.jpeg
+  pic_link: images/ethnobotany_076_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/51921
 - id: 77
@@ -1084,7 +1084,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/75838231/medium.jpeg
+  pic_link: images/ethnobotany_077_inaturalist.jpg
   pic_credit: © Martin Reith, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/169902
 - id: 78
@@ -1101,7 +1101,7 @@
   - village: Tadarimana
     level: biagare
   name_indigenous: Riwódoe Erúbo
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/100454059/medium.jpeg
+  pic_link: images/ethnobotany_078_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/507676
 - id: 79
@@ -1120,7 +1120,7 @@
   - village: Tadarimana
     level: makare
   name_indigenous: Ari
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/23700143/medium.jpeg
+  pic_link: images/ethnobotany_079_inaturalist.jpg
   pic_credit: © Mateo Hernandez Schmidt, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/192402
 - id: 80
@@ -1141,7 +1141,7 @@
     level: makare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/465630038/medium.jpg
+  pic_link: images/ethnobotany_081_inaturalist.jpg
   pic_credit: © Deborah E Barber, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/259393990
 - id: 82
@@ -1160,7 +1160,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/377187139/medium.jpeg
+  pic_link: images/ethnobotany_082_inaturalist.jpg
   pic_credit: © Liu Idárraga Orozco, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/212263338
 - id: 83
@@ -1179,7 +1179,7 @@
   - village: Tadarimana
     level: biagare
   name_indigenous: Jorubo Aogigirereu
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/122861181/medium.jpg
+  pic_link: images/ethnobotany_083_inaturalist.jpg
   pic_credit: © Ariane Pereira, CC BY-NC-ND, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/785502
 - id: 84
@@ -1200,7 +1200,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/388149349/medium.jpeg
+  pic_link: images/ethnobotany_085_inaturalist.jpg
   pic_credit: © Dayron Breto, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/169322
 - id: 86
@@ -1219,7 +1219,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/44562360/medium.jpg
+  pic_link: images/ethnobotany_086_inaturalist.jpg
   pic_credit: © Angel Fernandez, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/782314
 - id: 87
@@ -1237,7 +1237,7 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/688574824/medium.jpg
+  pic_link: images/ethnobotany_087_inaturalist.jpg
   pic_credit: © beatriz sabino, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/376593836
 - id: 88
@@ -1256,7 +1256,7 @@
     level: makare
   - village: Tadarimana
     level: maka jokodu kare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/451127860/medium.jpeg
+  pic_link: images/ethnobotany_088_inaturalist.jpg
   pic_credit: © leojales, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/184431
 - id: 89
@@ -1277,7 +1277,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/594698162/medium.jpg
+  pic_link: images/ethnobotany_090_inaturalist.jpg
   pic_credit: © thiago_saiefert, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/328212284
 - id: 91
@@ -1295,7 +1295,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/122861181/medium.jpg
+  pic_link: images/ethnobotany_091_inaturalist.jpg
   pic_credit: © Ariane Pereira, CC BY-NC-ND, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/785502
 - id: 92
@@ -1318,7 +1318,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/465630038/medium.jpg
+  pic_link: images/ethnobotany_093_inaturalist.jpg
   pic_credit: © Deborah E Barber, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/259393990
 - id: 94
@@ -1369,7 +1369,7 @@
   - village: Tadarimana
     level: biagare
   name_indigenous: Tori kobo
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/167830795/medium.jpeg
+  pic_link: images/ethnobotany_096_inaturalist.jpg
   pic_credit: © Yuri Tedéo, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/464440
 - id: 97
@@ -1388,7 +1388,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/24961755/medium.jpeg
+  pic_link: images/ethnobotany_097_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/551431
 - id: 98
@@ -1407,7 +1407,7 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/176126105/medium.jpeg
+  pic_link: images/ethnobotany_098_inaturalist.jpg
   pic_credit: © alexandre callou sampaio, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/563893
 - id: 99
@@ -1425,7 +1425,7 @@
     level: maka jokodu kare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/27442166/medium.jpeg
+  pic_link: images/ethnobotany_099_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/138597
 - id: 100
@@ -1449,7 +1449,7 @@
     level: biagare dos 2
   - village: Tadarimana
     level: 1 - makare, 2 - biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/456165450/medium.jpeg
+  pic_link: images/ethnobotany_101_inaturalist.jpg
   pic_credit: © leojales, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/139075
 - id: 102
@@ -1470,7 +1470,7 @@
     level: boe bokware
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/177579025/medium.jpeg
+  pic_link: images/ethnobotany_102_inaturalist.jpg
   pic_credit: © Lucas Kaminski, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/105788506
 - id: 103
@@ -1488,7 +1488,7 @@
     level: boe bokware
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/102435693/medium.jpeg
+  pic_link: images/ethnobotany_103_inaturalist.jpg
   pic_credit: © Ricardo Dislich, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/787921
 - id: 104
@@ -1507,7 +1507,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/456008762/medium.jpeg
+  pic_link: images/ethnobotany_104_inaturalist.jpg
   pic_credit: © jbio, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/254569911
 - id: 105
@@ -1524,7 +1524,7 @@
     level: boe bokware
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/56026659/medium.jpeg
+  pic_link: images/ethnobotany_105_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/145588
 - id: 106
@@ -1542,7 +1542,7 @@
     level: boe bokware
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/116558685/medium.jpeg
+  pic_link: images/ethnobotany_106_inaturalist.jpg
   pic_credit: © Tarciso Leão, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/1092441
 - id: 107
@@ -1572,7 +1572,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/80462699/medium.jpeg
+  pic_link: images/ethnobotany_108_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/143955
 - id: 109
@@ -1590,7 +1590,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/558290802/medium.jpg
+  pic_link: images/ethnobotany_109_inaturalist.jpg
   pic_credit: © mateus macedo, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/84585
 - id: 110
@@ -1609,7 +1609,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/69024177/medium.jpg
+  pic_link: images/ethnobotany_110_inaturalist.jpg
   pic_credit: © rosindia, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/902203
 - id: 111
@@ -1630,7 +1630,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/240293072/medium.jpeg
+  pic_link: images/ethnobotany_111_inaturalist.jpg
   pic_credit: © a_f_r, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/347865
 - id: 112
@@ -1648,7 +1648,7 @@
     level: boe bokware
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/97866966/medium.jpg
+  pic_link: images/ethnobotany_112_inaturalist.jpg
   pic_credit: © rosindia, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/1136114
 - id: 113
@@ -1667,7 +1667,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/70546664/medium.jpg
+  pic_link: images/ethnobotany_113_inaturalist.jpg
   pic_credit: © Reuber Brandão, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/481786
 - id: 114
@@ -1690,7 +1690,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/58531859/medium.jpg
+  pic_link: images/ethnobotany_116_inaturalist.jpg
   pic_credit: © kapiuna, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/989769
 - id: 117
@@ -1708,7 +1708,7 @@
     level: boe bokware
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/240298213/medium.jpg
+  pic_link: images/ethnobotany_117_inaturalist.jpg
   pic_credit: © Simon Attwood, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/68226
 - id: 118
@@ -1728,7 +1728,7 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/11592001/medium.jpg
+  pic_link: images/ethnobotany_118_inaturalist.jpg
   pic_credit: © João Medeiros, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/563886
 - id: 119
@@ -1749,7 +1749,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/246538629/medium.jpg
+  pic_link: images/ethnobotany_119_inaturalist.jpg
   pic_credit: © Mauricio Mercadante, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/347879
 - id: 120
@@ -1767,7 +1767,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/460783370/medium.jpeg
+  pic_link: images/ethnobotany_120_inaturalist.jpg
   pic_credit: © claudia_mermelstein, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/256921343
 - id: 121
@@ -1785,7 +1785,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/60918461/medium.jpg
+  pic_link: images/ethnobotany_121_inaturalist.jpg
   pic_credit: © skitterbug, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/51452
 - id: 122
@@ -1821,7 +1821,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/101199524/medium.jpeg
+  pic_link: images/ethnobotany_124_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/563848
 - id: 125
@@ -1839,7 +1839,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/78688129/medium.jpg
+  pic_link: images/ethnobotany_125_inaturalist.jpg
   pic_credit: © PINKE, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/50204
 - id: 126
@@ -1875,7 +1875,7 @@
   family: Polygonaceae
   usage: Boe ere aru beredo (barure ekogodyre) barae ekogody (diabetes) ji
   name_indigenous: Jukorewugeeiga
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/256921561/medium.jpeg
+  pic_link: images/ethnobotany_131_inaturalist.jpg
   pic_credit: © Todd Boland, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/186651
 - id: 132
@@ -1885,7 +1885,7 @@
   usage: Boe ere to beragu udo ce boe ero kurirewu keje. Boe ere nowu beragu tugu
     ropa doge eworito boe ere tuwaiga bekurododore
   name_indigenous: Berago / Beragou i
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/170370208/medium.jpg
+  pic_link: images/ethnobotany_132_inaturalist.jpg
   pic_credit: © Joás, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/601744
 - id: 133
@@ -1997,7 +1997,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/64669430/medium.jpg
+  pic_link: images/ethnobotany_157_inaturalist.jpg
   pic_credit: © PRAC VALLES, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/154798
 - id: 158
@@ -2076,7 +2076,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/104608029/medium.jpg
+  pic_link: images/ethnobotany_166_inaturalist.jpg
   pic_credit: © Maria Clara Gil, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/81830
 - id: 167
@@ -2150,7 +2150,7 @@
   usage: (merindiba) O leite da madeira é usado para conservar o urucum no estado
     pastoso
   name_indigenous: Kodu i iporewu
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/37394303/medium.jpeg
+  pic_link: images/ethnobotany_175_inaturalist.jpg
   pic_credit: © Marvin López M., CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/285682
 - id: 176
@@ -2175,7 +2175,7 @@
   family: Solanaceae
   usage: As folhas esfregadas nas mãos, passam na parte frontal da cabeça contra dores
   name_indigenous: Mearurewu
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/353822534/medium.jpeg
+  pic_link: images/ethnobotany_179_inaturalist.jpg
   pic_credit: © Douglas Meyer, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/200531792
 - id: 180
@@ -2193,7 +2193,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/462692857/medium.jpg
+  pic_link: images/ethnobotany_180_inaturalist.jpg
   pic_credit: © rick_costa, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/153008
 - id: 181
@@ -2211,7 +2211,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/29200458/medium.jpeg
+  pic_link: images/ethnobotany_181_inaturalist.jpg
   pic_credit: © David W K Foster, CC BY-NC-ND, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/69974
 - id: 182
@@ -2238,7 +2238,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/235542626/medium.jpeg
+  pic_link: images/ethnobotany_184_inaturalist.jpg
   pic_credit: © Eric Fischer Rempe, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/137869846
 - id: 185
@@ -2300,7 +2300,7 @@
   family: Urticaceae
   descriptions_of_use: Fazem chá das folhas contra tosse
   name_indigenous: Kujare epa jorubo
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/372038728/medium.jpg
+  pic_link: images/ethnobotany_192_inaturalist.jpg
   pic_credit: © Luis Peter Piña Pizango, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/936819
 - id: 193
@@ -2320,7 +2320,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/26499623/medium.jpeg
+  pic_link: images/ethnobotany_193_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/563856
 - id: 194
@@ -2344,7 +2344,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/249095240/medium.jpeg
+  pic_link: images/ethnobotany_195_inaturalist.jpg
   pic_credit: © Eric Fischer Rempe, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/281420
 - id: 196
@@ -2370,7 +2370,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/424066495/medium.jpeg
+  pic_link: images/ethnobotany_197_inaturalist.jpg
   pic_credit: © Richard Matheus Fernandes, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/238212980
 - id: 198
@@ -2484,7 +2484,7 @@
   family: Bignoniaceae
   usage: As folhas passam no corpo da mulher que viu o Aije
   name_indigenous: Aige iorubo
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/330115032/medium.jpg
+  pic_link: images/ethnobotany_215_inaturalist.jpg
   pic_credit: © pedrosantoss, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/910596
 - id: 216
@@ -2590,7 +2590,7 @@
   usage: Cerrado, beira de córrego
   fruiting_period: abril a julho, outubro e novembro, fevereiro
   name_indigenous: Iwaraga
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/619306511/medium.jpg
+  pic_link: images/ethnobotany_236_inaturalist.jpg
   pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/340329794
 - id: 237
@@ -2632,7 +2632,7 @@
 - id: 248
   scientific_name: Eriotheca gracilipes (K. Schum) A. Rolinges
   name_indigenous: Aroe ekudydyrewu i
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/424066495/medium.jpeg
+  pic_link: images/ethnobotany_248_inaturalist.jpg
   pic_credit: © Richard Matheus Fernandes, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/238212980
 - id: 249
@@ -2694,7 +2694,7 @@
 - id: 262
   scientific_name: Evolvulus sp.
   name_indigenous: Aipoburewuge erubo
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/176127203/medium.jpeg
+  pic_link: images/ethnobotany_262_inaturalist.jpg
   pic_credit: © 陳育賢, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/83418
 - id: 263
@@ -2748,7 +2748,7 @@
   - village: Tadarimana
     level: makare
   name_indigenous: Póra
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/28107964/medium.jpeg
+  pic_link: images/ethnobotany_275_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/962637
 - id: 276
@@ -2767,7 +2767,7 @@
     level: boe bokware
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/298696621/medium.jpeg
+  pic_link: images/ethnobotany_276_inaturalist.jpg
   pic_credit: © Joey Santore, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/172091263
 - id: 277
@@ -2785,7 +2785,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/619306511/medium.jpg
+  pic_link: images/ethnobotany_277_inaturalist.jpg
   pic_credit: © Thiago RBM, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/340329794
 - id: 278
@@ -2805,7 +2805,7 @@
     level: boe bokware
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/584808/medium.jpg
+  pic_link: images/ethnobotany_278_inaturalist.jpg
   pic_credit: © mauroguanandi, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/244459
 - id: 279
@@ -2826,7 +2826,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/12330626/medium.jpg
+  pic_link: images/ethnobotany_279_inaturalist.jpg
   pic_credit: © Rich Hoyer, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/67511
 - id: 280
@@ -2844,7 +2844,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/144637905/medium.jpg
+  pic_link: images/ethnobotany_280_inaturalist.jpg
   pic_credit: © Arthur Gomes, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/280702
 - id: 281
@@ -2862,7 +2862,7 @@
     level: boe bokware
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/255672088/medium.jpg
+  pic_link: images/ethnobotany_281_inaturalist.jpg
   pic_credit: © alexandre callou sampaio, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/1325545
 - id: 282
@@ -2881,7 +2881,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/348283563/medium.jpeg
+  pic_link: images/ethnobotany_282_inaturalist.jpg
   pic_credit: © Bruno Luka de Souza Bambirra Silveira, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/197708762
 - id: 283
@@ -2899,7 +2899,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/34257506/medium.jpeg
+  pic_link: images/ethnobotany_283_inaturalist.jpg
   pic_credit: © Rogério Gribel, CC BY-NC-ND, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/802656
 - id: 284
@@ -2917,7 +2917,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/101682161/medium.jpeg
+  pic_link: images/ethnobotany_284_inaturalist.jpg
   pic_credit: © Renan Cassimiro, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/833848
 - id: 285
@@ -2940,7 +2940,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/174136/medium.jpg
+  pic_link: images/ethnobotany_285_inaturalist.jpg
   pic_credit: © Mauricio Mercadante, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/153017
 - id: 286
@@ -2977,7 +2977,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/576671290/medium.jpg
+  pic_link: images/ethnobotany_287_inaturalist.jpg
   pic_credit: © Pete Siminski, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/277789
 - id: 288
@@ -3024,7 +3024,7 @@
     level: makare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/593087546/medium.jpg
+  pic_link: images/ethnobotany_290_inaturalist.jpg
   pic_credit: © Eric Fischer Rempe, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/336439
 - id: 291
@@ -3042,7 +3042,7 @@
     level: maka jokodu kare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/64808780/medium.jpeg
+  pic_link: images/ethnobotany_291_inaturalist.jpg
   pic_credit: © Leonardo Bergamini, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/40878340
 - id: 292
@@ -3060,7 +3060,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/27442166/medium.jpeg
+  pic_link: images/ethnobotany_292_inaturalist.jpg
   pic_credit: © Laurent Quéno, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/138597
 - id: 293
@@ -3079,7 +3079,7 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/27556530/medium.jpeg
+  pic_link: images/ethnobotany_293_inaturalist.jpg
   pic_credit: Domínio público (CC0), via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/129103
 - id: 294
@@ -3094,7 +3094,7 @@
     level: boe bokware
   - village: Córrego Grande
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/28111006/medium.jpeg
+  pic_link: images/ethnobotany_294_inaturalist.jpg
   pic_credit: © Germaine Alexander Parada, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/138697
 - id: 295
@@ -3103,7 +3103,7 @@
   scientific_name: Pyrostegia venusta (Ker Gawl.) Miers
   family: Bignoniaceae
   environment: maka jokodu kare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/85275005/medium.jpg
+  pic_link: images/ethnobotany_295_inaturalist.jpg
   pic_credit: © pvrooman, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/126634
 - id: 296
@@ -3121,7 +3121,7 @@
     level: maka jokodu kare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/526392981/medium.jpg
+  pic_link: images/ethnobotany_296_inaturalist.jpg
   pic_credit: © leojales, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/1514983
 - id: 297
@@ -3139,7 +3139,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/1459849/medium.JPG
+  pic_link: images/ethnobotany_297_inaturalist.jpg
   pic_credit: © Juan Carlos López Domínguez, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/129979
 - id: 298
@@ -3158,7 +3158,7 @@
     level: biagare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/99390683/medium.jpg
+  pic_link: images/ethnobotany_298_inaturalist.jpg
   pic_credit: © Reinaldo Aguilar, CC BY-NC-SA, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/273850
 - id: 299
@@ -3177,7 +3177,7 @@
     level: makare
   - village: Tadarimana
     level: makare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/451925925/medium.jpeg
+  pic_link: images/ethnobotany_299_inaturalist.jpg
   pic_credit: © Pedro H. Martins, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/206267
 - id: 300
@@ -3195,7 +3195,7 @@
     level: boe bokware
   - village: Tadarimana
     level: maka jokodu kare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/201260269/medium.jpeg
+  pic_link: images/ethnobotany_300_inaturalist.jpg
   pic_credit: © Alisson Fierro-Minda, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/69807
 - id: 301
@@ -3213,7 +3213,7 @@
     level: biagare
   - village: Tadarimana
     level: boe bokware
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/103108866/medium.jpg
+  pic_link: images/ethnobotany_301_inaturalist.jpg
   pic_credit: © luedemann_g, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/observations/64161979
 - id: 302
@@ -3231,7 +3231,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/54940739/medium.jpeg
+  pic_link: images/ethnobotany_302_inaturalist.jpg
   pic_credit: © Douglas, CC BY, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/709589
 - id: 303
@@ -3249,7 +3249,7 @@
     level: biagare
   - village: Tadarimana
     level: biagare
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/174974139/medium.jpg
+  pic_link: images/ethnobotany_303_inaturalist.jpg
   pic_credit: © Randall Jiménez, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/209926
 - id: 304
@@ -3264,6 +3264,6 @@
     kuru kao tuiorubodo ema
   fruiting_period: Junho a outubro
   environment: boku
-  pic_link: https://inaturalist-open-data.s3.amazonaws.com/photos/120822986/medium.jpeg
+  pic_link: images/ethnobotany_304_inaturalist.jpg
   pic_credit: © Estevão Fernandes de Souza, CC BY-NC, via iNaturalist
   pic_source: https://www.inaturalist.org/taxa/563887
