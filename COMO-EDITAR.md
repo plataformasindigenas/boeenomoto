@@ -87,6 +87,9 @@ suporte do GitHub consegue remover de verdade.
 - Se algo foi enviado por engano, avise o Tiago **imediatamente**: ele tira o material do site na
   hora, e a remoção do histórico é pedida ao GitHub.
 
+Os padrões visuais do site e as regras sobre conhecimento restrito estão em
+[`CULTURA.md`](CULTURA.md).
+
 ## Dúvidas
 
 Pergunte ao Tiago. Detalhes técnicos de como a publicação funciona:

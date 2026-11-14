@@ -1,0 +1,112 @@
+{#- Hero background animation: moiety preset.
+    Expanding circles and diamonds with dual moiety-coded dash patterns.
+    Red (denser) = Tugarege, Dark (sparser) = Ecerae. -#}
+<style>
+    .hero-rings-bg-anim {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        shape-rendering: geometricPrecision;
+    }
+    .hero-rings-bg-anim circle,
+    .hero-rings-bg-anim rect {
+        fill: none;
+        vector-effect: non-scaling-stroke;
+        stroke-linecap: square;
+        stroke-linejoin: miter;
+        stroke-miterlimit: 2;
+        paint-order: stroke;
+    }
+    .hero-rings-bg-anim circle { stroke-width: 3; }
+    .hero-rings-bg-anim rect { stroke-width: 2.6; }
+    .hr-red { stroke: var(--td-color-primary); }
+    .hr-dark { stroke: var(--td-color-dark, #0B0F17); }
+    .hr-dash-bead {
+        stroke-dasharray: 4 18 2 26 6 20 3 30;
+        stroke-linecap: square;
+        stroke-dashoffset: 5;
+    }
+    .hr-dash-feather {
+        stroke-dasharray: 26 30 12 44 18 28;
+        stroke-linecap: round;
+        stroke-dashoffset: 11;
+    }
+    .hr-dash-trace {
+        stroke-dasharray: 14 40 4 22 10 48 6 34;
+        stroke-linecap: round;
+        stroke-dashoffset: 17;
+    }
+    .hr-dash-marks {
+        stroke-dasharray: 3 16 5 26 2 38 7 22 4 30;
+        stroke-linecap: square;
+        stroke-dashoffset: 9;
+    }
+    .hr-red.hr-dash-bead { stroke-dasharray: 4 14 2 20 6 16 3 24; }
+    .hr-dark.hr-dash-bead { stroke-dasharray: 5 22 3 30 7 20 4 34; }
+    .hr-red.hr-dash-feather { stroke-dasharray: 22 24 10 36 14 22; }
+    .hr-dark.hr-dash-feather { stroke-dasharray: 28 34 12 50 20 30; }
+    .hr-red.hr-dash-trace { stroke-dasharray: 12 32 4 18 8 36 6 26; }
+    .hr-dark.hr-dash-trace { stroke-dasharray: 16 44 5 26 12 54 7 38; }
+    .hr-red.hr-dash-marks { stroke-dasharray: 3 12 5 20 2 30 7 18 4 24; }
+    .hr-dark.hr-dash-marks { stroke-dasharray: 4 20 6 32 3 44 8 26 5 36; }
+    @media (prefers-reduced-motion: reduce) {
+        .hero-rings-bg-anim { display: none; }
+    }
+</style>
+<svg class="hero-rings-bg-anim" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    {# Source 1 — top-left, red circles, bead dash #}
+    {% for r, delay in [(100, 0), (130, -1), (160, -2)] %}
+    <circle class="hr-red hr-dash-bead" cx="180" cy="200" r="14" opacity="0">
+        <animate attributeName="r" values="14;{{ r }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+    </circle>
+    {% endfor %}
+    {# Source 2 — top-right, dark diamonds, trace dash #}
+    {% for sz, delay in [(80, -3), (110, -4), (140, -5)] %}
+    <g transform="translate(900,150)">
+        <rect class="hr-dark hr-dash-trace" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+            <animate attributeName="width" values="14;{{ sz }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="height" values="14;{{ sz }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="x" values="-7;{{ -sz//2 }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="y" values="-7;{{ -sz//2 }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        </rect>
+    </g>
+    {% endfor %}
+    {# Source 3 — center-bottom, red circles, marks dash #}
+    {% for r, delay in [(90, -6), (120, -7), (150, -8)] %}
+    <circle class="hr-red hr-dash-marks" cx="550" cy="500" r="14" opacity="0">
+        <animate attributeName="r" values="14;{{ r }}" dur="11s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="11s" begin="{{ delay }}s" repeatCount="indefinite"/>
+    </circle>
+    {% endfor %}
+    {# Source 4 — bottom-right, dark circles, feather dash #}
+    {% for r, delay in [(90, -2), (120, -3), (150, -4)] %}
+    <circle class="hr-dark hr-dash-feather" cx="1050" cy="550" r="14" opacity="0">
+        <animate attributeName="r" values="14;{{ r }}" dur="13s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="13s" begin="{{ delay }}s" repeatCount="indefinite"/>
+    </circle>
+    {% endfor %}
+    {# Source 5 — bottom-left, red diamonds, feather dash #}
+    {% for sz, delay in [(80, -8), (110, -9), (140, -10)] %}
+    <g transform="translate(350,600)">
+        <rect class="hr-red hr-dash-feather" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
+            <animate attributeName="width" values="14;{{ sz }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="height" values="14;{{ sz }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="x" values="-7;{{ -sz//2 }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="y" values="-7;{{ -sz//2 }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        </rect>
+    </g>
+    {% endfor %}
+    {# Source 6 — top-center, dark circles, bead dash #}
+    {% for r, delay in [(110, -5), (140, -6), (170, -7)] %}
+    <circle class="hr-dark hr-dash-bead" cx="750" cy="100" r="14" opacity="0">
+        <animate attributeName="r" values="14;{{ r }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+    </circle>
+    {% endfor %}
+</svg>
