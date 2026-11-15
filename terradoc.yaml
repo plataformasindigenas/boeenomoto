@@ -52,6 +52,8 @@ theme:
   hero_divider: "moiety"
   page_badge: "moiety"
   grain_pattern: "dots"
+  # Inter, not Sora: headwords use IPA marks (ˈ ɔ ʒ ɾ) that Sora lacks.
+  font_family_headings: "'Inter', sans-serif"
   border_radius: "28px"
   colors:
     dark: "#0B0F17"
