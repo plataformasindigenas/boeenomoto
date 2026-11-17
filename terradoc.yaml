@@ -9,6 +9,7 @@ locale_labels:
   pt: "Português"
   en: "English"
 default_locale: "pt"
+base_url: "https://boeenomoto.terradoc.org"
 featured_article_id: "boe"
 bib_file: "bororo.bib"
 
