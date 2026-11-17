@@ -1,6 +1,7 @@
 {#- Hero background animation: moiety preset.
-    Expanding circles and diamonds with dual moiety-coded dash patterns.
-    Red (denser) = Tugarege, Dark (sparser) = Ecerae. -#}
+    Expanding circles (the circular village) in two dash patterns. No shape stands for a
+    moiety or clan, and no lozenges: the research rules out bull-roarer silhouettes (aije);
+    see CULTURA.md and meta research/2026-11-17-template-redesign/bororo.md. -#}
 <style>
     .hero-rings-bg-anim {
         position: absolute;
@@ -64,17 +65,12 @@
         <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
     </circle>
     {% endfor %}
-    {# Source 2 — top-right, dark diamonds, trace dash #}
-    {% for sz, delay in [(80, -3), (110, -4), (140, -5)] %}
-    <g transform="translate(900,150)">
-        <rect class="hr-dark hr-dash-trace" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
-            <animate attributeName="width" values="14;{{ sz }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="height" values="14;{{ sz }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="x" values="-7;{{ -sz//2 }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="y" values="-7;{{ -sz//2 }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
-        </rect>
-    </g>
+    {# Source 2 — top-right, dark circles, trace dash #}
+    {% for r, delay in [(60, -3), (80, -4), (100, -5)] %}
+    <circle class="hr-dark hr-dash-trace" cx="900" cy="150" r="14" opacity="0">
+        <animate attributeName="r" values="14;{{ r }}" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="12s" begin="{{ delay }}s" repeatCount="indefinite"/>
+    </circle>
     {% endfor %}
     {# Source 3 — center-bottom, red circles, marks dash #}
     {% for r, delay in [(90, -6), (120, -7), (150, -8)] %}
@@ -90,17 +86,12 @@
         <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="13s" begin="{{ delay }}s" repeatCount="indefinite"/>
     </circle>
     {% endfor %}
-    {# Source 5 — bottom-left, red diamonds, feather dash #}
-    {% for sz, delay in [(80, -8), (110, -9), (140, -10)] %}
-    <g transform="translate(350,600)">
-        <rect class="hr-red hr-dash-feather" x="-7" y="-7" width="14" height="14" rx="1" transform="rotate(45)" opacity="0">
-            <animate attributeName="width" values="14;{{ sz }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="height" values="14;{{ sz }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="x" values="-7;{{ -sz//2 }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="y" values="-7;{{ -sz//2 }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
-        </rect>
-    </g>
+    {# Source 5 — bottom-left, red circles, feather dash #}
+    {% for r, delay in [(60, -8), (80, -9), (100, -10)] %}
+    <circle class="hr-red hr-dash-feather" cx="350" cy="600" r="14" opacity="0">
+        <animate attributeName="r" values="14;{{ r }}" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.25;0.2;0" keyTimes="0;0.16;0.72;1" dur="10s" begin="{{ delay }}s" repeatCount="indefinite"/>
+    </circle>
     {% endfor %}
     {# Source 6 — top-center, dark circles, bead dash #}
     {% for r, delay in [(110, -5), (140, -6), (170, -7)] %}
