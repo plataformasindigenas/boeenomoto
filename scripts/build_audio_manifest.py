@@ -9,7 +9,7 @@ match by entry id. This script writes the first version from the current state:
 - a file whose slug matches several entries goes to the ones that data/audio/_planned.tsv
   (the source dictionary's audio columns) gives a recording, or the one whose planned
   source file has the recording's name, when that narrows it down to one; otherwise it
-  stays with all of them, as before, and is listed in _manifest_review.tsv.
+  stays with all of them, as before, and is printed for review (REVISAO-DADOS.md, 2026-11).
 
 Speakers are ids (s01, s02, ...), never names: the sites name nobody for now (2026-11-17).
 The filename suffix decides the id; a file without a suffix, or `__unknown`, has none.
@@ -75,12 +75,10 @@ def main() -> None:
         w = csv.writer(f, delimiter="\t", lineterminator="\n")
         w.writerow(["file", "entry_id", "speaker", "consent"])
         w.writerows(out)
-    with (AUDIO / "_manifest_review.tsv").open("w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f, delimiter="\t", lineterminator="\n")
-        w.writerow(["file", "entry_ids", "entries"])
-        w.writerows(review)
+    for name, ids, entries in review:
+        print(f"review: {name} serves {ids}: {entries}")
     print(f"{len(files)} files, {len(out)} rows; {len(review)} files serve several entries "
-          f"(see _manifest_review.tsv)")
+          f"(listed above)")
 
 
 if __name__ == "__main__":
