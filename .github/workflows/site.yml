@@ -18,6 +18,6 @@ permissions:
 jobs:
   site:
     # Pinned by commit; keep in step with terradoc in requirements.txt.
-    uses: plataformasindigenas/terradoc/.github/workflows/site.yml@2e3a7365aa6d6734472a6622995629c3e21da8ed  # v0.20.0
+    uses: plataformasindigenas/terradoc/.github/workflows/site.yml@d68a3e892fd49be39a62271f6d258d3368453a7a  # v0.21.0
     with:
       confirm_shrink: ${{ inputs.confirm_shrink || false }}
