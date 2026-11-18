@@ -36,8 +36,8 @@ module_labels:
 language_code: bor
 
 theme:
-  # Versão 2 dos modelos (terradoc >= 0.20; a v1 ignora estas chaves). As cores têm
-  # papéis e o nome do material de onde vêm (CULTURA.md).
+  # Versão 2 dos modelos (precisa do terradoc 0.20 ou mais novo). As cores têm papéis e o
+  # nome do material de onde vêm (CULTURA.md).
   templates: v2
   pack: bororo
   palette:
