@@ -202,7 +202,31 @@ Se forem a mesma palavra, junte as definições numa linha e apague a outra.
 | tudu | 4702 | enganchar, atolar; trocar: tudure (ele atolou |
 | tudu | 4703 | fruta, novidade, qualidade do que é novo |
 
-## 2. Entradas com mais do que a palavra (5)
+## 2. Gravações ligadas a mais de uma palavra (14)
+
+Em `data/audio/manifest.tsv`, cada gravação está ligada à palavra (pelo `entry_id`). Estas
+gravações estão ligadas a todas as palavras com a mesma grafia, porque não foi possível saber
+qual delas foi gravada. Ouça e deixe só a linha certa no manifesto (ou todas, se for a mesma
+pronúncia e servir para todas).
+
+| arquivo | palavras (id) |
+|---|---|
+| `aria.webm` | 34: aria (panela grande); 4819: aria () |
+| `bibi.webm` | 1075: bibi (peito de mãe); 1076: bibí (morte, secura extrema) |
+| `bibi__unknown.webm` | 1075: bibi (peito de mãe); 1076: bibí (morte, secura extrema) |
+| `boe_epa.webm` | 1197: Boe epa (bororo esperto, que tem boas qualidade); 1198: Boe epa (roça) |
+| `do.webm` | 401: -do (sufixo causativo); 402: -do (imperativo de verbos intransitivos) |
+| `gorido.webm` | 141: gorido (assar, tostar, torrar); 4831: gorido (fritar,) |
+| `jetara.webm` | 2313: jetara (broto, rebento, especialmente das taquar); 2314: jetara (broto, rebento, especialmente de taquara) |
+| `jurea.webm` | 2502: jurea (pindaíba); 2503: jurea (rastro de sucuri) |
+| `kodu.webm` | 215: kodu (vôo, ida, saída, partida, caminho; voar,); 216: kodu (carne, músculo; cozido, assado) |
+| `kori_kori.webm` | 2949: kori (kóri) (dor, zanga, inveja, queixa, capricho, fo); 2950: kori (kôri) (além, por cima, mais do que) |
+| `kuri.webm` | 236: kuri (logo, imediatamente); 237: kuri (abundância, grandeza, grande, estimado, ); 238: kuri (hipocôndrio, ventre, abdome) |
+| `kuri__unknown.webm` | 236: kuri (logo, imediatamente); 237: kuri (abundância, grandeza, grande, estimado, ); 238: kuri (hipocôndrio, ventre, abdome) |
+| `metugodu.webm` | 3536: metugodu (cansaço, velhice; estar cansado); 3537: metugodu (cansar, estar cansado) |
+| `oiaga.webm` | 295: oiaga (cauda de ave); 296: oiaga (asa, cauda de ave, cabeleira) |
+
+## 3. Entradas com mais do que a palavra (5)
 
 Definições ou observações gramaticais na coluna da palavra. Confira se a palavra está certa;
 observações podem ir para `comment`.
@@ -215,7 +239,7 @@ observações podem ir para `comment`.
 | 1943 | inoba boe dukeje ba? expr. |
 | 3530 | metu VT. meter, colocar dentro; |
 
-## 3. Palavras com letras fora do alfabeto (5)
+## 4. Palavras com letras fora do alfabeto (5)
 
 O alfabeto do dicionário está em `CULTURA.md`. Estas palavras usam outras letras: pode ser
 um empréstimo (tudo bem), um erro de digitação, ou uma palavra em português na coluna da
@@ -229,7 +253,7 @@ palavra (troque as colunas).
 | 3530 | metu VT. meter, colocar dentro; | l v | estar, estar dentro de algo |
 | 4044 | x | x | nosso birote |
 
-## 4. Imagens sem crédito: Fauna (1)
+## 5. Imagens sem crédito: Fauna (1)
 
 Estas imagens aparecem sem autor nem licença. Preencha em `data/fauna.yaml`, abaixo de `pic_link`:
 `pic_credit: "© Nome, CC BY-SA 4.0, via Wikimedia Commons"` e `pic_source: "https://..."`. Se a
@@ -242,7 +266,7 @@ que puderam ser comprovados já foram preenchidos.
 |---|---|---|---|
 | 97 | Kidoguroe (Abelha borá) | *Tetragona clavipes* | `images/fauna_097_kidoguroe.jpg` |
 
-## 5. Imagens sem crédito: Etnobotânica (41)
+## 6. Imagens sem crédito: Etnobotânica (41)
 
 Estas imagens aparecem sem autor nem licença. Preencha em `data/ethnobotany.yaml`, abaixo de `pic_link`:
 `pic_credit: "© Nome, CC BY-SA 4.0, via Wikimedia Commons"` e `pic_source: "https://..."`. Se a
