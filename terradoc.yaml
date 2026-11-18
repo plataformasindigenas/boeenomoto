@@ -35,6 +35,9 @@ module_labels:
 # Código ISO 639-3 da língua (atributo lang no texto na língua).
 language_code: bor
 
+# Teclas extras do teclado do dicionário (versão 2): as vogais acentuadas da escrita.
+keyboard: [á, é, í, ó, ú]
+
 theme:
   # Versão 2 dos modelos (precisa do terradoc 0.20 ou mais novo). As cores têm papéis e o
   # nome do material de onde vêm (CULTURA.md).
