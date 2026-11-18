@@ -17,6 +17,29 @@ títulos.
 As cores (`theme.colors`) e as fotos da página inicial (`theme.hero_images`) também fazem
 parte da identidade do site; os créditos das fotos ficam junto delas.
 
+## O alfabeto do dicionário
+
+O dicionário agrupa e ordena as palavras por este alfabeto:
+
+a, b, c, d, e, g, i, j, k, m, n, o, p, r, t, u, w
+
+- É a grafia dos próprios dados: **c** para /tʃ/ (*cerae*) e **j** para /dʒ/ (*kejewu*), sem
+  *č*. A coluna IPA dos dados confirma esses valores.
+- **á é í ó ú** não são letras à parte: *kudógó* fica junto de *kudogo*. **kw** e **gw** também
+  não têm aba própria; a ordem normal já as põe depois de *ku-* e *gu-*.
+- **Fontes.** Nonato (2008, Unicamp; e "Fonética e fonologia do bororo", 2006): /tʃ/ = c,
+  /dʒ/ = j, kw e gw como uma consoante. Ochoa Camargo (2005), citado por Camargos (2010, UnB,
+  p. 17): o dicionário escolar adaptou a grafia da *Enciclopédia Bororo* para o computador.
+  Borocereu (2025, ProfLetras/UNEMAT), professor em Meruri, escreve *Ecerae*, *poboce*,
+  *pogora jiwu*. Não consegui ver as "notas sobre o alfabeto" do dicionário de Ochoa, que
+  diriam se a escola trata kw, gw ou as vogais acentuadas como letras.
+- Ficam fora: **l s z x ç q v f h**, que só aparecem em notas em português (*pl.*, *vrt.*) e
+  empréstimos.
+- **Onde está:** `alphabet` em `terradoc.yaml`. Pesquisa completa:
+  `meta/domains/plataformas/research/2026-11-17-template-redesign/alphabets.md`.
+- **Aprovação:** proposta de 2026-11-18, aprovada pelo coordenador sob a aprovação geral da
+  comunidade ao ser incorporada. A comunidade pode pedir mudanças a qualquer momento.
+
 ## Conhecimento restrito
 
 Este repositório e todas as prévias são **públicos**. Conhecimento restrito (rituais,
