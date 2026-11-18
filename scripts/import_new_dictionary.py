@@ -20,6 +20,7 @@ Behavior:
   - `áudio` / `áudio2` / `áudio3` are collapsed into the sidecar (deduplicated)
   - `X` / `x` -> marked: true; blank -> marked: false
   - `pos` is left empty when blank in source (schema makes pos optional)
+  - homonym numbers and IPA leave the headword (scripts/headwords.py)
   - 24 entries present only in the previous TSV are dropped (intentional)
 
 Usage:
@@ -31,6 +32,8 @@ import sys
 import unicodedata
 from pathlib import Path
 
+from headwords import split_headword  # homonym numbers and IPA out of the headword
+
 BASE_DIR = Path(__file__).parent.parent
 DATA_DIR = BASE_DIR / "data"
 DICT_TSV = DATA_DIR / "dictionary.tsv"
@@ -38,7 +41,7 @@ AUDIO_PLAN = DATA_DIR / "audio" / "_planned.tsv"
 
 # Output column order (matches schema). 'audio' kept as schema placeholder.
 COLUMNS = [
-    "id", "entry", "ipa", "pos", "definition", "example_sent",
+    "id", "entry", "homonym", "ipa", "pos", "definition", "example_sent",
     "scientific_name", "wiki_link", "pic_link", "comment",
     "audio", "created_at", "marked",
 ]
@@ -129,10 +132,12 @@ def main(csv_path: str) -> None:
                 "source_filename": fname,
             })
 
+        headword, homonym, ipa = split_headword(entry, r.get("ipa") or "")
         out_rows.append({
             "id": rid,
-            "entry": entry,
-            "ipa": (r.get("ipa") or "").strip(),
+            "entry": headword,
+            "homonym": homonym,
+            "ipa": ipa,
             "pos": pos,
             "definition": (r.get("definition") or "").strip(),
             "example_sent": (r.get("example_sent") or "").strip(),
