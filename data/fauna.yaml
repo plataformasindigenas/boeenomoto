@@ -1,6 +1,8 @@
 - id: 95
   name_portuguese: Abelha benjoí
   pic_link: images/fauna_095_gigo.jpg
+  pic_credit: "© CS1982, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Benjoi_pito.jpg"
   name_indigenous: Gigo
 - id: 97
   name_portuguese: Abelha borá
@@ -12,6 +14,8 @@
   scientific_name: Herpetotheres cachinnans
   category: Falconidae
   pic_link: images/fauna_041_makao.jpg
+  pic_credit: "© Francesco Veronesi from Italy, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Laughing_Falcon_-_Dari%C3%A9n_-_Panama_(48444308217).jpg"
   name_indigenous: Makao
   classification_indigenous: Kiege Boemoriae
 - id: 65
@@ -19,6 +23,8 @@
   scientific_name: Platalea ajaja
   category: Threskiornithidae
   pic_link: images/fauna_065_bace_ao_kororogodyrewy.jpg
+  pic_credit: "© Gordon Leggett, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:2019-02-15_074_Roseate_spoonbill_(Platalea_ajaja)_at_Sian_Ka%27an_Biosphere_Reserve,_Mexico.jpg"
   name_indigenous: Bace ao kororogodyrewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 71
@@ -26,6 +32,8 @@
   scientific_name: Anhima cornuta
   category: Anhimidae
   pic_link: images/fauna_071_tamigi.jpg
+  pic_credit: "© Bill Bouton from San Luis Obispo, CA, USA, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Anhima_cornuta_-near_Manu_Wildlife_Center,_Manu_National_Park,_Peru_-three-8.jpg"
   name_indigenous: Tamigi
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 10
@@ -33,6 +41,8 @@
   scientific_name: Tapirus terrestris
   category: Tapirídeos
   pic_link: images/fauna_010_ki.jpg
+  pic_credit: "© Bernard DUPONT from FRANCE, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Lowland_Tapir_(Tapirus_terrestris)_male_out_of_the_forest_..._-_Flickr_-_berniedup.jpg"
   name_indigenous: Ki
   classification_indigenous: Barege Kurirewyge
 - id: 56
@@ -40,6 +50,8 @@
   scientific_name: Anodorhynchus hyacinthinus
   category: Psittacidae
   pic_link: images/fauna_056_kudoro.jpg
+  pic_credit: "© Leonardo Ramos, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Arara_Azul_no_Pantanal.jpg"
   name_indigenous: Kudoro
   classification_indigenous: Kiege oto toiborewyge
 - id: 57
@@ -47,6 +59,8 @@
   scientific_name: Ara macao
   category: Psittacidae
   pic_link: images/fauna_057_nabure.jpg
+  pic_credit: "© Travis Isaacs from Grapevine, TX, USA, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Ara_macao_-Fort_Worth_Zoo-8.jpg"
   name_indigenous: Nabure
   classification_indigenous: Kiege oto toiborewyge
 - id: 58
@@ -54,6 +68,8 @@
   scientific_name: Ara ararauna
   category: Psittacidae
   pic_link: images/fauna_058_kuido.jpg
+  pic_credit: "© Luc Viatour, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Ara_ararauna_Luc_Viatour.jpg"
   name_indigenous: Kuido
   classification_indigenous: Kiege oto toiborewyge
 - id: 4
@@ -61,6 +77,8 @@
   scientific_name: Leopardus pardalis
   category: Feilídeo
   pic_link: images/fauna_004_aipoburewy.jpg
+  pic_credit: "© João Carlos Medau, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Ocelot_(Jaguatirica)_Zoo_Itatiba.jpg"
   name_indigenous: Aipoburewy
   classification_indigenous: Barege boemoriae
 - id: 34
@@ -68,6 +86,8 @@
   scientific_name: Sotalia fluviatilis
   category: Delphinidae
   pic_link: images/fauna_034_jakorewy.jpg
+  pic_credit: "© Archilider, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:DELFIN_DEL_ORINOCO2.JPG"
   name_indigenous: Jakorewy
   classification_indigenous: Barege pobo tadawyge
 - id: 22
@@ -75,6 +95,8 @@
   scientific_name: Alouatta caraya
   category: Atelidae
   pic_link: images/fauna_022_pai_corewy.jpg
+  pic_credit: "© Miguelrangeljr, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Alouatta_caraya_male.JPG"
   name_indigenous: Pai Corewy
   classification_indigenous: Barege Akururewyge
 - id: 66
@@ -82,6 +104,8 @@
   scientific_name: Cabeça-seca
   category: Ciconiidae
   pic_link: images/fauna_066_bace_auragodyrewy.jpg
+  pic_credit: "© Googie man, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:WoodStorkWhole.JPG"
   name_indigenous: Bace auragodyrewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 13
@@ -89,6 +113,8 @@
   scientific_name: Dicotyles tajacu
   category: Taiaçuídeos
   pic_link: images/fauna_013_jui.jpg
+  pic_credit: "© Chrumps, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Tayassu_tajacu.jpg"
   name_indigenous: Jui
   classification_indigenous: Barege Kurirewyge
 - id: 29
@@ -96,6 +122,8 @@
   scientific_name: Hydrochoerus hydrochaeris
   category: Caviidae
   pic_link: images/fauna_029_akiwa.jpg
+  pic_credit: "© Clodomiro Esteves Junior, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Capivara(Hydrochoerus_hydrochaeris).jpg"
   name_indigenous: Akiwa
   classification_indigenous: Barege pobo tadawyge
 - id: 72
@@ -103,18 +131,24 @@
   scientific_name: Aramus guarauna
   category: Aramidae
   pic_link: images/fauna_072_karao.jpg
+  pic_credit: "© gary_leavens, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Aramus_guarauna_(Limpkin)_25.jpg"
   name_indigenous: Karao
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 9
   name_portuguese: Cariacu / Veado Galheiro
   scientific_name: Odocoileus virginianus
   pic_link: images/fauna_009_atubo.jpg
+  pic_credit: "© Raul654., CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:White-tailed_deer_(Odocoileus_virginianus)_grazing_-_20050809.jpg"
   name_indigenous: Atubo
   classification_indigenous: Barege Kurirewyge
 - id: 69
   name_portuguese: Cegonha (?)
   category: Ciconiidae
   pic_link: images/fauna_069_parira.jpg
+  pic_credit: "© Luiz Lapa from Oeiras, Portugal, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Cegonha-branca,_White_Stork_(50904788362).jpg"
   name_indigenous: Parira
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 40
@@ -122,6 +156,8 @@
   scientific_name: Athene cunicularia
   category: Strigidae
   pic_link: images/fauna_040_tagogo.jpg
+  pic_credit: "© Wagner Machado Carlos Lemes from Goiânia, Brazil, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Athene_cunicularia_1_edited.JPG"
   name_indigenous: Tagogo
   classification_indigenous: Kiege Boemoriae
 - id: 51
@@ -129,6 +165,8 @@
   scientific_name: Bubo virginianus
   category: Strigidae
   pic_link: images/fauna_051_kaikai.jpg
+  pic_credit: "© Greg Hume, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Bubo_virginianus_06.jpg"
   name_indigenous: Kaikai
   classification_indigenous: Kiege buregi toiburewyge
 - id: 50
@@ -136,6 +174,8 @@
   scientific_name: Strix huhula
   category: Strigidae
   pic_link: images/fauna_050_kugu_corewy.jpg
+  pic_credit: "© Luizalves1990, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:%C3%81rea_de_Prote%C3%A7%C3%A3o_Ambiental_Serra_Dona_Francisca_-_Luiz_Alves_(07).jpg"
   name_indigenous: Kugu corewy
   classification_indigenous: Kiege buregi toiburewyge
 - id: 59
@@ -143,6 +183,8 @@
   scientific_name: Amazona amazonica
   category: Psittacidae
   pic_link: images/fauna_059_korao.jpg
+  pic_credit: "© Philipp Weigell, CC BY 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Amazona_amazonica_(1).jpg"
   name_indigenous: Korao
   classification_indigenous: Kiege oto toiborewyge
 - id: 38
@@ -150,6 +192,8 @@
   scientific_name: Dasyprocta punctata
   category: Dasyproctidae
   pic_link: images/fauna_038_mea.jpg
+  pic_credit: "© Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Central_American_agouti_(Dasyprocta_punctata).jpg"
   name_indigenous: Mea
   classification_indigenous: Barege kugure
 - id: 92
@@ -157,6 +201,8 @@
   scientific_name: Rhea americana
   category: Rheidae
   pic_link: images/fauna_092_pari.jpg
+  pic_credit: "© Rufus46, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Nandu_Rhea_americana_Tierpark_Hellabrunn-1.jpg"
   name_indigenous: Pari
   classification_indigenous: Kiege moto kejewyge
 - id: 82
@@ -169,6 +215,8 @@
   scientific_name: Didelphis marsupialis
   category: Didelfiídeos
   pic_link: images/fauna_025_aka.jpg
+  pic_credit: "© Alex Popovkin, Bahia, Brazil, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Didelphis_albiventris,_Bahia,_Brazil.jpg"
   name_indigenous: Aka
   classification_indigenous: Barege Akururewyge
 - id: 64
@@ -176,6 +224,8 @@
   scientific_name: Egretta caerulea
   category: Ardeidae
   pic_link: images/fauna_064_bace_kaworyrewy.jpg
+  pic_credit: "© Dario Sanches from São Paulo, Brazil, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Egretta_caerulea_-Cananeia,_Sao_Paulo,_Brasil-8.jpg"
   name_indigenous: Bace kaworyrewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 63
@@ -183,11 +233,15 @@
   scientific_name: Egretta thula
   category: Ardeidae
   pic_link: images/fauna_063_bace_kuorewy.jpg
+  pic_credit: "© Rhododendrites, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Snowy_egret_in_JBWR_(30217).jpg"
   name_indigenous: Bace kuorewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 77
   name_portuguese: Garça-da-mata
   pic_link: images/fauna_077_o_kaworurewy.jpg
+  pic_credit: "© Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Agami_heron_(Agamia_agami)_juvenile.jpg"
   name_indigenous: O kaworurewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 62
@@ -195,6 +249,8 @@
   scientific_name: Ardea alba
   category: Ardeidae
   pic_link: images/fauna_062_bace_agarewy.jpg
+  pic_credit: "© Martin Thurnherr, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Silberreiher_01_CH.jpg"
   name_indigenous: Bace agarewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 3
@@ -202,6 +258,8 @@
   scientific_name: Herpailurus yagouaroundi
   category: Feilídeo
   pic_link: images/fauna_003_aimearewy.jpg
+  pic_credit: "© Ben Jobson, CC BY 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Herpailurus_yagouaroundi_310267736.jpg"
   name_indigenous: Aimearewy
   classification_indigenous: Barege boemoriae
 - id: 47
@@ -209,6 +267,8 @@
   scientific_name: Caracara plancus
   category: Falconidae
   pic_link: images/fauna_047_kaga.jpg
+  pic_credit: "© Andreas Trepte, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Schopfkarakara.jpg"
   name_indigenous: Kaga
   classification_indigenous: Kiege buregi toiburewyge
 - id: 44
@@ -216,6 +276,8 @@
   scientific_name: Milvago chimachima
   category: Falconidae
   pic_link: images/fauna_044_kuruguga.jpg
+  pic_credit: "© Dario Sanches from São Paulo, Brasil, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Milvago_chimachima.jpg"
   name_indigenous: Kuruguga
   classification_indigenous: Kiege Boemoriae
 - id: 48
@@ -227,6 +289,8 @@
   scientific_name: Rupornis magnirostris
   category: Accipitridae
   pic_link: images/fauna_046_kuruga_bure_paru_ekurewy.jpg
+  pic_credit: "© Enrique González, CC BY 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Taguato_(Rupornis_magnirostris),_Uruguay,_2020.jpg"
   name_indigenous: Kuruga bure paru ekurewy
   classification_indigenous: Kiege buregi toiburewyge
 - id: 42
@@ -234,6 +298,8 @@
   scientific_name: Harpia harpyja
   category: Accipitridae
   pic_link: images/fauna_042_aroeeceba.jpg
+  pic_credit: "© Mdf, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Harpia-harpyja-001.jpg"
   name_indigenous: Aroeeceba
   classification_indigenous: Kiege Boemoriae
 - id: 49
@@ -241,6 +307,8 @@
   scientific_name: Milvago chimango
   category: Falconidae
   pic_link: images/fauna_049_kuruga_bewerewy.jpg
+  pic_credit: "© hozdiamant, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Milvago_chimango_temucoensis.jpg"
   name_indigenous: Kuruga bewerewy
   classification_indigenous: Kiege buregi toiburewyge
 - id: 7
@@ -248,6 +316,8 @@
   scientific_name: Cerdocyon thous
   category: Canídeos
   pic_link: images/fauna_007_okwa.jpg
+  pic_credit: "© Jan Ebr & Ivana Ebrová, CC BY 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Cerdocyon_thous_-_Jan_Ebr_and_Ivana_Ebrov%C3%A1_-_284951055.jpeg"
   name_indigenous: Okwa
   classification_indigenous: Barege boemoriae
 - id: 28
@@ -255,6 +325,8 @@
   scientific_name: Iguana iguana
   category: Iguanidae
   pic_link: images/fauna_028_irui.jpg
+  pic_credit: "© Rjcastillo, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Iguana_V.jpg"
   name_indigenous: Irui
   classification_indigenous: Barege pobo tadawyge
 - id: 90
@@ -262,6 +334,8 @@
   scientific_name: Crypturellus parvirostris
   category: Tinamidae
   pic_link: images/fauna_090_riwodo.jpg
+  pic_credit: "© Dario Sanches, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Crypturellus_parvirostris_2.jpg"
   name_indigenous: Riwodo
   classification_indigenous: Kiege moto kejewyge
 - id: 6
@@ -269,6 +343,8 @@
   scientific_name: Eira barbara
   category: Mustelídeos
   pic_link: images/fauna_006_ipocerewy.jpg
+  pic_credit: "© Jairmoreirafotografia, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Irara_(Papa-mel).jpg"
   name_indigenous: Ipocerewy
   classification_indigenous: Barege boemoriae
 - id: 67
@@ -276,6 +352,8 @@
   scientific_name: Jabiru mycteria
   category: Ciconiidae
   pic_link: images/fauna_067_bace_kogyio.jpg
+  pic_credit: "© Andreas Trepte, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Jabiru_Mato_Grosso_Pantanal_Brazil-3.jpg"
   name_indigenous: Bace kogyio
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 18
@@ -283,6 +361,8 @@
   scientific_name: Chelonoidis carbonarius
   category: Testudinidae
   pic_link: images/fauna_018_jerigigi.jpg
+  pic_credit: "© Mike Brady, CC BY 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Chelonoidis_carbonarius_386013561.jpg"
   name_indigenous: Jerigigi
   classification_indigenous: Barege Borewyge
 - id: 73
@@ -290,6 +370,8 @@
   scientific_name: Jacana jacana
   category: Jacanidae
   pic_link: images/fauna_073_pegepege.jpg
+  pic_credit: "© Geoff Gallice from Gainesville, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Acana_jacana_-near_Yarina_Lodge,_Napo_Province,_Ecuador_-adult-8_cropped.jpg"
   name_indigenous: Pegepege
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 31
@@ -297,6 +379,8 @@
   scientific_name: Caiman yacare
   category: Alligatoridae
   pic_link: images/fauna_031_uwai.jpg
+  pic_credit: "© Lea Maimone, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Caiman_yacare.jpg"
   name_indigenous: Uwai
   classification_indigenous: Barege pobo tadawyge
 - id: 61
@@ -304,23 +388,31 @@
   scientific_name: Eupsittula aurea
   category: Psittacidae
   pic_link: images/fauna_061_ore.jpg
+  pic_credit: "© Bernard DUPONT from FRANCE, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Peach-fronted_Parakeet_(Aratinga_aurea)_(30809763703).jpg"
   name_indigenous: Ore
   classification_indigenous: Kiege oto toiborewyge
 - id: 93
   name_portuguese: João-Bobo
   scientific_name: Nystalus chacuru
   pic_link: images/fauna_093_jokorogo.jpg
+  pic_credit: "© Hector Bottai, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Nystalus_chacuru_White-eared_Puffbird.JPG"
   name_indigenous: Jokorogo
   classification_indigenous: Kiege moto kejewyge
 - id: 32
   name_portuguese: Lambari
   category: Astyanax (gen.)
   pic_link: images/fauna_032_meto.jpg
+  pic_credit: "© User:Haplochromis, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Astyanax_mexicanus.JPG"
   name_indigenous: Meto
 - id: 37
   name_portuguese: Lebre / Tapiti
   scientific_name: Sylvilagus brasiliensis
   pic_link: images/fauna_037_amo.jpg
+  pic_credit: "© Jan Ebr & Ivana Ebrová, CC BY 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Sylvilagus_brasiliensis_284953755.jpg"
   name_indigenous: Amo
   classification_indigenous: Barege kugure
 - id: 8
@@ -328,6 +420,8 @@
   scientific_name: Chrysocyon brachyurus / Canis jubatus
   category: Canídeos
   pic_link: images/fauna_008_rie.jpg
+  pic_credit: "Whaldener Endo, CC0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Chrysocyon_brachyurus_205682420.jpg"
   name_indigenous: Rie
   classification_indigenous: Barege boemoriae
 - id: 23
@@ -340,17 +434,23 @@
   scientific_name: Ciconia maguari
   category: Ciconiidae
   pic_link: images/fauna_068_bace_mikurewy.jpg
+  pic_credit: "© © 2006 Carla Antonini, CC BY-SA 2.5 ar, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Ciconia_maguari.jpeg"
   name_indigenous: Bace mikurewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 94
   name_portuguese: Mamangaba
   scientific_name: Bombus
   pic_link: images/fauna_094_penogogo.jpg
+  pic_credit: "© Alvesgaspar, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Bumblebee_October_2007-3a.jpg"
   name_indigenous: Penogogo
 - id: 5
   name_portuguese: Mão-pelada
   scientific_name: Procionídeos
   pic_link: images/fauna_005_ierarae.jpg
+  pic_credit: "© Mariordo (Mario Roberto Durán Ortiz), CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Crab-eating_raccoon_(Procyon_cancrivorus)_Manuel_Antonio_Park_CRI_01_2020_CRI_01_2020_1752.jpg"
   name_indigenous: Ierarae
   classification_indigenous: Barege boemoriae
 - id: 80
@@ -358,12 +458,16 @@
   scientific_name: Dendrocygna autumnalis
   category: Anatidae
   pic_link: images/fauna_080_parabara.jpg
+  pic_credit: "© Alan D. Wilson (edited by olegivvit), CC BY 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Whistling_duck_flight02_-_natures_pics-edit1.jpg"
   name_indigenous: Parabara
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 70
   name_portuguese: Martim Pescador
   category: Alcedinidae
   pic_link: images/fauna_070_kadagare.jpg
+  pic_credit: "© Joao Quental, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Megaceryle_torquata-Ringed_Kingfisher.jpg"
   name_indigenous: Kadagare
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 83
@@ -371,6 +475,8 @@
   scientific_name: Vanellus cayanus
   category: Charadriidae
   pic_link: images/fauna_083_ra_porepore.jpg
+  pic_credit: "© Andreas Trepte, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:BK3U7978.jpg"
   name_indigenous: Ra porepore
   classification_indigenous: Kiege kugary kejewyge
 - id: 43
@@ -378,6 +484,8 @@
   scientific_name: Pulsatrix koeniswaldiana
   category: Strigidae
   pic_link: images/fauna_043_kugu.jpg
+  pic_credit: "© Hector Bottai, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Pulsatrix_koeniswaldiana_-_Tawny-browed_Owl_(young).jpg"
   name_indigenous: Kugu
   classification_indigenous: Kiege Boemoriae
 - id: 2
@@ -385,6 +493,8 @@
   scientific_name: Puma concolor
   category: Feilídeo
   pic_link: images/fauna_002_aigo.jpg
+  pic_credit: "National Park Service, Public domain, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Mountain_Lion_in_Glacier_National_Park.jpg"
   name_indigenous: Aigo
   classification_indigenous: Barege boemoriae
 - id: 1
@@ -392,6 +502,8 @@
   scientific_name: Panthera onca
   category: Feilídeo
   pic_link: images/fauna_001_adugo.jpg
+  pic_credit: "© Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Jaguar_(Panthera_onca_palustris)_female_Piquiri_River_2.JPG"
   name_indigenous: Adugo
   classification_indigenous: Barege boemoriae
 - id: 27
@@ -399,6 +511,8 @@
   scientific_name: Coendou prehensilis
   category: Erinaceidae
   pic_link: images/fauna_027_iwe.jpg
+  pic_credit: "© Eric Kilby from Somerville, MA, USA, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Prehensile_Tail_Porcupine_Curled_and_Relaxed_(18144690005).jpg"
   name_indigenous: Iwe
   classification_indigenous: Barege Akururewyge
 - id: 35
@@ -406,6 +520,8 @@
   scientific_name: Cuniculus paca
   category: Cuniculidae
   pic_link: images/fauna_035_apu.jpg
+  pic_credit: "© Hans Hillewaert, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Cuniculus_paca.jpg"
   name_indigenous: Apu
   classification_indigenous: Barege kugure
 - id: 81
@@ -413,6 +529,8 @@
   scientific_name: Cairina moschata
   category: Anatidae
   pic_link: images/fauna_081_turubare_corewy.jpg
+  pic_credit: "© Dario Sanches from SÃO PAULO, BRASIL, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Flickr_-_Dario_Sanches_-_PATO-DO-MATO_(Cairina_moschata).jpg"
   name_indigenous: Turubare corewy
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 91
@@ -420,18 +538,24 @@
   scientific_name: Rhynchotus rufescens
   category: Tinamidae
   pic_link: images/fauna_091_parikiogodo.jpg
+  pic_credit: "© Bruno Girin, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg"
   name_indigenous: Parikiogodo
   classification_indigenous: Kiege moto kejewyge
 - id: 96
   name_portuguese: Periquito-d'asa-azul / tuim-de-asa-azul / periquito vassourinha
   scientific_name: Forpus xanthopterygius
   pic_link: images/fauna_096_kidoe_etumana.jpg
+  pic_credit: "© Dario Sanches (derivative work: Snowmanradio), CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Forpus_xanthopterygius_-Brazil-6-4c.jpg"
   name_indigenous: Kidoe etumana
 - id: 60
   name_portuguese: Periquito-verde
   scientific_name: Brotogeris tirica
   category: Psittacidae
   pic_link: images/fauna_060_kido.jpg
+  pic_credit: "© Dario Sanches from SÃO PAULO, BRASIL, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:PERIQUITO-RICO_(_Brotogeris_tirica)_(2087239475).jpg"
   name_indigenous: Kido
   classification_indigenous: Kiege oto toiborewyge
 - id: 78
@@ -439,6 +563,8 @@
   scientific_name: Heliornis fulica
   category: Heliornithidae
   pic_link: images/fauna_078_bure_puduga.jpg
+  pic_credit: "© L. Catchick, CC BY 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Sungrebe2.jpeg"
   name_indigenous: Bure puduga
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 45
@@ -450,6 +576,8 @@
   scientific_name: Cavia aperea
   category: Caviidae
   pic_link: images/fauna_039_kurugo.jpg
+  pic_credit: "© Petra Karstedt (= PetraK;  www.Tiermotive.de), CC BY-SA 2.0 de, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Wildmeerschweinchen-06.jpg"
   name_indigenous: Kurugo
   classification_indigenous: Barege kugure
 - id: 21
@@ -457,6 +585,8 @@
   scientific_name: Nasua narica
   category: Procyonidae
   pic_link: images/fauna_021_kudobo.jpg
+  pic_credit: "© Liz Roy, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Coati.jpg"
   name_indigenous: Kudobo
   classification_indigenous: Barege Akururewyge
 - id: 14
@@ -464,23 +594,31 @@
   scientific_name: Tayassu pecari
   category: Taiaçuídeos
   pic_link: images/fauna_014_jugo.jpg
+  pic_credit: "© Ana_Cotta, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Tayassu_pecari_-Brazil-8.jpg"
   name_indigenous: Jugo
   classification_indigenous: Barege Kurirewyge
 - id: 74
   name_portuguese: Saracura
   category: Rallidae
   pic_link: images/fauna_074_kuocaga.jpg
+  pic_credit: "Public domain, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Gallinula_galeata_NBII.jpg"
   name_indigenous: Kuocaga
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 26
   name_portuguese: Serelepe / Caxinguelê
   category: Sciuridae
   pic_link: images/fauna_026_kodokodo.jpg
+  pic_credit: "© Manu Alves, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Esquilo-1.jpg"
   name_indigenous: Kodokodo
   classification_indigenous: Barege Akururewyge
 - id: 87
   name_portuguese: Siriema
   pic_link: images/fauna_087_beo.jpg
+  pic_credit: "© Milermachado, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Seriema_(Cariama_cristata).jpg"
   name_indigenous: Beo
   classification_indigenous: Kiege moto kejewyge
 - id: 79
@@ -488,6 +626,8 @@
   scientific_name: Tigrisoma lineatum
   category: Ardeidae
   pic_link: images/fauna_079_cu.jpg
+  pic_credit: "© Klatto80, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Soco_boi.jpg"
   name_indigenous: Cu
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 75
@@ -495,6 +635,8 @@
   scientific_name: Nycticorax nycticorax
   category: Ardeidae
   pic_link: images/fauna_075_kudo.jpg
+  pic_credit: "© Calibas, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Nycticorax_nycticorax12.jpg"
   name_indigenous: Kudo
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 12
@@ -502,6 +644,8 @@
   scientific_name: Myrmecophaga tridactyla
   category: Mirmecofagídeos
   pic_link: images/fauna_012_buke.jpg
+  pic_credit: "© Malene Thyssen, CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Myresluger2.jpg"
   name_indigenous: Buke
   classification_indigenous: Barege Kurirewyge
 - id: 24
@@ -509,6 +653,8 @@
   scientific_name: Tamandua tetradactyla
   category: Myrmecophagidae
   pic_link: images/fauna_024_apogo.jpg
+  pic_credit: "© Bernard DUPONT from FRANCE, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Southern_Tamandua_(Tamandua_tetradactyla)_-_Flickr_-_berniedup.jpg"
   name_indigenous: Apogo
   classification_indigenous: Barege Akururewyge
 - id: 17
@@ -516,6 +662,8 @@
   scientific_name: Tolypeutes matacus
   category: Clamiforídeos
   pic_link: images/fauna_017_enokuri.jpg
+  pic_credit: "© Ltshears (derivative work: MAURILBERT), CC BY-SA 3.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Southern_Three_Banded_Armadillo_001-2.jpg"
   name_indigenous: Enokuri
   classification_indigenous: Barege Borewyge
 - id: 16
@@ -523,6 +671,8 @@
   scientific_name: Priodontes maximus
   category: Clamiforídeos
   pic_link: images/fauna_016_bokodori.jpg
+  pic_credit: "© Guillaume Delaitre, CC BY 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Priodontes_maximus_at_R%C3%A9gina.jpg"
   name_indigenous: Bokodori
   classification_indigenous: Barege Borewyge
 - id: 20
@@ -535,6 +685,8 @@
   scientific_name: Dasypus novemcinctus
   category: Dasipodídeos
   pic_link: images/fauna_019_jerego.jpg
+  pic_credit: "© Rhododendrites, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Nine-banded_armadillo_(13578).jpg"
   name_indigenous: Jerego
   classification_indigenous: Barege Borewyge
 - id: 15
@@ -542,6 +694,8 @@
   scientific_name: Euphractus sexcinctus
   category: Clamiforídeos
   pic_link: images/fauna_015_bakodorirewy.jpg
+  pic_credit: "© Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Six-banded_armadillo_(Euphractus_sexcinctus).JPG"
   name_indigenous: Bakodorirewy
   classification_indigenous: Barege Borewyge
 - id: 36
@@ -549,6 +703,8 @@
   scientific_name: Salvator merianae
   category: Teiidae
   pic_link: images/fauna_036_tuwogy.jpg
+  pic_credit: "© Leonardo Palermo Gentile, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Trilha_Betari,_por_Leonardo_Palermo_Gentile_03.jpg"
   name_indigenous: Tuwogy
   classification_indigenous: Barege kugure
 - id: 54
@@ -556,6 +712,8 @@
   scientific_name: Coragyps atratus
   category: Cathartidae
   pic_link: images/fauna_054_poburewy.jpg
+  pic_credit: "© Charles J. Sharp, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Black_vulture_(Coragyps_atratus_brasiliensis)_Peten.jpg"
   name_indigenous: Poburewy
   classification_indigenous: Kiege buregi toiburewyge
 - id: 55
@@ -563,6 +721,8 @@
   scientific_name: Cathartes aura
   category: Cathartidae
   pic_link: images/fauna_055_ciwaje.jpg
+  pic_credit: "© Rhododendrites, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Turkey_vultures_(01731).jpg"
   name_indigenous: Ciwaje
   classification_indigenous: Kiege buregi toiburewyge
 - id: 52
@@ -570,6 +730,8 @@
   scientific_name: Sarcoramphus papa
   category: Sarcosamphidae
   pic_link: images/fauna_052_bai.jpg
+  pic_credit: "© Renato Augusto Martins, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Urubu_rei_-_Sarcoramphus_papa.jpg"
   name_indigenous: Bai
   classification_indigenous: Kiege buregi toiburewyge
 - id: 11
@@ -577,12 +739,16 @@
   scientific_name: Mazama nana
   category: Cervídeos
   pic_link: images/fauna_011_pobogo.jpg
+  pic_credit: "© Luiz Carlos Marques Rocha, CC BY 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Mazama_nana_2.jpg"
   name_indigenous: Pobogo
   classification_indigenous: Barege Kurirewyge
 - id: 76
   category: Anatidae
   info: Amazonetta brasiliensis
   pic_link: images/fauna_076_merire.jpg
+  pic_credit: "© Dario Sanches from SÃO PAULO, BRASIL, CC BY-SA 2.0, via Wikimedia Commons"
+  pic_source: "https://commons.wikimedia.org/wiki/File:Amazonetta_brasiliensis.jpg"
   name_indigenous: Merire
   classification_indigenous: Kiege pobo pobo tadawyge
 - id: 86

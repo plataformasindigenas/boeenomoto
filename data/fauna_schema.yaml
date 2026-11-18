@@ -12,4 +12,6 @@ fields:
   classification_indigenous: str?
   info: str?
   pic_link: str?
+  pic_credit: str?   # e.g. "© Name, CC BY-SA 4.0, via Wikimedia Commons"
+  pic_source: str?   # https address of the original
   dictionary_ids: list?
