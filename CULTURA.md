@@ -40,6 +40,33 @@ a, b, c, d, e, g, i, j, k, m, n, o, p, r, t, u, w
 - **Aprovação:** proposta de 2026-11-18, aprovada pelo coordenador sob a aprovação geral da
   comunidade ao ser incorporada. A comunidade pode pedir mudanças a qualquer momento.
 
+## Padrões da versão 2 (rascunho)
+
+Para o novo modelo do site (versão 2) desenhamos três elementos, em
+`config/templates/v2/motifs/bororo/` (fontes e aprovação também em `pack.yaml`). Foram
+desenhados como rascunho em 2026-11-18, a partir da pesquisa publicada, e registrados como
+aprovados pelo coordenador sob a aprovação geral da comunidade. A comunidade pode pedir
+mudanças a qualquer momento. As cores são as da paleta do site.
+
+- **Faixa: traços de urucum.** Uma fileira reta de traços curtos e iguais, numa só cor, sob o
+  cabeçalho e entre as seções. Abstrai o ritmo do traço de pintura com urucum, a pintura que
+  todos os recém-nascidos recebem antes da pintura do clã (Caiuby Novaes 1986; materiais e
+  pincel de buriti em Nogueira e Kiga 2020, pp. 96–97). Não é radial, não é uma pintura facial
+  de clã nem a ordem de penas de um pariko. Se alguém a ler como as listras de uma pintura de
+  clã, ela deve ser trocada.
+- **Textura: trama de esteira.** Uma grade muito clara de tiras que passam por cima e por
+  baixo, no fundo da página. Abstrai a estrutura das esteiras (*beto*) e cestos (*kodo*) do dia
+  a dia, que o Museu das Culturas Dom Bosco mostra entre os objetos comuns (Calarge 2013,
+  p. 219). Não copia nenhum objeto.
+- **Emblema: aldeia circular.** Um círculo cortado de leste a oeste por uma linha, com uma
+  casa central simples, tudo numa só cor: a aldeia e as duas metades, sem cor para nenhuma
+  metade ou clã (Calarge 2013, pp. 217–219; ISA, "Boe (Bororo)"). Deixamos de fora o anel de
+  casas, porque oito marcas poderiam ser lidas como as posições dos clãs.
+
+Ficam fora, de propósito: pinturas de clã, arranjos de penas, objetos funerários, a forma do
+zunidor (*aije*) e figuras de espíritos. Pesquisa completa:
+`meta/domains/plataformas/research/2026-11-17-template-redesign/bororo.md`.
+
 ## Conhecimento restrito
 
 Este repositório e todas as prévias são **públicos**. Conhecimento restrito (rituais,
