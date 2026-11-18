@@ -32,7 +32,23 @@ module_labels:
   recordings: "Corpus"
   videos: "Vídeos"
 
+# Código ISO 639-3 da língua (atributo lang no texto na língua).
+language_code: bor
+
 theme:
+  # Versão 2 dos modelos (terradoc >= 0.20; a v1 ignora estas chaves). As cores têm
+  # papéis e o nome do material de onde vêm (CULTURA.md).
+  templates: v2
+  pack: bororo
+  palette:
+    ground: {color: "#F4F1EA", material: "argila branca, penugem branca"}
+    ink: {color: "#111827", material: "carvão e resina"}
+    primary: {color: "#C81F2D", material: "urucum"}
+    fill: {color: "#D4A03A", material: "pena amarela"}
+    muted: {color: "#6B6F5A"}
+  hero_people: true
+  hero_credit: ""
+  hero_alt: "Moça com um papagaio pousado no braço, em meio à mata"
   preset: "terra"
   logo: "images/logo.svg"
   favicon: "images/logo.svg"

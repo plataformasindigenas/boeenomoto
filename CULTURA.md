@@ -40,6 +40,16 @@ a, b, c, d, e, g, i, j, k, m, n, o, p, r, t, u, w
 - **Aprovação:** proposta de 2026-11-18, aprovada pelo coordenador sob a aprovação geral da
   comunidade ao ser incorporada. A comunidade pode pedir mudanças a qualquer momento.
 
+## Cores da versão 2
+
+O novo modelo usa cinco cores com papéis fixos (`theme.palette` em `terradoc.yaml`). As de
+agora são as mesmas do site atual, com o nome do material de onde vêm: o fundo é a **argila
+branca** e a penugem branca; o texto, o **carvão e a resina**; títulos, links e botões, o
+**urucum**; faixas e destaques, o **amarelo das penas** (uma inferência nossa, não um dado da
+pesquisa); o texto secundário é um cinza neutro. Todas as combinações usadas no site passam o
+contraste mínimo de leitura (4,5:1). Pesquisa: `research/2026-11-17-template-redesign/bororo.md`
+§0 e `palettes.md`.
+
 ## Padrões da versão 2 (rascunho)
 
 Para o novo modelo do site (versão 2) desenhamos três elementos, em
@@ -58,8 +68,9 @@ mudanças a qualquer momento. As cores são as da paleta do site.
   baixo, no fundo da página. Abstrai a estrutura das esteiras (*beto*) e cestos (*kodo*) do dia
   a dia, que o Museu das Culturas Dom Bosco mostra entre os objetos comuns (Calarge 2013,
   p. 219). Não copia nenhum objeto.
-- **Emblema: aldeia circular.** Um círculo cortado de leste a oeste por uma linha, com uma
-  casa central simples, tudo numa só cor: a aldeia e as duas metades, sem cor para nenhuma
+- **Emblema: aldeia circular.** Um anel em duas metades, ao norte e ao sul do eixo
+  leste–oeste (o eixo aparece só como as duas aberturas), em volta de uma casa central
+  simples, tudo numa só cor: a aldeia e as duas metades, sem cor para nenhuma
   metade ou clã (Calarge 2013, pp. 217–219; ISA, "Boe (Bororo)"). Deixamos de fora o anel de
   casas, porque oito marcas poderiam ser lidas como as posições dos clãs.
 

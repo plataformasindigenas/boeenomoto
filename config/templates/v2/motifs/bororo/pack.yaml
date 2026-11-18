@@ -19,7 +19,7 @@ elements:
     approved: {by_role: coordinator, date: 2026-11-18, note: "approved by the coordinator under the communities' general approval"}
   emblem:
     title: "Aldeia circular"
-    description: "Um círculo cortado de leste a oeste por uma linha, com uma casa central simples, tudo numa só cor: a aldeia circular e as duas metades, sem cor para nenhuma metade ou clã. Ficou de fora o anel de casas, porque oito marcas poderiam ser lidas como as posições dos clãs; escolhemos a forma mais simples."
+    description: "Um anel em duas metades, ao norte e ao sul do eixo leste–oeste (o eixo aparece só como as duas aberturas), em volta de uma casa central simples, tudo numa só cor: a aldeia circular e as duas metades, sem cor para nenhuma metade ou clã. Uma linha atravessando o círculo parecia um sinal de proibido. Ficou de fora o anel de casas, porque oito marcas poderiam ser lidas como as posições dos clãs; escolhemos a forma mais simples."
     sources:
       - "bororo.md §2, §4, §5 (item 1)"
       - "Calarge 2013, Tellus 13(25), pp. 217–219 (a aldeia dividida em Tugarege e Ecerae, eixo leste–oeste, exposição feita com participantes Bororo)"
