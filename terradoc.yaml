@@ -10,6 +10,8 @@ locale_labels:
   en: "English"
 default_locale: "pt"
 base_url: "https://boeenomoto.terradoc.org"
+# O link "Plataformas Indígenas" do rodapé leva ao portal.
+project_url: "https://plataformas.terradoc.org/"
 featured_article_id: "boe"
 bib_file: "bororo.bib"
 

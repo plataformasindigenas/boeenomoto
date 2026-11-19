@@ -298,7 +298,7 @@ about_subtitle: "Digital platform for documentation and revitalization of the Bo
 about_mission_heading: "Mission"
 about_mission: >
   <p><strong>Boe Eno Moto</strong> (<em>Bororo World</em>) is an initiative of the
-  <a href="https://portal.plataformasindigenas.org">Indigenous Languages Platform</a>
+  <a href="https://plataformas.terradoc.org/">Indigenous Languages Platform</a>
   dedicated to the documentation, preservation, and revitalization of the Bororo people's
   language and culture.</p>
   <p>Our goal is to make linguistic, ethnographic, and cultural materials available
@@ -314,7 +314,7 @@ about_contact_heading: "Contact"
 about_contact: >
   <p>For more information about the project, collaborations, or contributions:</p>
   <p><strong>Email:</strong> <a href="mailto:info@plataformasindigenas.org">info@plataformasindigenas.org</a><br>
-  <strong>Portal:</strong> <a href="https://portal.plataformasindigenas.org">portal.plataformasindigenas.org</a></p>
+  <strong>Portal:</strong> <a href="https://plataformas.terradoc.org/">plataformas.terradoc.org</a></p>
 about_citation_heading: "How to Cite"
 about_citation: "Indigenous Languages Platform. Boe Eno Moto: Digital Platform of the Bororo Language and Culture. Available at: https://boeenomoto.terradoc.org. Accessed: 2026."
 about_tools_heading: "Technology"
