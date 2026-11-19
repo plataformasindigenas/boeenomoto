@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dicionário · Boe Eno Moto</title>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search), q = p.get('search') || p.get('q');
+  var id = p.get('entry') ? String(parseInt(p.get('entry'), 10)) : null;  // as v1 read it
+  function slug(s) {  // the same as td-dict.js
+    return String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+  function go(path) { location.replace(path); }
+  if (id) {
+    fetch("../assets/search/dictionary.802a108aae.json").then(function (r) { return r.json(); }).then(function (d) {
+      for (var i = 0; i < d.rows.length; i++) {
+        var r = d.rows[i];
+        if (String(r[0]) !== id) continue;
+        var s = r.length > 7 ? r[7] : slug(r[1]);
+        return go('dictionary/' + encodeURIComponent(r[0] + (s ? '-' + s : '') + '.html'));
+      }
+      go('dictionary/index.html');
+    }).catch(function () { go('dictionary/index.html'); });
+  } else {
+    go('dictionary/index.html' + (q ? '?q=' + encodeURIComponent(q) : ''));
+  }
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=dictionary/index.html"></noscript>
+</head>
+<body><p><a href="dictionary/index.html">Abrindo o dicionário…</a></p></body>
+</html>
