@@ -43,7 +43,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0" },
-    { name = "terradoc", specifier = "==0.22.0" },
+    { name = "terradoc", specifier = "==0.22.1" },
 ]
 provides-extras = ["dev"]
 
@@ -805,7 +805,7 @@ wheels = [
 
 [[package]]
 name = "terradoc"
-version = "0.22.0"
+version = "0.22.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bibtexparser" },
@@ -818,9 +818,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/39/b0/041418009851af95276edf86eaa583e68bcec79a7387f4f37bd449051116/terradoc-0.22.0.tar.gz", hash = "sha256:381e6ec5849be1c49e0860f373bceed53e0c5cbadba5f1087334b459ddc372b5", size = 2094934, upload-time = "2026-11-19T08:17:28.433Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a6/88/f6b13ba16d1164b9830a58e5ad8064c8f715dc5c59be7330120022a9168a/terradoc-0.22.1.tar.gz", hash = "sha256:5b365b071ad367a40e65d299ba3837055b03cf76a142eaeb48c7dc6878cf87a9", size = 2095666, upload-time = "2026-11-19T11:09:56.743Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1d/8e/aa012c7f7ccadaaf36640429e9815fa65514b2e0545478fd89918eda0c9e/terradoc-0.22.0-py3-none-any.whl", hash = "sha256:df2c88c9730421c27d686713f3fadb7417d0786d610fcde21b969140a5aa7179", size = 2086410, upload-time = "2026-11-19T08:17:24.817Z" },
+    { url = "https://files.pythonhosted.org/packages/42/fc/b06a1a283480a232a6f70dea50df608c11df315dfc71639280ba443e8c74/terradoc-0.22.1-py3-none-any.whl", hash = "sha256:8a7de751e152bf8769cfacf97b98d6efb01e24b064a615dc9d759bf37108079e", size = 2086660, upload-time = "2026-11-19T11:09:52.21Z" },
 ]
 
 [[package]]
