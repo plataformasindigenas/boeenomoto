@@ -11,7 +11,7 @@ authors = [
 keywords = ["bororo", "indigenous", "linguistics", "dictionary", "fauna"]
 
 dependencies = [
-    "terradoc==0.22.0",
+    "terradoc==0.22.1",
 ]
 
 [project.optional-dependencies]
