@@ -28,7 +28,7 @@ site atual.
 | fundo | `#F4F1EA` | argila branca, penugem branca |
 | texto | `#111827` | carvão e resina |
 | títulos, links e botões | `#C81F2D` | urucum |
-| faixas e destaques | `#D4A03A` | pena amarela (uma inferência nossa, não um dado da pesquisa) |
+| faixas e destaques | `#D4A03A` | pena amarela (as penas amarelas estão documentadas; o tom é escolha nossa) |
 | texto secundário | `#6B6F5A` | cinza neutro, sem material |
 
 Todas as combinações usadas no site passam o contraste mínimo de leitura (4,5:1); o `terradoc
@@ -63,7 +63,7 @@ circular e as duas metades, Tugarege e Ecerae, sem cor para nenhuma metade ou cl
 ### O que fica de fora, de propósito
 
 Pinturas faciais e corporais de clã, arranjos de penas (o *pariko*, os enfeites do *kiogoaro*),
-objetos funerários, a forma do zunidor (*aije*) e figuras de espíritos. Na pesquisa publicada,
+objetos funerários, objetos rituais restritos e figuras de espíritos. Na pesquisa publicada,
 desenhos e enfeites pertencem a clãs e subclãs; não os usamos nem como inspiração distante.
 
 ### Fotos
@@ -83,8 +83,8 @@ a, b, c, d, e, g, i, j, k, m, n, o, p, r, t, u, w
 - **á é í ó ú** não são letras à parte: *kudógó* fica junto de *kudogo*. **kw** e **gw** também
   não têm aba própria; a ordem normal já as põe depois de *ku-* e *gu-*. O teclado da busca
   (versão 2) tem as teclas á é í ó ú.
-- **Fontes.** Nonato (2008, Unicamp; e "Fonética e fonologia do bororo", 2006): /tʃ/ = c,
-  /dʒ/ = j, kw e gw como uma consoante. Ochoa Camargo (2005), citado por Camargos (2010, UnB,
+- **Fontes.** Nonato (2008, Unicamp, pela tabela da Wikipédia): /tʃ/ = c, /dʒ/ = j. Nonato
+  (2006, "Fonética e fonologia do bororo"): kw e gw como uma consoante. Ochoa Camargo (2005), citado por Camargos (2010, UnB,
   p. 17): o dicionário escolar adaptou a grafia da *Enciclopédia Bororo* para o computador.
   Borocereu (2025, ProfLetras/UNEMAT), professor em Meruri, escreve *Ecerae*, *poboce*,
   *pogora jiwu*. Não consegui ver as "notas sobre o alfabeto" do dicionário de Ochoa, que
