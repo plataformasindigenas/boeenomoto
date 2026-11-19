@@ -1,0 +1,28 @@
+people: Bororo
+elements:
+  band:
+    title: "Traços de urucum"
+    description: "Uma fileira reta de traços curtos e iguais, numa só cor (vermelho de urucum), que abstrai o ritmo do traço de pintura. Não é radial, não é uma pintura facial de clã nem a ordem de penas de um pariko; se for lida como as listras de alguma pintura de clã, deve ser trocada."
+    sources:
+      - "bororo.md §1.3, §2, §5"
+      - "Caiuby Novaes 1986, Mulheres, homens e heróis, cap. sobre o ciclo de vida (urucum no corpo de todos os recém-nascidos, antes da pintura de clã)"
+      - "Nogueira e Kiga 2020, Tellus 20(43), pp. 96–97 (urucum, nonogo; pincel de buriti, ičira)"
+    drawn_by: "Claude, 2026-11-18"
+    approved: {by_role: coordinator, date: 2026-11-18, note: "approved by the coordinator under the communities' general approval; final drawing accepted by the coordinator 2026-11-19"}
+  texture:
+    title: "Trama de esteira"
+    description: "Uma grade de trançado por cima e por baixo, muito clara, que abstrai a estrutura das esteiras (beto) e cestos (kodo) do dia a dia. Não copia nenhum objeto, nem desenho pintado ou de penas."
+    sources:
+      - "bororo.md §1.4, §5 (item 3)"
+      - "Calarge 2013, Tellus 13(25), p. 219 (esteiras beto e cestos kodo entre os objetos do dia a dia)"
+    drawn_by: "Claude, 2026-11-18"
+    approved: {by_role: coordinator, date: 2026-11-18, note: "approved by the coordinator under the communities' general approval; final drawing accepted by the coordinator 2026-11-19"}
+  emblem:
+    title: "Aldeia circular"
+    description: "Um anel em duas metades, ao norte e ao sul do eixo leste–oeste (o eixo aparece só como as duas aberturas), em volta de uma casa central simples, tudo numa só cor: a aldeia circular e as duas metades, sem cor para nenhuma metade ou clã. Uma linha atravessando o círculo parecia um sinal de proibido. Ficou de fora o anel de casas, porque oito marcas poderiam ser lidas como as posições dos clãs; escolhemos a forma mais simples."
+    sources:
+      - "bororo.md §2, §4, §5 (item 1)"
+      - "Calarge 2013, Tellus 13(25), pp. 217–219 (a aldeia dividida em Tugarege e Ecerae, eixo leste–oeste, exposição feita com participantes Bororo)"
+      - "ISA, Povos Indígenas no Brasil, \"Boe (Bororo)\" (aldeia circular)"
+    drawn_by: "Claude, 2026-11-18"
+    approved: {by_role: coordinator, date: 2026-11-18, note: "approved by the coordinator under the communities' general approval; final drawing accepted by the coordinator 2026-11-19"}
