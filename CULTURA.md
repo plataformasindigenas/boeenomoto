@@ -16,7 +16,8 @@ cores, e qualquer elemento pode sair a qualquer momento sem quebrar nada.
   em `config/templates/v2/motifs/bororo/` (desenhos em SVG, com fontes e aprovação repetidas em
   `pack.yaml`).
 - **Aprovação:** desenhados em 2026-11-18 e aprovados pelo coordenador sob a aprovação geral da
-  comunidade (2026-11-17). A comunidade pode pedir mudanças a qualquer momento.
+  comunidade (2026-11-17); os desenhos finais foram aceitos pelo coordenador em 2026-11-19.
+  A comunidade pode pedir mudanças a qualquer momento.
 
 ### Cores
 
@@ -69,7 +70,7 @@ desenhos e enfeites pertencem a clãs e subclãs; não os usamos nem como inspir
 ### Fotos
 
 A foto da página inicial mostra uma pessoa (`theme.hero_people: true`). Falta o crédito
-(`theme.hero_credit`); a equipe deve preenchê-lo antes da migração. Qualquer foto pode ser
+(`theme.hero_credit`): fica como pendência, a preencher quando a equipe souber a fonte. Qualquer foto pode ser
 retirada a pedido.
 
 ## O alfabeto do dicionário
