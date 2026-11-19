@@ -1,3 +1,0 @@
-input: ../data/fauna.json
-template: templates/fauna.html.j2
-output: ../docs/fauna.html

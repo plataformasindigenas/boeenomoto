@@ -142,11 +142,9 @@ Datasets are automatically cross-linked during the build process:
 1. Add the data file to `data/` (TSV, YAML, BibTeX, or markdown)
 2. Create the schema at `data/<name>_schema.yaml`
 3. Add a converter function in `scripts/convert.py` and register it in the `CONVERTERS` dict
-4. Create the template at `config/templates/<name>.html.j2`
-5. Create the kodudo config at `config/<name>.yaml`
-6. Add locale strings to all files in `locales/`
-7. Update `config/templates/base.html.j2` to include the link in the navigation
-8. Update `config/templates/index.html.j2` to include the card on the landing page
+4. Enable the module in `terradoc.yaml` (`modules:`); terradoc renders its pages (v2
+   templates). Site-specific overrides go in `config/templates/v2/`
+5. Add locale strings to all files in `locales/`
 
 ## License
 

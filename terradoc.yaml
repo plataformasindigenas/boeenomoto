@@ -52,31 +52,8 @@ theme:
   hero_people: true
   hero_credit: ""
   hero_alt: "Moça com um papagaio pousado no braço, em meio à mata"
-  preset: "terra"
-  logo: "images/logo.svg"
   favicon: "images/logo.svg"
   hero_image: "images/fauna_full.jpg"
-  hero_images:
-    - "images/bororo1.jpg"
-    - "images/bar.jpeg"
-    - "images/chants.jpg"
-    - "images/video.jpg"
-  hero_stats:
-    - dictionary
-    - encyclopedia
-    - fauna
-    - bibliography
-  hero_height: "large"
-  hero_background: "moiety"
-  hero_motif: "moiety"
-  hero_divider: "moiety"
-  page_badge: "moiety"
-  grain_pattern: "dots"
-  # Inter, not Sora: headwords use IPA marks (ˈ ɔ ʒ ɾ) that Sora lacks.
-  font_family_headings: "'Inter', sans-serif"
-  border_radius: "28px"
-  colors:
-    dark: "#0B0F17"
 
 # O alfabeto do dicionário (letras e ordem), proposto em 2026-11-18 a partir de fontes
 # publicadas; veja CULTURA.md. As vogais acentuadas ficam junto da vogal simples.

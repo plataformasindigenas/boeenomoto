@@ -1,3 +1,0 @@
-input: ../data/dictionary.json
-template: templates/dictionary.html.j2
-output: ../docs/dictionary.html

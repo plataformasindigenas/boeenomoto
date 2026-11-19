@@ -1,3 +1,0 @@
-input: ../data/index.json
-template: templates/index.html.j2
-output: ../docs/index.html

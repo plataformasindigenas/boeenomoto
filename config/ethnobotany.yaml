@@ -1,3 +1,0 @@
-input: ../data/ethnobotany.json
-template: templates/ethnobotany.html.j2
-output: ../docs/ethnobotany.html

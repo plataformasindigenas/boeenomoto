@@ -1,3 +1,0 @@
-input: ../data/videos.json
-template: templates/videos.html.j2
-output: ../docs/videos.html

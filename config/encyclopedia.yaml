@@ -1,3 +1,0 @@
-input: ../data/encyclopedia_index.json
-template: templates/encyclopedia.html.j2
-output: ../docs/encyclopedia.html

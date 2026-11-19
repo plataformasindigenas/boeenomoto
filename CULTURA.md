@@ -105,9 +105,9 @@ circular organizada por elas. Aparecia no fundo animado da página inicial (cír
 expandiam; os losangos saíram em 2026-11-17), na moldura das fotos, no divisor e no selo ao lado
 dos títulos.
 
-- **Onde está:** `config/templates/motifs/moiety/`; cores em `theme.colors`, fotos em
-  `theme.hero_images`. O site não usa mais esses arquivos e chaves; eles saem quando a versão 1
-  sair do terradoc.
+- **Onde estava:** `config/templates/motifs/moiety/`, com as cores em `theme.colors` e as fotos
+  em `theme.hero_images`. Esses arquivos e chaves foram removidos em 2026-11-19; ficam no
+  histórico do git.
 - **Aprovação:** aprovado (registro do coordenador, 2026-11-14).
 - O emblema da aldeia circular o substituiu.
 
