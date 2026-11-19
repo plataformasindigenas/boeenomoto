@@ -6,7 +6,7 @@ um povo **não são usados no site de outro**.
 
 ## Os elementos do site (versão 2)
 
-O novo modelo do site (versão 2, em prévia em <https://previews.terradoc.org/boeenomoto/v2/>)
+O modelo do site (versão 2, no ar desde 2026-11-19 em <https://boeenomoto.terradoc.org/>)
 tem quatro elementos visuais: as cores, uma faixa, uma textura de fundo e um emblema. Todos
 foram desenhados por nós a partir da pesquisa publicada, como abstrações: nenhum copia um
 objeto, uma pintura ou um desenho de clã. O site também funciona e parece acabado só com as
@@ -97,18 +97,19 @@ a, b, c, d, e, g, i, j, k, m, n, o, p, r, t, u, w
 - **Aprovação:** proposta de 2026-11-18, aprovada pelo coordenador sob a aprovação geral da
   comunidade ao ser incorporada. A comunidade pode pedir mudanças a qualquer momento.
 
-## O site atual (versão 1, até a migração)
+## O modelo antigo (versão 1, até 2026-11-19)
 
-O site publicado hoje ainda usa o modelo antigo, com o padrão `moiety`: o círculo dividido ao
+Até 2026-11-19 o site usou o modelo antigo, com o padrão `moiety`: o círculo dividido ao
 meio, que representa as **duas metades exogâmicas Bororo, Tugarege e Ecerae**, e a aldeia
-circular organizada por elas. Aparece no fundo animado da página inicial (círculos que se
-expandem; os losangos saíram em 2026-11-17), na moldura das fotos, no divisor e no selo ao lado
+circular organizada por elas. Aparecia no fundo animado da página inicial (círculos que se
+expandiam; os losangos saíram em 2026-11-17), na moldura das fotos, no divisor e no selo ao lado
 dos títulos.
 
 - **Onde está:** `config/templates/motifs/moiety/`; cores em `theme.colors`, fotos em
-  `theme.hero_images`.
+  `theme.hero_images`. O site não usa mais esses arquivos e chaves; eles saem quando a versão 1
+  sair do terradoc.
 - **Aprovação:** aprovado (registro do coordenador, 2026-11-14).
-- Sai quando o site passar para a versão 2; o emblema da aldeia circular o substitui.
+- O emblema da aldeia circular o substituiu.
 
 ## Fontes
 

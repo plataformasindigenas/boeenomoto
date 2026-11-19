@@ -1,128 +1,81 @@
-"""Integration tests for the build output."""
+"""Checks on a local build of the site (terradoc v2 templates, since 2026-11-19).
+
+Build first:  terradoc build --config terradoc.yaml --out docs
+(docs/ is not in git; CI builds the site itself and runs terradoc's own checks.)
+"""
 
 import json
-from pathlib import Path
+import re
+
+import pytest
+
+PAGES = ["index", "dictionary", "encyclopedia", "fauna", "ethnobotany", "bibliography",
+         "videos", "about"]
+
+
+@pytest.fixture(autouse=True)
+def built(docs_dir):
+    if not (docs_dir / "pt" / "index.html").exists():
+        pytest.skip("no local build: terradoc build --config terradoc.yaml --out docs")
 
 
 def test_html_files_exist(docs_dir):
-    """Verify all expected HTML files are generated for each locale."""
     for locale in ["pt", "en"]:
-        locale_dir = docs_dir / locale
-        assert locale_dir.exists(), f"Missing locale directory: {locale}"
-
-        for page in ["dictionary", "encyclopedia", "fauna", "bibliography", "index"]:
-            html_file = locale_dir / f"{page}.html"
-            assert html_file.exists(), f"Missing {locale}/{page}.html"
-            assert html_file.stat().st_size > 0, f"Empty {locale}/{page}.html"
-
-
-def test_language_picker_exists(docs_dir):
-    """Verify root index.html language picker exists."""
-    picker = docs_dir / "index.html"
-    assert picker.exists()
-    content = picker.read_text(encoding="utf-8")
-    assert "pt/index.html" in content
-    assert "en/index.html" in content
-
-
-def test_common_js_exists(docs_dir):
-    """Verify common.js utility file exists."""
-    js_file = docs_dir / "js" / "common.js"
-    assert js_file.exists()
-    content = js_file.read_text(encoding="utf-8")
-    assert "escapeHtml" in content
-    assert "initSearchPage" in content
-
-
-def test_data_json_in_locale_dirs(docs_dir):
-    """Verify data JSON files are available in locale directories."""
-    for locale in ["pt", "en"]:
-        for name in ["dictionary-data.json", "encyclopedia-data.json"]:
-            data_file = docs_dir / locale / name
-            assert data_file.exists(), f"Missing {locale}/{name}"
-            with open(data_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            assert "data" in data
-
-
-def test_html_has_common_js(docs_dir):
-    """Verify all HTML pages include common.js."""
-    for locale in ["pt", "en"]:
-        for page in ["dictionary", "fauna", "bibliography", "encyclopedia", "index"]:
+        for page in PAGES:
             html_file = docs_dir / locale / f"{page}.html"
-            content = html_file.read_text(encoding="utf-8")
-            assert "common.js" in content, f"{locale}/{page}.html missing common.js"
+            assert html_file.exists() and html_file.stat().st_size > 0, f"{locale}/{page}.html"
+        assert (docs_dir / locale / "dictionary" / "index.html").exists()
 
 
-def test_html_has_accessibility_features(docs_dir):
-    """Verify HTML pages include accessibility features."""
-    html_file = docs_dir / "pt" / "dictionary.html"
-    content = html_file.read_text(encoding="utf-8")
-    assert 'class="skip-link"' in content
-    assert 'id="main-content"' in content
-    assert '<main' in content
-    assert 'aria-live="polite"' in content
-    assert 'aria-label=' in content
+def test_language_picker(docs_dir):
+    content = (docs_dir / "index.html").read_text(encoding="utf-8")
+    assert 'href="pt/index.html"' in content and 'href="en/index.html"' in content
 
 
-def test_html_has_lang_attribute(docs_dir):
-    """Verify HTML pages have correct lang attributes."""
-    pt_content = (docs_dir / "pt" / "index.html").read_text(encoding="utf-8")
-    assert 'lang="pt-BR"' in pt_content
+def test_search_index(docs_dir):
+    """The dictionary search index (replaces v1's dictionary-data.json)."""
+    page = (docs_dir / "pt" / "dictionary" / "index.html").read_text(encoding="utf-8")
+    name = re.search(r"assets/search/dictionary\.[0-9a-f]+\.json", page).group(0)
+    data = json.loads((docs_dir / name).read_text(encoding="utf-8"))
+    assert data["v"] == 2 and len(data["rows"]) > 4000
 
-    en_content = (docs_dir / "en" / "index.html").read_text(encoding="utf-8")
-    assert 'lang="en"' in en_content
+
+def test_accessibility_basics(docs_dir):
+    for locale in ["pt", "en"]:
+        for page in PAGES[1:]:
+            content = (docs_dir / locale / f"{page}.html").read_text(encoding="utf-8")
+            if "td-redirect" in content or "location.replace" in content[:3000]:
+                continue  # dictionary.html forwards old ?entry= / ?search= links
+            assert 'class="td-skip"' in content and 'href="#main"' in content, f"{locale}/{page}"
+            assert 'id="main"' in content and "<main" in content, f"{locale}/{page}"
 
 
-def test_html_has_language_switcher(docs_dir):
-    """Verify pages have language switch links."""
-    pt_content = (docs_dir / "pt" / "index.html").read_text(encoding="utf-8")
-    assert "lang-switch" in pt_content
-    assert "../en/" in pt_content
+def test_lang_attribute(docs_dir):
+    assert '<html lang="pt-BR"' in (docs_dir / "pt" / "index.html").read_text(encoding="utf-8")
+    assert '<html lang="en"' in (docs_dir / "en" / "index.html").read_text(encoding="utf-8")
 
-    en_content = (docs_dir / "en" / "index.html").read_text(encoding="utf-8")
-    assert "../pt/" in en_content
+
+def test_language_switcher(docs_dir):
+    pt = (docs_dir / "pt" / "index.html").read_text(encoding="utf-8")
+    en = (docs_dir / "en" / "index.html").read_text(encoding="utf-8")
+    assert 'class="td-lang"' in pt and "../en/index.html" in pt
+    assert "../pt/index.html" in en
 
 
 def test_article_pages_exist(docs_dir):
-    """Verify encyclopedia article pages are generated for each locale."""
     for locale in ["pt", "en"]:
-        enc_dir = docs_dir / locale / "encyclopedia"
-        assert enc_dir.exists(), f"Missing {locale}/encyclopedia/ directory"
-        html_files = list(enc_dir.glob("*.html"))
-        assert len(html_files) > 100, (
-            f"Expected >100 article pages in {locale}/encyclopedia/, got {len(html_files)}"
-        )
+        pages = list((docs_dir / locale / "encyclopedia").glob("*.html"))
+        assert len(pages) > 100, f"{locale}: {len(pages)} article pages"
 
 
-def test_article_page_structure(docs_dir):
-    """Verify article pages have expected structure."""
-    article = docs_dir / "pt" / "encyclopedia" / "boe.html"
-    assert article.exists(), "Missing boe.html article page"
-    content = article.read_text(encoding="utf-8")
-    assert 'lang="pt-BR"' in content
-    assert "<article>" in content
-    assert "Boe" in content
-    assert 'class="breadcrumb"' in content
-    assert "common.js" in content
-    assert 'class="skip-link"' in content
-
-
-def test_article_page_nav_links(docs_dir):
-    """Verify article page navigation links resolve correctly."""
-    article = docs_dir / "pt" / "encyclopedia" / "ecerae.html"
-    content = article.read_text(encoding="utf-8")
-    # Nav links should use ../ to go up to locale dir
-    assert '../dictionary.html' in content
-    assert '../encyclopedia.html' in content
-    assert '../fauna.html' in content
-    # Lang switch should use ../../ to go to other locale's article
+def test_article_page(docs_dir):
+    content = (docs_dir / "pt" / "encyclopedia" / "ecerae.html").read_text(encoding="utf-8")
+    assert '<html lang="pt-BR"' in content and "td-article" in content
+    assert 'href="../encyclopedia.html' in content
     assert '../../en/encyclopedia/ecerae.html' in content
-    # Back to index link
-    assert '../encyclopedia.html' in content
+    assert "../bibliography.html#ref-" in content
 
 
-def test_encyclopedia_search_page_links_to_articles(docs_dir):
-    """Verify the encyclopedia search page references article pages."""
+def test_encyclopedia_list_links_to_articles(docs_dir):
     content = (docs_dir / "pt" / "encyclopedia.html").read_text(encoding="utf-8")
-    assert "encyclopedia/" in content or "encyclopedia-data.json" in content
+    assert 'href="encyclopedia/ecerae.html"' in content
