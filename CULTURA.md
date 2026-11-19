@@ -8,7 +8,7 @@ de outro**.
 
 O círculo dividido ao meio representa as **duas metades exogâmicas Bororo, Tugarege e
 Ecerae**, e a aldeia circular organizada por elas. Aparece no fundo animado da página inicial
-(círculos e losangos que se expandem), na moldura das fotos, no divisor e no selo ao lado dos
+(círculos que se expandem; os losangos saíram em 2026-11-17), na moldura das fotos, no divisor e no selo ao lado dos
 títulos.
 
 - **Onde está:** `config/templates/motifs/moiety/`; escolhido em `terradoc.yaml` (`theme`).
