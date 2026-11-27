@@ -17,4 +17,4 @@ see_also: []
 **Acia** — forma onomatopaica. Espirro.
 
 Quando alguém espirra, os Bororo pensam que uma pessoa ausente lhe tenha falado e costumam
-perguntar: **iaguduba ako oino?** 'quem palavra assim?', isto é, 'quem falou assim?'
+perguntar: **iaguduba ako oino?** 'quem falou assim?'
