@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boeenomoto.terradoc.org/sitemap.xml

@@ -1,0 +1,17 @@
+{
+  "project": "bororo",
+  "terradoc_version": "0.24.0",
+  "source_commit": "0737ab62dbe5ae0f951a83862ed8ef4d3e5bc501",
+  "source_ref": "master",
+  "files": 13228,
+  "bytes": 135585271,
+  "modules": {
+    "dictionary": 4865,
+    "fauna": 97,
+    "ethnobotany": 302,
+    "encyclopedia": 387,
+    "bibliography": 196,
+    "videos": 10
+  },
+  "owned_by_terradoc": true
+}
