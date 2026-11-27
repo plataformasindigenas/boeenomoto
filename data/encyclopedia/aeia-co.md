@@ -15,3 +15,5 @@ see_also: []
 
 **Aeia Co** ('morro cuja sumidade apresenta espessa e escura vegetação') — morro isolado a cerca
 de 25 km ao norte da cidade de Guiratinga, denominado comumente Morro Fortaleza.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 11.

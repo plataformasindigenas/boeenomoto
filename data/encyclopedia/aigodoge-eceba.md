@@ -24,3 +24,5 @@ mágico.
 É o pau-doce, ao qual os Bororo atribuem virtudes mágicas, para facilmente encontrarem e
 matarem uma suçuarana. Para tal fim, antes de uma caçada, esfregam o próprio rosto e o arco com
 pó de carvão de suas raízes.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 15.

@@ -22,3 +22,5 @@ see_also:
 Assim são designados coletivamente os rapazes do subclã dos **Paiwoe Cobugiwuge** durante a
 cerimônia da imposição do [[ba-2-penile-sheath-daily|ba]], estojo peniano. Conservam esta
 denominação durante toda a vida.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 1.

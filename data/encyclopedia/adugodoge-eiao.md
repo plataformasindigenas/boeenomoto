@@ -21,3 +21,5 @@ see_also:
    **Jakoreuge Eiao**, rio das Garças;
 2. um córrego afluente da esquerda do **Pobo Kurireu**, rio das Mortes, a montante da foz do
    **Po Ekureu**, ribeirão São Marcos.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 6.

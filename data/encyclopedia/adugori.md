@@ -20,3 +20,5 @@ see_also:
    **Oroaribo Kurireu**, rio Araguaia;
 2. uma elevação nas margens do curso inferior do [[pogubo-cerewu|Pogubo Cereu]], rio São
    Lourenço.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 9.

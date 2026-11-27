@@ -18,3 +18,5 @@ see_also:
 **Aigo buregi** — cada uma das garras das patas posteriores da suçuarana e o seu conjunto.
 Designa também um tipo de coroa dos Bororo (**boe etao kajejewu**), feita com garras das patas
 posteriores e anteriores da suçuarana.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 15.

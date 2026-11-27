@@ -26,3 +26,5 @@ plumazinhas e encimado por penugem branca.
 
 Supomos que esta coroa tenha originado entre os não indígenas a denominação de "bororos
 coroados".
+
+*Fonte:* Albisetti & Venturelli (1962), p. 11.

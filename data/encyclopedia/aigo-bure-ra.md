@@ -17,3 +17,5 @@ see_also:
 
 **Aigo bure ra** — ossinhos das patas posteriores da suçuarana. Com eles os Bororo preparam as
 pontas de certos tipos de **tugo**, flecha.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 15.

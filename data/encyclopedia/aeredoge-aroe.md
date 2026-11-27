@@ -22,3 +22,5 @@ atores da mesma. **Aere** é o urutau (*Nyctibius grandis*).
 
 - **Aere Coreu**
 - **Aere Tororeu**
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 12–13.

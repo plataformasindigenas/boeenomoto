@@ -16,3 +16,5 @@ see_also:
 
 **Aigo o** — cauda da suçuarana. Designa também certo tipo de coroa dos Bororo
 (**boe etao kajejewu**).
+
+*Fonte:* Albisetti & Venturelli (1962), p. 16.

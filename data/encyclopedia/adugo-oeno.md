@@ -15,3 +15,5 @@ see_also:
 
 **Adugo oeno** — cada um dos dentes incisivos do jaguar e o seu conjunto. Designa também certo
 tipo de colar dos Bororo (**boe ekuie**).
+
+*Fonte:* Albisetti & Venturelli (1962), p. 9.

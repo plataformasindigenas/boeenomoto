@@ -17,3 +17,5 @@ see_also:
 
 **Aigo biri oiaga** — designação genérica das penas da cauda de arara com que os Bororo ornam a
 periferia da pele de suçuarana ([[aigo-biri]]), depois de seca.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 15.

@@ -15,3 +15,5 @@ see_also:
 
 **Adugo bure ra** — ossinhos das patas posteriores do jaguar. Com eles os Bororo preparam as
 pontas de certo tipo de **tugo**, flecha.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 5.

@@ -20,3 +20,5 @@ see_also: []
    Barreiro;
 2. um córrego afluente da esquerda do curso médio do **Bace Eiao₂**, rio Itiquira: córrego
    Adugojare.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 7.

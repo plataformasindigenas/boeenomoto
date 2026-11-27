@@ -24,3 +24,5 @@ A cauda do jaguar é retirada pelo próprio matador, quando a pele é estirada, 
 a um seu parente próximo, para que a prepare à guisa de coroa. Uma vez pronta, deixa-a a um
 membro do clã dos **Paiwoe**, que naturalmente lhe dará uma recompensa. Para pormenores, ver
 [[adugo-biri]], pele de jaguar.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 8.

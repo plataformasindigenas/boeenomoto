@@ -32,3 +32,5 @@ as plumas são todas vermelhas de [[nabure]], ararapiranga, e o enfeite denomina
 **adugo enawu urugureu** ('o vermelho').
 
 Para outras noções sobre a pele de jaguar, ver **barege ekedodu**, banquete das feras.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 7.

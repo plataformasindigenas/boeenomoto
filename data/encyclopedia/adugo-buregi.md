@@ -36,3 +36,5 @@ recebe e entrega logo a um outro parente, que provisoriamente as amarra à guisa
 passa a um membro do clã dos [[baado-jebage-cebegiwuge|Baado Jebage Cebegiwuge]], se possível,
 o qual as usará no **barege ekedodu**, banquete das feras. Terminada a festa, as garras são
 restituídas ao dono, que as dá a um parente próximo para a confecção definitiva.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 5.

@@ -23,3 +23,5 @@ see_also:
 
 É um arbusto do cerrado cujo carvão, pulverizado e temperado com **kido guru**, resina, é
 espalmado no arco de um caçador, para que este tenha feliz êxito na caçada do jaguar.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 10.

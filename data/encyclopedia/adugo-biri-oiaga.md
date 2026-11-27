@@ -18,3 +18,5 @@ see_also:
 
 **Adugo biri oiaga** — designação genérica das penas da cauda de arara com que os Bororo ornam
 a periferia da pele de jaguar ([[adugo-biri]]), depois de seca.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 5.

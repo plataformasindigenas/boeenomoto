@@ -23,3 +23,5 @@ Os Bororo são mestres nesta arte. Nas últimas décadas do século XIX, seus be
 a fazendas de não indígenas, especialmente no planalto onde moram os **Boku Mogorege**,
 começavam com essas observações, que prosseguiam com abertas manifestações de hipócrita
 amizade e se desfechavam em horríveis massacres.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 30.

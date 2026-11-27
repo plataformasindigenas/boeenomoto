@@ -27,3 +27,5 @@ mágico.
 raízes carbonizadas, pulverizadas e temperadas com **kido guru**, resina, traçam riscos pelo
 corpo antes das caçadas, para evitarem que o felídeo os fira ou que os maus espíritos os
 prejudiquem.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 16.

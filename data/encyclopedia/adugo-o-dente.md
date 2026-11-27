@@ -44,3 +44,5 @@ Ari e Companheiros.
 Cruz diz que este colar é da esposa ou das filhas do defunto. Deve-se rejeitar esta afirmação,
 pois esposa e filhas do morto, pelas leis das metades exógamas, não são parentas do finado,
 visto pertencerem à metade oposta (Cruz 1944, XCVIII: 130).
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 8–9.

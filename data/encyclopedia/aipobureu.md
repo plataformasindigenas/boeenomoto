@@ -24,3 +24,5 @@ see_also:
 A matança de uma jaguatirica pode servir de [[mori]], retribuição aos parentes pela morte de um
 Bororo, e origina as mesmas festas que o [[adugo]], jaguar, e o **aigo**, suçuarana, embora com
 menor solenidade.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 28.

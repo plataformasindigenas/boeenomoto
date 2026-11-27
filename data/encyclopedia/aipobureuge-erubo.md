@@ -19,3 +19,5 @@ see_also:
 **Aipobureuge erubo** ('vegetal mágico das jaguatiricas') — designação de um [[erubo]], vegetal
 mágico. É um arbusto do cerrado, usado do mesmo modo e com a mesma finalidade que o
 [[aigodoge-erubo]].
+
+*Fonte:* Albisetti & Venturelli (1962), p. 29.
