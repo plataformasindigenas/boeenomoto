@@ -2,11 +2,8 @@
 id: aroe
 title: Aroe
 variants: []
-abstract: Termo polissêmico central na cosmologia bororo. Pode designar coisas leves
-  como pluma; alma e seu destino no além; espíritos/fantasmas e seres imaginários;
-  cadáver; antepassados e epônimos de clãs; seres primaciais/privativos e direitos
-  de primazia; além de categorias sociais e rituais ligadas à organização em clãs,
-  metades e representações.
+abstract: Termo que denota apenas as espécies, materiais ou espirituais, pertinentes aos
+  processos funerários.
 categories:
 - cosmologia/alma
 - cosmologia/espírito
@@ -41,7 +38,18 @@ see_also:
 - itaga
 ---
 
-### qualquer coisa leve como pluma; 2. alma, espírito, fantasma; 3. de qualquer ser imaginário; 7. de cada membro do clã dos Bokodori Ecerae; 8. de cada membro da tribo Bororo; 9. de cada ser primacial ou privativo de cada clã; 10. de cada um dos epônimos dos clãs; 11. dos clãs heterônimos e exógamos, cujos membros podem contrair casamento entre si; 12. de cada representação fúnebre ou não; 13. de cada ator de uma representação qualquer; 14. de qualquer monstro lendário.
+## Definição
+
+O termo **aroe** denota apenas as espécies, materiais ou espirituais, pertinentes aos processos
+funerários.
+
+Albisetti e Venturelli (1962) registram para aroe uma lista mais ampla de acepções: 1. qualquer
+coisa leve como pluma; 2. alma; 3. qualquer espírito ou fantasma; 4. qualquer ser imaginário;
+5. cadáver; 6. antepassado; 7. cada membro do clã dos Bokodori Ecerae; 8. cada membro da tribo
+bororo; 9. cada ser primacial ou privativo de cada clã; 10. cada um dos epônimos dos clãs; 11. os
+clãs heterônimos e exógamos, cujos membros podem contrair casamento entre si; 12. cada
+representação, fúnebre ou não; 13. cada ator de uma representação qualquer; 14. qualquer monstro
+lendário. As seções seguintes reproduzem a exposição da *Enciclopédia Bororo* de 1962.
 
 ### Aroe, alma
 
