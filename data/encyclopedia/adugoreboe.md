@@ -16,3 +16,5 @@ see_also:
 
 **Adugoreboe** ('coisa semelhante a jaguar') — qualquer objeto semelhante na forma ou na cor a
 um jaguar, ou que tenha relação com ele.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 9.

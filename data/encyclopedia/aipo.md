@@ -32,3 +32,5 @@ os cabelos.
 Também os cabelos da região parietal podem receber semelhante penteado, que se denomina **aipo
 jipa gogu**, birote das têmporas. Este último pode ser usado indistintamente por indivíduos de
 ambos os sexos.
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 28–29.

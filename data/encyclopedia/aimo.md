@@ -19,3 +19,5 @@ see_also: []
 Os Bororo tomam banho em água corrente, em qualquer tempo e lugar, mesmo logo após as refeições e
 até no paroxismo da febre. Na choupana, em caso de doença, derramam água sobre o doente. Antes de
 conhecerem o sabão, usavam tabatinga e gorduras como detergentes das resinas.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 27.

@@ -15,3 +15,5 @@ see_also: []
 
 **Ae Eiao** ('localidade dos felídeos') — córrego afluente do **Okoge Eiao₁**, ribeirão Areia
 ou Floriano.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 10.

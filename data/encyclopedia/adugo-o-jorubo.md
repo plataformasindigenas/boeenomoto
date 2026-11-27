@@ -20,3 +20,5 @@ see_also:
 **Adugo o jorubo** ('vegetal mágico contra os dentes do jaguar') — designação de um [[erubo]],
 vegetal mágico. Com este nome designam-se vários vegetais, denominados também
 [[adugodoge-erubo]].
+
+*Fonte:* Albisetti & Venturelli (1962), p. 9.

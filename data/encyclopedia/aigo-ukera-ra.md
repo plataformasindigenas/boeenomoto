@@ -16,3 +16,5 @@ see_also:
 
 **Aigo ukera ra** — ossinhos das patas anteriores da suçuarana. Com eles os Bororo preparam as
 pontas de certo tipo de **tugo**, flecha.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 17.

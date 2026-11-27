@@ -14,3 +14,5 @@ see_also:
 ---
 
 **Adugo ika** — tipo de **boeiga**, arco dos Bororo.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 7.

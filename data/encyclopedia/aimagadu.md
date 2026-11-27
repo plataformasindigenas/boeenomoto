@@ -17,3 +17,5 @@ see_also:
 
 **Aimagadu** — pau-do-serrote. É um arbusto da floresta cujos frutos são reservados ao
 [[bari]], xamã dos espíritos.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 27.

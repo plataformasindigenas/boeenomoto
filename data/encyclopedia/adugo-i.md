@@ -23,3 +23,5 @@ pelo escorregar das garras de jaguares que tentavam subir ao alto da árvore. Os
 perseguiam o herói lendário **Ari**, que se refugiara nos galhos da árvore, cujo tronco,
 naturalmente liso, tinha sido tornado extremamente escorregadio por meio de gordura de jaús;
 deslizaram repetidas vezes, produzindo os sulcos que agora o cortam.
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 6–7.

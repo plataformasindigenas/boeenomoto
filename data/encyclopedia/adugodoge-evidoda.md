@@ -17,3 +17,5 @@ see_also:
 
 **Adugodoge Evidoda** ('lugar da matança dos jaguares') — córrego afluente da direita do curso
 superior do **Pobo Kurireu**, rio das Mortes.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 7.

@@ -19,3 +19,5 @@ see_also:
 
 1. um córrego afluente do [[pogubo-cerewu|Pogubo Cereu]], rio São Lourenço;
 2. um córrego afluente da esquerda do **Porubi**, rio Porube Aidjau.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 17.

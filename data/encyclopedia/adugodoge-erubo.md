@@ -24,3 +24,5 @@ mágico.
 Com este nome designam-se vários vegetais, como, por exemplo, a lixeira e a lixeirinha, árvores
 do cerrado às quais os Bororo atribuem virtudes mágicas. De fato, esfregam o corpo com suas
 folhas a fim de não serem feridos pelo felídeo durante uma caçada.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 6.

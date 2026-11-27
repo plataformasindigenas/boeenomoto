@@ -16,3 +16,5 @@ see_also:
 
 **Aipobureu o** — cada um dos dentes da jaguatirica e o seu conjunto, exceto os incisivos.
 Designa também certo tipo de colar dos Bororo (**boe ekuie**).
+
+*Fonte:* Albisetti & Venturelli (1962), p. 29.

@@ -25,3 +25,5 @@ vegetal mágico.
 É um cipó do cerrado com cujo carvão, pulverizado e temperado com **kido guru**, resina, os
 Bororo traçam riscos pelo rosto, a fim de facilmente encontrarem um jaguar nas caçadas. Sua
 denominação explica-se por produzir frutos alongados em forma de presas de jaguar.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 7.

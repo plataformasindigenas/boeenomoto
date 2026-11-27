@@ -49,3 +49,5 @@ esposa. Quem os colhe, os come.
 Por ocasião da morte de um parente, extirpam os próprios cabelos e deixam depois crescer os
 novos, sem cultivo, durante todo o tempo do **emaere**, luto, que às vezes se protrai até a
 morte do enlutado.
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 13–14.

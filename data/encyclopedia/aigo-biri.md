@@ -22,3 +22,5 @@ esteira dos Bororo.
 
 Tudo o que se refere ao [[adugo-biri]], pele de jaguar, aplica-se também ao aigo biri, com a
 diferença de que o possuidor definitivo da pele será escolhido pelos parentes do finado.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 15.

@@ -16,3 +16,5 @@ see_also:
 
 **Aigoreboe** ('coisa semelhante à suçuarana') — qualquer objeto semelhante na forma ou na cor à
 suçuarana, ou que tenha relação com ela.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 17.

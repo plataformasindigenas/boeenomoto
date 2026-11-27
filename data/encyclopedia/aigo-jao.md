@@ -16,3 +16,5 @@ see_also: []
 
 **Aigo Jao** ('localidade da suçuarana') — córrego afluente da direita do **Pobo Kurireu**, rio
 das Mortes, a montante do **Pobore Butu Kurireu**, Salto da Fumaça.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 16.

@@ -26,3 +26,5 @@ mágico.
 Com este nome designam-se vários vegetais, dos quais um é o paratudo, árvore do cerrado, com
 cujas folhas e raízes carbonizadas e pulverizadas os Bororo esfregam o rosto e o corpo para
 serem felizes na caçada do jaguar e para evitarem os malefícios dos espíritos.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 6.

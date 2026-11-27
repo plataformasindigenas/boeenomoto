@@ -21,3 +21,5 @@ pontos da periferia da pele seca de suçuarana, à semelhança das da pele de ja
 Quando as plumas são amarelas e vermelhas, o adorno chama-se **aigo enawu ekureu** ('o
 amarelo'); quando são vermelhas, **aigo enawu urugureu** ('o vermelho'). Para outras noções, ver
 [[adugo-enawu]].
+
+*Fonte:* Albisetti & Venturelli (1962), p. 16.

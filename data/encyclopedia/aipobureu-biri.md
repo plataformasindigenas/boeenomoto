@@ -24,3 +24,5 @@ Quando um Bororo abate uma jaguatirica, pode-se fazer em sua honra uma manifesta
 com a festa **barege ekedodu**, banquete das feras. Nesse caso, a pele de jaguatirica pode
 receber pinturas como as do [[adugo-biri]], pele de jaguar; não se realizando nenhuma
 solenidade, é apenas tingida no verso com pasta vermelha de **nonogo**, urucu.
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 28–29.

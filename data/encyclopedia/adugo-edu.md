@@ -18,3 +18,5 @@ see_also: []
 Bokodori** e **Eigawa Are**.
 
 Nome próprio: ver o volume II da *Enciclopédia Bororo*.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 7.

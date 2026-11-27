@@ -16,3 +16,5 @@ see_also:
 
 **Aipobureu utori ra** — ossos das pernas posteriores da jaguatirica. Com eles os Bororo
 preparam as pontas de certo tipo de **tugo**, flecha.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 29.

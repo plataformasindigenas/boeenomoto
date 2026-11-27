@@ -22,3 +22,5 @@ de palmeira:
 - de bracelete (**boe ekana kajejewu**);
 - de pulseira (**boe ekera paru kajejewu**);
 - de coroa (**boe etao kajejewu**).
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 12–13.

@@ -20,3 +20,5 @@ Antes de empreenderem alguma operação que apresente certa dificuldade e risco,
 costumam fazer-se preceder por um espia, o qual é seguido depois por vários homens que, segundo
 suas informações, vão abertamente sondar o ambiente e os moradores, para regular suas futuras
 ações.
+
+*Fonte:* Albisetti & Venturelli (1962), pp. 29–30.

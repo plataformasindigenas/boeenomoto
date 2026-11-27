@@ -22,3 +22,5 @@ see_also:
 
 É o douradão, arbusto do cerrado, com cujas folhas os Bororo esfregam o próprio arco, o corpo e
 as flechas, para serem felizes nas caçadas e evitarem eventuais ferimentos.
+
+*Fonte:* Albisetti & Venturelli (1962), p. 17.

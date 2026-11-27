@@ -16,3 +16,5 @@ see_also:
 
 **Aipobureu buregi** — cada uma das garras das patas posteriores da jaguatirica e o seu
 conjunto. Designa também certo tipo de coroa dos Bororo (**boe etao kajejewu**).
+
+*Fonte:* Albisetti & Venturelli (1962), p. 29.
